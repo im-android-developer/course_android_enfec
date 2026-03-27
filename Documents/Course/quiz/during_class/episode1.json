@@ -1,0 +1,310 @@
+{
+  "items": [
+    {
+      "name": "Android Basics Quiz",
+      "difficulty": "easy",
+      "content": [
+        {
+          "id": "android_basics_1",
+          "question": "What is Android?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Basics"],
+          "options": [
+            { "id": "a", "text": "A programming language" },
+            { "id": "b", "text": "An operating system" },
+            { "id": "c", "text": "A database" },
+            { "id": "d", "text": "A web browser" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "Android is a mobile operating system developed by Google.",
+          "hints": ["Used in smartphones", "Developed by Google"]
+        },
+        {
+          "id": "android_basics_2",
+          "question": "Which language is primarily used for Android development today?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Languages"],
+          "options": [
+            { "id": "a", "text": "Python" },
+            { "id": "b", "text": "Kotlin" },
+            { "id": "c", "text": "Swift" },
+            { "id": "d", "text": "C#" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "Kotlin is the officially recommended language for Android development.",
+          "hints": ["Modern language", "Preferred by Google"]
+        },
+        {
+          "id": "android_basics_3",
+          "question": "Which component represents a single screen in Android?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Components"],
+          "options": [
+            { "id": "a", "text": "Service" },
+            { "id": "b", "text": "BroadcastReceiver" },
+            { "id": "c", "text": "Activity" },
+            { "id": "d", "text": "ContentProvider" }
+          ],
+          "correctAnswers": ["c"],
+          "explanation": "An Activity represents a single screen with a user interface.",
+          "hints": ["UI screen", "User interacts here"]
+        },
+        {
+          "id": "android_basics_4",
+          "question": "Which file contains UI design in Android?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["UI"],
+          "options": [
+            { "id": "a", "text": "MainActivity.kt" },
+            { "id": "b", "text": "AndroidManifest.xml" },
+            { "id": "c", "text": "layout.xml" },
+            { "id": "d", "text": "build.gradle" }
+          ],
+          "correctAnswers": ["c"],
+          "explanation": "UI layouts are defined in XML files inside the res/layout folder.",
+          "hints": ["XML file", "Design related"]
+        },
+        {
+          "id": "android_basics_5",
+          "question": "Which company developed Android?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["History"],
+          "options": [
+            { "id": "a", "text": "Apple" },
+            { "id": "b", "text": "Microsoft" },
+            { "id": "c", "text": "Google" },
+            { "id": "d", "text": "IBM" }
+          ],
+          "correctAnswers": ["c"],
+          "explanation": "Android is developed and maintained by Google.",
+          "hints": ["Search engine company", "Owns Play Store"]
+        }
+      ]
+    },
+    {
+      "name": "Android Studio Installation & Features Quiz",
+      "difficulty": "easy",
+      "content": [
+        {
+          "id": "android_studio_1",
+          "question": "What is Android Studio?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["IDE"],
+          "options": [
+            { "id": "a", "text": "A database tool" },
+            { "id": "b", "text": "An IDE for Android development" },
+            { "id": "c", "text": "A browser" },
+            { "id": "d", "text": "A cloud platform" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "Android Studio is the official IDE for Android development.",
+          "hints": ["Used to write code", "Official tool"]
+        },
+        {
+          "id": "android_studio_2",
+          "question": "Which file manages dependencies in Android Studio?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Gradle"],
+          "options": [
+            { "id": "a", "text": "AndroidManifest.xml" },
+            { "id": "b", "text": "build.gradle" },
+            { "id": "c", "text": "settings.xml" },
+            { "id": "d", "text": "config.json" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "build.gradle is used to manage dependencies and build configuration.",
+          "hints": ["Build system file", "Handles libraries"]
+        },
+        {
+          "id": "android_studio_3",
+          "question": "What is AVD in Android Studio?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Emulator"],
+          "options": [
+            { "id": "a", "text": "Android Virtual Device" },
+            { "id": "b", "text": "Application Version Data" },
+            { "id": "c", "text": "Android Visual Design" },
+            { "id": "d", "text": "Advanced Virtual Driver" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "AVD stands for Android Virtual Device used to run emulators.",
+          "hints": ["Used for testing", "Virtual phone"]
+        },
+        {
+          "id": "android_studio_4",
+          "question": "Which tool is used to design UI visually in Android Studio?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["UI Design"],
+          "options": [
+            { "id": "a", "text": "Logcat" },
+            { "id": "b", "text": "Layout Editor" },
+            { "id": "c", "text": "Gradle Console" },
+            { "id": "d", "text": "Terminal" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "Layout Editor helps in designing UI using drag-and-drop.",
+          "hints": ["Visual tool", "Drag and drop"]
+        },
+        {
+          "id": "android_studio_5",
+          "question": "Which tab is used to view logs and debug messages?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Debugging"],
+          "options": [
+            { "id": "a", "text": "Logcat" },
+            { "id": "b", "text": "Profiler" },
+            { "id": "c", "text": "AVD Manager" },
+            { "id": "d", "text": "SDK Manager" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "Logcat displays system logs and debugging messages.",
+          "hints": ["Logs", "Debug output"]
+        },
+        {
+          "id": "android_studio_6",
+          "question": "Which manager is used to install Android SDK tools?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["SDK"],
+          "options": [
+            { "id": "a", "text": "AVD Manager" },
+            { "id": "b", "text": "SDK Manager" },
+            { "id": "c", "text": "Device Manager" },
+            { "id": "d", "text": "Plugin Manager" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "SDK Manager is used to install and manage Android SDK tools.",
+          "hints": ["Installs SDK", "Required for development"]
+        }
+      ]
+    },
+    {
+      "name": "TextView in Android Quiz",
+      "difficulty": "easy",
+      "content": [
+        {
+          "id": "textview_1",
+          "question": "What is TextView used for in Android?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["UI"],
+          "options": [
+            { "id": "a", "text": "To take user input" },
+            { "id": "b", "text": "To display text" },
+            { "id": "c", "text": "To display images" },
+            { "id": "d", "text": "To create buttons" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "TextView is used to display text on the screen.",
+          "hints": ["Displays content", "Not for input"]
+        },
+        {
+          "id": "textview_2",
+          "question": "Which attribute sets text in TextView?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Attributes"],
+          "options": [
+            { "id": "a", "text": "android:value" },
+            { "id": "b", "text": "android:text" },
+            { "id": "c", "text": "android:hint" },
+            { "id": "d", "text": "android:label" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "android:text is used to define text content.",
+          "hints": ["Common attribute", "Displays string"]
+        },
+        {
+          "id": "textview_3",
+          "question": "Which attribute changes text size?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Styling"],
+          "options": [
+            { "id": "a", "text": "android:textColor" },
+            { "id": "b", "text": "android:textSize" },
+            { "id": "c", "text": "android:layout_width" },
+            { "id": "d", "text": "android:gravity" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "android:textSize controls the size of text.",
+          "hints": ["Size related", "Uses sp unit"]
+        },
+        {
+          "id": "textview_4",
+          "question": "Which attribute changes text color?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Styling"],
+          "options": [
+            { "id": "a", "text": "android:textStyle" },
+            { "id": "b", "text": "android:textColor" },
+            { "id": "c", "text": "android:background" },
+            { "id": "d", "text": "android:padding" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "android:textColor is used to change text color.",
+          "hints": ["Color attribute", "Applies to text"]
+        },
+        {
+          "id": "textview_5",
+          "question": "Which method is used to set text in TextView programmatically?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Code"],
+          "options": [
+            { "id": "a", "text": "setValue()" },
+            { "id": "b", "text": "setText()" },
+            { "id": "c", "text": "addText()" },
+            { "id": "d", "text": "putText()" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "setText() method is used to update text programmatically.",
+          "hints": ["Common method", "Starts with set"]
+        },
+        {
+          "id": "textview_6",
+          "question": "Which unit is recommended for text size in Android?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Units"],
+          "options": [
+            { "id": "a", "text": "px" },
+            { "id": "b", "text": "dp" },
+            { "id": "c", "text": "sp" },
+            { "id": "d", "text": "mm" }
+          ],
+          "correctAnswers": ["c"],
+          "explanation": "sp (scale-independent pixels) is recommended for text size.",
+          "hints": ["Responsive text", "Font scaling"]
+        },
+        {
+          "id": "textview_7",
+          "question": "Which attribute aligns text inside TextView?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Alignment"],
+          "options": [
+            { "id": "a", "text": "android:gravity" },
+            { "id": "b", "text": "android:layout_gravity" },
+            { "id": "c", "text": "android:orientation" },
+            { "id": "d", "text": "android:weight" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "android:gravity controls text alignment inside the view.",
+          "hints": ["Inside alignment", "Center/left/right"]
+        }
+      ]
+    }
+  ]
+}
