@@ -1,0 +1,170 @@
+{
+  "items": [
+    {
+      "name": "Section1-13",
+      "difficulty": "easy",
+      "content": [
+        {
+          "id": "Section-1-13-1",
+          "question": "What happens after you click Finish to create a project?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android app development"],
+          "options": [
+            { "id": "a", "text": "Project is created immediately" },
+            { "id": "b", "text": "Gradle build process starts and builds the application" },
+            { "id": "c", "text": "Project opens in editor" },
+            { "id": "d", "text": "Installation begins" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "After clicking Finish, the Gradle build system starts working and begins building your application. This is an automated process that compiles your project. You need to wait until the process is completely finished.",
+          "hints": ["Build system involved", "Automated process", "Wait for completion"]
+        },
+        {
+          "id": "Section-1-13-2",
+          "question": "What should you do while the Gradle build is in progress?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android app development"],
+          "options": [
+            { "id": "a", "text": "Close Android Studio" },
+            { "id": "b", "text": "Start editing code" },
+            { "id": "c", "text": "Wait until the process gets completed" },
+            { "id": "d", "text": "Restart your computer" }
+          ],
+          "correctAnswers": ["c"],
+          "explanation": "While the Gradle build process is running, you should wait until it is completely finished. Do not interrupt or close the IDE during this process.",
+          "hints": ["Patience required", "Building is happening", "Do not interrupt"]
+        },
+        {
+          "id": "Section-1-13-3",
+          "question": "What appears on your screen once the build is complete?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android app development"],
+          "options": [
+            { "id": "a", "text": "A blank screen" },
+            { "b": "b", "text": "Installation wizard" },
+            { "id": "c", "text": "An interface with various code sections" },
+            { "id": "d", "text": "Device selection page" }
+          ],
+          "correctAnswers": ["c"],
+          "explanation": "Once the build is complete, your screen will show an interface with various code sections and panels. Don't be afraid of this code; you will learn all of it during the course.",
+          "hints": ["Code visible", "Multiple sections", "IDE interface"]
+        },
+        {
+          "id": "Section-1-13-4",
+          "question": "What should you do to clean up your workspace initially?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android app development"],
+          "options": [
+            { "id": "a", "text": "Delete files" },
+            { "id": "b", "text": "Close everything and minimize side panels" },
+            { "id": "c", "text": "Restart Android Studio" },
+            { "id": "d", "text": "Change settings" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "To make your workspace cleaner and more manageable, you should close unnecessary elements and minimize side panels. This helps you focus better on learning.",
+          "hints": ["Organization task", "Minimize panels", "Cleaner workspace"]
+        },
+        {
+          "id": "Section-1-13-5",
+          "question": "Where is the minimize icon located to hide side panels?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android app development"],
+          "options": [
+            { "id": "a", "text": "At the top of the window" },
+            { "id": "b", "text": "On the side panel itself" },
+            { "id": "c", "text": "In the main menu" },
+            { "id": "d", "text": "At the bottom of the screen" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "The minimize icon is located on the side panel itself. You click on it to minimize or hide that panel from your view.",
+          "hints": ["Found on the panel", "Upper area typically", "Icon-based action"]
+        },
+        {
+          "id": "Section-1-13-6",
+          "question": "What folder should you click to see the app structure?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android app development"],
+          "options": [
+            { "id": "a", "text": "Data folder" },
+            { "id": "b", "text": "Folder icon at the top left side" },
+            { "id": "c", "text": "Cache folder" },
+            { "id": "d", "text": "System folder" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "By clicking on the folder icon available at the top left side of the IDE, you can see the app folder directory structure, which shows all the folders and files in your project.",
+          "hints": ["Top left location", "Icon-based", "Directory navigation"]
+        },
+        {
+          "id": "Section-1-13-7",
+          "question": "Where should you look to find the res (resource) directory?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android app development"],
+          "options": [
+            { "id": "a", "text": "In the app folder directory" },
+            { "id": "b", "text": "In the root directory" },
+            { "id": "c", "text": "In the system folder" },
+            { "id": "d", "text": "In the external storage" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "The res (resource) directory is located inside the app folder. Initially, you should expand this folder to understand the project structure.",
+          "hints": ["Inside app folder", "Resource folder", "Contains multiple folders"]
+        },
+        {
+          "id": "Section-1-13-8",
+          "question": "What is commonly found in the layout folder?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android app development"],
+          "options": [
+            { "id": "a", "text": "Images and icons" },
+            { "id": "b", "text": "Programming code" },
+            { "id": "c", "text": "XML files for UI design" },
+            { "id": "d", "text": "Raw media files" }
+          ],
+          "correctAnswers": ["c"],
+          "explanation": "The layout folder contains XML files that define the user interface layout. The activity_main.xml file is the default layout file for the main screen of your application.",
+          "hints": ["UI-related", "XML files", "Design files"]
+        },
+        {
+          "id": "Section-1-13-9",
+          "question": "What is an emulator in Android?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android app development"],
+          "options": [
+            { "id": "a", "text": "A physical Android device" },
+            { "id": "b", "text": "A virtual device that simulates a real Android device on your computer" },
+            { "id": "c", "text": "A development tool for coding" },
+            { "id": "d", "text": "A file management system" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "An emulator is a virtual device that allows you to run and test Android applications on your computer without needing a physical device. It mimics the hardware and software features of a real Android device, including the operating system, sensors, and storage.",
+          "hints": ["Virtual, not physical", "Simulates device", "For testing apps"]
+        },
+        {
+          "id": "Section-1-13-10",
+          "question": "How do you stop a running application on the emulator?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android app development"],
+          "options": [
+            { "id": "a", "text": "Press Alt+F4" },
+            { "id": "b", "text": "Click on the square icon at the top of the emulator" },
+            { "id": "c", "text": "Restart the emulator" },
+            { "id": "d", "text": "Close Android Studio" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "To stop a running application on the emulator, you click on the square icon mentioned at the top of the emulator window. This will stop the application execution.",
+          "hints": ["Icon-based", "Top of emulator", "Square shape"]
+        }
+      ]
+    }
+  ]
+}

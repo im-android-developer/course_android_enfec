@@ -1,0 +1,170 @@
+{
+  "items": [
+    {
+      "name": "Section1-10",
+      "difficulty": "easy",
+      "content": [
+        {
+          "id": "Section-1-10-1",
+          "question": "What is the first step to download Android Studio on Windows?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android app development"],
+          "options": [
+            { "id": "a", "text": "Run the installer" },
+            { "id": "b", "text": "Search 'Download Android Studio' in browser and hit enter" },
+            { "id": "c", "text": "Open the Downloads folder" },
+            { "id": "d", "text": "Create a developer account" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "The first step on Windows is the same as Mac: search for 'Download Android Studio' in your browser search bar and hit enter. This will take you to the official webpage.",
+          "hints": ["Browser search is first", "Include 'Download' in search", "Hit enter to search"]
+        },
+        {
+          "id": "Section-1-10-2",
+          "question": "Where can you check the configuration and process requirements for Windows installation?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android app development"],
+          "options": [
+            { "id": "a", "text": "In a pop-up window" },
+            { "id": "b", "text": "On the installation webpage under 'Install' tab" },
+            { "id": "c", "text": "In the installer file" },
+            { "id": "d", "text": "Only after downloading" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "On the Android Studio webpage, you will find an 'Install' tab that shows the procedure and minimum requirements needed by a Windows Laptop to install Android Studio.",
+          "hints": ["Check the webpage", "Look for 'Install' tab", "Before downloading"]
+        },
+        {
+          "id": "Section-1-10-3",
+          "question": "What must you do after finding the Download button on the webpage?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android app development"],
+          "options": [
+            { "id": "a", "text": "Close the browser" },
+            { "id": "b", "text": "Review and accept terms and conditions" },
+            { "id": "c", "text": "Restart your computer" },
+            { "id": "d", "text": "Install other software first" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "After clicking Download, you will see the Terms and Conditions page. You must review and accept the terms and conditions, then confirm to proceed with the download.",
+          "hints": ["Legal agreement", "Accept terms", "Then confirm"]
+        },
+        {
+          "id": "Section-1-10-4",
+          "question": "What happens after you confirm the terms and conditions?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android app development"],
+          "options": [
+            { "id": "a", "text": "Installation begins immediately" },
+            { "id": "b", "text": "A new window opens" },
+            { "id": "c", "text": "The download starts" },
+            { "id": "d", "text": "You need to create an account" }
+          ],
+          "correctAnswers": ["c"],
+          "explanation": "Once you confirm the terms and conditions, the download of Android Studio will begin automatically on your Windows computer.",
+          "hints": ["Download process begins", "After confirmation", "Automatic start"]
+        },
+        {
+          "id": "Section-1-10-5",
+          "question": "What should you do with the downloaded file to start installation?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android app development"],
+          "options": [
+            { "id": "a", "text": "Extract it to a folder" },
+            { "id": "b", "text": "Send it to another device" },
+            { "id": "c", "text": "Click on it to open the installation process" },
+            { "id": "d", "text": "Delete it after downloading" }
+          ],
+          "correctAnswers": ["c"],
+          "explanation": "Once the downloading is complete, you click on the downloaded file, which will launch the installation process for Android Studio on Windows.",
+          "hints": ["Click the downloaded file", "Opens installation wizard", "After download completes"]
+        },
+        {
+          "id": "Section-1-10-6",
+          "question": "What is the first action in the Windows installation wizard?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android app development"],
+          "options": [
+            { "id": "a", "text": "Choose installation type" },
+            { "id": "b", "text": "Accept license agreement" },
+            { "id": "c", "text": "Click Next" },
+            { "id": "d", "text": "Select components" }
+          ],
+          "correctAnswers": ["c"],
+          "explanation": "The first action in the Windows installation process is to click the 'Next' button. This is repeated multiple times throughout the installation wizard to proceed through each step.",
+          "hints": ["Simple first step", "Navigation button", "Proceed forward"]
+        },
+        {
+          "id": "Section-1-10-7",
+          "question": "When is the agreement screen shown during Windows installation?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android app development"],
+          "options": [
+            { "id": "a", "text": "At the very beginning" },
+            { "id": "b", "text": "After clicking Next multiple times" },
+            { "id": "c", "text": "At the end of installation" },
+            { "id": "d", "text": "During download" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "During the Windows installation process, after clicking 'Next' multiple times, you will see an agreement screen. You must click 'Accept' and then click 'Next' again to proceed.",
+          "hints": ["Appears after several Next clicks", "Legal agreement", "Must accept before continuing"]
+        },
+        {
+          "id": "Section-1-10-8",
+          "question": "What happens after you click 'Accept' on the agreement screen?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android app development"],
+          "options": [
+            { "id": "a", "text": "Installation finishes immediately" },
+            { "id": "b", "text": "Required components start downloading" },
+            { "id": "c", "text": "Your system restarts" },
+            { "id": "d", "text": "Another agreement appears" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "After clicking 'Accept' and then 'Next', you will see required components downloading by Android Studio. These include the SDK, emulator, and build tools. You need to wait until the download completes.",
+          "hints": ["Download process starts", "Components are downloaded", "Wait for completion"]
+        },
+        {
+          "id": "Section-1-10-9",
+          "question": "What should you do while Android Studio components are downloading?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android app development"],
+          "options": [
+            { "id": "a", "text": "Close the installation window" },
+            { "id": "b", "text": "Restart your computer" },
+            { "id": "c", "text": "Wait until the downloading is complete" },
+            { "id": "d", "text": "Cancel the installation" }
+          ],
+          "correctAnswers": ["c"],
+          "explanation": "While Android Studio downloads required components, you must wait until the download process is completely finished. Do not interrupt or close the installation window during this time.",
+          "hints": ["Patience is required", "Do not interrupt", "Wait for completion"]
+        },
+        {
+          "id": "Section-1-10-10",
+          "question": "What button do you click to complete the Windows installation?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android app development"],
+          "options": [
+            { "id": "a", "text": "Next" },
+            { "id": "b", "text": "Accept" },
+            { "id": "c", "text": "Install" },
+            { "id": "d", "text": "Finish" }
+          ],
+          "correctAnswers": ["d"],
+          "explanation": "Once the component download is complete, you click the 'Finish' button to complete the installation. After this, Android Studio is successfully installed on your Windows system.",
+          "hints": ["Final step button", "After downloads finish", "Completes installation"]
+        }
+      ]
+    }
+  ]
+}

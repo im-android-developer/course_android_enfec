@@ -1,0 +1,90 @@
+{
+  "items": [
+    {
+      "name": "Section3-3",
+      "difficulty": "medium",
+      "content": [
+        {
+          "id": "Section-3-3-1",
+          "question": "What does the numeric value (e.g., 160) shown in the layout editor usually represent?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android"],
+          "options": [
+            { "id": "a", "text": "A random ID" },
+            { "id": "b", "text": "A margin or spacing value from the top or other edges" },
+            { "id": "c", "text": "The font size" },
+            { "id": "d", "text": "The emulator's FPS" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "The instructor mentions that the 160 value is just a margin from the top; it's the spacing between elements or edges when nothing else is specified.",
+          "hints": ["Think spacing", "Margin or padding", "Distance from top"]
+        },
+        {
+          "id": "Section-3-3-2",
+          "question": "Why is an ID compared to an enrollment number in the transcript?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android"],
+          "options": [
+            { "id": "a", "text": "Both identify individuals uniquely" },
+            { "id": "b", "text": "Both are used for payment processing" },
+            { "id": "c", "text": "Both are graphical elements" },
+            { "id": "d", "text": "Both change the layout color" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "An ID uniquely identifies a view in the layout, similar to how an enrollment number uniquely identifies a student.",
+          "hints": ["Uniqueness", "Reference in code", "Identification"]
+        },
+        {
+          "id": "Section-3-3-3",
+          "question": "What mistake causes red squiggly lines, and when do those errors become build-stopping?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["Android Application Development", "Basics of Android"],
+          "options": [
+            { "id": "a", "text": "Missing an ID always stops the build" },
+            { "id": "b", "text": "Missing mandatory attributes like layout_width/layout_height will cause build failures; other small issues show squiggles but may not stop build" },
+            { "id": "c", "text": "Any color change causes a crash" },
+            { "id": "d", "text": "Changing text content stops the build" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "Red squiggles can indicate minor issues, but the app fails to build when essential attributes (layout_width/layout_height) are missing.",
+          "hints": ["Mandatory vs ignorable", "Width and height are crucial", "Check Logcat for crashes"]
+        },
+        {
+          "id": "Section-3-3-4",
+          "question": "Which action explains how to attach a view's constraint to another view's edge?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["Android Application Development", "Basics of Android"],
+          "options": [
+            { "id": "a", "text": "Drag from the constraint anchor of the child to the target anchor of the other view" },
+            { "id": "b", "text": "Type the IDs randomly" },
+            { "id": "c", "text": "Use the emulator controls" },
+            { "id": "d", "text": "Restart Android Studio" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "The instructor demonstrates dragging the anchor point from one view to another to create a constraint link between their edges.",
+          "hints": ["Anchor points", "Drag and connect", "Constraint anchors"]
+        },
+        {
+          "id": "Section-3-3-5",
+          "question": "Review question: From Section 2, which tag displays text on screen in Android XML?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android"],
+          "options": [
+            { "id": "a", "text": "ImageView" },
+            { "id": "b", "text": "TextView" },
+            { "id": "c", "text": "ButtonView" },
+            { "id": "d", "text": "LayoutView" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "TextView is the standard Android XML component used to display text on the user interface.",
+          "hints": ["Displays text", "Used for 'Hello World'", "Mentioned in Section 2"]
+        }
+      ]
+    }
+  ]
+}

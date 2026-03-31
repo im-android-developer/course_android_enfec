@@ -1,0 +1,170 @@
+{
+  "items": [
+    {
+      "name": "Section1-6",
+      "difficulty": "easy",
+      "content": [
+        {
+          "id": "Section-1-6-1",
+          "question": "In what year was Android originally born?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android app development"],
+          "options": [
+            { "id": "a", "text": "2001" },
+            { "id": "b", "text": "2003" },
+            { "id": "c", "text": "2005" },
+            { "id": "d", "text": "2008" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "Android was born in 2003, designed and developed by the team of Andy Rubin, Rich Miner, Nick Sears, and Chris White. This was the beginning of what would become a revolutionary platform for mobile computing.",
+          "hints": ["It's in the early 2000s", "Before Google acquired it", "The founding year"]
+        },
+        {
+          "id": "Section-1-6-2",
+          "question": "What was Android initially designed for?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android app development"],
+          "options": [
+            { "id": "a", "text": "Mobile phones" },
+            { "id": "b", "text": "Tablets and computers" },
+            { "id": "c", "text": "Digital cameras" },
+            { "id": "d", "text": "Television" }
+          ],
+          "correctAnswers": ["c"],
+          "explanation": "Android was initially designed for digital cameras, but the vision quickly shifted to mobile phones when the team realized the potential to make phones smarter and more connected. This change in direction led to the revolutionary platform we know today.",
+          "hints": ["Not originally for phones", "For photography initially", "Vision shifted quickly"]
+        },
+        {
+          "id": "Section-1-6-3",
+          "question": "In what year did Google acquire Android?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android app development"],
+          "options": [
+            { "id": "a", "text": "2003" },
+            { "id": "b", "text": "2004" },
+            { "id": "c", "text": "2005" },
+            { "id": "d", "text": "2007" }
+          ],
+          "correctAnswers": ["c"],
+          "explanation": "Google acquired Android in 2005, just two years after it was created. This acquisition was pivotal as it provided the resources and support necessary for Android's rapid development and growth.",
+          "hints": ["After Android was founded", "2005 is the year", "Google took over the project"]
+        },
+        {
+          "id": "Section-1-6-4",
+          "question": "What was the first Android phone called?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android app development"],
+          "options": [
+            { "id": "a", "text": "Samsung Galaxy" },
+            { "id": "b", "text": "HTC Dream" },
+            { "id": "c", "text": "Google Nexus" },
+            { "id": "d", "text": "Motorola Droid" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "The first Android phone was the HTC Dream, launched in 2008. This device marked the official beginning of Android's presence in the smartphone market and was a milestone in mobile computing history.",
+          "hints": ["Launched in 2008", "Made by HTC company", "It was the first Android phone"]
+        },
+        {
+          "id": "Section-1-6-5",
+          "question": "In what year was the first Android phone launched?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android app development"],
+          "options": [
+            { "id": "a", "text": "2006" },
+            { "id": "b", "text": "2007" },
+            { "id": "c", "text": "2008" },
+            { "id": "d", "text": "2009" }
+          ],
+          "correctAnswers": ["c"],
+          "explanation": "The first Android phone (HTC Dream) was launched in 2008, three years after Google acquired Android. This was the year Android officially entered the smartphone market and began its journey to becoming the world's most popular mobile operating system.",
+          "hints": ["Same year as first release", "After Google acquisition", "Beginning of Android phones"]
+        },
+        {
+          "id": "Section-1-6-6",
+          "question": "What was included in Android version 1.0?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android app development"],
+          "options": [
+            { "id": "a", "text": "Only basic calling functionality" },
+            { "id": "b", "text": "Gmail, Maps, YouTube, web browser, and Android Market" },
+            { "id": "c", "text": "Only games and entertainment apps" },
+            { "id": "d", "text": "Only messaging features" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "Android version 1.0 (released in 2008) included basic apps like Gmail for email, Maps for navigation, YouTube for video viewing, a web browser for internet access, and Android Market (now Google Play Store) for downloading apps.",
+          "hints": ["Basic essential applications", "Has email, maps, videos", "Launched in 2008"]
+        },
+        {
+          "id": "Section-1-6-7",
+          "question": "What major features were introduced in Android versions 1.5, 1.6, and 2.0?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android app development"],
+          "options": [
+            { "id": "a", "text": "Only bug fixes" },
+            { "id": "b", "text": "On-screen keyboard, third-party widgets, video recording, and Google Maps navigation" },
+            { "id": "c", "text": "Only new games" },
+            { "id": "d", "text": "Hardware improvements only" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "Versions 1.5 (Cupcake), 1.6 (Doughnut), and 2.0 (Eclair) released in 2009 introduced significant features including on-screen keyboard for easier typing, third-party widgets for customization, video recording capability, CDMA support, improved Android Market, innovative voice search, and Google Maps navigation.",
+          "hints": ["These are named version releases", "Added interactive features", "2009 releases"]
+        },
+        {
+          "id": "Section-1-6-8",
+          "question": "Which Android version introduced the Honeycomb interface?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android app development"],
+          "options": [
+            { "id": "a", "text": "Android 2.0" },
+            { "id": "b", "text": "Android 2.5" },
+            { "id": "c", "text": "Android 3.0" },
+            { "id": "d", "text": "Android 4.0" }
+          ],
+          "correctAnswers": ["c"],
+          "explanation": "Android 3.0, named Honeycomb, was released in 2011 and introduced a better user interface and the innovative face unlock system for enhanced security.",
+          "hints": ["Released in 2011", "Has a dessert name", "Version 3.0"]
+        },
+        {
+          "id": "Section-1-6-9",
+          "question": "What is the latest Android version mentioned in the course?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android app development"],
+          "options": [
+            { "id": "a", "text": "Android 14" },
+            { "id": "b", "text": "Android 15" },
+            { "id": "c", "text": "Android 16" },
+            { "id": "d", "text": "Android 17" }
+          ],
+          "correctAnswers": ["c"],
+          "explanation": "Android 16 is mentioned as the latest version (as of the course creation date in 2025). This version enhances the security of phones and includes advanced AI implementations to improve device performance and user experience.",
+          "hints": ["Mentioned as latest in 2025", "Focuses on security and AI", "Most recent version discussed"]
+        },
+        {
+          "id": "Section-1-6-10",
+          "question": "What platforms beyond smartphones has Android expanded to?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android app development"],
+          "options": [
+            { "id": "a", "text": "Only computers" },
+            { "id": "b", "text": "TVs, cars, and wearables" },
+            { "id": "c", "text": "Only gaming consoles" },
+            { "id": "d", "text": "Only tablets" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "Android has evolved beyond smartphones to power many devices including TVs (Android TV), cars (Android Automotive), and wearables (Wear OS). This expansion shows how versatile and adaptable the Android platform has become.",
+          "hints": ["Beyond just phones", "In homes and vehicles", "Multiple device types"]
+        }
+      ]
+    }
+  ]
+}

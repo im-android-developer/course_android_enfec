@@ -1,0 +1,170 @@
+{
+  "items": [
+    {
+      "name": "Section1-8",
+      "difficulty": "easy",
+      "content": [
+        {
+          "id": "Section-1-8-1",
+          "question": "What type of processor is recommended for running Android Studio efficiently?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android app development"],
+          "options": [
+            { "id": "a", "text": "Entry-level processor like Intel N-series" },
+            { "id": "b", "text": "Modern multi-core processor like Intel Core i5, i7, i9 or AMD Ryzen 5, 7, 9" },
+            { "id": "c", "text": "Basic single-core processor" },
+            { "id": "d", "text": "Any processor will work fine" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "A modern multi-core processor is recommended for Android Studio. Examples include Intel Core i5, i7, or i9 series, and AMD Ryzen 5, 7, or 9 series. These processors ensure that your development environment remains responsive even when handling large projects.",
+          "hints": ["Avoid entry-level processors", "Multi-core is important", "Modern processors are better"]
+        },
+        {
+          "id": "Section-1-8-2",
+          "question": "What are the recommended processors for Mac users?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android app development"],
+          "options": [
+            { "id": "a", "text": "Only Intel processors" },
+            { "id": "b", "text": "Intel i5 or i7 or Apple Silicon chips like M1, M2, M3, M4" },
+            { "id": "c", "text": "Only Apple Silicon chips" },
+            { "id": "d", "text": "Mac is not suitable for Android Studio" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "For Mac users, both Intel i5 or i7 processors and Apple Silicon chips (M1, M2, M3, or M4) will deliver excellent performance for Android Studio. Both options provide the necessary processing power for efficient Android development.",
+          "hints": ["Mac supports Intel and Apple Silicon", "M1, M2, M3, M4 are mentioned", "Both options are valid"]
+        },
+        {
+          "id": "Section-1-8-3",
+          "question": "Why should you avoid entry-level processors like Intel N-series or U-series?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android app development"],
+          "options": [
+            { "id": "a", "text": "They are too expensive" },
+            { "id": "b", "text": "They often struggle with the resource-intensive tasks Android Studio performs" },
+            { "id": "c", "text": "They are not compatible with Android Studio" },
+            { "id": "d", "text": "They consume too much battery" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "Entry-level processors like Intel's N-series or U-series often struggle with the resource-intensive tasks that Android Studio performs. These tasks include compilation, emulation, and building large projects, which require more processing power than entry-level processors can provide.",
+          "hints": ["It's about performance capability", "Android Studio is resource-intensive", "Entry-level means limited power"]
+        },
+        {
+          "id": "Section-1-8-4",
+          "question": "What is the minimum RAM (memory) requirement for Android Studio?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android app development"],
+          "options": [
+            { "id": "a", "text": "4 GB" },
+            { "id": "b", "text": "8 GB" },
+            { "id": "c", "text": "16 GB" },
+            { "id": "d", "text": "32 GB" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "While 8 GB is the minimum requirement for RAM, the course strongly recommends 16 GB or more for a smooth and lag-free experience. RAM plays a critical role in multitasking and running Android emulators.",
+          "hints": ["Minimum is lower than recommended", "It's 8 gigabytes", "Larger RAM is better"]
+        },
+        {
+          "id": "Section-1-8-5",
+          "question": "What RAM configuration is recommended for developers planning to run multiple instances or work on complex projects?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android app development"],
+          "options": [
+            { "id": "a", "text": "8 GB" },
+            { "id": "b", "text": "16 GB" },
+            { "id": "c", "text": "32 GB or higher" },
+            { "id": "d", "text": "64 GB or higher" }
+          ],
+          "correctAnswers": ["c"],
+          "explanation": "For developers planning to run multiple instances of Android Studio, use emulators, or work on complex projects (especially those involving AI/ML or large databases), upgrading to 32 GB or higher RAM is recommended. This ensures smooth performance even under demanding conditions.",
+          "hints": ["For multiple instances and complex projects", "Higher than basic recommendation", "32 GB is the minimum for this scenario"]
+        },
+        {
+          "id": "Section-1-8-6",
+          "question": "Why is SSD (Solid State Drive) storage essential for Android Studio?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android app development"],
+          "options": [
+            { "id": "a", "text": "It is cheaper than HDD" },
+            { "id": "b", "text": "It significantly reduces loading times, improves build speeds, and enhances overall system responsiveness" },
+            { "id": "c", "text": "It uses less power" },
+            { "id": "d", "text": "It makes the computer look newer" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "SSD storage is essential because it significantly reduces loading times, improves build speeds, and enhances overall system responsiveness. This is crucial for Android development where compilation and build times can be lengthy.",
+          "hints": ["It's about performance improvement", "Speed matters for development", "Faster than traditional HDD"]
+        },
+        {
+          "id": "Section-1-8-7",
+          "question": "What is the recommended minimum SSD storage capacity for Android Studio?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android app development"],
+          "options": [
+            { "id": "a", "text": "128 GB" },
+            { "id": "b", "text": "256 GB" },
+            { "id": "c", "text": "512 GB" },
+            { "id": "d", "text": "1 TB" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "Aim for at least 256 GB of SSD storage. However, if you plan to store multiple projects, SDKs, emulators, and media files, 512 GB or more is ideal. The more storage you have, the more projects and tools you can keep without constantly managing space.",
+          "hints": ["256 GB is the minimum", "More is needed for multiple projects", "512 GB is better for developers"]
+        },
+        {
+          "id": "Section-1-8-8",
+          "question": "What is the minimum display resolution recommended for Android Studio?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android app development"],
+          "options": [
+            { "id": "a", "text": "1024 x 768 pixels" },
+            { "id": "b", "text": "1280 x 800 pixels" },
+            { "id": "c", "text": "1920 x 1080 pixels" },
+            { "id": "d", "text": "2560 x 1440 pixels" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "The minimum required resolution is 1280 x 800 pixels, but the course recommends a full HD resolution of 1920 x 1080 pixels or higher for optimal workspace visibility. A larger display with higher resolution makes coding and UI design much more comfortable.",
+          "hints": ["1280 x 800 is minimum", "Full HD is recommended", "Higher resolution is better"]
+        },
+        {
+          "id": "Section-1-8-9",
+          "question": "Which operating systems does Android Studio support?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android app development"],
+          "options": [
+            { "id": "a", "text": "Only Windows" },
+            { "id": "b", "text": "Only macOS" },
+            { "id": "c", "text": "Windows, macOS, and Linux" },
+            { "id": "d", "text": "Only Linux" }
+          ],
+          "correctAnswers": ["c"],
+          "explanation": "Android Studio is a cross-platform application and supports Windows, macOS, and Linux. This means developers can choose their preferred operating system while using the same development environment.",
+          "hints": ["Cross-platform means multiple OS", "Three operating systems are supported", "Works on major platforms"]
+        },
+        {
+          "id": "Section-1-8-10",
+          "question": "What additional system considerations are important for Android Studio development?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android app development"],
+          "options": [
+            { "id": "a", "text": "Only a powerful processor matters" },
+            { "id": "b", "text": "Effective cooling, sufficient USB/Thunderbolt ports, and stable internet connection" },
+            { "id": "c", "text": "Only storage space is important" },
+            { "id": "d", "text": "None of these factors matter" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "Additional important considerations include effective cooling to prevent thermal throttling during long development sessions, sufficient USB or Thunderbolt Type-C ports for connecting external devices and testing hardware, and a stable internet connection that is essential for downloading SDKs, libraries, and updates.",
+          "hints": ["Multiple factors are important", "Cooling prevents overheating", "Internet connection is essential"]
+        }
+      ]
+    }
+  ]
+}

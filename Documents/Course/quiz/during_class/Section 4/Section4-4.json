@@ -1,0 +1,210 @@
+{
+  "items": [
+    {
+      "name": "Section4-4",
+      "difficulty": "hard",
+      "content": [
+        {
+          "id": "Section-4-4-1",
+          "question": "After adding Poppins Medium to the project, where is the font file stored and what is its format?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android"],
+          "options": [
+            { "id": "a", "text": "In the drawable folder as a .png file" },
+            { "id": "b", "text": "In the font folder as a .ttf file" },
+            { "id": "c", "text": "In the values folder as an XML resource" },
+            { "id": "d", "text": "In the mipmap folder as a .otf file" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "When Poppins Medium is added to the project, it is stored in the font directory as a .ttf (TrueType Font) file named poppins_medium.ttf.",
+          "hints": [
+            "The new folder created for fonts was visible in the project panel.",
+            "The file extension for this type of font is .ttf.",
+            "The font folder sits alongside drawable, layout, and values."
+          ]
+        },
+        {
+          "id": "Section-4-4-2",
+          "question": "After adding Poppins Medium to the project, how do you apply it as the fontFamily of a TextView?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android"],
+          "options": [
+            { "id": "a", "text": "Type the font name manually as a string directly in the XML" },
+            { "id": "b", "text": "Search 'font family' in the Attributes panel and select Poppins Medium from the available fonts" },
+            { "id": "c", "text": "Drag the .ttf file onto the TextView in the design view" },
+            { "id": "d", "text": "Restart Android Studio to detect the new font" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "Once the font is added to the project, it becomes available in the fontFamily attribute dropdown. Search for 'font family' in the Attributes panel and Poppins Medium will appear as an option.",
+          "hints": [
+            "No additional steps are needed after adding the font to the project.",
+            "The font appears automatically in the fontFamily picker.",
+            "You search for 'font family' the same way you did before picking the font."
+          ]
+        },
+        {
+          "id": "Section-4-4-3",
+          "question": "How do you make the 'Login Screen' title text bold after applying the Poppins Medium font?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android"],
+          "options": [
+            { "id": "a", "text": "Change the fontFamily to Poppins Bold" },
+            { "id": "b", "text": "Add android:textStyle and set its value to bold" },
+            { "id": "c", "text": "Increase the textSize to make text appear heavier" },
+            { "id": "d", "text": "Add android:fontWeight and set it to 700" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "To make text bold, use the android:textStyle attribute and set it to 'bold'. This was applied after setting the fontFamily to Poppins Medium.",
+          "hints": [
+            "The instructor explicitly said 'let me make it more bold'.",
+            "Bold is a valid value for the textStyle attribute.",
+            "textStyle was covered in a previous episode with values: bold, italic, normal."
+          ]
+        },
+        {
+          "id": "Section-4-4-4",
+          "question": "What is the purpose of setting up constraints on a view in a ConstraintLayout?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android"],
+          "options": [
+            { "id": "a", "text": "To define the size of the view" },
+            { "id": "b", "text": "To define the position and alignment of the view relative to other views or the parent" },
+            { "id": "c", "text": "To change the background color of the view" },
+            { "id": "d", "text": "To link the view to a Kotlin function" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "In a ConstraintLayout, constraints define where a view is positioned. Without constraints, views float to the top-left corner by default and their position is undefined at runtime.",
+          "hints": [
+            "ConstraintLayout requires all views to have constraints to be positioned correctly.",
+            "Constraints connect a view's edges to the edges of other views or the parent.",
+            "The instructor said 'now let's set up the constraints first'."
+          ]
+        },
+        {
+          "id": "Section-4-4-5",
+          "question": "How do you connect a constraint handle from one view to another in the Android Studio design editor?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["Android Application Development", "Basics of Android"],
+          "options": [
+            { "id": "a", "text": "Double-click the constraint handle to auto-connect to the nearest view" },
+            { "id": "b", "text": "Click and hold the constraint handle, drag it to the target view or edge, then release" },
+            { "id": "c", "text": "Right-click the view and select 'Add Constraint'" },
+            { "id": "d", "text": "Type the constraint target manually in the XML file" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "To connect a constraint, click and hold the circular constraint handle on the view's edge, drag it to the target view or parent edge, and then release. The constraint is created at that point.",
+          "hints": [
+            "The instructor said 'click hold drag connect and release'.",
+            "The handle is the small circle on each side of a selected view.",
+            "Releasing on another view's edge creates the constraint connection."
+          ]
+        },
+        {
+          "id": "Section-4-4-6",
+          "question": "Which constraint was added to position the 'Login Screen' TextView directly below the avatar ImageView?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["Android Application Development", "Basics of Android"],
+          "options": [
+            { "id": "a", "text": "The bottom constraint of the TextView connected to the top of the ImageView" },
+            { "id": "b", "text": "The top constraint of the TextView connected to the bottom of the ImageView" },
+            { "id": "c", "text": "The left constraint of the TextView connected to the right of the ImageView" },
+            { "id": "d", "text": "The right constraint of the TextView connected to the left of the ImageView" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "To place the 'Login Screen' TextView below the ImageView, the top constraint of the TextView is connected to the bottom constraint of the ImageView.",
+          "hints": [
+            "Think about which edge of the lower view connects to which edge of the upper view.",
+            "The TextView sits below the ImageView, so the top of the TextView points to the bottom of the ImageView.",
+            "The instructor hovered over the 'top constraint' handle and dragged it to the ImageView."
+          ]
+        },
+        {
+          "id": "Section-4-4-7",
+          "question": "What problem occurred with the 'Login Screen' text after applying the Poppins Medium Bold font, and what caused it?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["Android Application Development", "Basics of Android"],
+          "options": [
+            { "id": "a", "text": "The text became invisible because Poppins does not support bold" },
+            { "id": "b", "text": "The bottom of the letter 'g' was being cut off because the font size was too large for the view height" },
+            { "id": "c", "text": "The text overflowed horizontally outside the TextView width" },
+            { "id": "d", "text": "The text color changed to a different color automatically" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "Letters like 'g' have descenders (tails that go below the baseline). The existing textSize caused the descender to be cut off by the bottom boundary of the TextView. Reducing the textSize to 30dp fixed this.",
+          "hints": [
+            "The instructor described it as 'cutting off'.",
+            "It was the letter 'g' specifically that was affected.",
+            "The fix was to reduce the text size."
+          ]
+        },
+        {
+          "id": "Section-4-4-8",
+          "question": "What textSize value was set on the 'Login Screen' title to fix the letter cut-off issue?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android"],
+          "options": [
+            { "id": "a", "text": "25dp" },
+            { "id": "b", "text": "40dp" },
+            { "id": "c", "text": "30dp" },
+            { "id": "d", "text": "20dp" }
+          ],
+          "correctAnswers": ["c"],
+          "explanation": "The textSize was changed to 30dp after the instructor observed that the letter 'g' was being cut off. This smaller size allowed all characters to display fully within the TextView.",
+          "hints": [
+            "The instructor said 'let me change the font text size that is 30dp'.",
+            "The value is between 25dp and 35dp.",
+            "It is an even multiple of 10."
+          ]
+        },
+        {
+          "id": "Section-4-4-9",
+          "question": "After fixing the textSize, the 'Login Screen' text was aligned to the left. Which attribute and value were used to center it?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android"],
+          "options": [
+            { "id": "a", "text": "android:textAlignment = center" },
+            { "id": "b", "text": "android:gravity = center" },
+            { "id": "c", "text": "android:layout_gravity = center" },
+            { "id": "d", "text": "android:justification = center" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "android:gravity = center was set on the TextView to align the 'Login Screen' text to the center of the TextView box, exactly as had been done in a previous episode.",
+          "hints": [
+            "The instructor said 'we will use gravity and centre'.",
+            "This attribute was already taught in Episode 1.",
+            "The value 'center' places the text in the middle of the view box."
+          ]
+        },
+        {
+          "id": "Section-4-4-10",
+          "question": "How many constraint directions does a view in a ConstraintLayout typically need to be fully positioned?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["Android Application Development", "Basics of Android"],
+          "options": [
+            { "id": "a", "text": "Only one — a single top constraint is enough" },
+            { "id": "b", "text": "At least two — one horizontal and one vertical constraint" },
+            { "id": "c", "text": "Exactly four — all four sides must always be constrained" },
+            { "id": "d", "text": "None — ConstraintLayout positions views automatically" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "A view needs at least one horizontal constraint (left or right) and one vertical constraint (top or bottom) to be fully positioned in a ConstraintLayout. The instructor demonstrated connecting multiple sides during the login screen setup.",
+          "hints": [
+            "Position requires both an x-axis and a y-axis reference.",
+            "Without a horizontal constraint, the view has no defined left-right position.",
+            "Without a vertical constraint, the view has no defined top-bottom position."
+          ]
+        }
+      ]
+    }
+  ]
+}

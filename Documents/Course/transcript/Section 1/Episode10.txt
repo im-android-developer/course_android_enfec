@@ -1,0 +1,7 @@
+(0:00) Similar to the Mac, let's download and instal the Android Studio into Windows Laptop. (0:07) First, type Download Android Studio and hit enter. (0:11) You will find a webpage.
+(0:13) To check the configuration and process, click on Instal. (0:19) On this webpage, you will find the procedure and minimum requirements (0:24) that is needed by a Windows Laptop to instal Android Studio inside it. (0:29) Now, click on Download.
+(0:32) You will find the Terms and Conditions page. (0:36) Perfect. (0:37) Just accept the terms and conditions and then confirm.
+(0:42) Once confirmed, you will see the downloading starts. (0:49) Once the downloading is done, click on the downloaded file (0:53) and you will see the installation process. (1:02) On this first, just click on Next.
+(1:06) Again, Next. (1:08) Again, you have to click on Next. (1:11) Again, you have to click on Next.
+(1:14) Now, you will see some agreement over here. (1:17) Just click on Accept and then click on Next. (1:22) Over here, you will see some required components are downloading by Android Studio.
+(1:29) We need to wait till the downloading gets complete. (1:38) Once done, click on Finish and boom! (1:45) It's successfully installed.

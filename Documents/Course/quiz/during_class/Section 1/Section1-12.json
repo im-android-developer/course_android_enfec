@@ -1,0 +1,170 @@
+{
+  "items": [
+    {
+      "name": "Section1-12",
+      "difficulty": "easy",
+      "content": [
+        {
+          "id": "Section-1-12-1",
+          "question": "What is the first action after selecting a template?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android app development"],
+          "options": [
+            { "id": "a", "text": "Click on Finish" },
+            { "id": "b", "text": "Click on Cancel" },
+            { "id": "c", "text": "Click on Next" },
+            { "id": "d", "text": "Click on Back" }
+          ],
+          "correctAnswers": ["c"],
+          "explanation": "After selecting a template like Empty Views Activity, the first action is to click on the 'Next' button to proceed to the project configuration screen.",
+          "hints": ["Navigation button", "Forward direction", "First step"]
+        },
+        {
+          "id": "Section-1-12-2",
+          "question": "What is the purpose of the introduction screen that appears after clicking Next?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android app development"],
+          "options": [
+            { "id": "a", "text": "To download components" },
+            { "id": "b", "text": "To provide basic information about the project" },
+            { "id": "c", "text": "To select a template" },
+            { "id": "d", "text": "To install Android Studio" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "The introduction screen contains a form that helps you provide basic information about your project such as name, package name, save location, minimum SDK, language, and build configuration language.",
+          "hints": ["Form-based input", "Project configuration", "Information collection"]
+        },
+        {
+          "id": "Section-1-12-3",
+          "question": "What information is crucial for project properties?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android app development"],
+          "options": [
+            { "id": "a", "text": "Only the application name" },
+            { "id": "b", "text": "Only the package name" },
+            { "id": "c", "text": "All the basic project information provided in the form" },
+            { "id": "d", "text": "Only the save location" }
+          ],
+          "correctAnswers": ["c"],
+          "explanation": "All the information provided in the introduction form is crucial because the project properties are built on the basis of this information. The most important fields to focus on initially are the name and package name.",
+          "hints": ["Form fields matter", "Properties depend on it", "Complete information needed"]
+        },
+        {
+          "id": "Section-1-12-4",
+          "question": "What is the application name in the example given?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android app development"],
+          "options": [
+            { "id": "a", "text": "First Application" },
+            { "id": "b", "text": "My First Project" },
+            { "id": "c", "text": "Hello World" },
+            { "id": "d", "text": "Android App" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "In the example provided in the course, the application name is 'My First Project'. This is a user-friendly name for your application.",
+          "hints": ["Starts with 'My'", "Contains 'Project'", "Example name"]
+        },
+        {
+          "id": "Section-1-12-5",
+          "question": "What is the purpose of package name?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android app development"],
+          "options": [
+            { "id": "a", "text": "To name the company" },
+            { "id": "b", "text": "To be the unique identity of the application on Google Play Store and in your phone" },
+            { "id": "c", "text": "To identify the developer" },
+            { "id": "d", "text": "To store files" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "The package name serves as the unique identity of your application on the Google Play Store and on your phone, just like a passport for a citizen of a country. Mistakes in this field are not acceptable.",
+          "hints": ["Unique identifier", "Play Store related", "Like a passport"]
+        },
+        {
+          "id": "Section-1-12-6",
+          "question": "What should you always start a package name with?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android app development"],
+          "options": [
+            { "id": "a", "text": "org" },
+            { "id": "b", "text": "net" },
+            { "id": "c", "text": "com" },
+            { "id": "d", "text": "app" }
+          ],
+          "correctAnswers": ["c"],
+          "explanation": "There is no standard pattern for package names, but you should always start with 'com' followed by a dot as a delimiter. After that comes the organization name.",
+          "hints": ["Three letters", "Common prefix", "Starts the format"]
+        },
+        {
+          "id": "Section-1-12-7",
+          "question": "How should organization name be separated in a package name?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android app development"],
+          "options": [
+            { "id": "a", "text": "Using spaces" },
+            { "id": "b", "text": "Using commas" },
+            { "id": "c", "text": "Using underscore or dot" },
+            { "id": "d", "text": "Using hyphens" }
+          ],
+          "correctAnswers": ["c"],
+          "explanation": "When separating parts of the organization name in a package name, you can use either an underscore or a dot. For example: com.my_world or com.my.world. Special characters like plus, equals, or comma are not acceptable.",
+          "hints": ["Two options available", "One uses underscore", "One uses dot"]
+        },
+        {
+          "id": "Section-1-12-8",
+          "question": "What special characters are NOT acceptable in a package name?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android app development"],
+          "options": [
+            { "id": "a", "text": "Underscore" },
+            { "id": "b", "text": "Dot" },
+            { "id": "c", "text": "Plus, equals, and comma" },
+            { "id": "d", "text": "Numbers" }
+          ],
+          "correctAnswers": ["c"],
+          "explanation": "Special characters such as plus (+), equals (=), and comma (,) are not acceptable in package names. You should only use dots and underscores for separating parts.",
+          "hints": ["Mathematical symbols", "Arithmetic characters", "Avoid these"]
+        },
+        {
+          "id": "Section-1-12-9",
+          "question": "What is the recommended approach for using dots in organization names?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android app development"],
+          "options": [
+            { "id": "a", "text": "Use as many as needed" },
+            { "id": "b", "text": "Avoid using them in organization names because they lead to confusion" },
+            { "id": "c", "text": "Always use them" },
+            { "id": "d", "text": "Use them at the end only" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "It is not recommended to put dots in organization names within the package name because it leads to confusion. Use underscores instead to separate words in the organization name.",
+          "hints": ["Best practice advice", "Avoid confusion", "Use underscore instead"]
+        },
+        {
+          "id": "Section-1-12-10",
+          "question": "What should you do after entering all project information?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android app development"],
+          "options": [
+            { "id": "a", "text": "Click on Next" },
+            { "id": "b", "text": "Click on Back" },
+            { "id": "c", "text": "Click on Finish" },
+            { "id": "d", "text": "Click on Cancel" }
+          ],
+          "correctAnswers": ["c"],
+          "explanation": "Once you have filled in all the project information correctly, you click on the 'Finish' button to proceed with project creation.",
+          "hints": ["Final step", "Completes configuration", "Creates project"]
+        }
+      ]
+    }
+  ]
+}

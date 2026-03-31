@@ -1,0 +1,2 @@
+Now the question arises, why programming languages are needed? (0:04) We all know machines don't understand human languages. (0:09) They speak in binary, data zeros and ones. Similarly, humans don't naturally understand (0:16) machine language.
+So we use programming languages to translate our ideas into something machines (0:23) can understand through compilers and interpreters.

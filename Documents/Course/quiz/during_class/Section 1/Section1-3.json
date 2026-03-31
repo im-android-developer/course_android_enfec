@@ -1,0 +1,170 @@
+{
+  "items": [
+    {
+      "name": "Section1-3",
+      "difficulty": "easy",
+      "content": [
+        {
+          "id": "Section-1-3-1",
+          "question": "What is a programme defined as in the course?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android app development"],
+          "options": [
+            { "id": "a", "text": "A collection of hardware components" },
+            { "id": "b", "text": "A set of instructions that guides the system to perform a specific task" },
+            { "id": "c", "text": "An operating system" },
+            { "id": "d", "text": "A user interface design" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "A programme is a set of instructions that guides the system to perform a specific task. These instructions are the core of software and tell the computer what operations to execute in what order.",
+          "hints": ["Programme means instructions", "It guides the system", "It's about performing tasks"]
+        },
+        {
+          "id": "Section-1-3-2",
+          "question": "What is a programming language used for?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android app development"],
+          "options": [
+            { "id": "a", "text": "To communicate with humans only" },
+            { "id": "b", "text": "To write instructions that later get translated into machine language" },
+            { "id": "c", "text": "To design computer hardware" },
+            { "id": "d", "text": "To manage operating systems" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "A programming language is a special set of instructions written in a specific format that can be understood into actual code. These languages allow developers to write human-readable instructions that are then translated (compiled or interpreted) into machine language (binary) that computers can execute.",
+          "hints": ["It's a tool for writing code", "It acts as a translator medium", "Developers use it to communicate with machines"]
+        },
+        {
+          "id": "Section-1-3-3",
+          "question": "What is the process called when you write instructions using one or more programming languages?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android app development"],
+          "options": [
+            { "id": "a", "text": "Compilation" },
+            { "id": "b", "text": "Debugging" },
+            { "id": "c", "text": "Programming" },
+            { "id": "d", "text": "Execution" }
+          ],
+          "correctAnswers": ["c"],
+          "explanation": "The process of writing instructions using one or more programming languages is known as programming. It involves writing code in languages like Python, Java, Kotlin, C++, PHP, and others to create programs.",
+          "hints": ["It's what programmers do", "It involves writing code", "It's the act of creating programmes"]
+        },
+        {
+          "id": "Section-1-3-4",
+          "question": "Which of the following is an example of a programming language mentioned in the course?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android app development"],
+          "options": [
+            { "id": "a", "text": "Android" },
+            { "id": "b", "text": "Windows" },
+            { "id": "c", "text": "Kotlin" },
+            { "id": "d", "text": "Google Play" }
+          ],
+          "correctAnswers": ["c"],
+          "explanation": "Kotlin is one of the programming languages mentioned in the course. Other examples listed include C++, Swift, Java, Python, Golang, and PHP. Kotlin is particularly important as it's the official language for Android development.",
+          "hints": ["It's listed with other programming languages", "Kotlin is used for Android", "It's not an operating system or platform"]
+        },
+        {
+          "id": "Section-1-3-5",
+          "question": "True or False: You can write a programme without using a programming language.",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android app development"],
+          "options": [
+            { "id": "a", "text": "True" },
+            { "id": "b", "text": "False" },
+            { "id": "c", "text": "Sometimes possible" },
+            { "id": "d", "text": "Only in rare cases" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "False. To write a programme, you must use a programming language. The instructions that guide the system must be written in a specific language that can be translated into machine instructions.",
+          "hints": ["Programming language is essential", "Think about translation to machine code", "You cannot bypass programming languages"]
+        },
+        {
+          "id": "Section-1-3-6",
+          "question": "What is the relationship between a programme and a programming language?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android app development"],
+          "options": [
+            { "id": "a", "text": "A programme is the same as a programming language" },
+            { "id": "b", "text": "A programme is written using a programming language" },
+            { "id": "c", "text": "Programming languages are created using programmes" },
+            { "id": "d", "text": "There is no relationship between them" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "A programme is created by writing instructions using one or more programming languages. The programming language is the tool or medium used to express the programme's logic and instructions.",
+          "hints": ["Language is the medium of expression", "Programmes are created with languages", "They have a creator-tool relationship"]
+        },
+        {
+          "id": "Section-1-3-7",
+          "question": "Name at least three programming languages mentioned in the course.",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android app development"],
+          "options": [
+            { "id": "a", "text": "C++, Kotlin, and Python" },
+            { "id": "b", "text": "Android, iOS, and Windows" },
+            { "id": "c", "text": "HTML, CSS, and JavaScript" },
+            { "id": "d", "text": "Visual Basic, Assembly, and Fortran" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "C++, Kotlin, and Python are three of the programming languages explicitly mentioned in the course. The course also mentions Swift, Java, Golang, and PHP as additional programming languages used for software development.",
+          "hints": ["Look at the list provided in the transcript", "Kotlin is for Android", "Python and C++ are widely used"]
+        },
+        {
+          "id": "Section-1-3-8",
+          "question": "What is the purpose of having different programming languages?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android app development"],
+          "options": [
+            { "id": "a", "text": "To confuse developers" },
+            { "id": "b", "text": "Each language is specialized for different tasks and platforms" },
+            { "id": "c", "text": "To make programming easier" },
+            { "id": "d", "text": "There is no particular purpose" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "Different programming languages exist because each is specialized for different purposes and platforms. For example, Kotlin is optimized for Android development, Swift for iOS, and Python for data science and general-purpose programming. This specialization makes development more efficient.",
+          "hints": ["Different languages for different purposes", "Think about Android, iOS, web development", "Each has its strength"]
+        },
+        {
+          "id": "Section-1-3-9",
+          "question": "Can the same programme be written in multiple programming languages?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android app development"],
+          "options": [
+            { "id": "a", "text": "No, once written in one language it cannot be changed" },
+            { "id": "b", "text": "Yes, the same logic can be expressed in different programming languages" },
+            { "id": "c", "text": "Only for simple programmes" },
+            { "id": "d", "text": "It is not recommended" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "Yes, the same programme can be written in multiple programming languages. The logic and algorithm remain the same, but the syntax and specific implementation details differ based on the language used. Both implementations achieve the same result.",
+          "hints": ["Think about rewriting code in different languages", "Logic is universal, syntax varies", "Cross-platform development is possible"]
+        },
+        {
+          "id": "Section-1-3-10",
+          "question": "Is Kotlin mentioned as an important programming language for Android development?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android app development"],
+          "options": [
+            { "id": "a", "text": "No, Kotlin is not used for Android" },
+            { "id": "b", "text": "Yes, Kotlin is an important language for Android development" },
+            { "id": "c", "text": "Kotlin is used only for web development" },
+            { "id": "d", "text": "Kotlin was discontinued" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "Yes, Kotlin is mentioned as an important programming language for Android development. In fact, Kotlin is now the official language recommended by Google for Android app development, though Java was used traditionally.",
+          "hints": ["Kotlin is in the list of programming languages", "It's specifically mentioned for this course", "Android development will use it"]
+        }
+      ]
+    }
+  ]
+}

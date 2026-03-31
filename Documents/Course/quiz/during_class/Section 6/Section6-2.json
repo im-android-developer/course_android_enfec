@@ -1,0 +1,410 @@
+{
+  "items": [
+    {
+      "name": "Section6-2",
+      "difficulty": "medium",
+      "content": [
+        {
+          "id": "Section-6-2-1",
+          "question": "For which type of application screens is LinearLayout the most recommended layout choice?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "LinearLayout"],
+          "options": [
+            { "id": "a", "text": "Screens with components that must overlap each other or be placed at exact pixel coordinates." },
+            { "id": "b", "text": "Simple, ordered screens like login forms, to-do lists, music players, or calculator button rows where elements stack predictably." },
+            { "id": "c", "text": "Screens displaying large image galleries with irregular grid placements." },
+            { "id": "d", "text": "Screens that require complex animations and transitions between elements." }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "The instructor said: 'If your design is straight and ordered, LinearLayout is the best option.' Use cases given included: login form (email, password, button stacked), to-do apps, music players, and calculator button rows.",
+          "hints": [
+            "The instructor used the keyword 'simple' and 'ordered'.",
+            "Login screen, to-do app, music player, and calculator were all listed.",
+            "The key characteristic is a predictable sequential arrangement."
+          ]
+        },
+        {
+          "id": "Section-6-2-2",
+          "question": "The instructor defined 'blending of layouts' during Episode 2 of Section 6. A developer on your team misunderstands this and thinks it means applying multiple orientation values (both 'horizontal' and 'vertical') to a single LinearLayout. What is the correct meaning of 'blending of layouts' as explained in class, and why is the developer's interpretation wrong?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["Android Application Development", "LinearLayout", "Blending Layouts"],
+          "options": [
+            { "id": "a", "text": "The developer is correct. Android allows you to set orientation='vertical horizontal' on a single LinearLayout as a space-separated list. 'Blending of layouts' simply refers to using this dual-orientation feature. This is what creates complex arrangements within a single container." },
+            { "id": "b", "text": "Blending of layouts means using more than one type of layout combined within a single screen. For example, nesting a horizontal LinearLayout inside a vertical LinearLayout, or placing a ConstraintLayout inside a ScrollView. A single LinearLayout can only have one orientation attribute — the developer's interpretation is wrong because the combination happens through nesting different layout containers, not through a single container accepting multiple orientations." },
+            { "id": "c", "text": "Blending of layouts is an advanced technique exclusive to Material Design 3 components. It requires importing a special blending library from Jetpack Compose and has no XML equivalent. The orientation attribute and standard LinearLayouts are unrelated to this concept." },
+            { "id": "d", "text": "Blending of layouts means mixing XML layouts with Kotlin code layouts in the same screen file. When XML and Kotlin screen code are used together, that constitutes a 'blended' layout." }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "The instructor defined blending of layouts as 'using more than one layout combined within a single frame.' This means nesting different layout types together — such as a horizontal LinearLayout inside a vertical LinearLayout. A single layout container can only have one orientation value.",
+          "hints": [
+            "The instructor said 'using more than one layout combined within a single frame'.",
+            "This is achieved through nesting layouts inside each other.",
+            "A single LinearLayout cannot have two orientations at once."
+          ]
+        },
+        {
+          "id": "Section-6-2-3",
+          "question": "You are creating a new Activity in Android Studio for a login screen in an app that already has a MainActivity. During the wizard, you type 'MainActivity' as the activity name and click Finish. What error will you encounter and what rule does this enforce in Android development?",
+          "type": "mcq",
+          "difficulty": "hard",
+          "tags": ["Android Application Development", "Activity Creation", "AndroidManifest"],
+          "options": [
+            { "id": "a", "text": "No error will occur. Android allows two activities with the same name in the same package as long as their XML layout files have different names. The system identifies activities by their layout file, not their Kotlin class name." },
+            { "id": "b", "text": "An error stating 'activity name must be unique' will appear. Each Activity in an Android application must have a unique class name within the same package. The Kotlin class, the XML layout, and the manifest registration are all derived from this name — duplicates would create conflicts in all three areas." },
+            { "id": "c", "text": "Android Studio will display a warning (not an error) saying the name is already in use. You can proceed through the warning and Android will automatically append a number suffix (MainActivity2) to resolve the conflict in the background." },
+            { "id": "d", "text": "The wizard will allow it, but the new activity will silently replace the existing MainActivity, deleting its Kotlin code and XML file. Always create a backup before reusing a name." }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "The instructor demonstrated this: after trying to create an activity with the same name, an error appeared: 'activity name must be unique.' Activity names must be unique because they define the Kotlin class name, XML file name, and manifest registration. The instructor then used 'login_screen_2' to avoid the conflict.",
+          "hints": [
+            "The instructor intentionally triggered this error during the demonstration.",
+            "The error message was 'activity name must be unique'.",
+            "The solution was appending '_2' to create a unique name."
+          ]
+        },
+        {
+          "id": "Section-6-2-4",
+          "question": "When creating a new Activity in Android Studio, what does the 'Launcher activity' checkbox do in the New Activity wizard?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Activity Creation", "LauncherActivity", "AndroidManifest"],
+          "options": [
+            { "id": "a", "text": "It makes the activity launch automatically on a timer after the app is opened." },
+            { "id": "b", "text": "It automatically adds an intent-filter with action MAIN and category LAUNCHER to the new activity's declaration in AndroidManifest.xml, making it the entry point of the app." },
+            { "id": "c", "text": "It installs a shortcut icon for the activity onto the device's home screen independently of the main app icon." },
+            { "id": "d", "text": "It enables faster rendering by pre-loading this activity in memory before the user navigates to it." }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "The instructor said: 'If I check the launcher activity, it will automatically add the intent-filter to my manifest for this new screen, making it the app launch point.' The intent-filter with MAIN/LAUNCHER tells Android which activity to open when the app icon is tapped.",
+          "hints": [
+            "The instructor described this while creating login_screen_2.",
+            "It modifies the AndroidManifest.xml automatically.",
+            "The launcher activity is the entry point of the app."
+          ]
+        },
+        {
+          "id": "Section-6-2-5",
+          "question": "A developer creates a new Activity called 'login_screen_2' and checks the 'Launcher activity' checkbox in the wizard. The original 'login_screen' Activity already had an intent-filter in the manifest. After the new activity is added, the developer runs the app and notices a strange problem — the app seems to open with an unexpected choice dialog or opens the wrong activity. The developer asks you why. What is the root cause and how must it be fixed?",
+          "type": "mcq",
+          "difficulty": "hard",
+          "tags": ["Android Application Development", "AndroidManifest", "LauncherActivity", "Intent-filter"],
+          "options": [
+            { "id": "a", "text": "The root cause is that 'login_screen_2' is not a valid activity name because it contains an underscore. Android requires activity names to use camelCase. The fix is to rename the activity to 'LoginScreen2' and rebuild." },
+            { "id": "b", "text": "The root cause is that two intent-filters with action MAIN and category LAUNCHER now exist in the manifest — one on the original login_screen and one on the new login_screen_2. Android allows multiple launcher entries and may display a chooser dialog or open unpredictably. The fix is to delete the intent-filter from the original login_screen activity in the manifest, leaving only the one in login_screen_2." },
+            { "id": "c", "text": "The root cause is a caching issue. Android Studio caches the previous launcher activity setting and does not update it when a new one is added. The fix is to do a 'Clean Project' and 'Rebuild Project' from the Build menu." },
+            { "id": "d", "text": "The root cause is that login_screen_2 was created from an EmptyViewsActivity template which blocks multiple activities from having intent-filters. The fix is to delete login_screen_2 and recreate it using the FullscreenActivity template instead." }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "The instructor explicitly demonstrated this issue: 'We will have two intent-filters here, which is the wrong thing.' The solution shown was to delete the old intent-filter from the login_screen activity XML in the manifest. Only one activity should have the MAIN/LAUNCHER intent-filter at any time.",
+          "hints": [
+            "The instructor said 'we will have two intent-filters, which is the wrong thing'.",
+            "Two LAUNCHER intent-filters create a conflict.",
+            "The fix is to delete the old intent-filter, not the new one."
+          ]
+        },
+        {
+          "id": "Section-6-2-6",
+          "question": "What is the format of a hex color code in Android XML, and what do each of the three two-character pairs represent?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Hex Colors"],
+          "options": [
+            { "id": "a", "text": "#XXYYZZ where XX = transparency level, YY = gradient direction, ZZ = saturation" },
+            { "id": "b", "text": "#RRGGBB where RR = red intensity, GG = green intensity, BB = blue intensity. Each pair ranges from 00 (absent) to FF (100% maximum intensity)." },
+            { "id": "c", "text": "#HHSSVV representing Hue, Saturation, and Value in HSV color space, converted by Android automatically from hex." },
+            { "id": "d", "text": "#AABBCC where AA = alpha (opacity), BB = brightness, CC = contrast. The color itself is computed from these three properties." }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "The instructor explained: 'These are 6 characters — the first two represent the red value, characters 3 and 4 represent the green value, and the last two represent the blue value. FF means 100% color present, 00 means the color is absent.'",
+          "hints": [
+            "RRGGBB — the order is Red, Green, Blue.",
+            "Each pair is two hexadecimal characters.",
+            "FF = maximum intensity; 00 = completely absent."
+          ]
+        },
+        {
+          "id": "Section-6-2-7",
+          "question": "A UI designer hands you a hex color code: '#FF0000'. Based on the RRGGBB format explained in class, what color is this? Derive your answer from the RGB component values without using an external color picker.",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["Android Application Development", "Hex Colors"],
+          "options": [
+            { "id": "a", "text": "White — because 'FF' at the start means maximum brightness, which produces white." },
+            { "id": "b", "text": "Pure red — because RR='FF' (100% red) and GG='00' (no green) and BB='00' (no blue). Full red with no other colors produces bright red." },
+            { "id": "c", "text": "Yellow — because 'FF' represents the primary yellow channel. Hex 0000 at the end adds darkness to produce a bright yellow." },
+            { "id": "d", "text": "Dark blue — because the first two characters determine the alpha (opacity) and the last four determine the blue shade. FF alpha with 0000 blue produces dark blue." }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "Using the RRGGBB mapping: RR=FF (red at 100% intensity), GG=00 (green absent), BB=00 (blue absent). Maximum red with no other colors produces pure bright red. The instructor explained that white (#FFFFFF) has all three at FF and black (#000000) has all three at 00.",
+          "hints": [
+            "Map each pair to its channel: FF0000 = red FF, green 00, blue 00.",
+            "FF = 100% of that color; 00 = none of that color.",
+            "Only one channel is active at maximum — that channel's color is the result."
+          ]
+        },
+        {
+          "id": "Section-6-2-8",
+          "question": "According to the instructor, what are the hex color codes for pure white and pure black, and why do these specific codes produce those colors?",
+          "type": "mcq",
+          "difficulty": "hard",
+          "tags": ["Android Application Development", "Hex Colors"],
+          "options": [
+            { "id": "a", "text": "White = #CCCCCC, Black = #333333. These are chosen by convention as 'web-safe' approximations. True white and true black are not achievable in the RRGGBB hex system." },
+            { "id": "b", "text": "White = #FFFFFF and Black = #000000. White is #FFFFFF because all three channels (red, green, and blue) are at their maximum value (FF = 100%), and when you mix 100% of all three light-based primary colors, the result is white light. Black is #000000 because all three channels are at 00 (completely absent), meaning no light is emitted at all, which produces black." },
+            { "id": "c", "text": "White = #FFFFFF and Black = #000000, but this is purely a convention with no physical light-mixing explanation. The hex system assigns these codes arbitrarily as starting points of the color scale." },
+            { "id": "d", "text": "White = #FAFAFA and Black = #0A0A0A. True pure white and black require 8-character AARRGGBB format with alpha set to FF. In the 6-character format, #FFFFFF is slightly transparent and #000000 is slightly gray." }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "The instructor said: 'FFFFFF — that is white. It means that we have 100% of red, 100% of green, 100% of blue — and when you mix all the colors at full brightness, you get white. 000000 — all absent — that is black.'",
+          "hints": [
+            "White = all channels at maximum (FF for each red, green, blue).",
+            "Black = all channels absent (00 for each red, green, blue).",
+            "This is additive color mixing from a light source."
+          ]
+        },
+        {
+          "id": "Section-6-2-9",
+          "question": "What is the correct XML syntax for adding a color named 'primary_blue' with the value '#1A73E8' to Android's colors.xml resource file?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Colors.xml", "Resources"],
+          "options": [
+            { "id": "a", "text": "<color name=\"primary_blue\" value=\"#1A73E8\" />" },
+            { "id": "b", "text": "<color name=\"primary_blue\">#1A73E8</color>" },
+            { "id": "c", "text": "<color id=\"primary_blue\">#1A73E8</color>" },
+            { "id": "d", "text": "color.primary_blue = \"#1A73E8\"" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "The instructor demonstrated: 'I will write <color name=\"...\"> and inside that I will just add my hex code, close the tag.' The correct format uses the 'name' attribute and places the hex value between opening and closing tags: <color name=\"background_colour\">#05273B</color>.",
+          "hints": [
+            "The value is between the opening and closing tags.",
+            "The attribute is 'name', not 'id' or 'value'.",
+            "It is not a self-closing tag."
+          ]
+        },
+        {
+          "id": "Section-6-2-10",
+          "question": "After defining a color in colors.xml as '<color name=\"background_colour\">#05273B</color>', a developer wants to apply this color as the background of their LinearLayout. Which of the following is the correct attribute value to use in the LinearLayout XML tag?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["Android Application Development", "Colors.xml", "Resources"],
+          "options": [
+            { "id": "a", "text": "android:background=\"background_colour\"" },
+            { "id": "b", "text": "android:background=\"colors/background_colour\"" },
+            { "id": "c", "text": "android:background=\"@color/background_colour\"" },
+            { "id": "d", "text": "android:background=\"res/values/colors/background_colour\"" }
+          ],
+          "correctAnswers": ["c"],
+          "explanation": "The instructor showed: 'Instead of the hex code, I will use @color/background_colour.' The '@color/' prefix tells Android to look in the color resources defined in colors.xml. The name after '/' must match exactly the name attribute in the XML tag.",
+          "hints": [
+            "The '@' symbol indicates a resource reference.",
+            "'color' is the resource type directory.",
+            "The name after the slash matches 'name' in the colors.xml entry."
+          ]
+        },
+        {
+          "id": "Section-6-2-11",
+          "question": "The instructor described colors.xml and similar resource files using an analogy about a 'packet of cookies.' What concept was being illustrated with this analogy, and how does it connect to the actual benefit of using colors.xml instead of hardcoding hex values in XML layout files?",
+          "type": "mcq",
+          "difficulty": "hard",
+          "tags": ["Android Application Development", "Colors.xml", "Resources"],
+          "options": [
+            { "id": "a", "text": "The analogy illustrated that colors.xml must be consumed (used) within a limited time, similar to food that expires. The instructor was warning that color definitions must be referenced within the same activity's layout file or they become stale and are deleted from the build." },
+            { "id": "b", "text": "The cookie packet represents a reusable resource stored in one place. Just as you can take a cookie out multiple times from the same packet without buying a new one each time, you can reference '@color/background_colour' in any layout file across the entire app without writing the hex value (#05273B) again. If the design changes, you update only the one entry in colors.xml and every layout using that name updates automatically." },
+            { "id": "c", "text": "The analogy illustrated performance — cookies are lightweight, and similarly named colors are cached in memory and load faster than raw hex codes. The instructor was explaining the runtime performance benefit of colors.xml over inline hex values." },
+            { "id": "d", "text": "The cookie packet was a metaphor for encapsulation in OOP. colors.xml acts like a class, and each <color> entry acts like a private method. Accessing them with @color/ syntax is like calling those private methods via a public wrapper." }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "The instructor said resources are 'reusable items that can be called from anywhere' — like a cookie packet you can come back to whenever you need one. The practical benefit is that naming a color in colors.xml means a single update propagates everywhere that name is used, versus hunting down every hardcoded hex value across multiple layout files.",
+          "hints": [
+            "Resources are 'reusable items that can be called from anywhere'.",
+            "The cookie analogy is about reuse, not performance or expiry.",
+            "Key benefit: change once → updates everywhere."
+          ]
+        },
+        {
+          "id": "Section-6-2-12",
+          "question": "Where is the colors.xml file located in an Android project? What path do you navigate in Android Studio to find and edit it?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Colors.xml", "Resources"],
+          "options": [
+            { "id": "a", "text": "It is inside the 'java' folder, alongside the Kotlin files. Navigate to app → java → com.example → colors.xml." },
+            { "id": "b", "text": "It is inside the 'res/values/' folder. Navigate to Project View: app → res → values → colors.xml." },
+            { "id": "c", "text": "It is inside the 'gradle' folder. Navigate to Gradle Scripts → colors.xml." },
+            { "id": "d", "text": "It is inside the 'manifests' folder alongside AndroidManifest.xml." }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "The instructor navigated to: 'Project → res → values → colors.xml' to demonstrate adding a named color. The 'res/values/' folder is the standard Android resource directory for color, string, dimension, and style definitions.",
+          "hints": [
+            "The instructor said 'Project → res → values → colors.xml'.",
+            "Resource values are stored in the 'res/values' directory.",
+            "This folder also contains strings.xml and themes.xml."
+          ]
+        },
+        {
+          "id": "Section-6-2-13",
+          "question": "A developer is building a music player app. The main screen has a list of songs (one below the other), a play/pause button at the bottom, and a progress bar above the button. The developer asks whether to use LinearLayout or ConstraintLayout for this screen. Based on the use case guidelines taught in class, what is the recommended choice and why?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["Android Application Development", "LinearLayout", "Layout Design"],
+          "options": [
+            { "id": "a", "text": "ConstraintLayout is the only correct choice because music players are complex and professional apps always use ConstraintLayout for performance reasons. LinearLayout is only for practice projects." },
+            { "id": "b", "text": "LinearLayout is the recommended choice here. The instructor specifically listed music players as a use case for LinearLayout. The screen has a simple top-to-bottom ordering: song list → progress bar → controls. This straight, ordered arrangement maps perfectly to a vertical LinearLayout." },
+            { "id": "c", "text": "RelativeLayout is the correct choice for music players because the play button must be 'relative' to the progress bar. LinearLayout cannot express parent-child positional relationships." },
+            { "id": "d", "text": "No single layout type is sufficient for a music player. The only valid approach is to use a custom ViewGroup by subclassing android.view.ViewGroup and implementing onMeasure and onLayout manually." }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "The instructor listed music players as a direct example of LinearLayout's ideal use case. The characteristic shared by all these use cases is a simple, ordered, sequential arrangement — which is exactly what LinearLayout delivers efficiently without needing constraints.",
+          "hints": [
+            "The instructor explicitly listed music players as a LinearLayout use case.",
+            "Key word: 'straight and ordered'.",
+            "A top-to-bottom list of elements is the ideal LinearLayout scenario."
+          ]
+        },
+        {
+          "id": "Section-6-2-14",
+          "question": "What navigation steps in Android Studio are required to create a new Activity from scratch using the provided wizard, as demonstrated by the instructor?",
+          "type": "mcq",
+          "difficulty": "hard",
+          "tags": ["Android Application Development", "Activity Creation"],
+          "options": [
+            { "id": "a", "text": "File → New → Android Resource File → Activity Type → enter activity name → Finish." },
+            { "id": "b", "text": "Right-click on the 'kotlin+java' source folder (the first one with the package name) → New → Activity → Empty Views Activity → enter activity name and package → Finish." },
+            { "id": "c", "text": "Right-click on the 'res/layout' folder → New → Layout Resource File → enter layout name → change root element to 'LinearLayout' → this automatically creates the paired Kotlin Activity file." },
+            { "id": "d", "text": "In the top toolbar: Build → New Component → Activity Screen → Enter details → Android Studio auto-generates everything including routing and navigation code." }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "The instructor demonstrated: 'Right-click on the first kotlin+java folder → New → Activity → Empty Views Activity.' Then enter the activity name, check 'Launcher activity' if needed, and click Finish. This creates both the Kotlin class and the XML layout file.",
+          "hints": [
+            "Right-click is on the 'kotlin+java' folder, not the layout folder.",
+            "The specific type selected was 'Empty Views Activity'.",
+            "After clicking Finish, both Kotlin and XML files are created."
+          ]
+        },
+        {
+          "id": "Section-6-2-15",
+          "question": "The instructor added the hex color '#05273B' as the background color of the LinearLayout. Before typing this value, the instructor calculated it as a 'dark blue-black' from the RRGGBB components. Walk through the analysis: what does '#05273B' say about each RGB channel, and why does this produce a dark blue-black color?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Hex Colors"],
+          "options": [
+            { "id": "a", "text": "#05273B has RR=05 (very low red), GG=27 (low green), BB=3B (moderate blue). Low values across all channels but with blue being the highest — this produces a dark color with a slight blue tint, hence dark blue-black." },
+            { "id": "b", "text": "#05273B is a shade of orange because '05' in the red hex means the red channel is at 5% saturation, and orange appears when red is at 5% alongside any other values." },
+            { "id": "c", "text": "#05273B is actually pure gray because all three pairs (05, 27, 3B) are close to the midpoint of the 00-FF range, and balanced midpoint values always produce gray." },
+            { "id": "d", "text": "#05273B produces bright green because '27' is the character code for green in Android's internal color table. The first and last pairs are ignored when green is detected." }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "Analyzing #05273B: Red=05 (very dark, near 0), Green=27 (dark, low), Blue=3B (around 59 out of 255, moderate but still dark). Blue has the highest value of the three but all are low — this creates a very dark color with a blue tendency, visually appearing as dark blue-black.",
+          "hints": [
+            "Map: 05=very low red, 27=low green, 3B=moderate blue.",
+            "Low values across all channels = a dark color.",
+            "Blue being highest among the low values = blue tint in the darkness."
+          ]
+        },
+        {
+          "id": "Section-6-2-16",
+          "question": "A developer defines the background color of their app's main LinearLayout directly as android:background='#05273B'. Six months later, the company rebrands and the primary background color changes to '#1A1A2E'. The developer must now update every layout file that uses this hex value. A senior developer suggests 'you could have avoided this entire problem from day one.' What approach should have been used from the beginning?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["Android Application Development", "Colors.xml", "Resources", "Maintenance"],
+          "options": [
+            { "id": "a", "text": "The developer should have used a darker variant of #05273B that would be close enough to #1A1A2E visually, making a rebrand unnecessary. Choosing flexible 'middle-ground' colors is the industry standard approach to avoiding updates." },
+            { "id": "b", "text": "The developer should have defined the color as a named resource in colors.xml: '<color name=\"background_colour\">#05273B</color>' and then used 'android:background=\"@color/background_colour\"' in every layout. During the rebrand, only the single hex value in colors.xml needs updating — all layouts instantly reflect the new color without individual changes." },
+            { "id": "c", "text": "The developer should have hard-coded the color directly in the Kotlin Activity file using setBackgroundColor() instead of XML, making the value centralised in one code file that is easier to search-and-replace than multiple XML layouts." },
+            { "id": "d", "text": "The developer should have avoided using a background color entirely. The instructor said background colors should always be handled by themes.xml only and never in layout XML files." }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "This is the exact benefit of the colors.xml resource system the instructor taught. Defining colors by name means they exist in a single place. A rebrand requires changing only the hex value in colors.xml — all layouts referencing @color/background_colour automatically use the new color because they point to the name, not the hex value.",
+          "hints": [
+            "The instructor described colors.xml as storing 'reusable items'.",
+            "Change once in colors.xml → propagates everywhere the name is used.",
+            "The '@color/name' reference points to the resource name, not the value."
+          ]
+        },
+        {
+          "id": "Section-6-2-17",
+          "question": "How do you import an image (such as 'avatar2.png') into the drawable folder of an Android project in Android Studio, as explained by the instructor?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Drawable", "Images"],
+          "options": [
+            { "id": "a", "text": "Use File → Import Module → select the image file. Android Studio converts it automatically to a vector drawable." },
+            { "id": "b", "text": "Right-click the drawable folder → Open in Finder (macOS) or Open in Folder (Windows) → drag and drop the image file from its original location into the opened folder. The image then appears in the drawable directory." },
+            { "id": "c", "text": "Images must be uploaded through the Android Developer Portal and are then automatically synced to your project's drawable folder via Gradle." },
+            { "id": "d", "text": "Right-click the drawable folder → New → Vector Asset → import your PNG file, and Android Studio will automatically trace and convert it to a vector." }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "The instructor demonstrated: 'Right-click the drawable folder → Open in Finder → drag and drop the image file into the folder.' After dropping, the image appears in the drawable folder in Android Studio and can be referenced as @drawable/avatar2.",
+          "hints": [
+            "The process uses the OS file manager (Finder on macOS).",
+            "Right-clicking the drawable folder reveals the 'Open in Finder' option.",
+            "After dragging in, the file is immediately available as a drawable resource."
+          ]
+        },
+        {
+          "id": "Section-6-2-18",
+          "question": "The instructor added 'avatar2.png' to the drawable folder. After adding it, how would a developer reference this image as the source of an ImageView in an XML layout file?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["Android Application Development", "Drawable", "ImageView"],
+          "options": [
+            { "id": "a", "text": "android:src=\"drawable/avatar2.png\"" },
+            { "id": "b", "text": "android:src=\"/res/drawable/avatar2.png\"" },
+            { "id": "c", "text": "android:src=\"@drawable/avatar2\"" },
+            { "id": "d", "text": "android:src=\"file:///android_asset/avatar2.png\"" }
+          ],
+          "correctAnswers": ["c"],
+          "explanation": "After placing avatar2.png in the drawable folder, it is referenced in XML using the '@drawable/' prefix followed by the filename without the extension: android:src='@drawable/avatar2'. The '@' indicates a resource reference, 'drawable' is the resource type, and 'avatar2' is the name.",
+          "hints": [
+            "The '@' prefix indicates a resource reference in Android XML.",
+            "The file extension (.png) is not included in the reference.",
+            "'drawable' is the resource directory type prefix."
+          ]
+        },
+        {
+          "id": "Section-6-2-19",
+          "question": "A senior developer reviews your code and notices you have written android:background='#05273B' directly in five different layout files. They label this as a 'maintainability risk' and ask you to refactor immediately. Describe exactly what you need to do, step by step, to refactor these five layouts to use colors.xml properly.",
+          "type": "mcq",
+          "difficulty": "hard",
+          "tags": ["Android Application Development", "Colors.xml", "Resources", "Refactoring"],
+          "options": [
+            { "id": "a", "text": "Step 1: Open styles.xml and create a new theme with the background color. Step 2: Apply the theme to each activity in the manifest. Step 3: Remove the android:background attribute from all five layouts. This is the correct way — individual color resources in colors.xml are only for button colors, not layout backgrounds." },
+            { "id": "b", "text": "Step 1: Open res → values → colors.xml. Step 2: Add '<color name=\"background_colour\">#05273B</color>' inside the <resources> tag. Step 3: In each of the five layout files, replace android:background='#05273B' with android:background='@color/background_colour'. Now all five files reference the same named resource." },
+            { "id": "c", "text": "Step 1: Create a new XML file called 'background_colors.xml' inside the res/layout/ folder. Step 2: Define the color there. Step 3: Reference it using @layout/background_colors in each layout file. Android automatically extracts the color value from the layout reference." },
+            { "id": "d", "text": "Step 1: Use the Android Studio 'Find and Replace' feature (Cmd+R) to replace all instances of '#05273B' with the color name string. Step 2: Android interprets plain color name strings directly without needing the '@color/' prefix or colors.xml." }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "The correct refactoring process: (1) Add the named color entry to colors.xml using the <color name='...'> tag. (2) Replace all hardcoded hex values in layout files with the '@color/name' reference. The instructor demonstrated this exact workflow, describing colors.xml as a place for 'reusable items' that can be pulled from anywhere.",
+          "hints": [
+            "Colors go in res/values/colors.xml inside the <resources> tag.",
+            "Use <color name=\"...\"> tag syntax.",
+            "Replace the hex value with @color/name in each layout."
+          ]
+        },
+        {
+          "id": "Section-6-2-20",
+          "question": "The instructor created an activity named 'login_screen_2' and its corresponding XML was named 'activity_login_screen_2.xml'. What naming convention does Android follow when auto-generating the XML layout file name from the Activity class name?",
+          "type": "mcq",
+          "difficulty": "hard",
+          "tags": ["Android Application Development", "Activity Creation", "Naming Convention"],
+          "options": [
+            { "id": "a", "text": "Android prefixes 'activity_' to the Activity name and converts uppercase letters to lowercase with underscores between words. 'LoginScreen2' → 'activity_login_screen_2.xml'. The Activity class name and its XML layout always share this paired naming pattern." },
+            { "id": "b", "text": "Android directly copies the class name and appends '.xml' as the extension with no transformation. 'LoginScreen2' → 'LoginScreen2.xml'. Layout files always match the case of their Activity class." },
+            { "id": "c", "text": "The XML file name is entirely random and chosen by the developer at creation time. The pairing between an Activity class and its layout XML is determined by the setContentView() call in the Kotlin code, not by naming." },
+            { "id": "d", "text": "Android prefixes 'fragment_' to all new layout files to maintain compatibility with the Fragment system regardless of whether the screen is an Activity or Fragment." }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "The instructor demonstrated that naming the activity 'login_screen_2' produced the XML file 'activity_login_screen_2.xml'. The auto-generation rule: Android prefixes 'activity_' and applies snake_case to the name. For example: 'LoginScreen2' would become 'activity_login_screen_2.xml'. This creates a recognizable pairing between each Activity and its layout.",
+          "hints": [
+            "The prefix 'activity_' is automatically added to the layout file name.",
+            "The activity name is converted to snake_case in the XML filename.",
+            "'login_screen_2' (activity name) → 'activity_login_screen_2.xml' (layout name)."
+          ]
+        }
+      ]
+    }
+  ]
+}

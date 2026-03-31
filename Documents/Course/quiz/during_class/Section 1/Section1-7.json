@@ -1,0 +1,170 @@
+{
+  "items": [
+    {
+      "name": "Section1-7",
+      "difficulty": "easy",
+      "content": [
+        {
+          "id": "Section-1-7-1",
+          "question": "What is Android Studio?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android app development"],
+          "options": [
+            { "id": "a", "text": "A programming language for Android" },
+            { "id": "b", "text": "The official integrated development environment (IDE) for Android app development" },
+            { "id": "c", "text": "An Android application" },
+            { "id": "d", "text": "A web-based platform" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "Android Studio is the official Integrated Development Environment (IDE) for Android app development. It is built and maintained by Google and provides a complete suite of tools for designing, building, testing, and running Android applications all in one integrated workspace.",
+          "hints": ["It's an IDE", "Official tool from Google", "For Android development"]
+        },
+        {
+          "id": "Section-1-7-2",
+          "question": "Who built and maintains Android Studio?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android app development"],
+          "options": [
+            { "id": "a", "text": "Microsoft" },
+            { "id": "b", "text": "Apple" },
+            { "id": "c", "text": "Google" },
+            { "id": "d", "text": "Oracle" }
+          ],
+          "correctAnswers": ["c"],
+          "explanation": "Google built and maintains Android Studio. As the creator and maintainer of Android, Google developed Android Studio to be the primary development tool for Android app developers, ensuring it integrates seamlessly with the Android platform.",
+          "hints": ["Google created Android", "Same company maintains both", "Official Android tool"]
+        },
+        {
+          "id": "Section-1-7-3",
+          "question": "What is Android Studio based on?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android app development"],
+          "options": [
+            { "id": "a", "text": "Visual Studio" },
+            { "id": "b", "text": "JetBrains IntelliJ IDEA" },
+            { "id": "c", "text": "Eclipse" },
+            { "id": "d", "text": "Sublime Text" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "Android Studio is based on JetBrains IntelliJ IDEA, a powerful IDE for Java and other JVM-based languages. Google built Android Studio on top of IntelliJ IDEA and customized it specifically for Android development.",
+          "hints": ["Built on a Java IDE", "JetBrains created the base", "IntelliJ IDEA is powerful"]
+        },
+        {
+          "id": "Section-1-7-4",
+          "question": "What is the primary workspace for Android development?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android app development"],
+          "options": [
+            { "id": "a", "text": "Web browser" },
+            { "id": "b", "text": "Text editor" },
+            { "id": "c", "text": "Android Studio" },
+            { "id": "d", "text": "Command line only" }
+          ],
+          "correctAnswers": ["c"],
+          "explanation": "Android Studio is your all-in-one workspace for Android development. It provides everything you need to develop Android applications, from writing code to designing layouts to debugging and deploying apps.",
+          "hints": ["Complete development environment", "All tools in one place", "Official Android IDE"]
+        },
+        {
+          "id": "Section-1-7-5",
+          "question": "Which of the following is NOT mentioned as a feature of Android Studio?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android app development"],
+          "options": [
+            { "id": "a", "text": "Powerful code editor with smart suggestions" },
+            { "id": "b", "text": "Visual layout editor" },
+            { "id": "c", "text": "Built-in emulators" },
+            { "id": "d", "text": "Email client functionality" }
+          ],
+          "correctAnswers": ["d"],
+          "explanation": "Email client functionality is not mentioned as a feature of Android Studio. Android Studio includes a code editor, visual layout editor, built-in emulators, performance profilers, version control, and integration with Google Play Store, but email functionality is not part of it.",
+          "hints": ["Android Studio is for development", "Email is not a development feature", "Focus on coding and design"]
+        },
+        {
+          "id": "Section-1-7-6",
+          "question": "What does the visual layout editor in Android Studio allow you to do?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android app development"],
+          "options": [
+            { "id": "a", "text": "Write Java code only" },
+            { "id": "b", "text": "Design your app's user interface visually" },
+            { "id": "c", "text": "Connect to databases" },
+            { "id": "d", "text": "Manage server infrastructure" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "The visual layout editor in Android Studio allows you to design your app's user interface (UI) visually without having to write all the layout code manually. You can drag and drop components, set properties, and see a preview of your design.",
+          "hints": ["For UI design", "Visual drag-and-drop", "Design layouts graphically"]
+        },
+        {
+          "id": "Section-1-7-7",
+          "question": "What purpose do the built-in emulators in Android Studio serve?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android app development"],
+          "options": [
+            { "id": "a", "text": "To store user files" },
+            { "id": "b", "text": "To test your app on different virtual devices" },
+            { "id": "c", "text": "To compile your code" },
+            { "id": "d", "text": "To publish your app" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "The built-in emulators in Android Studio allow you to test your app on different virtual Android devices. You can simulate various device types, screen sizes, Android versions, and hardware features without needing physical devices.",
+          "hints": ["For testing purposes", "Virtual devices", "Different configurations"]
+        },
+        {
+          "id": "Section-1-7-8",
+          "question": "What is the code editor in Android Studio known for?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android app development"],
+          "options": [
+            { "id": "a", "text": "Being difficult to use" },
+            { "id": "b", "text": "Being slow and laggy" },
+            { "id": "c", "text": "Powerful features with smart suggestions and error detection" },
+            { "id": "d", "text": "Only supporting one programming language" }
+          ],
+          "correctAnswers": ["c"],
+          "explanation": "Android Studio's code editor is known for being powerful with smart suggestions (code completion) and intelligent error detection. These features help developers write code more quickly and catch mistakes early.",
+          "hints": ["Smart features", "Helps with coding", "Detects errors"]
+        },
+        {
+          "id": "Section-1-7-9",
+          "question": "Why should you use Android Studio for Android development?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android app development"],
+          "options": [
+            { "id": "a", "text": "Because it's cheap" },
+            { "id": "b", "text": "Because it's designed specifically for Android development" },
+            { "id": "c", "text": "Because it's the only tool available" },
+            { "id": "d", "text": "Because it runs on all operating systems" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "You should use Android Studio because it's specifically designed for Android development. It streamlines your workflow with features tailored to Android app development, has official Google support, and provides the best integration with Android tools and services.",
+          "hints": ["Purpose-built for Android", "Official Android tool", "Optimized for development"]
+        },
+        {
+          "id": "Section-1-7-10",
+          "question": "What is the ultimate benefit of using Android Studio for app development?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android app development"],
+          "options": [
+            { "id": "a", "text": "It makes your app more expensive" },
+            { "id": "b", "text": "It builds better apps faster and more efficiently" },
+            { "id": "c", "text": "It requires no programming knowledge" },
+            { "id": "d", "text": "It automatically publishes apps" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "The ultimate benefit of using Android Studio is that it helps you build better Android apps faster and more efficiently. By providing all the necessary tools in one integrated environment, it reduces development time and helps create higher-quality applications.",
+          "hints": ["Better apps, faster development", "Efficiency improvement", "Overall benefit"]
+        }
+      ]
+    }
+  ]
+}

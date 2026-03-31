@@ -1,0 +1,90 @@
+{
+  "items": [
+    {
+      "name": "Section3-5",
+      "difficulty": "medium",
+      "content": [
+        {
+          "id": "Section-3-5-1",
+          "question": "Where is the Logcat panel typically found in Android Studio's default layout?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android"],
+          "options": [
+            { "id": "a", "text": "Top-left corner" },
+            { "id": "b", "text": "Bottom-left area (fourth option)" },
+            { "id": "c", "text": "File menu" },
+            { "id": "d", "text": "Emulator window only" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "The instructor points out Logcat is in the bottom-left area, typically as the fourth tab in Android Studio.",
+          "hints": ["Check bottom panels", "Fourth option on left", "Used for logs"]
+        },
+        {
+          "id": "Section-3-5-2",
+          "question": "What analogy does the instructor use to explain Logcat?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android"],
+          "options": [
+            { "id": "a", "text": "A detective novel" },
+            { "id": "b", "text": "A notebook where the phone writes every step" },
+            { "id": "c", "text": "A painting" },
+            { "id": "d", "text": "A stopwatch" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "Logcat is compared to a notebook recording system activities and errors step-by-step to help diagnose crashes.",
+          "hints": ["Step-by-step record", "Machine repair analogy", "Helps find where something broke"]
+        },
+        {
+          "id": "Section-3-5-3",
+          "question": "After a crash due to missing attributes, which sequence fixed the issue in the transcript?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["Android Application Development", "Basics of Android"],
+          "options": [
+            { "id": "a", "text": "Add back mandatory attributes, then rerun the app" },
+            { "id": "b", "text": "Delete the project and start over" },
+            { "id": "c", "text": "Disable Logcat" },
+            { "id": "d", "text": "Switch to Design Only mode" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "The instructor undid deletion to restore mandatory layout attributes and reran the app, which launched successfully.",
+          "hints": ["Undo action", "Restore width/height", "Rerun the app"]
+        },
+        {
+          "id": "Section-3-5-4",
+          "question": "Which button stops the running emulator session?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android"],
+          "options": [
+            { "id": "a", "text": "Green triangle" },
+            { "id": "b", "text": "Red square stop button" },
+            { "id": "c", "text": "Play button" },
+            { "id": "d", "text": "Save button" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "The red square stop button terminates the active app session on the emulator, as shown in the video.",
+          "hints": ["Stop icon color", "Media control style", "Next to Play"]
+        },
+        {
+          "id": "Section-3-5-5",
+          "question": "Why might the design surface (blue area) be hidden by a developer?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android"],
+          "options": [
+            { "id": "a", "text": "To save battery" },
+            { "id": "b", "text": "Because it can be visually irritating; 'Design Only' reduces distraction" },
+            { "id": "c", "text": "It deletes XML automatically" },
+            { "id": "d", "text": "It clears Logcat" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "The instructor switches to 'Design Only' or hides the blueprint if the blue design surface is distracting while coding.",
+          "hints": ["Design Only mode", "Reduce distraction", "UI preference"]
+        }
+      ]
+    }
+  ]
+}

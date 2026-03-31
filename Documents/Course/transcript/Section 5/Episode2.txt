@@ -1,0 +1,91 @@
+(0:00) Now, let's run this screen over our emulator and see how exactly it looks like. (0:08) So to run this, just click on display button like this. (0:13) Once you click, your app is building.
+(0:24) And as I told you, when you increase your elements, the time will also increase of building. (0:32) So it's launching on our device. (0:37) Perfect.
+(0:40) Oh, what happened here? (0:43) We have this screen, but here we have this one. (0:49) Why? (0:50) What is the reason behind this? (0:53) Like, let me explain you what is exactly happening here. (0:57) Into this project, we have three screens, that is main activity, main activity 2 and (1:03) login screen.
+(1:04) But when I run this, instead of the working, instead of the current activity, that is login (1:10) screen, it applies or it launch main activity at first. (1:17) Why? (1:18) So you will find this answer into another file that's called manifest file. (1:23) Okay.
+(1:24) So where exactly the manifest file is, you have to go above at the top into this folder (1:31) directories, you will find manifest folder here. (1:34) Yes. (1:35) Just click to expand this.
+(1:38) And you will find androidmanifest.xml. (1:41) Please note, this is one of the most important file into our Android Studio. (1:47) And without this, you are not be able to create any placements into this Android Studio. (1:54) What exactly the placements are, I'll tell you later.
+(1:57) So let's open this file. (1:59) To open this, just double click on it. (2:02) Let me first hide this.
+(2:04) Do not stop this. (2:06) I'm just hiding this. (2:07) I'm not stopping this, just hiding this.
+(2:09) Like this. (2:11) Okay. (2:11) So here, what exactly this manifest file is.
+(2:15) So let me tell you the exact concept of manifest file. (2:19) Imagine that you are an engineer and you are going to design a building. (2:23) To design that building, you got a blueprint.
+(2:26) The blueprint shows you each and everything very clearly. (2:31) That what sections comes at what position. (2:34) Yes.
+(2:34) So similarly, this androidmanifest file is a blueprint of our application. (2:42) Okay. (2:42) Please write it down into your notebook.
+(2:45) That androidmanifest.xml file is a blueprint of your application. (2:52) Okay. (2:53) Mark my words, whatever you need, you have to mention into this androidmanifest.xml. (2:59) Okay.
+(3:00) So let me show you why the main activity comes at first and why not login screen. (3:07) So this answer, you will get this answer at the below of this file. (3:12) So let's going below like this.
+(3:15) You will find out some activity. (3:17) Okay. (3:18) What is activity? (3:19) I'll give you the answer when I explain the activities and all into the Kotlin part.
+(3:25) Okay. (3:26) So if you'll see, we have how many screens we have? (3:30) We have three screens, login screen, main activity, main activity 2. (3:34) So you will find the same number of activities into this androidmanifest file. (3:42) Okay.
+(3:43) Let's name that. (3:45) It's name, it's login screen. (3:47) This one is main activity 2 and this one is main activity.
+(3:51) Okay. (3:52) Let's find out where the emulator is. (3:55) First of all, let's connect the emulator again.
+(3:58) So you'll find the emulator into running devices. (4:01) Okay. (4:02) At the right part, at the right hand side part, these icons are visible to you.
+(4:08) Among these icons, find out running devices. (4:11) The last second icon is running devices. (4:13) Just click on it.
+(4:15) Once you click, you will find this screen. (4:16) Okay. (4:17) To make it clear, let me open this screen also into split view.
+(4:25) So into layout section, that main activity. (4:29) Yeah, perfect. (4:30) You will see the main activity, what exactly the main activity contains.
+(4:37) It's just available at the emulator now. (4:41) Yes. (4:42) So let me switch it to design view first.
+(4:44) Because it, and yes. (4:48) Okay. (4:49) So what exactly happening here? (4:53) That on launching our main activity, our main activity file comes at first (5:00) instead of login or main activity 2. (5:04) Why it happened here? (5:05) It happens because of this android manifest file.
+(5:08) Okay. (5:09) Now I'm giving you a task. (5:11) Find out what is the difference between these two, between this main activity.
+(5:17) If you will see the size of these lines, they contains only two lines. (5:23) Login screen contains the two line. (5:25) Main activity 2 contains two lines only.
+(5:27) While this main activity contains more than two lines. (5:32) Why? (5:33) Okay. (5:34) One more thing is let's find out the common components which are available between them.
+(5:38) So the common components are that is name exported. (5:42) It has the login screen has the name exported. (5:44) Perfect.
+(5:45) Main activity 2 also has this name exported. (5:48) That's perfect also. (5:49) But this main activity instead of just name and exported.
+(5:57) We have some more elements into it. (5:59) That is this intent filter. (6:02) Okay.
+(6:03) You will see this intent filter is available into is holding more lines as they both are not. (6:12) Yes. (6:12) So the conclusion is this intent filter is actually responsible to make any activity (6:20) the front one or the launcher activity.
+(6:22) Okay. (6:23) What is the launcher activity? (6:25) So the activity whatever comes to first or the activity whoever launches at first. (6:31) That's called the launcher activity.
+(6:33) Okay. (6:33) For example, if you see the main activity comes at first. (6:38) The main activity launches at first.
+(6:39) That means it is launcher activity. (6:42) Perfect. (6:43) Similarly, the if I need to make login screen my launcher activity.
+(6:51) Which means that I need to launch login screen at first. (6:55) So we have to put this intent filter. (6:58) We have to remove this intent filter from this main activity and put it into login screen.
+(7:04) Okay. (7:05) Remember this intent filter can be applied into one activity only. (7:10) We cannot apply more than one activity.
+(7:13) Okay. (7:14) Let's remove it. (7:15) Let's cut it from here.
+(7:16) You don't have to write it. (7:18) Just cut it from here. (7:20) Like control X or command X. (7:23) If you are using Mac like this.
+(7:25) Okay. (7:27) And if you just it's a choice actually. (7:32) Either you can like if you if you put these if you put this XML tag like this, (7:37) it does not harm you anyway.
+(7:39) Okay. (7:41) So we just go with this activity. (7:44) And first of all, I have to remove this slash.
+(7:49) Okay, like this. (7:51) Now I have to contains it like this. (7:55) I have to create like this because we have to we have to apply that (7:59) that intent filter between the activity tags.
+(8:04) Actually the intent filter what okay, let me explain the concept to you. (8:09) Into XML whenever we are writing like this. (8:13) So if you are seeing that activity is the component and these are the attributes of (8:19) this component.
+(8:20) Now these component because these attributes are directly belongs to this component. (8:26) That's why it is under these under these angle brackets. (8:31) Okay.
+(8:32) But intent filter is not belongs to this activity. (8:35) It is a separate functionality. (8:37) Okay.
+(8:38) So because it is separate functionality and we need to apply it under the activity. (8:43) So we have to put inside these inside this activity. (8:47) Okay.
+(8:48) That means we have to put it after after this angle bracket. (8:54) Okay. (8:54) So let me put it like this.
+(8:56) Once it done, you will see we have an error again that is exported. (9:00) So we have to make it true. (9:02) We are getting an error that is said exported equals true.
+(9:05) So let me put it true. (9:06) Okay, why it is true? (9:08) Just ignore it for now. (9:09) I'll I'll explain them later.
+(9:11) Okay. (9:12) And here we have the true value as well. (9:15) So there's no any issue into it.
+(9:17) If you need just make it false. (9:20) Okay. (9:21) So we do something here that we remove the intent filter part from main activity and (9:29) put it into into this login screen.
+(9:31) Okay. (9:32) What exactly this intent filter? (9:34) Why? (9:34) Because intent filter is responsible for the for making the the activity or to launch the (9:40) activity as a launch activity. (9:42) Okay.
+(9:44) So let's reload it. (9:45) We done the part. (9:47) Just reload it.
+(9:48) Okay. (9:49) One more thing. (9:49) There is no need to save.
+(9:51) You don't have to put control as command as here. (9:55) Whatever you write, it saves in real time. (9:58) So you don't have to put control as command as and so on.
+(10:01) Let's reload it. (10:03) So once I reload this, okay, again, it's crashed. (10:17) Why it's crashed? (10:18) We have to find out the reason why it's crashed.
+(10:20) Okay. (10:21) Okay. (10:22) So to find out the reason, let's let's play it again.
+(10:27) Before make it run. (10:29) First, open this logcat. (10:31) I already told you about logcat, but didn't explain that how exactly it happened or how (10:37) exactly it works.
+(10:38) Okay. (10:39) So what exactly logcat will do? (10:42) Logcat will identify why exactly your app get crashed. (10:48) Okay.
+(10:49) So as I told you before, this is the this is the revision one. (10:54) So just at the left hand side at the bottom left part into this among these icons, click (10:59) on when you hover on it, you'll find the logcat. (11:02) Click on this.
+(11:03) You will find some codes or some text which is available here. (11:08) So what exactly these texts are? (11:11) These are nothing. (11:11) This is the date and time.
+(11:14) Okay. (11:15) And these are some codes available. (11:18) These are some some text and so on.
+(11:21) So just delete it first like this. (11:23) Once you delete it, let me run it now. (11:28) So when I click on run app, you will see it start.
+(11:32) And when it's crashed, you will see there's something that you will see some error at (11:40) the above portion. (11:41) So you have to scroll up first. (11:44) Once you scroll up, you will see shutting down VM.
+(11:48) Okay. (11:48) Shutting down VM means that because of some error, your virtual machine, that means your (11:54) emulator is stopped. (11:56) Okay.
+(11:56) That's called shutting down VM. (11:58) Perfect. (11:59) Okay.
+(11:59) Now, if you find the error, that's the fatal exception mean fatal exception mean means (12:05) there's an error. (12:06) Okay. (12:07) Just write it down into a notebook that if you find fatal exception, whenever you need (12:13) to find out it, you just have to find out this fatal exception.
+(12:17) Okay. (12:18) Either you have to find out this or you can write it here as well. (12:22) So let me write it down.
+(12:24) F A T A L is exception. (12:27) E X C E P T I O N like this. (12:32) So you'll find out the fatal exception here.
+(12:35) Okay. (12:36) Like this. (12:37) So whenever you need, you just write down whenever you are your app get crashed anywhere, (12:42) anytime, when at any point of time, whenever your app get crashed, come into logcat, write (12:48) fatal exception here.
+(12:50) Okay. (12:50) And you will find the error, the exact error that by exactly your app get crashed. (12:55) Okay.
+(12:55) Now we have to find it out from this text. (12:59) I know that this kind of, this kind of things are really very, very, very hard, but don't (13:06) worry. (13:07) So let me, let me scroll down into this.
+(13:10) So first let's put it up at last like this. (13:15) Okay. (13:15) Now into this, when you read this text, you will find something caused by.
+(13:25) Okay. (13:25) What exactly this caused by is this caused by means that what is the reason behind crashing (13:32) of your application? (13:33) What is an error exactly? (13:34) Okay. (13:35) So once you look into this, you will find very, very like you'll find name of files (13:41) and so on.
+(13:43) But when you come down, these are multiple files there. (13:46) Okay. (13:46) One more thing is that here is caused by Java language, null pointer exception, and so on.
+(13:53) I'll later provide the details that what exactly null pointer exception is and what, what exactly (13:58) these errors are. (13:59) But for now, let's find out the name of file, what we know right now, like find out the (14:07) file, what exactly you know right now. (14:10) Okay.
+(14:10) For example, if you look on these file names, these blue names, they are the file names. (14:15) View compact, view compact, but you, you didn't find anywhere this, this view compact, you, (14:21) you didn't find anywhere into this where it exactly this view compact is. (14:25) Okay.
+(14:26) So actually this view compact is not the user file, but it's the internal file of Android (14:32) studio. (14:32) That's why it is not visible at the, at the Kotlin plus Java point. (14:36) Okay.
+(14:37) But if we go with third or fourth line, let's suppose the fourth line, yes. (14:43) At the fourth line, you will see this login screen. (14:47) Yes.
+(14:48) We know about the login screen. (14:49) This login screen is available at that point. (14:52) That means maybe we do something or we make an error into this login screen.
+(14:59) That's why it is here. (15:00) Okay. (15:01) We, as it is not available at our part.
+(15:05) So we don't know what the view compact, we don't know about the activity looper handler (15:10) and so on. (15:11) We don't know about them. (15:12) We know what exactly, what, whatever we have right now, whatever we created at what point (15:18) you are making mistakes, whatever you have created, you can only make mistakes into them.
+(15:23) Now, am I right? (15:25) Okay. (15:26) Similar to this concept. (15:27) If you created something, for example, login screen is, is the, is one of them, which you (15:33) are created right now.
+(15:35) Yes. (15:36) So if you created something, maybe there are, maybe there are some chances that you put (15:41) some error into this, but what exactly this error is, we have to find out. (15:46) So for that thing, what do you have to do? (15:49) You just have to click on this.
+(15:51) Okay. (15:52) Just click on this, like this, like this. (15:55) When you click over it, you will see the login screen.
+(16:00) That means one more thing is, before going further, one more thing is what exactly this (16:06) line means. (16:07) So this lines means is login screen.kt. (16:11) That means we have to open the login screen.kt file into the login screen.kt file, colon (16:17) 14, colon 14 means line 14 that you have to see line 14 into login screen.kt. (16:24) Maybe the error is available there. (16:26) Okay.
+(16:27) So when I click over it, you will find that we are directly used to line 14 of login screen.kt. (16:35) Now let's minimise it. (16:36) How exactly we have to do this? (16:38) Just click on minimise button like this, and you will see, let me minimise it also. (16:46) Okay.
+(16:47) You will see that we are getting some red squiggly lines below this r.id.min. (16:54) Okay. (16:55) So why we are getting this? (16:57) Okay. (16:58) That's concept is not for you, not directly for you.
+(17:01) So, so for that thing, let me do it fast. (17:05) Don't worry about it. (17:06) I'll explain what exactly happened there.
+(17:08) But for now, just, I'm just doing something like it is me. (17:17) And let me run it again. (17:28) And boom, it's done.
+(17:30) That's how we resolve our errors. (17:32) Or whatever they are, we can resolve them by doing these kinds of things. (17:38) Don't worry about this or what exactly these things are.
+(17:42) Sometimes it happens, but I definitely provide you an idea (17:46) that how you have to maintain this and how you have to handle this.

@@ -1,0 +1,410 @@
+{
+  "items": [
+    {
+      "name": "Section4-1",
+      "difficulty": "hard",
+      "content": [
+        {
+          "id": "Section-4-1-1",
+          "question": "To add a new screen in Android Studio, which folder do you right-click on to start the process?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android"],
+          "options": [
+            { "id": "a", "text": "The res folder" },
+            { "id": "b", "text": "The first folder inside kotlin+java" },
+            { "id": "c", "text": "The drawable folder" },
+            { "id": "d", "text": "The layout folder" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "To add a new screen, you expand the kotlin+java folder and always right-click on the first sub-folder inside it, then navigate to New → Activity.",
+          "hints": [
+            "The kotlin+java folder contains three sub-folders.",
+            "You should always go with the first one.",
+            "Right-clicking it reveals options including New."
+          ]
+        },
+        {
+          "id": "Section-4-1-2",
+          "question": "Which menu option chain correctly leads to adding a new Activity screen in Android Studio?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android"],
+          "options": [
+            { "id": "a", "text": "Right-click → New → Kotlin Class" },
+            { "id": "b", "text": "Right-click → New → Activity → Empty Views Activity" },
+            { "id": "c", "text": "Right-click → New → XML File" },
+            { "id": "d", "text": "Right-click → New → Module" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "The correct path is right-click → New → Activity → Empty Views Activity, which is the same option used when the project was first created.",
+          "hints": [
+            "You hover over 'New' to see sub-options.",
+            "The term 'Activity' is used for screens in Android.",
+            "Empty Views Activity was used when the project was first set up."
+          ]
+        },
+        {
+          "id": "Section-4-1-3",
+          "question": "When you add a second Activity named 'MainActivityTwo', which two files are automatically generated?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android"],
+          "options": [
+            { "id": "a", "text": "MainActivityTwo.java and main_two.xml" },
+            { "id": "b", "text": "MainActivityTwo.kt and activity_main_two.xml" },
+            { "id": "c", "text": "main_activity2.kt and MainScreen.xml" },
+            { "id": "d", "text": "ActivityTwo.kt and layout_two.xml" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "Android Studio generates a Kotlin class file (MainActivityTwo.kt) under kotlin+java and an XML layout file (activity_main_two.xml) under the layout folder.",
+          "hints": [
+            "One file goes into kotlin+java and one goes into the layout folder.",
+            "The XML layout file name uses underscores instead of camel case.",
+            "The Kotlin class retains the camel case naming."
+          ]
+        },
+        {
+          "id": "Section-4-1-4",
+          "question": "Which component should you use when you want to display an image in an Android layout?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android"],
+          "options": [
+            { "id": "a", "text": "TextView" },
+            { "id": "b", "text": "Button" },
+            { "id": "c", "text": "ImageView" },
+            { "id": "d", "text": "EditText" }
+          ],
+          "correctAnswers": ["c"],
+          "explanation": "ImageView is the component dedicated to displaying images in an Android layout.",
+          "hints": [
+            "The name of the component directly describes its purpose.",
+            "It is different from TextView which is for text.",
+            "Type 'image' in the XML editor and it appears as the first suggestion."
+          ]
+        },
+        {
+          "id": "Section-4-1-5",
+          "question": "What is the mandatory attribute of ImageView that defines where its image comes from?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android"],
+          "options": [
+            { "id": "a", "text": "android:text" },
+            { "id": "b", "text": "android:src" },
+            { "id": "c", "text": "android:background" },
+            { "id": "d", "text": "android:gravity" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "The android:src attribute is mandatory for ImageView. It stands for 'source' and defines the image to display.",
+          "hints": [
+            "The attribute name is a short word meaning where something originates.",
+            "'src' is short for 'source'.",
+            "Just like TextView has android:text, ImageView has this mandatory attribute."
+          ]
+        },
+        {
+          "id": "Section-4-1-6",
+          "question": "Where are images typically stored in an Android project?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android"],
+          "options": [
+            { "id": "a", "text": "In the kotlin+java folder" },
+            { "id": "b", "text": "In the values folder" },
+            { "id": "c", "text": "In the drawable folder" },
+            { "id": "d", "text": "In the mipmap folder only" }
+          ],
+          "correctAnswers": ["c"],
+          "explanation": "Images are typically stored in the drawable folder inside the res (resources) directory of an Android project.",
+          "hints": [
+            "The folder name literally describes its contents.",
+            "It is located inside the res directory.",
+            "To access it: app → res → drawable."
+          ]
+        },
+        {
+          "id": "Section-4-1-7",
+          "question": "What syntax is used in the android:src attribute to point to an image inside the drawable folder?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android"],
+          "options": [
+            { "id": "a", "text": "file://drawable/imagename" },
+            { "id": "b", "text": "@drawable/imagename" },
+            { "id": "c", "text": "res/drawable/imagename" },
+            { "id": "d", "text": "#drawable/imagename" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "The @ symbol is used to reference resources. @drawable/imagename tells Android to go into the drawable folder and find the image with that name.",
+          "hints": [
+            "The @ symbol locates a resource directory.",
+            "After the directory name comes a forward slash and then the image name.",
+            "The format is: @folder/name."
+          ]
+        },
+        {
+          "id": "Section-4-1-8",
+          "question": "Which two images are available in the drawable folder by default when a new Android project is created?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android"],
+          "options": [
+            { "id": "a", "text": "ic_launcher_icon and ic_launcher_splash" },
+            { "id": "b", "text": "ic_launcher_foreground and ic_launcher_background" },
+            { "id": "c", "text": "app_icon and app_background" },
+            { "id": "d", "text": "default_image and placeholder_image" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "Android Studio provides ic_launcher_foreground and ic_launcher_background as default drawable images in every new project.",
+          "hints": [
+            "Both names start with 'ic_launcher_'.",
+            "One is the foreground layer and one is the background layer.",
+            "These are the Android launcher icon components."
+          ]
+        },
+        {
+          "id": "Section-4-1-9",
+          "question": "What is the first method to add a custom external image into the drawable folder?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android"],
+          "options": [
+            { "id": "a", "text": "Type the image URL directly into the SRC attribute" },
+            { "id": "b", "text": "Right-click the drawable folder → Open in Finder/Explorer → copy the image in" },
+            { "id": "c", "text": "Use the Android Studio image importer from the File menu" },
+            { "id": "d", "text": "Paste the image path into the XML file manually" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "The first method is to right-click the drawable folder, choose Open in Finder (Mac) or Show in Explorer (Windows), then copy and paste the image file directly into that folder.",
+          "hints": [
+            "This method uses the file system to copy the image.",
+            "On Mac you get Finder; on Windows you get Explorer.",
+            "After copying, the image appears in Android Studio without any refresh."
+          ]
+        },
+        {
+          "id": "Section-4-1-10",
+          "question": "What is the second method to add a custom image into the drawable folder in Android Studio?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android"],
+          "options": [
+            { "id": "a", "text": "Drag and drop the image file directly onto the drawable folder in the project panel" },
+            { "id": "b", "text": "Use File → Import → Image" },
+            { "id": "c", "text": "Place the image in the layout folder instead" },
+            { "id": "d", "text": "Compress the image into a ZIP file and import it" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "The second method is to drag and drop the image file directly onto the drawable folder in the Android Studio project panel. A refactor dialog appears; accept it and the image is added.",
+          "hints": [
+            "This method does not require opening the file system.",
+            "A dialog box with a 'Refactor' option appears when you drop the file.",
+            "It is faster and more convenient than the first method."
+          ]
+        },
+        {
+          "id": "Section-4-1-11",
+          "question": "What is the rule for naming image files placed in the drawable folder?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android"],
+          "options": [
+            { "id": "a", "text": "Names must be in ALL CAPS" },
+            { "id": "b", "text": "Names must be in all lowercase characters" },
+            { "id": "c", "text": "Names can contain any mix of uppercase and lowercase" },
+            { "id": "d", "text": "Names must start with a capital letter" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "Image file names in the drawable folder must use only lowercase characters. Using uppercase letters causes errors in Android Studio.",
+          "hints": [
+            "Capital letters in the name trigger error indicators in the editor.",
+            "The instructor demonstrated this by deliberately using uppercase and showing the error.",
+            "Always rename files to lowercase before placing them in the drawable folder."
+          ]
+        },
+        {
+          "id": "Section-4-1-12",
+          "question": "What is the shortcut key to rename a file in Android Studio using the Refactor menu?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android"],
+          "options": [
+            { "id": "a", "text": "Ctrl + R" },
+            { "id": "b", "text": "Shift + F6" },
+            { "id": "c", "text": "F2" },
+            { "id": "d", "text": "Alt + Enter" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "To rename a file in Android Studio, right-click → Refactor → Rename, or use the shortcut Shift + F6.",
+          "hints": [
+            "The shortcut uses both a modifier key and a function key.",
+            "It is found under the Refactor context menu.",
+            "Shift + F6 opens the rename dialog directly."
+          ]
+        },
+        {
+          "id": "Section-4-1-13",
+          "question": "What does the android:gravity attribute do for a TextView?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android"],
+          "options": [
+            { "id": "a", "text": "It moves the entire TextView to a different position on the screen" },
+            { "id": "b", "text": "It aligns the text content within the TextView box" },
+            { "id": "c", "text": "It increases the font weight of the text" },
+            { "id": "d", "text": "It changes the text color" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "android:gravity aligns the text content within the boundaries of the TextView widget. For example, center gravity places the text in the middle of the TextView box.",
+          "hints": [
+            "Gravity controls position of content inside the view, not the view itself.",
+            "Setting it to 'center' places text in the center of the box.",
+            "The definition of gravity in Android is 'alignment', not physical gravity."
+          ]
+        },
+        {
+          "id": "Section-4-1-14",
+          "question": "Which attribute controls the font size of the text in a TextView?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android"],
+          "options": [
+            { "id": "a", "text": "android:textStyle" },
+            { "id": "b", "text": "android:textColor" },
+            { "id": "c", "text": "android:textSize" },
+            { "id": "d", "text": "android:gravity" }
+          ],
+          "correctAnswers": ["c"],
+          "explanation": "android:textSize controls the font size of the text displayed in a TextView. You can set it to a value like 30sp.",
+          "hints": [
+            "The attribute name directly combines 'text' and 'size'.",
+            "Common units for text size are sp (scale-independent pixels).",
+            "The instructor set it to 30sp in the demonstration."
+          ]
+        },
+        {
+          "id": "Section-4-1-15",
+          "question": "Which attribute is used to make text bold or italic in a TextView?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["Android Application Development", "Basics of Android"],
+          "options": [
+            { "id": "a", "text": "android:gravity" },
+            { "id": "b", "text": "android:textStyle" },
+            { "id": "c", "text": "android:textColor" },
+            { "id": "d", "text": "android:textSize" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "android:textStyle sets the style of the text. Accepted values are bold, italic, normal, and bold|italic.",
+          "hints": [
+            "Style refers to the visual weight and slant of text.",
+            "The valid values include bold, italic, and normal.",
+            "You can combine bold and italic using the pipe character."
+          ]
+        },
+        {
+          "id": "Section-4-1-16",
+          "question": "Which attribute changes the color of the text in a TextView?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["Android Application Development", "Basics of Android"],
+          "options": [
+            { "id": "a", "text": "android:background" },
+            { "id": "b", "text": "android:tint" },
+            { "id": "c", "text": "android:textColor" },
+            { "id": "d", "text": "android:foreground" }
+          ],
+          "correctAnswers": ["c"],
+          "explanation": "android:textColor sets the color of the text in a TextView. You can use color names like 'black' or hex color codes.",
+          "hints": [
+            "The attribute combines 'text' and 'color'.",
+            "You can search 'color' in the XML editor to find it quickly.",
+            "It accepts color names like 'black' as well as hex values."
+          ]
+        },
+        {
+          "id": "Section-4-1-17",
+          "question": "Where can a developer find the full list of available attributes for a TextView?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["Android Application Development", "Basics of Android"],
+          "options": [
+            { "id": "a", "text": "Only in the Android Studio XML autocomplete" },
+            { "id": "b", "text": "In the TextView API reference on Android's official Google documentation" },
+            { "id": "c", "text": "Only in paid Android developer courses" },
+            { "id": "d", "text": "In the Android emulator settings menu" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "The full list of TextView attributes is available in the official TextView API reference on Google's Android developer documentation website.",
+          "hints": [
+            "The instructor searched for 'textview' in a browser to find it.",
+            "It is the first result and is labeled 'TextView API reference'.",
+            "The official documentation is free and accessible at any time."
+          ]
+        },
+        {
+          "id": "Section-4-1-18",
+          "question": "When Android Studio renames a file that is already referenced in the XML, what happens to the reference?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["Android Application Development", "Basics of Android"],
+          "options": [
+            { "id": "a", "text": "The reference breaks and must be manually updated" },
+            { "id": "b", "text": "Android Studio automatically updates the reference everywhere it is used" },
+            { "id": "c", "text": "The old file is duplicated under the new name" },
+            { "id": "d", "text": "The XML file is deleted" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "When you rename a file via Refactor → Rename in Android Studio, it automatically updates all references to that file throughout the project.",
+          "hints": [
+            "The instructor demonstrated renaming 'unnamed' and the XML reference updated automatically.",
+            "This is the advantage of using Refactor → Rename over simple file renaming.",
+            "Android Studio's refactoring tools handle all dependency updates."
+          ]
+        },
+        {
+          "id": "Section-4-1-19",
+          "question": "After adding an image file to the drawable folder, do you need to refresh Android Studio to see it?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["Android Application Development", "Basics of Android"],
+          "options": [
+            { "id": "a", "text": "Yes, you must restart Android Studio" },
+            { "id": "b", "text": "Yes, you must click the Sync Project button" },
+            { "id": "c", "text": "No, the image appears automatically without any refresh" },
+            { "id": "d", "text": "Yes, you must invalidate caches" }
+          ],
+          "correctAnswers": ["c"],
+          "explanation": "Once an image is placed inside the drawable folder, it appears in Android Studio automatically without needing a manual refresh or restart.",
+          "hints": [
+            "The instructor explicitly stated this point during the demonstration.",
+            "No extra steps are required after placing the file in the folder.",
+            "Android Studio monitors the folder and updates in real time."
+          ]
+        },
+        {
+          "id": "Section-4-1-20",
+          "question": "What does the gravity value 'center' do to text inside a TextView that has a width of 250dp and height of 60dp?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["Android Application Development", "Basics of Android"],
+          "options": [
+            { "id": "a", "text": "It moves the entire TextView to the center of the screen" },
+            { "id": "b", "text": "It places the text in the horizontal and vertical center of the 250dp × 60dp box" },
+            { "id": "c", "text": "It makes the text invisible" },
+            { "id": "d", "text": "It increases the text size to fill the box" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "Setting android:gravity to 'center' positions the text content in the center of the TextView's own bounding box, not on the screen.",
+          "hints": [
+            "Gravity affects content inside the view, not the view's position.",
+            "The instructor used it to fix text that was stuck in the top-left of the box.",
+            "The TextView box dimensions stay the same; only the text position changes."
+          ]
+        }
+      ]
+    }
+  ]
+}

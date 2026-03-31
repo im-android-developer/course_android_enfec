@@ -1,0 +1,410 @@
+{
+  "items": [
+    {
+      "name": "Section5-2",
+      "difficulty": "medium",
+      "content": [
+        {
+          "id": "Section-5-2-1",
+          "question": "When running the app from Android Studio, which button is clicked to launch it on an emulator?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Emulator"],
+          "options": [
+            { "id": "a", "text": "The Build button" },
+            { "id": "b", "text": "The Display/Run button" },
+            { "id": "c", "text": "The Debug button" },
+            { "id": "d", "text": "The Sync button" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "To run the app and see it on the emulator, you click the Display (Run) button in Android Studio, which builds and launches the app.",
+          "hints": [
+            "The instructor said 'click on display button'.",
+            "It triggers the build process first.",
+            "It is commonly represented by a play/run icon."
+          ]
+        },
+        {
+          "id": "Section-5-2-2",
+          "question": "Why did Main Activity launch first on the emulator instead of the Login Screen?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "AndroidManifest"],
+          "options": [
+            { "id": "a", "text": "Because Login Screen has no XML layout" },
+            { "id": "b", "text": "Because Main Activity is first alphabetically" },
+            { "id": "c", "text": "Because Main Activity has the intent-filter making it the launcher activity" },
+            { "id": "d", "text": "Because Android always launches the last created activity" }
+          ],
+          "correctAnswers": ["c"],
+          "explanation": "The AndroidManifest.xml file declares the intent-filter inside the Main Activity tag, which designates it as the launcher activity — the one that starts first when the app is opened.",
+          "hints": [
+            "The answer lies in AndroidManifest.xml.",
+            "One activity has extra lines compared to others.",
+            "Look for the intent-filter element."
+          ]
+        },
+        {
+          "id": "Section-5-2-3",
+          "question": "What is the AndroidManifest.xml file compared to in the course?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "AndroidManifest"],
+          "options": [
+            { "id": "a", "text": "A database schema" },
+            { "id": "b", "text": "A blueprint of the application" },
+            { "id": "c", "text": "A network request file" },
+            { "id": "d", "text": "A Kotlin class definition" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "The instructor compared the AndroidManifest.xml to a blueprint of a building — just as a blueprint shows every section of a building clearly, the manifest shows everything about the app's structure.",
+          "hints": [
+            "The analogy involves an engineer and a building.",
+            "A document that maps out all sections.",
+            "The word 'blueprint' was specifically used."
+          ]
+        },
+        {
+          "id": "Section-5-2-4",
+          "question": "Where is the AndroidManifest.xml file located in Android Studio's project structure?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "AndroidManifest"],
+          "options": [
+            { "id": "a", "text": "Inside the kotlin+java folder" },
+            { "id": "b", "text": "Inside the res/layout folder" },
+            { "id": "c", "text": "Inside the manifests folder at the top of the project" },
+            { "id": "d", "text": "Inside the drawable folder" }
+          ],
+          "correctAnswers": ["c"],
+          "explanation": "The AndroidManifest.xml is found by expanding the 'manifests' folder at the top of the project directory in Android Studio.",
+          "hints": [
+            "You need to expand a folder at the top level.",
+            "The folder shares its name with the file's concept.",
+            "Look under 'manifests' in the file tree."
+          ]
+        },
+        {
+          "id": "Section-5-2-5",
+          "question": "How many activities were present in the AndroidManifest.xml file in the project at this point?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "AndroidManifest"],
+          "options": [
+            { "id": "a", "text": "One" },
+            { "id": "b", "text": "Two" },
+            { "id": "c", "text": "Three" },
+            { "id": "d", "text": "Four" }
+          ],
+          "correctAnswers": ["c"],
+          "explanation": "The project had three screens — Login Screen, Main Activity, and Main Activity 2 — so the manifest file contained three activity entries.",
+          "hints": [
+            "The number of activities matches the number of screens.",
+            "The screens were Login Screen, Main Activity, and Main Activity 2.",
+            "Count the screens: it's more than two."
+          ]
+        },
+        {
+          "id": "Section-5-2-6",
+          "question": "What is the 'intent-filter' responsible for in the AndroidManifest.xml?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["Android Application Development", "AndroidManifest"],
+          "options": [
+            { "id": "a", "text": "Securing the app with a password" },
+            { "id": "b", "text": "Connecting two activities together" },
+            { "id": "c", "text": "Designating an activity as the launcher activity that opens first" },
+            { "id": "d", "text": "Filtering network requests" }
+          ],
+          "correctAnswers": ["c"],
+          "explanation": "The intent-filter element, when placed inside an activity's tag, marks that activity as the launcher activity — the one that opens when the user launches the app.",
+          "hints": [
+            "It determines which screen appears first.",
+            "Removing it from Main Activity stopped Main Activity from launching first.",
+            "Only one activity can have it."
+          ]
+        },
+        {
+          "id": "Section-5-2-7",
+          "question": "Can the intent-filter be applied to more than one activity in the manifest?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["Android Application Development", "AndroidManifest"],
+          "options": [
+            { "id": "a", "text": "Yes, all activities can have it" },
+            { "id": "b", "text": "Yes, but only two activities" },
+            { "id": "c", "text": "No, it can only be applied to one activity" },
+            { "id": "d", "text": "It depends on the Android version" }
+          ],
+          "correctAnswers": ["c"],
+          "explanation": "The instructor stated clearly that the intent-filter can only be applied to one activity at a time. Applying it to multiple activities would cause a conflict.",
+          "hints": [
+            "The instructor explicitly mentioned this rule.",
+            "There can only be one launcher activity.",
+            "Think about which screen opens first — it must be unique."
+          ]
+        },
+        {
+          "id": "Section-5-2-8",
+          "question": "What is a 'launcher activity' in the context of Android development?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "AndroidManifest"],
+          "options": [
+            { "id": "a", "text": "An activity used to launch other apps" },
+            { "id": "b", "text": "The activity that is displayed first when the app is opened" },
+            { "id": "c", "text": "An activity that handles background tasks" },
+            { "id": "d", "text": "An activity responsible for database connections" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "The launcher activity is the activity — or screen — that appears first when the user opens the app.",
+          "hints": [
+            "Think about the very first screen you see when opening an app.",
+            "The word 'launcher' relates to what opens first.",
+            "It is the entry point of the app."
+          ]
+        },
+        {
+          "id": "Section-5-2-9",
+          "question": "How do you make the Login Screen the launcher activity instead of Main Activity?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["Android Application Development", "AndroidManifest"],
+          "options": [
+            { "id": "a", "text": "Rename the Login Screen to Main Activity" },
+            { "id": "b", "text": "Delete Main Activity from the project" },
+            { "id": "c", "text": "Cut the intent-filter from Main Activity and paste it inside the Login Screen activity tag" },
+            { "id": "d", "text": "Add a new intent-filter to Login Screen without removing the old one" }
+          ],
+          "correctAnswers": ["c"],
+          "explanation": "To make Login Screen launch first, the intent-filter is cut (Ctrl+X / Cmd+X) from the Main Activity tag and pasted inside the Login Screen activity tag in AndroidManifest.xml.",
+          "hints": [
+            "The intent-filter must be moved, not duplicated.",
+            "Ctrl+X or Cmd+X is used.",
+            "The destination is the Login Screen activity tag."
+          ]
+        },
+        {
+          "id": "Section-5-2-10",
+          "question": "In the AndroidManifest.xml, where exactly must the intent-filter be placed within an activity's definition?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["Android Application Development", "AndroidManifest"],
+          "options": [
+            { "id": "a", "text": "As an attribute inside the opening <activity> tag" },
+            { "id": "b", "text": "After the closing </application> tag" },
+            { "id": "c", "text": "As a child element inside the <activity> opening and closing tags" },
+            { "id": "d", "text": "Before the <manifest> root tag" }
+          ],
+          "correctAnswers": ["c"],
+          "explanation": "Unlike simple attributes that go inside the opening tag, intent-filter is a separate functionality and must be placed as a child element between the opening <activity> and closing </activity> tags.",
+          "hints": [
+            "It is not an attribute — it is a separate element.",
+            "It goes between the activity's opening and closing tags.",
+            "The instructor explained it belongs 'inside' the activity."
+          ]
+        },
+        {
+          "id": "Section-5-2-11",
+          "question": "Does Android Studio automatically save files as you type, or do you need to manually save?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Android Studio"],
+          "options": [
+            { "id": "a", "text": "You must press Ctrl+S / Cmd+S after every change" },
+            { "id": "b", "text": "Files are saved automatically in real time as you type" },
+            { "id": "c", "text": "You must save before running the app" },
+            { "id": "d", "text": "Files are only saved when you close the project" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "The instructor explicitly mentioned that there is no need to press Ctrl+S or Cmd+S — Android Studio saves your files automatically in real time.",
+          "hints": [
+            "The instructor said 'there is no need to save'.",
+            "Changes are persisted immediately without user action.",
+            "Real-time auto-save is a feature of Android Studio."
+          ]
+        },
+        {
+          "id": "Section-5-2-12",
+          "question": "What tool in Android Studio is used to identify the cause of an app crash?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Debugging"],
+          "options": [
+            { "id": "a", "text": "Build Analyzer" },
+            { "id": "b", "text": "Profiler" },
+            { "id": "c", "text": "Logcat" },
+            { "id": "d", "text": "Layout Inspector" }
+          ],
+          "correctAnswers": ["c"],
+          "explanation": "Logcat is the tool in Android Studio used to identify why an app crashed. It shows logs, errors, and system messages generated by the device or emulator.",
+          "hints": [
+            "It displays logs and error messages.",
+            "Its icon is available at the bottom-left area of Android Studio.",
+            "The instructor said to use it when the app crashes."
+          ]
+        },
+        {
+          "id": "Section-5-2-13",
+          "question": "What keyword should you search for in Logcat to find the exact error causing the app crash?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Debugging"],
+          "options": [
+            { "id": "a", "text": "ERROR" },
+            { "id": "b", "text": "CRASH" },
+            { "id": "c", "text": "FATAL EXCEPTION" },
+            { "id": "d", "text": "NULL ERROR" }
+          ],
+          "correctAnswers": ["c"],
+          "explanation": "The instructor instructed students to search for 'FATAL EXCEPTION' in Logcat whenever the app crashes. This keyword helps locate the exact error in the logs.",
+          "hints": [
+            "It is a two-word phrase.",
+            "The first word means deadly or severe.",
+            "The second word means runtime error."
+          ]
+        },
+        {
+          "id": "Section-5-2-14",
+          "question": "What does 'Shutting down VM' mean in the Logcat output?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["Android Application Development", "Debugging"],
+          "options": [
+            { "id": "a", "text": "The physical device is powering off" },
+            { "id": "b", "text": "The virtual machine (emulator) has stopped due to an error" },
+            { "id": "c", "text": "The build process is restarting" },
+            { "id": "d", "text": "The app was closed by the user" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "'Shutting down VM' in Logcat means the virtual machine — i.e., the emulator — has stopped because an error occurred during execution.",
+          "hints": [
+            "VM stands for Virtual Machine.",
+            "It indicates something went wrong before the app could continue.",
+            "The emulator stops, not the physical computer."
+          ]
+        },
+        {
+          "id": "Section-5-2-15",
+          "question": "What does 'Caused by' in Logcat indicate?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Debugging"],
+          "options": [
+            { "id": "a", "text": "A warning message about performance" },
+            { "id": "b", "text": "The root reason behind the app crash" },
+            { "id": "c", "text": "A successful operation log" },
+            { "id": "d", "text": "A list of all active activities" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "The 'Caused by' section in Logcat identifies the root cause of the crash — the specific error and the file or line where it originated.",
+          "hints": [
+            "Causation implies reason or origin.",
+            "It appears after FATAL EXCEPTION.",
+            "It tells you exactly what went wrong."
+          ]
+        },
+        {
+          "id": "Section-5-2-16",
+          "question": "What type of exception was mentioned in the Logcat 'Caused by' section during the crash?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["Android Application Development", "Debugging"],
+          "options": [
+            { "id": "a", "text": "ArrayIndexOutOfBoundsException" },
+            { "id": "b", "text": "ClassCastException" },
+            { "id": "c", "text": "NullPointerException" },
+            { "id": "d", "text": "IllegalArgumentException" }
+          ],
+          "correctAnswers": ["c"],
+          "explanation": "The Logcat showed a NullPointerException in the 'Caused by' section. The instructor mentioned they will explain this exception in detail later.",
+          "hints": [
+            "It involves a 'null' value being used unexpectedly.",
+            "It is one of the most common Java/Kotlin exceptions.",
+            "The first word is 'Null'."
+          ]
+        },
+        {
+          "id": "Section-5-2-17",
+          "question": "In Logcat, how can you tell which files are user-created versus Android Studio's internal files?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["Android Application Development", "Debugging"],
+          "options": [
+            { "id": "a", "text": "User files are shown in red and internal files in blue" },
+            { "id": "b", "text": "Internal files like ViewCompat are not visible in the kotlin+java folder; user-created files are" },
+            { "id": "c", "text": "Internal files have a lock icon next to them" },
+            { "id": "d", "text": "User files always appear at the top of the Logcat" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "Internal Android files like ViewCompat are not visible in the kotlin+java folder. You can only create errors in files you created, so look for your own file names (e.g., LoginScreen) in the Logcat trace.",
+          "hints": [
+            "You cannot make mistakes in files you did not create.",
+            "ViewCompat is one example of an internal file.",
+            "Looking at the file names helps narrow down the source."
+          ]
+        },
+        {
+          "id": "Section-5-2-18",
+          "question": "What does colon followed by a number (e.g., ':14') mean after a file name in a Logcat error trace?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["Android Application Development", "Debugging"],
+          "options": [
+            { "id": "a", "text": "The file size in kilobytes" },
+            { "id": "b", "text": "The version number of the file" },
+            { "id": "c", "text": "The line number in the file where the error occurred" },
+            { "id": "d", "text": "The number of errors in that file" }
+          ],
+          "correctAnswers": ["c"],
+          "explanation": "In Logcat, 'LoginScreen.kt:14' means the error is at line 14 of the LoginScreen.kt file. Clicking on it takes you directly to that line.",
+          "hints": [
+            "It helps you navigate directly to the problem.",
+            "Clicking on it jumps to a specific position in the file.",
+            "It is a line reference."
+          ]
+        },
+        {
+          "id": "Section-5-2-19",
+          "question": "How do you navigate directly to the error location in code from the Logcat window?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Debugging"],
+          "options": [
+            { "id": "a", "text": "Manually open the file and scroll to the line number" },
+            { "id": "b", "text": "Click on the blue file name link in the Logcat trace" },
+            { "id": "c", "text": "Use Ctrl+F to search for the error in all files" },
+            { "id": "d", "text": "Right-click and choose 'Go to error'" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "Clicking on the blue file name link shown in the Logcat error trace (e.g., LoginScreen.kt:14) takes you directly to the exact line in the file where the error occurred.",
+          "hints": [
+            "File names in Logcat are displayed in blue.",
+            "It is a single click action.",
+            "The link opens the file and jumps to the correct line."
+          ]
+        },
+        {
+          "id": "Section-5-2-20",
+          "question": "What attribute must be set to 'true' in the Login Screen activity definition after adding the intent-filter?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["Android Application Development", "AndroidManifest"],
+          "options": [
+            { "id": "a", "text": "android:enabled" },
+            { "id": "b", "text": "android:allowBackup" },
+            { "id": "c", "text": "android:exported" },
+            { "id": "d", "text": "android:visible" }
+          ],
+          "correctAnswers": ["c"],
+          "explanation": "After adding the intent-filter to the Login Screen activity, Android Studio requires 'android:exported' to be set to 'true'. Without it, there is a compile error.",
+          "hints": [
+            "The instructor got an error and had to fix this attribute.",
+            "It means the activity is accessible from outside the app.",
+            "Its value must be 'true' when the activity has an intent-filter."
+          ]
+        }
+      ]
+    }
+  ]
+}

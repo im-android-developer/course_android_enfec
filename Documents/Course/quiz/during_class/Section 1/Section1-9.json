@@ -1,0 +1,170 @@
+{
+  "items": [
+    {
+      "name": "Section1-9",
+      "difficulty": "easy",
+      "content": [
+        {
+          "id": "Section-1-9-1",
+          "question": "What should you search for in your browser to download Android Studio?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android app development"],
+          "options": [
+            { "id": "a", "text": "Android IDE" },
+            { "id": "b", "text": "Android Studio" },
+            { "id": "c", "text": "Download Android Studio" },
+            { "id": "d", "text": "Google Developer Tools" }
+          ],
+          "correctAnswers": ["c"],
+          "explanation": "You should search for 'Download Android Studio' in your browser's search bar and hit enter. This search will direct you to the official download page.",
+          "hints": ["Search bar is your first step", "Include the word 'Download'", "Be specific with the software name"]
+        },
+        {
+          "id": "Section-1-9-2",
+          "question": "What is the official website where you download Android Studio?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android app development"],
+          "options": [
+            { "id": "a", "text": "google.com" },
+            { "id": "b", "text": "developer.android.com" },
+            { "id": "c", "text": "android.com" },
+            { "id": "d", "text": "studio.android.com" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "The official Android developer site is developer.android.com, maintained by Google. This is where you should download Android Studio to ensure you get the legitimate version.",
+          "hints": ["Official Google site", "Contains 'developer'", "Contains 'android.com'"]
+        },
+        {
+          "id": "Section-1-9-3",
+          "question": "What was Android Studio called at the time of the recording in this episode?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android app development"],
+          "options": [
+            { "id": "a", "text": "Android Studio Koala" },
+            { "id": "b", "text": "Android Studio Novel" },
+            { "id": "c", "text": "Android Studio Mongoose" },
+            { "id": "d", "text": "Android Studio Panda" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "At the time of recording, it was called Android Studio Novel. However, the course notes that this name may change with future updates, so always check the official website for the current version.",
+          "hints": ["Name starts with 'N'", "It's a unique name", "Version names change over time"]
+        },
+        {
+          "id": "Section-1-9-4",
+          "question": "What must you do before clicking the Download button?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android app development"],
+          "options": [
+            { "id": "a", "text": "Create a Google account" },
+            { "id": "b", "text": "Read and agree to Google's terms and conditions" },
+            { "id": "c", "text": "Fill out a registration form" },
+            { "id": "d", "text": "Download other Android tools first" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "A pop-up will appear with Google's terms and conditions. You must scroll through and check the box that says 'I have read and agree with the above terms and conditions' before proceeding with the download.",
+          "hints": ["Legal agreement is required", "Scroll through the terms", "Checkbox must be checked"]
+        },
+        {
+          "id": "Section-1-9-5",
+          "question": "What are the two Mac version options available for download?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android app development"],
+          "options": [
+            { "id": "a", "text": "Mac with M-chip or Mac with older version" },
+            { "id": "b", "text": "Mac with Apple chip or Mac with Intel chip" },
+            { "id": "c", "text": "Mac Pro or Mac Mini" },
+            { "id": "d", "text": "Mac x86 or Mac ARM" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "Mac users have two chip selection options: Mac with Apple chip (M1, M2, M3, M4) or Mac with Intel chip. Windows users do not need to choose a chip version.",
+          "hints": ["Two options for Mac", "One involves Apple's chip", "One involves Intel chip"]
+        },
+        {
+          "id": "Section-1-9-6",
+          "question": "What file format is opened for Mac installation?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android app development"],
+          "options": [
+            { "id": "a", "text": ".zip file" },
+            { "id": "b", "text": ".exe file" },
+            { "id": "c", "text": ".dmg file" },
+            { "id": "d", "text": ".tar file" }
+          ],
+          "correctAnswers": ["c"],
+          "explanation": "On Mac, after downloading, you open the .dmg (Disk Image) file. This file contains the Android Studio application and the application folder for installation.",
+          "hints": ["Mac-specific file format", "Stands for 'Disk Image'", "Comes after download on Mac"]
+        },
+        {
+          "id": "Section-1-9-7",
+          "question": "How do you install Android Studio on Mac from the .dmg file?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android app development"],
+          "options": [
+            { "id": "a", "text": "Double-click to extract" },
+            { "id": "b", "text": "Run the installer executable" },
+            { "id": "c", "text": "Drag and drop the Android Studio icon into the application folder" },
+            { "id": "d", "text": "Copy files manually to system directory" }
+          ],
+          "correctAnswers": ["c"],
+          "explanation": "In the .dmg window, you will see the Android Studio icon and the application folder. Simply drag and drop the Android Studio icon into the application folder to install it.",
+          "hints": ["Drag and drop action", "Into application folder", "Icon-based installation"]
+        },
+        {
+          "id": "Section-1-9-8",
+          "question": "What is the setup wizard in Android Studio?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android app development"],
+          "options": [
+            { "id": "a", "text": "A web-based tutorial" },
+            { "id": "b", "text": "A guided installation process that helps configure your development environment" },
+            { "id": "c", "text": "A code editor" },
+            { "id": "d", "text": "An emulator tool" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "The setup wizard is a guided installation process that appears when you launch Android Studio for the first time. It helps you configure your development environment step by step.",
+          "hints": ["Appears on first launch", "It's a guided process", "Configures development environment"]
+        },
+        {
+          "id": "Section-1-9-9",
+          "question": "What are the two installation types offered in the Android Studio setup wizard?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android app development"],
+          "options": [
+            { "id": "a", "text": "Express and Detailed" },
+            { "id": "b", "text": "Quick and Complete" },
+            { "id": "c", "text": "Standard and Custom" },
+            { "id": "d", "text": "Basic and Advanced" }
+          ],
+          "correctAnswers": ["c"],
+          "explanation": "The two installation types are Standard and Custom. Standard is recommended for most users and includes all commonly used settings and components. Custom is ideal if you want to manually select SDK components, themes, or emulator settings.",
+          "hints": ["Standard is for most users", "Custom is for manual selection", "Choose one in setup wizard"]
+        },
+        {
+          "id": "Section-1-9-10",
+          "question": "What components does Android Studio download during the setup process?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android app development"],
+          "options": [
+            { "id": "a", "text": "Only the IDE software" },
+            { "id": "b", "text": "Android SDK, emulator images, and build tools" },
+            { "id": "c", "text": "Only the emulator" },
+            { "id": "d", "text": "Documentation files only" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "Android Studio downloads required components including the Android SDK (Software Development Kit), emulator images for testing apps on virtual devices, and build tools for compiling your applications. This setup may take several minutes.",
+          "hints": ["Multiple components are needed", "SDK is included", "Emulator images are downloaded"]
+        }
+      ]
+    }
+  ]
+}

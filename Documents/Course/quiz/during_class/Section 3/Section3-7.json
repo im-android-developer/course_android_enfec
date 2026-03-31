@@ -1,0 +1,2230 @@
+{
+  "items": [
+    {
+      "name": "Section3-7",
+      "difficulty": "hard",
+      "content": [
+        {
+          "id": "Section-3-7-1",
+          "question": "What size was used when placing a second TextView in the layout editor during the demonstration?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": [
+            "Android Application Development",
+            "Basics of Android"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": "100dp wide and 30dp tall"
+            },
+            {
+              "id": "b",
+              "text": "300dp wide and 60dp tall"
+            },
+            {
+              "id": "c",
+              "text": "200dp wide and 50dp tall"
+            },
+            {
+              "id": "d",
+              "text": "150dp wide and 40dp tall"
+            }
+          ],
+          "correctAnswers": [
+            "b"
+          ],
+          "explanation": "The second TextView was placed with a width of 300dp and height of 60dp, with text set to 'Good morning', matching the size used for the first element.",
+          "hints": [
+            "Think about which size values were explicitly demonstrated in the lesson.",
+            "The second element was meant to mirror the dimensions of the first one.",
+            "Both 300 and 60 are the values mentioned for the new element's width and height."
+          ]
+        },
+        {
+          "id": "Section-3-7-2",
+          "question": "What happens when you add a second TextView to a ConstraintLayout without attaching any constraints to it?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": [
+            "Android Application Development",
+            "Basics of Android"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": "It appears at the bottom of the screen"
+            },
+            {
+              "id": "b",
+              "text": "It appears at the center of the screen"
+            },
+            {
+              "id": "c",
+              "text": "It overlaps with the first element at the default top-left position"
+            },
+            {
+              "id": "d",
+              "text": "It appears to the right of the first element automatically"
+            }
+          ],
+          "correctAnswers": [
+            "c"
+          ],
+          "explanation": "Without constraints, new elements default to the same top-left position and overlap each other, making them hard to distinguish visually.",
+          "hints": [
+            "Constraints are what give elements their position in a ConstraintLayout.",
+            "Without positioning rules, the element has no defined location.",
+            "You would need to click to even select the overlapping element."
+          ]
+        },
+        {
+          "id": "Section-3-7-3",
+          "question": "How can you distinguish between two overlapping elements in the Android Studio layout editor?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": [
+            "Android Application Development",
+            "Basics of Android"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": "Press the Tab key to cycle through elements"
+            },
+            {
+              "id": "b",
+              "text": "Click on the overlapping area in the editor"
+            },
+            {
+              "id": "c",
+              "text": "Use the component tree panel"
+            },
+            {
+              "id": "d",
+              "text": "Both clicking the area and using the component tree work"
+            }
+          ],
+          "correctAnswers": [
+            "d"
+          ],
+          "explanation": "You can click in the layout area to select an element or use the component tree on the side panel to select and identify overlapping elements individually.",
+          "hints": [
+            "There are multiple ways to interact with elements in the editor.",
+            "The component tree shows all elements in a list, not just visually.",
+            "Clicking directly in the design canvas also lets you select one of the overlapping elements."
+          ]
+        },
+        {
+          "id": "Section-3-7-4",
+          "question": "What is the purpose of dragging an element in the Android Studio design editor?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": [
+            "Android Application Development",
+            "Basics of Android"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": "To resize the element"
+            },
+            {
+              "id": "b",
+              "text": "To change the element's text content"
+            },
+            {
+              "id": "c",
+              "text": "To reposition or separate overlapping elements"
+            },
+            {
+              "id": "d",
+              "text": "To delete the element"
+            }
+          ],
+          "correctAnswers": [
+            "c"
+          ],
+          "explanation": "Dragging an element moves it to a different position on the canvas, which is especially useful for separating overlapping elements so you can work with them individually.",
+          "hints": [
+            "The action physically moves the element on the visual canvas.",
+            "It involves clicking, holding, and moving the element.",
+            "This is the standard way to reposition UI elements in the drag-and-drop editor."
+          ]
+        },
+        {
+          "id": "Section-3-7-5",
+          "question": "Before freely repositioning an element in the layout editor, what must you do first?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": [
+            "Android Application Development",
+            "Basics of Android"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": "Nothing; simply drag it to the new position"
+            },
+            {
+              "id": "b",
+              "text": "Delete the existing constraints or anchor attachments first"
+            },
+            {
+              "id": "c",
+              "text": "Resize the element first"
+            },
+            {
+              "id": "d",
+              "text": "Change the element's text content first"
+            }
+          ],
+          "correctAnswers": [
+            "b"
+          ],
+          "explanation": "Existing constraints control an element's position, so they must be removed before you can freely move the element. Otherwise the element snaps back to its constrained position.",
+          "hints": [
+            "Constraints resist free movement because they define the element's position.",
+            "Right-clicking on the anchor point reveals options including Delete.",
+            "After deleting the constraint, the anchor circle appears hollow, indicating it is free."
+          ]
+        },
+        {
+          "id": "Section-3-7-6",
+          "question": "When attaching constraints to the Hello World TextView in the demonstration, which three sides were connected to the ConstraintLayout edges?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": [
+            "Android Application Development",
+            "Basics of Android"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": "Top, bottom, and right"
+            },
+            {
+              "id": "b",
+              "text": "Left, right, and top"
+            },
+            {
+              "id": "c",
+              "text": "Left, right, and bottom"
+            },
+            {
+              "id": "d",
+              "text": "Top, bottom, and left"
+            }
+          ],
+          "correctAnswers": [
+            "b"
+          ],
+          "explanation": "Hello World was constrained to the left, right, and top edges of the ConstraintLayout, placing it at the top and centering it horizontally.",
+          "hints": [
+            "Three sides were attached to position the element at the top.",
+            "Horizontal centering requires attachments on both horizontal sides.",
+            "A top attachment places the element near the top of the screen."
+          ]
+        },
+        {
+          "id": "Section-3-7-7",
+          "question": "If the Good Morning TextView's top anchor is constrained to Hello World's bottom anchor, where does Good Morning appear?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": [
+            "Android Application Development",
+            "Basics of Android"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": "Above Hello World"
+            },
+            {
+              "id": "b",
+              "text": "Directly on top of Hello World"
+            },
+            {
+              "id": "c",
+              "text": "Directly below Hello World"
+            },
+            {
+              "id": "d",
+              "text": "To the side of Hello World"
+            }
+          ],
+          "correctAnswers": [
+            "c"
+          ],
+          "explanation": "Constraining an element's top to another element's bottom creates a vertical chain, placing the constrained element directly below the anchor element.",
+          "hints": [
+            "Think about vertical positioning: top of one connects to bottom of another.",
+            "The top of Good Morning is pinned to the bottom of Hello World.",
+            "This is how vertical chains between views are formed."
+          ]
+        },
+        {
+          "id": "Section-3-7-8",
+          "question": "What is the keyboard shortcut for undo in Android Studio on a Mac?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": [
+            "Android Application Development",
+            "Basics of Android"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": "Ctrl + Z"
+            },
+            {
+              "id": "b",
+              "text": "Command + Z"
+            },
+            {
+              "id": "c",
+              "text": "Alt + Z"
+            },
+            {
+              "id": "d",
+              "text": "Shift + Z"
+            }
+          ],
+          "correctAnswers": [
+            "b"
+          ],
+          "explanation": "On a Mac, Command + Z is the undo shortcut. On Windows, it is Ctrl + Z. This is consistent with most macOS applications.",
+          "hints": [
+            "Mac uses the Command key where Windows uses Ctrl for many shortcuts.",
+            "This shortcut works in Android Studio just like in any macOS application.",
+            "On Windows, the equivalent is Ctrl + Z."
+          ]
+        },
+        {
+          "id": "Section-3-7-9",
+          "question": "What happens when you drag Hello World's position after Good Morning's top is constrained to Hello World's bottom?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": [
+            "Android Application Development",
+            "Basics of Android"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": "Only Hello World moves; Good Morning stays in place"
+            },
+            {
+              "id": "b",
+              "text": "Only Good Morning moves; Hello World stays in place"
+            },
+            {
+              "id": "c",
+              "text": "Both Hello World and Good Morning move together"
+            },
+            {
+              "id": "d",
+              "text": "Neither element moves"
+            }
+          ],
+          "correctAnswers": [
+            "c"
+          ],
+          "explanation": "Because Good Morning is constrained to Hello World's bottom, it follows Hello World's position. Moving Hello World shifts the entire chain downward.",
+          "hints": [
+            "Think of a chain reaction where one element pulls another.",
+            "The slave element follows the master in a constraint relationship.",
+            "Constraints create positional dependencies between elements."
+          ]
+        },
+        {
+          "id": "Section-3-7-10",
+          "question": "What is the purpose of the ID attribute in an Android layout element?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": [
+            "Android Application Development",
+            "Basics of Android"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": "To set the element's text color"
+            },
+            {
+              "id": "b",
+              "text": "To provide a unique identity to the element"
+            },
+            {
+              "id": "c",
+              "text": "To define the element's width and height"
+            },
+            {
+              "id": "d",
+              "text": "To set the element's background color"
+            }
+          ],
+          "correctAnswers": [
+            "b"
+          ],
+          "explanation": "The ID attribute provides a unique identity to each UI element, allowing them to be referred to and differentiated when there are multiple components on the screen.",
+          "hints": [
+            "Think about how individuals in a group are uniquely identified.",
+            "Without IDs you cannot tell one element from another programmatically.",
+            "The lecture compares it to an enrollment number in a class."
+          ]
+        },
+        {
+          "id": "Section-3-7-11",
+          "question": "In the lecture, the ID attribute for UI elements is compared to which real-world concept?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": [
+            "Android Application Development",
+            "Basics of Android"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": "House addresses in a city"
+            },
+            {
+              "id": "b",
+              "text": "Phone numbers in a contact list"
+            },
+            {
+              "id": "c",
+              "text": "Student enrollment numbers in a class"
+            },
+            {
+              "id": "d",
+              "text": "Passport numbers at a border"
+            }
+          ],
+          "correctAnswers": [
+            "c"
+          ],
+          "explanation": "The lecture compares IDs to student enrollment numbers. Just as enrollment numbers allow a teacher to identify and call a specific student, IDs allow a developer to reference a specific UI element.",
+          "hints": [
+            "The analogy involved a teacher trying to call a specific student.",
+            "A classroom scenario was used where many students exist but each has a unique number.",
+            "Without that number, the teacher cannot single out a specific person."
+          ]
+        },
+        {
+          "id": "Section-3-7-12",
+          "question": "How do you delete a specific constraint in Android Studio's layout editor without removing the element itself?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": [
+            "Android Application Development",
+            "Basics of Android"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": "Select the element and press the Delete key"
+            },
+            {
+              "id": "b",
+              "text": "Right-click on the constraint anchor and choose Delete"
+            },
+            {
+              "id": "c",
+              "text": "Double-click on the anchor point"
+            },
+            {
+              "id": "d",
+              "text": "Drag the anchor outside the layout boundary"
+            }
+          ],
+          "correctAnswers": [
+            "b"
+          ],
+          "explanation": "To delete a constraint without removing the component, right-click on the anchor point dot and select Delete. This removes only the constraint line, leaving the component intact.",
+          "hints": [
+            "You want to delete the connection, not the element itself.",
+            "Right-clicking on the small circle (anchor) reveals a context menu.",
+            "The lecture specifically said 'Delete will not remove your component.'"
+          ]
+        },
+        {
+          "id": "Section-3-7-13",
+          "question": "How can you visually tell whether a constraint anchor slot on an element is currently attached to something?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": [
+            "Android Application Development",
+            "Basics of Android"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": "An attached slot appears red; an unattached slot appears blue"
+            },
+            {
+              "id": "b",
+              "text": "An attached slot is filled with color; an unattached slot appears hollow"
+            },
+            {
+              "id": "c",
+              "text": "An attached slot is larger than an unattached slot"
+            },
+            {
+              "id": "d",
+              "text": "An attached slot shows a number inside it"
+            }
+          ],
+          "correctAnswers": [
+            "b"
+          ],
+          "explanation": "In the layout editor, a filled/colored circle on the element's anchor means the constraint slot is occupied, while a hollow circle means it is available and unattached.",
+          "hints": [
+            "Look at the small circles on the edges of a selected element.",
+            "The visual difference is between an empty and a full appearance.",
+            "Like a socket: hollow means nothing plugged in, filled means connected."
+          ]
+        },
+        {
+          "id": "Section-3-7-14",
+          "question": "What happens if you try to attach a second constraint to an anchor slot that is already occupied?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": [
+            "Android Application Development",
+            "Basics of Android"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": "The new constraint replaces the existing one"
+            },
+            {
+              "id": "b",
+              "text": "Both constraints coexist on the same slot"
+            },
+            {
+              "id": "c",
+              "text": "No constraint can be attached to an already occupied slot"
+            },
+            {
+              "id": "d",
+              "text": "Android Studio shows an error dialog before allowing you to proceed"
+            }
+          ],
+          "correctAnswers": [
+            "c"
+          ],
+          "explanation": "Each constraint anchor slot accepts only one constraint. If a slot is already occupied, the editor will show no available attachment targets when you try to drag another constraint from it.",
+          "hints": [
+            "One slot, one connection \u2014 this is a hard rule.",
+            "The lecture demonstrated dragging from an occupied slot and seeing 'no constraint available.'",
+            "Think of a physical connector that already has a cable plugged in."
+          ]
+        },
+        {
+          "id": "Section-3-7-15",
+          "question": "When placing a Hello Android TextView below the Good Morning component, which anchor connection is made?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": [
+            "Android Application Development",
+            "Basics of Android"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": "Attach Good Morning's bottom to Hello Android's top"
+            },
+            {
+              "id": "b",
+              "text": "Attach Hello Android's top to Good Morning's bottom"
+            },
+            {
+              "id": "c",
+              "text": "Attach Hello Android's bottom to Good Morning's top"
+            },
+            {
+              "id": "d",
+              "text": "Attach Good Morning's top to Hello Android's top"
+            }
+          ],
+          "correctAnswers": [
+            "b"
+          ],
+          "explanation": "To position Hello Android below Good Morning, the top of Hello Android is constrained to the bottom of Good Morning, forming a three-view vertical chain: Hello World \u2192 Good Morning \u2192 Hello Android.",
+          "hints": [
+            "The receiving view (the one going below) connects its top to the bottom of the view above.",
+            "The chain order from top to bottom is Hello World, Good Morning, then Hello Android.",
+            "Think of it as the new element's top anchoring to the previous element's bottom."
+          ]
+        },
+        {
+          "id": "Section-3-7-16",
+          "question": "What is the keyboard shortcut to copy and paste XML tags in Android Studio on Windows?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": [
+            "Android Application Development",
+            "Basics of Android"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": "Ctrl + X then Ctrl + V"
+            },
+            {
+              "id": "b",
+              "text": "Ctrl + C then Ctrl + V"
+            },
+            {
+              "id": "c",
+              "text": "Alt + C then Alt + V"
+            },
+            {
+              "id": "d",
+              "text": "Shift + C then Shift + V"
+            }
+          ],
+          "correctAnswers": [
+            "b"
+          ],
+          "explanation": "The standard Windows clipboard shortcut Ctrl + C to copy and Ctrl + V to paste works in Android Studio for duplicating XML tags.",
+          "hints": [
+            "These are the universal Windows copy-paste shortcuts.",
+            "On Mac, the equivalent would be Command + C and Command + V.",
+            "The lecture demonstrated using this to avoid rewriting the same XML structure."
+          ]
+        },
+        {
+          "id": "Section-3-7-17",
+          "question": "What do yellow squiggly lines under an XML element in Android Studio typically indicate?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": [
+            "Android Application Development",
+            "Basics of Android"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": "A critical syntax error that will crash the app"
+            },
+            {
+              "id": "b",
+              "text": "A missing mandatory attribute"
+            },
+            {
+              "id": "c",
+              "text": "A non-critical warning, possibly due to an internal configuration issue"
+            },
+            {
+              "id": "d",
+              "text": "The element type is not supported in the current API level"
+            }
+          ],
+          "correctAnswers": [
+            "c"
+          ],
+          "explanation": "Yellow squiggly lines are warnings, not critical errors. They can appear due to internal configuration issues and do not necessarily affect the app's functionality. You can check by clicking the suggestion bulb.",
+          "hints": [
+            "Yellow/amber color usually indicates a warning, not a hard error.",
+            "The lecture said to click the suggestion bulb to inspect them.",
+            "The instructor noted they can appear for internal reasons and are not always a big issue."
+          ]
+        },
+        {
+          "id": "Section-3-7-18",
+          "question": "What happens when mandatory XML attributes are deleted from an element and the app is run on the emulator?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": [
+            "Android Application Development",
+            "Basics of Android"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": "The app runs but the element is not displayed"
+            },
+            {
+              "id": "b",
+              "text": "The app crashes"
+            },
+            {
+              "id": "c",
+              "text": "The app shows a warning toast message"
+            },
+            {
+              "id": "d",
+              "text": "Android Studio prevents the build from completing"
+            }
+          ],
+          "correctAnswers": [
+            "b"
+          ],
+          "explanation": "Removing mandatory attributes from an XML element causes the app to crash at runtime. The demonstration showed the crash occurring immediately and being resolved only by restoring the attributes.",
+          "hints": [
+            "Mandatory means required \u2014 without them, the component cannot function.",
+            "The demonstration explicitly deleted attributes and the app crashed.",
+            "Restoring the attributes via undo fixed the crash immediately."
+          ]
+        },
+        {
+          "id": "Section-3-7-19",
+          "question": "What is the correct technique to attach a constraint from one element to another in the design editor?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": [
+            "Android Application Development",
+            "Basics of Android"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": "Double-click the target element"
+            },
+            {
+              "id": "b",
+              "text": "Click on the anchor point, hold, drag to the target, and release"
+            },
+            {
+              "id": "c",
+              "text": "Shift-click both elements"
+            },
+            {
+              "id": "d",
+              "text": "Use only the right-click context menu"
+            }
+          ],
+          "correctAnswers": [
+            "b"
+          ],
+          "explanation": "Constraints are added by clicking and holding the anchor circle on the source element, dragging the resulting line to the desired target (another element's edge or the layout boundary), and releasing.",
+          "hints": [
+            "It involves three steps: press, drag, release.",
+            "The anchor is the small circle on the selected element's edge.",
+            "The lecture described this as 'click, hold, drag, and release' multiple times."
+          ]
+        },
+        {
+          "id": "Section-3-7-20",
+          "question": "In the layout editor, the number '160' displayed next to an element refers to what?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": [
+            "Android Application Development",
+            "Basics of Android"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": "The width of the element in dp"
+            },
+            {
+              "id": "b",
+              "text": "The element's font size in sp"
+            },
+            {
+              "id": "c",
+              "text": "A margin value from the top of the layout"
+            },
+            {
+              "id": "d",
+              "text": "The element's z-index or layer order"
+            }
+          ],
+          "correctAnswers": [
+            "c"
+          ],
+          "explanation": "The value 160 shown next to the element represents a margin from the top. The instructor noted it was added unintentionally and explained that margins define spacing from the layout edges.",
+          "hints": [
+            "Margins create spacing between an element and its surrounding edges.",
+            "The instructor said 'don't worry about this margin' indicating it was not placed intentionally.",
+            "Margins can be set either through the XML or directly in the design editor."
+          ]
+        },
+        {
+          "id": "Section-3-7-21",
+          "question": "What is Logcat in Android Studio?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": [
+            "Android Application Development",
+            "Basics of Android"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": "A code editor plugin for syntax highlighting"
+            },
+            {
+              "id": "b",
+              "text": "A system log that records everything the Android device and app does, step by step"
+            },
+            {
+              "id": "c",
+              "text": "An emulator window for testing apps"
+            },
+            {
+              "id": "d",
+              "text": "A build configuration file for Gradle"
+            }
+          ],
+          "correctAnswers": [
+            "b"
+          ],
+          "explanation": "Logcat is Android's logging system \u2014 like a notebook where the device records everything it is doing step by step, including app events, errors, crashes, and developer log messages.",
+          "hints": [
+            "Think of it as a diary or notebook that records every event.",
+            "It captures errors, crashes, and system activities.",
+            "The lecture compared it to a machine narrating its own operations."
+          ]
+        },
+        {
+          "id": "Section-3-7-22",
+          "question": "Where is the Logcat option located within Android Studio's interface?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": [
+            "Android Application Development",
+            "Basics of Android"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": "Top menu bar, second option from the left"
+            },
+            {
+              "id": "b",
+              "text": "Right-side panel, first tab"
+            },
+            {
+              "id": "c",
+              "text": "Bottom-left panel, fourth option"
+            },
+            {
+              "id": "d",
+              "text": "Top-right corner of the toolbar"
+            }
+          ],
+          "correctAnswers": [
+            "c"
+          ],
+          "explanation": "Logcat is located in the bottom-left panel of Android Studio and is the fourth option in that area.",
+          "hints": [
+            "Look at the bottom portion of the Android Studio layout.",
+            "It is in a specific panel on the left side at the bottom.",
+            "Count from the left: it is the 4th item in that bottom-left section."
+          ]
+        },
+        {
+          "id": "Section-3-7-23",
+          "question": "Which of the following is NOT something that Logcat records?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": [
+            "Android Application Development",
+            "Basics of Android"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": "App errors and crash details"
+            },
+            {
+              "id": "b",
+              "text": "Developer-added log messages"
+            },
+            {
+              "id": "c",
+              "text": "Background system activities"
+            },
+            {
+              "id": "d",
+              "text": "Private user data from other installed apps"
+            }
+          ],
+          "correctAnswers": [
+            "d"
+          ],
+          "explanation": "Logcat records app errors, developer log messages, and system background activities. It does not provide access to private data from other applications, as that would be a security violation.",
+          "hints": [
+            "Three of the options are legitimate Logcat outputs.",
+            "Consider which item would violate privacy and security rules.",
+            "Logcat is a debugging tool, not a surveillance tool for other apps."
+          ]
+        },
+        {
+          "id": "Section-3-7-24",
+          "question": "Which real-world analogy is used in the lecture to explain the usefulness of Logcat?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": [
+            "Android Application Development",
+            "Basics of Android"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": "A security camera recording everything happening in a building"
+            },
+            {
+              "id": "b",
+              "text": "A machine being repaired that tells you each step it takes and alerts you when something breaks"
+            },
+            {
+              "id": "c",
+              "text": "A GPS system tracking the location of a vehicle"
+            },
+            {
+              "id": "d",
+              "text": "A backup disk that saves all your files automatically"
+            }
+          ],
+          "correctAnswers": [
+            "b"
+          ],
+          "explanation": "Logcat is compared to a machine that narrates each step of its operation. When something goes wrong, it tells you exactly where it broke, making debugging much easier.",
+          "hints": [
+            "The analogy involves repairing something mechanical.",
+            "The key benefit is that it communicates what it is doing and where it fails.",
+            "This step-by-step narration helps you quickly find and fix the problem."
+          ]
+        },
+        {
+          "id": "Section-3-7-25",
+          "question": "In the demonstration, why did the app crash after attributes were deleted from the XML element?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": [
+            "Android Application Development",
+            "Basics of Android"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": "The emulator ran out of memory during the build"
+            },
+            {
+              "id": "b",
+              "text": "The XML file had a syntax error introduced accidentally"
+            },
+            {
+              "id": "c",
+              "text": "Mandatory attributes required by the element were removed"
+            },
+            {
+              "id": "d",
+              "text": "The internet connection was lost during deployment"
+            }
+          ],
+          "correctAnswers": [
+            "c"
+          ],
+          "explanation": "The app crashed because the mandatory attributes (required for the element to render correctly) were deleted. Without them, the component cannot be initialized at runtime.",
+          "hints": [
+            "The demonstration explicitly deleted specific attributes before running.",
+            "Something essential for the component to work was missing.",
+            "Restoring those attributes via undo fixed the crash immediately."
+          ]
+        },
+        {
+          "id": "Section-3-7-26",
+          "question": "How was the app crash caused by deleted attributes resolved in the demonstration?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": [
+            "Android Application Development",
+            "Basics of Android"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": "By reinstalling Android Studio"
+            },
+            {
+              "id": "b",
+              "text": "By restarting the emulator"
+            },
+            {
+              "id": "c",
+              "text": "By using undo to restore the deleted mandatory attributes"
+            },
+            {
+              "id": "d",
+              "text": "By creating a completely new project from scratch"
+            }
+          ],
+          "correctAnswers": [
+            "c"
+          ],
+          "explanation": "The crash was resolved by pressing undo (Command + Z on Mac or Ctrl + Z on Windows) to restore the mandatory attributes, and then re-running the app successfully.",
+          "hints": [
+            "The fix was quick and reversible.",
+            "Undo is the keyboard shortcut demonstrated earlier in the lesson.",
+            "No need to retype anything \u2014 just undo the deletion."
+          ]
+        },
+        {
+          "id": "Section-3-7-27",
+          "question": "What does toggling the design surface to 'Design Only' mode accomplish in Android Studio?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": [
+            "Android Application Development",
+            "Basics of Android"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": "It hides the visual canvas and shows only the XML code"
+            },
+            {
+              "id": "b",
+              "text": "It hides the XML panel and shows only the visual design canvas"
+            },
+            {
+              "id": "c",
+              "text": "It locks the layout and disables all further editing"
+            },
+            {
+              "id": "d",
+              "text": "It shows a 3D perspective view of the layout"
+            }
+          ],
+          "correctAnswers": [
+            "b"
+          ],
+          "explanation": "Selecting 'Design Only' hides the XML panel (the blue-highlighted side) so only the visual design canvas is shown. This is useful when the split view becomes distracting.",
+          "hints": [
+            "'Design Only' shows just the design side.",
+            "The blue XML panel is the part that gets hidden.",
+            "The instructor used it to reduce visual clutter during the lesson."
+          ]
+        },
+        {
+          "id": "Section-3-7-28",
+          "question": "What happens to XML components placed in a file that has no layout container?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": [
+            "Android Application Development",
+            "Basics of Android"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": "They are displayed sorted in a vertical list automatically"
+            },
+            {
+              "id": "b",
+              "text": "They all appear overlapping at the same default position"
+            },
+            {
+              "id": "c",
+              "text": "They are arranged in a horizontal row by default"
+            },
+            {
+              "id": "d",
+              "text": "They are not rendered at all on the screen"
+            }
+          ],
+          "correctAnswers": [
+            "b"
+          ],
+          "explanation": "Without a layout container to organize them, all components appear at the same default position (typically the top-left), causing them to overlap and become visually indistinguishable.",
+          "hints": [
+            "No organizing rules means no positioning rules.",
+            "The components are still there; they are just all stacked on top of each other.",
+            "The demonstration showed two TextViews with the same text appearing as one because they overlapped."
+          ]
+        },
+        {
+          "id": "Section-3-7-29",
+          "question": "What analogy is used in the lecture to describe UI elements placed without a layout?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": [
+            "Android Application Development",
+            "Basics of Android"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": "Books scattered randomly on a desk"
+            },
+            {
+              "id": "b",
+              "text": "Clothes thrown into a suitcase without any arrangement"
+            },
+            {
+              "id": "c",
+              "text": "Cars parked randomly in a parking lot"
+            },
+            {
+              "id": "d",
+              "text": "Files dumped into a folder without subfolders"
+            }
+          ],
+          "correctAnswers": [
+            "b"
+          ],
+          "explanation": "The lecture uses the analogy of a messy suitcase where clothes are just tossed in without being folded or arranged, representing elements placed on screen without the organizing structure of a layout.",
+          "hints": [
+            "The analogy involves packing something into a container.",
+            "The container exists but the contents are unorganized.",
+            "Think about what happens when you pack without folding or arranging."
+          ]
+        },
+        {
+          "id": "Section-3-7-30",
+          "question": "According to the lecture, is placing XML tags on screen by itself sufficient to create a proper UI?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": [
+            "Android Application Development",
+            "Basics of Android"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": "Yes, placing tags is the most important step and sufficient for a working app"
+            },
+            {
+              "id": "b",
+              "text": "No, placement alone is not enough; elements must also be organized using a layout"
+            },
+            {
+              "id": "c",
+              "text": "Yes, as long as the tags have text content"
+            },
+            {
+              "id": "d",
+              "text": "Yes, if you use ConstraintLayout as your root"
+            }
+          ],
+          "correctAnswers": [
+            "b"
+          ],
+          "explanation": "The lecture explicitly states that placing XML tags is not sufficient. Elements must be organized within a layout to create a usable, properly structured interface that users can interact with.",
+          "hints": [
+            "The lecture emphasizes arrangement and organization as key principles.",
+            "Think about the user experience: a screen with overlapping elements is unusable.",
+            "Layout = placement + organization."
+          ]
+        },
+        {
+          "id": "Section-3-7-31",
+          "question": "According to the lecture's definition, what does a layout defined in XML specify?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": [
+            "Android Application Development",
+            "Basics of Android"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": "The app's color theme and font settings"
+            },
+            {
+              "id": "b",
+              "text": "The visual structure and arrangement of user interface elements within an application screen"
+            },
+            {
+              "id": "c",
+              "text": "The app's network and database configuration"
+            },
+            {
+              "id": "d",
+              "text": "The version of Android SDK required to run the app"
+            }
+          ],
+          "correctAnswers": [
+            "b"
+          ],
+          "explanation": "A layout in Android XML specifies the visual structure and arrangement of UI elements \u2014 such as text, images, input fields, and buttons \u2014 within a single application screen.",
+          "hints": [
+            "It covers both structure (what is there) and arrangement (where it is placed).",
+            "Multiple types of UI elements are involved: text, images, inputs, and buttons.",
+            "It is defined in an XML file and scoped to one application screen."
+          ]
+        },
+        {
+          "id": "Section-3-7-32",
+          "question": "What is the defining characteristic of a ConstraintLayout as described in the lecture?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": [
+            "Android Application Development",
+            "Basics of Android"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": "Elements can only be placed at absolute pixel coordinates"
+            },
+            {
+              "id": "b",
+              "text": "Elements are positioned by constraints \u2014 attachments to the root layout's edges or to each other"
+            },
+            {
+              "id": "c",
+              "text": "Only text elements are supported inside it"
+            },
+            {
+              "id": "d",
+              "text": "Elements are automatically arranged in a horizontal or vertical grid"
+            }
+          ],
+          "correctAnswers": [
+            "b"
+          ],
+          "explanation": "ConstraintLayout positions elements by using constraints (attachments) to the edges of the root container or to other sibling elements, enabling flexible relative positioning.",
+          "hints": [
+            "The name 'Constraint' is the key clue.",
+            "Constraints are attachment lines from an element to the parent or to another element.",
+            "Positions are defined by relationships, not absolute coordinates."
+          ]
+        },
+        {
+          "id": "Section-3-7-33",
+          "question": "According to the fundamental rule stated in the lecture, what must always happen before placing any UI element on the screen?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": [
+            "Android Application Development",
+            "Basics of Android"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": "A text file must be created first"
+            },
+            {
+              "id": "b",
+              "text": "A database table must be set up first"
+            },
+            {
+              "id": "c",
+              "text": "A container or root layout must be created first"
+            },
+            {
+              "id": "d",
+              "text": "An Activity class must be written first"
+            }
+          ],
+          "correctAnswers": [
+            "c"
+          ],
+          "explanation": "The lecture states explicitly: 'We always need to create a container first, and only then can we place any element inside it.' The root layout acts as the container that holds all other UI elements.",
+          "hints": [
+            "Think about a real-life box before you place items inside it.",
+            "You can't put items inside a box that doesn't exist yet.",
+            "The root layout IS the container that must exist first."
+          ]
+        },
+        {
+          "id": "Section-3-7-34",
+          "question": "In the hierarchy described in the lecture, where are UI elements placed in relation to the phone screen and root layout?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": [
+            "Android Application Development",
+            "Basics of Android"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": "Directly on the phone screen, with the root layout as decoration"
+            },
+            {
+              "id": "b",
+              "text": "Inside the root layout, which itself is attached to the phone screen"
+            },
+            {
+              "id": "c",
+              "text": "On top of the root layout, floating above it"
+            },
+            {
+              "id": "d",
+              "text": "Outside the root layout but within the app boundaries"
+            }
+          ],
+          "correctAnswers": [
+            "b"
+          ],
+          "explanation": "The correct hierarchy is: phone screen \u2192 root layout \u2192 UI elements. The root layout attaches to the phone screen, and all UI elements are placed as children inside the root layout.",
+          "hints": [
+            "Think of nesting: one thing contains another.",
+            "The phone screen is the outermost layer.",
+            "Elements go inside the layout, which goes onto the screen."
+          ]
+        },
+        {
+          "id": "Section-3-7-35",
+          "question": "What is the full class name of ConstraintLayout as shown in the XML file during the lecture?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": [
+            "Android Application Development",
+            "Basics of Android"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": "android.widget.ConstraintLayout"
+            },
+            {
+              "id": "b",
+              "text": "com.android.view.ConstraintLayout"
+            },
+            {
+              "id": "c",
+              "text": "androidx.constraintlayout.widget.ConstraintLayout"
+            },
+            {
+              "id": "d",
+              "text": "android.support.constraint.ConstraintLayout"
+            }
+          ],
+          "correctAnswers": [
+            "c"
+          ],
+          "explanation": "The full class name is androidx.constraintlayout.widget.ConstraintLayout, which is part of the AndroidX support library. This name appeared at the top and bottom of the XML file as the root layout tag.",
+          "hints": [
+            "It is part of the AndroidX package, not the old android.support package.",
+            "The class name contains 'constraintlayout' and 'widget'.",
+            "This full name appeared at the top of the example XML file in the lecture."
+          ]
+        },
+        {
+          "id": "Section-3-7-36",
+          "question": "What does the attribute value 'match_parent' mean when applied to an element's width or height?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": [
+            "Android Application Development",
+            "Basics of Android"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": "The dimension will match the first sibling element's size"
+            },
+            {
+              "id": "b",
+              "text": "The dimension will equal the parent container's corresponding dimension"
+            },
+            {
+              "id": "c",
+              "text": "The dimension is automatically set to exactly 100dp"
+            },
+            {
+              "id": "d",
+              "text": "The dimension matches the screen resolution in raw pixels"
+            }
+          ],
+          "correctAnswers": [
+            "b"
+          ],
+          "explanation": "match_parent sets an element's width or height to be the same as its parent container's width or height. For the root layout, the parent is the phone screen, so the layout fills the entire screen.",
+          "hints": [
+            "The value literally 'matches' its 'parent'.",
+            "For a root layout, the parent is the device screen.",
+            "It is used so the layout expands to fill whatever container it is placed in."
+          ]
+        },
+        {
+          "id": "Section-3-7-37",
+          "question": "Why is match_parent the correct choice for a root ConstraintLayout's width and height?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": [
+            "Android Application Development",
+            "Basics of Android"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": "It makes the layout invisible so only elements are shown"
+            },
+            {
+              "id": "b",
+              "text": "It ensures the root layout covers the entire phone screen on any device size"
+            },
+            {
+              "id": "c",
+              "text": "It creates rounded corners on the layout"
+            },
+            {
+              "id": "d",
+              "text": "It locks the layout to exactly 360dp \u00d7 800dp"
+            }
+          ],
+          "correctAnswers": [
+            "b"
+          ],
+          "explanation": "Since phone screen sizes vary across models and brands, hardcoding a pixel value would not work universally. match_parent adapts to the actual device screen size, ensuring the root layout always fills the entire screen.",
+          "hints": [
+            "Phone screens vary in size across different brands and models.",
+            "Hardcoded values would only work on one specific screen size.",
+            "match_parent provides a universal solution by adapting to any screen."
+          ]
+        },
+        {
+          "id": "Section-3-7-38",
+          "question": "What does the 'android:' prefix before an XML attribute such as 'android:layout_width' indicate?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": [
+            "Android Application Development",
+            "Basics of Android"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": "The attribute is deprecated and should not be used"
+            },
+            {
+              "id": "b",
+              "text": "The attribute was defined by the developer in a custom library"
+            },
+            {
+              "id": "c",
+              "text": "The attribute belongs to the Android standard SDK namespace"
+            },
+            {
+              "id": "d",
+              "text": "The attribute is optional and can be omitted"
+            }
+          ],
+          "correctAnswers": [
+            "c"
+          ],
+          "explanation": "The android: prefix is a namespace identifier that tells Android Studio these attributes belong to the Android standard SDK. Without it, the compiler does not know which SDK these attributes belong to, causing errors.",
+          "hints": [
+            "It acts as a namespace identifier, categorizing the attribute.",
+            "The lecture showed that removing it causes red squiggly error lines.",
+            "Adding android: in front tells the parser these are standard Android SDK attributes."
+          ]
+        },
+        {
+          "id": "Section-3-7-39",
+          "question": "Why does ConstraintLayout in XML use a separate closing tag (</...ConstraintLayout>) instead of a self-closing tag?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": [
+            "Android Application Development",
+            "Basics of Android"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": "Self-closing tags are not valid XML syntax in Android"
+            },
+            {
+              "id": "b",
+              "text": "The layout is a container that holds child elements, which must be placed between the opening and closing tags"
+            },
+            {
+              "id": "c",
+              "text": "It is purely a stylistic convention with no functional difference"
+            },
+            {
+              "id": "d",
+              "text": "Self-closing tags are significantly slower to parse at runtime"
+            }
+          ],
+          "correctAnswers": [
+            "b"
+          ],
+          "explanation": "Container elements like layouts use a separate closing tag because child UI elements must be written between the opening and closing tags. A self-closing tag would leave no space for children.",
+          "hints": [
+            "Think about what goes between the opening and closing tags.",
+            "Child elements need to be nested inside the layout tags.",
+            "A self-closing tag like <ConstraintLayout /> leaves no interior for children."
+          ]
+        },
+        {
+          "id": "Section-3-7-40",
+          "question": "According to the lecture, which of the following best describes User Interface (UI)?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": [
+            "Android Application Development",
+            "Basics of Android"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": "The app's backend server logic and database queries"
+            },
+            {
+              "id": "b",
+              "text": "Only the visual screens that the app renders"
+            },
+            {
+              "id": "c",
+              "text": "All visual and interactive elements like screens, buttons, icons, sounds, and fonts that users see and interact with"
+            },
+            {
+              "id": "d",
+              "text": "The programming language and frameworks used to build the app"
+            }
+          ],
+          "correctAnswers": [
+            "c"
+          ],
+          "explanation": "The lecture defines UI as all the visual and interactive elements \u2014 including screens, buttons, icons, sounds, and fonts \u2014 that a user directly sees and interacts with to operate the device or app.",
+          "hints": [
+            "UI includes both visual (what you see) and interactive (what you touch or interact with) aspects.",
+            "Multiple element types are included: screens, buttons, icons, sounds, fonts.",
+            "It is everything the end user directly perceives and uses."
+          ]
+        },
+        {
+          "id": "Section-3-7-41",
+          "question": "If you have three TextViews A, B, and C where B's top is constrained to A's bottom, and C's top is constrained to B's bottom, and you move A, what happens?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": [
+            "Android Application Development",
+            "Basics of Android"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": "Only A moves; B and C stay at their current positions"
+            },
+            {
+              "id": "b",
+              "text": "A and B move but C stays in place"
+            },
+            {
+              "id": "c",
+              "text": "All three elements move together as a chain"
+            },
+            {
+              "id": "d",
+              "text": "Only C moves because it is at the end of the chain"
+            }
+          ],
+          "correctAnswers": [
+            "c"
+          ],
+          "explanation": "In a constraint chain, moving the topmost element (A) causes all chained elements to follow. B follows A, and C follows B, so all three move as a unit.",
+          "hints": [
+            "Think of links in a physical chain pulled from one end.",
+            "Each link pulls the next one along with it.",
+            "The lecture demonstrated this: moving Hello World also moved Good Morning because they were constrained."
+          ]
+        },
+        {
+          "id": "Section-3-7-42",
+          "question": "Which statement best distinguishes crash-causing errors from ignorable warnings in Android Studio based on the lecture?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": [
+            "Android Application Development",
+            "Basics of Android"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": "Red squiggly lines are always ignorable; yellow squiggly lines always cause crashes"
+            },
+            {
+              "id": "b",
+              "text": "Missing mandatory attributes cause runtime crashes; some squiggly lines from internal config issues are ignorable"
+            },
+            {
+              "id": "c",
+              "text": "All visual warnings in Android Studio cause crashes"
+            },
+            {
+              "id": "d",
+              "text": "Syntax errors are ignorable; all other errors cause crashes"
+            }
+          ],
+          "correctAnswers": [
+            "b"
+          ],
+          "explanation": "The lecture distinguishes two types of issues: missing mandatory attributes that cause real runtime crashes, and squiggly line warnings that may come from internal configuration issues and do not affect the app's function.",
+          "hints": [
+            "Mandatory attributes are always required and their absence causes crashes.",
+            "Not every visual warning in the editor means the app will break.",
+            "The instructor explicitly said some squiggly lines appear due to internal errors and can be ignored."
+          ]
+        },
+        {
+          "id": "Section-3-7-43",
+          "question": "Which statement correctly describes the android:layout_width and android:layout_height attributes?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": [
+            "Android Application Development",
+            "Basics of Android"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": "They define the element's text size and text color"
+            },
+            {
+              "id": "b",
+              "text": "They are mandatory attributes that define the element's width and height dimensions"
+            },
+            {
+              "id": "c",
+              "text": "They define the element's position on screen and are optional"
+            },
+            {
+              "id": "d",
+              "text": "They define the element's animation speed and transition type"
+            }
+          ],
+          "correctAnswers": [
+            "b"
+          ],
+          "explanation": "android:layout_width and android:layout_height are mandatory attributes required for every XML UI component in Android. They define the size dimensions of the element.",
+          "hints": [
+            "These attributes relate to size, not position or appearance.",
+            "They require the android: namespace prefix.",
+            "Every component \u2014 including layouts \u2014 must have these two attributes."
+          ]
+        },
+        {
+          "id": "Section-3-7-44",
+          "question": "For a root ConstraintLayout, which combination of attribute values is correct for its width and height?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": [
+            "Android Application Development",
+            "Basics of Android"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": "android:layout_width=\"300dp\" and android:layout_height=\"600dp\""
+            },
+            {
+              "id": "b",
+              "text": "android:layout_width=\"match_parent\" and android:layout_height=\"match_parent\""
+            },
+            {
+              "id": "c",
+              "text": "android:layout_width=\"wrap_content\" and android:layout_height=\"wrap_content\""
+            },
+            {
+              "id": "d",
+              "text": "android:layout_width=\"fill\" and android:layout_height=\"fill\""
+            }
+          ],
+          "correctAnswers": [
+            "b"
+          ],
+          "explanation": "The root layout needs match_parent for both dimensions to adapt to the full size of any phone screen. Fixed dp values would not scale across devices and wrap_content would shrink to fit only the child content.",
+          "hints": [
+            "The root layout must cover the entire screen.",
+            "A fixed dp value only works on one specific device size.",
+            "match_parent is specifically designed to fill the parent \u2014 in this case, the device screen."
+          ]
+        },
+        {
+          "id": "Section-3-7-45",
+          "question": "When writing a ConstraintLayout tag in the XML editor, you don't need to type the full class name. What should you type and then do?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": [
+            "Android Application Development",
+            "Basics of Android"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": "Type the full name 'androidx.constraintlayout.widget.ConstraintLayout' manually"
+            },
+            {
+              "id": "b",
+              "text": "Type 'Constraint' and press Enter to let Android Studio autocomplete the full class name"
+            },
+            {
+              "id": "c",
+              "text": "Type 'layout' and select ConstraintLayout from a dropdown list"
+            },
+            {
+              "id": "d",
+              "text": "Type 'container' and press Enter to get the default root container"
+            }
+          ],
+          "correctAnswers": [
+            "b"
+          ],
+          "explanation": "Android Studio's autocomplete feature lets you just type 'Constraint' and press Enter; it automatically completes the full class name androidx.constraintlayout.widget.ConstraintLayout.",
+          "hints": [
+            "Android Studio has built-in autocomplete and suggestion features.",
+            "You only need enough characters to identify the right suggestion.",
+            "The lecture demonstrated typing just 'Constraint' before hitting Enter."
+          ]
+        },
+        {
+          "id": "Section-3-7-46",
+          "question": "Why is it important to add constraints to a TextView placed inside a ConstraintLayout?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": [
+            "Android Application Development",
+            "Basics of Android"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": "Constraints change the text content displayed in the TextView"
+            },
+            {
+              "id": "b",
+              "text": "Constraints determine the element's position on the screen"
+            },
+            {
+              "id": "c",
+              "text": "Constraints change the element's background color"
+            },
+            {
+              "id": "d",
+              "text": "Constraints are decorative and completely optional"
+            }
+          ],
+          "correctAnswers": [
+            "b"
+          ],
+          "explanation": "In ConstraintLayout, an element's position on screen is entirely determined by its constraints. Without constraints, an element defaults to the top-left corner and may overlap other elements.",
+          "hints": [
+            "Constraints literally constrain (restrict and define) where the element is placed.",
+            "Without constraints, there is no positional rule for the element.",
+            "The name 'ConstraintLayout' itself tells you that positioning is done through constraints."
+          ]
+        },
+        {
+          "id": "Section-3-7-47",
+          "question": "The lecture mentions that IDs have a practical use that will become clear later. What was stated about this?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": [
+            "Android Application Development",
+            "Basics of Android"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": "IDs are only used for applying CSS-like styles to elements"
+            },
+            {
+              "id": "b",
+              "text": "IDs provide unique identity now, and their practical use in code will be discovered as you write more Android programs"
+            },
+            {
+              "id": "c",
+              "text": "IDs automatically generate unique colors to help differentiate elements visually"
+            },
+            {
+              "id": "d",
+              "text": "IDs are a legacy feature that is no longer required in modern Android development"
+            }
+          ],
+          "correctAnswers": [
+            "b"
+          ],
+          "explanation": "The lecture explains that IDs give elements unique identities, but their full practical application in code (referencing, manipulating elements programmatically) will become clear as the student progresses and writes more code.",
+          "hints": [
+            "The instructor said understanding how IDs are used will come with writing code.",
+            "IDs serve a purpose now (unique identity) and a deeper purpose later (code reference).",
+            "This is a 'plant the seed now, understand later' type of explanation."
+          ]
+        },
+        {
+          "id": "Section-3-7-48",
+          "question": "According to the demonstration, what do red squiggly lines in the layout XML typically indicate?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": [
+            "Android Application Development",
+            "Basics of Android"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": "The element has not been assigned an ID attribute"
+            },
+            {
+              "id": "b",
+              "text": "Missing mandatory attributes such as positional constraints or required settings"
+            },
+            {
+              "id": "c",
+              "text": "The app theme is incompatible with the element type"
+            },
+            {
+              "id": "d",
+              "text": "The emulator is not properly connected to Android Studio"
+            }
+          ],
+          "correctAnswers": [
+            "b"
+          ],
+          "explanation": "Red squiggly lines in the layout XML indicate missing mandatory attributes. The demonstration showed them appearing when required attributes (like layout dimensions or constraints) were absent.",
+          "hints": [
+            "Red indicates a higher severity than yellow \u2014 it signals an error.",
+            "The demonstration showed red lines appearing when layout_width/height were missing.",
+            "Providing the mandatory attributes resolved the red squiggly error lines."
+          ]
+        },
+        {
+          "id": "Section-3-7-49",
+          "question": "When you right-click on a constraint anchor in the layout editor and choose Delete, what exactly is removed?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": [
+            "Android Application Development",
+            "Basics of Android"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": "The entire component is permanently removed from the layout"
+            },
+            {
+              "id": "b",
+              "text": "Only the constraint connection is removed; the element itself stays in the layout"
+            },
+            {
+              "id": "c",
+              "text": "The element's text content is cleared"
+            },
+            {
+              "id": "d",
+              "text": "The element is moved back to its default top-left position"
+            }
+          ],
+          "correctAnswers": [
+            "b"
+          ],
+          "explanation": "Right-clicking the anchor and choosing Delete removes only the constraint line (the attachment), not the UI component. The component remains in the layout but the specific anchor slot becomes vacant again.",
+          "hints": [
+            "You are deleting the connection, not the element.",
+            "The lecture explicitly said: 'Delete will not remove your component.'",
+            "After deletion, the anchor circle becomes hollow, indicating it is now free."
+          ]
+        },
+        {
+          "id": "Section-3-7-50",
+          "question": "After Good Morning's bottom is constrained to Hello Android's top, what happens if you try to drag another constraint from Good Morning's bottom anchor?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": [
+            "Android Application Development",
+            "Basics of Android"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": "A second constraint line appears alongside the existing one"
+            },
+            {
+              "id": "b",
+              "text": "The existing constraint is silently replaced by the new one"
+            },
+            {
+              "id": "c",
+              "text": "No constraint can be attached because that anchor slot is already occupied"
+            },
+            {
+              "id": "d",
+              "text": "The action is logged as a warning in Logcat"
+            }
+          ],
+          "correctAnswers": [
+            "c"
+          ],
+          "explanation": "Each anchor slot accepts only one constraint. Once Good Morning's bottom is occupied by its connection to Hello Android, no further constraint can be added to that same slot. The editor will show no available targets.",
+          "hints": [
+            "One anchor slot, one constraint \u2014 this is a fundamental rule.",
+            "The visual indicator changes from hollow to filled when a slot is occupied.",
+            "The lecture demonstrated this: trying to add to an occupied slot showed 'no constraint available.'"
+          ]
+        },
+        {
+          "id": "Section-3-7-51",
+          "question": "What is the correct single action to run the Android application on an emulator in Android Studio?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": [
+            "Android Application Development",
+            "Basics of Android"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": "Navigate to File \u2192 Export \u2192 Run on Device"
+            },
+            {
+              "id": "b",
+              "text": "Click the green Play button in the Android Studio toolbar"
+            },
+            {
+              "id": "c",
+              "text": "Right-click the project in the explorer \u2192 Run as Administrator"
+            },
+            {
+              "id": "d",
+              "text": "Run the terminal command: adb install app.apk"
+            }
+          ],
+          "correctAnswers": [
+            "b"
+          ],
+          "explanation": "To run the app on the emulator, click the green Play button in the Android Studio toolbar. The IDE builds the project and deploys it to the selected virtual device automatically.",
+          "hints": [
+            "It is a single button click in the toolbar.",
+            "The button is commonly used and prominently visible.",
+            "The lecture described repeatedly clicking the 'play button' to test the app."
+          ]
+        },
+        {
+          "id": "Section-3-7-52",
+          "question": "According to the lecture's layout definition, which of the following are examples of UI elements that a layout organizes?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": [
+            "Android Application Development",
+            "Basics of Android"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": "Java class files and interface definitions"
+            },
+            {
+              "id": "b",
+              "text": "Text, images, input fields, and buttons"
+            },
+            {
+              "id": "c",
+              "text": "Gradle build scripts and configuration files"
+            },
+            {
+              "id": "d",
+              "text": "AndroidManifest entries and permissions"
+            }
+          ],
+          "correctAnswers": [
+            "b"
+          ],
+          "explanation": "The lecture's definition of layout explicitly mentions organizing visual UI elements including text, images, input layouts, and buttons within an application screen.",
+          "hints": [
+            "These are elements the user visually sees and interacts with.",
+            "All four example types are mentioned explicitly in the lecture's definition.",
+            "They are all part of the user interface, not build configuration."
+          ]
+        },
+        {
+          "id": "Section-3-7-53",
+          "question": "Why must a root ConstraintLayout use a separate closing tag rather than being self-closing in XML?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": [
+            "Android Application Development",
+            "Basics of Android"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": "Self-closing tags cause build failures in all versions of Android"
+            },
+            {
+              "id": "b",
+              "text": "Child UI elements must be nested between the opening and closing tags of the layout container"
+            },
+            {
+              "id": "c",
+              "text": "Android Studio requires it for version control compatibility"
+            },
+            {
+              "id": "d",
+              "text": "It is a legacy XML requirement with no practical impact"
+            }
+          ],
+          "correctAnswers": [
+            "b"
+          ],
+          "explanation": "Since the root layout is a container, UI elements are written as children between its opening and closing tags. A self-closing tag like <ConstraintLayout /> has no interior, leaving no place to add child elements.",
+          "hints": [
+            "Think about where child elements go in XML.",
+            "Children must be placed between the parent's opening and closing tags.",
+            "A self-closing tag has no space for children."
+          ]
+        },
+        {
+          "id": "Section-3-7-54",
+          "question": "If a ConstraintLayout is the root layout with android:layout_width='match_parent' and android:layout_height='match_parent', what exactly does it match its dimensions to?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": [
+            "Android Application Development",
+            "Basics of Android"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": "The dimensions of the largest child element inside it"
+            },
+            {
+              "id": "b",
+              "text": "The physical dimensions of the phone's screen"
+            },
+            {
+              "id": "c",
+              "text": "The dimensions defined in the app's Activity class"
+            },
+            {
+              "id": "d",
+              "text": "The dimensions from the app theme resource file"
+            }
+          ],
+          "correctAnswers": [
+            "b"
+          ],
+          "explanation": "As the root layout, the parent of the ConstraintLayout is the phone screen itself. So match_parent causes the layout to expand to match the exact dimensions of the physical device screen.",
+          "hints": [
+            "The parent of the root layout is the device screen.",
+            "match_parent means 'same size as my parent'.",
+            "For the root (outermost) element, the parent is the screen itself."
+          ]
+        },
+        {
+          "id": "Section-3-7-55",
+          "question": "What happens if you forget to include the 'android:' prefix before layout_width or layout_height in the XML?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": [
+            "Android Application Development",
+            "Basics of Android"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": "Android Studio silently ignores the attribute"
+            },
+            {
+              "id": "b",
+              "text": "The attribute uses the wrong namespace, causing red squiggly error indicators"
+            },
+            {
+              "id": "c",
+              "text": "The attribute works exactly the same as with the prefix"
+            },
+            {
+              "id": "d",
+              "text": "The attribute becomes device-specific and only works on one model"
+            }
+          ],
+          "correctAnswers": [
+            "b"
+          ],
+          "explanation": "Without the android: namespace prefix, the attribute is not recognized as belonging to the Android SDK, causing Android Studio to flag it with red squiggly errors. The instructor demonstrated this and showed the error disappearing after adding the prefix.",
+          "hints": [
+            "Namespaces identify where an attribute belongs.",
+            "The lecture showed the error appearing without android: and disappearing after adding it.",
+            "The prefix links the attribute to the correct Android standard SDK definition."
+          ]
+        },
+        {
+          "id": "Section-3-7-56",
+          "question": "According to the lecture, what is the correct sequence to build a simple screen?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": [
+            "Android Application Development",
+            "Basics of Android"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": "Add UI elements first \u2192 then wrap them in a root layout \u2192 then run"
+            },
+            {
+              "id": "b",
+              "text": "Create the root layout container first \u2192 place elements inside it \u2192 verify and run"
+            },
+            {
+              "id": "c",
+              "text": "Write Java Activity code first \u2192 then add the XML layout \u2192 then add elements"
+            },
+            {
+              "id": "d",
+              "text": "Install required plugins first \u2192 then create elements \u2192 then add a layout"
+            }
+          ],
+          "correctAnswers": [
+            "b"
+          ],
+          "explanation": "The lecture's fundamental rule is: create the container (root layout) first, then place elements inside it. Only after this can you verify, test, and run the application.",
+          "hints": [
+            "The lecture states a 'fundamental rule' that is repeated twice.",
+            "The container always comes before its contents.",
+            "Think of building a box before putting items inside it."
+          ]
+        },
+        {
+          "id": "Section-3-7-57",
+          "question": "Based on the lecture's description, what distinguishes ConstraintLayout from other layout types in terms of how elements are positioned?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": [
+            "Android Application Development",
+            "Basics of Android"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": "It is the only layout that supports TextView elements"
+            },
+            {
+              "id": "b",
+              "text": "Elements are positioned by constraining them to parent edges or to each other using attachment lines"
+            },
+            {
+              "id": "c",
+              "text": "It automatically arranges all elements in a uniform grid"
+            },
+            {
+              "id": "d",
+              "text": "It positions elements using absolute pixel coordinate values only"
+            }
+          ],
+          "correctAnswers": [
+            "b"
+          ],
+          "explanation": "The defining property of ConstraintLayout is that element positions are defined by constraints \u2014 attachment lines connecting elements to the parent's edges or to each other. This enables flexible, relative positioning that adapts to different screen sizes.",
+          "hints": [
+            "The word 'Constraint' describes how positioning works in this layout.",
+            "Elements are attached (constrained) to things around them.",
+            "Relative positioning through constraints is what makes it flexible."
+          ]
+        },
+        {
+          "id": "Section-3-7-58",
+          "question": "When multiple TextViews overlap at the same position and you click in the overlapping area of the design canvas, what is the expected behavior?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": [
+            "Android Application Development",
+            "Basics of Android"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": "All overlapping elements are selected simultaneously"
+            },
+            {
+              "id": "b",
+              "text": "Nothing is selected because the click is ambiguous to the editor"
+            },
+            {
+              "id": "c",
+              "text": "One of the overlapping elements is selected; you can also use the component tree to pick the specific one"
+            },
+            {
+              "id": "d",
+              "text": "The editor automatically separates the overlapping elements before selecting"
+            }
+          ],
+          "correctAnswers": [
+            "c"
+          ],
+          "explanation": "Clicking in the overlapping area selects one of the elements. To select a specific overlapping element, you can also use the component tree panel, which lists all elements regardless of their visual overlap.",
+          "hints": [
+            "The lecture demonstrated both methods: clicking in the canvas and using the component tree.",
+            "Only one element can be selected at a time via a single click.",
+            "The component tree provides an alternative way to select when clicking is ambiguous."
+          ]
+        },
+        {
+          "id": "Section-3-7-59",
+          "question": "What is the key advantage of copying and pasting XML tags in Android Studio instead of retyping them?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": [
+            "Android Application Development",
+            "Basics of Android"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": "Copy-pasted tags receive a different highlight color in the editor"
+            },
+            {
+              "id": "b",
+              "text": "It avoids rewriting identical XML structure when multiple elements share the same tag type"
+            },
+            {
+              "id": "c",
+              "text": "Android Studio automatically assigns unique IDs to copy-pasted elements"
+            },
+            {
+              "id": "d",
+              "text": "Copy-pasted tags are validated more strictly by the XML parser"
+            }
+          ],
+          "correctAnswers": [
+            "b"
+          ],
+          "explanation": "When multiple UI elements share the same XML tag structure, copying and pasting prevents redundant typing. You only need to modify specific attributes (like text content or ID) that differ between the elements.",
+          "hints": [
+            "The main benefit is efficiency and avoiding repetition.",
+            "Only the differing attributes need to be changed after pasting.",
+            "The lecture stated 'you don't have to write it again and again.'"
+          ]
+        },
+        {
+          "id": "Section-3-7-60",
+          "question": "If your app crashes and you need to debug it, which combination of knowledge from the lecture provides the most effective debugging approach?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": [
+            "Android Application Development",
+            "Basics of Android"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": "Use the component tree and the design editor to inspect the layout visually"
+            },
+            {
+              "id": "b",
+              "text": "Use Logcat to read the error details and apply knowledge that missing mandatory attributes are a common crash cause"
+            },
+            {
+              "id": "c",
+              "text": "Use the XML auto-formatter and restart the emulator to resolve the crash"
+            },
+            {
+              "id": "d",
+              "text": "Change the app theme and recompile until the crash stops"
+            }
+          ],
+          "correctAnswers": [
+            "b"
+          ],
+          "explanation": "Logcat provides a step-by-step log of what happened before the crash, showing you exactly where and why it occurred. Combined with knowing that missing mandatory attributes are a common crash cause, you can quickly identify and fix issues.",
+          "hints": [
+            "Logcat is the primary debugging tool for understanding runtime crashes.",
+            "Knowledge of what causes crashes helps you know what to look for in the log.",
+            "The lecture demonstrated using Logcat to investigate the crash caused by deleted attributes."
+          ]
+        }
+      ]
+    }
+  ]
+}

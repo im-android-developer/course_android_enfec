@@ -1,0 +1,410 @@
+{
+  "items": [
+    {
+      "name": "Section5-3",
+      "difficulty": "medium",
+      "content": [
+        {
+          "id": "Section-5-3-1",
+          "question": "How many layout types are commonly used in Android development according to this episode?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Layouts"],
+          "options": [
+            { "id": "a", "text": "Two" },
+            { "id": "b", "text": "Three" },
+            { "id": "c", "text": "Four" },
+            { "id": "d", "text": "Six" }
+          ],
+          "correctAnswers": ["c"],
+          "explanation": "The instructor mentioned four commonly used layout types: ConstraintLayout, LinearLayout, RelativeLayout, and ScrollViewLayout. While many other layouts exist, the course focuses on these four.",
+          "hints": [
+            "ConstraintLayout is one you already know.",
+            "The number is more than three.",
+            "Count: Constraint, Linear, Relative, ScrollView."
+          ]
+        },
+        {
+          "id": "Section-5-3-2",
+          "question": "Which of the following is NOT one of the four commonly used layout types mentioned in this episode?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Layouts"],
+          "options": [
+            { "id": "a", "text": "ConstraintLayout" },
+            { "id": "b", "text": "LinearLayout" },
+            { "id": "c", "text": "FrameLayout" },
+            { "id": "d", "text": "RelativeLayout" }
+          ],
+          "correctAnswers": ["c"],
+          "explanation": "The four layouts discussed are ConstraintLayout, LinearLayout, RelativeLayout, and ScrollViewLayout. FrameLayout was not mentioned as one of the four.",
+          "hints": [
+            "Three of the four options are mentioned in the episode.",
+            "FrameLayout is a valid Android layout but not in the four.",
+            "One answer is ScrollViewLayout, not shown in the options — so find the one NOT in the list."
+          ]
+        },
+        {
+          "id": "Section-5-3-3",
+          "question": "On what basis do the four layout types differ from each other?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Layouts"],
+          "options": [
+            { "id": "a", "text": "They differ in the programming language used" },
+            { "id": "b", "text": "They differ in how they place and arrange their child elements" },
+            { "id": "c", "text": "They differ in the file format they use" },
+            { "id": "d", "text": "They differ in the type of device they support" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "The four layout types differ in how they place and arrange their child UI elements (attributes) on the screen.",
+          "hints": [
+            "The instructor said they are different on 'how they place attributes'.",
+            "Think about positioning strategies.",
+            "Each layout has a unique way of organizing components."
+          ]
+        },
+        {
+          "id": "Section-5-3-4",
+          "question": "What does the name 'LinearLayout' imply about how it arranges elements?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "LinearLayout"],
+          "options": [
+            { "id": "a", "text": "Elements can be placed anywhere freely" },
+            { "id": "b", "text": "Elements are arranged in a single direction (unidirectional)" },
+            { "id": "c", "text": "Elements are constrained relative to each other" },
+            { "id": "d", "text": "Elements are stacked on top of each other" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "The name 'Linear' means in a single line or direction. LinearLayout is unidirectional, placing elements either all horizontally or all vertically.",
+          "hints": [
+            "Linear means in a straight line.",
+            "The instructor used the term 'unidirectional'.",
+            "Elements go in one direction only."
+          ]
+        },
+        {
+          "id": "Section-5-3-5",
+          "question": "In what two directions can elements be arranged inside a LinearLayout?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "LinearLayout"],
+          "options": [
+            { "id": "a", "text": "Diagonal and circular" },
+            { "id": "b", "text": "Vertical and horizontal" },
+            { "id": "c", "text": "Absolute and relative" },
+            { "id": "d", "text": "Fixed and dynamic" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "A LinearLayout can arrange elements either in a vertical direction (top to bottom) or in a horizontal direction (left to right).",
+          "hints": [
+            "Think of the two main axes on a screen.",
+            "One goes up-down, the other goes left-right.",
+            "These are the two standard axis directions."
+          ]
+        },
+        {
+          "id": "Section-5-3-6",
+          "question": "Which attribute must be added to a LinearLayout to avoid a compile error?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["Android Application Development", "LinearLayout"],
+          "options": [
+            { "id": "a", "text": "gravity" },
+            { "id": "b", "text": "layout_weight" },
+            { "id": "c", "text": "orientation" },
+            { "id": "d", "text": "padding" }
+          ],
+          "correctAnswers": ["c"],
+          "explanation": "LinearLayout requires the 'orientation' attribute to be set because it must know which direction (vertical or horizontal) to lay out its child elements. Without it, an error appears.",
+          "hints": [
+            "LinearLayout is unidirectional, so it needs to know the direction.",
+            "The instructor pointed out the error that appeared without it.",
+            "It is the attribute that specifies vertical or horizontal."
+          ]
+        },
+        {
+          "id": "Section-5-3-7",
+          "question": "What are the two possible values for the 'orientation' attribute in a LinearLayout?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "LinearLayout"],
+          "options": [
+            { "id": "a", "text": "top and bottom" },
+            { "id": "b", "text": "left and right" },
+            { "id": "c", "text": "vertical and horizontal" },
+            { "id": "d", "text": "portrait and landscape" }
+          ],
+          "correctAnswers": ["c"],
+          "explanation": "The 'orientation' attribute accepts two values: 'vertical' (elements stacked top to bottom) and 'horizontal' (elements arranged left to right).",
+          "hints": [
+            "They describe the two axis directions.",
+            "One means up-down, the other means left-right.",
+            "Both are common English words for directions."
+          ]
+        },
+        {
+          "id": "Section-5-3-8",
+          "question": "How is the LinearLayout added to the XML layout file when replacing the default ConstraintLayout?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["Android Application Development", "LinearLayout"],
+          "options": [
+            { "id": "a", "text": "By dragging it from the Palette panel" },
+            { "id": "b", "text": "By deleting the ConstraintLayout tag and typing 'LinearLayout' in its place, then selecting the suggestion" },
+            { "id": "c", "text": "By using the Convert Layout option from the right-click menu" },
+            { "id": "d", "text": "By creating a new XML file" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "The instructor deleted the ConstraintLayout tag and typed 'LinearLayout', which triggered an autocomplete suggestion. Selecting it inserted the LinearLayout with required attributes.",
+          "hints": [
+            "The existing layout type tag was removed first.",
+            "Typing the name brought up an autocomplete suggestion.",
+            "The first suggestion in the list was selected."
+          ]
+        },
+        {
+          "id": "Section-5-3-9",
+          "question": "Which existing screen was used to demonstrate LinearLayout in Android Studio?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "LinearLayout"],
+          "options": [
+            { "id": "a", "text": "LoginScreen" },
+            { "id": "b", "text": "activity_main.xml" },
+            { "id": "c", "text": "activity_main_two.xml (MainActivityTwo)" },
+            { "id": "d", "text": "A newly created blank screen" }
+          ],
+          "correctAnswers": ["c"],
+          "explanation": "The instructor used the existing ActivityMain2 / activity_main_two.xml screen to demonstrate LinearLayout, replacing its ConstraintLayout with LinearLayout.",
+          "hints": [
+            "It is not the Login Screen.",
+            "It is not the very first main activity.",
+            "It is the second main activity screen."
+          ]
+        },
+        {
+          "id": "Section-5-3-10",
+          "question": "What component was used to demonstrate WrapContent and fixed dp sizing in this episode?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "UI Components"],
+          "options": [
+            { "id": "a", "text": "Button" },
+            { "id": "b", "text": "ImageView" },
+            { "id": "c", "text": "EditText" },
+            { "id": "d", "text": "TextView" }
+          ],
+          "correctAnswers": ["d"],
+          "explanation": "The instructor placed a TextView inside the LinearLayout and used it to demonstrate the differences between a fixed dp value, MatchParent, and WrapContent.",
+          "hints": [
+            "The instructor called it 'our favourite one'.",
+            "It is used to display text.",
+            "It is commonly the first component added in examples."
+          ]
+        },
+        {
+          "id": "Section-5-3-11",
+          "question": "What width was initially set for the demo TextView in the LinearLayout example?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["Android Application Development", "Layout Attributes"],
+          "options": [
+            { "id": "a", "text": "wrap_content" },
+            { "id": "b", "text": "match_parent" },
+            { "id": "c", "text": "100 dp" },
+            { "id": "d", "text": "200 dp" }
+          ],
+          "correctAnswers": ["c"],
+          "explanation": "The demo TextView was first given a fixed width of 100 dp to illustrate how a fixed value restricts the element's size.",
+          "hints": [
+            "It was a fixed dp value.",
+            "It is a round number.",
+            "It is 100."
+          ]
+        },
+        {
+          "id": "Section-5-3-12",
+          "question": "What height was set for the demo TextView in the LinearLayout WrapContent example?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["Android Application Development", "Layout Attributes"],
+          "options": [
+            { "id": "a", "text": "42 dp" },
+            { "id": "b", "text": "74 dp" },
+            { "id": "c", "text": "60 dp" },
+            { "id": "d", "text": "80 dp" }
+          ],
+          "correctAnswers": ["c"],
+          "explanation": "The height of the demo TextView was set to 60 dp to illustrate how overflow content beyond the boundary becomes invisible.",
+          "hints": [
+            "It is less than 74 dp.",
+            "It is greater than 50 dp.",
+            "The value is 60."
+          ]
+        },
+        {
+          "id": "Section-5-3-13",
+          "question": "What text string was entered into the demo TextView to illustrate text overflow with fixed dimensions?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Layout Attributes"],
+          "options": [
+            { "id": "a", "text": "Hello Android" },
+            { "id": "b", "text": "Hello World! How are you?" },
+            { "id": "c", "text": "Hello World How are you" },
+            { "id": "d", "text": "Test text here" }
+          ],
+          "correctAnswers": ["c"],
+          "explanation": "The instructor typed 'hello world how are you' into the demo TextView, which caused the text to wrap to a second line because the width was fixed at 100 dp.",
+          "hints": [
+            "It is a common greeting phrase.",
+            "It includes both 'Hello World' and a question.",
+            "The text was long enough to overflow the fixed width."
+          ]
+        },
+        {
+          "id": "Section-5-3-14",
+          "question": "What happens when text in a TextView exceeds the fixed height boundary set in dp?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["Android Application Development", "Layout Attributes"],
+          "options": [
+            { "id": "a", "text": "The component automatically expands to fit the text" },
+            { "id": "b", "text": "A scrollbar appears" },
+            { "id": "c", "text": "The overflowing text becomes invisible and is cut off" },
+            { "id": "d", "text": "An error is thrown at runtime" }
+          ],
+          "correctAnswers": ["c"],
+          "explanation": "When text overflows beyond the fixed dp boundary of a TextView, the excess text becomes invisible and is clipped at the boundary. The component does not grow automatically.",
+          "hints": [
+            "Fixed boundaries do not auto-resize.",
+            "The instructor said the overflow text is 'just gone'.",
+            "You lose content that goes beyond the fixed area."
+          ]
+        },
+        {
+          "id": "Section-5-3-15",
+          "question": "What does 'WrapContent' do when used as the width or height of a component?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Layout Attributes"],
+          "options": [
+            { "id": "a", "text": "Fills the entire width of the parent" },
+            { "id": "b", "text": "Sets the component to a fixed size of 100 dp" },
+            { "id": "c", "text": "Sizes the component just enough to fit its content" },
+            { "id": "d", "text": "Hides the component until it has content" }
+          ],
+          "correctAnswers": ["c"],
+          "explanation": "WrapContent tells the layout to make the component only as large as it needs to be to fit its content (text, image, etc.), neither larger nor smaller.",
+          "hints": [
+            "It 'wraps' around the content.",
+            "The size adjusts dynamically based on content.",
+            "It avoids both wasted space and clipping."
+          ]
+        },
+        {
+          "id": "Section-5-3-16",
+          "question": "Why is using a fixed dp value for width potentially wasteful for a TextView?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["Android Application Development", "Layout Attributes"],
+          "options": [
+            { "id": "a", "text": "It increases the app's file size" },
+            { "id": "b", "text": "It takes more CPU to process" },
+            { "id": "c", "text": "The unused space beyond the content is wasted and the content may be clipped if it overflows" },
+            { "id": "d", "text": "It makes the text unreadable" }
+          ],
+          "correctAnswers": ["c"],
+          "explanation": "A fixed dp value locks the component's size, which can result in unused empty space if the text is short, or clipped content if the text is longer than the boundary.",
+          "hints": [
+            "Think about two problems: too much space and not enough.",
+            "The instructor showed both situations.",
+            "WrapContent was offered as the solution."
+          ]
+        },
+        {
+          "id": "Section-5-3-17",
+          "question": "What is the difference between WrapContent and MatchParent?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["Android Application Development", "Layout Attributes"],
+          "options": [
+            { "id": "a", "text": "WrapContent and MatchParent do the same thing" },
+            { "id": "b", "text": "WrapContent sizes to fit content; MatchParent fills the entire parent container" },
+            { "id": "c", "text": "MatchParent sizes to fit content; WrapContent fills the entire screen" },
+            { "id": "d", "text": "WrapContent applies to width only; MatchParent applies to height only" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "WrapContent only occupies as much space as the content inside the component needs, while MatchParent fills the entire available space of the parent container — which is often the full screen.",
+          "hints": [
+            "One is content-driven, the other is container-driven.",
+            "MatchParent is like stretching to fill the whole space.",
+            "WrapContent shrinks to fit, MatchParent expands to fill."
+          ]
+        },
+        {
+          "id": "Section-5-3-18",
+          "question": "Why was MatchParent described as 'not practical' for a single element's width in this example?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["Android Application Development", "Layout Attributes"],
+          "options": [
+            { "id": "a", "text": "It causes the app to crash" },
+            { "id": "b", "text": "It occupies the entire screen width, leaving no room for side margins or other elements" },
+            { "id": "c", "text": "It is very slow to render" },
+            { "id": "d", "text": "It only works in ConstraintLayout" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "MatchParent makes the component occupy the full width of the parent, which is usually the whole screen. This leaves no room for margins and may not suit the design needs of individual elements.",
+          "hints": [
+            "Full screen occupation can be a problem for small elements.",
+            "It takes up all available space.",
+            "The instructor said 'not possible and not even practical'."
+          ]
+        },
+        {
+          "id": "Section-5-3-19",
+          "question": "When WrapContent is set for both width and height of a TextView, what space does it occupy?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["Android Application Development", "Layout Attributes"],
+          "options": [
+            { "id": "a", "text": "The full screen" },
+            { "id": "b", "text": "A fixed size regardless of content" },
+            { "id": "c", "text": "Only the exact space required by its content — no more, no less" },
+            { "id": "d", "text": "Half of the parent's size" }
+          ],
+          "correctAnswers": ["c"],
+          "explanation": "Setting both width and height to WrapContent makes the component occupy only the exact amount of space its content (characters, etc.) requires, eliminating both wasted space and clipping.",
+          "hints": [
+            "It applies WrapContent to both dimensions.",
+            "No space is wasted, none is clipped.",
+            "It perfectly 'wraps' around the content."
+          ]
+        },
+        {
+          "id": "Section-5-3-20",
+          "question": "What concept was the class revising at the start of Episode 3 before moving to layout types?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "ConstraintLayout"],
+          "options": [
+            { "id": "a", "text": "How to connect to a database" },
+            { "id": "b", "text": "Kotlin programming syntax" },
+            { "id": "c", "text": "Placing components, setting attributes, and using ConstraintLayout to position them" },
+            { "id": "d", "text": "Publishing the app to the Play Store" }
+          ],
+          "correctAnswers": ["c"],
+          "explanation": "At the start of Episode 3, the instructor revised placing components with their attributes and learning ConstraintLayout for positioning — the work done in previous episodes — before introducing the different layout types.",
+          "hints": [
+            "It was described as a quick revision at the start.",
+            "ConstraintLayout was specifically named.",
+            "It covered what was done in previous episodes."
+          ]
+        }
+      ]
+    }
+  ]
+}

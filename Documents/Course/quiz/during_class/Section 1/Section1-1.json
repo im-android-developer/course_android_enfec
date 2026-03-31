@@ -1,0 +1,170 @@
+{
+  "items": [
+    {
+      "name": "Section1-1",
+      "difficulty": "easy",
+      "content": [
+        {
+          "id": "Section-1-1-1",
+          "question": "What is the total number of modules covered in the 360 degree complete Android development series?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android app development"],
+          "options": [
+            { "id": "a", "text": "9 modules" },
+            { "id": "b", "text": "10 modules" },
+            { "id": "c", "text": "11 modules" },
+            { "id": "d", "text": "12 modules" }
+          ],
+          "correctAnswers": ["c"],
+          "explanation": "The course consists of a total of 11 modules starting from Android introduction and ending with publishing the app on Google Play Store. Each module builds upon the previous one to create a comprehensive learning path.",
+          "hints": ["Look for the phrase 'total of' in the introduction", "The number is mentioned at the beginning of the course roadmap", "It comes before the discussion of individual modules"]
+        },
+        {
+          "id": "Section-1-1-2",
+          "question": "In which module will you learn about Jetpack Compose?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android app development"],
+          "options": [
+            { "id": "a", "text": "Second module" },
+            { "id": "b", "text": "Third module" },
+            { "id": "c", "text": "Fourth module" },
+            { "id": "d", "text": "Fifth module" }
+          ],
+          "correctAnswers": ["c"],
+          "explanation": "Jetpack Compose, the modern toolkit for building native Android apps, is introduced in the fourth module. After learning UI components in module 2 and Kotlin in module 3, you'll be ready to use Jetpack Compose.",
+          "hints": ["It comes after Kotlin is introduced", "It's described as the modern toolkit", "Count the modules in the roadmap"]
+        },
+        {
+          "id": "Section-1-1-3",
+          "question": "What is the topic of the seventh module in the Android development series?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android app development"],
+          "options": [
+            { "id": "a", "text": "Firebase Integration" },
+            { "id": "b", "text": "Application Architecture" },
+            { "id": "c", "text": "Networking and APIs" },
+            { "id": "d", "text": "Data Storage" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "The seventh module focuses on application architecture, where you will explore the MVVM pattern, use ViewModel, and work with LiveData. These are essential architectural components for building scalable Android applications.",
+          "hints": ["It comes after the networking module", "It discusses MVVM pattern", "It involves ViewModel and LiveData"]
+        },
+        {
+          "id": "Section-1-1-4",
+          "question": "Which module covers internal and external storage methods?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android app development"],
+          "options": [
+            { "id": "a", "text": "Third module" },
+            { "id": "b", "text": "Fourth module" },
+            { "id": "c", "text": "Fifth module" },
+            { "id": "d", "text": "Sixth module" }
+          ],
+          "correctAnswers": ["c"],
+          "explanation": "The fifth module focuses on data storage and covers both internal and external storage methods, as well as how to use remote databases to manage structured data within your app.",
+          "hints": ["Data storage comes after basic UI and language learning", "It's before networking discussions", "It deals with information persistence"]
+        },
+        {
+          "id": "Section-1-1-5",
+          "question": "In the building analogy used in the course, what does the user interface of an app compare to?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android app development"],
+          "options": [
+            { "id": "a", "text": "The electricity and water pipes" },
+            { "id": "b", "text": "The vibrant colours and windows of the building" },
+            { "id": "c", "text": "The foundation of the building" },
+            { "id": "d", "text": "The individual components working together" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "The building analogy compares the app's user interface (buttons, illustrations, layouts) to the building's vibrant colours, windows, doors, and shapes. This represents the visible and interactive parts of the application.",
+          "hints": ["Think about what users see in an app", "The building has colours and windows", "It's about visual elements"]
+        },
+        {
+          "id": "Section-1-1-6",
+          "question": "What does data pipelines in an Android app compare to in a building?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android app development"],
+          "options": [
+            { "id": "a", "text": "Walls and rooms" },
+            { "id": "b", "text": "Windows and doors" },
+            { "id": "c", "text": "Electricity and water pipelines" },
+            { "id": "d", "text": "The roof and foundation" }
+          ],
+          "correctAnswers": ["c"],
+          "explanation": "Data pipelines in an Android app are compared to the electricity and water pipelines in a building. Both deliver essential resources (data/utilities) to different parts of the system, allowing seamless flow and operation.",
+          "hints": ["Think about how data flows through an app", "Buildings have pipelines for utilities", "It's about delivery systems"]
+        },
+        {
+          "id": "Section-1-1-7",
+          "question": "Which module in the Android series focuses on building a complete Android application using all learned concepts?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android app development"],
+          "options": [
+            { "id": "a", "text": "Seventh module" },
+            { "id": "b", "text": "Eighth module" },
+            { "id": "c", "text": "Ninth module" },
+            { "id": "d", "text": "Tenth module" }
+          ],
+          "correctAnswers": ["c"],
+          "explanation": "The ninth module is where everything comes together. You will build a complete Android application using all the concepts, tools, and techniques learned in the previous modules.",
+          "hints": ["It's described as 'where it all comes together'", "It comes after Firebase integration", "It's before the testing module"]
+        },
+        {
+          "id": "Section-1-1-8",
+          "question": "What is the final step covered in the eleventh module of the Android development series?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android app development"],
+          "options": [
+            { "id": "a", "text": "Testing your application" },
+            { "id": "b", "text": "Publishing your app on Google Play Store" },
+            { "id": "c", "text": "Integrating Firebase" },
+            { "id": "d", "text": "Learning application architecture" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "The eleventh and final module teaches how to publish your app on the Google Play Store. This is the last step in the complete Android development journey, allowing you to release your app to users worldwide.",
+          "hints": ["It's the last module number", "Think about what comes after development is complete", "It involves releasing to users"]
+        },
+        {
+          "id": "Section-1-1-9",
+          "question": "What does an Android application consist of, according to the course definition?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android app development"],
+          "options": [
+            { "id": "a", "text": "Only the user interface" },
+            { "id": "b", "text": "Only the backend servers" },
+            { "id": "c", "text": "Various components like UI, controllers, APIs, backend, databases, and AI/ML modules" },
+            { "id": "d", "text": "Only code and design" }
+          ],
+          "correctAnswers": ["c"],
+          "explanation": "An Android application is made up of various interconnected components including the user interface, controllers, APIs, backend servers, databases, and even AI/ML modules. When connected in an organized way, these create a fully functional, scalable application.",
+          "hints": ["Think of all the parts that make an app work", "The building analogy mentions multiple components", "It's not just one thing but many working together"]
+        },
+        {
+          "id": "Section-1-1-10",
+          "question": "How many smartphones globally are powered by Android according to the introduction?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android app development"],
+          "options": [
+            { "id": "a", "text": "Over 1.5 billion smartphones" },
+            { "id": "b", "text": "Over 2 billion smartphones" },
+            { "id": "c", "text": "Over 3.3 billion smartphones" },
+            { "id": "d", "text": "Over 5 billion smartphones" }
+          ],
+          "correctAnswers": ["c"],
+          "explanation": "Android is the most widely used mobile operating system globally and powers over 3.3 billion smartphones. This makes it one of the most important platforms to learn for mobile app development.",
+          "hints": ["It's mentioned at the very beginning", "Android is used by billions of people", "It's more than 3 billion"]
+        }
+      ]
+    }
+  ]
+}

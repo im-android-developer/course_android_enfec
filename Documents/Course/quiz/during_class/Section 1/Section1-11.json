@@ -1,0 +1,170 @@
+{
+  "items": [
+    {
+      "name": "Section1-11",
+      "difficulty": "easy",
+      "content": [
+        {
+          "id": "Section-1-11-1",
+          "question": "How do you open Android Studio after it is installed?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android app development"],
+          "options": [
+            { "id": "a", "text": "Search for it in the system settings" },
+            { "id": "b", "text": "Double-click on the Android Studio icon" },
+            { "id": "c", "text": "Run it from the terminal" },
+            { "id": "d", "text": "Open it from the browser" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "After Android Studio is installed, you simply double-click on the Android Studio icon to launch the application.",
+          "hints": ["Icon-based launch", "Double-click action", "Direct way to open"]
+        },
+        {
+          "id": "Section-1-11-2",
+          "question": "What are the two main sections visible in the Android Studio interface?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android app development"],
+          "options": [
+            { "id": "a", "text": "Toolbar and Toolbar" },
+            { "id": "b", "text": "Navigation pane and main panel" },
+            { "id": "c", "text": "File menu and Edit menu" },
+            { "id": "d", "text": "Console and code editor" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "The Android Studio interface consists of two main sections: the navigation pane on the left side and the main panel on the right side that contains options related to the navigation.",
+          "hints": ["One is for navigation", "One is for content", "Left and right layout"]
+        },
+        {
+          "id": "Section-1-11-3",
+          "question": "What information is shown in the left short panel of Android Studio?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android app development"],
+          "options": [
+            { "id": "a", "text": "File directory only" },
+            { "id": "b", "text": "Android Studio icon, version name, and navigation options" },
+            { "id": "c", "text": "Code editor only" },
+            { "id": "d", "text": "Download options only" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "The left short panel displays the Android Studio icon, version name along with navigation options like Projects, Customise, Plugins, and Learn.",
+          "hints": ["Version information included", "Navigation options present", "Icon displayed"]
+        },
+        {
+          "id": "Section-1-11-4",
+          "question": "What navigation options are available in the left panel?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android app development"],
+          "options": [
+            { "id": "a", "text": "File, Edit, View, and Help" },
+            { "id": "b", "text": "Projects, Customise, Plugins, and Learn" },
+            { "id": "c", "text": "Build, Run, Debug, and Test" },
+            { "id": "d", "text": "Code, Design, and Settings" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "The main navigation options available are Projects, Customise, Plugins, and Learn. Other options will be covered later in the course.",
+          "hints": ["Options found on left panel", "Start with Projects", "Customise is one of them"]
+        },
+        {
+          "id": "Section-1-11-5",
+          "question": "What should you click to begin creating a new application?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android app development"],
+          "options": [
+            { "id": "a", "text": "Click on Customise" },
+            { "id": "b", "text": "Click on Plugins" },
+            { "id": "c", "text": "Click on Projects" },
+            { "id": "d", "text": "Click on Learn" }
+          ],
+          "correctAnswers": ["c"],
+          "explanation": "To start developing your first application, you click on the 'Projects' option in the left navigation pane.",
+          "hints": ["First navigation option", "Related to applications", "Starts development"]
+        },
+        {
+          "id": "Section-1-11-6",
+          "question": "What options are available on the Welcome to Android Studio screen?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android app development"],
+          "options": [
+            { "id": "a", "text": "Open file and Save file" },
+            { "id": "b", "text": "New project, Open existing project, and Clone repository from GitHub" },
+            { "id": "c", "text": "Build, Run, and Debug" },
+            { "id": "d", "text": "Undo, Redo, and Copy" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "The Welcome to Android Studio screen displays three main options: New Project (to create a new application), Open Existing Project (to open previously created projects), and Clone Repository from GitHub (to clone projects from GitHub).",
+          "hints": ["Creation option included", "GitHub option included", "Opening an option too"]
+        },
+        {
+          "id": "Section-1-11-7",
+          "question": "What should you click to create a new project?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android app development"],
+          "options": [
+            { "id": "a", "text": "Open existing project" },
+            { "id": "b", "text": "Clone repository" },
+            { "id": "c", "text": "New project" },
+            { "id": "d", "text": "Settings" }
+          ],
+          "correctAnswers": ["c"],
+          "explanation": "To start developing your first application, you need to click on 'New Project' from the Welcome screen.",
+          "hints": ["Create something new", "First step to development", "Project creation"]
+        },
+        {
+          "id": "Section-1-11-8",
+          "question": "What categories of templates are available for different types of Android applications?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android app development"],
+          "options": [
+            { "id": "a", "text": "Simple, Intermediate, and Advanced" },
+            { "id": "b", "text": "Phone and Tablet, VROS, Television, and Automotive" },
+            { "id": "c", "text": "Game, Business, and Social" },
+            { "id": "d", "text": "Public, Private, and Premium" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "Android Studio provides templates for different device types: Phone and Tablet, VROS (Android watches), Television, and Automotive. Each category contains templates specific to that device type.",
+          "hints": ["Four main categories", "Devices are mentioned", "Watch category included"]
+        },
+        {
+          "id": "Section-1-11-9",
+          "question": "Which template category should you select to create an app for phones and tablets?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android app development"],
+          "options": [
+            { "id": "a", "text": "VROS" },
+            { "id": "b", "text": "Television" },
+            { "id": "c", "text": "Automotive" },
+            { "id": "d", "text": "Phone and Tablet" }
+          ],
+          "correctAnswers": ["d"],
+          "explanation": "If you want to create an Android application for phones or tablets, you should click on the 'Phone and Tablet' category to access the appropriate templates.",
+          "hints": ["Mobile devices", "Common devices", "First category"]
+        },
+        {
+          "id": "Section-1-11-10",
+          "question": "What is the Empty Views Activity template?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android app development"],
+          "options": [
+            { "id": "a", "text": "A template with pre-built UI elements" },
+            { "id": "b", "text": "A template that comes with no special user interface functionalities" },
+            { "id": "c", "text": "A template for creating games" },
+            { "id": "d", "text": "A template for advanced developers" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "The Empty Views Activity is a basic template that comes with no special user interface functionalities. You have to build everything from scratch, making it ideal for learning and understanding how to create UI elements.",
+          "hints": ["Empty means minimal", "For learning purposes", "Build from scratch"]
+        }
+      ]
+    }
+  ]
+}

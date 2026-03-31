@@ -1,0 +1,12 @@
+(0:00) Now let's change this text again, but not from here. (0:04) For this, we need to change the view. (0:08) But where it is? (0:10) For that, you have to look on top right corner.
+(0:15) You will find three small icons, named as code, split and design. (0:26) We are now on design view. (0:29) Let's shift to another view.
+(0:31) For this, click on split view. (0:36) Now on this view, you will see that the screen is splitted into two views. (0:42) One contains the codes, known as XML codes and another is view.
+(0:49) That's why it's called split view. (0:53) Now let's change the text from these codes. (0:58) Now here's a task for you.
+(1:01) Find out this, my first project text within these XML codes. (1:07) I'm giving you 5 seconds for it. (1:15) So have you find this out? (1:17) If yes, congratulations.
+(1:19) If not, let me show you. (1:23) Here it is, under this text view. (1:27) There's lot of codes, but we'll learn them later into other portions.
+(1:33) So let's change this text. (1:36) For this, just select this text. (1:41) Remove this and write whatever you want.
+(1:46) For us, let's type hello world again. (1:54) Hello world. (2:00) Once done, you will see the hello world text is now changed.
+(2:08) Perfect. (2:10) Let's do a task. (2:12) Change this text again to something else.
+(2:16) Write your name here. (2:17) I'm giving you 5 seconds again. (2:27) I hope so, you done it.
+(2:30) Let's move to another one, that is code view. (2:36) It is as same as XML codes we saw at split but no view available here. (2:43) So it's your choice from where you have to work.
+(2:47) So in last, we learned about the basics of computers and android. (2:52) Later on, we will discuss on how we can design the interface.

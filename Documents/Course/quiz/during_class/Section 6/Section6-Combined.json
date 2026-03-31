@@ -1,0 +1,410 @@
+{
+  "items": [
+    {
+      "name": "Section6-Combined",
+      "difficulty": "hard",
+      "content": [
+        {
+          "id": "Section-6-C-1",
+          "question": "A developer switches a LinearLayout's android:orientation from 'vertical' to 'horizontal' at runtime. Before the change, three TextViews were stacked top-to-bottom on the screen. After the change, what will the layout look like, and why does this happen without needing to modify any child component's attributes?",
+          "type": "mcq",
+          "difficulty": "hard",
+          "tags": ["Android Application Development", "LinearLayout", "Orientation"],
+          "options": [
+            { "id": "a", "text": "The three TextViews will overlap each other at the left edge, because horizontal orientation does not auto-arrange elements by default — you must add constraints to prevent overlap." },
+            { "id": "b", "text": "The three TextViews will be arranged side-by-side from left to right without any overlap, because LinearLayout's core behavior is to sequentially place children along the orientation axis — switching to horizontal changes that axis from top-to-bottom to left-to-right, and this applies uniformly to all children without any individual attribute changes." },
+            { "id": "c", "text": "The TextViews will stay in the same vertical position because orientation only controls the direction of new components added after the change. Existing components retain their previous positions until explicitly moved." },
+            { "id": "d", "text": "Only the first TextView will shift to horizontal — the remaining two stay vertical until their own android:layout_orientation attributes are also changed." }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "LinearLayout places all child views sequentially along its orientation axis. Changing orientation from 'vertical' to 'horizontal' on the parent is sufficient — all children are immediately re-arranged left-to-right because the axis that governs their stacking order changes. No child-level attributes need modification.",
+          "hints": [
+            "Orientation is a parent-level attribute that governs all children.",
+            "LinearLayout stacks elements in the direction the orientation axis points.",
+            "No constraints or child-level repositioning is required."
+          ]
+        },
+        {
+          "id": "Section-6-C-2",
+          "question": "A developer applies android:padding='15dp' and android:paddingTop='30dp' to the same TextView simultaneously. What is the resulting padding on each side, and why does this outcome demonstrate the relationship between generic and directional padding attributes?",
+          "type": "mcq",
+          "difficulty": "hard",
+          "tags": ["Android Application Development", "Padding"],
+          "options": [
+            { "id": "a", "text": "All four sides get 45dp (15dp + 30dp), because Android sums all applicable padding values for each side." },
+            { "id": "b", "text": "All sides get 15dp and the top also gets an additional 30dp on top of that, resulting in: top=45dp, bottom=15dp, left=15dp, right=15dp — because directional padding adds on top of the generic one." },
+            { "id": "c", "text": "The specific directional attribute (paddingTop) overrides the generic padding for that side. Result: top=30dp, bottom=15dp, left=15dp, right=15dp — because the more specific attribute takes precedence on its respective side." },
+            { "id": "d", "text": "The generic android:padding overrides all directional attributes, so all four sides receive 15dp and paddingTop is ignored entirely." }
+          ],
+          "correctAnswers": ["c"],
+          "explanation": "In Android XML, directional padding attributes (paddingTop, paddingLeft, etc.) override the generic android:padding for their specific side. The generic padding sets a baseline for all sides, but any directional variant replaces that baseline only on its own side. Result: top=30dp, all others=15dp.",
+          "hints": [
+            "Directional padding is more specific than the generic padding.",
+            "Think of generic padding as a baseline that directional values can override.",
+            "Each side is evaluated independently."
+          ]
+        },
+        {
+          "id": "Section-6-C-3",
+          "question": "The instructor explained that 'margin is from where your component will get to start.' A student interprets this to mean margin moves the component across the screen like a position offset. A second student says margin creates visible empty space between the component and its neighbors. Which interpretation is more accurate, and what is the precise technical distinction between margin and padding?",
+          "type": "mcq",
+          "difficulty": "hard",
+          "tags": ["Android Application Development", "Margin", "Padding"],
+          "options": [
+            { "id": "a", "text": "The first student is correct. Margin is purely a positioning offset that shifts the component's anchor point. It has no visual manifestation as empty space and does not affect the space between components." },
+            { "id": "b", "text": "Both students are correct. Margin both shifts the component's starting position AND creates visible spacing between components. Padding, on the other hand, only affects text positioning within a TextField and has no effect on non-text components." },
+            { "id": "c", "text": "Both students are partially right. Margin controls where the component starts relative to its parent/siblings, which visually manifests as external empty space between components. Padding, in contrast, is internal — it adds space between the component's own content (like text) and its own boundaries, making the component appear larger from within." },
+            { "id": "d", "text": "The second student is correct; margin creates visible space. Padding, however, is synonymous with margin in LinearLayout — both attributes achieve identical visual output and can be used interchangeably when working inside a LinearLayout." }
+          ],
+          "correctAnswers": ["c"],
+          "explanation": "Margin is external — it determines where the component begins relative to its surroundings, visually creating space around the outside of the component. Padding is internal — it creates space between the component's content and its own edges. They operate in different zones: padding inside the component boundary, margin outside it.",
+          "hints": [
+            "Padding is internal (inside the component's own box).",
+            "Margin is external (outside the component's box, relative to neighbors).",
+            "The instructor described them as distinctly different: one is about internal space, the other about starting position."
+          ]
+        },
+        {
+          "id": "Section-6-C-4",
+          "question": "In Android XML, a developer has a LinearLayout with orientation='vertical' and adds paddingLeft='20dp' to a child TextView. They then add a second identical TextView (copy-paste). Which statement correctly identifies what padding does NOT affect in this scenario?",
+          "type": "mcq",
+          "difficulty": "hard",
+          "tags": ["Android Application Development", "Padding", "LinearLayout"],
+          "options": [
+            { "id": "a", "text": "Padding does not affect the component's background drawable boundaries — the background color/drawable still begins at the component's outer boundary even when paddingLeft is set." },
+            { "id": "b", "text": "Padding does not affect the spacing between the two TextViews — the gap between consecutive children in a LinearLayout is controlled by margin, not padding." },
+            { "id": "c", "text": "Padding does not affect child components inside the TextView. Setting paddingLeft on a ViewGroup passes through to all child views automatically, but TextView has no children so padding is wasted." },
+            { "id": "d", "text": "Padding cannot be applied to components inside a vertical LinearLayout because the orientation direction conflicts with paddingLeft." }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "Padding creates internal space inside a component between its content and its own edges. It does NOT control the gap between consecutive sibling components in a LinearLayout — that is the role of margin. Two TextViews stacked in a vertical LinearLayout would have their separation controlled by margin (e.g., marginTop), not by padding.",
+          "hints": [
+            "Padding is internal to the component, not external.",
+            "Spacing between siblings is an external concern.",
+            "Think: what attribute controls space outside the component's own boundary?"
+          ]
+        },
+        {
+          "id": "Section-6-C-5",
+          "question": "A student claims that LinearLayout is the best choice for every Android screen layout because it automatically prevents overlap. The instructor mentioned specific use cases where LinearLayout is 'perfect.' Based on the lecture, which of the following best identifies LinearLayout's strength while also correctly naming its limitation?",
+          "type": "mcq",
+          "difficulty": "hard",
+          "tags": ["Android Application Development", "LinearLayout", "Layout Design"],
+          "options": [
+            { "id": "a", "text": "LinearLayout is perfect for all apps because its automatic stacking eliminates the need to think about component positioning. It has no meaningful limitation." },
+            { "id": "b", "text": "LinearLayout is ideal for straight, ordered, single-axis designs such as login forms (email, password, button stacked vertically) or button rows (like a calculator). Its limitation is that it only supports one direction per layout — complex, multi-directional designs require blending multiple layouts or using ConstraintLayout." },
+            { "id": "c", "text": "LinearLayout is only appropriate for text-based apps (like to-do apps) because it cannot handle ImageViews or Buttons in the same layout." },
+            { "id": "d", "text": "LinearLayout is best for apps where all components have equal size. If any component has a different size, the automatic stacking will cause overlap, which was the instructor's mentioned limitation." }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "The instructor said LinearLayout 'is perfect for simple designs like forms, to-do apps, music players' and also 'good for buttons in a row like a calculator.' Its inherent constraint is single-axis ordering — when designs require complex 2D positioning, blending layouts (combining multiple LinearLayouts or using ConstraintLayout) is necessary.",
+          "hints": [
+            "The instructor listed specific ideal use cases for LinearLayout.",
+            "The key word the instructor used was 'straight and ordered.'",
+            "Think about what happens when a design requires both horizontal and vertical groupings simultaneously."
+          ]
+        },
+        {
+          "id": "Section-6-C-6",
+          "question": "The instructor defined 'blending of layouts' as using more than one layout combined in a particular manner within a single frame. A developer is building a login screen with a vertically-stacked form but needs a row of two buttons (Cancel and Submit) side by side at the bottom. Which approach correctly demonstrates layout blending for this requirement?",
+          "type": "mcq",
+          "difficulty": "hard",
+          "tags": ["Android Application Development", "Layout Blending", "LinearLayout"],
+          "options": [
+            { "id": "a", "text": "Place all components including both buttons inside a single vertical LinearLayout and set android:layout_weight='1' on each button to force horizontal distribution — no blending needed." },
+            { "id": "b", "text": "Use a vertical LinearLayout as the root containing the form fields, then nest a horizontal LinearLayout at the bottom of the root layout that contains the two buttons side by side. This is blending — a vertical and horizontal LinearLayout combined." },
+            { "id": "c", "text": "Blending of layouts requires using two separate XML files. Put the form in one XML and the buttons in another, then merge them using Android's include tag. Using nested layouts in the same XML file is not considered blending." },
+            { "id": "d", "text": "The correct approach is to switch the root layout from LinearLayout to ConstraintLayout whenever side-by-side elements are needed. Blending within a LinearLayout hierarchy is not possible or supported." }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "Blending of layouts means combining multiple layout types within a single screen. For this case: a root vertical LinearLayout stacks the form fields top-to-bottom, and a nested horizontal LinearLayout contains the two buttons side by side. This is precisely the type of structure the instructor described — multiple layouts within a single frame to achieve a structure that a single layout orientation cannot.",
+          "hints": [
+            "Blending = using multiple layouts together within one screen.",
+            "A vertical root layout can contain a horizontally-oriented nested layout.",
+            "The instructor showed multiple structural variations for blending."
+          ]
+        },
+        {
+          "id": "Section-6-C-7",
+          "question": "When creating a new Activity in Android Studio using 'New > Activity > Empty Views Activity,' the instructor observed that each activity must have a unique name. If a developer tries to create a second activity with the same name as an existing one, what error appears and why does Android Studio enforce this constraint?",
+          "type": "mcq",
+          "difficulty": "hard",
+          "tags": ["Android Application Development", "Activity", "AndroidManifest"],
+          "options": [
+            { "id": "a", "text": "The error 'Duplicate class found' appears. It is enforced because two Kotlin/Java classes with the same name in the same package would be a Java compilation error — not an Android-specific rule." },
+            { "id": "b", "text": "The error 'Activity name must be unique' appears. Android Studio enforces this because each Activity corresponds to an entry in the AndroidManifest.xml file, and two activities with the same name would create ambiguous manifest declarations, breaking the app's activity registration system." },
+            { "id": "c", "text": "No error appears — Android Studio allows duplicate activity names but appends a number suffix automatically (e.g., LoginScreen, LoginScreen2). The developer does not need to manually differentiate them." },
+            { "id": "d", "text": "The error 'Layout file already exists' appears. The error is actually about the XML layout file, not the activity class name, since each activity automatically generates an XML layout file that must also have a unique filename." }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "The instructor explicitly showed this — when he tried to use the name 'login screen' a second time, Android Studio showed 'activity name must be unique.' Each activity is a distinct class registered in AndroidManifest.xml. Duplicate names would create conflicting manifest entries. The instructor resolved this by appending '_2' to the name.",
+          "hints": [
+            "The instructor showed the exact error message on screen.",
+            "Activity names map directly to entries in AndroidManifest.xml.",
+            "Think about what happens when two classes have the same name in the same package."
+          ]
+        },
+        {
+          "id": "Section-6-C-8",
+          "question": "After creating a new activity with 'Launcher Activity' checked, the instructor navigated to AndroidManifest.xml and discovered two intent-filter blocks — one from the previously configured login screen and one from the newly created activity. What specific problem does this cause, and what is the correct resolution?",
+          "type": "mcq",
+          "difficulty": "hard",
+          "tags": ["Android Application Development", "AndroidManifest", "Launcher Activity", "Intent Filter"],
+          "options": [
+            { "id": "a", "text": "Two intent-filter blocks in the manifest have no functional impact — Android automatically resolves which activity to launch by choosing the one declared first in the manifest file." },
+            { "id": "b", "text": "Two intent-filter blocks can cause an error or ambiguous launch behavior because both activities declare themselves as the launcher — the device's home screen launcher cannot determine which activity to open when the app icon is tapped. The resolution is to delete the intent-filter from the old activity, leaving only the new launcher activity's intent-filter." },
+            { "id": "c", "text": "Two intent-filter blocks are required for dual-entry apps — one intent-filter is for launching from the home screen, and the second is for launching from another app via deep link. This is normal and expected behavior with no errors." },
+            { "id": "d", "text": "The problem is that the two intent-filter blocks will cause a build error during Gradle compilation. The resolution is to move both intent-filters into a single special activity called MainActivity that Android requires to be the sole manifest entry point." }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "The instructor explicitly deleted the earlier intent-filter from the old login screen because having two activities with LAUNCHER intent-filter creates ambiguity — both claim to be the app's entry point. After deletion, only the new activity (login_screen_2) had the intent-filter, making it the unambiguous launcher activity.",
+          "hints": [
+            "The LAUNCHER intent-filter marks an activity as the app's entry point.",
+            "Only one activity should be the launcher at a time.",
+            "The instructor deleted the previous intent-filter to resolve the conflict."
+          ]
+        },
+        {
+          "id": "Section-6-C-9",
+          "question": "In Android hex color codes, the instructor explained that #FFFFFF represents white and #000000 represents black. Based on the RGB structure of hex codes (#RRGGBB), what color does the code #FF0000 represent, and what would the code #FF00FF produce?",
+          "type": "mcq",
+          "difficulty": "hard",
+          "tags": ["Android Application Development", "Hex Color Codes", "RGB"],
+          "options": [
+            { "id": "a", "text": "#FF0000 = black (because only one channel is active), #FF00FF = dark purple (the mix of red and blue at low intensity)." },
+            { "id": "b", "text": "#FF0000 = pure red (100% red, 0% green, 0% blue); #FF00FF = magenta/pink (100% red, 0% green, 100% blue) — combining full red and full blue with no green produces magenta." },
+            { "id": "c", "text": "#FF0000 = pure yellow (because FF means maximum warm tone, and warm tones default to yellow without green), #FF00FF = orange (warm tones at max with partial blue)." },
+            { "id": "d", "text": "#FF0000 = white (because FF means maximum and any maximum single-channel code defaults to the brightest white), #FF00FF = grey (two channels at max average to the grey midpoint)." }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "The instructor explained: positions 1-2 = Red intensity, positions 3-4 = Green intensity, positions 5-6 = Blue intensity. FF = 100% present, 00 = 0% (absent). #FF0000: Red 100%, Green 0%, Blue 0% = pure red. #FF00FF: Red 100%, Green 0%, Blue 100% = magenta (additive color mixing of red + blue at full intensity).",
+          "hints": [
+            "The first two characters control Red intensity.",
+            "FF means 100% of that color channel; 00 means 0%.",
+            "Mixing 100% red and 100% blue with no green produces magenta in RGB."
+          ]
+        },
+        {
+          "id": "Section-6-C-10",
+          "question": "The instructor demonstrated defining a custom color resource in colors.xml with a name of 'background_colour' mapped to hex #05273B. A developer later uses @color/background_colour in their layout XML instead of writing #05273B directly. What is the primary architectural advantage of this approach, and in which resource directory and file must the color be declared?",
+          "type": "mcq",
+          "difficulty": "hard",
+          "tags": ["Android Application Development", "Color Resources", "colors.xml"],
+          "options": [
+            { "id": "a", "text": "The primary advantage is runtime performance — named colors are pre-compiled into binary at build time, making them render faster than inline hex codes. They must be declared in res/layout/colors.xml." },
+            { "id": "b", "text": "The primary advantage is reusability and maintainability — the color is defined once and can be referenced by name anywhere in the project. If the color needs to change, updating it in one place (colors.xml) propagates the change everywhere it is used. It must be declared in res/values/colors.xml." },
+            { "id": "c", "text": "The primary advantage is type safety — Android Studio will show a compile error if an undefined color name is used, preventing typos in hex codes. It must be declared in res/drawable/colors.xml." },
+            { "id": "d", "text": "The primary advantage is theme compatibility — named colors automatically adapt to dark mode by inverting the hex value. They must be declared in res/anim/colors.xml." }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "The instructor described color resources as reusable: 'color is my resource — that means I can use this color at any point, at any position, wherever I need it.' Instead of copying the hex code everywhere, you define it once in res/values/colors.xml and reference it by name (@color/background_colour). This avoids messy copy-pasting and ensures consistency.",
+          "hints": [
+            "The instructor used a cookie packet analogy: resources are things available whenever you need them.",
+            "The res/values/ directory holds value-type resources like colors, strings, and dimensions.",
+            "The file is called colors.xml within the res/values/ directory."
+          ]
+        },
+        {
+          "id": "Section-6-C-11",
+          "question": "The instructor showed that the hex color code #05273B produces a very dark navy-blue color for the LinearLayout background. Analyzing the RRGGBB structure, which of the following interpretations of this hex code is technically correct?",
+          "type": "mcq",
+          "difficulty": "hard",
+          "tags": ["Android Application Development", "Hex Color Codes", "RGB"],
+          "options": [
+            { "id": "a", "text": "Red=05 (very low, ~2%), Green=27 (low, ~15%), Blue=3B (moderate, ~23%) — the code has a small amount of all three colors but is dominated by blue and green, creating a dark teal/navy shade." },
+            { "id": "b", "text": "Red=05 (very low ~2%), Green=27 (low ~15%), Blue=3B (moderate ~23%). Since none reach 50%, all channels are below the midpoint, resulting in a color family closer to black — specifically a very dark navy/blue-ish dark tone lying between black and white as the instructor stated." },
+            { "id": "c", "text": "The code is invalid because all hex codes for visible colors must start with at least A0 in the red channel. Codes starting with 0 automatically default to black." },
+            { "id": "d", "text": "Red=5%, Green=27%, Blue=3B% — the percent sign is implied in hex. All values are moderate and produce a medium grey because no single channel dominates." }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "The instructor confirmed: 'this colour code is somehow lie between black and white' — meaning no channel is at 00 (pure absent) or FF (fully present). Red=05 is near-zero, Green=27 is low, Blue=3B is moderate. The blue channel dominates slightly, resulting in a very dark navy hue — exactly the dark background color visible in the login screen design.",
+          "hints": [
+            "Hex digits range from 00 (absent) to FF (100% intensity).",
+            "The instructor said this code lies 'between black and white.'",
+            "Blue (3B) is the highest value here, making it the dominant channel."
+          ]
+        },
+        {
+          "id": "Section-6-C-12",
+          "question": "When building the login screen, the instructor placed an ImageView with dimensions 124dp (width) × 118dp (height) and applied android:layout_marginTop='100dp'. If the developer instead mistakenly applies android:layout_margin='100dp', how does the visual result differ from the intended outcome?",
+          "type": "mcq",
+          "difficulty": "hard",
+          "tags": ["Android Application Development", "Margin", "ImageView", "Login Screen"],
+          "options": [
+            { "id": "a", "text": "There is no difference — android:layout_margin and android:layout_marginTop behave identically when only the top margin is visually distinguishable in a vertical LinearLayout." },
+            { "id": "b", "text": "Using android:layout_margin='100dp' applies 100dp of margin on ALL four sides (top, bottom, left, right), whereas android:layout_marginTop='100dp' applies 100dp only to the top. The result with layout_margin would push the ImageView away from all edges — 100dp from the top AND 100dp from left and right sides of the screen — not just 100dp below the top boundary as intended." },
+            { "id": "c", "text": "android:layout_margin applies only to horizontal margins (left and right) by default, and android:layout_marginTop is needed for vertical spacing. Using layout_margin would not add any top spacing at all." },
+            { "id": "d", "text": "android:layout_margin is ignored when the parent is a LinearLayout because LinearLayout manages spacing exclusively through the orientation attribute. Only margin_top and margin_bottom are recognized inside LinearLayouts." }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "The instructor explained that layout_margin (generic) applies the specified value from all four directions simultaneously — top, bottom, left, and right. layout_marginTop applies only from the top. Since the design required only 100dp below the top edge, using the generic layout_margin would also add 100dp on the left, right, and bottom, distorting the intended layout.",
+          "hints": [
+            "Generic margin = all four sides simultaneously.",
+            "Directional margin = only the specified side.",
+            "The instructor showed this parallel with padding: the same logic applies to margin."
+          ]
+        },
+        {
+          "id": "Section-6-C-13",
+          "question": "The instructor demonstrated setting android:layout_gravity='center_horizontal' on the ImageView. In a vertical LinearLayout, why is layout_gravity needed to center the ImageView horizontally, and why can't you achieve the same result using android:gravity='center_horizontal' on the ImageView?",
+          "type": "mcq",
+          "difficulty": "hard",
+          "tags": ["Android Application Development", "layout_gravity", "gravity", "ImageView"],
+          "options": [
+            { "id": "a", "text": "android:gravity='center_horizontal' would work identically on an ImageView — both gravity and layout_gravity are interchangeable for centering components. The instructor's choice of layout_gravity was a personal preference, not a technical requirement." },
+            { "id": "b", "text": "android:gravity on an ImageView controls the alignment of the image content (the drawable) within the ImageView's own boundaries — centering the image inside the ImageView box but not moving the ImageView itself. android:layout_gravity controls where the ImageView component is positioned within its parent LinearLayout. To center the ImageView itself horizontally in the layout, layout_gravity='center_horizontal' is required." },
+            { "id": "c", "text": "android:gravity='center_horizontal' cannot be used on ImageView at all — it is a TextView-only attribute. Using gravity on a non-text component causes a build warning." },
+            { "id": "d", "text": "In a vertical LinearLayout, gravity is ignored on all child components because LinearLayout reserves gravity processing exclusively for its orientation axis. Any gravity value set on a child is overridden by the parent layout's orientation." }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "The instructor distinguished clearly: gravity aligns the content inside the component (for ImageView, it positions the drawable within the view's bounds), while layout_gravity positions the component itself within its parent layout. To move the ImageView to the horizontal center of the parent LinearLayout, layout_gravity='center_horizontal' is the correct attribute.",
+          "hints": [
+            "gravity: aligns what is INSIDE the component.",
+            "layout_gravity: aligns the component ITSELF inside its parent.",
+            "The instructor said 'layout_gravity works on the whole component.'"
+          ]
+        },
+        {
+          "id": "Section-6-C-14",
+          "question": "For the Login Screen title TextView, the instructor set android:layout_width='match_parent' and used android:gravity='center_horizontal' to center the text. He explicitly noted that android:layout_gravity would NOT work here. What is the precise reason layout_gravity fails when layout_width is set to match_parent?",
+          "type": "mcq",
+          "difficulty": "hard",
+          "tags": ["Android Application Development", "gravity", "layout_gravity", "match_parent"],
+          "options": [
+            { "id": "a", "text": "layout_gravity fails on TextViews by design — Android's view system restricts layout_gravity to ViewGroups only. TextViews must always use android:gravity for any centering operation." },
+            { "id": "b", "text": "layout_gravity controls the position of the component within its parent. When layout_width='match_parent', the TextView already spans the full width of the LinearLayout from edge to edge — there is no horizontal space left to shift it. Since the component occupies 100% of the horizontal space, layout_gravity='center_horizontal' has no room to move it and has no visible effect." },
+            { "id": "c", "text": "layout_gravity fails with match_parent in LinearLayouts specifically because LinearLayout applies its orientation as a higher-priority constraint that cancels out any layout_gravity values on its children." },
+            { "id": "d", "text": "match_parent and layout_gravity are in conflict because match_parent automatically applies center gravity. Since centering is already implicit, explicitly setting layout_gravity='center_horizontal' causes a redundancy error that silently disables both." }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "The instructor demonstrated this precisely: 'because I put match_parent, that occupies the whole space from point A to point B — then how exactly can I shift it? Because it already occupies the whole space.' layout_gravity works by positioning the component within the remaining free space. If match_parent leaves no free space, layout_gravity cannot shift the component horizontally.",
+          "hints": [
+            "match_parent = the component fills 100% of the parent's width.",
+            "layout_gravity needs free space to be able to reposition the component.",
+            "The instructor said: 'it already occupies the whole space, so how can it be shifted?'"
+          ]
+        },
+        {
+          "id": "Section-6-C-15",
+          "question": "The instructor showed that setting android:layout_width='wrap_content' on the Login Screen title TextView enables android:layout_gravity='center_horizontal' to work correctly, while android:gravity='center_horizontal' would NOT work in that same scenario. What does this reveal about the mutual exclusivity between gravity and layout_gravity based on layout_width value?",
+          "type": "mcq",
+          "difficulty": "hard",
+          "tags": ["Android Application Development", "gravity", "layout_gravity", "wrap_content"],
+          "options": [
+            { "id": "a", "text": "It reveals that gravity and layout_gravity are always mutually exclusive — only one can be set at a time. Setting both causes a compile-time error in Android Studio." },
+            { "id": "b", "text": "It reveals a practical rule: with wrap_content, the component only takes the space its content needs, leaving free surrounding space inside the parent. layout_gravity can then reposition the entire component within that free space. With match_parent, there is no free horizontal space, so gravity (which aligns content inside the component) is the only way to achieve visual centering. The choice between them is determined by layout_width." },
+            { "id": "c", "text": "It reveals that layout_gravity always take precedence over gravity. When layout_width='wrap_content', the layout_gravity value cancels gravity, and when layout_width='match_parent', layout_gravity is disabled and gravity is automatically activated by the system." },
+            { "id": "d", "text": "It reveals no real difference — both wrap_content and match_parent produce identical results for centering as long as the parent LinearLayout has centerInParent set to true at the root level." }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "The instructor declared there is no single fixed rule — the developer must reason about the component's width. With wrap_content: the component is smaller than the parent, free space exists horizontally, so layout_gravity can move the component to center. With match_parent: no free space exists along the horizontal axis, so you must use gravity to center the text content within the already-full-width component.",
+          "hints": [
+            "wrap_content = component takes only as much space as needed → free space remains → layout_gravity can shift it.",
+            "match_parent = component fills all space → no free space → layout_gravity cannot shift it.",
+            "The instructor explicitly said: 'there is no defined method… it is on you.'"
+          ]
+        },
+        {
+          "id": "Section-6-C-16",
+          "question": "When building the Login Screen title TextView, the instructor applied android:textSize='30dp', android:textStyle='bold', and android:textColor='#38B6FF'. A junior developer reviewing the code asks: 'Why are we using dp for textSize and not sp?' What is the correct technical answer based on Android best practices referenced in the course, and how does it relate to the way he set text color?",
+          "type": "mcq",
+          "difficulty": "hard",
+          "tags": ["Android Application Development", "TextView", "textSize", "textColor"],
+          "options": [
+            { "id": "a", "text": "dp and sp are interchangeable for textSize — Android internally converts both to the same pixel value. Using dp is more precise because it is tied to screen density only, which aligns with how textColor (a non-size attribute) works." },
+            { "id": "b", "text": "The instructor used dp for textSize as demonstrated in this exercise. In Android best practices, sp (scale-independent pixels) is generally preferred for text size because it also respects the user's system font-size accessibility setting. However, the instructor applied 30dp directly as per the design specification provided. The textColor #38B6FF is a hex code following the RRGGBB structure where R=38, G=B6, B=FF — a bright cyan-blue." },
+            { "id": "c", "text": "dp must always be used for textSize in LinearLayout because sp only works inside ConstraintLayout. The text color #38B6FF means 38% red, B6% green, FF% blue — percentages encoded in hex." },
+            { "id": "d", "text": "sp is illegal for textSize in XML — only dp values are accepted by the Android XML parser. sp is a runtime-only unit that can only be set programmatically in Kotlin or Java." }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "The instructor used 30dp for textSize as per the UI design spec provided. Android convention recommends sp for text to honor user accessibility font scaling, but the instructor followed the reference dimensions given. The textColor #38B6FF follows the RRGGBB hex format: Red=0x38 (~22%), Green=0xB6 (~71%), Blue=0xFF (100%) — producing a bright blue/cyan.",
+          "hints": [
+            "sp = scale-independent pixels (also considers font size system setting).",
+            "dp = density-independent pixels (density only, not font scale).",
+            "The instructor followed the design spec's specified dimensions directly."
+          ]
+        },
+        {
+          "id": "Section-6-C-17",
+          "question": "In the login screen XML, the instructor added an EditText for the username field. He mentioned 'textColorHint' as a separate attribute from 'textColor.' A developer sets android:textColor='#FFFFFF' and android:textColorHint='#888888' on the same EditText. Describe exactly what each attribute controls and what the visual result will be for the two distinct states of this EditText.",
+          "type": "mcq",
+          "difficulty": "hard",
+          "tags": ["Android Application Development", "EditText", "textColor", "textColorHint"],
+          "options": [
+            { "id": "a", "text": "textColor controls the EditText border color and textColorHint controls the typed text color. The border will be white (#FFFFFF) and typed characters will appear grey (#888888)." },
+            { "id": "b", "text": "textColor controls the color of text typed by the user — when the user types, their input shows in white (#FFFFFF). textColorHint controls the color of the placeholder/hint text shown before the user starts typing — the hint appears grey (#888888). Once the user starts typing, the hint disappears and the typed input appears in white." },
+            { "id": "c", "text": "Both textColor and textColorHint control the same text. Using both simultaneously causes a conflict and only the last declared attribute in the XML is applied. In this case, textColorHint (#888888) would win if declared last." },
+            { "id": "d", "text": "textColorHint only works when the EditText has inputType='textPassword'. For regular text fields, Android ignores textColorHint and uses textColor for all text states." }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "The instructor noted two distinct color attributes for EditText: textColor sets the color of actual user-typed input, and textColorHint sets the color of the hint text (placeholder like 'Enter username' or 'Enter password') that is visible before the user types anything. They control completely different text states of the same component.",
+          "hints": [
+            "Hint text is the placeholder text visible in an empty EditText.",
+            "Once the user starts typing, hint text disappears.",
+            "The instructor mentioned 'entire username' and 'entire password' as examples of hint text."
+          ]
+        },
+        {
+          "id": "Section-6-C-18",
+          "question": "The instructor set android:fontFamily='poppins_medium' on the Login Screen title TextView by referencing a font that was previously downloaded and imported. A developer on a new machine opens this project and the font is missing from resources. What exact step must be completed for the font to be available, and in which directory does it need to be placed?",
+          "type": "mcq",
+          "difficulty": "hard",
+          "tags": ["Android Application Development", "Font Family", "Resources"],
+          "options": [
+            { "id": "a", "text": "The font is automatically downloaded from Google Fonts at build time if declared in fontFamily. No manual import step is needed — just referencing the name in XML triggers a Gradle download task." },
+            { "id": "b", "text": "The font file (.ttf or .otf) must be manually imported into the project's res/font/ directory. Once placed there, it becomes accessible by name in XML via android:fontFamily='@font/poppins_medium'. Without this import, the system will fall back to a default font but will not throw a crash." },
+            { "id": "c", "text": "Fonts are part of the drawable resources directory. The .ttf file must be placed in res/drawable/ so Android Studio recognizes it as a visual asset alongside images." },
+            { "id": "d", "text": "The font must be placed in assets/fonts/ and accessed programmatically through a Typeface object in Kotlin/Java. Custom fonts cannot be referenced directly in XML using android:fontFamily." }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "Custom fonts in Android are stored in the res/font/ directory. The font file (.ttf / .otf) must be imported there (as demonstrated by the instructor who dragged the font into the drawable folder in an earlier lesson). Once in res/font/, it is referenced in XML using @font/font_name. Without the import, the fontFamily reference resolves to nothing and the system uses a default font.",
+          "hints": [
+            "The instructor mentioned downloading and importing the Poppins font in an earlier session.",
+            "Custom fonts go in the res/font/ directory.",
+            "XML reference format: android:fontFamily='@font/font_name'"
+          ]
+        },
+        {
+          "id": "Section-6-C-19",
+          "question": "The instructor emphasized 'always start with layout, don't just jump over the components like ImageView, TextView or something else — design a layout first, then only go with components.' A developer ignores this and directly places an ImageView at the root of the XML file without a parent layout wrapper. What problem will this create, and why does the instructor's rule exist?",
+          "type": "mcq",
+          "difficulty": "hard",
+          "tags": ["Android Application Development", "Layout Design", "XML Structure"],
+          "options": [
+            { "id": "a", "text": "Placing a view at the root of an XML layout file without a parent ViewGroup is actually valid — Android allows a single root view element and wraps it in a FrameLayout internally. There is no problem." },
+            { "id": "b", "text": "An Android layout XML file must have exactly one root element, and that root should be a ViewGroup (like LinearLayout, ConstraintLayout, etc.) to hold multiple children. Without a layout root, adding a second component (like a TextView after the ImageView) would have no parent container, causing a malformed XML structure. The rule ensures all components have a structured parent that governs their positioning, spacing, and organization." },
+            { "id": "c", "text": "The problem is only aesthetic — without a layout wrapper, components lose their padding and margin attributes since those attributes function only within a parent ViewGroup context. Positioning still works." },
+            { "id": "d", "text": "The instructor's rule applies only to ConstraintLayout screens. For LinearLayout-based screens, you can place components directly without a root layout because LinearLayout's auto-stacking behavior is implicit even without a declared wrapper." }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "An activity's XML layout requires a root ViewGroup to contain and arrange its children. Placing an ImageView alone at the root works for a single view, but adding a second component (TextView, Button, etc.) requires a parent container. The layout (LinearLayout in this case) provides orientation, background, padding, and structure that organizes all child components. Starting with the layout ensures every component added afterward has a proper parent.",
+          "hints": [
+            "Root XML elements in a layout file are typically ViewGroups.",
+            "Multiple components require a common parent container.",
+            "The layout (LinearLayout) carries attributes like background color, orientation, and padding that apply to all children."
+          ]
+        },
+        {
+          "id": "Section-6-C-20",
+          "question": "A developer builds the complete login screen following the instructor's design specification: a vertical LinearLayout background #05273B, an ImageView (avatar2.png, 124×118dp, layout_marginTop=100dp, layout_gravity=center_horizontal), a TextView ('Login Screen', match_parent, 30dp bold, gravity=center_horizontal), and two EditTexts. After running the app, the ImageView appears at the top-left corner, not centered. Without changing the ImageView's dimensions or src, which single attribute is missing and why does its absence cause this off-center positioning?",
+          "type": "mcq",
+          "difficulty": "hard",
+          "tags": ["Android Application Development", "ImageView", "layout_gravity", "Login Screen"],
+          "options": [
+            { "id": "a", "text": "The missing attribute is android:scaleType='centerCrop'. Without it, Android defaults to fitting the image to the top-left corner of the ImageView bounds, making the entire ImageView appear left-aligned." },
+            { "id": "b", "text": "The missing attribute is android:layout_gravity='center_horizontal' on the ImageView. In a LinearLayout, child views are positioned along the left edge by default. Without layout_gravity='center_horizontal', the ImageView is placed at the start (left) of the horizontal axis. Adding this attribute instructs the LinearLayout to position the ImageView component itself at the horizontal center of the parent, which is the intended look from the design specification." },
+            { "id": "c", "text": "The missing attribute is android:gravity='center' on the root LinearLayout. Without setting gravity on the parent, it cannot distribute its children to the center — all children default to the top-left regardless of their own layout_gravity settings." },
+            { "id": "d", "text": "The missing attribute is android:layout_weight='1' on the ImageView. In LinearLayout, all positioning is weight-based, and without a weight value, the component defaults to the start position of the axis." }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "Within a LinearLayout, child views default to the start (left) edge of the cross-axis (horizontal, when orientation=vertical). To center a child component like the ImageView along the horizontal axis, android:layout_gravity='center_horizontal' must be set directly on the ImageView. This tells the LinearLayout parent to position that specific child at the horizontal midpoint. Without it, the ImageView sits at the left edge regardless of any other attributes set on it.",
+          "hints": [
+            "In a vertical LinearLayout, children default to the left (start) side.",
+            "layout_gravity moves the component within its parent's cross-axis.",
+            "The instructor set layout_gravity='center_horizontal' on the ImageView to achieve centering."
+          ]
+        }
+      ]
+    }
+  ]
+}

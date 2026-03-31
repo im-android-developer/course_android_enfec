@@ -1,0 +1,90 @@
+{
+  "items": [
+    {
+      "name": "Section3-1",
+      "difficulty": "easy",
+      "content": [
+        {
+          "id": "Section-3-1-1",
+          "question": "What is the quickest way to duplicate an existing TextView tag in XML?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android"],
+          "options": [
+            { "id": "a", "text": "Re-type the tag manually" },
+            { "id": "b", "text": "Copy (Ctrl-C/Cmd-C) the tag and paste (Ctrl-V/Cmd-V) after it closes" },
+            { "id": "c", "text": "Use the emulator to duplicate it" },
+            { "id": "d", "text": "Rename the file" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "The instructor demonstrates copying an existing XML tag and pasting it on the next line after its closing bracket to reuse properties quickly.",
+          "hints": ["Think keyboard shortcuts", "Use copy then paste", "Place it after the closing > or />"]
+        },
+        {
+          "id": "Section-3-1-2",
+          "question": "True or False: If two TextViews are identical and overlap, selecting one and dragging can help reveal which is on top.",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android"],
+          "options": [
+            { "id": "a", "text": "True" },
+            { "id": "b", "text": "False" },
+            { "id": "c", "text": "Only on Mac" },
+            { "id": "d", "text": "Only when emulator is running" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "Dragging and selecting components in the layout editor makes it possible to move elements and observe which one was overlapping or on top.",
+          "hints": ["Try selecting the element", "Drag up/down to change position", "Selection reveals the top element"]
+        },
+        {
+          "id": "Section-3-1-3",
+          "question": "When you paste a copied tag and see squiggly lines underneath, what does the instructor suggest you do first?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android"],
+          "options": [
+            { "id": "a", "text": "Panic and delete the project" },
+            { "id": "b", "text": "Click the suggestion bulb to inspect errors; if nothing major, ignore for now" },
+            { "id": "c", "text": "Reboot the emulator immediately" },
+            { "id": "d", "text": "Uninstall Android Studio" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "The instructor shows that squiggly lines can be non-critical; clicking the suggestion bulb reveals if it's ignorable. If no major issue, it's safe to continue.",
+          "hints": ["Use the bulb icon", "Not all squiggles are fatal", "Check suggestions before acting"]
+        },
+        {
+          "id": "Section-3-1-4",
+          "question": "Which shortcut undoes your last action in Android Studio (Windows and Mac)?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android"],
+          "options": [
+            { "id": "a", "text": "Ctrl-Y / Cmd-Y" },
+            { "id": "b", "text": "Ctrl-Z / Cmd-Z" },
+            { "id": "c", "text": "Ctrl-C / Cmd-C" },
+            { "id": "d", "text": "Ctrl-V / Cmd-V" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "Undo is performed with Ctrl-Z on Windows and Cmd-Z on Mac; the instructor uses this to revert deletions and restore attributes.",
+          "hints": ["Z key", "Common editor shortcut", "Use Cmd on Mac"]
+        },
+        {
+          "id": "Section-3-1-5",
+          "question": "Why might a developer ignore some squiggly lines after pasting a tag?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android"],
+          "options": [
+            { "id": "a", "text": "They are always caused by malware" },
+            { "id": "b", "text": "They can be due to internal configuration warnings that don't prevent building the app" },
+            { "id": "c", "text": "They mean the file is corrupted" },
+            { "id": "d", "text": "They always indicate missing mandatory attributes" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "Some squiggly lines are non-critical internal warnings; only missing mandatory attributes will typically prevent the app from building.",
+          "hints": ["Not all errors stop builds", "Check Logcat for crashes", "Use the suggestion bulb"]
+        }
+      ]
+    }
+  ]
+}

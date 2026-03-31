@@ -1,0 +1,410 @@
+{
+  "items": [
+    {
+      "name": "Section6-1",
+      "difficulty": "medium",
+      "content": [
+        {
+          "id": "Section-6-1-1",
+          "question": "What is the key advantage of LinearLayout over ConstraintLayout when placing multiple components one below the other on a screen?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "LinearLayout"],
+          "options": [
+            { "id": "a", "text": "LinearLayout supports more components than ConstraintLayout." },
+            { "id": "b", "text": "In LinearLayout, components are placed automatically in order without overlapping, so you do not need to set constraints for each element." },
+            { "id": "c", "text": "LinearLayout renders faster than ConstraintLayout on all devices." },
+            { "id": "d", "text": "LinearLayout allows floating elements that sit on top of each other by default." }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "The instructor demonstrated that copying and pasting a component inside a LinearLayout places it automatically below the previous one without overlap — unlike ConstraintLayout where you must manually attach constraints to prevent overlapping.",
+          "hints": [
+            "The instructor showed copy-paste behavior inside LinearLayout.",
+            "Think about the main problem ConstraintLayout requires you to solve manually.",
+            "The word 'automatically' is key."
+          ]
+        },
+        {
+          "id": "Section-6-1-2",
+          "question": "A developer copies a TextView inside a LinearLayout with orientation='vertical' and pastes it. They notice the pasted TextView appears directly below the first one without any additional configuration. A confused student insists this must be a bug because in ConstraintLayout a copy-paste would cause overlap. Which statement best explains why this is not a bug and how it connects to the fundamental definition of LinearLayout?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["Android Application Development", "LinearLayout"],
+          "options": [
+            { "id": "a", "text": "It is a bug specific to the copy-paste action. If the second TextView were added manually by typing XML, it would overlap the first one similarly to ConstraintLayout." },
+            { "id": "b", "text": "This is the core behavior of LinearLayout — it arranges child elements sequentially along the orientation axis (vertical or horizontal) without overlap, regardless of how the element was added. The orientation='vertical' means each new child stacks below the previous one automatically." },
+            { "id": "c", "text": "LinearLayout avoids overlap only when elements have different IDs. Copy-paste generates duplicate IDs which Android resolves by offsetting the element downward — this is why it appears below rather than on top." },
+            { "id": "d", "text": "The automatic stacking is a feature of the Android Studio design editor only. At runtime on a real device, the elements would overlap in the same way as ConstraintLayout." }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "LinearLayout's fundamental behavior is to stack children along the orientation axis — vertical stacks top-to-bottom, horizontal stacks left-to-right. No constraints are required. The instructor called this the resolution to the 'overlapping problem' of ConstraintLayout.",
+          "hints": [
+            "LinearLayout is described as 'unidirectional'.",
+            "Constraints are not needed in LinearLayout for positioning.",
+            "The orientation attribute determines the stacking direction."
+          ]
+        },
+        {
+          "id": "Section-6-1-3",
+          "question": "You are working in Android Studio with a LinearLayout that has two TextViews. Currently the orientation is set to 'vertical' and they appear one below the other. Your product manager asks you to show both TextViews side by side in a horizontal row. Without adding or removing any components, what single change must you make to the XML, and what will the visual result be immediately after the change?",
+          "type": "mcq",
+          "difficulty": "hard",
+          "tags": ["Android Application Development", "LinearLayout", "Orientation"],
+          "options": [
+            { "id": "a", "text": "Change the layout_width of both TextViews from 'wrap_content' to '50dp' each. The two TextViews will then be forced into a horizontal row because fixed widths prevent them from expanding vertically." },
+            { "id": "b", "text": "Change android:orientation from 'vertical' to 'horizontal' on the LinearLayout. All child components will immediately re-arrange from a top-to-bottom stack into a left-to-right row." },
+            { "id": "c", "text": "Add android:layout_weight='1' to both TextViews. This redistributes them horizontally because LinearLayout interprets weight as a horizontal distribution signal regardless of the orientation value." },
+            { "id": "d", "text": "Wrap each TextView in a separate nested LinearLayout. The outer LinearLayout will detect two child LinearLayouts and automatically arrange them horizontally." }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "Changing android:orientation from 'vertical' to 'horizontal' on the LinearLayout is the only required change. The instructor demonstrated this live — after switching to horizontal, both TextViews moved from a vertical stack into a side-by-side horizontal row instantly.",
+          "hints": [
+            "The instructor changed one word: from 'vertical' to 'horizontal'.",
+            "The orientation attribute is on the parent LinearLayout, not on the child TextViews.",
+            "No other attribute needs to change."
+          ]
+        },
+        {
+          "id": "Section-6-1-4",
+          "question": "What does the 'padding' attribute do when applied to a component in Android XML?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Padding"],
+          "options": [
+            { "id": "a", "text": "It adds space between the component and other components outside of it." },
+            { "id": "b", "text": "It creates internal space inside the component, making it look bigger from all sides." },
+            { "id": "c", "text": "It sets the size of the component to a fixed value." },
+            { "id": "d", "text": "It pushes the component's position on the screen downward." }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "Padding adds internal space inside the component's boundaries — the content (such as text) is pushed inward from all edges, making the component visually larger. The instructor set padding='10dp' and the box enlarged visibly.",
+          "hints": [
+            "Padding is internal, not external.",
+            "The instructor said it 'creates some internal space'.",
+            "After applying padding, the component's box got larger."
+          ]
+        },
+        {
+          "id": "Section-6-1-5",
+          "question": "A student sets android:padding='10dp' on a TextView that contains the text 'Hello'. After running the app, they notice the text has 10dp of space on all four sides — top, bottom, left, and right. Later they are asked to add space only on the left side and remove the space from all other sides. They update the attribute to android:paddingLeft='10dp' and also keep android:padding='10dp' on the same TextView. What happens, and what is the correct approach?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["Android Application Development", "Padding"],
+          "options": [
+            { "id": "a", "text": "Both attributes co-exist peacefully. The left side gets 20dp (10dp from padding + 10dp from paddingLeft) while all other sides get 10dp from the generic padding attribute. This is the correct approach for asymmetric padding." },
+            { "id": "b", "text": "Using android:padding='10dp' applies 10dp to all sides. Having both attributes means paddingLeft will conflict and be ignored. The correct approach is to remove the generic padding and use only android:paddingLeft='10dp' so only the left side has the 10dp space." },
+            { "id": "c", "text": "paddingLeft overrides the generic padding and sets all four sides to 0dp except the left which gets 10dp. Both attributes together achieve exactly one-side padding." },
+            { "id": "d", "text": "android:padding and android:paddingLeft cannot be on the same component. Android Studio will throw a build error if both are present simultaneously." }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "The instructor explained that android:padding applies space from all directions simultaneously. If you only want space from the left, use android:paddingLeft='10dp' alone — this applies 10dp only from the left side with no space on the other three sides. Keeping both attributes would result in conflicting values.",
+          "hints": [
+            "The generic 'padding' affects all four directions at once.",
+            "Direction-specific padding (paddingLeft, paddingRight, etc.) targets a single side.",
+            "To isolate spacing to one direction, remove the generic padding attribute."
+          ]
+        },
+        {
+          "id": "Section-6-1-6",
+          "question": "Explain in precise terms the conceptual difference between 'padding' and 'margin' in Android XML, using examples from the class explanation. A junior developer on your team insists they are the same thing because 'both add space.' Correct them with the most accurate technical distinction.",
+          "type": "mcq",
+          "difficulty": "hard",
+          "tags": ["Android Application Development", "Padding", "Margin"],
+          "options": [
+            { "id": "a", "text": "The junior developer is correct — padding and margin both add visual spacing. The only difference is naming convention: 'padding' is used in LinearLayout and 'margin' is used in ConstraintLayout. Switching layouts requires renaming the attribute." },
+            { "id": "b", "text": "Padding adds internal space inside the component's own boundaries — it makes the component's content (like text) sit away from the component's edges. Margin is external — it controls from where the component starts on the screen, creating space between the component and what is around it. They are completely different in effect: padding enlarges the component visually from within; margin creates a gap outside the component." },
+            { "id": "c", "text": "Padding affects the component's width and height by adding to its dimensions, while margin reduces the component's dimensions by subtracting from the available space. They work in opposite directions but both affect the component's size." },
+            { "id": "d", "text": "Margin is the newer replacement for padding introduced in Android API level 21. In modern Android development, developers are encouraged to use margin exclusively and padding is considered deprecated." }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "The instructor precisely said: 'padding is all about adding some extra space into the component while margin is from where your component will get to start.' Padding is internal (inside the component); margin is external (outside the component, determining its starting position relative to surroundings).",
+          "hints": [
+            "The instructor described margin as 'from where your component will getting to start'.",
+            "Padding is internal; margin is external.",
+            "Both add space but in fundamentally different places."
+          ]
+        },
+        {
+          "id": "Section-6-1-7",
+          "question": "Which of the following padding attributes would you use if you need 20dp of extra space only on the right side of a Button component?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Padding"],
+          "options": [
+            { "id": "a", "text": "android:padding='20dp'" },
+            { "id": "b", "text": "android:paddingTop='20dp'" },
+            { "id": "c", "text": "android:paddingRight='20dp'" },
+            { "id": "d", "text": "android:marginRight='20dp'" }
+          ],
+          "correctAnswers": ["c"],
+          "explanation": "To add internal space from a single direction — the right side — you use android:paddingRight='20dp'. The generic android:padding would apply to all sides, and android:marginRight would be an external margin, not padding.",
+          "hints": [
+            "The attribute name includes the direction.",
+            "Padding options include: paddingLeft, paddingRight, paddingTop, paddingBottom, paddingStart, paddingEnd.",
+            "marginRight controls external spacing, not internal."
+          ]
+        },
+        {
+          "id": "Section-6-1-8",
+          "question": "A developer applies android:padding='10dp' to a TextView inside a LinearLayout. The instructor showed that after applying padding, the box of the TextView visually 'gets enlarged.' A student says this means padding has the same effect as increasing the layout_width and layout_height values of the component. Is this correct? What actually happens under the hood when padding is applied?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["Android Application Development", "Padding"],
+          "options": [
+            { "id": "a", "text": "The student is correct. Padding directly increases the layout_width and layout_height values by the padding amount. For example, a component with 100dp width and 10dp padding becomes 110dp wide. They are interchangeable." },
+            { "id": "b", "text": "The student is partially correct visually but wrong technically. Padding adds internal space between the component's content (like text) and its own boundary edges — making the component appear larger because its edges push outward to accommodate the content plus space. The layout dimensions themselves may adjust if wrap_content is set, but padding does not directly edit the dp number in layout_width or layout_height." },
+            { "id": "c", "text": "The student is wrong. Padding only affects the text color rendering and shadow around the text characters — it does not affect the size or boundaries of the component at all." },
+            { "id": "d", "text": "The student is wrong. Padding shrinks the available content area inside the component without changing the outer boundary. This means the component appears the same size externally but the text area inside gets smaller." }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "Padding creates space between the content and the component's edges. When wrap_content is set, the component's outer boundary naturally expands to accommodate content + padding, making it look bigger. This is different from directly setting a larger layout_width/height, which forces a fixed outer size regardless of content.",
+          "hints": [
+            "Padding pushes content away from the component's own edge.",
+            "The component 'gets enlarged' visually because the edge moves outward.",
+            "This is particularly visible when wrap_content is used."
+          ]
+        },
+        {
+          "id": "Section-6-1-9",
+          "question": "The instructor mentioned that the attributes being taught for padding and other styling properties 'will be used into almost all components' and are not limited to LinearLayout. What exactly does this mean for a developer building a screen with multiple layout types?",
+          "type": "mcq",
+          "difficulty": "hard",
+          "tags": ["Android Application Development", "XML Attributes", "Layout"],
+          "options": [
+            { "id": "a", "text": "It means padding attributes must be defined globally in the styles.xml file and can then be applied to any component across any layout by referencing the style. Direct use of padding attributes on individual components is only allowed in LinearLayout." },
+            { "id": "b", "text": "It means padding, margin, textSize, fontFamily, background, and other styling attributes are universal to Android's view system — they work the same way whether a component is inside a LinearLayout, ConstraintLayout, RelativeLayout, or any other layout. The parent layout type does not restrict which XML attributes a child component can use." },
+            { "id": "c", "text": "It means that only the components introduced in LinearLayout sections (TextView, EditText, Button) support padding. Components like ImageView or RecyclerView have their own internal spacing system and do not support generic padding." },
+            { "id": "d", "text": "It means that attributes like padding are only visible in the Android Studio design editor but do not render on physical devices unless the specific layout supports them. Testing on an emulator is unreliable for padding values." }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "The instructor explicitly said: 'these properties are for all components... they will be used into almost all the components, whatever you will be going to use into this Android layout. I am saying Android layout — that doesn't mean for the LinearLayout only, it's for every layout.' Attributes like padding are part of the Android view framework and apply to any component in any layout.",
+          "hints": [
+            "The instructor said 'it's for every layout'.",
+            "Attributes belong to the Android view system, not to a specific layout type.",
+            "This applies to padding, textSize, fontFamily, background, and more."
+          ]
+        },
+        {
+          "id": "Section-6-1-10",
+          "question": "In a LinearLayout with orientation='vertical', what happens to the order of components when you copy-paste an existing component without manually repositioning anything?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "LinearLayout"],
+          "options": [
+            { "id": "a", "text": "The pasted component appears on top of the original, causing overlap." },
+            { "id": "b", "text": "The pasted component is placed at the very top of the screen, above all existing components." },
+            { "id": "c", "text": "The pasted component is automatically placed directly below the last component in the vertical sequence." },
+            { "id": "d", "text": "The pasted component is placed at a random position and must be dragged into the correct position manually." }
+          ],
+          "correctAnswers": ["c"],
+          "explanation": "In a LinearLayout with vertical orientation, every new child element is stacked below the previous one. A pasted component follows this same rule — it goes directly below the last component without any overlap, and without needing any constraints.",
+          "hints": [
+            "LinearLayout places components in order along the orientation axis.",
+            "No overlap occurs in LinearLayout.",
+            "The position is determined by the order in the XML, not by manual placement."
+          ]
+        },
+        {
+          "id": "Section-6-1-11",
+          "question": "Two students are debating: Student A says 'When android:padding=\"10dp\" is applied, it adds 10dp of space on each of the four sides — top, right, bottom, and left.' Student B says 'No — generic padding is a shorthand that equally distributes the total dp value across all directions, so 10dp padding means each side gets 2.5dp.' Who is correct, and what does the instructor's explanation confirm?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["Android Application Development", "Padding"],
+          "options": [
+            { "id": "a", "text": "Student B is correct. Padding values are distributed across all four sides proportionally. A value of 10dp divided by 4 sides results in 2.5dp per direction, which is why generic padding creates subtle spacing." },
+            { "id": "b", "text": "Student A is correct. When android:padding='10dp' is used, 10dp is applied independently to every direction — top, bottom, left, right, start, and end all get the full 10dp each." },
+            { "id": "c", "text": "Neither is entirely correct. android:padding='10dp' applies to top and bottom only. Left and right require paddingStart and paddingEnd to be specified separately." },
+            { "id": "d", "text": "Student A is correct only for API levels 21 and above. Below API 21, generic padding distributes the total across all four sides, matching Student B's description." }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "The instructor confirmed Student A's view: 'if we are providing padding 10dp, that means we are providing padding right from 10dp, padding bottom 10dp, padding end 10dp, padding left 10dp and so on.' Each direction gets the full 10dp value — it is not divided.",
+          "hints": [
+            "The instructor listed each direction and said '10dp' for each.",
+            "Generic padding applies the full value to every individual direction.",
+            "It is not a divided total — it is a full value per side."
+          ]
+        },
+        {
+          "id": "Section-6-1-12",
+          "question": "You are building a card component that shows a user's name. The design spec requires 15dp of space between the text and the card's left and right edges, but no extra space at the top or bottom. Which XML attributes would you use, and how would you apply them to correctly match this spec?",
+          "type": "mcq",
+          "difficulty": "hard",
+          "tags": ["Android Application Development", "Padding"],
+          "options": [
+            { "id": "a", "text": "Use android:padding='15dp' on the TextView. Since padding applies to all sides but visually only the horizontal sides matter for text layout, the top and bottom padding will be invisible and won't affect your design." },
+            { "id": "b", "text": "Use android:paddingLeft='15dp' and android:paddingRight='15dp' on the TextView. This applies 15dp of internal space only on the left and right sides while leaving the top and bottom with zero padding." },
+            { "id": "c", "text": "Use android:layout_marginStart='15dp' and android:layout_marginEnd='15dp' on the TextView. Margin is the same as padding and using horizontal margin achieves the same result as horizontal padding." },
+            { "id": "d", "text": "Set android:layout_width to a value that is 30dp less than the parent width. This creates the visual appearance of 15dp padding on each side without needing any padding attribute." }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "Using direction-specific padding attributes android:paddingLeft='15dp' and android:paddingRight='15dp' adds 15dp of internal space only on the left and right sides. android:padding='15dp' would also add space to top and bottom, which does not match the spec. Margin is external, not internal, so it is not interchangeable with padding.",
+          "hints": [
+            "Direction-specific padding isolates space to a single side.",
+            "paddingLeft and paddingRight control only horizontal internal spacing.",
+            "Margin is outside the component boundary; padding is inside."
+          ]
+        },
+        {
+          "id": "Section-6-1-13",
+          "question": "In the LinearLayout demonstration, the instructor changed the text of the copied TextView from 'Hello World' to 'Hello Android' to 'clear the confusion'. What was the confusion being addressed and why was renaming the element helpful?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "LinearLayout"],
+          "options": [
+            { "id": "a", "text": "The confusion was about which framework was being used. Renaming to 'Hello Android' confirmed this was Android Studio and not a web framework." },
+            { "id": "b", "text": "The confusion was about whether the two TextViews were actually separate. By showing different text in each ('Hello World' vs 'Hello Android'), it became visually obvious that there were two distinct components placed automatically below each other." },
+            { "id": "c", "text": "The confusion was about text encoding. 'Hello World' contains a space character that might be misinterpreted, so renaming removed ambiguity in the XML string value." },
+            { "id": "d", "text": "The confusion was about font rendering. 'Hello Android' uses characters that better demonstrate the padding effect on text components compared to 'Hello World'." }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "After copy-pasting, both TextViews had the same text 'Hello World', which could make it look like one component was shown twice or was overlapping. By changing the second one to 'Hello Android', the instructor made it visually clear that these were two separate, distinct components stacked one below the other.",
+          "hints": [
+            "Both TextViews had identical text after pasting.",
+            "Identical text could suggest overlap or duplication.",
+            "Different text made it obvious they were two separate stacked elements."
+          ]
+        },
+        {
+          "id": "Section-6-1-14",
+          "question": "You have a LinearLayout with orientation='horizontal' containing three buttons. A requirement comes in to add a 4th button that should appear below the first three, not beside them. What would you need to do to accommodate this new requirement within the same layout?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["Android Application Development", "LinearLayout", "Layout Design"],
+          "options": [
+            { "id": "a", "text": "Simply add the fourth button to the existing horizontal LinearLayout. Android automatically wraps to the next line when a row is full." },
+            { "id": "b", "text": "You cannot add a vertical element to a horizontal LinearLayout. The layout must be deleted and rebuilt from scratch as a vertical LinearLayout." },
+            { "id": "c", "text": "Wrap the existing horizontal LinearLayout inside a new outer vertical LinearLayout, then add the fourth button as a second child of the outer vertical layout." },
+            { "id": "d", "text": "Set the fourth button's android:orientation='vertical' attribute. Individual components can override the parent LinearLayout's orientation." }
+          ],
+          "correctAnswers": ["c"],
+          "explanation": "To mix horizontal and vertical arrangements, you use layout nesting — wrapping the horizontal row inside a vertical parent LinearLayout and adding the fourth button as the second vertical child. This is aligned with the 'blending of layouts' concept introduced in Section 6 Episode 2.",
+          "hints": [
+            "LinearLayout is unidirectional — it cannot mix directions.",
+            "Nesting layouts solves mixed direction requirements.",
+            "A vertical outer layout can contain the horizontal inner layout + additional vertical elements."
+          ]
+        },
+        {
+          "id": "Section-6-1-15",
+          "question": "Which of the following best describes when 'paddingStart' should be used instead of 'paddingLeft' in Android XML?",
+          "type": "mcq",
+          "difficulty": "hard",
+          "tags": ["Android Application Development", "Padding"],
+          "options": [
+            { "id": "a", "text": "paddingStart should be used when you want the padding to apply only to the starting character of the text string, not the entire text. paddingLeft applies to the physical left edge of the component regardless of text content." },
+            { "id": "b", "text": "paddingStart is the RTL-aware version of paddingLeft. 'Start' maps to the left side in left-to-right languages (like English) but maps to the right side in right-to-left languages (like Arabic or Hebrew). Using paddingStart makes your app layout adapt correctly to different locale directions." },
+            { "id": "c", "text": "paddingStart and paddingLeft are identical and fully interchangeable in all cases. Android Studio simply shows both options as duplicate entries for backward compatibility." },
+            { "id": "d", "text": "paddingStart should only be used on EditText components where text input begins. For static display components like TextView, paddingLeft is always the correct choice." }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "paddingStart and paddingEnd are RTL (Right-to-Left) locale aware alternatives to paddingLeft and paddingRight respectively. In LTR locales, start=left. In RTL locales, start=right. The instructor mentioned paddingStart and paddingEnd alongside paddingLeft and paddingRight when listing direction-specific padding options.",
+          "hints": [
+            "The instructor listed paddingStart and paddingEnd alongside paddingLeft/paddingRight.",
+            "RTL locales (like Arabic) reverse the direction of 'start'.",
+            "Using start/end ensures consistent layout behavior across different language settings."
+          ]
+        },
+        {
+          "id": "Section-6-1-16",
+          "question": "The instructor set padding='10dp' on one TextView and then demonstrated padding on a second copied TextView as well — both had 10dp padding applied. What visual change did the instructor describe occurring to the component after applying padding='10dp'?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Padding"],
+          "options": [
+            { "id": "a", "text": "The component's text became bold and larger in font size." },
+            { "id": "b", "text": "The component became invisible temporarily and then reappeared." },
+            { "id": "c", "text": "The box (boundary) of the component got visually enlarged — it became bigger." },
+            { "id": "d", "text": "The component moved to the center of the screen." }
+          ],
+          "correctAnswers": ["c"],
+          "explanation": "The instructor said: 'Let me put 10dp here. When I put 10dp, you will see the box gets enlarged.' Padding adds internal space which pushes the component's visible boundary outward, making the box appear larger.",
+          "hints": [
+            "The instructor described 'the box gets enlarged'.",
+            "Padding adds space inside the component, causing it to look bigger.",
+            "It is the component boundary (box) that changes, not the text."
+          ]
+        },
+        {
+          "id": "Section-6-1-17",
+          "question": "A developer notices that in the design view, after changing orientation from 'vertical' to 'horizontal' in LinearLayout, the two TextViews which were stacked vertically now appear side by side but are both very wide, pushing one partially off-screen. What attribute combination on each TextView would most likely fix this to ensure both fit in the horizontal row?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["Android Application Development", "LinearLayout", "Orientation"],
+          "options": [
+            { "id": "a", "text": "Set layout_width='match_parent' on both TextViews. match_parent in a horizontal LinearLayout stretches a component to its permitted share of the available width." },
+            { "id": "b", "text": "Set layout_width='wrap_content' on both TextViews and/or use layout_weight to distribute the remaining horizontal space. This ensures each TextView only takes the space it needs and they both remain visible." },
+            { "id": "c", "text": "Set padding='0dp' on both TextViews to remove any internal spacing that is pushing them sideways. Removing padding is the standard solution for horizontal overflow in LinearLayout." },
+            { "id": "d", "text": "You cannot fix this — horizontal LinearLayouts always push the rightmost component off-screen when both components have text content. Switch to ConstraintLayout for side-by-side layouts." }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "Using wrap_content for layout_width ensures each TextView only occupies the width of its content. Additionally, layout_weight can distribute remaining horizontal space equally between them. Setting match_parent on both would cause each to try to take the full width, making both overflow.",
+          "hints": [
+            "wrap_content adapts to content size rather than expanding indefinitely.",
+            "layout_weight distributes remaining space proportionally.",
+            "match_parent on both children in a horizontal LinearLayout breaks the layout."
+          ]
+        },
+        {
+          "id": "Section-6-1-18",
+          "question": "A developer says: 'I don't need to use margin in LinearLayout because LinearLayout stacks components automatically without overlap — there is no need for spacing control.' Is this reasoning correct? What role does margin still play in a LinearLayout?",
+          "type": "mcq",
+          "difficulty": "hard",
+          "tags": ["Android Application Development", "Padding", "Margin", "LinearLayout"],
+          "options": [
+            { "id": "a", "text": "The developer is fully correct. LinearLayout's automatic stacking completely eliminates the need for margins. Any margin attribute added to a component inside LinearLayout is simply ignored by the layout system." },
+            { "id": "b", "text": "The developer is partially correct about overlap — LinearLayout does prevent overlap automatically. However, margin is not about preventing overlap; margin controls the visual spacing or gap between components in the stack. Without margin, components may be cramped directly against each other with no breathing room between them." },
+            { "id": "c", "text": "The developer is wrong. LinearLayout requires margin attributes to determine the stacking order of components. Without margins, LinearLayout cannot determine which component comes first in the vertical or horizontal sequence." },
+            { "id": "d", "text": "The developer is correct because padding replaces the role of margin in LinearLayout. Any spacing needs between components in a LinearLayout should be handled with padding, not margin." }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "LinearLayout prevents overlap by stacking — it does not prevent components from being too close together. Margin adds external spacing between components in the stack. The instructor visually demonstrated adding margins (e.g., marginTop) to components inside LinearLayout in the login screen design to give each element breathing room.",
+          "hints": [
+            "Overlap prevention and spacing control are two different problems.",
+            "Margin creates gaps between elements.",
+            "Even in a perfectly ordered stack, elements can sit too close together without margin."
+          ]
+        },
+        {
+          "id": "Section-6-1-19",
+          "question": "What attribute options are available when you need padding from a specific direction only, according to what was taught in class? List all the named options mentioned.",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Padding"],
+          "options": [
+            { "id": "a", "text": "paddingTop, paddingBottom, paddingCenter, paddingAll" },
+            { "id": "b", "text": "paddingLeft, paddingRight, paddingTop, paddingBottom, paddingStart, paddingEnd" },
+            { "id": "c", "text": "paddingHorizontal, paddingVertical, paddingBorder" },
+            { "id": "d", "text": "paddingX, paddingY, paddingZ" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "The instructor listed: padding left, padding start, padding end, padding bottom, padding right — and by extension padding top. These are the six directional padding attributes available in Android XML for targeting specific sides of a component.",
+          "hints": [
+            "The instructor specifically listed these when explaining directional padding.",
+            "There are six direction-specific options.",
+            "Two cover horizontal start/end (for RTL support) and four cover explicit directions."
+          ]
+        },
+        {
+          "id": "Section-6-1-20",
+          "question": "The instructor resolved the 'overlapping problem' of ConstraintLayout by using LinearLayout. However, in a production app with a complex screen containing components that must align to specific positions relative to each other — not just stacked in a straight line — would LinearLayout alone be sufficient? What principle from the instructor's teaching guides this decision?",
+          "type": "mcq",
+          "difficulty": "hard",
+          "tags": ["Android Application Development", "LinearLayout", "ConstraintLayout", "Layout Design"],
+          "options": [
+            { "id": "a", "text": "Yes, LinearLayout alone is always sufficient for any Android screen. The instructor said LinearLayout is the only layout needed for all designs. ConstraintLayout is only used for animations." },
+            { "id": "b", "text": "No. LinearLayout is designed for straight, ordered, single-direction arrangements. For complex positional requirements, you would use ConstraintLayout (for relative positioning with constraints), RelativeLayout (for position relative to parent and siblings), or blend multiple layouts together. The instructor taught four layout types precisely because different use cases require different layout strategies." },
+            { "id": "c", "text": "LinearLayout can handle all complex positioning through nested layouts only. Any screen that can be built with ConstraintLayout can also be built exclusively with nested LinearLayouts, making ConstraintLayout entirely redundant." },
+            { "id": "d", "text": "LinearLayout is completely unsuitable for production apps. The instructor mentioned it only as a learning exercise. All real-world Android apps use exclusively ConstraintLayout per Google's official guidelines." }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "The instructor introduced four layout types — ConstraintLayout, LinearLayout, RelativeLayout, and ScrollViewLayout — specifically because 'they are different in how they place their elements.' LinearLayout is ideal for ordered, straight-line arrangements. Complex or freeform positioning requires other layouts or a combination (blending) of them.",
+          "hints": [
+            "Four layout types were introduced because each serves different use cases.",
+            "LinearLayout is described as 'perfect for simple designs'.",
+            "Blending of layouts is introduced for complex multi-direction arrangements."
+          ]
+        }
+      ]
+    }
+  ]
+}

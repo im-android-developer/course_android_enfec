@@ -1,0 +1,90 @@
+{
+  "items": [
+    {
+      "name": "Section3-2",
+      "difficulty": "easy",
+      "content": [
+        {
+          "id": "Section-3-2-1",
+          "question": "When attaching one element to another in ConstraintLayout, what does attaching the top of element B to the bottom of element A mean?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android"],
+          "options": [
+            { "id": "a", "text": "Element B floats independently" },
+            { "id": "b", "text": "The top edge of B will be positioned relative to the bottom edge of A" },
+            { "id": "c", "text": "Element A will disappear" },
+            { "id": "d", "text": "Both elements will merge into one" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "Attaching the top of one element to the bottom of another creates a vertical constraint so the second element is placed below the first.",
+          "hints": ["Think positions relative to each other", "Top-to-bottom attachment", "Constraint concept"]
+        },
+        {
+          "id": "Section-3-2-2",
+          "question": "What is the purpose of providing an ID to a view in XML?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android"],
+          "options": [
+            { "id": "a", "text": "To change the color automatically" },
+            { "id": "b", "text": "To uniquely identify the view so it can be referenced in code or constraints" },
+            { "id": "c", "text": "To make it invisible" },
+            { "id": "d", "text": "To increase its font size" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "An ID gives a unique identity to a component so you can reference it in code or set constraints relative to it.",
+          "hints": ["Unique identity", "Similar to enrollment number", "Used for references"]
+        },
+        {
+          "id": "Section-3-2-3",
+          "question": "If a constraint spot is already occupied, can another view attach to the same exact constraint point?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["Android Application Development", "Basics of Android"],
+          "options": [
+            { "id": "a", "text": "Yes, unlimited views can attach to one constraint" },
+            { "id": "b", "text": "No, a single constraint attachment point can generally be used only once" },
+            { "id": "c", "text": "Only on tablets" },
+            { "id": "d", "text": "Only when using LinearLayout" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "The instructor notes that once a particular constraint is occupied, you cannot attach another constraint there; each connection point is used by one attachment.",
+          "hints": ["One constraint per point", "Attachment limits", "Constraint availability"]
+        },
+        {
+          "id": "Section-3-2-4",
+          "question": "What action should you take to remove only a constraint attachment (and keep the view)?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["Android Application Development", "Basics of Android"],
+          "options": [
+            { "id": "a", "text": "Delete the whole component" },
+            { "id": "b", "text": "Right-click the constraint and choose delete constraint" },
+            { "id": "c", "text": "Reinstall Android Studio" },
+            { "id": "d", "text": "Close the layout file" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "You can remove the constraint attachment specifically (without deleting the component) by selecting and deleting the constraint connector, as demonstrated in the video.",
+          "hints": ["Right-click options", "Delete constraint, not view", "Keep component intact"]
+        },
+        {
+          "id": "Section-3-2-5",
+          "question": "Which method does the instructor use to ensure one element stays below another while moving the top element?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["Android Application Development", "Basics of Android"],
+          "options": [
+            { "id": "a", "text": "Attach the bottom of the lower element to the top of the upper element" },
+            { "id": "b", "text": "Give both elements the same ID" },
+            { "id": "c", "text": "Use different layout files" },
+            { "id": "d", "text": "Lock the emulator" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "By creating a constraint link between the bottom of the upper element and the top of the lower element, moving the upper element moves the lower one too.",
+          "hints": ["Link edges", "Top-to-bottom constraint", "Relative positioning"]
+        }
+      ]
+    }
+  ]
+}

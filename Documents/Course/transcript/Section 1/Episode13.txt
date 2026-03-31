@@ -1,0 +1,21 @@
+(0:05) Let us maximise it like this. (0:10) Once you click finish, the grid will start working and start building our application. (0:18) So we have to wait till the process gets completed.
+(0:41) Once complete, some of these type of interfaces will be available on your screen. (0:49) Don't afraid from this code. (0:52) We will learn all of them.
+(0:54) But for now, let's close everything what we have right now. (1:00) Also, let's minimise this side panel as well. (1:04) For this, you just have to click on this minimise icon like this.
+(1:09) Now let's learn how to start from here. (1:13) First, click on folder icon available at top left side. (1:20) On click, you will see the app folder directory.
+(1:25) Click to expand this. (1:28) Here, we have multiple folders again. (1:31) But don't worry, we will understand all of them later.
+(1:35) Initially, let's start with res or resource directory. (1:40) So click to expand this resource directory or resource folder. (1:46) Again, there are multiple folders.
+(1:49) From them, just click on layout folder directory. (1:54) And once done, you will find a file named as activitymain.xml file. (2:03) Double click to open it.
+(2:08) Now before going further, let's first run this on virtual device. (2:13) We will later cover more on this. (2:16) But initially, let's run a basic app.
+(2:20) To do this, if you look on right hand side panel, you will see the device manager. (2:29) Like this. (2:32) Enter this.
+(2:34) You have to click on it. (2:37) Once clicked, you will see a device which is pre-existed named as medium phone api36. (2:48) Don't worry at all, they are already installed.
+(2:51) We don't need to instal manually. (2:54) But later, we will discuss that how we can instal other devices into this panel. (2:59) For now, click on play button to launch it.
+(3:05) Like this. (3:06) If you will see, the emulator is now launching. (3:11) Like this.
+(3:13) Here, the virtual device is known as emulator. (3:18) Over here, the question arises, what is an emulator? (3:23) An emulator in android is a virtual device that allows you to run and test android applications on your computer without needing a physical device or physical android phone or a tablet. (3:37) It mimics the hardware and software features of a real android device including the operating system, sensors, storage and more.
+(3:46) In simple terms, the android emulator is a tool that simulates a real android device on your computer. (3:54) It helps developers to test apps easily, quickly and safely before running them on an actual device. (4:02) This is how we launch our virtual device or emulator.
+(4:07) Now to start our application, click on play button mentioned at the top. (4:18) You will see, the process is now started and we got a notification named as instal successfully. (4:27) To hide it, just click on cross button and you will see, the screen is now installed on our emulator in the form of proper application.
+(4:39) So that's how we start our emulator and we instal the application over on it. (4:46) Now to close it, just click on the square icon mentioned at the top. (4:53) When we click like this, the app gets stopped.
+(4:59) Similarly, to close this emulator, you have to go over this tab, right click on it like this and click on close tab. (5:13) Once click, you will see the notification, you have to click on no. (5:20) Once done, you will see the emulator is not stopped and hide from it.
+(5:27) Now to remove this or to hide this panel, again click on minimise button like this. (5:36) Now let's understand how to start work with ActivityMain.xml file. (5:42) If you look into it, you will find these layouts.
+(5:47) Here, size may vary screen to screen. (5:51) So don't worry for the visual size. (5:54) But here, it looks too bulky.
+(5:58) Let's hide some sections from this screen. (6:01) First, click on the folder icon to hide this file navigation section. (6:08) Similarly, at the right hand side, there is attribute section.
+(6:13) Again click on this minimise button to hide this section.

@@ -1,0 +1,496 @@
+{
+  "items": [
+    {
+      "name": "Section1-14",
+      "difficulty": "medium",
+      "content": [
+        {
+          "id": "Section-1-14-1",
+          "question": "Where are the zoom in (plus) and zoom out (minus) icons located in the activity screen view?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android app development"],
+          "options": [
+            { "id": "a", "text": "Top right corner" },
+            { "id": "b", "text": "Top left corner" },
+            { "id": "c", "text": "Bottom right part" },
+            { "id": "d", "text": "Bottom left part" }
+          ],
+          "correctAnswers": ["c"],
+          "explanation": "The zoom controls (plus and minus icons) are located at the bottom right part of the activity screen window to help adjust the visibility of the design.",
+          "hints": ["Look at the bottom", "Check the right side", "Near the edge of the layout editor"]
+        },
+        {
+          "id": "Section-1-14-2",
+          "question": "What is the default text visible on the white background screen when you first open a new project template?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android app development"],
+          "options": [
+            { "id": "a", "text": "New Project" },
+            { "id": "b", "text": "Hello World" },
+            { "id": "c", "text": "Android Studio" },
+            { "id": "d", "text": "My First Project" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "By default, the standard Android project template starts with a 'Hello World' text displayed on the screen.",
+          "hints": ["Standard programming greeting", "Two words", "Traditional first output"]
+        },
+        {
+          "id": "Section-1-14-3",
+          "question": "Can you change the text of a component by typing directly on the layout screen after clicking it?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android app development"],
+          "options": [
+            { "id": "a", "text": "Yes, always" },
+            { "id": "b", "text": "No, it cannot be changed directly from there" },
+            { "id": "c", "text": "Yes, but only for certain components" },
+            { "id": "d", "text": "Only if zoom is at 100%" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "As demonstrated in the transcript, clicking and trying to type directly on the text in the design view does not work; you must use the Attributes panel.",
+          "hints": ["Recall the demonstration", "The user tried to type but failed", "A specific panel is needed for edits"]
+        },
+        {
+          "id": "Section-1-14-4",
+          "question": "Which panel should you open to modify the properties (like text) of a selected UI component?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android app development"],
+          "options": [
+            { "id": "a", "text": "Project Structure" },
+            { "id": "b", "text": "Device Manager" },
+            { "id": "c", "text": "Attributes" },
+            { "id": "d", "text": "Logcat" }
+          ],
+          "correctAnswers": ["c"],
+          "explanation": "The Attributes panel (located on the right-hand side) is used to change properties like text, ID, and color of the selected components.",
+          "hints": ["Right-hand side panel", "Contains 'Common Attributes'", "Starts with 'A'"]
+        },
+        {
+          "id": "Section-1-14-5",
+          "question": "Under which section of the Attributes panel can you find the 'text' property for a TextView?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android app development"],
+          "options": [
+            { "id": "a", "text": "Layout info" },
+            { "id": "b", "text": "Common attributes" },
+            { "id": "c", "text": "System settings" },
+            { "id": "d", "text": "Advanced properties" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "The 'text' property is found under the 'Common Attributes' section within the Attributes panel.",
+          "hints": ["It's a common setting", "Look for the word 'Common'", "Right above other text settings"]
+        },
+        {
+          "id": "Section-1-14-6",
+          "question": "After typing new text in the attribute field, what must you do to apply the changes?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android app development"],
+          "options": [
+            { "id": "a", "text": "Click 'Save All'" },
+            { "id": "b", "text": "Press Escape" },
+            { "id": "c", "text": "Press Enter" },
+            { "id": "d", "text": "Restart Android Studio" }
+          ],
+          "correctAnswers": ["c"],
+          "explanation": "Once you have finished typing the new text in the attribute box, you must click 'Enter' to see the changes reflected on the screen.",
+          "hints": ["Keyboard confirmation", "Key used to proceed", "Common confirmation key"]
+        },
+        {
+          "id": "Section-1-14-7",
+          "question": "How do you unselect a text component in the design view after editing it?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android app development"],
+          "options": [
+            { "id": "a", "text": "Click the 'X' button" },
+            { "id": "b", "text": "Click outside the component" },
+            { "id": "c", "text": "Double-click the center" },
+            { "id": "d", "text": "Press Ctrl + U" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "To unselect a component and see the final result clearly, you simply click anywhere outside the component on the layout screen.",
+          "hints": ["Click on the background", "Away from the text", "Deselect action"]
+        },
+        {
+          "id": "Section-1-14-8",
+          "question": "In Episode 14, what name was the text changed to from 'Hello World'?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android app development"],
+          "options": [
+            { "id": "a", "text": "Android Project" },
+            { "id": "b", "text": "My First Project" },
+            { "id": "c", "text": "Welcome Screen" },
+            { "id": "d", "text": "Start Application" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "The instructor changed the 'Hello World' text to 'My First Project' using the Attributes section.",
+          "hints": ["Same as the project name", "Three words", "Starts with 'My'"]
+        },
+        {
+          "id": "Section-1-14-9",
+          "question": "Where is the Attributes option located if it was previously minimized?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android app development"],
+          "options": [
+            { "id": "a", "text": "Left navigation pane" },
+            { "id": "b", "text": "Bottom toolbar" },
+            { "id": "c", "text": "Right hand side" },
+            { "id": "d", "text": "Main menu" }
+          ],
+          "correctAnswers": ["c"],
+          "explanation": "The Attributes panel is located on the right-hand side of the Android Studio interface.",
+          "hints": ["Opposite of the project pane", "Vertical bar on the right", "Side panel"]
+        },
+        {
+          "id": "Section-1-14-10",
+          "question": "What does the zoom in (+) icon do in the activity design view?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android app development"],
+          "options": [
+            { "id": "a", "text": "Adds a new component" },
+            { "id": "b", "text": "Increases font size" },
+            { "id": "c", "text": "Makes the screen view larger for better visibility" },
+            { "id": "d", "text": "Saves the project" }
+          ],
+          "correctAnswers": ["c"],
+          "explanation": "The zoom in icon makes the design screen larger so that the details and text are clearly visible.",
+          "hints": ["Visual adjustment", "Magnification", "Visibility improvement"]
+        },
+        {
+          "id": "Section-1-14-11",
+          "question": "What is the primary focus of Episode 14's practical demonstration?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android app development"],
+          "options": [
+            { "id": "a", "text": "Writing Java code" },
+            { "id": "b", "text": "Using the Attributes panel to change text" },
+            { "id": "c", "text": "Setting up an emulator" },
+            { "id": "d", "text": "Publishing an app" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "The episode focuses on how to interact with UI components on the activity screen and change their text via the Attributes panel.",
+          "hints": ["UI modification", "Attributes utilization", "Text editing"]
+        },
+        {
+          "id": "Section-1-14-12",
+          "question": "Is the white background screen in the design view called an activity?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android app development"],
+          "options": [
+            { "id": "a", "text": "Yes" },
+            { "id": "b", "text": "No" },
+            { "id": "c", "text": "Only if it has text" },
+            { "id": "d", "text": "It is called a 'Fragment'" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "The instructor refers to the screen as the activity screen and mentions that activities will be discussed more in the next part.",
+          "hints": ["Basic Android component", "Visual screen name", "Mentioned at the start of the transcript"]
+        },
+        {
+          "id": "Section-1-14-13",
+          "question": "Hovering over a component and clicking it is the first step to edit its properties.",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android app development"],
+          "options": [
+            { "id": "a", "text": "True" },
+            { "id": "b", "text": "False" },
+            { "id": "c", "text": "Only for images" },
+            { "id": "d", "text": "Only in Split view" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "To edit a component, you first need to hover over it and click to select it, which then populates the Attributes panel with its specific properties.",
+          "hints": ["Selection process", "Interaction start", "True or False"]
+        },
+        {
+          "id": "Section-1-14-14",
+          "question": "If you cannot find the 'text' property, what sub-section of Attributes should you look for?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android app development"],
+          "options": [
+            { "id": "a", "text": "Layout attributes" },
+            { "id": "b", "text": "Common attributes" },
+            { "id": "c", "text": "Style attributes" },
+            { "id": "d", "text": "All attributes" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "Commonly used properties like 'text' are grouped under 'Common Attributes' for quick access.",
+          "hints": ["Standard settings group", "Find it fast", "Starts with 'C'"]
+        },
+        {
+          "id": "Section-1-14-15",
+          "question": "What happens to the 'Hello World' text once you click Enter after typing 'My First Project'?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android app development"],
+          "options": [
+            { "id": "a", "text": "It remains unchanged" },
+            { "id": "b", "text": "It gets deleted" },
+            { "id": "c", "text": "It updates to the new text on the screen" },
+            { "id": "d", "text": "The app crashes" }
+          ],
+          "correctAnswers": ["c"],
+          "explanation": "Clicking Enter confirms the change in the Attributes panel, which immediately updates the visual representation of the component on the layout editor.",
+          "hints": ["Immediate update", "Visual change", "Result of confirmation"]
+        }
+      ]
+    },
+    {
+      "name": "Section1-15",
+      "difficulty": "medium",
+      "content": [
+        {
+          "id": "Section-1-15-1",
+          "question": "Where can you find the icons to change the design view in Android Studio?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android app development"],
+          "options": [
+            { "id": "a", "text": "Bottom left corner" },
+            { "id": "b", "text": "Top left corner" },
+            { "id": "c", "text": "Top right corner" },
+            { "id": "d", "text": "Bottom right corner" }
+          ],
+          "correctAnswers": ["c"],
+          "explanation": "The view mode icons (Code, Split, Design) are located in the top right corner of the editor window.",
+          "hints": ["Check the top edge", "Look at the right side", "Opposite of the project tree"]
+        },
+        {
+          "id": "Section-1-15-2",
+          "question": "What are the three view modes available for layout files in Android Studio?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android app development"],
+          "options": [
+            { "id": "a", "text": "Build, Run, Debug" },
+            { "id": "b", "text": "Code, Split, Design" },
+            { "id": "c", "text": "Logic, UI, Database" },
+            { "id": "d", "text": "Full, Half, Quarter" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "Android Studio offers three modes: Code (for XML only), Design (for visual editing), and Split (for both).",
+          "hints": ["Visual, Text, and Both", "Starts with C, S, D", "Standard IDE views"]
+        },
+        {
+          "id": "Section-1-15-3",
+          "question": "Which view mode allows you to see both the XML code and the visual design simultaneously?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android app development"],
+          "options": [
+            { "id": "a", "text": "Code view" },
+            { "id": "b", "text": "Design view" },
+            { "id": "c", "text": "Split view" },
+            { "id": "d", "text": "Review view" }
+          ],
+          "correctAnswers": ["c"],
+          "explanation": "Split view divides the editor into two panels: one for XML code and one for the live preview of the UI.",
+          "hints": ["Divided screen", "Half and half", "Combination view"]
+        },
+        {
+          "id": "Section-1-15-4",
+          "question": "What is the name of the language used to write the layout code in Android?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android app development"],
+          "options": [
+            { "id": "a", "text": "HTML" },
+            { "id": "b", "text": "Java" },
+            { "id": "c", "text": "XML" },
+            { "id": "d", "text": "Kotlin" }
+          ],
+          "correctAnswers": ["c"],
+          "explanation": "Layout files in Android are written using XML (Extensible Markup Language).",
+          "hints": ["Markup language", "Tags based", "eXtensible Markup Language"]
+        },
+        {
+          "id": "Section-1-15-5",
+          "question": "In Split view, where should you find the text if you want to change it via code?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android app development"],
+          "options": [
+            { "id": "a", "text": "Inside an XML tag like 'TextView'" },
+            { "id": "b", "text": "In a separate CSS file" },
+            { "id": "c", "text": "In the manifest file" },
+            { "id": "d", "text": "In the gradle file" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "To change text in code, you must locate the text content within the 'TextView' tag in the XML editor section.",
+          "hints": ["Look for the tag name", "Inside the code panel", "TextView is the UI element"]
+        },
+        {
+          "id": "Section-1-15-6",
+          "question": "What happens to the visual preview when you change the text in the XML code in Split view?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android app development"],
+          "options": [
+            { "id": "a", "text": "It only updates after running the app" },
+            { "id": "b", "text": "It updates immediately/simultaneously" },
+            { "id": "c", "text": "It hides the code" },
+            { "id": "d", "text": "It requires a save action" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "The live preview in Split view updates immediately to reflect changes made in the XML code.",
+          "hints": ["Real-time reflection", "Live update", "No need to run the app yet"]
+        },
+        {
+          "id": "Section-1-15-7",
+          "question": "Which view mode shows only the source code without any visual representation?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android app development"],
+          "options": [
+            { "id": "a", "text": "Design view" },
+            { "id": "b", "text": "Code view" },
+            { "id": "c", "text": "Split view" },
+            { "id": "d", "text": "Debug view" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "Code view shows the full XML code of the layout file without the visual preview panel.",
+          "hints": ["Code only", "Pure text", "First icon in the trio"]
+        },
+        {
+          "id": "Section-1-15-8",
+          "question": "Is the layout editor limited to only choosing between Design or Code mode?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android app development"],
+          "options": [
+            { "id": "a", "text": "Yes" },
+            { "id": "b", "text": "No, there is also Split mode" },
+            { "id": "c", "text": "Yes, unless you use a plugin" },
+            { "id": "d", "text": "Only in older versions" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "There are three distinct modes: Code, Split, and Design, providing flexibility for different development preferences.",
+          "hints": ["Total of 3 modes", "Think of the middle option", "Recall the top right icons"]
+        },
+        {
+          "id": "Section-1-15-9",
+          "question": "How did the instructor suggest testing your understanding in Episode 15?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android app development"],
+          "options": [
+            { "id": "a", "text": "By adding an image" },
+            { "id": "b", "text": "By changing the text to 'Hello World' and then to your own name" },
+            { "id": "c", "text": "By deleting the file" },
+            { "id": "d", "text": "By running it on a real phone" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "The instructor gave a challenge to find the text in the code and change it, specifically suggesting changing it back to 'Hello World' and then to the user's name.",
+          "hints": ["Personalization task", "Reverting and then editing", "Recall the challenge"]
+        },
+        {
+          "id": "Section-1-15-10",
+          "question": "What is the advantage of using Split view according to the typical developer's workflow described?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android app development"],
+          "options": [
+            { "id": "a", "text": "It saves battery" },
+            { "id": "b", "text": "It helps see code and preview side by side" },
+            { "id": "c", "text": "It automatically fixes errors" },
+            { "id": "d", "text": "It hides complex code" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "Split view is useful because it allows developers to see the results of their code changes in real-time without switching screens.",
+          "hints": ["Side-by-side benefit", "Dual purpose", "Efficiency"]
+        },
+        {
+          "id": "Section-1-15-11",
+          "question": "Can you change the text in Code view?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android app development"],
+          "options": [
+            { "id": "a", "text": "Yes" },
+            { "id": "b", "text": "No" },
+            { "id": "c", "text": "Only using attributes panel" },
+            { "id": "d", "text": "Only with an internet connection" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "Yes, Code view is essentially a text editor for XML; you can edit any part of the file there.",
+          "hints": ["Text editor capabilities", "Full access", "True or False"]
+        },
+        {
+          "id": "Section-1-15-12",
+          "question": "What UI element contains the text property in the XML code shown in the transcript?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android app development"],
+          "options": [
+            { "id": "a", "text": "Button" },
+            { "id": "b", "text": "ImageView" },
+            { "id": "c", "text": "TextView" },
+            { "id": "d", "text": "ScrollView" }
+          ],
+          "correctAnswers": ["c"],
+          "explanation": "The transcript identifies the text as being located 'under this text view' (TextView tag).",
+          "hints": ["Standard text display widget", "Mentioned in the code walkthrough", "Starts with 'Text'"]
+        },
+        {
+          "id": "Section-1-15-13",
+          "question": "If you are in Split view, you can hide the view portion to see only code by selecting which icon?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android app development"],
+          "options": [
+            { "id": "a", "text": "Design" },
+            { "id": "b", "text": "Split" },
+            { "id": "c", "text": "Code" },
+            { "id": "d", "text": "Preview" }
+          ],
+          "correctAnswers": ["c"],
+          "explanation": "Selecting the 'Code' icon will switch from Split mode to full code mode.",
+          "hints": ["Switching to text only", "The first view icon", "Opposite of design"]
+        },
+        {
+          "id": "Section-1-15-14",
+          "question": "XML code is described in the transcript as being part of which view specifically?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android app development"],
+          "options": [
+            { "id": "a", "text": "Only Split view" },
+            { "id": "b", "text": "Code and Split view" },
+            { "id": "c", "text": "Design view only" },
+            { "id": "d", "text": "Neither" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "Both Code view and Split view show the XML code, whereas Design view hides it in favor of a visual editor.",
+          "hints": ["Text-based views", "Where do you see tags?", "Recall the split partition"]
+        },
+        {
+          "id": "Section-1-15-15",
+          "question": "What was the final summary of the basics covered at the end of Episode 15?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android app development"],
+          "options": [
+            { "id": "a", "text": "Basics of computers and Android" },
+            { "id": "b", "text": "Advanced Kotlin programming" },
+            { "id": "c", "text": "Database integration" },
+            { "id": "d", "text": "Graphic design principles" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "At the end of the episode, the instructor mentions they have finished learning the basics of computers and Android.",
+          "hints": ["Introductory wrap-up", "End of the first section summary", "Mentioned in the last few sentences"]
+        }
+      ]
+    }
+  ]
+}

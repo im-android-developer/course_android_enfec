@@ -1,0 +1,810 @@
+{
+  "items": [
+    {
+      "name": "Section5-Combined",
+      "difficulty": "hard",
+      "content": [
+        {
+          "id": "Section-5-C-1",
+          "question": "You are building a login screen in Android Studio. You have already placed an ImageView and a TextView for the title. Now you need to add two input fields — one for username and one for password. A junior developer on your team suggests using two TextViews for the input fields because 'they look the same in the design.' What component should actually be used, why is the junior developer wrong, and what is the exact width and height (in dp) that should be applied to each input field?",
+          "type": "mcq",
+          "difficulty": "hard",
+          "tags": ["Android Application Development", "UI Components", "Login Screen"],
+          "options": [
+            { "id": "a", "text": "Use TextView because TextViews can be tapped to show a keyboard, apply 275dp width and 50dp height since they are close enough to the reference dimensions." },
+            { "id": "b", "text": "Use EditText because it allows user input, not just static display. TextView only shows text and the user cannot type into it. The correct dimensions are 310dp width and 42dp height." },
+            { "id": "c", "text": "Use EditText because it allows user input, but the exact dimensions do not matter — Android auto-resizes input fields based on screen size, so no specific dp values are needed." },
+            { "id": "d", "text": "Use Button because a Button can be configured to open a keyboard. Apply 310dp width and 74dp height, which are the standard input field dimensions in Android." }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "EditText is the component designed to accept user input such as username and password. TextView only displays static text and cannot receive input from the user. The class explicitly set EditText dimensions to 310dp (width) × 42dp (height) for each input field.",
+          "hints": [
+            "Think about which component a user can type into.",
+            "The width is 310dp, not 274dp — that is the button's width.",
+            "The height of 42dp is quite short, which is typical for a text input field."
+          ]
+        },
+        {
+          "id": "Section-5-C-2",
+          "question": "A student has successfully placed the username EditText on the login screen with the correct dimensions and constraints. They now need to add the password EditText. The student decides to drag a brand new EditText from the palette and configure it from scratch. The instructor in class used a different, faster approach. What was that approach, what specific problem does it introduce that you must fix immediately, and what is the fix?",
+          "type": "mcq",
+          "difficulty": "hard",
+          "tags": ["Android Application Development", "EditText", "ConstraintLayout"],
+          "options": [
+            { "id": "a", "text": "Copy and paste the username EditText by pressing Ctrl+C / Cmd+C then Ctrl+V / Cmd+V. The problem introduced is that the hint text remains 'Enter your username' on both fields, so you must change the hint of the pasted one to 'Enter your password'. No constraint changes are needed because the paste operation resets them." },
+            { "id": "b", "text": "Copy and paste the username EditText. The problem is that the copied element inherits all constraints from the username field, which would cause both fields to overlap at the same position. You must delete the copied constraints and reconnect the password field's top constraint to the bottom of the username field." },
+            { "id": "c", "text": "Duplicate the XML code manually by typing the same XML again with a different ID. The problem is that duplicate IDs are automatically generated and conflict, so you must rename the ID of the new field before proceeding." },
+            { "id": "d", "text": "Copy and paste the username EditText. No constraint issues arise because Android Studio automatically repositions copy-pasted elements. The only required fix is updating the ID attribute to have a unique name." }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "The instructor copy-pasted the username EditText to save time. However, all constraints from the username field were duplicated onto the password field, meaning both would occupy the same position. The fix is to delete those copied constraints from the password field and attach its top constraint to the bottom of the username EditText.",
+          "hints": [
+            "Copy-paste duplicates everything — including position-related constraints.",
+            "Both the hint and the constraints are copied.",
+            "The password field must be positioned below the username field using a fresh constraint."
+          ]
+        },
+        {
+          "id": "Section-5-C-3",
+          "question": "You are reviewing a student's login screen XML. Their username EditText compiles without errors and displays correctly in the design view with the placeholder text 'Enter your username' visible. However, when the student runs the app on an emulator and taps the username field and begins typing, the placeholder text 'Enter your username' does not disappear — it stays on screen overlapping their typed characters. Which of the following best describes the root cause of this behavior and the correct solution?",
+          "type": "mcq",
+          "difficulty": "hard",
+          "tags": ["Android Application Development", "EditText", "XML Attributes"],
+          "options": [
+            { "id": "a", "text": "The placeholder text was added using the 'text' attribute instead of the 'hint' attribute. The 'text' attribute sets a permanent value on the EditText that the user cannot remove by typing, while 'hint' is designed to disappear automatically once the user starts typing. Fix: remove the 'text' attribute and replace it with android:hint='Enter your username'." },
+            { "id": "b", "text": "The placeholder text was added using the 'hint' attribute, which is working as intended. The disappearing behavior is a feature only available in API level 26 and above, so the student's emulator API is too old. Fix: update the emulator to API 26 or higher." },
+            { "id": "c", "text": "The placeholder text was added using the 'label' attribute, which is not a standard Android XML attribute. Android Studio ignored it and displayed the attribute value as static text. Fix: delete the 'label' attribute and add android:hint instead." },
+            { "id": "d", "text": "The placeholder is correct but the EditText's inputType attribute is missing, so the field cannot receive focus. Fix: add android:inputType='text' to make the field interactive and allow the hint to disappear on focus." }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "The 'text' attribute sets a static, permanent value into the EditText that a user types alongside — it does not disappear. The 'hint' attribute is specifically designed for placeholder text that disappears as soon as the user begins typing. The fix is to use android:hint instead of android:text for the placeholder.",
+          "hints": [
+            "The 'text' attribute on an EditText is just pre-filled content, not a placeholder.",
+            "The 'hint' attribute is the one taught in class for placeholder text.",
+            "User input on an EditText appends to or replaces the 'text' value."
+          ]
+        },
+        {
+          "id": "Section-5-C-4",
+          "question": "After completing the full login screen XML design with all components placed — ImageView, title TextView, username EditText, password EditText, and a login Button — the instructor zoomed out in Android Studio's design view and noticed the screen did not match the reference design. The spacing between elements was wrong. What was the root cause of this visual discrepancy, which attribute was applied to fix it, and on which specific component was the largest value applied?",
+          "type": "mcq",
+          "difficulty": "hard",
+          "tags": ["Android Application Development", "Layout Margins", "Login Screen"],
+          "options": [
+            { "id": "a", "text": "The root cause was missing 'padding' attributes on each component. Padding adds internal space within a component. The title TextView received the largest padding value of 100dp to push content down from the top of the screen." },
+            { "id": "b", "text": "The root cause was that all constraints pointed to the wrong edges. The screen appeared different because each component was constrained to the screen's center. The fix was to re-attach each component's constraints to its neighbors." },
+            { "id": "c", "text": "The root cause was missing 'layout_marginTop' attributes on the components. Margins add external spacing between a component and its neighbor or parent edge. The largest margin value (100dp) was applied to the ImageView at the top of the screen." },
+            { "id": "d", "text": "The root cause was that no component had a specified 'gravity' attribute. Gravity controls where content sits inside a component. The Button received the largest gravity value to push everything down." }
+          ],
+          "correctAnswers": ["c"],
+          "explanation": "The design looked different from the reference because no layout_marginTop attributes had been set on any component. After zooming out, the instructor added layout_marginTop to each component. The ImageView received the largest margin — starting at 30dp, then increased to 80dp, and finally settled at 100dp.",
+          "hints": [
+            "The issue was visible after zooming out — elements were cramped together.",
+            "Margins sit outside the component, creating spacing from neighbors.",
+            "The ImageView is the topmost component and needed the largest top margin."
+          ]
+        },
+        {
+          "id": "Section-5-C-5",
+          "question": "You are configuring the text on the login Button. The button has text='Login'. You try textSize='30dp' first, but the instructor says it is too large. You then try textSize='15dp' but it still does not feel right. You finally settle on a value that is described as acceptable. Additionally, which two other text-related attributes were applied to the button text in the same session, and what values were given to them?",
+          "type": "mcq",
+          "difficulty": "hard",
+          "tags": ["Android Application Development", "Button", "XML Attributes"],
+          "options": [
+            { "id": "a", "text": "The final textSize was 25dp. The other two attributes were textStyle='italic' with value 'italic' and fontFamily with value 'roboto', since those are default Android studio options." },
+            { "id": "b", "text": "The final textSize was 20dp. The other two attributes were textStyle (to make the text bold) and fontFamily set to 'poppins'." },
+            { "id": "c", "text": "The final textSize was 20dp. The other two attributes were letterSpacing set to '0.1' and textAllCaps set to 'true' as the instructor wanted the login text in uppercase." },
+            { "id": "d", "text": "The final textSize was 18dp. The other two attributes were textColor set to 'white' and fontFamily set to 'sans-serif' because these are the only system fonts available in Android Studio without importing." }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "30dp was tried and rejected as too large, 15dp was tried and not accepted, and 20dp was the value the instructor finally accepted. The two additional text attributes applied were textStyle (to make the text bold) and fontFamily set to 'poppins'.",
+          "hints": [
+            "The instructor tried three values: 30, 15, and finally a third one.",
+            "The font used is a Google Font that starts with the letter P.",
+            "One of the other attributes controls whether text appears bold."
+          ]
+        },
+        {
+          "id": "Section-5-C-6",
+          "question": "A developer has fully designed the login screen in Android Studio. Now they click the Run button to launch the app on the emulator. Instead of the Login Screen appearing first, they see the Hello World screen from MainActivity. The developer is confused because they designed the Login Screen last. What is the correct file to open to investigate and fix this issue, where is it located in the project, and what conceptual analogy was used in class to describe its purpose?",
+          "type": "mcq",
+          "difficulty": "hard",
+          "tags": ["Android Application Development", "AndroidManifest", "Launcher Activity"],
+          "options": [
+            { "id": "a", "text": "Open the LoginScreen.kt file located in the kotlin+java folder. The fix is to write the onCreate() code that calls startActivity() pointing to LoginScreen. The class compared this file to a router that directs traffic between screens." },
+            { "id": "b", "text": "Open the AndroidManifest.xml file located in the manifests folder at the top of the project. This file is described as a blueprint of the application — similar to how an engineering blueprint shows every section of a building. It controls which activity launches first via the intent-filter element." },
+            { "id": "c", "text": "Open the build.gradle file located at the root of the project. The fix is to add a property called 'launcherActivity = LoginScreen' under the android block. The class compared build.gradle to a map of the entire project structure." },
+            { "id": "d", "text": "Open the activity_main.xml file located in the res/layout folder. The fix is to add an XML tag called <launchFirst> inside the layout root element. Android reads this tag to determine the first screen." }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "The AndroidManifest.xml is the file that controls which activity launches first (the launcher activity). It is found in the 'manifests' folder at the top of the project structure. The instructor described it as a blueprint of the application, just as an engineering blueprint shows every section of a building clearly.",
+          "hints": [
+            "The file is an XML file specifically named 'manifest'.",
+            "The instructor said to 'mark my words — whatever you need, mention it here'.",
+            "The blueprint analogy involves an engineer designing a building."
+          ]
+        },
+        {
+          "id": "Section-5-C-7",
+          "question": "You open your AndroidManifest.xml file and examine the three activity entries — LoginScreen, MainActivity, and MainActivity2. Your task is to make LoginScreen the launcher activity. You look at the file and find that MainActivity has several extra lines of XML inside its activity tag that the other two activities do not have. What are those extra lines called, what does it mean structurally in XML that they are 'inside' the activity tag (as opposed to being an attribute), and how exactly do you transfer them to make LoginScreen the launcher?",
+          "type": "mcq",
+          "difficulty": "hard",
+          "tags": ["Android Application Development", "AndroidManifest", "XML Structure"],
+          "options": [
+            { "id": "a", "text": "The extra lines are called 'meta-data' elements. Being inside the tag means they are attributes with complex values. To transfer, you copy the meta-data lines and add them both to MainActivity and LoginScreen so both can serve as launchers simultaneously." },
+            { "id": "b", "text": "The extra lines are called the 'intent-filter' element. Being inside the activity tag means it is a child element — it lives between the opening <activity> and closing </activity> tags, not as an attribute inside the opening tag. To transfer, you cut the entire intent-filter block from MainActivity using Ctrl+X (or Cmd+X on Mac) and paste it inside the LoginScreen activity tag, then remove the self-closing slash from LoginScreen's activity tag so it can have children." },
+            { "id": "c", "text": "The extra lines are called the 'launcher-tag' element. Being inside the activity tag means it is nested content. To transfer, you delete all activity entries and write a new single activity tag with launcher-tag for LoginScreen. The other activities do not need entries in the manifest." },
+            { "id": "d", "text": "The extra lines are an 'action-filter' element. They are nested as attributes using a special dot notation. To transfer, you simply copy the value of the android:action attribute from MainActivity and paste it into the LoginScreen activity tag as an attribute (not as a child element)." }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "The extra lines are the intent-filter element. Because it is a child element (not an attribute), it sits between the opening and closing <activity> tags rather than inside the opening tag's angle brackets. The correct procedure is to cut the entire intent-filter block from MainActivity and paste it inside LoginScreen's activity tags, while also converting LoginScreen's activity from a self-closing tag to an opening/closing tag pair.",
+          "hints": [
+            "Attributes go inside the opening tag's angle brackets; child elements go between opening and closing tags.",
+            "The instructor used Ctrl/Cmd+X to cut and Ctrl/Cmd+V to paste.",
+            "You cannot have two launcher activities — only one activity can have the intent-filter."
+          ]
+        },
+        {
+          "id": "Section-5-C-8",
+          "question": "After you successfully cut the intent-filter from MainActivity and paste it inside LoginScreen's activity tags in the AndroidManifest.xml, Android Studio immediately highlights an error on the LoginScreen activity tag. What is the exact error being reported, what attribute must be added to the LoginScreen activity tag to resolve it, and what value must it be set to?",
+          "type": "mcq",
+          "difficulty": "hard",
+          "tags": ["Android Application Development", "AndroidManifest", "Launcher Activity"],
+          "options": [
+            { "id": "a", "text": "The error says 'Launcher activity must declare android:theme'. You must add android:theme='@style/AppTheme' to the LoginScreen activity tag. Without a theme, the launcher activity is considered invalid by the build system." },
+            { "id": "b", "text": "The error says 'android:exported needs to be explicitly specified'. You must add android:exported='true' to the LoginScreen activity tag. Any activity that has an intent-filter must declare exported='true' to indicate it can be started by the system launcher." },
+            { "id": "c", "text": "The error says 'intent-filter requires a parent activity declaration'. You must add android:parentActivityName pointing to MainActivity so Android knows where to return after LoginScreen. The value should be '.MainActivity'." },
+            { "id": "d", "text": "The error says 'duplicate activity found'. You must delete the MainActivity entry entirely from the manifest so that only LoginScreen remains. Having two activities in the manifest when one has an intent-filter causes this conflict." }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "When an activity has an intent-filter, Android Studio requires the android:exported attribute to be explicitly set to 'true'. This tells the system that the activity is accessible by external components, including the home screen launcher. Without this, a compile/manifest error is shown.",
+          "hints": [
+            "The error appeared immediately after pasting the intent-filter into LoginScreen.",
+            "The instructor said 'we are getting an error that says exported equals true'.",
+            "The value is 'true', not 'false'."
+          ]
+        },
+        {
+          "id": "Section-5-C-9",
+          "question": "A student argues that they can put the intent-filter in both LoginScreen and MainActivity in the AndroidManifest.xml so that both screens can be used as the starting screen depending on the situation. Your teammate agrees and says 'that's fine, Android will just pick one.' Based strictly on what was taught in class, who is correct, what actually happens, and what is the correct rule?",
+          "type": "mcq",
+          "difficulty": "hard",
+          "tags": ["Android Application Development", "AndroidManifest", "Launcher Activity"],
+          "options": [
+            { "id": "a", "text": "The student is correct. Android allows multiple launcher activities and the one listed last in the manifest takes priority. This is a valid design pattern used to support deep linking alongside normal app launches." },
+            { "id": "b", "text": "Both the student and teammate are wrong. The instructor explicitly stated that the intent-filter can only be applied to one activity. Having it in multiple activities violates this rule — there can only be one launcher activity at a time." },
+            { "id": "c", "text": "The teammate is correct. Android Studio automatically detects the conflict and picks the first activity listed in the manifest. While not recommended, it does not cause a crash." },
+            { "id": "d", "text": "The student is partially correct. You can have multiple intent-filters as long as each has a different 'category' value. Using LAUNCHER category in two activities simultaneously is allowed in release builds but not in debug builds." }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "The instructor explicitly stated that the intent-filter can only be applied to one activity. It designates exactly one activity as the launcher — the one that the device home screen opens when the app icon is tapped. Placing it in two activities is incorrect.",
+          "hints": [
+            "The instructor said 'remember this intent-filter can be applied into one activity only'.",
+            "There can only be one entry point to an application.",
+            "The instruction was clear: 'We cannot apply more than one activity.'"
+          ]
+        },
+        {
+          "id": "Section-5-C-10",
+          "question": "After making changes to the AndroidManifest.xml to switch the launcher activity to LoginScreen, the developer runs the app again and it crashes. In Logcat, they see the message 'Shutting down VM'. The developer is not sure whether to save files first, restart Android Studio, or investigate further. What does 'Shutting down VM' specifically indicate, what is the correct next step in Logcat, and what keyword should the developer search for to pinpoint the exact error?",
+          "type": "mcq",
+          "difficulty": "hard",
+          "tags": ["Android Application Development", "Debugging", "Logcat"],
+          "options": [
+            { "id": "a", "text": "'Shutting down VM' means Android Studio's build system has encountered a Gradle sync error and the project must be re-synced. The next step is to close Logcat and click the Sync Now button at the top of the screen. No further Logcat investigation is needed." },
+            { "id": "b", "text": "'Shutting down VM' means the virtual machine (emulator) has stopped running because a runtime error occurred in the app. The next step is to scroll up in Logcat to find the error, and search for the keyword 'FATAL EXCEPTION' which marks the beginning of the crash log, followed by 'Caused by' which shows the exact error and file." },
+            { "id": "c", "text": "'Shutting down VM' means the developer's computer does not have enough RAM to keep the emulator running. The next step is to close other applications and restart the emulator. Logcat cannot help with hardware resource issues." },
+            { "id": "d", "text": "'Shutting down VM' indicates that the emulator's operating system needs to be updated. The next step is to open the AVD Manager, delete the current emulator, and create a new one with a higher API level before running the app again." }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "Shutting down VM means the emulator (virtual machine) was stopped due to a runtime error in the app. The correct approach is to scroll up in Logcat, search for 'FATAL EXCEPTION' to find the crash section, and then look at the 'Caused by' line which names the specific exception and points to the file and line number where it occurred.",
+          "hints": [
+            "VM stands for Virtual Machine, which is the emulator.",
+            "The instructor said to 'scroll up first' in Logcat.",
+            "'FATAL EXCEPTION' is the keyword to search for in Logcat."
+          ]
+        },
+        {
+          "id": "Section-5-C-11",
+          "question": "A developer is reading through a Logcat crash trace. They see the following file references listed one after another: ViewCompat.java:1024, ActivityCompat.java:589, LoginScreen.kt:14, ActivityThread.java:3200. The developer is trying to decide which file to investigate. Based on the principle taught in class, which file should they open and why, and what does the notation ':14' specifically mean?",
+          "type": "mcq",
+          "difficulty": "hard",
+          "tags": ["Android Application Development", "Debugging", "Logcat"],
+          "options": [
+            { "id": "a", "text": "The developer should open ActivityThread.java:3200 because it appears last in the trace, which means it is the most recent call in the execution chain and closest to the actual cause. The ':3200' refers to 3200 milliseconds — the time elapsed before the crash." },
+            { "id": "b", "text": "The developer should open LoginScreen.kt:14 because it is the only user-created file in the list. ViewCompat, ActivityCompat, and ActivityThread are Android system/internal files that are not visible in the kotlin+java folder and therefore cannot contain developer-introduced bugs. The ':14' means the error is at line 14 of LoginScreen.kt." },
+            { "id": "c", "text": "The developer should open ViewCompat.java:1024 because it appears first in the trace, which means it was the first file to encounter the issue. Internal files often expose the root cause more clearly. The ':1024' refers to line 1024 in that file." },
+            { "id": "d", "text": "The developer should open all four files simultaneously and compare them. Logcat traces always spread errors across multiple files, so fixing only one file rarely resolves a crash. The ':' notation separates the class name from the method name within that file." }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "The instructor explicitly taught that you can only introduce errors in files you created. ViewCompat, ActivityCompat, and ActivityThread are internal Android framework files not visible in your kotlin+java folder. LoginScreen.kt is user-created and is therefore the relevant file. The ':14' notation means line number 14 within LoginScreen.kt.",
+          "hints": [
+            "You cannot make mistakes in files you did not create.",
+            "System files like ViewCompat are not in the user's kotlin+java folder.",
+            "':14' is a line number reference."
+          ]
+        },
+        {
+          "id": "Section-5-C-12",
+          "question": "The instructor mentioned that Android Studio does not require you to manually save files before running the app. A student insists on pressing Cmd+S (on Mac) or Ctrl+S (on Windows) before every run to 'make sure changes are saved.' Another student says this is completely unnecessary and may even cause issues. What is the correct understanding of how Android Studio handles file saving, and what implication does this have on your development workflow?",
+          "type": "mcq",
+          "difficulty": "hard",
+          "tags": ["Android Application Development", "Android Studio", "Developer Workflow"],
+          "options": [
+            { "id": "a", "text": "Android Studio does NOT auto-save files. Changes are kept only in memory until Ctrl+S / Cmd+S is pressed. Pressing save before running is essential because the build system reads from disk, not memory. The student insisting on saving is correct." },
+            { "id": "b", "text": "Android Studio saves files automatically in real time as you type. Every keystroke is immediately persisted to disk. This means pressing Ctrl+S / Cmd+S before running is completely unnecessary — changes are always already saved, and the build always picks up the latest version of every file." },
+            { "id": "c", "text": "Android Studio uses a periodic auto-save that runs every 60 seconds. If you run the app within that 60-second window, your latest changes may not be included. Pressing Ctrl+S forces an immediate save that guarantees the build captures the latest changes." },
+            { "id": "d", "text": "Android Studio auto-saves only XML files in real time, but Kotlin and manifest files require manual saving before a build. This means the student should press Ctrl+S before running when changes were made to the AndroidManifest.xml or any .kt file." }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "The instructor explicitly stated: 'There is no need to save. Whatever you write, it saves in real time. You don't have to put Ctrl+S / Cmd+S.' Android Studio saves all file types automatically as you type, so there is no need to manually save before running.",
+          "hints": [
+            "The instructor specifically told students not to worry about saving.",
+            "Real-time saving applies to all files.",
+            "The instructor said 'it saves in real time'."
+          ]
+        },
+        {
+          "id": "Section-5-C-13",
+          "question": "You have designed your login screen in XML. While reviewing the layout in Android Studio's design view, you notice that when you zoom the view to 50% to see the full screen, all components appear squashed at the top with no breathing room between them. The reference design shows clear vertical spacing between the logo, the title text, the input fields, and the button. Without changing any constraints, what is the most targeted way to fix this, and which of the following correctly describes which attribute to use and where to find it in the attributes panel?",
+          "type": "mcq",
+          "difficulty": "hard",
+          "tags": ["Android Application Development", "Layout Design", "Margins"],
+          "options": [
+            { "id": "a", "text": "Fix using the 'padding' attribute on each component. In the attributes panel, type 'padding' to find 'android:padding', which adds internal space within the component's boundary. This pushes content away from the component's own edges but does not affect spacing between components." },
+            { "id": "b", "text": "Fix using the 'layout_marginTop' attribute on each component. In the attributes panel, type 'top' and select 'layout_marginTop' from the suggestions. This adds external spacing between the top edge of the component and whatever is above it — either the parent's top edge or the bottom of the component it is constrained to." },
+            { "id": "c", "text": "Fix by adjusting the constraint bias of each component in ConstraintLayout. In the attributes panel, find 'layout_constraintVertical_bias' and set it to values between 0.1 and 0.5 for different components to distribute them evenly across the screen vertically." },
+            { "id": "d", "text": "Fix using the 'layout_height' attribute on each component — increase the height of each element to push the next element down. In the attributes panel, change the height from 'wrap_content' or a small dp value to a much larger dp value for each component." }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "The layout_marginTop attribute creates external spacing above a component, controlling the gap between it and whatever is above it. You find it by typing 'top' in the attributes panel and selecting 'layout_marginTop'. This is exactly how the instructor fixed the spacing issue after noticing the design was different from the reference when zoomed out.",
+          "hints": [
+            "Margin is external (outside the component); padding is internal (inside the component).",
+            "The instructor said to type 'top' in the attributes search.",
+            "layout_marginTop was used on every component to separate them vertically."
+          ]
+        },
+        {
+          "id": "Section-5-C-14",
+          "question": "After placing the login Button with text='Login' and setting its top constraint to the bottom of the password EditText, the instructor also applied a textSize and fontFamily to the button. A student asks: 'Can we use the same text styling attributes like textSize and fontFamily on a Button that we use on a TextView?' Based on what was demonstrated in class, what is the correct answer with a specific example from the session?",
+          "type": "mcq",
+          "difficulty": "hard",
+          "tags": ["Android Application Development", "Button", "XML Attributes"],
+          "options": [
+            { "id": "a", "text": "No. Button components use a different attribute set from TextView. To change font size on a Button, you must use 'android:textAppearance' pointing to a TextAppearance style resource, not a direct 'android:textSize' attribute. The fontFamily attribute is also not available on Button." },
+            { "id": "b", "text": "Yes. The same text styling attributes used on TextView — such as textSize, textStyle, and fontFamily — work identically on a Button component. The instructor demonstrated this by applying textSize='20dp', textStyle='bold', and fontFamily='poppins' directly to the login Button in the same way they were used on TextViews earlier in the project." },
+            { "id": "c", "text": "Yes, but only textSize works on Button. The fontFamily and textStyle attributes are only valid on TextView and EditText. To change font on a Button, you must apply a custom style through the 'style' attribute pointing to a styles.xml definition." },
+            { "id": "d", "text": "Only fontFamily works on Button. To change text size on a Button, you must use 'sp' units (not 'dp') because Buttons use a scaled font system. The instructor used fontFamily='poppins' and textSizeInSp='20sp' for the login button." }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "The instructor explicitly confirmed that textSize, textStyle, and fontFamily work exactly the same on a Button as they do on a TextView. They demonstrated this by applying textSize='20dp', fontFamily='poppins', and textStyle (bold) directly to the login Button — the same way these were applied to TextViews earlier.",
+          "hints": [
+            "The instructor said 'you can do the same as you did into text view'.",
+            "The same three attributes — textSize, textStyle, fontFamily — were applied to the Button.",
+            "The session showed Button text styling is not different from TextView text styling."
+          ]
+        },
+        {
+          "id": "Section-5-C-15",
+          "question": "In the AndroidManifest.xml, you are examining three activity declarations. LoginScreen and MainActivity2 each have opening self-closing activity tags like: <activity android:name='.LoginScreen' android:exported='false' />. MainActivity has a different structure where its activity tag is split into an opening tag <activity ...> and a separate closing tag </activity>, with lines of code between them. What fundamental XML concept explains this structural difference, and what would break if you tried to add an intent-filter to LoginScreen while keeping it as a self-closing tag?",
+          "type": "mcq",
+          "difficulty": "hard",
+          "tags": ["Android Application Development", "AndroidManifest", "XML Structure"],
+          "options": [
+            { "id": "a", "text": "The difference is just a formatting preference — self-closing and open/close tags are identical in XML. You can add intent-filter as an attribute on a self-closing tag: <activity android:name='.LoginScreen' android:intent-filter='launcher' />. Nothing would break syntactically." },
+            { "id": "b", "text": "The difference is that self-closing tags cannot have child elements. A self-closing tag like /> signals that the element has no children. The intent-filter is a child element (not an attribute), so it must go between opening <activity> and closing </activity> tags. Keeping LoginScreen as a self-closing tag while trying to add an intent-filter is invalid XML and will cause a parse error." },
+            { "id": "c", "text": "The difference is a Kotlin compatibility requirement. Self-closing activity tags are for Kotlin activities, while open/close activity tags are for Java activities. Since LoginScreen is Kotlin, you cannot add children to it and must use a metadata attribute for the intent-filter instead." },
+            { "id": "d", "text": "The difference is that MainActivity is older and was written before Android Studio introduced self-closing tag support. You can keep LoginScreen as a self-closing tag and add the intent-filter by appending android:intentAction='MAIN' and android:intentCategory='LAUNCHER' as direct attributes." }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "In XML, a self-closing tag (ending in />) declares that the element has no child content. The intent-filter is a child element — it must be placed between an opening <activity> and a closing </activity> tag. If LoginScreen remains self-closing, there is nowhere to nest the intent-filter, resulting in an XML syntax error.",
+          "hints": [
+            "Self-closing tags end with '/>' and signal no children.",
+            "The instructor changed the activity tag from self-closing to open/close before pasting the intent-filter.",
+            "Attributes go inside the opening tag; child elements go between opening and closing tags."
+          ]
+        },
+        {
+          "id": "Section-5-C-16",
+          "question": "A developer is building a screen that lists items one below the other — like a vertical menu. They want to use the layout that was introduced in Episode 3 as 'unidirectional'. Which layout should they use, what required attribute must be set immediately after declaring the layout (otherwise Android Studio shows an error), and what value should that attribute be given for a vertical arrangement?",
+          "type": "mcq",
+          "difficulty": "hard",
+          "tags": ["Android Application Development", "LinearLayout", "Layout Attributes"],
+          "options": [
+            { "id": "a", "text": "Use RelativeLayout. Set the required 'android:layout_alignParentTop' attribute to 'true' immediately. For vertical stacking, set 'android:layout_below' on each child element pointing to its predecessor." },
+            { "id": "b", "text": "Use ConstraintLayout. Set the required 'app:layout_constraintVertical_chainStyle' attribute to 'spread'. For vertical arrangement, each component needs its top constraint attached to the bottom of the component above it." },
+            { "id": "c", "text": "Use LinearLayout. Set the required 'android:orientation' attribute immediately — Android Studio will show an error without it because LinearLayout does not know which axis to arrange elements along. For a vertical arrangement, the value should be 'vertical'." },
+            { "id": "d", "text": "Use ScrollViewLayout. Set the required 'android:fillViewport' attribute to 'true'. For vertical scrolling of stacked items, this attribute enables the content to expand downward." }
+          ],
+          "correctAnswers": ["c"],
+          "explanation": "LinearLayout is the unidirectional layout introduced in Episode 3. The 'orientation' attribute is mandatory — without it an error appears. For stacking items vertically (top to bottom), the value 'vertical' must be set.",
+          "hints": [
+            "The instructor said 'linear means into a single line or direction — unidirectional'.",
+            "The error appeared precisely because orientation was missing.",
+            "'vertical' arranges children from top to bottom."
+          ]
+        },
+        {
+          "id": "Section-5-C-17",
+          "question": "You are helping a junior developer who set layout_width='match_parent' on a TextView inside a LinearLayout with orientation='vertical'. The junior developer says the TextView now fills the entire width which looks good. However, you notice that for a different TextView in the same layout, the developer used layout_width='wrap_content'. The developer asks: 'When should I use wrap_content and when should I use match_parent for width?' Based on the concepts taught in this session, give the most accurate and complete answer.",
+          "type": "mcq",
+          "difficulty": "hard",
+          "tags": ["Android Application Development", "Layout Attributes", "WrapContent vs MatchParent"],
+          "options": [
+            { "id": "a", "text": "Use match_parent when the text content is long and wrap_content when it is short. The layout system automatically adjusts the opposite dimension (height) to compensate, so the overall screen appearance remains balanced regardless of which you choose for width." },
+            { "id": "b", "text": "Use wrap_content when you want the component to occupy only the space its content (text, image, etc.) actually needs — no more and no less. Use match_parent when you intentionally want the component to stretch across the entire width of the parent container. The instructor noted match_parent is 'not practical' for individual elements like EditText fields, while wrap_content avoids both wasted empty space and content clipping." },
+            { "id": "c", "text": "Use match_parent for all widths and wrap_content for all heights. This is the standard Android design convention — width always stretches to fill the screen, and height adjusts based on content. Using wrap_content for width can cause alignment problems in LinearLayout." },
+            { "id": "d", "text": "wrap_content and match_parent behave identically in LinearLayout because LinearLayout does not impose boundaries on its children. The choice only matters in ConstraintLayout where boundaries are enforced. In LinearLayout, always use wrap_content for simplicity." }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "wrap_content sizes a component to exactly fit its content, avoiding both wasted space and clipping. match_parent expands a component to fill its parent's entire dimension. The instructor used wrap_content when demonstrating the LinearLayout example and explicitly said match_parent 'is not practical' for individual elements because it occupies the whole screen.",
+          "hints": [
+            "The instructor showed a 100dp width leaving wasted space — wrap_content fixes this.",
+            "'match_parent is not possible and not even practical' was said in class.",
+            "wrap_content adapts to content; match_parent adapts to the container."
+          ]
+        },
+        {
+          "id": "Section-5-C-18",
+          "question": "A student creates a LinearLayout with orientation='vertical' and places a single TextView inside it. They set the TextView's layout_width='100dp', layout_height='60dp', and text='Hello World How Are You, this is a very long text for testing purposes'. Describe in detail what the student will see on screen for both the width overflow and height overflow situations simultaneously, and what single change would solve both overflow problems at once.",
+          "type": "mcq",
+          "difficulty": "hard",
+          "tags": ["Android Application Development", "TextView", "WrapContent", "LinearLayout"],
+          "options": [
+            { "id": "a", "text": "The text will wrap to a new line when it exceeds 100dp width (text wrapping is the default behavior). When the text exceeds the 60dp height boundary, a scrollbar will automatically appear. Setting layout_height='match_parent' would allow the full text to be visible without wrapping or scrolling." },
+            { "id": "b", "text": "The text will be automatically scaled down in font size to fit within the 100dp × 60dp boundary. No text will be clipped. To restore normal font size while showing all text, the student should set both layout_width='wrap_content' and layout_height='wrap_content' simultaneously." },
+            { "id": "c", "text": "The text will wrap onto multiple lines when it exceeds 100dp width. When the wrapped text takes up more than 60dp in height, the overflow text is silently clipped and becomes invisible — the component does not expand beyond 60dp. Setting both layout_width='wrap_content' and layout_height='wrap_content' solves both problems, making the component expand to fit all of its content exactly." },
+            { "id": "d", "text": "The entire text will appear on a single line scrolling horizontally because LinearLayout with orientation='vertical' makes all children scroll horizontally by default. The 60dp height just defines the area where the horizontal scroll occurs. Setting orientation='horizontal' on the LinearLayout resolves both overflow issues." }
+          ],
+          "correctAnswers": ["c"],
+          "explanation": "With a fixed 100dp width, the text wraps to the next line. With a fixed 60dp height, text lines that overflow beyond that height are invisibly clipped. Setting both width and height to wrap_content resolves both issues — the component grows to exactly accommodate its full content in both dimensions.",
+          "hints": [
+            "Fixed dp values set rigid boundaries — content beyond them is cut off.",
+            "The instructor showed that text beyond 60dp height 'is just gone'.",
+            "wrap_content applied to both dimensions is the complete solution."
+          ]
+        },
+        {
+          "id": "Section-5-C-19",
+          "question": "You are designing a settings screen in Android Studio using LinearLayout with orientation='horizontal'. You add four ImageView icons side by side. After adding the fourth icon, you realize you need to also add text labels below each icon, making it look like a tab bar. Your current LinearLayout puts everything in a horizontal row. What structural approach within LinearLayout would correctly achieve this layout (icons + labels below each), and does LinearLayout alone support this without switching to ConstraintLayout?",
+          "type": "mcq",
+          "difficulty": "hard",
+          "tags": ["Android Application Development", "LinearLayout", "Layout Design"],
+          "options": [
+            { "id": "a", "text": "LinearLayout with orientation='horizontal' supports this natively. Just add each label using a 'label' child tag directly inside each ImageView tag. Android renders paired icon-label combinations automatically when a 'label' child element is present inside an ImageView." },
+            { "id": "b", "text": "You would need to nest a vertical LinearLayout inside each horizontal cell — each nested LinearLayout would contain one ImageView and one TextView stacked vertically. The outer LinearLayout with orientation='horizontal' would contain four inner vertical LinearLayouts. LinearLayout supports this nesting approach." },
+            { "id": "c", "text": "LinearLayout does not support vertical sub-groupings inside a horizontal layout. You must always switch to ConstraintLayout for any layout that requires mixed horizontal and vertical arrangements. There is no workaround using only LinearLayout." },
+            { "id": "d", "text": "You would set the outer LinearLayout to orientation='grid' and specify 2 rows and 4 columns. LinearLayout's grid mode places components in a table format automatically, pairing each icon with the label below it without nesting." }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "LinearLayout supports nesting. To create icon+label pairs in a horizontal row, you nest a vertical LinearLayout inside each column of the horizontal outer LinearLayout. This is a standard pattern. LinearLayout alone supports this without needing ConstraintLayout.",
+          "hints": [
+            "LinearLayout can be nested inside another LinearLayout.",
+            "The outer layout controls left-right arrangement; inner layouts control top-bottom arrangement.",
+            "This is a common tab bar design pattern using nested LinearLayouts."
+          ]
+        },
+        {
+          "id": "Section-5-C-20",
+          "question": "A developer is trying to understand why the same app on two different devices shows elements in different positions, even though they used fixed dp values (e.g., layout_width='310dp') throughout the design. They did not use wrap_content or match_parent anywhere. Based on the concepts covered in this section about fixed dp sizing and the limitations it creates, what is most likely causing the visual inconsistency and what would be a better approach?",
+          "type": "mcq",
+          "difficulty": "hard",
+          "tags": ["Android Application Development", "Layout Design", "WrapContent"],
+          "options": [
+            { "id": "a", "text": "Fixed dp values are device-independent by definition — 310dp looks identical on all screens. The inconsistency is caused by the emulator having a different rendering engine than a physical device. The fix is to always test on a physical device and not an emulator." },
+            { "id": "b", "text": "Fixed dp values lock the component to an absolute size that does not adapt to the content of the component or the container's available space. If the screen is narrower than expected, a 310dp element may overflow the screen boundary or leave unexpected side margins. Using wrap_content for content-driven components and match_parent or ConstraintLayout-based measurements for container-filling components gives more adaptive layouts." },
+            { "id": "c", "text": "Fixed dp values are only problematic in LinearLayout. In ConstraintLayout, any fixed dp value automatically scales to fit the screen. The fix is to move all components from LinearLayout to ConstraintLayout while keeping the same fixed dp values." },
+            { "id": "d", "text": "The inconsistency is caused by Android Studio's design view using a different dp scale than the actual device. The fix is to always write the dp values 20% smaller than what looks correct in design view, because Android Studio over-renders size by a consistent 20% factor." }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "Fixed dp values create rigid boundaries that do not adapt to either the content inside or the screen size outside. On smaller screens, a hard-coded 310dp width might overflow or squeeze other content unexpectedly. Using wrap_content lets content drive the size, preventing both wasted space and overflow — a key concept demonstrated in Episode 3.",
+          "hints": [
+            "The instructor showed that fixed dp values can both waste space and clip content.",
+            "dp is device-independent but does not adapt to available container space.",
+            "wrap_content and match_parent were introduced precisely to handle this adaptability."
+          ]
+        },
+        {
+          "id": "Section-5-C-21",
+          "question": "During the login screen design, the instructor applied top margins to each component in a specific sequence. Looking at the transcript, the instructor tried multiple values for the ImageView's top margin — first 30dp, then increased it because it was not enough, then tried 80dp, and finally settled on a value described as 'okay for us'. Later, for the first TextView (the Login title), 20dp was tried first and then a different final value was accepted. What were the final accepted top margin values for the ImageView and the title TextView respectively?",
+          "type": "mcq",
+          "difficulty": "hard",
+          "tags": ["Android Application Development", "Layout Design", "Margins"],
+          "options": [
+            { "id": "a", "text": "ImageView: 80dp final margin. Title TextView: 20dp final margin. Both values were accepted the second time they were tried." },
+            { "id": "b", "text": "ImageView: 100dp final margin. Title TextView: 40dp final margin. The ImageView went through three attempts (30 → 80 → 100) and the title TextView went through two (20 → 40)." },
+            { "id": "c", "text": "ImageView: 100dp final margin. Title TextView: 20dp final margin. The ImageView needed more space at the top because it is the first element, while 20dp was sufficient for the title." },
+            { "id": "d", "text": "ImageView: 80dp final margin. Title TextView: 40dp final margin. After 30dp failed for the ImageView, 80dp was accepted. After 20dp failed for the title, 40dp was accepted." }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "For the ImageView: 30dp was tried first and was 'not enough', 80dp was tried next, then 100dp was settled on as 'okay for us'. For the title TextView: 20dp was tried first, then increased to 40dp which was 'perfect'. So the final values are ImageView=100dp and title TextView=40dp.",
+          "hints": [
+            "The ImageView tried three values: 30, 80, and a final third one.",
+            "The title TextView started at 20 and was doubled.",
+            "Read the sequence: not enough → tried again → settled."
+          ]
+        },
+        {
+          "id": "Section-5-C-22",
+          "question": "A student is debugging a crash and opened Logcat. They cleared the previous output by deleting it, then ran the app. The app crashed again and new Logcat output appeared. The student sees multiple colored lines of text, timestamps, codes, and file references. They are overwhelmed and do not know where to start. Describe the exact workflow the instructor taught for efficiently identifying the relevant error from a large Logcat output.",
+          "type": "mcq",
+          "difficulty": "hard",
+          "tags": ["Android Application Development", "Debugging", "Logcat"],
+          "options": [
+            { "id": "a", "text": "Read the Logcat from top to bottom entirely. The very first line always contains the error description. Copy this first line and search it on Stack Overflow. The instructor recommended clearing old logs before each run but did not recommend any specific keyword search." },
+            { "id": "b", "text": "First, clear the Logcat output so you start fresh. Then run the app. After the crash, scroll up in the Logcat output to find the beginning of the error section. Search specifically for the keyword 'FATAL EXCEPTION' to locate the crash block. Then look for the 'Caused by' line to find the specific exception. Finally, scan the blue file name links for a file you recognize from your own project (such as LoginScreen.kt), click it, and you will be taken directly to the problematic line." },
+            { "id": "c", "text": "Right-click anywhere in Logcat and choose 'Find Error Summary'. Android Studio automatically highlights the most relevant error line in yellow. Click the yellow highlighted line to open the file. If no yellow line appears, the error is in a system file and cannot be fixed by the developer." },
+            { "id": "d", "text": "Filter Logcat by selecting 'Error' from the log level dropdown. This hides all info and warning messages and shows only error-level entries. The first error entry after the timestamp of the crash is always the root cause. Click on any red-colored line to open the corresponding source file." }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "The instructor's workflow: (1) clear old Logcat output before running, (2) after the crash, scroll up to find the error section, (3) search for 'FATAL EXCEPTION' to locate the crash, (4) look at 'Caused by' for the exception type (e.g., NullPointerException), (5) find blue clickable file names in the trace and click on one from your own project to jump directly to that line.",
+          "hints": [
+            "Clearing old output first prevents confusion.",
+            "'FATAL EXCEPTION' is the entry point for any crash block.",
+            "'Caused by' tells you what kind of error it was."
+          ]
+        },
+        {
+          "id": "Section-5-C-23",
+          "question": "In Episode 3, the instructor replaced the ConstraintLayout in activity_main_two.xml with a LinearLayout. After typing 'LinearLayout' and selecting the autocomplete suggestion, several attributes were auto-generated. The instructor then completed the layout tag and immediately got an error. The error disappeared only after a specific attribute was added. Walk through what happened: what did the autocomplete generate, what error appeared, and exactly what resolved it?",
+          "type": "mcq",
+          "difficulty": "hard",
+          "tags": ["Android Application Development", "LinearLayout", "XML Attributes"],
+          "options": [
+            { "id": "a", "text": "Autocomplete generated layout_width, layout_height, and padding. An error appeared because padding must be set before child elements are added. The error resolved when the padding attribute was set to '0dp'." },
+            { "id": "b", "text": "Autocomplete generated layout_width, layout_height, and other standard attributes. An error appeared because LinearLayout requires the 'orientation' attribute but it was not auto-generated. The error resolved once android:orientation was manually typed and set to either 'vertical' or 'horizontal'." },
+            { "id": "c", "text": "Autocomplete generated layout_width, layout_height, and orientation. An error appeared because the default orientation value was empty. The error resolved when orientation was set to 'vertical' (since the default empty string is invalid)." },
+            { "id": "d", "text": "Autocomplete generated all required attributes including orientation. The error appeared because the ConstraintLayout tag was not fully deleted before typing LinearLayout, leaving orphaned attribute code. The error resolved after the orphaned code was manually deleted." }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "After selecting LinearLayout from autocomplete, the layout_width, layout_height, and other standard attributes were filled in. However, LinearLayout requires the 'orientation' attribute to know which direction to lay out its children. Since orientation was not auto-generated, the layout showed an error. Once android:orientation was typed and set to 'vertical' or 'horizontal', the error disappeared.",
+          "hints": [
+            "The instructor said 'we are still getting an error' after completing the LinearLayout.",
+            "The error was related to LinearLayout not knowing which direction to use.",
+            "Typing 'orientation' and selecting from the suggestion list resolved it."
+          ]
+        },
+        {
+          "id": "Section-5-C-24",
+          "question": "A student has a login screen with a Button. The Button's text attribute is set to 'Login'. The student wants to change the font to Poppins and make the text bold. They search in the attributes panel and find 'fontFamily'. They type 'poppins' into the fontFamily field. Then they search for 'bold' but cannot find a 'bold' attribute. They try 'textBold' which also does not exist. What is the correct attribute name to apply bold style, and what value should the student enter?",
+          "type": "mcq",
+          "difficulty": "hard",
+          "tags": ["Android Application Development", "XML Attributes", "Text Styling"],
+          "options": [
+            { "id": "a", "text": "The correct attribute is 'android:fontWeight'. The student should set the value to '700', which is the numeric weight representing bold in the Android type system." },
+            { "id": "b", "text": "The correct attribute is 'android:textStyle'. The student should type 'textStyle' in the attributes panel and set its value to 'bold'. This attribute controls stylistic formatting of text such as bold and italic." },
+            { "id": "c", "text": "The correct attribute is 'android:typefaceStyle'. The student should set it to 'BOLD' (uppercase) because Android's type system uses uppercase constants for type styles in XML." },
+            { "id": "d", "text": "The correct attribute is 'android:letterSpacing'. Setting it to a negative value in the range of -0.05 to -0.1 makes the characters appear visually thicker and is the standard way to simulate bold on Android." }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "The attribute for making text bold in Android XML is 'textStyle'. The student should search for 'textStyle' (not 'bold' or 'textBold') and set its value to 'bold'. The instructor applied this to the login Button in the same session when configuring text styling.",
+          "hints": [
+            "The attribute name combines 'text' and 'style'.",
+            "The instructor mentioned textStyle was available alongside textSize.",
+            "Its value for bold is simply the word 'bold'."
+          ]
+        },
+        {
+          "id": "Section-5-C-25",
+          "question": "After the login screen design was complete and all components were in place, the instructor attached the button's above constraint to the bottom of the password EditText. If a student forgets this constraint and instead only sets the button's top constraint to the top of the screen (parent top), but the password EditText is positioned roughly in the middle of the screen using ConstraintLayout, what would the visual result be on the design canvas?",
+          "type": "mcq",
+          "difficulty": "hard",
+          "tags": ["Android Application Development", "ConstraintLayout", "Login Screen"],
+          "options": [
+            { "id": "a", "text": "The button would appear directly below the password field because ConstraintLayout automatically stacks vertically adjacent components without explicit constraints. The missing constraint would only be noticeable on very large screens." },
+            { "id": "b", "text": "The button would appear at the very top of the screen (or very close to it), overlapping the logo and title elements, because it is constrained to the parent's top edge rather than to the bottom of the password field." },
+            { "id": "c", "text": "The button would disappear entirely from the design canvas because ConstraintLayout removes any component that has a constraint conflict — constraining to both a parent edge and a sibling simultaneously is treated as a fatal layout error." },
+            { "id": "d", "text": "The button would appear at the exact vertical center of the screen because ConstraintLayout defaults all components to the 50% vertical bias position when no sibling constraint is provided. The horizontal position would also shift to the center." }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "In ConstraintLayout, if a component's top constraint is connected to the parent's top rather than to the bottom of the preceding field, it will render near the top of the screen, independent of where the password field is. The button should be connected to the bottom of the password EditText to follow it in the visual hierarchy.",
+          "hints": [
+            "A constraint to parent top means 'position relative to the screen top'.",
+            "The button should follow the password field, not the screen edge.",
+            "Wrong constraint anchors cause elements to jump to unexpected positions."
+          ]
+        },
+        {
+          "id": "Section-5-C-26",
+          "question": "You are reviewing the project structure and notice that in the manifests folder there is only one file: AndroidManifest.xml. A student asks: 'If this is such an important file that acts as a blueprint of the entire app, and every activity must be registered in it, what would happen if someone accidentally deleted this file from the project?' Based on the instructor's statement about the importance of this file, which answer best captures the consequence?",
+          "type": "mcq",
+          "difficulty": "hard",
+          "tags": ["Android Application Development", "AndroidManifest", "Project Structure"],
+          "options": [
+            { "id": "a", "text": "Nothing significant would happen immediately. Android Studio can regenerate the AndroidManifest.xml automatically from the activity files using the 'Sync Project with Gradle Files' option. The file is essentially a cache of information derived from the Kotlin source files." },
+            { "id": "b", "text": "The project would fail to build and the app could not be installed or run on any device. The instructor specifically stated that without this file, 'you are not able to create any placements into Android Studio.' It is one of the most important files in the project and cannot be replaced by any other file." },
+            { "id": "c", "text": "Only the launcher activity designation would be lost. The app would still build and run, but Android would randomly pick one of the declared activities to launch first. All other app functionality would remain intact." },
+            { "id": "d", "text": "The app would build successfully but would run in a restricted mode where only the first activity in alphabetical order among all .kt files could be launched. The remaining activities would be inaccessible until the manifest was restored." }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "The instructor stated: 'Without this, you are not able to create any placements into Android Studio. This is one of the most important files into our Android Studio.' The AndroidManifest.xml is not regenerated automatically — it is a hand-maintained blueprint that the build system requires.",
+          "hints": [
+            "The instructor used the word 'blueprint' — remove the blueprint and construction fails.",
+            "The instructor said 'one of the most important file'.",
+            "The instructor said 'without this, you are not able to create any placements'."
+          ]
+        },
+        {
+          "id": "Section-5-C-27",
+          "question": "A student asks: 'In LinearLayout, if I set orientation to vertical and I add 10 TextView elements with wrap_content for both width and height, but the combined height of all 10 TextViews exceeds the screen height — what happens? Will some TextViews be cut off, will they scroll, or will they overlap?' Based on the four layout types introduced in Episode 3 and the behaviors discussed, what is the correct answer?",
+          "type": "mcq",
+          "difficulty": "hard",
+          "tags": ["Android Application Development", "LinearLayout", "ScrollViewLayout"],
+          "options": [
+            { "id": "a", "text": "The TextViews will overlap each other because LinearLayout re-stacks elements from the top when they run out of vertical space, creating a cascading overlap effect from the bottom of the screen upward." },
+            { "id": "b", "text": "LinearLayout will automatically scroll when content overflows, because 'vertical' orientation activates a built-in scroll mode. No extra configuration is needed — all 10 TextViews will be accessible by scrolling." },
+            { "id": "c", "text": "The TextViews that extend beyond the screen boundary will simply be clipped off — they will not scroll, and they will not overlap. LinearLayout has no built-in scroll behavior. To make overflowing vertical content scrollable, the LinearLayout would need to be wrapped inside a ScrollViewLayout, which is one of the four layout types introduced in this episode." },
+            { "id": "d", "text": "LinearLayout dynamically resizes the TextViews to fit the screen height. If 10 TextViews with wrap_content exceeds the screen, Android reduces each TextView's height proportionally so all 10 fit, using a behavior called 'automatic height compression'." }
+          ],
+          "correctAnswers": ["c"],
+          "explanation": "LinearLayout does not scroll by default. Elements that extend beyond the screen are clipped and invisible. To enable scrolling for overflowing vertical content, you wrap the LinearLayout inside a ScrollViewLayout — which is specifically one of the four layout types introduced in Episode 3 for this purpose.",
+          "hints": [
+            "LinearLayout is unidirectional — it places elements but does not scroll them.",
+            "The four layouts include ScrollViewLayout specifically for scrollable content.",
+            "Fixed boundaries in Android clip overflow; they do not scroll unless a scroll container is used."
+          ]
+        },
+        {
+          "id": "Section-5-C-28",
+          "question": "When the developer ran the login app after moving the intent-filter to LoginScreen, the app crashed a second time. To investigate, they opened Logcat and searched for 'FATAL EXCEPTION'. They found this block with 'Caused by: java.lang.NullPointerException' and a reference to 'LoginScreen.kt:14'. The instructor demonstrated clicking the blue link to navigate to line 14, where they saw red squiggly lines under 'R.id.min'. Without fully explaining the cause, the instructor quickly made a fix and the app ran correctly. Based on the context, which of the following best describes what likely caused the NullPointerException at LoginScreen.kt:14 and how the quick fix resolved it?",
+          "type": "mcq",
+          "difficulty": "hard",
+          "tags": ["Android Application Development", "Debugging", "NullPointerException"],
+          "options": [
+            { "id": "a", "text": "R.id.min referred to a resource ID that was deleted from the layout file. When the code tried to find a view with that ID using findViewById(), it returned null. The fix was to remove the invalid findViewbyId call or correct the ID to match an existing view, resolving the NullPointerException." },
+            { "id": "b", "text": "R.id.min referred to a missing internet permission. The manifest did not have INTERNET permission declared, so the network call at line 14 returned null. Adding <uses-permission android:name='android.permission.INTERNET' /> to the manifest fixed it." },
+            { "id": "c", "text": "R.id.min was an auto-generated ID from a Gradle dependency that was out of date. Clicking Sync Project with Gradle Files rebuilt the R class and the NullPointerException was resolved automatically without any code change." },
+            { "id": "d", "text": "R.id.min referred to a layout file in the drawable folder that had been accidentally renamed. The fix was to rename the drawable back to its original name to make the resource reference valid again." }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "The red squiggly lines under 'R.id.min' indicated an invalid or non-existent resource ID. When the Kotlin code tried to call findViewById(R.id.min), it could not find a view with that ID in the current layout, returning null. Using the null reference caused the NullPointerException. The instructor's quick fix corrected or removed the invalid reference.",
+          "hints": [
+            "NullPointerException means something expected to be non-null was null.",
+            "R.id. references a view by its ID — if the ID doesn't exist, it returns null.",
+            "The red squiggly line directly under 'R.id.min' confirmed the ID was unresolved."
+          ]
+        },
+        {
+          "id": "Section-5-C-29",
+          "question": "You are designing a login screen and have exactly five components to place: an ImageView (logo), a TextView (title 'Login'), a username EditText, a password EditText, and a login Button. You must connect them in the correct vertical order using ConstraintLayout constraints, applying the correct top margins. List the correct vertical order from top to bottom and the correct top constraint anchor for each component except the first one.",
+          "type": "mcq",
+          "difficulty": "hard",
+          "tags": ["Android Application Development", "ConstraintLayout", "Login Screen Design"],
+          "options": [
+            { "id": "a", "text": "Top to bottom order: ImageView → Button → username EditText → password EditText → TextView. Each component constrains its top to the parent's top, with increasing margin values to create spacing. The Button is placed second because it defines the primary interaction on the screen." },
+            { "id": "b", "text": "Top to bottom order: ImageView → TextView → username EditText → password EditText → Button. The TextView's top constraint connects to the bottom of the ImageView; the username EditText's top connects to the bottom of the TextView; the password EditText's top connects to the bottom of the username EditText; and the Button's top constraint connects to the bottom of the password EditText." },
+            { "id": "c", "text": "Top to bottom order: TextView → ImageView → username EditText → password EditText → Button. In Android login screen design convention, the title always appears at the very top before the logo to attract the user's attention to the app name first." },
+            { "id": "d", "text": "Top to bottom order: ImageView → TextView → password EditText → username EditText → Button. The password field is placed above the username field in modern security best practices to reduce credential phishing by making username entry more deliberate." }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "The correct order from top to bottom is: ImageView (logo) → TextView (title) → username EditText → password EditText → Button. Each component's top constraint is anchored to the bottom of the element immediately above it, forming a vertical chain.",
+          "hints": [
+            "The logo (ImageView) sits at the top with the largest margin from the screen edge.",
+            "The title follows the logo, then the two input fields, then the button.",
+            "Each constraint goes from the current element's top to the previous element's bottom."
+          ]
+        },
+        {
+          "id": "Section-5-C-30",
+          "question": "A developer is working on the login screen and wants to set the hint on the password EditText's hint attribute to 'Enter your password'. They already set the username EditText hint to 'Enter your username'. They copy the username EditText and paste it. The pasted element has hint='Enter your username'. The developer updates the hint to 'Enter your password'. They also change the ID. What critical constraint issue must still be resolved before this component is correctly positioned, and what exact reconnection is needed?",
+          "type": "mcq",
+          "difficulty": "hard",
+          "tags": ["Android Application Development", "EditText", "ConstraintLayout"],
+          "options": [
+            { "id": "a", "text": "The pasted password EditText still has its bottom constraint connected to the screen's bottom edge, which would pull it to the bottom half of the screen. The fix is to delete the bottom constraint and leave the EditText with only a top constraint pointing to the bottom of the username EditText." },
+            { "id": "b", "text": "The pasted password EditText inherits the username EditText's constraints — meaning its top is connected to the same anchors as the username EditText, which would cause both to overlap at the same position. The fix is to delete all inherited constraints from the password EditText and then create a new top constraint from the password EditText's top edge to the bottom edge of the username EditText." },
+            { "id": "c", "text": "The copy-paste operation only duplicates visual properties, not constraints. The pasted password EditText has no constraints at all and will appear at position (0,0) on the screen. The fix is to add constraints from scratch: left to parent left, right to parent right, and top to the bottom of the username EditText." },
+            { "id": "d", "text": "No constraint issue arises from copy-paste in ConstraintLayout. ConstraintLayout automatically offsets pasted elements by 8dp to the right and 8dp down from the original, creating a visible separation. The only fix needed is to set the top bias of the new element to align it below the username field." }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "When copy-pasting in ConstraintLayout, all constraints are duplicated. The password EditText would inherit the exact same constraint anchors as the username EditText, causing both to overlap. The fix is to delete those inherited constraints from the password EditText and create a fresh top constraint from its top edge to the bottom of the username EditText.",
+          "hints": [
+            "Copy-paste duplicates everything, including constraints.",
+            "The instructor said 'the constraints, whatever we fix for username is also copied'.",
+            "After deleting the old constraints, reconnect the password field's top to the username field's bottom."
+          ]
+        },
+        {
+          "id": "Section-5-C-31",
+          "question": "In Episode 3, the instructor described four layout types and said the class would 'work only with these four layouts'. A student wants to know: on what technical basis are these four layouts categorized as distinct from each other — is it their file type, their rendering engine, the kinds of child components they accept, or something else? Choose the most accurate answer based on what was taught.",
+          "type": "mcq",
+          "difficulty": "hard",
+          "tags": ["Android Application Development", "Layouts", "Layout Comparison"],
+          "options": [
+            { "id": "a", "text": "The four layouts are distinct based on the types of components they accept. ConstraintLayout only accepts views with explicit dimension attributes, LinearLayout only accepts views with wrap_content, RelativeLayout only accepts views with fixed dp values, and ScrollViewLayout only accepts a single direct child component." },
+            { "id": "b", "text": "The four layouts are distinct based on how they place and arrange their child elements on the screen. ConstraintLayout places elements relative to each other and the parent using constraints; LinearLayout places elements in a single direction (vertical or horizontal); RelativeLayout places elements relative to parent or sibling positions; ScrollViewLayout enables scrollable content." },
+            { "id": "c", "text": "The four layouts are distinct based on the programming language used to work with them. ConstraintLayout is configured primarily through drag-and-drop in the design view, LinearLayout through XML only, RelativeLayout through Kotlin code only, and ScrollViewLayout through a special JSON configuration file." },
+            { "id": "d", "text": "The four layouts are distinct based on their performance characteristics. ConstraintLayout is fastest for complex UIs, LinearLayout is fastest for simple lists, RelativeLayout is used when memory is constrained, and ScrollViewLayout is used only when the device screen is smaller than 5 inches." }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "The instructor stated that layouts 'are different on how they place attributes (elements)'. Each layout has a different strategy for positioning and arranging its children. ConstraintLayout uses constraint anchors, LinearLayout uses a single direction, RelativeLayout uses relative positioning, and ScrollViewLayout enables scrolling.",
+          "hints": [
+            "The instructor said 'they are different on how they place attributes'.",
+            "Think about positioning strategy, not file type or language.",
+            "Each layout has a unique method of arranging children."
+          ]
+        },
+        {
+          "id": "Section-5-C-32",
+          "question": "A developer notices that after copying the intent-filter block from MainActivity and pasting it inside the LoginScreen activity definition, there is still a leftover self-closing slash in the LoginScreen activity tag that needs to be removed. What exactly is the structural problem caused by leaving that slash, and why must it be removed for the intent-filter to be valid?",
+          "type": "mcq",
+          "difficulty": "hard",
+          "tags": ["Android Application Development", "AndroidManifest", "XML Structure"],
+          "options": [
+            { "id": "a", "text": "The slash is a syntax choice that Android Studio accepts in either form. Leaving it does not cause any error. The intent-filter will work correctly whether the activity tag is self-closing or open/close. This is a purely cosmetic XML formatting difference." },
+            { "id": "b", "text": "A self-closing tag (ending with />) tells the XML parser that the element has no children and is complete at that point. If the intent-filter is then placed after the />, it appears outside the activity element rather than inside it, which makes the XML structurally invalid. The slash must be removed and a proper closing </activity> tag added so the intent-filter can exist as a child element between the opening and closing activity tags." },
+            { "id": "c", "text": "The slash must be removed because Android's manifest parser treats the slash character as an escape sequence in activity tag definitions. Leaving it in would cause all attribute values after it to be interpreted as escaped strings, corrupting the intent-filter's action and category values." },
+            { "id": "d", "text": "Leaving the self-closing slash is only a problem in API levels below 21. For modern API levels (21+), Android Studio's XML parser automatically expands a self-closing tag to accept child elements when intent-filter content is pasted inside it. No manual fix is needed." }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "In XML, a self-closing tag ending with /> means the element has no children and is terminated. If you paste the intent-filter content after the />, the parser sees it as outside the activity element entirely, making the XML invalid. You must remove the / from the tag and add a separate </activity> closing tag so the intent-filter can be a true child element nested between the opening and closing activity tags.",
+          "hints": [
+            "'/>' means 'this element is done, it has no children'.",
+            "The instructor explicitly said 'I have to remove this slash'.",
+            "After removing the slash, a closing </activity> tag must be added."
+          ]
+        },
+        {
+          "id": "Section-5-C-33",
+          "question": "A developer sets layout_width='wrap_content' and layout_height='wrap_content' on a Button inside a LinearLayout. The Button's text is 'Login'. The developer then changes the text to 'Submit Your Login Request For Processing'. How does the Button's size change, and how does this behavior differ from what would happen if layout_width='200dp' was set instead?",
+          "type": "mcq",
+          "difficulty": "hard",
+          "tags": ["Android Application Development", "WrapContent", "Button"],
+          "options": [
+            { "id": "a", "text": "With wrap_content: the button stays the same size as with 'Login' because Android normalizes button widths to a minimum standard size for touch targets. With 200dp: the button shows all the text on one line because 200dp is always wide enough for any text in Android." },
+            { "id": "b", "text": "With wrap_content: the Button automatically grows wider (and possibly taller if the text wraps) to accommodate the longer text 'Submit Your Login Request For Processing', occupying exactly the space its content needs. With 200dp: the text may overflow or wrap within that fixed boundary, and if the button's height is also fixed, overflowing text gets clipped and becomes invisible." },
+            { "id": "c", "text": "With wrap_content: the Button shrinks when the text is longer because wrap_content minimizes the component to its smallest possible size. With 200dp: the button displays all the text correctly because fixed dp values automatically scale the font down to fit the available space." },
+            { "id": "d", "text": "Both wrap_content and 200dp produce the same visual result because Android's Button component has a built-in text-overflow mechanism that adjusts font size and line breaks regardless of the width attribute. The difference only manifests on API levels below 18." }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "With wrap_content, the Button expands to fit whatever text is inside — longer text makes it wider or taller. With a fixed 200dp width, the Button is locked to that size and longer text may wrap, overflow, or be clipped. This directly reflects the episode's teaching: fixed dp creates rigid boundaries while wrap_content adapts to content.",
+          "hints": [
+            "wrap_content always adapts to the content size.",
+            "Fixed dp is a rigid boundary — content that overflows is invisible.",
+            "This is the exact same behavior demonstrated with TextView in Episode 3."
+          ]
+        },
+        {
+          "id": "Section-5-C-34",
+          "question": "During the class session, the instructor stopped the currently running app before starting the LinearLayout demonstration in Episode 3. The process for stopping the app and closing the emulator panel involved multiple specific steps. What was the exact sequence described for stopping the app and minimizing the emulator panel?",
+          "type": "mcq",
+          "difficulty": "hard",
+          "tags": ["Android Application Development", "Android Studio", "Emulator"],
+          "options": [
+            { "id": "a", "text": "Click the Kill Process button in the Run panel, then use Alt+F4 (or Cmd+W) to close the emulator window entirely. The emulator must be fully closed before switching to a new layout demonstration to prevent memory conflicts." },
+            { "id": "b", "text": "Click the Stop button to stop the app, then click the cross (X) button to close the emulator panel prompt, select 'No' on the confirmation dialog, and then minimize the panel. The running device was not fully closed — it was just hidden from view." },
+            { "id": "c", "text": "Press Shift+F10 to stop the current run configuration, then click the Run panel's minimize button. The emulator does not need any further interaction after Shift+F10 stops the app." },
+            { "id": "d", "text": "Right-click the running process in the Run tab and select 'Terminate', then drag the emulator window to a second monitor or behind the Android Studio window. The emulator should always remain open between sessions to preserve its state." }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "The instructor said: 'click on stop button, again click on cross button like this, select No and minimise it, perfect.' The stop button stops the app, the cross button triggers a close prompt, selecting 'No' keeps the emulator alive (just closes the session), and then the panel is minimized.",
+          "hints": [
+            "The episode starts with this exact sequence.",
+            "The instructor said 'select no' at the dialog prompt.",
+            "The emulator was not closed — it was minimized."
+          ]
+        },
+        {
+          "id": "Section-5-C-35",
+          "question": "You are explaining to a new developer the difference between an attribute and a child element in Android XML, using the AndroidManifest.xml activity definition as an example. The new developer points to android:name='.LoginScreen' and android:exported='true' and asks 'what are these?' Then they point to the intent-filter block nested between the activity tags and ask 'what is this?' How do you explain the structural difference between the two using the analogy and explanation from class?",
+          "type": "mcq",
+          "difficulty": "hard",
+          "tags": ["Android Application Development", "AndroidManifest", "XML Concepts"],
+          "options": [
+            { "id": "a", "text": "android:name and android:exported are child elements just like intent-filter — they all sit inside the activity container. The difference is that short children go on the same line as the opening tag for readability, while longer children like intent-filter are placed on separate indented lines. This is purely a formatting convention." },
+            { "id": "b", "text": "android:name and android:exported are attributes of the <activity> element — they directly describe properties that belong to the activity itself (its class name and whether it can be accessed externally) and sit inside the opening angle brackets of the tag. The intent-filter is a child element — it is a separate XML element with its own functionality that is nested inside the activity but is not a direct property of it. The instructor noted that 'intent-filter belongs not to this activity, it is a separate functionality' and therefore must go between the opening <activity> and </activity> tags." },
+            { "id": "c", "text": "android:name is an attribute but android:exported is a child element because 'exported' controls external system behavior (not just the activity's internal properties). The intent-filter is also a child element. Distinguishing attributes from child elements depends on whether the property affects the Android system or only the app itself." },
+            { "id": "d", "text": "All three — android:name, android:exported, and intent-filter — are considered attributes in Android XML. The difference is that short attributes appear inline and complex attributes like intent-filter use block syntax. The instructor's 'inside the tag' terminology refers to being part of the same component declaration, regardless of whether they use inline or block syntax." }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "android:name and android:exported are attributes — they go inside the angle brackets of the opening <activity> tag and describe properties of the activity itself. intent-filter is a child element — it has its own XML tags and functionality separate from the activity's own properties. The instructor said: 'intent-filter is not belongs to this activity. It is a separate functionality. So...we have to put it inside these activity' (between the tags).",
+          "hints": [
+            "Attributes sit inside the opening tag's angle brackets: <activity android:name='...'/>.",
+            "Child elements sit between the opening and closing tags.",
+            "The instructor said intent-filter 'is a separate functionality'."
+          ]
+        },
+        {
+          "id": "Section-5-C-36",
+          "question": "A student is creating a horizontal menu bar in Android Studio with exactly four icon buttons. They use a LinearLayout with orientation='horizontal'. They notice that each button has wrap_content for both width and height, and the four buttons fit neatly in a row taking up about 80% of the screen width. However, when they test on a phone with a slightly smaller screen, the fourth button is pushed off-screen. What concept introduced in Episode 3 would help resolve this, and what change would make all four buttons distribute evenly regardless of screen width?",
+          "type": "mcq",
+          "difficulty": "hard",
+          "tags": ["Android Application Development", "LinearLayout", "Responsive Design"],
+          "options": [
+            { "id": "a", "text": "Use wrap_content for all four buttons — this is already the correct setting and the overflow issue is a device-specific emulator bug. Physical devices render wrap_content identically across all screen sizes." },
+            { "id": "b", "text": "Change each button's layout_width to match_parent. This makes all four buttons stretch to fill the full screen width simultaneously, and Android distributes the space automatically among all children with match_parent in a horizontal LinearLayout." },
+            { "id": "c", "text": "Change each button's layout_width to '0dp' and use layout_weight='1' on each button. This tells LinearLayout to divide the available horizontal space equally among all four buttons, making them each take exactly 25% of the screen width regardless of screen size. This is the layout_weight concept that allows responsive distribution within LinearLayout." },
+            { "id": "d", "text": "Switch from LinearLayout to ScrollViewLayout with orientation='horizontal'. ScrollViewLayout allows the four buttons to extend beyond the screen width and the user can scroll horizontally to access the fourth button. This is the standard solution for horizontal overflow in Android menus." }
+          ],
+          "correctAnswers": ["c"],
+          "explanation": "Setting layout_width='0dp' and layout_weight='1' on each button in a horizontal LinearLayout instructs the layout to distribute all available horizontal space equally among the weighted children. This makes all four buttons responsive to any screen width. While layout_weight was not the explicit focus of this episode, the alternatives involving match_parent for all four children would cause each to try to take the full width — showing why weight-based distribution is the proper solution.",
+          "hints": [
+            "wrap_content sizes to content — not to container space distribution.",
+            "match_parent on multiple siblings in LinearLayout causes conflicts.",
+            "layout_weight distributes remaining space proportionally among children."
+          ]
+        },
+        {
+          "id": "Section-5-C-37",
+          "question": "Looking at the overall learning progression across all three episodes of Section 5, a student summarizes: 'Episode 1 is about building a screen, Episode 2 is about making the right screen launch first and debugging crashes, Episode 3 is about understanding how layouts position components differently.' The student then asks: 'What connects all three episodes — is there a single underlying principle?' Choose the answer that best captures the connecting theme across all three episodes.",
+          "type": "mcq",
+          "difficulty": "hard",
+          "tags": ["Android Application Development", "Course Progression", "Android Concepts"],
+          "options": [
+            { "id": "a", "text": "The connecting theme is Kotlin programming. Episode 1 uses Kotlin to bind views, Episode 2 uses Kotlin to navigate between activities, and Episode 3 uses Kotlin to set layout parameters at runtime. All three are fundamentally Kotlin-driven, with XML being secondary." },
+            { "id": "b", "text": "The connecting theme is understanding and controlling how your app presents itself to the user through XML structure and Android's manifest system — Episode 1 teaches how to design a screen's visual structure using XML components and attributes; Episode 2 teaches how the AndroidManifest.xml controls the app's entry point and how to diagnose failures using Logcat; Episode 3 teaches how different XML layout containers control the spatial arrangement of those components. Together, they form a complete picture of building, launching, and structuring the UI layer of an Android app." },
+            { "id": "c", "text": "The connecting theme is the emulator. Episode 1 designs a screen for the emulator, Episode 2 debugs the emulator launch sequence, and Episode 3 tests layout types on the emulator. All decisions in Android development are made in response to how the emulator renders output." },
+            { "id": "d", "text": "The connecting theme is fixing errors. Episode 1 shows how to fix wrong dimensions, Episode 2 shows how to fix the wrong launcher activity and NullPointerException crashes, and Episode 3 shows how to fix the missing orientation error. Android development as taught in these episodes is primarily a process of writing and then correcting mistakes." }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "All three episodes build the UI layer of an Android app layer by layer: designing screens with components and attributes (Ep1), understanding the manifest system controlling app launch and debugging via Logcat (Ep2), and understanding how layouts control spatial arrangement of those components (Ep3). The connecting thread is Android's XML-based UI system and the manifest infrastructure that supports it.",
+          "hints": [
+            "Think about what all three episodes have in common structurally.",
+            "XML and the Android app structure appear in all three.",
+            "The progression goes: design → launch → organize."
+          ]
+        },
+        {
+          "id": "Section-5-C-38",
+          "question": "The instructor in Episode 2 used the analogy of a building blueprint when explaining the AndroidManifest.xml. They said: 'Imagine that you are an engineer and you are going to design a building. To design that building, you got a blueprint. The blueprint shows you each and everything very clearly.' If we extend this analogy to the full project structure, what would the individual activity .xml layout files (like activity_login_screen.xml) be equivalent to in the blueprint analogy, and what would the Kotlin .kt files be equivalent to?",
+          "type": "mcq",
+          "difficulty": "hard",
+          "tags": ["Android Application Development", "AndroidManifest", "Project Concepts"],
+          "options": [
+            { "id": "a", "text": "The .xml layout files would be the building's electrical wiring plans (because XML controls component connections), and the .kt files would be the architectural floor plan (because Kotlin defines the overall structure of each room/activity)." },
+            { "id": "b", "text": "The .xml layout files would be the detailed interior design drawings of each individual room — showing what furniture (components) goes where, their sizes, and their visual arrangement. The .kt files would be the operational manual or the contractual rules governing how each room functions — how doors open, what happens when a light switch is flipped, and how rooms connect to each other at runtime." },
+            { "id": "c", "text": "The .xml layout files and .kt files are both equivalent to different sections of the same blueprint. They are not distinguishable in the analogy because the blueprint represents the entire codebase as one unified document." },
+            { "id": "d", "text": "The .xml layout files would be the building permit (which must be approved before construction), and the .kt files would be the actual construction materials (bricks, cement). Without approved XML permits, Kotlin construction cannot proceed." }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "Extending the blueprint analogy: .xml layout files define the visual structure of each screen (like interior design floor plans for each room — what components appear and where). .kt files define the logic and behavior of each screen (like the operational rules — what happens when a button is pressed, how screens navigate to each other). The manifest is the master blueprint tying all rooms together.",
+          "hints": [
+            "XML controls what things look like and where they are positioned.",
+            "Kotlin controls what things do — the behavior and logic.",
+            "Think of design vs. function."
+          ]
+        },
+        {
+          "id": "Section-5-C-39",
+          "question": "A developer has a TextView inside a LinearLayout. They set layout_width='wrap_content' and layout_height='wrap_content'. The text is 'Hello!'. They see the TextView is small and tightly wrapped around the text. Now they copy the entire LinearLayout block (not just the TextView) and paste it to create a second block. The second TextView still says 'Hello!' and is the same size. A colleague says: 'wrap_content makes both TextViews identical in size because they have identical text — this means the size is hardcoded indirectly.' Is the colleague correct? What does wrap_content actually guarantee?",
+          "type": "mcq",
+          "difficulty": "hard",
+          "tags": ["Android Application Development", "WrapContent", "LinearLayout"],
+          "options": [
+            { "id": "a", "text": "The colleague is correct. wrap_content for identical text strings always results in exactly the same pixel dimensions. This means wrap_content effectively hardcodes size to match the current text string, and any future text changes will break the layout." },
+            { "id": "b", "text": "The colleague is incorrect. wrap_content does not hardcode any size. It guarantees that the component will always be exactly as large as its current content requires at render time — no more and no less. If the text of either TextView changes, each one independently resizes to fit its own new content. The two TextViews happen to be the same size right now only because they have the same content, not because wrap_content makes them equal." },
+            { "id": "c", "text": "The colleague is partially correct. wrap_content hardcodes size to the widest possible text that could be placed in the field — Android pre-calculates the maximum text length for the given font and reserves that space. This prevents layout shifting but does waste some space on shorter strings." },
+            { "id": "d", "text": "The colleague is correct in effect but wrong in mechanism. wrap_content inherits the size from the first render and caches it permanently. Any text change after the first render requires manually refreshing the layout by calling invalidate() on the view, otherwise the old size persists." }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "The colleague is wrong. wrap_content does not hardcode any size — it dynamically sizes the component to its content at every render. Both TextViews are currently the same size purely because they contain identical text. If one's text were changed, it would independently resize to fit its new content. This is the exact adaptive nature of wrap_content taught in Episode 3.",
+          "hints": [
+            "wrap_content is dynamic — it adapts at render time.",
+            "Size equality for two wrap_content views is coincidental when content is the same.",
+            "The moment text changes, the size adjusts independently."
+          ]
+        },
+        {
+          "id": "Section-5-C-40",
+          "question": "Across all three Section 5 episodes, the instructor dealt with several situations where a design or code change was made but the result was not yet correct and required iteration. Give the most complete description of all three iterative situations — one from Episode 1, one from Episode 2, and one from Episode 3 — where the instructor tried a value or approach, found it insufficient, and had to adjust to reach the final correct result.",
+          "type": "mcq",
+          "difficulty": "hard",
+          "tags": ["Android Application Development", "Iterative Development", "Section 5 Overview"],
+          "options": [
+            { "id": "a", "text": "Episode 1: The EditText width was first set to 274dp (wrong — that is the Button width) and then corrected to 310dp. Episode 2: The exported attribute was first set to 'false' and then corrected to 'true'. Episode 3: The LinearLayout was first set to match_parent and then corrected to wrap_content for its children." },
+            { "id": "b", "text": "Episode 1: The Button's textSize was first 30dp (too large), then 15dp (not right), and finally settled at 20dp. The ImageView's top margin was first 30dp (not enough), then 80dp, and finally 100dp. Episode 2: The intent-filter was first placed as an attribute inside the opening activity tag (structurally wrong), then correctly moved inside as a child element between opening and closing activity tags. Episode 3: The LinearLayout gave an error without orientation; after adding orientation='vertical', the error was resolved — but then the TextView width was first 100dp (causing overflow and wasted space), leading to the introduction of wrap_content as the correct solution." },
+            { "id": "c", "text": "Episode 1: The hint attribute on EditText was first set to 'text' (wrong attribute) and then corrected to 'hint'. Episode 2: The Logcat keyword was first searched as 'ERROR' (brought too many results) and then refined to 'FATAL EXCEPTION'. Episode 3: The orientation was first set to 'horizontal' and then corrected to 'vertical' after the layout looked wrong." },
+            { "id": "d", "text": "Episode 1: The Button was first placed above the password field and then moved below. Episode 2: The manifest file was first opened from the wrong folder and then correctly opened from the manifests folder. Episode 3: The LinearLayout was first placed on the wrong screen (LoginScreen) and then correctly moved to activity_main_two.xml." }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "Episode 1 had two clear iterative situations: textSize (30dp → 15dp → 20dp) and ImageView margin (30dp → 80dp → 100dp), plus the title TextView margin (20dp → 40dp). Episode 2 had the structural XML iteration where the activity tag had to be changed from self-closing to open/close to accommodate intent-filter as a child element. Episode 3 had the LinearLayout orientation error fix and the demonstration that 100dp fixed width causes problems — which led to the wrap_content lesson.",
+          "hints": [
+            "Look for moments in each episode where the instructor said 'not enough', 'that's too much', or 'let me fix this'.",
+            "Episode 1: two or more values were tried before settling.",
+            "Episode 3: the 100dp width on TextView directly set up the wrap_content demonstration."
+          ]
+        }
+      ]
+    }
+  ]
+}

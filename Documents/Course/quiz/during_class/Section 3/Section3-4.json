@@ -1,0 +1,91 @@
+{
+  "items": [
+    {
+      "name": "Section3-4",
+      "difficulty": "medium",
+      "content": [
+        {
+          "id": "Section-3-4-1",
+          "question": "Which editor mode allows direct XML editing (code) rather than the design surface?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android"],
+          "options": [
+            { "id": "a", "text": "Design Only" },
+            { "id": "b", "text": "Code View" },
+            { "id": "c", "text": "Blueprint Only" },
+            { "id": "d", "text": "Run Mode" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "Code View is used to manually edit XML tags, which the instructor uses to copy/paste and change attributes directly.",
+          "hints": ["Where you type XML", "Opposite of Design View", "Manual edits"]
+        },
+        {
+          "id": "Section-3-4-2",
+          "question": "What happens if you delete mandatory attributes from a tag and run the app?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["Android Application Development", "Basics of Android"],
+          "options": [
+            { "id": "a", "text": "App may crash on launch" },
+          
+            { "id": "b", "text": "App will always run faster" },
+            { "id": "c", "text": "Android Studio will auto-fill them" },
+            { "id": "d", "text": "Nothing will change" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "Mandatory attributes like layout_width and layout_height must be present; removing them causes the app to crash when rendering the layout.",
+          "hints": ["Missing size attributes", "Build-time critical", "Leads to crash"]
+        },
+        {
+          "id": "Section-3-4-3",
+          "question": "Which button does the instructor click to build and run the app on the emulator?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android"],
+          "options": [
+            { "id": "a", "text": "Save button" },
+            { "id": "b", "text": "Play/Run button (green triangle)" },
+            { "id": "c", "text": "Stop button" },
+            { "id": "d", "text": "Help button" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "The Play (Run) button compiles, installs, and launches the app on the selected emulator or device.",
+          "hints": ["Green triangle", "Starts emulator", "Runs project"]
+        },
+        {
+          "id": "Section-3-4-4",
+          "question": "Review: In Section 1, which activity template did we commonly start with when creating projects?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["Android Application Development", "Basics of Android"],
+          "options": [
+            { "id": "a", "text": "Empty Views Activity" },
+            { "id": "b", "text": "Game Activity" },
+            { "id": "c", "text": "Analytics Activity" },
+            { "id": "d", "text": "Web Activity" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "We used the Empty Views Activity as a clean starting point for manual UI design in earlier lessons.",
+          "hints": ["Clean starting template", "No predefined UI", "Section 1 review"]
+        },
+        {
+          "id": "Section-3-4-5",
+          "question": "Why might a developer hide the design surface (blue screen) according to the transcript?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android"],
+          "options": [
+            { "id": "a", "text": "Because it's illegal to view it" },
+            { "id": "b", "text": "Because it can be visually irritating and blocking when coding" },
+            { "id": "c", "text": "Because it causes the code to delete" },
+            { "id": "d", "text": "To make the emulator crash" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "The instructor hides the design surface to reduce distraction and focus on XML code during editing.",
+          "hints": ["Design vs Code views", "Personal preference", "UI clarity"]
+        }
+      ]
+    }
+  ]
+}

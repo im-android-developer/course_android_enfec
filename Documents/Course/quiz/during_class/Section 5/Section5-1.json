@@ -1,0 +1,410 @@
+{
+  "items": [
+    {
+      "name": "Section5-1",
+      "difficulty": "medium",
+      "content": [
+        {
+          "id": "Section-5-1-1",
+          "question": "What is the purpose of an EditText component in an Android layout?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "UI Components"],
+          "options": [
+            { "id": "a", "text": "To display static text on the screen" },
+            { "id": "b", "text": "To allow the user to input data such as username or password" },
+            { "id": "c", "text": "To display an image" },
+            { "id": "d", "text": "To navigate between screens" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "EditText is a component that allows the user to input data into designated fields, such as a username or password on a login screen.",
+          "hints": [
+            "Think about fields where a user types something.",
+            "It is similar to a text box in a form.",
+            "Username and password fields use this component."
+          ]
+        },
+        {
+          "id": "Section-5-1-2",
+          "question": "What are the dimensions (width × height) used for the EditText fields on the login screen?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "UI Components"],
+          "options": [
+            { "id": "a", "text": "274 dp × 74 dp" },
+            { "id": "b", "text": "200 dp × 50 dp" },
+            { "id": "c", "text": "310 dp × 42 dp" },
+            { "id": "d", "text": "320 dp × 60 dp" }
+          ],
+          "correctAnswers": ["c"],
+          "explanation": "The EditText fields for the login screen were set to a width of 310 dp and a height of 42 dp.",
+          "hints": [
+            "The width is greater than 300 dp.",
+            "The height is less than 50 dp.",
+            "Width is 310, height is 42."
+          ]
+        },
+        {
+          "id": "Section-5-1-3",
+          "question": "Which XML attribute is used to display placeholder text inside an EditText before the user types anything?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "XML Attributes"],
+          "options": [
+            { "id": "a", "text": "text" },
+            { "id": "b", "text": "placeholder" },
+            { "id": "c", "text": "hint" },
+            { "id": "d", "text": "label" }
+          ],
+          "correctAnswers": ["c"],
+          "explanation": "The 'hint' attribute is used to display placeholder text inside an EditText, guiding the user on what to enter (e.g., 'Enter your username').",
+          "hints": [
+            "It gives the user a clue about what to type.",
+            "The text disappears when the user starts typing.",
+            "The attribute name is a synonym for a clue or tip."
+          ]
+        },
+        {
+          "id": "Section-5-1-4",
+          "question": "What hint text was set for the username EditText?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "UI Components"],
+          "options": [
+            { "id": "a", "text": "Type username here" },
+            { "id": "b", "text": "Enter your username" },
+            { "id": "c", "text": "Your name" },
+            { "id": "d", "text": "Username" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "The hint attribute for the username EditText was set to 'Enter your username'.",
+          "hints": [
+            "It starts with 'Enter'.",
+            "It references 'username'.",
+            "It is a full instructional phrase."
+          ]
+        },
+        {
+          "id": "Section-5-1-5",
+          "question": "What is the easiest way to add the password EditText after the username EditText is already created?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "UI Components"],
+          "options": [
+            { "id": "a", "text": "Drag a new EditText from the palette" },
+            { "id": "b", "text": "Type all the XML code manually" },
+            { "id": "c", "text": "Copy and paste the username EditText, then update the hint" },
+            { "id": "d", "text": "Delete the username EditText and start fresh" }
+          ],
+          "correctAnswers": ["c"],
+          "explanation": "The instructor copied and pasted the username EditText element and then updated the hint attribute to 'Enter your password', saving time by reusing the same dimensions and structure.",
+          "hints": [
+            "It involves reusing the existing component.",
+            "Keyboard shortcuts Ctrl+C or Cmd+C are involved.",
+            "Only the hint text needs to change."
+          ]
+        },
+        {
+          "id": "Section-5-1-6",
+          "question": "After copying and pasting the username EditText to create the password EditText, what must you do with the constraints?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["Android Application Development", "ConstraintLayout"],
+          "options": [
+            { "id": "a", "text": "Keep them as they are, since they were copied correctly" },
+            { "id": "b", "text": "Delete the old constraints and reconnect the above constraint to the bottom of the username field" },
+            { "id": "c", "text": "Add a new constraint pointing to the top of the screen" },
+            { "id": "d", "text": "Constraints are not needed for EditText components" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "When you copy-paste an element, its constraints are duplicated. You must delete the copied constraints and then attach the top constraint of the password field to the bottom of the username field to position it correctly.",
+          "hints": [
+            "Copied constraints may point to wrong positions.",
+            "The password field should appear below the username field.",
+            "You need to re-connect the above constraint."
+          ]
+        },
+        {
+          "id": "Section-5-1-7",
+          "question": "Which component is used in Android to create a clickable button that the user can tap?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "UI Components"],
+          "options": [
+            { "id": "a", "text": "EditText" },
+            { "id": "b", "text": "ImageView" },
+            { "id": "c", "text": "Button" },
+            { "id": "d", "text": "TextView" }
+          ],
+          "correctAnswers": ["c"],
+          "explanation": "The Button component is used to create a clickable element. Other variants like ImageButton, MediaButton, RadioButton, and ToggleButton exist but the plain Button is used for standard click actions.",
+          "hints": [
+            "It is a standard interactive element.",
+            "The instructor mentioned its name is exactly its function.",
+            "It is different from RadioButton and ImageButton."
+          ]
+        },
+        {
+          "id": "Section-5-1-8",
+          "question": "What are the dimensions (width × height) used for the login Button on the login screen?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["Android Application Development", "UI Components"],
+          "options": [
+            { "id": "a", "text": "310 dp × 42 dp" },
+            { "id": "b", "text": "100 dp × 50 dp" },
+            { "id": "c", "text": "274 dp × 74 dp" },
+            { "id": "d", "text": "200 dp × 60 dp" }
+          ],
+          "correctAnswers": ["c"],
+          "explanation": "The Button for the login screen was set to a width of 274 dp and a height of 74 dp.",
+          "hints": [
+            "The width is less than 300 dp.",
+            "The height is 74 dp.",
+            "Width is 274, height is 74."
+          ]
+        },
+        {
+          "id": "Section-5-1-9",
+          "question": "Which XML attribute is used to set the visible label text on a Button?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "XML Attributes"],
+          "options": [
+            { "id": "a", "text": "hint" },
+            { "id": "b", "text": "label" },
+            { "id": "c", "text": "title" },
+            { "id": "d", "text": "text" }
+          ],
+          "correctAnswers": ["d"],
+          "explanation": "The 'text' attribute is used to set the visible label on a Button, just as it is used on a TextView.",
+          "hints": [
+            "It is the same attribute used in TextView.",
+            "It controls the words displayed on the button.",
+            "The attribute shares its name with the content it controls."
+          ]
+        },
+        {
+          "id": "Section-5-1-10",
+          "question": "What text was set on the login Button?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "UI Components"],
+          "options": [
+            { "id": "a", "text": "Submit" },
+            { "id": "b", "text": "Enter" },
+            { "id": "c", "text": "Login" },
+            { "id": "d", "text": "Sign In" }
+          ],
+          "correctAnswers": ["c"],
+          "explanation": "The text attribute of the login Button was set to 'Login'.",
+          "hints": [
+            "It matches the name of the screen.",
+            "It is a single word.",
+            "It describes the action of signing into an account."
+          ]
+        },
+        {
+          "id": "Section-5-1-11",
+          "question": "Which attribute is used to control the text size in a Button (or any text-bearing component)?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "XML Attributes"],
+          "options": [
+            { "id": "a", "text": "fontSize" },
+            { "id": "b", "text": "textSize" },
+            { "id": "c", "text": "size" },
+            { "id": "d", "text": "textScale" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "The 'textSize' attribute controls the size of the text in a Button, TextView, or any component that displays text, just like it does in a TextView.",
+          "hints": [
+            "The same attribute works in both Button and TextView.",
+            "It is a compound attribute name.",
+            "It starts with 'text'."
+          ]
+        },
+        {
+          "id": "Section-5-1-12",
+          "question": "What final textSize value was accepted for the login button text?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["Android Application Development", "XML Attributes"],
+          "options": [
+            { "id": "a", "text": "30 dp" },
+            { "id": "b", "text": "15 dp" },
+            { "id": "c", "text": "20 dp" },
+            { "id": "d", "text": "10 dp" }
+          ],
+          "correctAnswers": ["c"],
+          "explanation": "After trying 30 dp (too large) and 15 dp, the instructor settled on 20 dp as a suitable text size for the login button.",
+          "hints": [
+            "30 dp was said to be too large.",
+            "It is between 15 and 25.",
+            "The value is an even number."
+          ]
+        },
+        {
+          "id": "Section-5-1-13",
+          "question": "Which attribute is used to make button text bold?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "XML Attributes"],
+          "options": [
+            { "id": "a", "text": "textWeight" },
+            { "id": "b", "text": "fontWeight" },
+            { "id": "c", "text": "textStyle" },
+            { "id": "d", "text": "bold" }
+          ],
+          "correctAnswers": ["c"],
+          "explanation": "The 'textStyle' attribute allows you to make text bold (or italic, etc.) in components like Button and TextView.",
+          "hints": [
+            "It controls the stylistic formatting of text.",
+            "It is a compound word starting with 'text'.",
+            "Bold is one of its possible values."
+          ]
+        },
+        {
+          "id": "Section-5-1-14",
+          "question": "Which font family was applied to the login button's text?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["Android Application Development", "XML Attributes"],
+          "options": [
+            { "id": "a", "text": "Roboto" },
+            { "id": "b", "text": "Sans-serif" },
+            { "id": "c", "text": "Poppins" },
+            { "id": "d", "text": "Lato" }
+          ],
+          "correctAnswers": ["c"],
+          "explanation": "The instructor applied the Poppins font family to the login button text using the fontFamily attribute.",
+          "hints": [
+            "It is a popular modern font used in UI design.",
+            "It starts with the letter P.",
+            "It is a Google Font commonly used in Android apps."
+          ]
+        },
+        {
+          "id": "Section-5-1-15",
+          "question": "Which attribute is used to set a font family on a text component in Android XML?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "XML Attributes"],
+          "options": [
+            { "id": "a", "text": "font" },
+            { "id": "b", "text": "typeface" },
+            { "id": "c", "text": "fontFamily" },
+            { "id": "d", "text": "textFont" }
+          ],
+          "correctAnswers": ["c"],
+          "explanation": "The 'fontFamily' attribute is used to set the font family of a text component such as Button or TextView.",
+          "hints": [
+            "The attribute is a compound of two words.",
+            "It directly names what it controls.",
+            "It starts with 'font'."
+          ]
+        },
+        {
+          "id": "Section-5-1-16",
+          "question": "Which attribute controls the top spacing between a component and its parent or neighboring element?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "XML Attributes"],
+          "options": [
+            { "id": "a", "text": "padding" },
+            { "id": "b", "text": "layoutMarginTop" },
+            { "id": "c", "text": "topSpacing" },
+            { "id": "d", "text": "marginAbove" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "The 'layout_marginTop' attribute (referred to as 'layoutMarginTop') is used to add a top margin to a component, controlling the spacing from above.",
+          "hints": [
+            "It is a layout-related attribute.",
+            "It is specifically for the top direction.",
+            "You find it by typing 'top' in the attributes panel."
+          ]
+        },
+        {
+          "id": "Section-5-1-17",
+          "question": "What top margin was finally set for the ImageView on the login screen?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["Android Application Development", "Layout Design"],
+          "options": [
+            { "id": "a", "text": "30 dp" },
+            { "id": "b", "text": "80 dp" },
+            { "id": "c", "text": "100 dp" },
+            { "id": "d", "text": "50 dp" }
+          ],
+          "correctAnswers": ["c"],
+          "explanation": "The instructor first tried 30 dp, then 80 dp, and finally settled on 100 dp as the top margin for the ImageView.",
+          "hints": [
+            "30 dp and 80 dp were both tried first.",
+            "It is a round number greater than 80.",
+            "It is exactly 100."
+          ]
+        },
+        {
+          "id": "Section-5-1-18",
+          "question": "What top margin value was applied to the login TextView (the 'Login' title text) on the login screen?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["Android Application Development", "Layout Design"],
+          "options": [
+            { "id": "a", "text": "20 dp" },
+            { "id": "b", "text": "40 dp" },
+            { "id": "c", "text": "60 dp" },
+            { "id": "d", "text": "80 dp" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "After trying 20 dp, the instructor increased the top margin of the login title TextView to 40 dp.",
+          "hints": [
+            "20 dp was tried first but increased.",
+            "It is double of 20.",
+            "The final value is 40."
+          ]
+        },
+        {
+          "id": "Section-5-1-19",
+          "question": "What is the visual sign that margins are missing or too small on the login screen design?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["Android Application Development", "Layout Design"],
+          "options": [
+            { "id": "a", "text": "The screen turns red" },
+            { "id": "b", "text": "Components overlap each other" },
+            { "id": "c", "text": "The design looks different from the intended reference — elements are not spaced correctly" },
+            { "id": "d", "text": "The app fails to compile" }
+          ],
+          "correctAnswers": ["c"],
+          "explanation": "When you zoom out the design, it looks slightly different from the reference UI because margins are missing. Adding layout margins corrects the spacing to match the design.",
+          "hints": [
+            "It is a visual difference, not a compile error.",
+            "Zooming out reveals the problem.",
+            "The issue is about spacing between elements."
+          ]
+        },
+        {
+          "id": "Section-5-1-20",
+          "question": "What milestone does completing the login screen XML design represent?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Layout Design"],
+          "options": [
+            { "id": "a", "text": "Completing the Kotlin logic for the app" },
+            { "id": "b", "text": "Publishing the app to the Play Store" },
+            { "id": "c", "text": "Successfully designing the first screen in Android Studio using XML" },
+            { "id": "d", "text": "Connecting the app to a database" }
+          ],
+          "correctAnswers": ["c"],
+          "explanation": "After placing all components (ImageView, TextViews, EditTexts, Button) with the correct dimensions, hints, and margins, the instructor congratulates students on developing their first screen in Android Studio using XML.",
+          "hints": [
+            "It is the very first screen designed.",
+            "The praise was given at the very end of the episode.",
+            "It involves XML design, not Kotlin coding."
+          ]
+        }
+      ]
+    }
+  ]
+}

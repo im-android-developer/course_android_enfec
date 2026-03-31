@@ -1,0 +1,170 @@
+{
+  "items": [
+    {
+      "name": "Section1-5",
+      "difficulty": "easy",
+      "content": [
+        {
+          "id": "Section-1-5-1",
+          "question": "How many types of software are generally available?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android app development"],
+          "options": [
+            { "id": "a", "text": "One type" },
+            { "id": "b", "text": "Two types" },
+            { "id": "c", "text": "Three types" },
+            { "id": "d", "text": "Many types" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "There are generally two types of software: operating system software and application software. Each serves a different purpose in the overall functioning of a digital device.",
+          "hints": ["One manages the system, one performs tasks", "Think about Windows/Android and Word/WhatsApp", "Two main categories"]
+        },
+        {
+          "id": "Section-1-5-2",
+          "question": "What is the primary responsibility of operating system software?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android app development"],
+          "options": [
+            { "id": "a", "text": "To perform user tasks like chatting and file sharing" },
+            { "id": "b", "text": "To manage system components and ensure smooth operations" },
+            { "id": "c", "text": "To store user files and documents" },
+            { "id": "d", "text": "To connect to the internet" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "Operating system software is responsible for managing the system components and ensuring smooth operations. It controls the overall functioning of the device, manages resources, and provides a platform for other applications to run.",
+          "hints": ["It's the core software", "Manages all components", "Controls the device"]
+        },
+        {
+          "id": "Section-1-5-3",
+          "question": "Give an example of operating system software mentioned in the course.",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android app development"],
+          "options": [
+            { "id": "a", "text": "WhatsApp" },
+            { "id": "b", "text": "Instagram" },
+            { "id": "c", "text": "Android" },
+            { "id": "d", "text": "Calculator" }
+          ],
+          "correctAnswers": ["c"],
+          "explanation": "Android is a mobile operating system software. It controls the lifecycle of all components in an Android device and manages how applications interact with the hardware.",
+          "hints": ["It controls the phone", "It's not an app you download", "It's the foundation software"]
+        },
+        {
+          "id": "Section-1-5-4",
+          "question": "What is application software used for?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android app development"],
+          "options": [
+            { "id": "a", "text": "To manage hardware components" },
+            { "id": "b", "text": "To help perform specific tasks for users" },
+            { "id": "c", "text": "To control the entire device" },
+            { "id": "d", "text": "To replace the operating system" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "Application software helps to perform specific tasks for users. It includes programs like chatting applications, file sharing, calculators, and database management systems that fulfill specific user needs.",
+          "hints": ["It serves users directly", "It performs specific functions", "Apps you download and use"]
+        },
+        {
+          "id": "Section-1-5-5",
+          "question": "Which of the following is an example of application software?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android app development"],
+          "options": [
+            { "id": "a", "text": "Windows Operating System" },
+            { "id": "b", "text": "Mac OS" },
+            { "id": "c", "text": "WhatsApp" },
+            { "id": "d", "text": "iOS" }
+          ],
+          "correctAnswers": ["c"],
+          "explanation": "WhatsApp is an example of application software. It's an app that users download and use to perform the specific task of messaging. Operating systems like Windows, Mac OS, and iOS are examples of operating system software.",
+          "hints": ["It's an app you download", "It's not an operating system", "It performs a specific user task"]
+        },
+        {
+          "id": "Section-1-5-6",
+          "question": "What are some examples of application software mentioned in the course?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android app development"],
+          "options": [
+            { "id": "a", "text": "Only WhatsApp" },
+            { "id": "b", "text": "WhatsApp, Instagram, calculators, and ERP systems" },
+            { "id": "c", "text": "Only Instagram" },
+            { "id": "d", "text": "Only calculators" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "The course mentions several examples of application software: WhatsApp (messaging), Instagram (social media), calculators (calculations), and ERP systems (business management). These are all applications that help users perform specific tasks.",
+          "hints": ["There are multiple examples", "They all perform specific tasks", "WhatsApp, Instagram and more"]
+        },
+        {
+          "id": "Section-1-5-7",
+          "question": "How does Android act as a bridge in the software ecosystem?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android app development"],
+          "options": [
+            { "id": "a", "text": "It prevents applications from running" },
+            { "id": "b", "text": "It allows software (like WhatsApp) to communicate with hardware safely and efficiently" },
+            { "id": "c", "text": "It eliminates the need for applications" },
+            { "id": "d", "text": "It only manages hardware" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "Android acts as a bridge between application software and hardware. When you use WhatsApp on an Android phone, Android manages the communication, allowing WhatsApp to safely and efficiently access hardware resources like the camera, microphone, storage, and network.",
+          "hints": ["It's an intermediary", "It manages communication", "Between apps and hardware"]
+        },
+        {
+          "id": "Section-1-5-8",
+          "question": "True or False: Application software can directly access hardware without an operating system.",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android app development"],
+          "options": [
+            { "id": "a", "text": "True" },
+            { "id": "b", "text": "False" },
+            { "id": "c", "text": "Sometimes possible" },
+            { "id": "d", "text": "In rare cases" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "False. Application software cannot directly access hardware without an operating system. The operating system acts as an essential intermediary, controlling how applications access and use hardware resources safely and efficiently.",
+          "hints": ["The OS is a manager", "Apps depend on the OS", "Direct access is not allowed"]
+        },
+        {
+          "id": "Section-1-5-9",
+          "question": "What does the Android operating system control?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android app development"],
+          "options": [
+            { "id": "a", "text": "Only the device screen" },
+            { "id": "b", "text": "Only application software" },
+            { "id": "c", "text": "The lifecycle of all components in an Android device" },
+            { "id": "d", "text": "Nothing; it just runs applications" }
+          ],
+          "correctAnswers": ["c"],
+          "explanation": "Android controls the lifecycle of all components in an Android device. This includes managing hardware resources, controlling when applications start and stop, managing permissions, handling memory, and ensuring secure communication between applications and hardware.",
+          "hints": ["It has overall control", "It manages components", "It controls lifecycle and resources"]
+        },
+        {
+          "id": "Section-1-5-10",
+          "question": "Why is the relationship between operating system and application software important to understand?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android app development"],
+          "options": [
+            { "id": "a", "text": "It's not important" },
+            { "id": "b", "text": "Because Android developers need to understand how apps interact with the Android OS and hardware" },
+            { "id": "c", "text": "Only hardware engineers need to know this" },
+            { "id": "d", "text": "It's only for system administrators" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "Understanding the relationship between operating systems and application software is crucial for Android developers. It helps them understand how their applications will run on Android devices, how to properly access device resources, and how to ensure their apps work efficiently and safely.",
+          "hints": ["Developers build apps", "Apps run on Android", "Need to understand the connection"]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,410 @@
+{
+  "items": [
+    {
+      "name": "Section6-3",
+      "difficulty": "medium",
+      "content": [
+        {
+          "id": "Section-6-3-1",
+          "question": "What is the first step the instructor recommends when building any new screen in Android?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "UI Design Workflow"],
+          "options": [
+            { "id": "a", "text": "Add all the components (ImageView, TextView, EditText) first, then decide which layout to wrap them in." },
+            { "id": "b", "text": "Start by selecting and configuring the layout container first, then place components inside it." },
+            { "id": "c", "text": "Write the Kotlin Activity code first to define what actions the screen will perform, then build the XML." },
+            { "id": "d", "text": "Create all string resources in strings.xml before placing any component on the screen." }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "The instructor emphasized: 'Always start with the layout first.' The layout is the container — placing components without first defining the layout is like placing furniture without building the room. This was the design principle demonstrated at the start of the login screen build.",
+          "hints": [
+            "The instructor said 'start from the layout'.",
+            "The layout is the container that holds all other components.",
+            "Components are added after the layout is defined."
+          ]
+        },
+        {
+          "id": "Section-6-3-2",
+          "question": "In the login screen built in Episode 3, the instructor set an ImageView with specific dimensions and a top margin to position it below the status bar area. The ImageView used layout_gravity='center_horizontal' to center it. A student attempts the same but sets layout_width='match_parent' on the ImageView hoping it will fill the full width. They then add layout_gravity='center_horizontal' but notice it has no effect. Explain precisely why layout_gravity fails to center the ImageView when layout_width='match_parent' is set.",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["Android Application Development", "LinearLayout", "layout_gravity"],
+          "options": [
+            { "id": "a", "text": "layout_gravity='center_horizontal' is a property specific to ConstraintLayout and has no effect in LinearLayout. The student must use a center constraint instead." },
+            { "id": "b", "text": "When layout_width='match_parent' is set, the ImageView already expands to fill the entire horizontal space of the LinearLayout parent. There is no empty space left on either side for the component to shift into. layout_gravity works by moving the component within its parent's remaining space — but if there is no remaining space because the component fills the full width, there is nowhere to move, so layout_gravity has no visible effect." },
+            { "id": "c", "text": "layout_gravity requires both directions to be specified simultaneously. Writing layout_gravity='center_horizontal' alone is invalid XML; you must write layout_gravity='center' to activate centering on any axis." },
+            { "id": "d", "text": "match_parent and layout_gravity are mutually exclusive attributes. When both are defined on the same component, Android ignores layout_gravity and throws a lint warning about the conflicting attributes." }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "The instructor explained: 'layout_gravity only works if you have provided the width as wrap_content. If you have provided match_parent, then there is no space left to shift — so it won't work.' layout_gravity centers the component by placing it in the middle of leftover horizontal space, but match_parent consumes all available space leaving none.",
+          "hints": [
+            "match_parent means the component fills the full available width.",
+            "If the component fills the full width, there is no space to shift horizontally.",
+            "layout_gravity needs wrap_content to have room to center the component."
+          ]
+        },
+        {
+          "id": "Section-6-3-3",
+          "question": "You are placing a TextView in a LinearLayout with orientation='vertical'. The TextView has layout_width='match_parent' and layout_height='wrap_content'. You want the text 'Login Screen' to appear horizontally centered within the TextView's full-width box. You first try android:layout_gravity='center_horizontal' — it has no effect. What is the correct attribute to use and why does it work in this case where layout_gravity failed?",
+          "type": "mcq",
+          "difficulty": "hard",
+          "tags": ["Android Application Development", "LinearLayout", "gravity", "layout_gravity"],
+          "options": [
+            { "id": "a", "text": "Use android:textAlignment='center' on the TextView. This is Android's official modern replacement for both gravity and layout_gravity for text centering from API 17 onwards. both gravity and layout_gravity are deprecated." },
+            { "id": "b", "text": "Use android:gravity='center_horizontal' on the TextView. While layout_gravity controls where the component sits within its parent (and fails when match_parent is set), gravity controls where the CONTENT (the text) sits within the component's own bounds. The component is already full-width due to match_parent, so the text has room to be centered within the component itself." },
+            { "id": "c", "text": "Use android:paddingLeft and android:paddingRight equally (e.g., both set to 100dp) to push the text visually toward the center. This simulates centering without using gravity attributes." },
+            { "id": "d", "text": "Both gravity and layout_gravity will fail when match_parent is set. The only working solution is to change layout_width from match_parent to a specific dp value wide enough to hold the text, then apply layout_gravity='center_horizontal'." }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "The instructor specifically said: 'Since we have provided match_parent here, we cannot use layout_gravity. Instead we use gravity — because gravity aligns the content (the text) inside the component. The component fills the full width, giving the text room to align to center within it.' gravity targets internal content alignment; layout_gravity targets the component's position within its parent.",
+          "hints": [
+            "gravity = aligns the CONTENT inside the component.",
+            "layout_gravity = aligns the COMPONENT within its parent.",
+            "A match_parent component has internal space for its text to align, so gravity works."
+          ]
+        },
+        {
+          "id": "Section-6-3-4",
+          "question": "What are the two specific width and height values used for the ImageView in the login screen built during Episode 3?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "ImageView", "Login Screen"],
+          "options": [
+            { "id": "a", "text": "layout_width='match_parent', layout_height='200dp'" },
+            { "id": "b", "text": "layout_width='124dp', layout_height='118dp'" },
+            { "id": "c", "text": "layout_width='wrap_content', layout_height='wrap_content'" },
+            { "id": "d", "text": "layout_width='100dp', layout_height='100dp'" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "The instructor set the ImageView dimensions to layout_width='124dp' and layout_height='118dp' for the avatar image in the login screen. These specific values were chosen by the instructor based on the design.",
+          "hints": [
+            "The width was 124dp and the height was 118dp.",
+            "These are specific dp values, not match_parent or wrap_content.",
+            "The instructor stated these exact numbers during the demo."
+          ]
+        },
+        {
+          "id": "Section-6-3-5",
+          "question": "The instructor placed an ImageView with layout_marginTop='100dp' near the top of the login screen inside a vertical LinearLayout. Later a TextView was added below it. The instructor then explained 'layout_margin' versus 'layout_marginTop'. If you apply android:layout_margin='10dp' to a component, what exactly happens compared to applying android:layout_marginTop='100dp'?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["Android Application Development", "Margin", "LinearLayout"],
+          "options": [
+            { "id": "a", "text": "android:layout_margin='10dp' applies a 10dp margin only on the top of the component — it is identical to android:layout_marginTop='10dp'. The 'Top' suffix simply makes the code more readable." },
+            { "id": "b", "text": "android:layout_margin='10dp' applies a 10dp external margin from all four directions — top, bottom, left, and right. android:layout_marginTop='100dp' applies a 100dp margin only from the top direction. They differ by scope: generic applies to all sides; specific applies to one." },
+            { "id": "c", "text": "android:layout_margin='10dp' applies margin only between this component and the next sibling component in the LinearLayout. android:layout_marginTop positions the component relative to the screen edge." },
+            { "id": "d", "text": "android:layout_margin='10dp' is a shorthand that applies 2.5dp margin to each of the four sides for a total of 10dp combined margin. layout_marginTop='100dp' is exactly 100dp on the top only." }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "The instructor explained: 'layout_margin applies to all directions — top, bottom, left, and right — while layout_marginTop applies only to the top.' This mirrors the same pattern as padding versus direction-specific padding. It follows the same concept as padding — same attribute family, same directional logic.",
+          "hints": [
+            "The instructor said 'same concept as padding'.",
+            "Generic layout_margin = all four directions.",
+            "Direction-specific layout_marginTop = top only."
+          ]
+        },
+        {
+          "id": "Section-6-3-6",
+          "question": "A developer builds a login screen in LinearLayout. They center the avatar ImageView using layout_gravity='center_horizontal' and it works perfectly. Then they add a TextView below it with layout_width='match_parent' and want the text to be centered too, so they use layout_gravity='center_horizontal' again. But it doesn't work. Identify the exact reason and provide the precise correct solution with attribute name and value.",
+          "type": "mcq",
+          "difficulty": "hard",
+          "tags": ["Android Application Development", "gravity", "layout_gravity", "LinearLayout"],
+          "options": [
+            { "id": "a", "text": "Reason: layout_gravity cannot be applied to a TextView; it only works on ViewGroup containers and ImageView. Solution: wrap the TextView in a FrameLayout and then apply layout_gravity='center_horizontal' to the FrameLayout instead." },
+            { "id": "b", "text": "Reason: The ImageView worked with layout_gravity because its layout_width was '124dp' (wrap_content-like fixed size) — there was space in the row for it to shift horizontally. The TextView has layout_width='match_parent', consuming the full width with no space to shift. Solution: Use android:gravity='center_horizontal' on the TextView instead — this centers the text content within the component's own full-width bounds." },
+            { "id": "c", "text": "Reason: layout_gravity can only be applied to the first component in a LinearLayout. For subsequent components, a different mechanism is needed. Solution: Use android:textGravity='center' — a TextView-specific variant of layout_gravity that works for all positions in the stack." },
+            { "id": "d", "text": "Reason: layout_gravity='center_horizontal' requires the parent LinearLayout to have gravity='center' as well. Without both, the child's centering request is rejected. Solution: Add android:gravity='center_horizontal' to the parent LinearLayout." }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "The instructor explained the exact difference: The ImageView has a fixed width (124dp) smaller than the parent, so layout_gravity can shift it horizontally into the center. The TextView has match_parent, filling the full horizontal space — no room to shift, so layout_gravity is ineffective. The fix is android:gravity='center_horizontal' which centers the text content within the component's already full-width box.",
+          "hints": [
+            "The ImageView's fixed width (124dp) is smaller than the parent — it has room to move.",
+            "The TextView's match_parent leaves no room to move.",
+            "gravity centers content; layout_gravity centers the component itself."
+          ]
+        },
+        {
+          "id": "Section-6-3-7",
+          "question": "What attribute is used to set the color of text inside a TextView in Android XML, and what attribute would be incorrectly used if the developer confuses it with text color?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "TextView", "textColor"],
+          "options": [
+            { "id": "a", "text": "android:foreground sets text color; android:color is the incorrect alternative." },
+            { "id": "b", "text": "android:textColor sets text color; android:background would be incorrectly used if the developer intends text color but applies background color instead." },
+            { "id": "c", "text": "android:fontColor sets text color; android:textStyle is the incorrect alternative." },
+            { "id": "d", "text": "android:colorPrimary sets text color; android:backgroundColor is the incorrect alternative." }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "The instructor said: 'We need to use textColor. Not background — background is different. textColor is for the text color.' android:textColor with a hex value (e.g., #38b6ff) applies the color to the text characters. android:background applies the color to the entire component's background area.",
+          "hints": [
+            "The instructor specifically said 'not background — textColor'.",
+            "textColor targets the color of text characters.",
+            "background targets the component's box background."
+          ]
+        },
+        {
+          "id": "Section-6-3-8",
+          "question": "The instructor placed the TextView for 'Login Screen' with marginTop='40dp' below the ImageView. The preceding ImageView had layout_marginTop='100dp'. A student asks: 'Why use 100dp for the image and only 40dp for the text?' Explain the design reasoning in terms of what these margins control in a vertical LinearLayout.",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["Android Application Development", "Margin", "LinearLayout", "Login Screen Design"],
+          "options": [
+            { "id": "a", "text": "The 100dp margin on the ImageView is to avoid overlapping with the status bar at the top of the screen (creating breathing room from the top). The 40dp margin on the TextView creates a comfortable gap between the ImageView and the title text. Both margins serve spacing purposes but at different positions in the layout stack." },
+            { "id": "b", "text": "100dp is the standard margin for image components in Android Material Design guidelines. 40dp is the standard margin for text components. These are mandatory values that developers must always follow." },
+            { "id": "c", "text": "The margins are interchangeable — the instructor chose these values randomly. In LinearLayout, marginTop controls the component's z-order (depth), not its vertical position. Higher values = deeper behind other elements." },
+            { "id": "d", "text": "100dp on the ImageView reserves space for the navigation drawer that appears from the top. Without 100dp, the drawer would overlap the avatar. The TextView only needs 40dp because it is not adjacent to the drawer area." }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "In a vertical LinearLayout, marginTop on the first component (ImageView) pushes it down from the top of the screen — creating the breathing room from the top edge (and the status bar area). marginTop on subsequent components (TextView) creates the gap between adjacent stacked elements. These are different spacing requirements at different points in the layout.",
+          "hints": [
+            "The ImageView is at the very top — its 100dp margin is from the screen top.",
+            "The TextView's 40dp margin is the gap between it and the ImageView.",
+            "Both control spacing within a vertical stack but at different reference points."
+          ]
+        },
+        {
+          "id": "Section-6-3-9",
+          "question": "In Android XML, what is the fundamental difference between android:gravity and android:layout_gravity? Provide the precise definition of each and identify which component in the login screen used gravity and which used layout_gravity.",
+          "type": "mcq",
+          "difficulty": "hard",
+          "tags": ["Android Application Development", "gravity", "layout_gravity", "LinearLayout"],
+          "options": [
+            { "id": "a", "text": "android:gravity and android:layout_gravity are identical. Both center the component within its parent. The difference is that gravity is for older API levels and layout_gravity is for newer ones." },
+            { "id": "b", "text": "android:gravity aligns the CONTENT inside a component (e.g., where the text sits inside a TextView's box). android:layout_gravity aligns the COMPONENT ITSELF within its parent layout. In the login screen: the ImageView used layout_gravity='center_horizontal' because it needed to be centered in the parent layout (it had a fixed small width). The 'Login Screen' TextView used gravity='center_horizontal' because it had match_parent width and needed its text content to be centered within its own full-width box." },
+            { "id": "c", "text": "android:gravity is used only on images (ImageView, ImageButton) and controls how the image is cropped within the component. android:layout_gravity is used only on text-based components (TextView, EditText) and controls where the text anchor point is set." },
+            { "id": "d", "text": "android:gravity is used in ConstraintLayout to define the position of a component relative to its constraints. android:layout_gravity is used in LinearLayout only and is the LinearLayout-specific version of the same attribute." }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "The instructor said: 'gravity aligns the content inside the component. layout_gravity aligns the component itself within its parent.' The ImageView (124dp wide, smaller than parent) used layout_gravity='center_horizontal' to position itself in the parent. The TextView (match_parent) used gravity='center_horizontal' to center its text within its own full-width boundary.",
+          "hints": [
+            "gravity = where content sits INSIDE the component.",
+            "layout_gravity = where the component sits WITHIN its parent.",
+            "ImageView = layout_gravity (component centering). TextView = gravity (text content centering)."
+          ]
+        },
+        {
+          "id": "Section-6-3-10",
+          "question": "What is the textColor value used for the 'Login Screen' TextView in the login screen design, and what type of color specification system is being used?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "textColor", "Hex Colors"],
+          "options": [
+            { "id": "a", "text": "#FFFFFF in RRGGBB hex — pure white text color." },
+            { "id": "b", "text": "#38b6ff — a hex color code representing a bright blue color for the 'Login Screen' title text." },
+            { "id": "c", "text": "@color/colorPrimary — a reference to the primary theme color from the theme.xml file." },
+            { "id": "d", "text": "#000000 — pure black text on the dark blue-black background." }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "The instructor used android:textColor='#38b6ff' for the 'Login Screen' TextView. This hex color represents a bright cyan-blue color that contrasts well against the dark #05273B background of the LinearLayout.",
+          "hints": [
+            "The instructor specified a hex value for textColor.",
+            "The color visually appeared as bright blue on the dark background.",
+            "The value was #38b6ff — not white, black, or a theme reference."
+          ]
+        },
+        {
+          "id": "Section-6-3-11",
+          "question": "The instructor mentioned that the textColorHint attribute exists in addition to textColor. When exactly would a developer use textColorHint instead of textColor, and on what type of component does it apply?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["Android Application Development", "EditText", "textColorHint"],
+          "options": [
+            { "id": "a", "text": "textColorHint is used on Button components to color the tooltip text that appears when a user long-presses a button. It is not related to EditText or user input fields." },
+            { "id": "b", "text": "textColorHint is used on EditText components to set the color of the hint (placeholder) text that appears when the field is empty. When the user types, the hint disappears and the typed text uses the textColor attribute instead." },
+            { "id": "c", "text": "textColorHint is used on TextView components to create a highlighted version of the text for accessibility. It activates when the user activates the 'highlight hints' accessibility feature on their device." },
+            { "id": "d", "text": "textColorHint applies to any component and sets a secondary text color used when the component is disabled (android:enabled='false'). It replaces textColor when the component is in a disabled state." }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "The instructor mentioned: 'textColorHint is for the hint text in EditText.' When an EditText is empty, the hint text is visible as a placeholder (like 'Enter your email'). textColorHint sets the color of this placeholder text. Once the user starts typing, the hint disappears — typed text uses textColor.",
+          "hints": [
+            "The instructor mentioned this in relation to EditText components.",
+            "Hint text is the placeholder text in an empty input field.",
+            "textColor applies to actual typed content; textColorHint applies to placeholder text."
+          ]
+        },
+        {
+          "id": "Section-6-3-12",
+          "question": "The instructor applied textStyle='bold' and textSize='30dp' to the 'Login Screen' TextView. In Android development, what is the difference between textSize='30dp' and textSize='30sp', and which is generally the better practice for text sizing?",
+          "type": "mcq",
+          "difficulty": "hard",
+          "tags": ["Android Application Development", "TextView", "textSize", "dp vs sp"],
+          "options": [
+            { "id": "a", "text": "dp and sp are completely interchangeable for textSize. Android converts them to the same pixel count at runtime. The 'dp' vs 'sp' distinction is only relevant for layout dimensions (width, height, margin) and has no effect on text." },
+            { "id": "b", "text": "dp (density-independent pixels) scales only with screen pixel density. sp (scale-independent pixels) scales with both screen density AND the user's font size preference in Android Settings → Accessibility. Using sp for textSize respects the user's accessibility settings and is the recommended practice by Google's Android documentation." },
+            { "id": "c", "text": "sp is only for API levels below 21 and was deprecated in favour of dp for text sizing. Modern Android development exclusively uses dp for all dimensions including text size." },
+            { "id": "d", "text": "dp is for text; sp is for margins and padding. The distinction is category-based: text-related attributes accept dp, and layout position attributes accept sp. Using sp for textSize would cause a compilation error." }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "While the instructor used dp in the demo, the technically correct unit for textSize is sp. Scale-independent pixels (sp) respect the user's system font size preference, which is critical for accessibility (e.g., users with low vision who set large system fonts). dp only accounts for screen density. Google recommends sp for all text size values.",
+          "hints": [
+            "sp = scales with both screen density AND user's font size setting.",
+            "dp = scales with screen density only.",
+            "Accessibility requires respecting the user's font size preference → sp is recommended."
+          ]
+        },
+        {
+          "id": "Section-6-3-13",
+          "question": "What is the fontFamily value applied to the 'Login Screen' TextView in the login screen design?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "TextView", "fontFamily"],
+          "options": [
+            { "id": "a", "text": "Roboto Bold" },
+            { "id": "b", "text": "Poppins Medium" },
+            { "id": "c", "text": "Sans-Serif Regular" },
+            { "id": "d", "text": "Montserrat SemiBold" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "The instructor applied fontFamily='poppins medium' to the 'Login Screen' TextView. Poppins is a popular Google Font used in modern Android app designs.",
+          "hints": [
+            "The instructor specified a Google Font for the Login Screen title.",
+            "The font name starts with 'P'.",
+            "Medium weight was specified alongside the font name."
+          ]
+        },
+        {
+          "id": "Section-6-3-14",
+          "question": "The instructor began the login screen build by setting the root LinearLayout's orientation to 'vertical' and background to '#05273B'. A student asks: 'What would happen if we skipped setting the orientation and left it as the default?' Based on Android's default behavior, what would be the default orientation of a LinearLayout, and how would it affect the login screen layout?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["Android Application Development", "LinearLayout", "Orientation"],
+          "options": [
+            { "id": "a", "text": "The default orientation is 'vertical'. Skipping the attribute would have no effect — the login screen would stack elements vertically exactly as intended without needing the explicit setting." },
+            { "id": "b", "text": "The default orientation of LinearLayout is 'horizontal'. If orientation is not specified, all elements (ImageView, TextViews, EditTexts) would be placed side by side in a single horizontal row instead of the intended top-to-bottom stacking. The login screen would look completely broken." },
+            { "id": "c", "text": "Without an orientation attribute, LinearLayout throws a runtime exception because orientation is a required non-optional attribute. The app would crash on launch." },
+            { "id": "d", "text": "The default orientation is 'auto' — LinearLayout detects screen size at runtime and picks horizontal for landscape and vertical for portrait automatically." }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "LinearLayout's default orientation is 'horizontal'. Without explicitly setting orientation='vertical', all children would be placed in a horizontal row. For the login screen with an image, title, and inputs meant to stack vertically, omitting the orientation attribute would produce a broken side-by-side layout.",
+          "hints": [
+            "The default orientation is NOT vertical.",
+            "LinearLayout places children side by side unless vertical is explicitly set.",
+            "For a typical login screen, vertical must be explicitly declared."
+          ]
+        },
+        {
+          "id": "Section-6-3-15",
+          "question": "In the login screen build, why was layout_gravity='center_horizontal' appropriate for the ImageView but NOT appropriate for the 'Login Screen' TextView — even though both are inside the same vertical LinearLayout?",
+          "type": "mcq",
+          "difficulty": "hard",
+          "tags": ["Android Application Development", "gravity", "layout_gravity", "LinearLayout"],
+          "options": [
+            { "id": "a", "text": "layout_gravity is not allowed on non-container components. ImageView is a container (it holds an image drawable), so layout_gravity works. TextView is a pure text display component and only accepts the 'gravity' attribute." },
+            { "id": "b", "text": "The ImageView had a fixed width of 124dp — much narrower than the full parent width. This left horizontal space in the parent for layout_gravity to move the ImageView into the center. The TextView had layout_width='match_parent', filling the entire parent width with no remaining space. layout_gravity needs free horizontal space in the parent to reposition the component — the TextView left none." },
+            { "id": "c", "text": "layout_gravity='center_horizontal' on the ImageView works only because it was first in the LinearLayout. Android applies layout_gravity to the first child only; subsequent components must use gravity instead regardless of their width setting." },
+            { "id": "d", "text": "Both components should have used layout_gravity. The instructor made an error by switching to gravity for the TextView. If both used layout_gravity='center_horizontal', the screen would look identical." }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "The key difference is the width setting. ImageView at 124dp is narrower than the parent — when placed in a LinearLayout, the parent has spare horizontal space on both sides. layout_gravity shifts the ImageView into that center space. The TextView at match_parent expands to fill all horizontal space — there is no spare space left, so layout_gravity cannot shift it anywhere. gravity centers the content (text) within the already-full-width component.",
+          "hints": [
+            "ImageView: 124dp width < parent width → spare horizontal space exists → layout_gravity works.",
+            "TextView: match_parent width = parent width → no spare space → layout_gravity fails.",
+            "It is entirely about available horizontal space."
+          ]
+        },
+        {
+          "id": "Section-6-3-16",
+          "question": "What is the textStyle value applied to the 'Login Screen' TextView title, and what visual effect does it produce?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "TextView", "textStyle"],
+          "options": [
+            { "id": "a", "text": "textStyle='italic' — makes the text slant to the right." },
+            { "id": "b", "text": "textStyle='bold' — makes the text appear heavier and thicker." },
+            { "id": "c", "text": "textStyle='underline' — adds a line underneath the text." },
+            { "id": "d", "text": "textStyle='normal' — uses the default regular weight of the font." }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "The instructor applied textStyle='bold' to the 'Login Screen' TextView to give the title a strong visual presence on the dark background. Bold increases the weight of the font rendering, making the text thicker and more prominent.",
+          "hints": [
+            "The instructor wanted the title text to stand out strongly.",
+            "Bold makes text thicker/heavier.",
+            "The textStyle value used was 'bold'."
+          ]
+        },
+        {
+          "id": "Section-6-3-17",
+          "question": "A developer builds a form in LinearLayout with orientation='vertical'. They add an ImageView (src=@drawable/avatar, layout_width=130dp, layout_height=130dp), then a TextView (text='Please Login', layout_width=wrap_content, layout_height=wrap_content), then an EditText (hint='Email', layout_width=match_parent). They want the ImageView and the 'Please Login' text to both be centered horizontally. Which attributes would they correctly apply to each, given their specific width settings?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["Android Application Development", "gravity", "layout_gravity", "LinearLayout"],
+          "options": [
+            { "id": "a", "text": "ImageView: android:layout_gravity='center_horizontal' (fixed 130dp width → has room to center). TextView: android:layout_gravity='center_horizontal' (wrap_content → also has room to center). Both correctly use layout_gravity because both have width smaller than the parent." },
+            { "id": "b", "text": "ImageView: android:gravity='center_horizontal' (images use gravity). TextView: android:layout_gravity='center_horizontal' (text uses layout_gravity). They use opposite attributes." },
+            { "id": "c", "text": "ImageView: android:gravity='center' (required for ImageView). TextView: android:textAlignment='center'. Using layout_gravity on either would trigger a build error." },
+            { "id": "d", "text": "Both should use android:gravity='center_horizontal'. gravity works for all components regardless of width setting." }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "Both the ImageView (130dp) and the TextView (wrap_content) have widths smaller than the parent LinearLayout. Both have horizontal space remaining in the parent, so layout_gravity='center_horizontal' works for both. layout_gravity fails only when a component has match_parent width — in that case, gravity is needed for text-bearing components. Since the TextView uses wrap_content here, layout_gravity works just fine.",
+          "hints": [
+            "layout_gravity works when the component width is smaller than the parent.",
+            "Both 130dp and wrap_content are smaller than match_parent.",
+            "layout_gravity fails only with match_parent — it is a width issue."
+          ]
+        },
+        {
+          "id": "Section-6-3-18",
+          "question": "The instructor explained that ConstraintLayout does not require gravity or layout_gravity for positioning components. Why is this, and what does ConstraintLayout use instead to achieve equivalent positioning results?",
+          "type": "mcq",
+          "difficulty": "hard",
+          "tags": ["Android Application Development", "ConstraintLayout", "gravity", "layout_gravity"],
+          "options": [
+            { "id": "a", "text": "ConstraintLayout auto-centers all components by default. It uses an internal algorithm that equally distributes components within the available space, replacing the need for any gravity attribute." },
+            { "id": "b", "text": "ConstraintLayout uses constraints — relationships that define a component's position relative to its parent edges and other components. For example, connecting the start and end of a component to the parent's start and end simultaneously achieves horizontal centering without gravity. The constraints system is more flexible and expressive than gravity/layout_gravity for complex layouts." },
+            { "id": "c", "text": "ConstraintLayout exposes its own set of gravity attributes — app:layout_constraintGravity and app:layout_constraintContentGravity — which replace android:gravity and android:layout_gravity. These are functionally identical to the LinearLayout versions but with a ConstraintLayout-specific prefix." },
+            { "id": "d", "text": "ConstraintLayout does support layout_gravity but applies it differently from LinearLayout. In ConstraintLayout, layout_gravity acts as a bias value from 0.0 to 1.0 rather than a named direction." }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "The instructor said: 'In ConstraintLayout, we don't need gravity or layout_gravity — that is because we are using the constraints to position everything.' Constraints attach a component's edges to parent edges or sibling edges, effectively determining position mathematically. To center a component in ConstraintLayout, you constrain both its left and right edges (or top and bottom) symmetrically to the parent.",
+          "hints": [
+            "The instructor said 'we don't need gravity in ConstraintLayout — we use constraints'.",
+            "Constraints connect component edges to parent or sibling edges.",
+            "Centering = symmetric constraints on both sides simultaneously."
+          ]
+        },
+        {
+          "id": "Section-6-3-19",
+          "question": "If a developer sets android:layout_height='wrap_content' on a LinearLayout that contains an ImageView, a TextView, and an EditText, what does this mean for the LinearLayout's height at runtime?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "LinearLayout", "wrap_content", "Layout Sizing"],
+          "options": [
+            { "id": "a", "text": "The LinearLayout height becomes exactly 50dp regardless of child content — wrap_content defaults to 50dp when applied to a root layout." },
+            { "id": "b", "text": "The LinearLayout will shrink to fit exactly the combined height of all its child components plus any margins or padding defined. It will not extend beyond what the children require." },
+            { "id": "c", "text": "wrap_content on a LinearLayout causes all child components to use wrap_content for their own heights as well, overriding any fixed height values they were set with." },
+            { "id": "d", "text": "The LinearLayout will use the height of the tallest child component only. Shorter children are clipped to this height." }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "wrap_content tells a container to size itself to its content. For a vertical LinearLayout, this means its height equals the sum of all child heights plus margins and padding. It will not stretch to fill the screen; it only occupies the space needed by its children.",
+          "hints": [
+            "wrap_content means 'only take the space needed'.",
+            "A vertical LinearLayout with wrap_content height = stacked children total height.",
+            "It does not stretch beyond the content height."
+          ]
+        },
+        {
+          "id": "Section-6-3-20",
+          "question": "The instructor built the login screen step-by-step: LinearLayout (background + orientation) → ImageView (dimensions + marginTop + layout_gravity) → TextView 'Login Screen' (match_parent + textSize + bold + textColor + gravity + fontFamily). This sequential approach reflected a principle. What is that principle and why does it matter practically when building complex screens with many components?",
+          "type": "mcq",
+          "difficulty": "hard",
+          "tags": ["Android Application Development", "UI Design Workflow", "LinearLayout", "Login Screen"],
+          "options": [
+            { "id": "a", "text": "The principle is 'bottom-up development' — always build the last component first and work backward toward the layout container. This ensures that spacing and margin calculations cascade correctly from the bottom of the layout upward. Starting with the layout container first would require redesigning margins after inner components are placed." },
+            { "id": "b", "text": "The principle is 'layout-first, then components.' Setting up the container (LinearLayout with orientation and background) before adding any components ensures the foundational display context is established — the stacking direction and visual environment are set before any component inherits from them. For complex screens, this prevents the chaos of adding components without knowing which layout rules apply, and avoids rework when the container's orientation or size changes all positioned components." },
+            { "id": "c", "text": "The principle is 'outside-in from the compiler.' Android compiles XML files from the outermost tag inward, so placing the layout tag before child components is required by the compiler for technical parsing reasons, not design reasons." },
+            { "id": "d", "text": "The principle is 'code aesthetics.' Building layout first then components makes the XML code easier to read for developers reviewing the file. It is a style convention with no functional impact on the rendered screen." }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "The instructor demonstrated a deliberate build order: 'We will always start with the layout first.' Defining the container first establishes the rules (orientation=vertical, dark background, padding) that all components will inherit and respect. For complex screens, starting with components without a defined container causes frequent rework as component positions are recalculated when the container properties are changed late.",
+          "hints": [
+            "The instructor said 'start from the layout first'.",
+            "The layout defines the rules (stacking direction, background) before child components.",
+            "Components inherit their positioning context from the layout — set the context first."
+          ]
+        }
+      ]
+    }
+  ]
+}

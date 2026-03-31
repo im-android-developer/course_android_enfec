@@ -1,0 +1,210 @@
+{
+  "items": [
+    {
+      "name": "Section4-2",
+      "difficulty": "hard",
+      "content": [
+        {
+          "id": "Section-4-2-1",
+          "question": "Which Activity was created as the login screen design exercise in this episode?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android"],
+          "options": [
+            { "id": "a", "text": "LoginActivity" },
+            { "id": "b", "text": "LoginScreen" },
+            { "id": "c", "text": "AuthActivity" },
+            { "id": "d", "text": "SignInScreen" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "In this episode the new Activity was given the name 'LoginScreen', which generated LoginScreen.kt and activity_login_screen.xml.",
+          "hints": [
+            "The name was typed directly in the Activity Name field.",
+            "It follows the same steps as creating MainActivityTwo.",
+            "The name reflects the screen's purpose: a login screen."
+          ]
+        },
+        {
+          "id": "Section-4-2-2",
+          "question": "Which attribute on the ConstraintLayout is used to set the background color of the entire screen?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android"],
+          "options": [
+            { "id": "a", "text": "android:tint" },
+            { "id": "b", "text": "android:background" },
+            { "id": "c", "text": "android:color" },
+            { "id": "d", "text": "android:fillColor" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "android:background is added to the ConstraintLayout to set the background color of the entire screen layout.",
+          "hints": [
+            "You search this attribute inside the XML editor.",
+            "It is placed on the root layout, not on individual views.",
+            "The attribute is named after what it controls: the background."
+          ]
+        },
+        {
+          "id": "Section-4-2-3",
+          "question": "What value was set for the background attribute on the ConstraintLayout in the login screen?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android"],
+          "options": [
+            { "id": "a", "text": "@color/blue" },
+            { "id": "b", "text": "@color/white" },
+            { "id": "c", "text": "#FFFFFF" },
+            { "id": "d", "text": "@color/background_default" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "The background for the login screen was set to white using @color/white as the value.",
+          "hints": [
+            "The login screen design required a light, clean background.",
+            "The value referenced the color resource named 'white'.",
+            "It uses the @color/ prefix to reference a named color resource."
+          ]
+        },
+        {
+          "id": "Section-4-2-4",
+          "question": "What are the dimensions of the ImageView placed at the top of the login screen?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["Android Application Development", "Basics of Android"],
+          "options": [
+            { "id": "a", "text": "200dp width × 200dp height" },
+            { "id": "b", "text": "300dp width × 300dp height" },
+            { "id": "c", "text": "124dp width × 118dp height" },
+            { "id": "d", "text": "100dp width × 100dp height" }
+          ],
+          "correctAnswers": ["c"],
+          "explanation": "The login screen ImageView is 124dp wide and 118dp tall, taken from the interface mockup provided in the episode.",
+          "hints": [
+            "The dimensions were extracted from a visual mockup.",
+            "The width and height are not equal for this ImageView.",
+            "The width is 124dp and the height is 118dp."
+          ]
+        },
+        {
+          "id": "Section-4-2-5",
+          "question": "In the login screen exercise, the image for the ImageView was not yet imported. What attribute still needs to be added?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android"],
+          "options": [
+            { "id": "a", "text": "android:gravity" },
+            { "id": "b", "text": "android:src" },
+            { "id": "c", "text": "android:background" },
+            { "id": "d", "text": "android:textColor" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "android:src (the source attribute) still needs to be set once the image is imported into the drawable folder, since the image had not been imported in this episode.",
+          "hints": [
+            "This is the mandatory attribute all ImageViews require.",
+            "It points to the image file inside the drawable folder.",
+            "It was left intentionally incomplete, to be finished in the next episode."
+          ]
+        },
+        {
+          "id": "Section-4-2-6",
+          "question": "What is the secondary purpose of the android:background attribute, besides setting a color?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["Android Application Development", "Basics of Android"],
+          "options": [
+            { "id": "a", "text": "It can also control font size" },
+            { "id": "b", "text": "It can also be used to set a background image" },
+            { "id": "c", "text": "It can also animate the layout" },
+            { "id": "d", "text": "It can also make the layout transparent" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "Besides setting a solid background color, android:background can also accept a drawable reference to display an image as the background.",
+          "hints": [
+            "The instructor mentioned this as a preview for a future episode.",
+            "The attribute is versatile: it accepts both colors and drawables.",
+            "Using @drawable/ instead of @color/ switches it to an image."
+          ]
+        },
+        {
+          "id": "Section-4-2-7",
+          "question": "What design principle was used to determine the login screen layout dimensions?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["Android Application Development", "Basics of Android"],
+          "options": [
+            { "id": "a", "text": "The dimensions were guessed by the developer" },
+            { "id": "b", "text": "The dimensions were taken from a visual interface mockup" },
+            { "id": "c", "text": "Default Android Studio dimensions were used" },
+            { "id": "d", "text": "Dimensions were copied from a public GitHub repository" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "All dimensions for the login screen were taken from a pre-designed interface mockup. This reflects real-world practice where developers receive a design to build from.",
+          "hints": [
+            "The instructor referred to a visual reference while building the layout.",
+            "In real development, designs are provided by a designer.",
+            "The exact numbers like 124dp and 118dp came from that design."
+          ]
+        },
+        {
+          "id": "Section-4-2-8",
+          "question": "Why did the instructor close other Activity files during the login screen design exercise?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android"],
+          "options": [
+            { "id": "a", "text": "To prevent Android Studio from crashing" },
+            { "id": "b", "text": "To keep the workspace focused and avoid confusing open tabs" },
+            { "id": "c", "text": "Because only one Activity can be open at a time" },
+            { "id": "d", "text": "To fix a build error caused by multiple open files" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "Closing other Activity files was done for clarity and focus, keeping the workspace organized and avoiding confusion from multiple open tabs.",
+          "hints": [
+            "This is a good development practice, not a technical requirement.",
+            "Having too many files open can be distracting.",
+            "The instructor explicitly said it was for focus."
+          ]
+        },
+        {
+          "id": "Section-4-2-9",
+          "question": "What image was used in the 250dp × 250dp ImageView demonstrated before starting the login screen exercise?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["Android Application Development", "Basics of Android"],
+          "options": [
+            { "id": "a", "text": "@drawable/avatar" },
+            { "id": "b", "text": "@drawable/unnamed" },
+            { "id": "c", "text": "@drawable/ic_launcher_foreground" },
+            { "id": "d", "text": "@drawable/background_image" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "The 250dp × 250dp ImageView used @drawable/unnamed as its src attribute value in the demonstration before the login screen exercise began.",
+          "hints": [
+            "The image had a generic default name from its source.",
+            "The drawable value was @drawable/ followed by that generic name.",
+            "The file had not been renamed and kept its original name: 'unnamed'."
+          ]
+        },
+        {
+          "id": "Section-4-2-10",
+          "question": "Can a ConstraintLayout hold both a TextView and an ImageView on the same screen at the same time?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android"],
+          "options": [
+            { "id": "a", "text": "No, only one view type is allowed per layout" },
+            { "id": "b", "text": "Yes, multiple views of different types can coexist in the same layout" },
+            { "id": "c", "text": "Only if they are nested in a LinearLayout first" },
+            { "id": "d", "text": "Only on devices running Android 10 or higher" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "A ConstraintLayout can hold multiple views including TextViews, ImageViews, Buttons, and others simultaneously, which is what was demonstrated with the login screen design.",
+          "hints": [
+            "The login screen design contains both a text element and an image element.",
+            "ConstraintLayout is designed to hold and position multiple views.",
+            "Different view types can be mixed freely in the same layout."
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,170 @@
+{
+  "items": [
+    {
+      "name": "Section1-2",
+      "difficulty": "easy",
+      "content": [
+        {
+          "id": "Section-1-2-1",
+          "question": "What is an Android application defined as in the course?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android app development"],
+          "options": [
+            { "id": "a", "text": "A single program that runs on Android phones" },
+            { "id": "b", "text": "A collection of packages of working and functional systems that collaborate to deliver specific features" },
+            { "id": "c", "text": "Only the user interface design" },
+            { "id": "d", "text": "Hardware components of a smartphone" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "An Android application is a collection of packages of working and functional systems that collaborate to deliver a specific set of features and user experiences on the Android platform. This means multiple interconnected components work together as one cohesive system.",
+          "hints": ["It involves collaboration of multiple parts", "It's about delivering features and user experiences", "Android applications are not just single programs"]
+        },
+        {
+          "id": "Section-1-2-2",
+          "question": "What are the two main parts that every digital machine has?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android app development"],
+          "options": [
+            { "id": "a", "text": "Input and output devices" },
+            { "id": "b", "text": "Programs and applications" },
+            { "id": "c", "text": "Hardware and software" },
+            { "id": "d", "text": "CPU and RAM only" }
+          ],
+          "correctAnswers": ["c"],
+          "explanation": "Every digital machine has two main parts: hardware (the physical components like CPU, RAM, motherboard, mouse, keyboard) and software (a collection of programs that tells the hardware what to do and how). Both are essential for a machine to function.",
+          "hints": ["One is physical, one is not", "Think of hardware as the body", "Software is like instructions or the brain"]
+        },
+        {
+          "id": "Section-1-2-3",
+          "question": "What analogy is used to describe the relationship between hardware and software?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android app development"],
+          "options": [
+            { "id": "a", "text": "Hardware is like bones, software is like muscles" },
+            { "id": "b", "text": "Hardware is like a human body, software is like the mind" },
+            { "id": "c", "text": "Hardware is like a car, software is like a driver" },
+            { "id": "d", "text": "Hardware is like electricity, software is like water" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "Hardware is compared to a human body (physical components), while software is like the mind (instructions and logic). Without each other, there is nothing to do - just like a body without a mind or a mind without a body cannot function properly.",
+          "hints": ["Think of what makes a human work", "One is physical, one is mental", "Both are needed for functioning"]
+        },
+        {
+          "id": "Section-1-2-4",
+          "question": "Give an example of hardware components mentioned in the course transcript.",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android app development"],
+          "options": [
+            { "id": "a", "text": "Programs and applications" },
+            { "id": "b", "text": "CPU, RAM, motherboard, mouse, keyboard" },
+            { "id": "c", "text": "Operating system and software" },
+            { "id": "d", "text": "Memory storage and databases" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "Hardware components are the physical parts of a digital machine. Examples include CPU (Central Processing Unit), RAM (Random Access Memory), motherboard, mouse, and keyboard. These are tangible components you can touch.",
+          "hints": ["Hardware is physical and tangible", "These are things you can hold or touch", "They work with electricity"]
+        },
+        {
+          "id": "Section-1-2-5",
+          "question": "What does software consist of?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android app development"],
+          "options": [
+            { "id": "a", "text": "Physical electronic components" },
+            { "id": "b", "text": "A collection of programs that tell hardware what to do and how" },
+            { "id": "c", "text": "Only the operating system" },
+            { "id": "d", "text": "Keyboards and monitors" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "Software is a collection of programs that tells the hardware what to do and how to do it. While hardware is physical, software is intangible - it's the instructions, logic, and data that control how the hardware operates.",
+          "hints": ["Software is instructions, not physical", "It controls what hardware does", "It's like the commands you give a machine"]
+        },
+        {
+          "id": "Section-1-2-6",
+          "question": "How did machines evolve from mechanical to digital systems?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android app development"],
+          "options": [
+            { "id": "a", "text": "By adding more components" },
+            { "id": "b", "text": "From requiring physical force to requiring button presses and electricity automation" },
+            { "id": "c", "text": "By making them smaller" },
+            { "id": "d", "text": "By introducing new programming languages" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "Machines evolved from purely mechanical systems (where you had to apply force, pull a lever, or turn a crank) to modern digital systems where you just press a button and electricity does the work. This transition marked the beginning of automation and the foundation of modern digital systems.",
+          "hints": ["Think about effort required to operate machines", "It involves electricity", "Automation replaced manual work"]
+        },
+        {
+          "id": "Section-1-2-7",
+          "question": "What is the role of Android as mentioned in the context of software and hardware?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android app development"],
+          "options": [
+            { "id": "a", "text": "To replace hardware completely" },
+            { "id": "b", "text": "To act as a bridge between software and hardware" },
+            { "id": "c", "text": "To eliminate the need for programming" },
+            { "id": "d", "text": "To control only the user interface" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "Android acts as a bridge between software (applications) and hardware (physical components of the phone). It manages how applications communicate with the phone's hardware safely and efficiently.",
+          "hints": ["Android is an operating system", "It connects two different layers", "It enables communication between programs and phones"]
+        },
+        {
+          "id": "Section-1-2-8",
+          "question": "What is the relationship between hardware and software in a functioning machine?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android app development"],
+          "options": [
+            { "id": "a", "text": "Hardware alone can function without software" },
+            { "id": "b", "text": "Software can work without hardware" },
+            { "id": "c", "text": "Both hardware and software are interdependent; without each other, there is nothing to do" },
+            { "id": "d", "text": "Hardware is more important than software" }
+          ],
+          "correctAnswers": ["c"],
+          "explanation": "Hardware and software have an interdependent relationship. When they come together, the machine is able to work. Without each other, there is nothing to do. Hardware without software cannot perform tasks, and software without hardware has nowhere to run.",
+          "hints": ["Think about whether you can use a computer with no programs", "Consider if a program can run without a computer", "They need each other to be useful"]
+        },
+        {
+          "id": "Section-1-2-9",
+          "question": "How does WhatsApp on an Android phone communicate with the device hardware?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android app development"],
+          "options": [
+            { "id": "a", "text": "Directly without any intermediary" },
+            { "id": "b", "text": "Through Android, which acts as a bridge allowing safe and efficient communication" },
+            { "id": "c", "text": "Through the internet only" },
+            { "id": "d", "text": "WhatsApp cannot communicate with hardware" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "WhatsApp software communicates with Android phone hardware through Android, which acts as an intermediary operating system. Android manages this communication safely and efficiently, allowing WhatsApp to use features like the camera, microphone, storage, and network.",
+          "hints": ["Android is the operating system", "It acts as a manager or controller", "It ensures safe communication"]
+        },
+        {
+          "id": "Section-1-2-10",
+          "question": "Why is understanding the foundation important before diving into Android development?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android app development"],
+          "options": [
+            { "id": "a", "text": "It wastes time" },
+            { "id": "b", "text": "To understand the what, how, and why of application development" },
+            { "id": "c", "text": "It is not important at all" },
+            { "id": "d", "text": "Only for beginners" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "Understanding the foundation helps you grasp the fundamentals of how software and hardware interact, which is crucial for developing effective Android applications. It provides context for all the technical learning that follows.",
+          "hints": ["Foundation means basic understanding", "It helps explain concepts later", "Building blocks are important before construction"]
+        }
+      ]
+    }
+  ]
+}

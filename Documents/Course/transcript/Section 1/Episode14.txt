@@ -1,0 +1,10 @@
+(0:00) Now we have a clear view of our activity screen. (0:05) We will discuss about activity in next part. (0:09) Let's make it zoom first.
+(0:12) At the bottom right part, you will see the plus and minus icon that is zoom in and zoom out part. (0:20) Let's click on plus icon to make it zoom. (0:24) Now it's visible clear.
+(0:27) Here, if you see, there are multiple options available at the top. (0:34) But don't worry, we will understand them during working. (0:38) Now let's look on the screen again.
+(0:41) You find the white background screen and the text hello world available. (0:48) Let's change it and here put the name of our project that is my first project. (0:54) To do this, just hover on this hello world text and click it.
+(1:02) Once clicked, some strings are available on the part. (1:06) Let's write over it. (1:16) Here, when I'm trying to write it, it is not getting changes.
+(1:22) Do you know why? (1:24) Because this text cannot change directly from here. (1:28) To do this, you have to click on right hand side option. (1:34) We minimise before named as attributes.
+(1:41) Go down into this attribute section and you will find text under this common attribute section. (1:49) You will find the same name. (1:52) Hello world is written here.
+(1:57) I'm typing my first project. (2:02) So first click over it and type my space first space project. (2:15) Once done, click on enter.
+(2:20) On this, you will notice there's something changed to unselect this. (2:27) Click outside. (2:30) Well done, guys.
+(2:32) You have learned about changing something.

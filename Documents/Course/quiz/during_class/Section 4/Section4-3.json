@@ -1,0 +1,210 @@
+{
+  "items": [
+    {
+      "name": "Section4-3",
+      "difficulty": "hard",
+      "content": [
+        {
+          "id": "Section-4-3-1",
+          "question": "How was the avatar image imported into the drawable folder in this episode?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android"],
+          "options": [
+            { "id": "a", "text": "By typing the image URL directly into the XML" },
+            { "id": "b", "text": "By right-clicking drawable → Open in Finder → pasting the image" },
+            { "id": "c", "text": "By downloading it from Google Images inside Android Studio" },
+            { "id": "d", "text": "By selecting it from the Android Studio asset library" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "The avatar was imported by right-clicking the drawable folder, choosing Open in Finder, then copying and pasting the avatar image file into that folder.",
+          "hints": [
+            "This is Method 1 for adding images to the drawable folder.",
+            "It uses the Mac Finder (or Windows Explorer) file system.",
+            "After pasting, the image appears in Android Studio immediately."
+          ]
+        },
+        {
+          "id": "Section-4-3-2",
+          "question": "What is the correct android:src value used to display the avatar image in the login screen ImageView?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android"],
+          "options": [
+            { "id": "a", "text": "android:src=\"/res/drawable/avatar\"" },
+            { "id": "b", "text": "android:src=\"@drawable/avatar\"" },
+            { "id": "c", "text": "android:src=\"file://drawable/avatar\"" },
+            { "id": "d", "text": "android:src=\"#drawable/avatar\"" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "Once the avatar image is placed in the drawable folder, it is referenced using @drawable/avatar as the value of the android:src attribute.",
+          "hints": [
+            "All drawable references start with the @ symbol.",
+            "After @drawable/ comes the exact file name without the extension.",
+            "This is the same pattern used for any image in the drawable folder."
+          ]
+        },
+        {
+          "id": "Section-4-3-3",
+          "question": "What are the width and height of the 'Login Screen' TextView in the login screen layout?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["Android Application Development", "Basics of Android"],
+          "options": [
+            { "id": "a", "text": "200dp width × 50dp height" },
+            { "id": "b", "text": "282dp width × 42dp height" },
+            { "id": "c", "text": "300dp width × 60dp height" },
+            { "id": "d", "text": "250dp width × 50dp height" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "The 'Login Screen' title TextView in the login screen layout is 282dp wide and 42dp tall, as defined by the interface mockup.",
+          "hints": [
+            "The dimensions came from the interface mockup, not from guessing.",
+            "The width is greater than 280dp but not exactly 300dp.",
+            "Width: 282dp, Height: 42dp."
+          ]
+        },
+        {
+          "id": "Section-4-3-4",
+          "question": "What was the final textSize set for the 'Login Screen' title TextView?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["Android Application Development", "Basics of Android"],
+          "options": [
+            { "id": "a", "text": "30dp" },
+            { "id": "b", "text": "40dp" },
+            { "id": "c", "text": "35dp" },
+            { "id": "d", "text": "25dp" }
+          ],
+          "correctAnswers": ["c"],
+          "explanation": "The textSize was initially set to 30dp, but increased to 35dp to better fit the design. 35dp was the final value used.",
+          "hints": [
+            "The original value was 30dp but it was changed.",
+            "The final value is between 30dp and 40dp.",
+            "It was increased by 5 units from the starting value."
+          ]
+        },
+        {
+          "id": "Section-4-3-5",
+          "question": "Which attribute is used to change the font family (writing style) of text in a TextView?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android"],
+          "options": [
+            { "id": "a", "text": "android:typeface" },
+            { "id": "b", "text": "android:fontFamily" },
+            { "id": "c", "text": "android:textFont" },
+            { "id": "d", "text": "android:fontStyle" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "android:fontFamily is the attribute used to change the font of a TextView. You can search for 'font family' in the Attributes panel to find it.",
+          "hints": [
+            "Search for the exact term 'font family' in the Attributes panel.",
+            "The attribute name combines 'font' and 'family'.",
+            "It is distinct from textStyle, which only handles bold and italic."
+          ]
+        },
+        {
+          "id": "Section-4-3-6",
+          "question": "How do you access the font picker dialog in Android Studio's Attributes panel?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["Android Application Development", "Basics of Android"],
+          "options": [
+            { "id": "a", "text": "Type the font name directly into the fontFamily field" },
+            { "id": "b", "text": "Click the cylindrical resource picker icon in the fontFamily row to open 'Pick a Resource'" },
+            { "id": "c", "text": "Right-click the TextView and select 'Change Font'" },
+            { "id": "d", "text": "Go to File → Settings → Font Manager" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "In the Attributes panel, click the small cylindrical icon in the fontFamily row. This opens the 'Pick a Resource' dialog where you can browse and select fonts.",
+          "hints": [
+            "The icon is described as looking like a small cylinder.",
+            "Clicking it opens a dialog, not a dropdown.",
+            "The dialog is called 'Pick a Resource'."
+          ]
+        },
+        {
+          "id": "Section-4-3-7",
+          "question": "Where do the fonts available in Android Studio come from?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android"],
+          "options": [
+            { "id": "a", "text": "They are built into the developer's Mac or Windows operating system" },
+            { "id": "b", "text": "They are supplied by Google Fonts because Android is a Google product" },
+            { "id": "c", "text": "They must be purchased from a third-party font marketplace" },
+            { "id": "d", "text": "They are installed by the Android Studio installer" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "The fonts in Android Studio are provided by Google Fonts. Since Android is developed and maintained by Google, Google Fonts is the built-in font source.",
+          "hints": [
+            "Android and Google are directly linked.",
+            "You can browse these fonts at fonts.google.com as well.",
+            "The instructor explained the connection: Android is by Google, so their fonts are built in."
+          ]
+        },
+        {
+          "id": "Section-4-3-8",
+          "question": "Which font was chosen for the 'Login Screen' title in the design exercise?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android"],
+          "options": [
+            { "id": "a", "text": "Roboto" },
+            { "id": "b", "text": "Open Sans" },
+            { "id": "c", "text": "Poppins" },
+            { "id": "d", "text": "Lato" }
+          ],
+          "correctAnswers": ["c"],
+          "explanation": "The Poppins font was selected for the login screen title. It was searched by name in the 'More Fonts' dialog within Android Studio.",
+          "hints": [
+            "The instructor searched for this font by name.",
+            "It is available in multiple weights including Regular, Medium, and Semi-bold.",
+            "Its name starts with the letter P."
+          ]
+        },
+        {
+          "id": "Section-4-3-9",
+          "question": "What happens when you choose 'Add font to project' instead of 'Create downloadable font' when selecting a font?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["Android Application Development", "Basics of Android"],
+          "options": [
+            { "id": "a", "text": "The font file is downloaded by the app at runtime from the internet" },
+            { "id": "b", "text": "The font file is embedded directly inside the project and stored locally" },
+            { "id": "c", "text": "The font is applied only to the current TextView, not the whole project" },
+            { "id": "d", "text": "The font is only visible in the design preview, not on the device" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "Choosing 'Add font to project' downloads the font file and embeds it locally in the project. This is preferred over 'Create downloadable font', which fetches the font from the internet each time.",
+          "hints": [
+            "One option stores the font in the project; the other downloads it on demand.",
+            "The instructor chose the option that keeps the font inside the project.",
+            "This approach is more reliable as it does not require internet when running the app."
+          ]
+        },
+        {
+          "id": "Section-4-3-10",
+          "question": "After adding a custom font to the project, which new folder appears in the res directory?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["Android Application Development", "Basics of Android"],
+          "options": [
+            { "id": "a", "text": "A 'fonts' folder inside the drawable directory" },
+            { "id": "b", "text": "A 'font' folder added alongside drawable, layout, mipmap, values, and xml" },
+            { "id": "c", "text": "A 'typeface' folder inside the values directory" },
+            { "id": "d", "text": "A 'style' folder added to the kotlin+java directory" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "When a font is added to the project using 'Add font to project', Android Studio creates a new 'font' folder inside the res directory, alongside the existing drawable, layout, mipmap, values, and xml folders.",
+          "hints": [
+            "The new folder appears at the same level as drawable and layout.",
+            "The folder name is singular: 'font', not 'fonts'.",
+            "It is created automatically by Android Studio when you add the font."
+          ]
+        }
+      ]
+    }
+  ]
+}

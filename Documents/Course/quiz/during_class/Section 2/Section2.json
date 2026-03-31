@@ -1,0 +1,502 @@
+{
+  "items": [
+    {
+      "name": "Section2-1",
+      "difficulty": "easy",
+      "content": [
+        {
+          "id": "Section-2-1-1",
+          "question": "In the restaurant analogy, why was Restaurant A assumed to be open compared to Restaurant B?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android"],
+          "options": [
+            { "id": "a", "text": "It had a larger sign" },
+            { "id": "b", "text": "It was in a better location" },
+            { "id": "c", "text": "It had people sitting inside, lights on, and visible activities" },
+            { "id": "d", "text": "It was painted a brighter color" }
+          ],
+          "correctAnswers": ["c"],
+          "explanation": "Visible cues like lights and people indicate activity, showing the power of element arrangement in delivering meaning to users.",
+          "hints": ["Think about visual activity", "What makes a place look busy?", "Visual indicators of being open"]
+        },
+        {
+          "id": "Section-2-1-2",
+          "question": "What core concept does the restaurant analogy illustrate for app development?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android"],
+          "options": [
+            { "id": "a", "text": "Cooking skills" },
+            { "id": "b", "text": "The power of placement of elements" },
+            { "id": "c", "text": "Customer service" },
+            { "id": "d", "text": "Menu design" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "The way elements are arranged creates meaning and value for the user, whether in a physical restaurant or a digital app.",
+          "hints": ["It's about arrangement", "Where things are put", "Delivering value through layout"]
+        },
+        {
+          "id": "Section-2-1-3",
+          "question": "Without proper placement of elements, what is a developer unable to provide?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android"],
+          "options": [
+            { "id": "a", "text": "A discount" },
+            { "id": "b", "text": "Proper value to the user" },
+            { "id": "c", "text": "More storage space" },
+            { "id": "d", "text": "Fast internet" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "Proper placement is essential to deliver the intended value and functionality of an application to its users.",
+          "hints": ["Think about UX", "What the user gets out of it", "Meaningful arrangement"]
+        },
+        {
+          "id": "Section-2-1-4",
+          "question": "What determines if an arrangement 'delivers value' to a user?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android"],
+          "options": [
+            { "id": "a", "text": "The price of the app" },
+            { "id": "b", "text": "The number of colors used" },
+            { "id": "c", "text": "The way elements are arranged to create meaning" },
+            { "id": "d", "text": "The size of the download" }
+          ],
+          "correctAnswers": ["c"],
+          "explanation": "Meaning is derived from how components are organized, which in turn provides value to the person using the interface.",
+          "hints": ["Arrangement is key", "Creation of meaning", "Visual organization"]
+        },
+        {
+          "id": "Section-2-1-5",
+          "question": "True or False: The arrangement of elements is only important for physical businesses like restaurants.",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android"],
+          "options": [
+            { "id": "a", "text": "True" },
+            { "id": "b", "text": "False" },
+            { "id": "c", "text": "Only in the morning" },
+            { "id": "d", "text": "Only for big apps" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "The principle applies equally to both physical spaces and digital mobile applications.",
+          "hints": ["Think about the analogy", "Does it apply to apps?", "Is digital layout important?"]
+        },
+        {
+          "id": "Section-2-1-6",
+          "question": "In the analogy, which restaurant left the user confused about its status?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android"],
+          "options": [
+            { "id": "a", "text": "Restaurant A" },
+            { "id": "b", "text": "Restaurant B" },
+            { "id": "c", "text": "Both" },
+            { "id": "d", "text": "Neither" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "Restaurant B was completely empty and lacked the visual indicators present in Restaurant A, leaving its status unknown.",
+          "hints": ["The empty one", "Lacked activity", "The second option"]
+        },
+        {
+          "id": "Section-2-1-7",
+          "question": "What is the result of 'proper placement' in an interface?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android"],
+          "options": [
+            { "id": "a", "text": "Confusion" },
+            { "id": "b", "text": "Meaningful visual structure" },
+            { "id": "c", "text": "Slower performance" },
+            { "id": "d", "text": "Higher battery usage" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "Proper placement ensures that the layout is structured in a way that users can understand and interact with effectively.",
+          "hints": ["User Understanding", "Visual clues", "Opposite of confusion"]
+        },
+        {
+          "id": "Section-2-1-8",
+          "question": "What was the '3-second test' mentioned in the episode meant to evaluate?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android"],
+          "options": [
+            { "id": "a", "text": "Memory speed" },
+            { "id": "b", "text": "Visual perception of element placement" },
+            { "id": "c", "text": "Typing skills" },
+            { "id": "d", "text": "Reading speed" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "The test challenged students to quickly identify which restaurant was open based on visual elements.",
+          "hints": ["Quick look", "Identifying status", "Visual check"]
+        },
+        {
+          "id": "Section-2-1-9",
+          "question": "Why is Restaurant A described as delivering 'value'?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android"],
+          "options": [
+            { "id": "a", "text": "Because it's cheaper" },
+            { "id": "b", "text": "Because its arrangement clearly communicates it is ready to serve" },
+            { "id": "c", "text": "Because it has more windows" },
+            { "id": "d", "text": "Because it is closer" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "The clarity of the arrangement provides immediate value by informing the user of the current state without confusion.",
+          "hints": ["Communication through layout", "Readiness to serve", "Certainty vs Uncertainty"]
+        },
+        {
+          "id": "Section-2-1-10",
+          "question": "Complete the phrase: 'The way elements are arranged creates ______ and delivers a ______ to your user.'",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android"],
+          "options": [
+            { "id": "a", "text": "noise, problem" },
+            { "id": "b", "text": "meaning, value" },
+            { "id": "c", "text": "code, bug" },
+            { "id": "d", "text": "space, cost" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "As stated in the transcript, arrangement is the key to creating meaning and delivering value in user interface design.",
+          "hints": ["Key UX terms", "Used in the restaurant conclusion", "Starts with M and V"]
+        }
+      ]
+    },
+    {
+      "name": "Section2-2",
+      "difficulty": "easy",
+      "content": [
+        {
+          "id": "Section-2-2-1",
+          "question": "What specific Android layout language is responsible for element placement?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android"],
+          "options": [
+            { "id": "a", "text": "Java" },
+            { "id": "b", "text": "Kotlin" },
+            { "id": "c", "text": "XML" },
+            { "id": "d", "text": "HTML" }
+          ],
+          "correctAnswers": ["c"],
+          "explanation": "XML acts as the element placement manager and visual provider in Android development.",
+          "hints": ["The 'markup' language", "Used primarily for layouts", "Stands for eXtensible Markup Language"]
+        },
+        {
+          "id": "Section-2-2-2",
+          "question": "What does XML stand for?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android"],
+          "options": [
+            { "id": "a", "text": "Extra Modern Language" },
+            { "id": "b", "text": "Extensible Markup Language" },
+            { "id": "c", "text": "Example Media Link" },
+            { "id": "d", "text": "Extended Machine Logic" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "XML stands for Extensible Markup Language, highlighting its role in declaring elements over a frame.",
+          "hints": ["X-M-L expansion", "Used in many domains", "Starts with 'Extensible'"]
+        },
+        {
+          "id": "Section-2-2-3",
+          "question": "How is a login screen typically recognized according to the transcript?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android"],
+          "options": [
+            { "id": "a", "text": "By the color of the background" },
+            { "id": "b", "text": "By elements like login heading, input fields, and a login button" },
+            { "id": "c", "text": "By the size of the screen" },
+            { "id": "d", "text": "By the brand logo only" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "A login screen is recognized by specific UI elements (heading, input fields for username/password, and button) placed in a presentable manner.",
+          "hints": ["Think about standard UI", "What do you see on a login page?", "Presentable components"]
+        },
+        {
+          "id": "Section-2-2-4",
+          "question": "What is the 'silent hero' of Android UI design?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android"],
+          "options": [
+            { "id": "a", "text": "The Battery" },
+            { "id": "b", "text": "XML" },
+            { "id": "c", "text": "The CPU" },
+            { "id": "d", "text": "The Wi-Fi card" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "The transcript describes XML as the silent hero because it prevents elements from being a 'bunch of confused elements floating here and there'.",
+          "hints": ["It's a code language", "Handles UI", "Mentioned right after the mobile screen comparison"]
+        },
+        {
+          "id": "Section-2-2-5",
+          "question": "What does the term 'markup' mean in the context of XML?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android"],
+          "options": [
+            { "id": "a", "text": "Coloring the screen" },
+            { "id": "b", "text": "Declaring of elements over a frame" },
+            { "id": "c", "text": "Deleting code" },
+            { "id": "d", "text": "Increasing version numbers" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "Markup refers to the process of declaring and placing elements over a frame or screen layout.",
+          "hints": ["Declaring components", "Placement on a frame", "The 'M' in XML"]
+        },
+        {
+          "id": "Section-2-2-6",
+          "question": "Without XML, how does the transcript describe the state of application elements?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android"],
+          "options": [
+            { "id": "a", "text": "Organized and ready" },
+            { "id": "b", "text": "A bunch of confused elements floating here and there" },
+            { "id": "c", "text": "Deleted from memory" },
+            { "id": "d", "text": "Converted to images" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "Without the placement logic provided by XML, components lose their structured organization.",
+          "hints": ["Chaotic state", "Confusion", "Lack of organization"]
+        },
+        {
+          "id": "Section-2-2-7",
+          "question": "True or False: XML questions are commonly asked in technical interviews.",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android"],
+          "options": [
+            { "id": "a", "text": "True" },
+            { "id": "b", "text": "False" },
+            { "id": "c", "text": "Only for web developers" },
+            { "id": "d", "text": "Not since 2020" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "The instructor specifically advised keeping a notebook and pen because XML-related questions are common during technical interviews.",
+          "hints": ["Instructor's warning", "Interview prep", "Check the notes section of the transcript"]
+        },
+        {
+          "id": "Section-2-2-8",
+          "question": "What are input fields, headings, and buttons examples of in a mobile screen?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android"],
+          "options": [
+            { "id": "a", "text": "Hardware" },
+            { "id": "b", "text": "Components/Elements" },
+            { "id": "c", "text": "Server logs" },
+            { "id": "d", "text": "Pixel data" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "These are the individual building blocks or components that make up the user interface layer of an application.",
+          "hints": ["UI building blocks", "Markup targets", "Common Android terms"]
+        },
+        {
+          "id": "Section-2-2-29",
+          "question": "What is the primary role of XML in Android UI design?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android"],
+          "options": [
+            { "id": "a", "text": "Processing data" },
+            { "id": "b", "text": "Managing element placement and visual providing" },
+            { "id": "c", "text": "Connecting to the internet" },
+            { "id": "d", "text": "Managing device battery" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "XML's main job is to define where elements are placed and how the UI looks visually.",
+          "hints": ["Layout manager", "Visual role", "Placement manager"]
+        },
+        {
+          "id": "Section-2-2-10",
+          "question": "The transcript compares 'declaring of elements over a frame' to what concept?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android"],
+          "options": [
+            { "id": "a", "text": "Variable declaration" },
+            { "id": "b", "text": "Markup" },
+            { "id": "c", "text": "Debugging" },
+            { "id": "d", "text": "Compilation" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "Declaring elements over a frame is exactly what 'markup' means in 'Extensible Markup Language'.",
+          "hints": ["The 'M' in XML", "Process of defining UI", "Instructor's definition"]
+        }
+      ]
+    },
+    {
+      "name": "Section2-3",
+      "difficulty": "easy",
+      "content": [
+        {
+          "id": "Section-2-3-1",
+          "question": "What XML tag is used in Android to display text on the screen?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android"],
+          "options": [
+            { "id": "a", "text": "DisplayTag" },
+            { "id": "b", "text": "TextView" },
+            { "id": "c", "text": "LabelView" },
+            { "id": "d", "text": "TextControl" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "In Android XML, the 'TextView' component is used to place and display text on the user interface.",
+          "hints": ["It views text", "CamelCase name", "Used for 'Hello World'"]
+        },
+        {
+          "id": "Section-2-3-2",
+          "question": "What symbol must be used to start a component declaration in XML?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android"],
+          "options": [
+            { "id": "a", "text": "Round brackets ( )" },
+            { "id": "b", "text": "Square brackets [ ]" },
+            { "id": "c", "text": "Angle brackets < >" },
+            { "id": "d", "text": "Curly braces { }" }
+          ],
+          "correctAnswers": ["c"],
+          "explanation": "All XML components should be placed within angle brackets (e.g., <TextView>).",
+          "hints": ["Greater than/Less than signs", "Used in HTML too", "Standard tag markers"]
+        },
+        {
+          "id": "Section-2-3-3",
+          "question": "Why does Android Studio show a 'red bulb' icon when entering a tag like TextView?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android"],
+          "options": [
+            { "id": "a", "text": "To show the code is perfect" },
+            { "id": "b", "text": "To indicate errors and suggest required attributes" },
+            { "id": "c", "text": "To change the theme" },
+            { "id": "d", "text": "To save the file" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "The red bulb indicates errors, often due to missing required attributes in the XML declaration.",
+          "hints": ["Error indicator", "Suggestion provider", "Helpful tool during coding"]
+        },
+        {
+          "id": "Section-2-3-4",
+          "question": "Which two attributes are marked as 'required' for almost every UI component in Android?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android"],
+          "options": [
+            { "id": "a", "text": "Color and Font" },
+            { "id": "b", "text": "Layout height and Layout width" },
+            { "id": "c", "text": "ID and Value" },
+            { "id": "d", "text": "Padding and Margin" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "Android requires every component to have a 'layout_height' and 'layout_width' to know how much space to occupy.",
+          "hints": ["Dimensional attributes", "Required for sizing", "H and W"]
+        },
+        {
+          "id": "Section-2-3-5",
+          "question": "What do 'attributes' help specify in an XML tag?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android"],
+          "options": [
+            { "id": "a", "text": "The price of the app" },
+            { "id": "b", "text": "Details and values of a property describing exactly what it is" },
+            { "id": "c", "text": "The user's password" },
+            { "id": "d", "text": "The phone's brand" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "Attributes define the specific details, properties, and values of the components we are using.",
+          "hints": ["Property details", "Key-value pairs", "Definitions of a tag"]
+        },
+        {
+          "id": "Section-2-3-6",
+          "question": "What does 'dp' stand for in Android development units?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android"],
+          "options": [
+            { "id": "a", "text": "Data Point" },
+            { "id": "b", "text": "Density Independent Pixels" },
+            { "id": "c", "text": "Digital Pixel" },
+            { "id": "d", "text": "Distance Path" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "DP stands for density independent pixels, which ensures UI elements look consistent across different screen densities.",
+          "hints": ["Android unit", "Independent of density", "Standard measurement for sizing"]
+        },
+        {
+          "id": "Section-2-3-7",
+          "question": "Where should the value of an attribute be placed in XML?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android"],
+          "options": [
+            { "id": "a", "text": "Between angle brackets" },
+            { "id": "b", "text": "Inside double quotes after the equals sign" },
+            { "id": "c", "text": "After a semicolon" },
+            { "id": "d", "text": "At the very end of the file" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "In XML, attribute values must be enclosed in double quotes (e.g., text=\"hello\").",
+          "hints": ["Quotation marks", "Requires an '=' sign", "Standard format: name=\"value\""]
+        },
+        {
+          "id": "Section-2-3-8",
+          "question": "What happens if you provide an invalid value (like text for height) to an attribute?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android"],
+          "options": [
+            { "id": "a", "text": "It works normally" },
+            { "id": "b", "text": "It throws an error because the value doesn't belong to the attribute" },
+            { "id": "c", "text": "It changes color" },
+            { "id": "d", "text": "It deletes the tag" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "Each attribute has a specific set of valid values. Providing incompatible data types results in a validation error.",
+          "hints": ["Validation error", "Constraint mismatch", "Instructor's 'eating a car' analogy"]
+        },
+        {
+          "id": "Section-2-3-9",
+          "question": "How do you 'close' a self-closing XML tag in Android?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android"],
+          "options": [
+            { "id": "a", "text": "Using a full stop ." },
+            { "id": "b", "text": "Adding a slash / before the closing angle bracket" },
+            { "id": "c", "text": "By deleting the tag" },
+            { "id": "d", "text": "By closing Android Studio" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "Self-closing tags end with '/>' to indicate the end of that specific component declaration.",
+          "hints": ["Forward slash", "Just before >", "Completes the block"]
+        },
+        {
+          "id": "Section-2-3-10",
+          "question": "What is the collective name for the start, component name, properties, and closing statement?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Basics of Android"],
+          "options": [
+            { "id": "a", "text": "Java method" },
+            { "id": "b", "text": "XML tag" },
+            { "id": "c", "text": "Layout file" },
+            { "id": "d", "text": "Activity" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "The entire structure from the opening bracket to the closing statement is known as an XML tag.",
+          "hints": ["Markup basic unit", "The 'T' in XML if it were 'TML'", "Collective term for component code"]
+        }
+      ]
+    }
+  ]
+}

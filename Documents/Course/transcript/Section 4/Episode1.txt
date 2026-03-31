@@ -1,0 +1,158 @@
+(0:15) Hey students, welcome again into the new session of android application development. (0:21) Previously we were working on placement of text views on our screen. (0:25) So let's continue from that part.
+(0:27) Now let's move to some another components here. (0:31) That means here all the components are text views. (0:35) But what about if we need image, if we need buttons and if we need some more elements.
+(0:41) To do this, let's first delete all the components from this part like this. (0:57) Or we can do one more thing. (1:00) We can add a new screen to work for it.
+(1:04) So instead of removing all the things, let's add a new screen here. (1:09) To do so, how exactly we will go for that? (1:13) Just click on folder icon at your left hand side portion like this. (1:19) It's named as project.
+(1:21) So I click on it, you will see there are some folders available. (1:26) Now to add the screen, what you have to do? (1:30) You will see the folder named as kotlin plus java. (1:34) Click and click here to expand like this.
+(1:37) Or you can double click it like this to expand. (1:40) Whatever you need, you will go with it. (1:43) Similarly, there are three different folders.
+(1:47) So always go with first one. (1:49) Again double click to expand. (1:51) Perfect.
+(1:52) Now to add a new screen, just right click on it like this. (1:57) When you right click, you will see some number of options are available now. (2:02) Because we are creating a new screen, so we have to go with what? (2:09) Find out.
+(2:11) If you are choosing new, your eyes are good. (2:14) Perfect. (2:16) So just hover on new like this and into this new, (2:20) when you will see there are multiple options available as well.
+(2:24) Okay. (2:26) So for this, just go below, just go down. (2:30) Let me explain you java class, kotlin, android, android resource directory, (2:35) sample, file, package, image, vector, module info, CMakeList.
+(2:40) Do not use them. (2:42) Okay. (2:42) Now we have activity.
+(2:45) This activity always we have to use. (2:47) Okay. (2:48) To add a new screen, whenever you need to add some new screen, just go with activity.
+(2:53) So I hover on activity. (2:56) Okay. (2:57) Just come into next part, come into subsection of this activity.
+(3:02) And here I am going to use empty views activity. (3:06) You probably remind this empty view activity because we previously used this. (3:11) So to select this, just click on empty views activity like this.
+(3:17) Once you clicked, you got the same window what we have at that point. (3:23) Yes. (3:25) Now it has activity name, main activity to layout name, package name and so on.
+(3:32) Okay. (3:32) Package name is not editable here. (3:36) As I already told you that it's an unique identity and it is so important for us.
+(3:41) Okay. (3:42) So we are not going to change it. (3:46) Okay.
+(3:47) One more thing is what I need to show you. (3:51) Whatever you will write it. (3:53) For example, the name of activity, whatever you will write it.
+(3:56) It is like main activity to add into the initial part. (4:00) We provide main activity. (4:01) So it is, it will be show like here.
+(4:04) Okay. (4:06) Similarly, the layout name, we have the layout name activity main dot XML. (4:10) If we put another activity, we got a new name named as activity underscore main two.
+(4:17) Okay. (4:18) So into layout section, into this layout section, you will get activity main two and (4:24) into this Kotlin plus Java, you will get main activity two. (4:28) Why these two files are available here.
+(4:31) We have to discuss on this. (4:34) Okay. (4:35) But first just click on finish like this.
+(4:42) So you will see, we got another file. (4:45) The main activity two and main activity two dot Kotlin and main activity two dot XML. (4:52) Like this.
+(4:56) Perfect. (4:57) Now let's start working with other components. (5:01) We will begin with the image view component.
+(5:04) If you want to display an image in your view, use the image view component. (5:10) So first let's minimise the current layout by clicking the hide button. (5:18) Like this.
+(5:21) Next, let's add some spacing between this layout and the component. (5:28) To create an image view component, simply type image and you will see image view comes at first. (5:38) Okay.
+(5:39) Hit enter to apply it like this. (5:41) And I am going to put 300 dp into width and same as into height. (5:52) Perfect.
+(5:54) Now, just like the text view component has a text attribute, (6:00) the image view has a mandatory attribute called SRC. (6:05) SRC stands for source, which defines where the image will come from. (6:11) So let's put SRC like this.
+(6:14) Hit enter. (6:16) Okay. (6:17) You need to provide the image address between these double quotes into this SRC attribute.
+(6:25) First, close it like this. (6:28) And before providing the image or before providing the image address, (6:33) let me just fix the constraints. (6:36) So click, hold, drag and release.
+(6:42) Something like, something like this. (6:48) Perfect. (6:50) Okay.
+(6:51) So now we have to work on SRC attribute. (6:56) Okay. (6:57) Now we need an image to assign the SRC attribute.
+(7:02) Generally, images are stored in the drawable folder. (7:06) First, locate the drawable folder. (7:08) Images are typically stored in drawable folder, but where it is.
+(7:13) So first of all, we have to locate it. (7:15) For this, just click on this folder icon like this. (7:21) We have all the systems available.
+(7:23) So first of all, I just, I'm just going to, I'm just going to minimise it like this. (7:29) Perfect. (7:31) Now, again, see into app directory, we have resources.
+(7:37) Click on this. (7:38) We have drawable. (7:39) Click on this.
+(7:40) Okay. (7:40) Here, this is the drawable directory, or this is the drawable folder, (7:46) which contains all the elements, all the images, whatever you need to put it on your view section. (7:55) Okay.
+(7:56) So how exactly we have to work with it now into this SRC attribute within these double codes, (8:06) because your images are available into drawable section. (8:11) First of all, you have to mention that your image is into drawable folder, (8:16) that you have to instruct to Android that, okay, go for drawable and then find my image. (8:23) Okay.
+(8:24) How exactly you have to go with, for that thing, (8:27) you always have to provide at the rate to locate your directory. (8:32) Okay. (8:34) So let's put at the rate by this, at the rate you will define your name of folder.
+(8:41) Okay. (8:43) Android will take this name and first go into this, then find your image. (8:48) Okay.
+(8:48) So, because we are, our image is into drawable folder. (8:51) So first of all, we have to write drawable. (8:53) Okay.
+(8:54) I'm just hiding this suggestion box to make you clear. (8:58) So I put at the rate, then I'm putting drawable, (9:01) D-R-A-W-A, then now you'll see into the suggestion box, (9:07) there are two images available in front of me when I'm writing drawable. (9:12) So it suggested me drawable slash, it has two different options.
+(9:16) One is IC underscore launcher, underscore fold foreground, (9:21) and IC underscore launcher underscore background. (9:25) So if you're able to see, we have only these two images available into it. (9:31) Yes.
+(9:33) Okay. (9:33) One more thing is that images has jpg, png and so on, but it has .xml file. (9:39) So I'll explain it later that why exactly it has a .xml file.
+(9:43) Okay. Don't worry about it. (9:45) So we have two different things.
+(9:46) One is IC launcher foreground, IC launcher background, whatever you need. (9:50) I'm just going down like this and hit enter to place it like this. (9:57) When you will, you will see that your image is successfully placed on your view.
+(10:02) Is it done? (10:03) Perfect. (10:04) So let's try it again. (10:06) Just like text view, you, you can copy this.
+(10:10) You can select this, copy this and paste it just down there like this. (10:16) But because both are same images, that's why they are overlapping. (10:21) And that's why that not another one is not visible to us.
+(10:24) For that thing, let's, we already use this IC launcher background. (10:29) So we will use another one that is IC launcher foreground. (10:32) So into this, just remove this part drawable slash foreground, select and hit enter.
+(10:40) And boom, you will see both images are up here in front of us. (10:45) Okay. (10:47) I think so you don't have any doubt.
+(10:50) Okay. (10:50) To visible it clearly, just, just minimise this like this. (10:55) Okay.
+(10:57) So within this layout, we have two different images and we successfully placed it. (11:02) Now the question arises, if I have a logo or something that I need to place here, but, (11:10) but it is not available into Android studio. (11:13) So what exactly I can do? (11:15) What I mean is if I click on this project, you will see that these two images are come (11:22) by default are available by default into this Android studio.
+(11:27) But let's suppose if I have, if I want to add some more images into it, (11:33) which are not available into Android studio, then what exactly I can do for this thing? (11:38) We have to work with it. (11:40) How? (11:41) Let's move to our browser. (11:43) On this browser, just type whatever image you need for mine.
+(11:49) I am searching about Android like this. (11:56) Once I go with it, I found something like this. (12:00) This is a perfect image what I have, or you can go with something, some more images, (12:05) whatever you need, you can, you can just explore and download.
+(12:09) So we have multiple images like this. (12:12) I am going to select this one, this one, how cute it is now. (12:18) Okay.
+(12:19) So I'm going to download it for this. (12:23) I'm just save this image as on desktop like this. (12:32) Okay.
+(12:34) So it is saved on my desktop. (12:37) Let me close it and explore it on my desktop. (12:42) So I close it and you will see it is available on the desktop named as unnamed.wpp. (12:49) So I'm not changing its name.
+(12:52) I'm just putting it unnamed.wpp. (12:54) Now let's move to Android studio again. (12:57) Okay. (12:58) Into this Android studio, we have to put this image into drawable folder.
+(13:03) Okay. (13:04) There are two different parts that how exactly we can go with this. (13:08) For that thing, first of all, I'm providing both methods to you that how exactly we can (13:13) be able to put that image into drawable folder.
+(13:17) So the first one is you just have to right click on this drawable folder. (13:22) Okay. (13:23) And you will find something open in.
+(13:26) Okay. (13:27) Here, because I'm using Mac, I'm getting finder. (13:31) If you are using window, you are getting from the folder option into it.
+(13:35) So when I click over it, you will see this folder. (13:42) Okay. (13:43) Into this folder, this RDS folder, you will find drawable.
+(13:48) Double click on it. (13:49) You will find this part and I'm just going to copy, copy and just paste here like this. (14:00) It's done.
+(14:01) Okay. (14:02) Now, when you move to your Android studio again, you will find this unnamed.wpp available here. (14:08) You don't have to refresh it or something else.
+(14:12) Don't need to do this. (14:13) If you put that into a folder, it will directly appear. (14:16) Okay.
+(14:18) Now, let's use it. (14:20) So first of all, I just have to delete it. (14:25) It is like messy.
+(14:26) So I'm just hiding it for some time. (14:29) Like I'm just deleting this part and let's put it here. (14:36) Okay.
+(14:37) So into drawable slash unnamed. (14:41) When I hit enter, you will see it will come here like this. (14:44) So that's how we can download image or we can put downloaded image directly into our image.
+(14:52) You just have to take care about this, that each and every time, (14:57) whatever the image you are putting here should be available into drawable folder. (15:02) Okay. (15:03) Perfect.
+(15:04) Now, let's explore another method. (15:08) That is how exactly we are able to put directly to don't go with a folder section (15:13) or don't have to right-click it. (15:14) Just how exactly you will go with such part.
+(15:17) So the best part is you can directly drag and drop image into this drawable section. (15:22) Okay. (15:23) Let me show you how.
+(15:24) I am just deleting this unnamed.wpp for this thing. (15:29) Let me just first, let me just clear it. (15:32) Okay.
+(15:33) Like this. (15:35) Now I am going to delete it. (15:37) For delete it, you just put either press delete button on your keyboard (15:42) or you can go with refactor and delete.
+(15:47) Save delete. (15:47) Okay. (15:48) How? (15:49) Either put delete, either press delete button on your keyboard or right-click, (15:54) go into refactor and save delete.
+(15:59) So it will ask you that is the image is available or is the image is using to some sections or not. (16:06) So just click. (16:07) Okay.
+(16:08) So I am going to, I want that image. (16:11) So I'm just, I'm just using it for that thing. (16:15) Just so we have image, this one image.
+(16:19) Okay. (16:20) This image I have. (16:21) So I'm just drag and drop this image to drawable section like this.
+(16:28) And when I drop it, you will see some, you will see some section like move section like this. (16:35) Okay. (16:36) So just refactor here.
+(16:38) Once you refactor, you will see that at both place, like at the, at the folder, (16:45) as well as into the section, both the image is available in both place. (16:49) Okay. (16:50) Let me close this and let me put this at the place.
+(16:55) Okay. (16:55) Perfect. (16:56) So again, when you, okay.
+(16:59) When you put drawable, you will get a name. (17:04) Now, because you put another file into this drawable section, (17:08) you are getting the suggestions for the three elements. (17:10) Okay.
+(17:11) That means that the number of items, whatever you put into that drawable folder, (17:16) you will get suggestion for that, for, for those elements into, for those elements here. (17:22) Okay. (17:23) So let's put unnamed here like this and you will get the image by this.
+(17:28) Okay. (17:29) One more thing, what you have to understand here is always this name (17:36) should be into small letters and not into capital letters. (17:41) Let's suppose if I do it into capital letters.
+(17:44) So first of all, I am just deleting this and I am changing its name by (17:48) how exactly you are going to change the name. (17:50) Again, just like, just like before we right click on it, (17:54) we go on refactor and into this refactor, you will find the rename. (17:59) Shortcut key is shift plus F6.
+(18:02) So when I click on it, you will find the unnamed and what I'm, (18:06) I'm going to do, I'm just renaming it by capitalise the first word that is you (18:12) by capitalise the first letter that is you. (18:15) So I am putting you like this. (18:18) And let's suppose also capitalise this N here like this.
+(18:23) So when I refactor this, you will see that we are, we are, we are getting some error into it. (18:31) Okay. (18:32) Why exactly we are getting error? (18:33) Because into this drawable section, always we have to put the name into small characters.
+(18:41) Okay. (18:42) So please remember this thing that if you have some kind of, (18:46) if you have a file, which has some characters, which are capital in nature. (18:51) So just go with, rename them and put all the, all the small characters into it.
+(18:57) So I'm again, to do it correct. (18:59) I'm just right click on it, rename. (19:02) And again, let's suppose put something else.
+(19:06) Android. (19:08) Android. (19:09) Cute Android.
+(19:10) Okay. (19:12) Android is okay. (19:15) Android.
+(19:17) Enter. (19:19) So you'll see the android.webp is here. (19:23) Now it also shows some error to us.
+(19:25) What exactly this error is. (19:36) So let me put and drawable. (19:43) And that's done.
+(19:45) Perfect. (19:59) Okay. (20:00) Yeah.
+(20:02) One more thing. (20:04) I put Android. (20:05) So it becomes Android.
+(20:07) When I rechanged the name. (20:09) So you will see that when I put unnamed here, I don't have to change it here. (20:15) It is directly changed by Android studio.
+(20:18) Okay. (20:19) So that's, that these are some portions that you are able to put images as well into your, (20:24) into your layout. (20:25) Perfect.
+(20:26) Let's move to another one. (20:28) Now let's align all of the scenarios into a single line for that thing. (20:33) Just, I'm just hiding this.
+(20:37) I'm removing this as well. (20:40) Okay. (20:40) Now, what exactly I'm going to do.
+(20:43) We have two different elements. (20:45) What we learned previously. (20:46) One is text view and one is image.
+(20:49) So let's put both of them into a single screen. (20:53) Okay. (20:54) First of all, let's put the text view like this.
+(20:58) I'm putting, let's suppose either you can go with match parent as well. (21:03) There's no any issue. (21:05) But for now, I'm just going with the 250 dp.
+(21:09) It is completely on you. (21:11) I'm putting 250 dp for no reason. (21:14) It's just mine.
+(21:15) Like similarly, I'm putting 60 dp here like this. (21:23) So it is like this. (21:25) Okay.
+(21:25) Now I'm putting the text here. (21:28) That is, let's suppose, let's put welcome. (21:34) Welcome here.
+(21:35) So we'll see welcome is available here. (21:38) Now, I'm closing this and I am going to put the constructs like this. (21:45) This one, this one and this one.
+(21:48) Also, I need some margin for that thing. (21:51) I'm just putting some margin from top to add margin from top. (21:55) Either you can type top and you'll find the margin top.
+(22:01) Maybe sometimes the options are shuffled. (22:07) So you have to find it out. (22:10) Okay.
+(22:10) In my case, it is available on the top. (22:13) But into your case, maybe it's on 4th position, on 5th position or in 6th position. (22:18) You have to find it out.
+(22:19) Okay. (22:19) So we have layout margin top. (22:22) Just click on it.
+(22:23) And I need at least 50 dp from top. (22:27) So you'll see 50 dp margins are available from the top. (22:29) Okay.
+(22:31) Now, there's another thing that I put the system into centre, but still the welcome text is not into centre. (22:41) And it's very small in size as well. (22:46) So what we have to do, we have to put some other components into it.
+(22:51) Okay. (22:51) We have to put some other attributes to it. (22:54) And where exactly you will find the attributes for that thing, you can get your help from Google.
+(23:00) Okay. (23:00) You can just visit to site. (23:04) And so you shifted here.
+(23:06) You can, so you can, you have to open your browser like this. (23:09) And here you have to type to search that what kind of attributes we have into text view. (23:16) For that thing, we have multiple resources.
+(23:19) The official resources is available on the Google. (23:22) So just text view like this text view. (23:29) So when you click on it, you will find the text view API reference on Google.
+(23:34) Let me zoom it for you like this. (23:38) Okay. (23:39) So the first link is available text view API reference.
+(23:42) Maybe you will find multiple views as well. (23:45) So don't go for them. (23:47) Just click on this.
+(23:49) Once you click on it, you will find the text view API reference like this. (23:53) Okay. (23:54) Don't worry.
+(23:54) Yes, there's a lot of text is available here, but don't worry about it. (23:59) Just find your point. (24:09) So all the elements, whatever you need, these are the attributes, they all are the attributes (24:16) which we can use into our text view.
+(24:20) Okay. (24:21) There are a lot of attributes available. (24:23) So these are the attributes which we can use into text view.
+(24:28) Okay. (24:29) So this is a sidebar here. (24:31) The text view is already selected like this.
+(24:33) So we have multiple parts and let's go with something. (24:40) Let's go with some points. (24:44) Here is an attribute named as gravity.
+(24:46) Okay. (24:47) Here is an attribute named as height. (24:49) So there are multiple attributes available.
+(24:51) So I'm going with gravity first. (24:53) So what is the mean of gravity? (24:56) Okay. (24:56) That kindly ignore the official definition of gravity that always you have to come towards (25:03) the earth.
+(25:04) That's not the definition of gravity into Android. (25:06) That's completely different. (25:08) Okay.
+(25:08) What is the definition of gravity into Android then? (25:12) So gravity means the alignment. (25:14) What exactly it means? (25:17) If I am going to my screen. (25:19) Yeah.
+(25:20) If I'm going to my Android screen. (25:22) So you will see that the text view box, what exactly it is available. (25:30) The width is of 250 dp while the height is of 60 dp.
+(25:33) But still the text is available at the top left part. (25:39) Yes, it is available at the top left part. (25:41) But I need to increase the size of this welcome text and I need to put it between this box.
+(25:50) So how exactly we have to go with it? (25:51) For that thing, you have to use gravity. (25:53) Okay. (25:54) So just type gravity like this.
+(25:57) When you type it, you will find Android gravity into solution box. (26:01) At first, click on it and you will find all the alignments, whatever you will need. (26:06) Okay.
+(26:07) So for us, because we need to put it into centre, I'm just like centre like this. (26:12) So you will see it will comes into centre. (26:14) Okay.
+(26:14) Now it looks good. (26:16) Okay. (26:16) Instead of this, it's look better into this.
+(26:20) Yes. (26:22) Okay. (26:23) Now let's increase its font size.
+(26:26) So again, let's go with our content like this. (26:30) And here we also have some size section. (26:34) So yes, here it is.
+(26:37) This is called text size. (26:38) Okay. (26:39) So what exactly we have to go with? (26:41) We have to write this text size.
+(26:43) You don't have to even change the way they write it. (26:46) Okay. (26:46) If you need, you just copy it.
+(26:49) You just copy it like this and you can directly paste it there. (26:54) For example, I am just pasting this thing like this. (26:57) Sometimes.
+(26:58) Yeah. Perfect. (26:59) Okay.
+(26:59) Now it's asking for the text size. (27:02) So let's suppose I am going with 30 db. (27:05) So we'll see it increases.
+(27:07) The font size increases. (27:09) Okay. (27:09) That's how we can style our text that we have to, if you need to change the alignment, (27:15) if you need to change the size of text, you can go with this directly.
+(27:18) And how exactly you will know about them? (27:21) You can go for the official documentation of Android into Google. (27:25) Okay. (27:26) That's all.
+(27:28) There are some more things available. (27:30) So let's also check them out. (27:38) Actually, there are a lot of methods available.
+(27:41) Out of them, whatever you need, just go with it. (27:44) It depends on your requirement. (27:49) So let's suppose there is another one called, yeah, perfect.
+(27:52) The text style. (27:54) Okay. (27:54) There's a description of this attribute here.
+(27:57) That is this. (27:58) So if you want any style into normal bold italic or bold italic, some kind of things, (28:05) then you can use this text style. (28:07) Okay.
+(28:08) So how exactly you are going to use this? (28:11) Either you can copy this from here or you can directly write it there. (28:14) It's your choice. (28:15) Okay.
+(28:16) So I am writing text style here, text style here like this. (28:20) So you'll find the text style at the top of the solution box. (28:24) So I'm enter it and you will find out that bold italic normal are available.
+(28:29) Normal means regular. (28:30) Okay. (28:31) So when I put bold here, you will see it becomes bold.
+(28:36) Let me show you again. (28:37) So I'm removing this bold. (28:39) You'll see it's a thin part.
+(28:41) Then if I put bold, you'll see it's become bold. (28:45) Okay. (28:46) So that's how you will be able to style your text view, whatever or however you need.
+(28:52) Okay. (28:53) So if you want to change the colour, we can also do that thing as well. (28:58) So let me show you the colour as well.
+(29:01) For that thing, you can find the colour part as well into this. (29:07) But for now, I'm just show you that how exactly you will go with that thing. (29:12) For colour, there's a trick.
+(29:13) If you need to find out, because every time you are not be able to go there and search (29:19) attribute related to this. (29:21) For example, if you need colour and text colour. (29:25) So for that thing, just put colour here.
+(29:28) There's a trick. (29:29) When you put the colour, you will find out some colour related option into the solution box. (29:35) Okay.
+(29:36) Now we have this text colour. (29:38) Okay. (29:39) So text colour is used to colour this element.
+(29:43) Now I'm putting this text colour like this. (29:46) And here we have the colour. (29:49) So I'm using black here like this.
+(29:52) You will see the black colour is available at the top. (29:55) I am put. (29:56) Okay.
+(29:56) And black colour is available.

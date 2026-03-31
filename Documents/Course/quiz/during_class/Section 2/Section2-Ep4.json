@@ -1,0 +1,250 @@
+{
+  "items": [
+    {
+      "name": "Section2-4",
+      "difficulty": "medium",
+      "content": [
+        {
+          "id": "Section-2-4-1",
+          "question": "What is the fastest way to add a second TextView with similar properties to the first one in XML?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Studio", "XML", "Basics of Android"],
+          "options": [
+            { "id": "a", "text": "Type everything from scratch" },
+            { "id": "b", "text": "Use Ctrl-C/Cmd-C to copy and Ctrl-V/Cmd-V to paste" },
+            { "id": "c", "text": "Use the 'Import Tag' menu" },
+            { "id": "d", "text": "Restart Android Studio" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "As shown in the episode, you can simply copy the previous tag and paste it after the closing bracket to avoid repetitive typing.",
+          "hints": ["Copy-Paste shortcuts", "Standard keyboard trick", "Episode 4 intro"]
+        },
+        {
+          "id": "Section-2-4-2",
+          "question": "Where exactly should you paste a copied XML tag to ensure it is independent of the previous one?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["XML", "Basics of Android"],
+          "options": [
+            { "id": "a", "text": "Inside the first tag's attributes" },
+            { "id": "b", "text": "Directly after the previous tag has closed" },
+            { "id": "c", "text": "At the very top of the file" },
+            { "id": "d", "text": "Inside the SDK folder" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "You should shift to a new line and paste the tag after the previous one's closing bracket (/> or </Tag>).",
+          "hints": ["Shift to next line", "After closing bracket", "Avoid nesting in attributes"]
+        },
+        {
+          "id": "Section-2-4-3",
+          "question": "What indicator does Android Studio use to show 'ignorable' or non-critical configuration issues?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Studio", "Debugging"],
+          "options": [
+            { "id": "a", "text": "A red flashing screen" },
+            { "id": "b", "text": "Yellow or grey squiggly lines" },
+            { "id": "c", "text": "A loud beep" },
+            { "id": "d", "text": "Auto-deleting the code" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "Squiggly lines often appear for internal configurations that aren't major errors; the instructor advises ignoring them if the 'bulb' shows no major issues.",
+          "hints": ["Under the text", "Different from red errors", "Check the suggestion bulb"]
+        },
+        {
+          "id": "Section-2-4-4",
+          "question": "If the suggestion bulb shows 'nothing special' when clicked, what does the instructor recommend for now?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Studio", "Debugging"],
+          "options": [
+            { "id": "a", "text": "Delete the file" },
+            { "id": "b", "text": "For now, just ignore it" },
+            { "id": "c", "text": "Reinstall Android Studio" },
+            { "id": "d", "text": "Change all text to uppercase" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "Minor internal configuration warnings that don't prevent the app from building can usually be ignored for simple exercises.",
+          "hints": ["Instructor's advice", "Don't panic", "Non-major error"]
+        },
+        {
+          "id": "Section-2-4-5",
+          "question": "What is the primary purpose of clicking the 'Play' button in Android Studio?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Studio", "Basics of Android"],
+          "options": [
+            { "id": "a", "text": "To listen to music" },
+            { "id": "b", "text": "To build and run the app on the emulator" },
+            { "id": "c", "text": "To close all files" },
+            { "id": "d", "text": "To search for code online" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "The play button initiates the build process and launches the app specifically on a connected emulator or device.",
+          "hints": ["Green icon", "Start button", "Runs the project"]
+        },
+        {
+          "id": "Section-2-4-6",
+          "question": "If you delete mandatory attributes and try to run the app, what behavior will the emulator show?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["Android Application Development", "Debugging"],
+          "options": [
+            { "id": "a", "text": "The app will fix itself" },
+            { "id": "b", "text": "The app will crash" },
+            { "id": "c", "text": "The app will display 'Error' in text" },
+            { "id": "d", "text": "The screen will turn green" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "Deleting attributes like width and height causes the app to crash because the system doesn't know how to render the elements.",
+          "hints": ["Result of missing data", "Opposite of 'perfectly run'", "Total failure"]
+        },
+        {
+          "id": "Section-2-4-7",
+          "question": "Review: Which keyboard layout was recommended for Windows users in Section 1?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["Basics of Android", "Review"],
+          "options": [
+            { "id": "a", "text": "US International" },
+            { "id": "b", "text": "UK English" },
+            { "id": "c", "text": "QWERTY (standard)" },
+            { "id": "d", "text": "Dvorak" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "Section 1 mentioned that US International is standard for most development environments to avoid character confusion.",
+          "hints": ["Section 1 review", "Keyboard setup", "Standard for Windows"]
+        },
+        {
+          "id": "Section-2-4-8",
+          "question": "True or False: Every XML tag must have a closing statement or be self-closing.",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["XML", "Basics of Android"],
+          "options": [
+            { "id": "a", "text": "True" },
+            { "id": "b", "text": "False" },
+            { "id": "c", "text": "Only for TextView" },
+            { "id": "d", "text": "Only on Mac" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "XML syntax strictly requires every opening tag to be closed either via /> or a separate </Tag>.",
+          "hints": ["Syntax rule", "Mandatory structure", "Closing indicator"]
+        },
+        {
+          "id": "Section-2-4-9",
+          "question": "What does the 'build' process do in Android Studio?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["Android Studio", "Compilation"],
+          "options": [
+            { "id": "a", "text": "Deletes the project" },
+            { "id": "b", "text": "Compiles code and resources into an executable app" },
+            { "id": "c", "text": "Installs Android Studio" },
+            { "id": "d", "text": "Downloads images from the web" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "The build process takes your source code (XML/Kotlin) and prepares it to run on a device.",
+          "hints": ["Preparation step", "Starts before running", "Assembly process"]
+        },
+        {
+          "id": "Section-2-4-10",
+          "question": "If you are on a Mac, which keys replace 'Ctrl-C' and 'Ctrl-V'?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Studio", "macOS"],
+          "options": [
+            { "id": "a", "text": "Shift-C and Shift-V" },
+            { "id": "b", "text": "Command-C and Command-V" },
+            { "id": "c", "text": "Option-C and Option-V" },
+            { "id": "d", "text": "Alt-C and Alt-V" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "On macOS, the Command key is used for global shortcuts instead of Control.",
+          "hints": ["Mac key", "Symbol looks like a clover", "Apple standard"]
+        },
+        {
+          "id": "Section-2-4-11",
+          "question": "The 'Ctrl-C' action is known as ______ and 'Ctrl-V' is known as ______.",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Studio", "Basics of Android"],
+          "options": [
+            { "id": "a", "text": "Delete, Recover" },
+            { "id": "b", "text": "Copy, Paste" },
+            { "id": "c", "text": "Save, Load" },
+            { "id": "d", "text": "Start, Stop" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "These are the standard shortcut identifiers for Copying and Pasting content.",
+          "hints": ["C for ...", "V for ...", "Standard clipboard actions"]
+        },
+        {
+          "id": "Section-2-4-12",
+          "question": "Why would an XML tag show a squiggly line if it's identical to the one above it?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["Android Studio", "XML"],
+          "options": [
+            { "id": "a", "text": "Because identical tags are forbidden" },
+            { "id": "b", "text": "Due to missing IDs or overlapping layout concerns" },
+            { "id": "c", "text": "Because the internet is disconnected" },
+            { "id": "d", "text": "Because the font is wrong" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "Even though tags can be copied, they often need unique IDs or layout constraints to distinguish them from each other in the UI hierarchy.",
+          "hints": ["Uniqueness", "Overlapping issues", "Internal configuration"]
+        },
+        {
+          "id": "Section-2-4-13",
+          "question": "Review: In Section 1, what was the first and most important step to do before installing Android Studio?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["Basics of Android", "Review"],
+          "options": [
+            { "id": "a", "text": "Buying a new phone" },
+            { "id": "b", "text": "Checking system requirements" },
+            { "id": "c", "text": "Creating a YouTube channel" },
+            { "id": "d", "text": "Learning Java" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "Section 1 emphasized that checking if your PC or Mac meets the RAM and CPU requirements is crucial before installation.",
+          "hints": ["Hardware check", "Section 1 intro", "Prevention of installation errors"]
+        },
+        {
+          "id": "Section-2-4-14",
+          "question": "How do you 'Reload' or 'Rerun' the app on the emulator quickly?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Studio", "Emulator"],
+          "options": [
+            { "id": "a", "text": "Reinstall Android Studio" },
+            { "id": "b", "text": "Click the Play button or the 'Rerun' icon" },
+            { "id": "c", "text": "Turn off the computer" },
+            { "id": "d", "text": "Deleting the tag" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "You can use the Play button to rebuild and rerun the app to see recent changes.",
+          "hints": ["Apply changes", "Rerun action", "Instructor's experiment method"]
+        },
+        {
+          "id": "Section-2-4-15",
+          "question": "Which view mode in Android Studio was used in Episode 4 to see the XML code?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Studio", "UI Design"],
+          "options": [
+            { "id": "a", "text": "Design View" },
+            { "id": "b", "text": "Code View" },
+            { "id": "c", "text": "Blueprint View" },
+            { "id": "d", "text": "Browser View" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "Code View is necessary to manually edit XML tags, copy, and paste them as shown in the video.",
+          "hints": ["Where text is written", "Direct editing", "Opposite of Design"]
+        }
+      ]
+    }
+  ]
+}

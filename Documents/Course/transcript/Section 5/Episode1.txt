@@ -1,0 +1,57 @@
+(0:15) Hey students, welcome again. I hope you all are doing good. Previously, we started designing (0:22) the login screen where we placed some elements.
+Now, let's continue our journey. Let's move (0:29) to another part. What exactly it is? They are edit text.
+Okay, so edit text, what exactly (0:36) edit text are? Into this edit text, our user is able to put his username and password into (0:43) these blocks. Okay, so what is the name of them? They are known as edit text. Okay, so (0:50) we have to put edit text here.
+For this thing, let me put edit text and you will see edit (0:58) text here. Okay, edit text is another component just like text view, image view, it's also (1:03) a component. Okay, so we are just click on edit text like this.
+And we also have to find (1:12) out the dimensions of it. That what exactly the dimensions of them that is 310 dp is its (1:19) width and 42 dp is its height. So let me put 310 dp like this and 42 like this.
+Oh, sorry, (1:29) I didn't show you like this. Yeah, here it is. Okay, we have to put it below the login (1:37) screen.
+So first just click like this and put them like I'm choosing the above constant (1:44) like this and I'm attaching it to the lower one like this. Similarly, this one and this (1:52) one like this. Perfect.
+Another thing is here into the text view, there's some some hint (1:59) also available that is enter your username. So we have to put the hint as well. How exactly (2:04) we are going to do this, just click on this text edit text.
+And for hint, we have to use (2:11) an attribute named as hint hint like this. And into this hint, what exactly we have to (2:17) put enter your username. So let's put enter your username.
+And you will see it's done. (2:30) Yes. Perfect.
+Similarly, we have to put the password as well. So it is we have to put (2:38) enter your password here. Okay, so now let's put password into the side text.
+So again, (2:46) just put edit text or let me do something. Okay, let me do something. Let me just copy (2:54) and paste here.
+Okay. So I'm just copy this element and paste it like this. Okay.
+Into (3:03) this we have to put instead of enter your username, put enter your password like this. (3:11) Okay. One more thing is that because we just copy and paste it here.
+So the layout, the (3:17) constraints, whatever we fix for username is also copied into password one. So we have (3:23) to, we have to just delete them like this. And just put this below the username.
+I'm (3:33) just connecting the above constraint to the bottom part of username like this. Okay. And (3:41) this perfect.
+And at last we need a button. Okay. So for button, it's very simple.
+Actually, (3:53) just like other components, we have to put a button component as well. Just like image (3:58) view, text view, edit text. We have a component named as to add a button.
+You have to use (4:04) button text, button component. Sorry. So you have to use button.
+We have multiple buttons (4:12) here, but the clicker, all are the clickable buttons. Okay. So don't worry about these (4:16) things, but for the normal button, whatever is showing here, this is the normal one.
+Okay. (4:23) This is the normal one. This is the normal one.
+Okay. Image button, media button, radio button, (4:29) toggle button are different right now. Okay.
+So we will, we will study them later whenever we'll (4:34) require them for now, we just need this button. So I'm just click over it and let's find out (4:40) what's exactly its dimensions are. So it's off 274 DP by 74 DP.
+So let's put 270, 274 DP (4:52) by 74 DP. Okay. Some kind of shapes are still changed because of some internal parts, (5:04) but don't worry about this.
+I'll explain you that how you will change these things by yourself. (5:11) Okay. For now, just accept that this button is available for us.
+Okay. So for this now, just (5:20) again, we have to click on it like this and attach the above, the above constraint of (5:27) this button to the lower constraint of this password text. Okay.
+So let me connect and (5:34) it will come here like this, join them like this. Okay. Also, if we look into this part, (5:42) we'll find out that it has a text named as login.
+Okay. So we have to put the text (5:50) within this button login. So how exactly we can do this for this, because we are writing text.
+(5:56) So what we have to use, which attribute, which attribute we have to use? Yes, exactly. Text. (6:03) Text.
+Okay. What we have to write into it, login. So we put login and you will see, (6:09) once I write the login, you will find out the login is available here.
+(6:13) Okay. If you want to increase the size, you can do as same as you did into this text view. (6:21) Okay.
+That means into this text view, you write text, you write text size. Now, similarly, (6:28) if you need to change the size of this, of this text login, you can also do the same (6:34) as you did as you do into text view. Let's do it again.
+Let's do it. So I'm writing text size (6:41) and you will see text sizes here. Also text style is also available here.
+Okay. So that means you (6:48) can, you are also able to make it bold as well. So I'm increasing it by, let's suppose I'm putting (6:55) 30 db like this, but it is too hard, like not 30 db.
+Let's put 15 db. No, try 20, 20 db. Maybe it's (7:05) for us.
+Okay. Let's accept this part. Once we're done into next part, whenever we'll design the (7:12) next screen, I will define, I will also define the size of these texts.
+Okay. So now also we need (7:19) some font family. So let's go with font family as well.
+So yes, we have the font family and we are (7:25) using pop-ins like this. So almost all things are done. Let me put it, let also put this text style (7:32) like this.
+Okay. Perfect. So that's how we just put these screens into this.
+But if I zoom it out, (7:44) you will see it is slight different from it. Yes. Why? Because it has several margins into this (7:51) interface.
+That's why it is. So first of all, I just click over it and I am attaching it to the, (7:58) to the bottom one like this. Now it's attached to the, to the bottom one.
+And (8:06) let's go with the margins part. We also have the margins that what margin we have to, (8:12) we have to give in for the, for the specified component. So we have, we have all the components (8:17) and these are defined margins.
+There is 30 db, 10 db, 20 db, 8 db, 12 db. So into image view (8:24) from the top, we need 30 db margin. Okay.
+So let's come into Android studio again, (8:29) and into image view, we have to go with, we have to tell the margin or we have to mention the margin. (8:35) So for this, let's type top first. So when you write top, you will, you will find out layout (8:43) margin top because we have to work with, because we have to work with margin.
+So we'll always choose (8:49) layout margin top as I mentioned previously. So let's go with 30 db like this, but the 30 db is (8:58) not enough right now. So you can also increase it by 80 db.
+Yes, it's 80 db. Let's put a hundred (9:05) first. Okay.
+A hundred db is okay for us. Perfect. Now let's move to another one that is text view.
+(9:18) So into this text view, we need around 20 db margin. Okay. So into text view, let's again, (9:27) type top like this, and I'm typing 20 db margin like this.
+So it's 20 db. Okay. Let's put me, (9:37) let's increase the margin.
+Let's suppose go with 40 db margin. Perfect. So 40 db margin is perfect (9:43) for us.
+Okay. And now let's go with some into this, into these text views as well. So into this (9:53) text view, let's put the margin that is top.
+Let's put 40 db again like this. Let's put more, (10:05) let's increase them. Let's suppose 60.
+Okay. Let's put 80. That's fine.
+80 db is fine for us. (10:13) Okay. Now put the same, but let's suppose go with top as well again.
+(10:22) And from this 20 db will be perfect for us like this 20 db is okay. And (10:31) let me delete this. Let me delete this constant layout, this constant because (10:35) it's actually creates so much gap between these things.
+So I'm just delete this. Yeah. (10:43) So let's again top and put 50 db from this and perfect.
+Your screen is ready. So that's how (10:52) we can design a, we can design a particular screen (10:57) into Android studio with the help of XML. So congratulations to develop your first screen.

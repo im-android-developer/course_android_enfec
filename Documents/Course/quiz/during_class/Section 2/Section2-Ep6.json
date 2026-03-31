@@ -1,0 +1,250 @@
+{
+  "items": [
+    {
+      "name": "Section2-6",
+      "difficulty": "medium",
+      "content": [
+        {
+          "id": "Section-2-6-1",
+          "question": "What is the primary definition of a Layout in Android development?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Layouts", "Basics of Android"],
+          "options": [
+            { "id": "a", "text": "A list of files" },
+            { "id": "b", "text": "Specifies the visual structure and arrangement of UI elements" },
+            { "id": "c", "text": "The phone's operating system version" },
+            { "id": "d", "text": "A password manager" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "Layouts serve as the structural framework for organizing UI components like buttons, text, and images.",
+          "hints": ["Visual structure", "Arrangement of elements", "The blueprint of a screen"]
+        },
+        {
+          "id": "Section-2-6-2",
+          "question": "Which of these is NOT a common name for the main container holding everything in a UI?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["Android Layouts", "UI Design"],
+          "options": [
+            { "id": "a", "text": "Root Layout" },
+            { "id": "b", "text": "Main Container" },
+            { "id": "c", "text": "Root Box" },
+            { "id": "d", "text": "Variable Box" }
+          ],
+          "correctAnswers": ["d"],
+          "explanation": "Common terms for the top-level container are Root Layout, Root Container, Root Box, and Main Layout.",
+          "hints": ["Root names", "Episode 6 notebook list", "Main UI holder"]
+        },
+        {
+          "id": "Section-2-6-3",
+          "question": "What is the 'golden rule' for placing UI elements in Android development?",
+          "type": "mcq",
+          "difficulty": "hard",
+          "tags": ["Basics of Android", "Logic"],
+          "options": [
+            { "id": "a", "text": "Write elements first, then the layout" },
+            { "id": "b", "text": "Always create a container first, then place elements inside it" },
+            { "id": "c", "text": "Place elements directly on the phone screen without a layout" },
+            { "id": "d", "text": "Never use more than one layout" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "You must have a container (layout) before placing any children elements; you cannot place components directly on the phone screen.",
+          "hints": ["Box before content", "Hierarchy requirement", "Episode 6 rule"]
+        },
+        {
+          "id": "Section-2-6-4",
+          "question": "What does 'match_parent' do when applied to a Root Layout?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["XML", "Android Layouts"],
+          "options": [
+            { "id": "a", "text": "Resizes the phone" },
+            { "id": "b", "text": "Sets layout dimensions equal to the parent (the phone screen)" },
+            { "id": "c", "text": "Makes the app run faster" },
+            { "id": "d", "text": "Deletes the elements" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "Using match_parent on the root layout ensures it covers the entire available screen space without needing fixed dimensions.",
+          "hints": ["Equal to container", "Fits screen", "Standard full layout value"]
+        },
+        {
+          "id": "Section-2-6-5",
+          "question": "Why is the 'android:' prefix added to attributes like layout_width and layout_height?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["SDK", "XML"],
+          "options": [
+            { "id": "a", "text": "To change the color of the text" },
+            { "id": "b", "text": "To show the attributes belong to the standard Android SDK" },
+            { "id": "c", "text": "To hide the attributes from hackers" },
+            { "id": "d", "text": "To save energy" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "The 'android' namespace informs the system that these properties are defined by the Android SDK framework.",
+          "hints": ["Namespace identifier", "Standard platform attributes", "Resolving red error marker"]
+        },
+        {
+          "id": "Section-2-6-6",
+          "question": "Which specific layout was used in Episode 6 to build a root container that attaches components with constraints?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Layouts", "XML"],
+          "options": [
+            { "id": "a", "text": "LinearLayout" },
+            { "id": "b", "text": "ConstraintLayout" },
+            { "id": "c", "text": "FrameLayout" },
+            { "id": "d", "text": "GridLayout" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "ConstraintLayout is a modern layout that positions elements relative to the container or other elements.",
+          "hints": ["Modern standard", "Uses attachment points", "Starts with 'C'"]
+        },
+        {
+          "id": "Section-2-6-7",
+          "question": "If you are designing a container tag (e.g., ConstraintLayout), do you use a self-closing tag (/>)?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["XML", "Basics of Android"],
+          "options": [
+            { "id": "a", "text": "Yes, always" },
+            { "id": "b", "text": "No, you need a separate opening and closing tag to hold elements inside" },
+            { "id": "c", "text": "Only if there are errors" },
+            { "id": "d", "text": "Only on Windows" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "Containers require an opening tag and a matching closing tag (e.g., </androidx...Layout>) to define their boundaries for nested elements.",
+          "hints": ["Holding children", "Tag boundaries", "Episode 6 closing lesson"]
+        },
+        {
+          "id": "Section-2-6-8",
+          "question": "What is the consequence of selecting a Root Layout dimension that is smaller than the phone screen?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["UI Design", "Layouts"],
+          "options": [
+            { "id": "a", "text": "The phone screen will shrink" },
+            { "id": "b", "text": "UI elements won't be placed properly on the rest of the screen area" },
+            { "id": "c", "text": "The app will automatically resize everything" },
+            { "id": "d", "text": "Nothing happens" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "If the root container doesn't match the screen dimensions, elements won't display correctly beyond that container's boundaries.",
+          "hints": ["Placement area", "Proper coverage", "Screen vs Container"]
+        },
+        {
+          "id": "Section-2-6-9",
+          "question": "Review: In Section 1, what was the name of the software where you write Android code?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Basics of Android", "Review"],
+          "options": [
+            { "id": "a", "text": "File Explorer" },
+            { "id": "b", "text": "Android Studio" },
+            { "id": "c", "text": "Logcat" },
+            { "id": "d", "text": "Emulator" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "Android Studio is the official IDE (Integrated Development Environment) for Android development.",
+          "hints": ["Official environment", "Workspace for coding", "Software title"]
+        },
+        {
+          "id": "Section-2-6-10",
+          "question": "Why is 'match_parent' superior to using hardcoded numbers for screen height/width?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["XML", "Android Layouts"],
+          "options": [
+            { "id": "a", "text": "It handles different screen sizes across various phone models automatically" },
+            { "id": "b", "text": "It uses less power" },
+            { "id": "c", "text": "It is easier to spell" },
+            { "id": "d", "text": "It hides the developer's name" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "Match_parent ensures that your layouts adapt dynamically to whatever screen size the device has.",
+          "hints": ["Dynamic sizing", "Cross-device support", "Automatic measurement"]
+        },
+        {
+          "id": "Section-2-6-11",
+          "question": "What collective term did Episode 6 use to describe screens, buttons, and fonts that a user sees?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Basics of Android", "UI"],
+          "options": [
+            { "id": "a", "text": "Backend" },
+            { "id": "b", "text": "User Interface (UI)" },
+            { "id": "c", "text": "Hardware Interface" },
+            { "id": "d", "text": "Data Structure" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "The User Interface consists of all the visual and interactive components with which a user engages to operate the device.",
+          "hints": ["Interactive elements", "Visible part of the app", "Revise Episode 6 tutorial"]
+        },
+        {
+          "id": "Section-2-6-12",
+          "question": "When typing 'Constraint' in Android Studio XML, what should you do when common suggestions appear?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Studio", "XML"],
+          "options": [
+            { "id": "a", "text": "Type the whole name manually" },
+            { "id": "b", "text": "Select the correct suggestion and hit Enter" },
+            { "id": "c", "text": "Delete the file" },
+            { "id": "d", "text": "Close the software" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "Android Studio's auto-complete (IntelliSense) helps you quickly insert long component names like ConstraintLayout.",
+          "hints": ["Suggestion box", "Speed trick", "Use the Enter key"]
+        },
+        {
+          "id": "Section-2-6-13",
+          "question": "Review: In Section 1, how many megabytes of RAM were typically recommended for smooth Android Studio performance?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["Basics of Android", "Review"],
+          "options": [
+            { "id": "a", "text": "512 MB" },
+            { "id": "b", "text": "16 GB (16384 MB)" },
+            { "id": "c", "text": "2 GB" },
+            { "id": "d", "text": "10 MB" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "Section 1 noted that while 8 GB is minimum, 16 GB is recommended for smooth operation with emulators.",
+          "hints": ["Hardware requirements", "RAM check", "Section 1 recommendation"]
+        },
+        {
+          "id": "Section-2-6-14",
+          "question": "In Episode 6, what symbol indicates a 'separate' closing tag for a layout?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["XML", "Basics of Android"],
+          "options": [
+            { "id": "a", "text": "A slash (/) at the start of the second tag" },
+            { "id": "b", "text": "An exclamation mark (!)" },
+            { "id": "c", "text": "A hashtag (#)" },
+            { "id": "d", "text": "A dollar sign ($)" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "A separate closing tag starts with </ and ends with the component name, like </androidx...Layout>.",
+          "hints": ["Closing indicator", "Two tags", "Slash placement"]
+        },
+        {
+          "id": "Section-2-6-15",
+          "question": "What is the 'SDK' referenced in Episode 6 when discussing the 'android:' prefix?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["Basics of Android", "Developer Tools"],
+          "options": [
+            { "id": "a", "text": "Screen Designer Kit" },
+            { "id": "b", "text": "Software Development Kit" },
+            { "id": "c", "text": "System Data Kernel" },
+            { "id": "d", "text": "Start Deployment Key" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "SDK stands for Software Development Kit, containing the tools and platform libraries needed for Android app development.",
+          "hints": ["Development kit", "Standard platform tools", "What 'android:' belongs to"]
+        }
+      ]
+    }
+  ]
+}

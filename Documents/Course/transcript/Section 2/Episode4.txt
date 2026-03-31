@@ -1,0 +1,10 @@
+(0:00) Let's put another XML tag here. To do it, there is a simple trick. Just select the above one (0:08) like this, copy by ctrl-c or command-c if you are using mac like this and paste it where it just (0:23) closed like this.
+I am shifting to the next line and I am pasting it. You can paste it by ctrl-v (0:30) or command-v like this. So we have successfully pasted the above element as well.
+Here if the (0:38) XML tags are same so you don't have to write it again and again. You can simply copy and paste (0:45) like this. One more thing is you will see some squiggly lines below this text view like this.
+(0:54) Let's click on the suggestion bulb like this. On click there is nothing special here. That means (1:02) there is no any major error available here.
+For now just ignore them. Sometimes it appears because (1:11) of some internal configuration which is not a big issue. So let's run this on emulator first.
+(1:20) For this, just click on this play button as I showed you in the previous part. Let's click on (1:28) it. Once click, you will see it start working.
+So let's wait for some time to build it completely. (2:00) It's installed successfully and it placed here like this as we mentioned. (2:10) So now it's successfully run on emulator.
+That means all are good enough. There is no (2:19) any error available right now. Let's make an experiment.
+I am deleting these attributes. (2:27) I am just deleting this tag right now like this and also I am deleting the attributes like this. (2:36) Like this.
+Now I am running them on emulator again. I am reloading the part again like this. (2:45) If I do, you will see our app get crashed.

@@ -1,0 +1,6 @@
+An Android application is a collection of packages of working and functional systems that collaborate to deliver a specific set of features and user experiences on the Android platform. Before we dive into building apps, let's take a step back and understand the rules not just of Android but of the digital world we live in. Imagine a time when machines were purely mechanical.
+You had to apply force, pull a lever, turn a crank to get them to work. These machines didn't understand your words. They responded only to physical input.
+Now came electricity. Now instead of using force, you just pressed a button and the machine did the rest. This was the beginning of automation and the foundation of modern digital systems.
+Every digital machine has two main parts. First one is hardware, the physical components like CPU, RAM, motherboard, mouse, keyboard and the another one is software. It's a collection of programmes that tells the hardware what to do and how.
+You can imagine hardware as a human body and software as When they came together, only then is the machine able to work. Without each other, there is nothing to do. As I mentioned programme into definition of software.
+So what is a programme?

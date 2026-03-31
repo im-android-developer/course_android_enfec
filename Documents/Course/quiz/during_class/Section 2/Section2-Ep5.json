@@ -1,0 +1,250 @@
+{
+  "items": [
+    {
+      "name": "Section2-5",
+      "difficulty": "medium",
+      "content": [
+        {
+          "id": "Section-2-5-1",
+          "question": "What is the primary function of 'Logcat' in Android Studio?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Studio", "Logcat", "Debugging"],
+          "options": [
+            { "id": "a", "text": "To browse the internet" },
+            { "id": "b", "text": "To record system activities and errors as they happen" },
+            { "id": "c", "text": "To design app icons" },
+            { "id": "d", "text": "To check the system's temperature" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "Logcat acts as a notebook or 'machine record' that tracks actions and errors for debugging.",
+          "hints": ["Notebook for Android", "Debugging tool", "Bottom-left panel"]
+        },
+        {
+          "id": "Section-2-5-2",
+          "question": "Where can a developer find the 'Logcat' option in the Android Studio interface?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["Android Studio", "UI"],
+          "options": [
+            { "id": "a", "text": "Top right corner" },
+            { "id": "b", "text": "At the bottom left part, usually the fourth option" },
+            { "id": "c", "text": "In the File menu" },
+            { "id": "d", "text": "Under the Window menu" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "The Logcat panel is standardly located on the bottom left and is accessible through its specific tab.",
+          "hints": ["Bottom of the screen", "Fourth item on the left", "Episode 5 location tutorial"]
+        },
+        {
+          "id": "Section-2-5-3",
+          "question": "The instructor compares Logcat to which real-world situation for troubleshooting?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Debugging", "Basics of Android"],
+          "options": [
+            { "id": "a", "text": "Repairing a machine that tells you step-by-step what broke" },
+            { "id": "b", "text": "Following a cooking recipe" },
+            { "id": "c", "text": "Driving a car without a dashboard" },
+            { "id": "d", "text": "Building a house with a blueprint" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "The machine analogy explains how Logcat reveals the exact moment and location where 'something broke' in the code.",
+          "hints": ["Troubleshooting analogy", "Machine records", "Step-by-step reporting"]
+        },
+        {
+          "id": "Section-2-5-4",
+          "question": "What does a crash on the emulator usually indicate to a developer?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["Android Application Development", "Debugging"],
+          "options": [
+            { "id": "a", "text": "The phone is out of battery" },
+            { "id": "b", "text": "Mandatory attributes or logic are missing from the code" },
+            { "id": "c", "text": "The internet connection is slow" },
+            { "id": "d", "text": "The app is too big" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "As seen in Episode 5, when required attributes like layout_width and layout_height are missing, the Android system cannot render the view and crashes.",
+          "hints": ["Result of missing data", "System requirements", "App failure in Episode 5"]
+        },
+        {
+          "id": "Section-2-5-5",
+          "question": "What is the shortcut in Android Studio to 'Undo' a deletion in the XML file?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Studio", "Basics of Android"],
+          "options": [
+            { "id": "a", "text": "Ctrl-X / Cmd-X" },
+            { "id": "b", "text": "Ctrl-Z / Cmd-Z" },
+            { "id": "c", "text": "Ctrl-A / Cmd-A" },
+            { "id": "d", "text": "Ctrl-Y / Cmd-Y" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "Undo (Ctrl-Z/Cmd-Z) is commonly used to restore accidentally deleted attributes as shown in the video.",
+          "hints": ["Global 'go back' shortcut", "Standard for all editors", "Z key"]
+        },
+        {
+          "id": "Section-2-5-6",
+          "question": "Why would two distinct TextViews appear as only one on the mobile screen?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["Android Layouts", "UI Design"],
+          "options": [
+            { "id": "a", "text": "They were merged into a single tag" },
+            { "id": "b", "text": "They are perfectly overlapped because they have no layout rules" },
+            { "id": "c", "text": "One was automatically deleted" },
+            { "id": "d", "text": "The text is too small" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "Without positioning rules, multiple elements stack on top of each other, making them appear identical or hidden.",
+          "hints": ["Positioning issues", "Stacking effect", "Think of layers"]
+        },
+        {
+          "id": "Section-2-5-7",
+          "question": "How did the instructor prove that two components were 'overlapping' in Episode 5?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["Android Studio", "UI Design"],
+          "options": [
+            { "id": "a", "text": "By changing the background color" },
+            { "id": "b", "text": "By changing the text of one component from 'Hello' to 'Android'" },
+            { "id": "c", "text": "By deleting the entire layout" },
+            { "id": "d", "text": "By restarting the emulator" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "Changing the content of one component revealed that both were present at the same spot, proving they were stacked.",
+          "hints": ["Content change test", "Revealing hidden layers", "Text variation"]
+        },
+        {
+          "id": "Section-2-5-8",
+          "question": "What analogy does the instructor use to describe a 'messy suitcase' with unarranged clothes?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["Basics of Android", "Layouts"],
+          "options": [
+            { "id": "a", "text": "Unorganized database" },
+            { "id": "b", "text": "Unorganized elements without a proper layout" },
+            { "id": "c", "text": "Too many apps on a phone" },
+            { "id": "d", "text": "A computer with low RAM" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "The messy suitcase represents UI elements that are 'present' in the project but not structured or arranged for the user.",
+          "hints": ["Suitcase vs Layout", "Organization analogy", "Episode 5 ending"]
+        },
+        {
+          "id": "Section-2-5-9",
+          "question": "Review: Which tool was used in Section 1 to search for and download Android Studio?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Basics of Android", "Review"],
+          "options": [
+            { "id": "a", "text": "Play Store" },
+            { "id": "b", "text": "Messenger" },
+            { "id": "c", "text": "Google Search / Browser" },
+            { "id": "d", "text": "Paint" }
+          ],
+          "correctAnswers": ["c"],
+          "explanation": "Section 1 covered the process of searching for and downloading the installer from developer.android.com using a browser.",
+          "hints": ["Section 1 review", "Installation steps", "Where you get the .exe"]
+        },
+        {
+          "id": "Section-2-5-10",
+          "question": "In Episode 5, how do you fix the irritating 'blue color screen' (Blueprint)?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Studio", "UI Design"],
+          "options": [
+            { "id": "a", "text": "Uninstall the app" },
+            { "id": "b", "text": "Click 'Select Design Surface' and choose 'Design Only'" },
+            { "id": "c", "text": "Turn off the monitor" },
+            { "id": "d", "text": "Delete the layout file" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "Developers can toggle off the Blueprint view by selecting 'Design Only' for a cleaner workspace.",
+          "hints": ["Design Surface menu", "Blueprint vs Design", "Cleanup of the interface"]
+        },
+        {
+          "id": "Section-2-5-11",
+          "question": "True or False: Ignorable internal configuration errors will NOT affect building or running the application.",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Studio", "Debugging"],
+          "options": [
+            { "id": "a", "text": "True" },
+            { "id": "b", "text": "False" },
+            { "id": "c", "text": "Only if using Java" },
+            { "id": "d", "text": "Only on Windows" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "The instructor states that minor configuration warnings don't usually cause build failures, unlike missing mandatory attributes.",
+          "hints": ["Major vs Minor errors", "Build stability", "Advice from Episode 5"]
+        },
+        {
+          "id": "Section-2-5-12",
+          "question": "What is the 'catch' mentioned when placing a Second component in Episode 5?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["Android Layouts", "UI Design"],
+          "options": [
+            { "id": "a", "text": "It costs money" },
+            { "id": "b", "text": "It is not immediately visible because it overlaps the first one" },
+            { "id": "c", "text": "It deletes the first component" },
+            { "id": "d", "text": "It is always red" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "The 'catch' is that both components are at the same position, so the user might think there is only one until the text is changed.",
+          "hints": ["Visibility problem", "Overlapping catch", "Visual deception"]
+        },
+        {
+          "id": "Section-2-5-13",
+          "question": "Review: In Section 1, what was the first visual change we saw when a project was created?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["Basics of Android", "Review"],
+          "options": [
+            { "id": "a", "text": "A login screen" },
+            { "id": "b", "text": "The 'Hello World' default text" },
+            { "id": "c", "text": "A list of contacts" },
+            { "id": "d", "text": "A blank black screen" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "Android Studio projects create a 'Hello World' TextView by default in the layout file.",
+          "hints": ["Default template", "Empty Views Activity start", "Section 1 review"]
+        },
+        {
+          "id": "Section-2-5-14",
+          "question": "According to the instructor, why is it important to minimize Logcat after using it?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Studio", "UI"],
+          "options": [
+            { "id": "a", "text": "To hide errors from others" },
+            { "id": "b", "text": "To save screen space for the design area" },
+            { "id": "c", "text": "To increase RAM speed" },
+            { "id": "d", "text": "To avoid internet leaks" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "Minimizing side panels like Logcat or the Emulator allows the developer to focus on the main design and code windows.",
+          "hints": ["Screen management", "Workspace cleanup", "Focus on design"]
+        },
+        {
+          "id": "Section-2-5-15",
+          "question": "What specific button is used to stop the emulator execution?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Studio", "Basics of Android"],
+          "options": [
+            { "id": "a", "text": "Green triangle" },
+            { "id": "b", "text": "Red square stop button" },
+            { "id": "c", "text": "Yellow circle" },
+            { "id": "d", "text": "Blue cross" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "The red square stop button ends the current app session on the emulator.",
+          "hints": ["Stop indicator", "Standard media controls", "Beside the Play button"]
+        }
+      ]
+    }
+  ]
+}
