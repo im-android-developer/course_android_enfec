@@ -1,0 +1,210 @@
+{
+  "items": [
+    {
+      "name": "Section7-Episode3",
+      "difficulty": "medium",
+      "content": [
+        {
+          "id": "S7-E3-Q1",
+          "question": "In Episode 3 the instructor partitioned the calculator screen into three main vertical parts. Which of the following accurately describes those three parts?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Layout Architecture", "Calculator", "Sections"],
+          "options": [
+            { "id": "a", "text": "Header (title), calculation display box, and the numbers/operators area." },
+            { "id": "b", "text": "Toolbar, navigation drawer, and footer action bar." },
+            { "id": "c", "text": "Status bar, notification pane, and settings panel." },
+            { "id": "d", "text": "A single ConstraintLayout with three overlapping fragments." }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "The screen is divided into three vertical boxes: the heading (text view), the calculation/display box, and the numbers+operators area — exactly as the instructor described.",
+          "hints": [
+            "He named them heading, calculation box, and number/operator box.",
+            "This was not about toolbars or system panels.",
+            "Numbers and operators were later split into nested parts."
+          ]
+        },
+        {
+          "id": "S7-E3-Q2",
+          "question": "To implement the number pad, what nesting approach did the instructor use so that number rows appear horizontally while the overall pad stacks vertically?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["Nesting", "Buttons", "Orientation"],
+          "options": [
+            { "id": "a", "text": "One vertical LinearLayout that contains multiple horizontal LinearLayouts; each horizontal LinearLayout holds a row of buttons." },
+            { "id": "b", "text": "Several FrameLayouts layered with Z-index to simulate rows." },
+            { "id": "c", "text": "A single horizontal LinearLayout with layout_weight to wrap rows automatically." },
+            { "id": "d", "text": "Use a GridLayout with fixed row counts only; nesting wasn't used." }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "He created a vertical parent for the pad and inside it added horizontal LinearLayouts for each row. This yields rows that are horizontal while the pad itself stacks vertically.",
+          "hints": [
+            "He copied a horizontal group and pasted it multiple times for extra rows.",
+            "He explicitly set orientation='horizontal' on the row containers.",
+            "The transcript shows repeating horizontal blocks inside a vertical area."
+          ]
+        },
+        {
+          "id": "S7-E3-Q3",
+          "question": "Which widget did the instructor prefer for the calculator buttons to allow easier styling and consistent behavior across API levels?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["AppCompatButton", "Styling", "Buttons"],
+          "options": [
+            { "id": "a", "text": "android.widget.Button (the platform Button)." },
+            { "id": "b", "text": "ImageButton only, since calculator buttons must be icons." },
+            { "id": "c", "text": "androidx.appcompat.widget.AppCompatButton for reliable styling control." },
+            { "id": "d", "text": "TextView with clickable='true' because it avoids button styling issues." }
+          ],
+          "correctAnswers": ["c"],
+          "explanation": "He used AppCompatButton when creating numeric buttons to easily set size, background color, and font across devices. AppCompat offers consistent styling support.",
+          "hints": [
+            "He typed 'app compact button I am giving 50 dp'.",
+            "The choice was about consistent styling across API levels.",
+            "He didn't use TextView hacks for all numeric keys."
+          ]
+        },
+        {
+          "id": "S7-E3-Q4",
+          "question": "What did the instructor change when he realized the buttons needed space around them: padding or margin, and why?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["Padding vs Margin", "Spacing", "Buttons"],
+          "options": [
+            { "id": "a", "text": "He used padding because padding creates space outside the view between siblings." },
+            { "id": "b", "text": "He used margin to create space between sibling views because margin affects a view's outside spacing." },
+            { "id": "c", "text": "He used layout_weight instead of margin or padding to create breathing room." },
+            { "id": "d", "text": "He removed all spacing—buttons naturally space themselves in LinearLayout." }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "He opted for margin (e.g., margin 10dp or 5dp) to space the buttons apart; margins control external spacing between sibling views.",
+          "hints": [
+            "He said 'not padding instead of padding let us go with margin.'",
+            "Margin affects outside spacing; padding affects inside content area.",
+            "Weights were not introduced as the spacing solution."
+          ]
+        },
+        {
+          "id": "S7-E3-Q5",
+          "question": "Why did the instructor enable 'blueprint' or design preview when building the calculator screen?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Design", "Preview", "Android Studio"],
+          "options": [
+            { "id": "a", "text": "To get an idea of placement and spacing visually while arranging components before running the app." },
+            { "id": "b", "text": "To force the app to build faster by caching layouts." },
+            { "id": "c", "text": "To automatically generate vector drawables for the UI." },
+            { "id": "d", "text": "To convert LinearLayouts into ConstraintLayouts automatically." }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "The blueprint/design preview helps visualize placements and spacing so you know where to position components before running the app.",
+          "hints": [
+            "He said blueprint gives an idea of placement we are working right now.",
+            "It's a visual aid, not a build speed tool.",
+            "No automatic conversion of layouts happens."
+          ]
+        },
+        {
+          "id": "S7-E3-Q6",
+          "question": "What font and size did the instructor choose for the heading in Episode 3?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Typography", "TextView"],
+          "options": [
+            { "id": "a", "text": "Poppins Medium at 30dp." },
+            { "id": "b", "text": "Roboto Regular at 12sp." },
+            { "id": "c", "text": "System Default at 24sp." },
+            { "id": "d", "text": "Arial Bold at 40dp." }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "He set the heading font to Poppins Medium and increased the size to 30 (noting 30 dp as the chosen size for the title).",
+          "hints": [
+            "He used Poppins medium and 'increase the size of it that is size 30 db'.",
+            "The heading was bold and centered.",
+            "Other options are not mentioned in the transcript."
+          ]
+        },
+        {
+          "id": "S7-E3-Q7",
+          "question": "Why did the instructor increase number button sizes from 50 to 60dp during the demo?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["Buttons", "UX"],
+          "options": [
+            { "id": "a", "text": "To create more space for padding and improve usability when tapped." },
+            { "id": "b", "text": "Because smaller sizes are not allowed on Android." },
+            { "id": "c", "text": "To break the layout intentionally for demonstration." },
+            { "id": "d", "text": "To ensure the buttons are invisible until pressed." }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "He increased the button size to give more space for padding and margins, improving the visual layout and tappable area.",
+          "hints": [
+            "He said there was enough space and increased the size to 60dp.",
+            "Larger buttons improve touch targets.",
+            "This was a design decision, not a platform requirement."
+          ]
+        },
+        {
+          "id": "S7-E3-Q8",
+          "question": "Which attribute did the instructor set to center the heading horizontally on the screen?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["TextView", "Gravity"],
+          "options": [
+            { "id": "a", "text": "android:gravity='center' or center_horizontal on the TextView." },
+            { "id": "b", "text": "android:layout_margin='0dp' only." },
+            { "id": "c", "text": "android:paddingLeft='50dp' to push it centrally." },
+            { "id": "d", "text": "Use a separate ImageView behind the text to fake centering." }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "He used center gravity (center or center_horizontal) on the TextView to align the heading horizontally.",
+          "hints": [
+            "He said 'put it into centre gravity centre horizontal'.",
+            "Gravity aligns content inside the view.",
+            "Margins or padding are not the intended centering technique here."
+          ]
+        },
+        {
+          "id": "S7-E3-Q9",
+          "question": "Why did the instructor change the calculation box background from black to a named resource like 'text_blue'?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["Resources", "Colors"],
+          "options": [
+            { "id": "a", "text": "To reuse a named color across the app and keep consistent branding rather than hardcoding inline hex values." },
+            { "id": "b", "text": "Because black is not supported on TextViews." },
+            { "id": "c", "text": "To convert the TextView into an ImageView." },
+            { "id": "d", "text": "To automatically make the box clickable." }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "He replaced an ad-hoc black value with a named resource (like text_blue) so it can be reused and maintain consistent visuals across components.",
+          "hints": [
+            "He moved away from hard-coded colors into resource values.",
+            "Named colors live in res/values/colors.xml.",
+            "This is about reusability, not support or click behavior."
+          ]
+        },
+        {
+          "id": "S7-E3-Q10",
+          "question": "When creating rows of number buttons, what small change ensured consistent spacing between buttons?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Spacing", "Buttons"],
+          "options": [
+            { "id": "a", "text": "Applying a margin of 5dp (or 10dp) to each button to separate siblings." },
+            { "id": "b", "text": "Setting android:visibility='gone' on alternate buttons." },
+            { "id": "c", "text": "Using an extra ConstraintLayout for each button." },
+            { "id": "d", "text": "Setting the button text to an empty string." }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "He used margin (5dp or 10dp) on buttons to create breathing room between them, improving layout clarity and touch targets.",
+          "hints": [
+            "He chose margin over padding for outside spacing.",
+            "Margins were copied when he pasted rows of buttons.",
+            "This was a spacing, not visibility, change."
+          ]
+        }
+      ]
+    }
+  ]
+}

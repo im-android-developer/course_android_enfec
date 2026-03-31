@@ -1,0 +1,260 @@
+{
+  "items": [
+    {
+      "name": "Section8-Episode3",
+      "difficulty": "medium",
+      "content": [
+        {
+          "id": "S8-E3-Q1",
+          "question": "What layout did the instructor replace ConstraintLayout with when demonstrating relative positioning?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Layouts", "RelativeLayout"],
+          "options": [
+            { "id": "a", "text": "RelativeLayout" },
+            { "id": "b", "text": "LinearLayout" },
+            { "id": "c", "text": "FrameLayout" },
+            { "id": "d", "text": "GridLayout" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "He explicitly replaced the ConstraintLayout root with a RelativeLayout to demonstrate relative positioning of views.",
+          "hints": ["He said he is replacing constraint layout with relative layout.", "RelativeLayout allows position relations between views."]
+        },
+        {
+          "id": "S8-E3-Q2",
+          "question": "Why does RelativeLayout not produce an orientation error like LinearLayout might?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["RelativeLayout", "Orientation"],
+          "options": [
+            { "id": "a", "text": "Because RelativeLayout is not based on orientation; it positions views using relationships." },
+            { "id": "b", "text": "Because RelativeLayout automatically sets orientation='vertical' under the hood." },
+            { "id": "c", "text": "Because RelativeLayout is deprecated and Android ignores orientation errors for it." },
+            { "id": "d", "text": "Because RelativeLayout only accepts ImageView children." }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "RelativeLayout doesn't rely on an orientation attribute; instead it arranges children using positional relations (toLeftOf, below, etc.).",
+          "hints": ["He observed there was no orientation error with RelativeLayout.", "Positioning is relation-based, not orientation-based."]
+        },
+        {
+          "id": "S8-E3-Q3",
+          "question": "The instructor divided the design into nine conceptual sections. Which of the following is NOT one of those sections?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Design", "Positions"],
+          "options": [
+            { "id": "a", "text": "Top Left" },
+            { "id": "b", "text": "Center" },
+            { "id": "c", "text": "Bottom Middle" },
+            { "id": "d", "text": "Floating Center Right" }
+          ],
+          "correctAnswers": ["d"],
+          "explanation": "He listed top left, top middle, top right, middle left, centre, middle right, bottom left, bottom middle and bottom right — 'Floating Center Right' was not part of the list.",
+          "hints": ["He enumerated a 3x3 grid of positions.", "Centre (center) is the middle cell."]
+        },
+        {
+          "id": "S8-E3-Q4",
+          "question": "When the instructor added two overlapping TextViews inside the RelativeLayout without constraints, what visual effect occurred?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Overlap", "TextView"],
+          "options": [
+            { "id": "a", "text": "The TextViews overlapped one another until relative position attributes were applied." },
+            { "id": "b", "text": "They automatically arranged horizontally with spacing." },
+            { "id": "c", "text": "They disappeared from the design preview." },
+            { "id": "d", "text": "Android Studio converted them into Buttons." }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "Without explicit relative attributes, both TextViews appeared at the same default position and overlapped; the instructor then demonstrated positioning them relative to each other.",
+          "hints": ["He observed they were overlapping like in ConstraintLayout when no positions were set.", "Relative attributes fix overlaps by specifying relations."
+          ]
+        },
+        {
+          "id": "S8-E3-Q5",
+          "question": "Which attribute would you use to place a TextView to the left of another view in a RelativeLayout?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Attributes", "RelativeLayout"],
+          "options": [
+            { "id": "a", "text": "android:layout_toLeftOf='@id/otherView'" },
+            { "id": "b", "text": "android:orientation='left'" },
+            { "id": "c", "text": "android:layout_weight='left'" },
+            { "id": "d", "text": "android:layout_marginLeft='@id/otherView'" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "The correct RelativeLayout attribute is android:layout_toLeftOf='@id/otherView' to position a view left of another.",
+          "hints": ["Think 'toLeftOf' style attributes.", "Relative attributes reference other view ids."
+          ]
+        },
+        {
+          "id": "S8-E3-Q6",
+          "question": "The instructor used large font sizes for headings (initially 50 then reduced). Which font family did he choose for the heading in the demo?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Typography", "Fonts"],
+          "options": [
+            { "id": "a", "text": "Poppins Medium" },
+            { "id": "b", "text": "Roboto Regular" },
+            { "id": "c", "text": "Arial" },
+            { "id": "d", "text": "System Default" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "He set the heading font to Poppins Medium and adjusted the size (30dp in the final choice).",
+          "hints": ["He said 'poppins medium' and changed the size to 30 db.", "The heading used a bold/medium Poppins style."]
+        },
+        {
+          "id": "S8-E3-Q7",
+          "question": "Why did the two TextViews overlap when both were added with wrap_content?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["Overlap", "wrap_content"],
+          "options": [
+            { "id": "a", "text": "Because no relative positioning attributes were provided, so both default to the same location and overlap." },
+            { "id": "b", "text": "Because wrap_content always forces overlap in RelativeLayout." },
+            { "id": "c", "text": "Because the parent layout was not visible in the preview." },
+            { "id": "d", "text": "Because TextViews cannot be siblings in a RelativeLayout." }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "They overlapped because no positioning relations were set; RelativeLayout requires attributes to disambiguate placement when multiple children would otherwise render at the same origin.",
+          "hints": ["Overlapping happens when no constraints/relations exist.", "You must use attributes like toRightOf, below, centerInParent."
+          ]
+        },
+        {
+          "id": "S8-E3-Q8",
+          "question": "What did the instructor say about the imaginary grid lines used to teach positions?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Teaching", "Visualization"],
+          "options": [
+            { "id": "a", "text": "They are conceptual aids only and are not present in Android Studio; don't try to add them in real layouts." },
+            { "id": "b", "text": "They must be drawn as Views to enable relative positioning." },
+            { "id": "c", "text": "They are a feature of ConstraintLayout, not RelativeLayout." },
+            { "id": "d", "text": "They are part of the manifest settings for layout debugging." }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "He emphasized the grid lines are imaginary conceptual tools to explain positions and are not real features inside Android Studio.",
+          "hints": ["He warned not to expect those lines in Android Studio.", "They were used only for conceptual clarity."]
+        },
+        {
+          "id": "S8-E3-Q9",
+          "question": "Which attribute centers a view inside its parent in RelativeLayout?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Attributes", "Centering"],
+          "options": [
+            { "id": "a", "text": "android:layout_centerInParent='true'" },
+            { "id": "b", "text": "android:gravity='center'" },
+            { "id": "c", "text": "android:layout_weight='center'" },
+            { "id": "d", "text": "android:center='true'" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "In RelativeLayout, android:layout_centerInParent='true' centers the view both horizontally and vertically inside its parent.",
+          "hints": ["Centering uses layout_centerInParent in RelativeLayout.", "Gravity is used inside the view's content, not for RelativeLayout child placement."
+          ]
+        },
+        {
+          "id": "S8-E3-Q10",
+          "question": "When teaching relative positioning, the instructor suggested placing a TextView with id 'hello_world'. To place another TextView below it, which attribute would you use?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Attributes", "Below"],
+          "options": [
+            { "id": "a", "text": "android:layout_below='@id/hello_world'" },
+            { "id": "b", "text": "android:layout_toRightOf='@id/hello_world'" },
+            { "id": "c", "text": "android:layout_alignParentLeft='@id/hello_world'" },
+            { "id": "d", "text": "android:layout_marginTop='@id/hello_world'" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "Use android:layout_below='@id/hello_world' to place a view directly beneath another identified view in RelativeLayout.",
+          "hints": ["The attribute name uses 'below'.", "It references the other view's id."
+          ]
+        },
+        {
+          "id": "S8-E3-Q11",
+          "question": "Which behavior differentiates RelativeLayout from ConstraintLayout according to the instructor?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["Layouts", "Comparison"],
+          "options": [
+            { "id": "a", "text": "RelativeLayout relies on view-to-view relations; ConstraintLayout uses explicit constraints to the parent and other anchors, often requiring more setup for flexible layouts." },
+            { "id": "b", "text": "RelativeLayout cannot overlap views while ConstraintLayout always overlaps them." },
+            { "id": "c", "text": "ConstraintLayout is identical to RelativeLayout but has a different name." },
+            { "id": "d", "text": "RelativeLayout requires weights for all children like LinearLayout." }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "He contrasted relative positioning (RelativeLayout) with constraint-based positioning (ConstraintLayout), noting RelativeLayout uses simpler relations while ConstraintLayout uses anchors and constraints.",
+          "hints": ["He compared the two and explained orientation vs relation-based layouts.", "ConstraintLayout requires attaching constraints for many placements."
+          ]
+        },
+        {
+          "id": "S8-E3-Q12",
+          "question": "If two TextViews appear identical after copy-paste and might confuse observers, what trick did the instructor use to make their difference obvious?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["UX", "Debugging"],
+          "options": [
+            { "id": "a", "text": "Change the text of the second TextView (e.g., from 'Hello World' to 'Hello Android')." },
+            { "id": "b", "text": "Rename the XML file containing the TextView." },
+            { "id": "c", "text": "Change the font file on disk to highlight the difference." },
+            { "id": "d", "text": "Delete the first TextView to reveal the second." }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "He changed the text of the copied TextView to show they were distinct components (e.g., 'Hello Android'), clarifying they were not overlapping duplicates.",
+          "hints": ["He renamed the copied view's text to show two distinct components.", "This visually proves the copy-paste created a new element."
+          ]
+        },
+        {
+          "id": "S8-E3-Q13",
+          "question": "Which XML size attribute did the instructor change from 50 to 30 (then settled) when adjusting the heading?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["TextSize", "Typography"],
+          "options": [
+            { "id": "a", "text": "textSize (he reduced from 50 to 30)." },
+            { "id": "b", "text": "layout_width (from 50dp to 30dp)." },
+            { "id": "c", "text": "padding (from 50dp to 30dp)." },
+            { "id": "d", "text": "layout_weight (from 50 to 30)." }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "He initially tried a very large text size (50), then reduced it to 30 for the heading using the textSize attribute.",
+          "hints": ["He mentioned 50 then 30 db for the heading size.", "This is a textSize change."
+          ]
+        },
+        {
+          "id": "S8-E3-Q14",
+          "question": "What should you do if two views overlap in RelativeLayout and you want one to appear to the right of the other?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Fix", "Positioning"],
+          "options": [
+            { "id": "a", "text": "Add android:layout_toRightOf='@id/otherView' on the view you want to move to the right." },
+            { "id": "b", "text": "Set android:orientation='horizontal' on the RelativeLayout." },
+            { "id": "c", "text": "Wrap both views inside a LinearLayout and hope for the best." },
+            { "id": "d", "text": "Increase the font size of the left view so it forces reflow." }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "Use android:layout_toRightOf='@id/otherView' to place a view to the right of another within a RelativeLayout.",
+          "hints": ["Use 'toRightOf' related attributes.", "RelativeLayout attributes reference view ids."
+          ]
+        },
+        {
+          "id": "S8-E3-Q15",
+          "question": "Why did the instructor emphasize closing other screens and minimizing project panels before demonstrating?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Workflow", "IDE"],
+          "options": [
+            { "id": "a", "text": "To reduce visual clutter and focus on the active layout being edited in split view." },
+            { "id": "b", "text": "To force Android Studio to recompile the entire project." },
+            { "id": "c", "text": "To automatically convert ConstraintLayout to RelativeLayout." },
+            { "id": "d", "text": "To enable a special RelativeLayout debugging mode." }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "He closed other screens to reduce clutter and work cleanly in split view while editing the layout, making the demo easier to follow.",
+          "hints": ["He closed other screens like colours and others.", "This is an IDE workflow tip for clarity."
+          ]
+        }
+      ]
+    }
+  ]
+}

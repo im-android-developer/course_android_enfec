@@ -1,0 +1,180 @@
+{
+  "items": [
+    {
+      "name": "Section7-Episode2",
+      "difficulty": "medium",
+      "content": [
+        {
+          "id": "S7-E2-Q1",
+          "question": "In Episode 2 the instructor introduced 'blending' while working with LinearLayout. What does 'blending' refer to in this context?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["LinearLayout", "Blending", "Layout"],
+          "options": [
+            { "id": "a", "text": "Using ConstraintLayout and blending constraints to overlap views." },
+            { "id": "b", "text": "Nesting layouts (e.g., putting a horizontal LinearLayout inside a vertical LinearLayout) to combine vertical and horizontal placements." },
+            { "id": "c", "text": "Applying a gradient background so two layouts visually blend together." },
+            { "id": "d", "text": "Using view animations to transition between different layout states." }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "Blending here means nesting layouts to achieve both vertical and horizontal arrangements—adding a horizontal LinearLayout inside a vertical one so some elements flow horizontally while others remain vertical.",
+          "hints": [
+            "He said 'layout under layout' and added another LinearLayout.",
+            "It was demonstrated by setting orientation='horizontal' on a nested layout.",
+            "This was about arrangement, not visual effects."
+          ]
+        },
+        {
+          "id": "S7-E2-Q2",
+          "question": "Why did the instructor set the nested LinearLayout's height to wrap_content instead of match_parent when blending?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["wrap_content", "match_parent", "Layout"],
+          "options": [
+            { "id": "a", "text": "Because wrap_content reserves only the space needed for its children, preventing it from covering or pushing other components off the screen." },
+            { "id": "b", "text": "Because match_parent is deprecated for nested LinearLayouts and will throw an exception." },
+            { "id": "c", "text": "Because wrap_content automatically sets equal width among child views." },
+            { "id": "d", "text": "Because Android Studio forces using wrap_content in horizontal orientations." }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "He used wrap_content because he didn't know how many child elements would be placed; match_parent could cover other content and make it vanish. wrap_content adapts to children size.",
+          "hints": [
+            "He warned that match_parent could make the above text vanish.",
+            "wrap_content adapts to children size.",
+            "This is a layout behavior decision, not a tooling rule."
+          ]
+        },
+        {
+          "id": "S7-E2-Q3",
+          "question": "When placing image views inside the nested horizontal layout, which attribute did the instructor add to provide spacing between images?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["ImageView", "Margin", "Spacing"],
+          "options": [
+            { "id": "a", "text": "android:padding='10dp' on the parent layout so children remain spaced." },
+            { "id": "b", "text": "android:margin='10dp' (or 5dp) on the ImageView elements to create outer spacing between them." },
+            { "id": "c", "text": "android:layout_weight='1' on every ImageView to distribute space." },
+            { "id": "d", "text": "Use a ShapeDrawable between images as a spacer view." }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "He added margin (5dp or 10dp) to ImageView elements to create gaps between them. Margin controls outer spacing between sibling views.",
+          "hints": [
+            "He said 'add some margin into it. So margin, 5 dp margin will be good'.",
+            "Margin provides outside spacing between sibling views.",
+            "No weights or spacer drawables were used."
+          ]
+        },
+        {
+          "id": "S7-E2-Q4",
+          "question": "Which change would you make to allow a horizontal group of TextViews to appear side-by-side inside a vertical LinearLayout?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["LinearLayout", "Orientation", "Nesting"],
+          "options": [
+            { "id": "a", "text": "Set the parent LinearLayout to orientation='horizontal' and place all children directly inside it." },
+            { "id": "b", "text": "Nest a new LinearLayout with orientation='horizontal' inside the vertical parent and add the TextViews inside the nested layout." },
+            { "id": "c", "text": "Wrap each TextView inside a ConstraintLayout to force horizontal arrangement." },
+            { "id": "d", "text": "Set all TextViews to layout_width='0dp' without changing orientations." }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "Keep the outer container vertical and add a nested horizontal LinearLayout to host horizontally laid-out children. This mixes directions without affecting the rest of the screen.",
+          "hints": [
+            "He used 'another linear layout' with orientation='horizontal'.",
+            "Goal: mix horizontal sections inside a vertical flow.",
+            "No ConstraintLayout conversions were introduced."
+          ]
+        },
+        {
+          "id": "S7-E2-Q5",
+          "question": "When creating a new activity the instructor mentioned the 'intent filter' in the manifest. What did he say about marking the activity as the launcher?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["Activity", "Manifest", "Launcher"],
+          "options": [
+            { "id": "a", "text": "He insisted you must always mark new activities as launcher in the wizard; otherwise they won't compile." },
+            { "id": "b", "text": "He suggested you can set the intent filter later in the manifest and it's not mandatory to mark it as launcher during creation." },
+            { "id": "c", "text": "He recommended adding two launcher activities for redundancy." },
+            { "id": "d", "text": "He said launcher activities are deprecated and should not be used." }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "He noted you can place the intent filter later in the manifest file; there's no need to mark an activity as launcher during the new activity wizard if you don't want to."
+        },
+        {
+          "id": "S7-E2-Q6",
+          "question": "Why did the instructor set the ImageView width and height to 100dp when demonstrating avatars?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["ImageView", "Dimensions"],
+          "options": [
+            { "id": "a", "text": "To create a square avatar with consistent visual size (100dp × 100dp)." },
+            { "id": "b", "text": "Because Android requires imageviews to be 100dp by default." },
+            { "id": "c", "text": "To make the ImageView automatically load a higher-resolution asset." },
+            { "id": "d", "text": "To prevent the ImageView from being clickable." }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "He set both width and height to 100dp to create a uniform square avatar size across the row."
+        },
+        {
+          "id": "S7-E2-Q7",
+          "question": "What happens when you copy and paste a TextView inside a vertical LinearLayout in Android Studio, according to the instructor?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["LinearLayout", "CopyPaste"],
+          "options": [
+            { "id": "a", "text": "The pasted TextView appears directly below the previous one following the vertical stack behavior." },
+            { "id": "b", "text": "The pasted TextView overlaps the previous one and must be manually constrained." },
+            { "id": "c", "text": "The pasted TextView is placed at a random screen position." },
+            { "id": "d", "text": "The pasted TextView is converted into an ImageView automatically." }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "In a vertical LinearLayout each new child stacks below the previous — copy-paste follows this rule, so the pasted TextView appears below the original."
+        },
+        {
+          "id": "S7-E2-Q8",
+          "question": "Why did the instructor avoid using match_parent on the nested horizontal LinearLayout?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["match_parent", "wrap_content", "Layout"],
+          "options": [
+            { "id": "a", "text": "match_parent would expand the nested layout and could cover other content, making the screen messy or hiding text above it." },
+            { "id": "b", "text": "match_parent is not allowed inside any LinearLayout and will cause a runtime error." },
+            { "id": "c", "text": "match_parent forces child views to use exactly 0dp width." },
+            { "id": "d", "text": "match_parent disables orientation on the nested layout." }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "Using match_parent could make the nested layout take all space and push or hide other components; that's why wrap_content was preferred."
+        },
+        {
+          "id": "S7-E2-Q9",
+          "question": "The instructor used 'SRC' on ImageView to set an avatar resource. What does the 'src' attribute specify?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["ImageView", "Attributes"],
+          "options": [
+            { "id": "a", "text": "The image resource to display inside the ImageView (e.g., @drawable/avatar2)." },
+            { "id": "b", "text": "The background color of the ImageView." },
+            { "id": "c", "text": "The layout width of the ImageView in dp." },
+            { "id": "d", "text": "The click listener method name for the ImageView." }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "The 'src' attribute sets the drawable resource displayed by the ImageView, such as an avatar image."
+        },
+        {
+          "id": "S7-E2-Q10",
+          "question": "When the instructor deleted nodes while experimenting, what was his stated reason for using wrap_content on newly added layouts?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["Layout", "BestPractices"],
+          "options": [
+            { "id": "a", "text": "He used wrap_content because he didn't know how many elements would be placed and wanted the layout to size itself to children." },
+            { "id": "b", "text": "He used wrap_content because it enforces a minimum width of 300dp." },
+            { "id": "c", "text": "He used wrap_content because it disables margins automatically." },
+            { "id": "d", "text": "He used wrap_content because it makes components invisible until populated." }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "wrap_content ensures the container only uses the space needed by its children which is useful when the number or size of children is unknown."
+        }
+      ]
+    }
+  ]
+}

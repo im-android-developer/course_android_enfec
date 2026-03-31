@@ -1,0 +1,105 @@
+{
+  "items": [
+    {
+      "name": "Section8-Episode2",
+      "difficulty": "medium",
+      "content": [
+        {
+          "id": "S8-E2-Q1",
+          "question": "What limitation of LinearLayout did the instructor highlight at the start of Episode 2?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["LinearLayout", "Limitations"],
+          "options": [
+            { "id": "a", "text": "That to place elements left and right repeatedly you may end up writing many nested LinearLayouts and excessive code." },
+            { "id": "b", "text": "That LinearLayout cannot display images." },
+            { "id": "c", "text": "That LinearLayout always requires ConstraintSet to run." },
+            { "id": "d", "text": "That LinearLayout only supports vertical orientation on tablets." }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "He noted that using LinearLayout for every left/right arrangement often forces many nested layouts and more code; this motivated introducing RelativeLayout as an alternative.",
+          "hints": [
+            "He asked whether you've found any limitation with LinearLayout.",
+            "He said placing right and left repeatedly forces lots of code."
+          ]
+        },
+        {
+          "id": "S8-E2-Q2",
+          "question": "What is the core idea behind RelativeLayout as explained in Episode 2?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["RelativeLayout", "Positioning"],
+          "options": [
+            { "id": "a", "text": "It allows positioning components relative to each other or to the parent container (e.g., left of, right of, below)." },
+            { "id": "b", "text": "It automatically lays out views in a grid without any attributes." },
+            { "id": "c", "text": "It requires orientation attribute like LinearLayout to operate." },
+            { "id": "d", "text": "It is only for drawing shapes and cannot contain child views." }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "RelativeLayout positions elements relative to each other or the parent (for example placing A to the left of B), avoiding repeated nested orientation-based layouts.",
+          "hints": [
+            "He compared it to students A and B standing relative to each other.",
+            "Relative positions (left of, right of, below) are the main concept."
+          ]
+        },
+        {
+          "id": "S8-E2-Q3",
+          "question": "Which of these statements about RelativeLayout did the instructor imply is true?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["RelativeLayout", "Behavior"],
+          "options": [
+            { "id": "a", "text": "RelativeLayout does not require an orientation attribute and instead relies on positional relationships." },
+            { "id": "b", "text": "RelativeLayout requires orientation='horizontal' to position elements left/right." },
+            { "id": "c", "text": "RelativeLayout automatically stacks children vertically like LinearLayout." },
+            { "id": "d", "text": "RelativeLayout is deprecated and should not be used." }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "He showed that unlike LinearLayout, RelativeLayout doesn't use orientation; positions are defined by relational attributes between views or relative to the parent.",
+          "hints": [
+            "He removed orientation-related errors when replacing ConstraintLayout with RelativeLayout.",
+            "Relative layout centers on relations, not orientation."
+          ]
+        },
+        {
+          "id": "S8-E2-Q4",
+          "question": "In the instructor's analogy, if student A stands 'left of' student B, what concept does this represent in RelativeLayout?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Analogy", "RelativePosition"],
+          "options": [
+            { "id": "a", "text": "Defining a view's position in relation to another view (e.g., android:layout_toLeftOf)." },
+            { "id": "b", "text": "A new type of animation between students." },
+            { "id": "c", "text": "A memory leak scenario in layouts." },
+            { "id": "d", "text": "Specifying padding for both views simultaneously." }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "The analogy maps directly to RelativeLayout attributes like layout_toLeftOf or layout_toRightOf that position a view relative to another view.",
+          "hints": [
+            "He used two students A and B to explain relative placement.",
+            "Think of attributes that say 'toLeftOf' or 'below'."
+          ]
+        },
+        {
+          "id": "S8-E2-Q5",
+          "question": "What caution did the instructor give about the grid lines used to explain positions?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Conceptual", "VisualAid"],
+          "options": [
+            { "id": "a", "text": "The grid lines are imaginary conceptual aids and not features of Android Studio; don't try to add them in code." },
+            { "id": "b", "text": "The grid lines must be added as child views to the layout to work at runtime." },
+            { "id": "c", "text": "These grid lines are required to enable relative positioning." },
+            { "id": "d", "text": "The grid lines are part of the manifest configuration." }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "He clarified that the nine-section grid used for explanation is an imaginary aid for understanding positions and is not something to be drawn in Android Studio.",
+          "hints": [
+            "He said 'don't try to put these lines over Android Studio'.",
+            "They are conceptual, not actual UI elements."
+          ]
+        }
+      ]
+    }
+  ]
+}

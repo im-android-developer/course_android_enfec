@@ -1,0 +1,210 @@
+{
+  "items": [
+    {
+      "name": "Section7-Episode4",
+      "difficulty": "medium",
+      "content": [
+        {
+          "id": "S7-E4-Q1",
+          "question": "Episode 4 begins by counting linear layouts used on the calculator screen. How many linear layouts did the instructor say were used in total?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Count", "Layouts"],
+          "options": [
+            { "id": "a", "text": "4" },
+            { "id": "b", "text": "6" },
+            { "id": "c", "text": "8" },
+            { "id": "d", "text": "10" }
+          ],
+          "correctAnswers": ["c"],
+          "explanation": "He explicitly counted and stated there are 8 linear layouts involved on that screen (root, content box, box1, multiple button boxes, and box2 for operators).",
+          "hints": [
+            "He said: 'So, in total, we have 8 linear layouts available into this.'",
+            "Think root + content + several inner boxes (numbers + operators).",
+            "He repeated the number during the explanation."
+          ]
+        },
+        {
+          "id": "S7-E4-Q2",
+          "question": "Where did the instructor store color values like 'pastel_green' and 'vivid_green' before applying them in XML?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Resources", "Colors"],
+          "options": [
+            { "id": "a", "text": "Hard-coded inline hex values inside each View tag." },
+            { "id": "b", "text": "In res/values/colors.xml as named color resources (e.g., pastel_green)." },
+            { "id": "c", "text": "Inside the AndroidManifest.xml under application attributes." },
+            { "id": "d", "text": "In a drawable folder as PNG assets." }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "He said he would add entries into the colors resource (res/values/colors.xml) like pastel_green and vivid_green, then reference them by name in layouts for reuse.",
+          "hints": [
+            "He typed color names like 'pastel_green' and 'vivid_green' and referenced hex codes when defining them.",
+            "Resource files under res/values are the standard place for named colors.",
+            "Manifest or drawable PNGs are not used for named color declarations."
+          ]
+        },
+        {
+          "id": "S7-E4-Q3",
+          "question": "The instructor warned against hardcoding dp values for component widths and suggested an alternative for responsive screens. What was the recommended approach?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["Responsive", "Layout", "Weights"],
+          "options": [
+            { "id": "a", "text": "Continue hardcoding dp values but add more breakpoints in code." },
+            { "id": "b", "text": "Use percentage-based sizing or layout_weight so components scale relative to the parent instead of fixed dps." },
+            { "id": "c", "text": "Wrap every component inside a ScrollView to handle size changes." },
+            { "id": "d", "text": "Avoid LinearLayout entirely and only use fixed-size ImageViews for layout." }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "He recommended percent/relative sizing (e.g., layout_weight or percent values) so children occupy proportional space and the UI remains responsive across screen sizes.",
+          "hints": [
+            "He demonstrated expanding a box to 800dp then said hardcoding is wrong.",
+            "He recommended percentile values so components resize with the parent.",
+            "ScrollView or fixed ImageView approaches were not suggested as the main solution."
+          ]
+        },
+        {
+          "id": "S7-E4-Q4",
+          "question": "When creating the content box (the area that holds numeric and operator boxes), which attribute did the instructor add to separate it from other elements visually?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Margin", "Padding", "Spacing"],
+          "options": [
+            { "id": "a", "text": "He used android:margin='10dp' to create an outer gap around the box." },
+            { "id": "b", "text": "He used android:padding='100dp' to create a huge inner gap." },
+            { "id": "c", "text": "He set layout_marginTop='0dp' to collapse the spacing." },
+            { "id": "d", "text": "He relied only on background color without any margins or padding." }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "He added a margin (10dp) to the box so it had a visible gap from surrounding elements; padding is for inner spacing.",
+          "hints": [
+            "He said 'margin of 10 dp' when creating the box.",
+            "Margin affects outside spacing whereas padding affects inside spacing.",
+            "He sometimes used both margin and padding in different places."
+          ]
+        },
+        {
+          "id": "S7-E4-Q5",
+          "question": "Which gravity/alignment did the instructor use for the 'Calculator App' title to place it centered horizontally?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["TextView", "Gravity"],
+          "options": [
+            { "id": "a", "text": "android:gravity='center' (center horizontal) on the TextView." },
+            { "id": "b", "text": "android:layout_alignParentLeft='true' on the TextView." },
+            { "id": "c", "text": "Use an ImageView behind the text to fake centering." },
+            { "id": "d", "text": "Set layout_marginLeft='200dp' to move it to center." }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "He put the heading into centre gravity / centre horizontal on the TextView so it appears centered horizontally.",
+          "hints": [
+            "He said 'put it into centre gravity centre horizontal'.",
+            "Gravity aligns content inside the view, unlike margins which offset externally.",
+            "This is a standard centering approach for TextView headings."
+          ]
+        },
+        {
+          "id": "S7-E4-Q6",
+          "question": "What color code did the instructor reference for 'pastel_green' when defining it in the colors resource?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["Colors", "Resources"],
+          "options": [
+            { "id": "a", "text": "#C7FF80 (pastel green)." },
+            { "id": "b", "text": "#000000 (black)." },
+            { "id": "c", "text": "#FFFFFF (white)." },
+            { "id": "d", "text": "#FF0000 (red)." }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "He typed the hex components as 'hash c7 double f 80', which corresponds to #C7FF80 for the pastel green color resource.",
+          "hints": [
+            "He explicitly read the hex when defining 'pastel_green'.",
+            "It's a light green pastel shade, not black or red.",
+            "The code begins with 'c7'."
+          ]
+        },
+        {
+          "id": "S7-E4-Q7",
+          "question": "Which technique did the instructor demonstrate to make components responsive instead of using hardcoded dp values?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["Responsive", "layout_weight", "Percent"],
+          "options": [
+            { "id": "a", "text": "Use layout_weight or percent-based sizing so components occupy proportional space relative to the parent." },
+            { "id": "b", "text": "Hardcode even larger dp values to cover all devices." },
+            { "id": "c", "text": "Set every component to wrap_content and rely on defaults." },
+            { "id": "d", "text": "Use only absolute pixel values for consistency." }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "He recommended percent/relative sizing (layout_weight) so child components scale proportionally with the parent, avoiding brittle fixed dp values.",
+          "hints": [
+            "He expanded a box to 800dp and said hardcoding is wrong.",
+            "Percent or weight values let components resize with parent.",
+            "ScrollView or absolute pixels were not the suggested solution."
+          ]
+        },
+        {
+          "id": "S7-E4-Q8",
+          "question": "How many inner button boxes (the 4,5,6,7 groups) did the instructor say exist inside 'box 1'?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Counting", "Layout"],
+          "options": [
+            { "id": "a", "text": "2" },
+            { "id": "b", "text": "4" },
+            { "id": "c", "text": "6" },
+            { "id": "d", "text": "8" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "He named boxes 4, 5, 6, and 7 as the button boxes inside box 1 — that is four button boxes containing the numeric keys.",
+          "hints": [
+            "He enumerated 4, 5, 6, and 7 as the button boxes.",
+            "These boxes hold 1..9, decimal, 0, and 00 keys.",
+            "Count the box numbers he called out."
+          ]
+        },
+        {
+          "id": "S7-E4-Q9",
+          "question": "What problem occurs if you hardcode fixed dp widths (like 400dp) for child components inside a container that can resize?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["Responsive", "BestPractices"],
+          "options": [
+            { "id": "a", "text": "The components will not adapt to changes in parent size and may overflow or leave unused space when the container size changes." },
+            { "id": "b", "text": "The components will automatically convert to images." },
+            { "id": "c", "text": "Hardcoded dp values make the app run faster on all devices." },
+            { "id": "d", "text": "The layout system will ignore hardcoded values and recompute them proportionally." }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "Hardcoded dp values cause components to remain fixed even when container or screen size changes, leading to overflow or poor responsiveness. The instructor used this example to argue for percent/weight-based layouts.",
+          "hints": [
+            "He expanded a box to 800dp and showed the fixed children didn't adapt.",
+            "Responsive layouts adjust component sizes proportionally.",
+            "Hardcoding is brittle across device sizes."
+          ]
+        },
+        {
+          "id": "S7-E4-Q10",
+          "question": "Which attribute did the instructor use on the content box to add internal spacing for its children?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Padding", "Spacing"],
+          "options": [
+            { "id": "a", "text": "android:padding='10dp' to add inner spacing for child views." },
+            { "id": "b", "text": "android:layout_alignParentBottom='true' to add spacing." },
+            { "id": "c", "text": "android:visibility='invisible' to create an empty gap." },
+            { "id": "d", "text": "android:src='@drawable/blank' to fake spacing." }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "He added android:padding='10dp' on the content box to provide inner spacing for its children; padding controls inside spacing while margin controls outside spacing.",
+          "hints": [
+            "He said 'Also give some padding into it. That is 10 dp.'",
+            "Padding is internal spacing; margin is external.",
+            "This was applied to the content container."
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,190 @@
+{
+  "items": [
+    {
+      "name": "Section7-1",
+      "difficulty": "medium",
+      "content": [
+        {
+          "id": "Section-7-1-1",
+          "question": "Why did the instructor set android:layout_marginTop=\"80dp\" on the first EditText before entering the hint?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Margin", "EditText"],
+          "options": [
+            { "id": "a", "text": "To push the entire username field down so it starts with the same top offset shown in the UI design instead of hugging the zeroth margin line." },
+            { "id": "b", "text": "To reduce the EditText height from wrap_content to a fixed 80dp." },
+            { "id": "c", "text": "To prevent the on-screen keyboard from covering the field when it receives focus." },
+            { "id": "d", "text": "Because Android requires every EditText with match_parent width to declare a minimum top margin of 80dp." }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "The mock-up showed the username box sitting noticeably below the very top margin line. Adding an 80dp top margin shifted the entire component downward to match that spacing without altering its height or behavior.",
+          "hints": [
+            "He mentioned the design was not starting exactly at the zeroth margin line.",
+            "A margin repositions the whole view relative to its parent.",
+            "No change was made to layout_height when this value was added."
+          ]
+        },
+        {
+          "id": "Section-7-1-2",
+          "question": "When the instructor wanted extra horizontal breathing room and switched from padding to margins, what was the technical reason for choosing android:layout_marginLeft/Right=\"35dp\" instead of padding?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["Android Application Development", "Margin vs Padding", "Layout"],
+          "options": [
+            { "id": "a", "text": "Margins move the entire component away from the parent's edges, which matched the design that showed space between the EditText border and the screen edge." },
+            { "id": "b", "text": "Padding is unsupported on EditText, so the attributes would have been ignored at runtime." },
+            { "id": "c", "text": "Only margins can use dp units, while padding must be specified in px." },
+            { "id": "d", "text": "Using padding would have reduced the tappable area of the field, making it non-compliant with accessibility rules." }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "Padding adds space inside the component, shrinking its content area. The mock-up demanded a gap between the component's border and the screen edges, which is an external adjustment provided by marginLeft and marginRight.",
+          "hints": [
+            "He specifically said, 'it's not padding actually, it's margin.'",
+            "Think about whether the space belongs inside or outside the EditText.",
+            "Padding would have left the border touching the screen edge."
+          ]
+        },
+        {
+          "id": "Section-7-1-3",
+          "question": "After defining the hint \"Enter your username\", the text stayed invisible until the instructor swapped android:textColor for android:textColorHint. What subtle behavior was he fixing?",
+          "type": "mcq",
+          "difficulty": "hard",
+          "tags": ["Android Application Development", "EditText", "Hint Styling"],
+          "options": [
+            { "id": "a", "text": "textColor only affects static TextViews, so the hint string defaulted to transparent and never rendered." },
+            { "id": "b", "text": "Hints are transient; they disappear when the field gains focus. Android therefore exposes a dedicated textColorHint attribute so hint text can be tinted independently from the actual user input color." },
+            { "id": "c", "text": "Using textColor on an EditText automatically locks the keyboard, preventing the hint from redrawing until color control is released." },
+            { "id": "d", "text": "textColorHint is required whenever a color resource uses a hex value that starts with digits instead of letters." }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "Hints are not static content; they fade once users type. Android provides textColorHint specifically for that temporary text. Switching to textColorHint allowed the 'Enter your username' placeholder to display in the blue palette while keeping future typed text independent.",
+          "hints": [
+            "Remember his clarification: 'the hint will go on when the user interacts.'",
+            "textColor controls permanent text like the login heading.",
+            "Hint styling uses its own attribute."
+          ]
+        },
+        {
+          "id": "Section-7-1-4",
+          "question": "Where did the instructor store the hex value #38B6FFF before applying it as text_blue?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Resources", "Colors"],
+          "options": [
+            { "id": "a", "text": "Directly inside the EditText XML as an inline hex literal." },
+            { "id": "b", "text": "In res/values/colors.xml under the name text_blue so it could be reused by multiple views." },
+            { "id": "c", "text": "Inside AndroidManifest.xml under the application tag." },
+            { "id": "d", "text": "In a drawable selector because EditText colors must always be state-list resources." }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "He navigated to Resources → values → colors and declared a named color entry text_blue holding #38B6FFF, then referenced that resource everywhere a blue tint was needed.",
+          "hints": [
+            "Named colors live in res/values/colors.xml.",
+            "He wanted the same shade on text and buttons.",
+            "Nothing changed inside the manifest."
+          ]
+        },
+        {
+          "id": "Section-7-1-5",
+          "question": "When duplicating the username EditText to build the password field, what single change kept only a 20dp gap between the two fields?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["Android Application Development", "Margin", "EditText"],
+          "options": [
+            { "id": "a", "text": "Switch layout_width from match_parent to wrap_content." },
+            { "id": "b", "text": "Lower android:layout_marginTop from 80dp to 20dp on the copied EditText so the vertical spacing matched the design." },
+            { "id": "c", "text": "Delete the fontFamily override so the component collapsed upward." },
+            { "id": "d", "text": "Apply android:paddingBottom=\"20dp\" to the username field." }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "The instructor reused the same XML block but edited only the top margin to 20dp, producing the slim separation between username and password entries requested in the mock-up.",
+          "hints": [
+            "He said, 'from the margin top we just need 20dp from top.'",
+            "No width or padding adjustments were made.",
+            "Both fields still spanned match_parent horizontally."
+          ]
+        },
+        {
+          "id": "Section-7-1-6",
+          "question": "Why did the instructor replace the standard Button widget with androidx.appcompat.widget.AppCompatButton before styling the CTA?",
+          "type": "mcq",
+          "difficulty": "hard",
+          "tags": ["Android Application Development", "Buttons", "AppCompat"],
+          "options": [
+            { "id": "a", "text": "AppCompatButton automatically generates gradients without any extra attributes." },
+            { "id": "b", "text": "It is the preferred widget when you plan to override numerous attributes (color, width, height, font, gravity) because the base Button silently ignores several styling properties on some API levels." },
+            { "id": "c", "text": "Standard Button cannot display text when textColor is white." },
+            { "id": "d", "text": "AppCompatButton is required whenever layout_width exceeds 200dp." }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "He said AppCompatButton 'allows us to do anything whatever you want to do' and warned that the simpler Button silently refuses certain styling tweaks, so using the support widget guaranteed his custom dimensions and colors would stick.",
+          "hints": [
+            "Consider compatibility with many attributes.",
+            "He described the default Button as OK only when you don't plan to customize much.",
+            "No gradient requirement was mentioned."
+          ]
+        },
+        {
+          "id": "Section-7-1-7",
+          "question": "What was the effect of applying fontFamily=\"poppins\" and textStyle=\"bold\" to both EditText hints?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Application Development", "Typography", "EditText"],
+          "options": [
+            { "id": "a", "text": "It changed only the runtime input text while leaving the hints untouched." },
+            { "id": "b", "text": "It aligned the hint typography with the mock-up so even the placeholder text rendered with the Poppins family in a bold weight." },
+            { "id": "c", "text": "It disabled spell-check because custom fonts are unsupported in EditText hints." },
+            { "id": "d", "text": "It forced Android Studio to convert the EditTexts into TextViews." }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "After adding fontFamily and style, the instructor pointed out that the hint typography immediately matched the Poppins medium/bold look mandated by the design, ensuring visual consistency before users type anything.",
+          "hints": [
+            "Fonts can style hint text too.",
+            "He mentioned 'the font family is change for the hint as well.'",
+            "No component type changed."
+          ]
+        },
+        {
+          "id": "Section-7-1-8",
+          "question": "Which attribute combination centered the AppCompatButton horizontally while keeping it below the form fields?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["Android Application Development", "Layout", "Buttons"],
+          "options": [
+            { "id": "a", "text": "android:gravity=\"center\" on the parent LinearLayout." },
+            { "id": "b", "text": "android:layout_gravity=\"center_horizontal\" on the button itself plus a marginTop of 50dp to maintain vertical spacing." },
+            { "id": "c", "text": "android:layout_marginLeft=\"35dp\" and android:layout_marginRight=\"35dp\"." },
+            { "id": "d", "text": "android:layout_weight=\"0.5\" so the button shares space with an invisible spacer." }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "He set layout_gravity to center_horizontal on the AppCompatButton and added marginTop=50dp, which kept it centered while preserving the vertical gap from the password field.",
+          "hints": [
+            "The change happened on the button, not the parent layout.",
+            "A 50dp top margin was mentioned immediately after centering.",
+            "Weights were never introduced in this episode."
+          ]
+        },
+        {
+          "id": "Section-7-1-9",
+          "question": "The final CTA visually matched the mock-up only after multiple properties were set. Which combination replicated both size and branding as described?",
+          "type": "mcq",
+          "difficulty": "hard",
+          "tags": ["Android Application Development", "Buttons", "Styling"],
+          "options": [
+            { "id": "a", "text": "layout_width=\"wrap_content\", layout_height=\"wrap_content\", textSize=\"12sp\", background=\"@color/white\"." },
+            { "id": "b", "text": "layout_width=\"274dp\", layout_height=\"74dp\", background=\"@color/text_blue\", text=\"Login\", textColor=\"@android:color/white\", textSize=\"20sp\", fontFamily=\"poppins\", textStyle=\"bold\"." },
+            { "id": "c", "text": "layout_width=\"match_parent\", layout_height=\"match_parent\", background=\"@android:color/transparent\"." },
+            { "id": "d", "text": "layout_width=\"0dp\", layout_height=\"0dp\", layout_weight=\"1\", textAllCaps=\"true\"." }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "He explicitly keyed in 274dp × 74dp, applied the reusable text_blue color to the background, set the white 'Login' label at 20sp with the Poppins bold typeface, delivering the exact spec shown in the design screenshot.",
+          "hints": [
+            "Remember the precise dp values he typed.",
+            "The button stayed blue with white text.",
+            "He reverted from 25sp down to 20sp after previewing it."
+          ]
+        }
+      ]
+    }
+  ]
+}

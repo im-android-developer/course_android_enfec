@@ -1,0 +1,42 @@
+(0:00) I hope you understand why we are using blending here. (0:05) Now, let's first understand the component architecture of this screen. (0:12) Here, first of all, let's count the number of linear layouts, (0:17) no matter whether their orientation is horizontal or vertical.
+(0:22) So, the first one is the root layout. The second one is the content box. (0:30) The third one is box 1, where all the numbers are lies here.
+(0:36) Into these things, if you will see, we have 4, 5, 6, and 7. (0:43) So, they are the button boxes which contains these 1, 2, 3, 4, 5, 6, 7, 8, 9, decimal, 0, (0:52) and double 0. They all are the boxes which are available into these 4, 5, 6, 7 button boxes. (1:00) And at last, we have last box, that is box 2, which contains these operators (1:06) that are plus, minus, divide, multiply, and equals to. (1:12) So, in total, we have 8 linear layouts available into this.
+(1:15) Into this whole part, you will understand that blending of 8 linear layouts (1:22) will help us to design such complex screens. (1:26) Now, let's understand this into Android Studio, that how we can design this kind of screen. (1:34) So, let's shift to it.
+Here, let's first create a new activity to do the same. (1:49) Activity, MTViewsActivity. And here, I am creating calculator screen.
+(2:04) Enter. You will see it start building. Once it is done, we are good to go.
+(2:16) Let me minimise this project section like this. (2:33) Once it is done, let's shift to split view. Here, we have the constraint layout widgets.
+(2:41) So, let's change this to linear layout, linear layout. (2:50) And at first, we have to put it into vertical manner. (2:55) So, orientation will be vertical right now like this.
+(2:58) Perfect. So, let's start building what exactly we have right now here. (3:04) So, into this section, we have several components and we have several properties as well.
+(3:10) So, let's first start with colour. The colour what is available into this root layout. (3:18) This colour is known as pastel green.
+How exactly I know this? (3:21) Because I have the code, I have the background colour code. (3:25) So, that's not a big issue for us now. So, let's first put this colour into this root layout.
+(3:32) Instead of putting the hard code colour code, I am going to put this into colour section like this. (3:40) I already deleted the previous one. So, let me put the colours, colour, colour name, (3:50) pastel green, underscore green and put the bracket like this.
+(3:59) And let's put the name of colour here. That is hash c7 double f 80. (4:11) So, you will see the pastel colour is here.
+Similarly, let's go with another one. (4:17) So, let me put background to put the colour here we have pastel green, (4:25) enter and you will see the pastel green colour is available here like this. (4:32) Perfect.
+Now, if we look on this, if we look on this, we have a text view here (4:39) that's that states calculator app. So, let's put the same by just write text view like this. (4:49) Here we have to go with match parent and wrap content.
+I already told you about this match (4:54) parent and wrap content what exactly these things are. And let's put the margin that's on top of (5:02) sorry 10 dp like this. Let's write the text that is calculator app, calculator (5:19) app like this.
+Now, let's put the text colour, the size, font family and so on. (5:26) So, let's put the font family first. That's the font family.
+(5:38) Now put gravity that means alignment. Now, let's provide the text colour. (5:52) Now, let's provide the text colour that is black, the text size that is 38.
+Okay, 38 dp is good. (6:05) And the style of text so style will be bold like this. Let me close this.
+So, we done the calculator (6:15) app, whatever is written here. Now, let's go with another one that is the that is this box, (6:23) this box, this green box, which is available here. So, this green box is actually nothing but the (6:30) text view.
+I put the text view here and into the background, I provide into this background, (6:37) I provide green colour. Okay. So, this green colour is known as vivid green, the name of this green (6:43) colour is vivid green.
+And we just have to go with this colours and add a new colour that is vivid (6:50) green. Colour name, vivid underscore green, like this. And put the name of it, put the colour code (7:04) of it that is double zero double B two three, like this.
+And you will see it is, it is available now. (7:15) So, let's put the box here. For this, I am using text view, (7:22) match parent and put the height of 150 dp.
+Like this. Let's put the background, that is vivid (7:34) green, like this. And you will see it is it is it is just the same.
+It's just the same with us. But (7:41) here's a catch what that into this text view, you will see some gap here. Yes.
+But into our (7:52) Android Studio code, there is no any gap available. If you'll see if you'll zoom it, (7:56) there is no any gap available here. To do the same, I am putting margin here, margin (8:05) of 10 dp, like this, and you will see got a gap.
+Perfect. Now, let's go with another part (8:16) that is linear layout. So that linear layout is for this box three, that is the content box, (8:23) which contains these two, these two linear layouts.
+So for this, let's go with linear layout. (8:32) Linear layout like this. And here, just go with match parent wrap content.
+And (8:42) let's put the margin of 10 dp 10 dp like this. Here, what is the orientation? If you'll see (8:54) this box contains this content box can contains two different boxes that box one and box two. (9:00) Yes.
+So if you'll see this box one and box two align horizontally into a particular manner, (9:07) into which one it is aligned horizontally into this box two. Yes. So for this thing, (9:15) let's put the orientation horizontal like this.
+Okay. Perfect. Also give some padding into it.
+(9:26) That is 10 dp. As I already told you the difference between margin and padding. (9:31) Margin is for the outside liners, padding for the inside content.
+Okay. Now we have to provide (9:40) these two boxes. That means box three and box eight into it.
+Okay. That means we already designed (9:47) this box two, that's the content box. Now we have to design this numerical box and this box eight.
+(9:55) That means we have to design this third and eighth box into this. For this thing, there is an, (10:01) there's an issue in front of us that here, if you'll see the size, the width of this first box, (10:09) that means the third box and the eighth box, they are so different. Okay.
+And the second thing is (10:14) how exactly we are going to measure this. We are not be able to measure the screen that how exactly (10:20) what exactly or how much dp I have to provide into this. That's a, that's a major issue for us.
+(10:27) Okay. One more thing is, let's suppose if I put some dps into it, let's suppose I am saying that, (10:33) okay, let's put 300 dp and 200 dp or 150 dp to it. Third box will be of 350 dp and put 150 dp to this (10:42) eighth box.
+But what about if the size of this screen, if the size of this mobile phone gets (10:49) increase or decreases, if it is these values, whatever I provided doesn't work for this, (10:55) for that thing. So into this, first of all, we have to understand the concept of responsive screens (11:04) and then only we are able to, to provide such linear layouts to it. For this, let's move to (11:11) the concept.
+So here, let me put the box. Let's expand this box till 800 and 800 dp and make it (11:23) square. Now let's put two components on the screen and make both of them exactly half of the screen.
+(11:32) For this, each component contains 400 and 400 dp to cover the whole. But suddenly, (11:41) the size of this box increases, but because we hardcoded the values, that means we said to xml (11:50) that both component should be of 400 dp only and no change into this. So even if the box expanded, (12:00) there are not any changes into these boxes, which is a wrong approach.
+(12:06) To do this in a correct manner, instead of putting hardcoded numerical values, (12:13) provide the percentile value of them. By this, you are saying to xml that each component of mine (12:22) will contain the amount of space whatever this box has. If you will put the percentile value into (12:30) this, whenever the screen size gets changed, the componential size also gets changed.
+(12:37) So this concept is known as responsive screens.

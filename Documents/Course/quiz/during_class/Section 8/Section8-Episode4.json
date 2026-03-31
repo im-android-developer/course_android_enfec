@@ -1,0 +1,570 @@
+{
+  "items": [
+    {
+      "name": "Section8-Episode4",
+      "difficulty": "medium",
+      "content": [
+        {
+          "id": "S8-E4-Q1",
+          "question": "According to the Episode 4 transcript, the instructor insists on assigning a unique id to a view before using it as a positional reference for other views — explain precisely why that id step is necessary and what will likely fail if you omit creating that id first?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Id", "RelativeLayout", "Reference"],
+          "options": [
+            { "id": "a", "text": "So the system can locate the reference component by its identity" },
+            { "id": "b", "text": "To increase the component font size automatically" },
+            { "id": "c", "text": "To make the component clickable by default" },
+            { "id": "d", "text": "To apply layout_weight rules" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "An id provides the identity used as a reference when positioning other components in RelativeLayout.",
+          "hints": ["You must declare ids before referencing them", "@+id creates the id resource"]
+        },
+        {
+          "id": "S8-E4-Q2",
+          "question": "According to the Episode 4 transcript, when declaring an id for the first time in XML the instructor said you must use a specific prefix to create the resource; which exact prefix did he recommend and why does that prefix matter in resource resolution?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Id", "Syntax"],
+          "options": [
+            { "id": "a", "text": "@+id/" },
+            { "id": "b", "text": "#id/" },
+            { "id": "c", "text": "id+/" },
+            { "id": "d", "text": "$id/" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "The @+id/ prefix declares and creates the id resource; references later use @id/.",
+          "hints": ["Declaration uses @+id/, referencing uses @id/", "It creates resource entry in R.id"]
+        },
+        {
+          "id": "S8-E4-Q3",
+          "question": "According to the Episode 4 transcript, when you want one view to appear directly beneath another inside a RelativeLayout, which layout attribute should you use to express that relationship so the layout engine positions them correctly?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["RelativeLayout", "Positioning"],
+          "options": [
+            { "id": "a", "text": "layout_below with the reference id" },
+            { "id": "b", "text": "layout_weight with value 1" },
+            { "id": "c", "text": "layout_marginTop only" },
+            { "id": "d", "text": "layout_gravity set to below" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "Use layout_below='@id/other' to position a view beneath another in RelativeLayout.",
+          "hints": ["It references the other view id", "Not related to weights or gravity"]
+        },
+        {
+          "id": "S8-E4-Q4",
+          "question": "According to the Episode 4 transcript, the instructor compared different layout types; which layout did he identify as offering referential positioning attributes such as layout_below that let you position a child relative to another child?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Layouts", "RelativeLayout"],
+          "options": [
+            { "id": "a", "text": "RelativeLayout only" },
+            { "id": "b", "text": "LinearLayout only" },
+            { "id": "c", "text": "ConstraintLayout only" },
+            { "id": "d", "text": "All layouts provide identical referential positions" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "RelativeLayout provides attributes like layout_below and layout_toRightOf to position views relative to each other.",
+          "hints": ["Relative means relative to other views", "ConstraintLayout uses anchors differently"]
+        },
+        {
+          "id": "S8-E4-Q5",
+          "question": "According to the Episode 4 transcript, in the demo the instructor explained how to make a child view sit exactly in the horizontal center of its parent in a RelativeLayout — which attribute and value accomplish this and why is it preferred over using gravity in this context?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["RelativeLayout", "Alignment"],
+          "options": [
+            { "id": "a", "text": "Use centerHorizontal set to true" },
+            { "id": "b", "text": "Use layout_gravity set to center" },
+            { "id": "c", "text": "Use layout_weight with value 0.5" },
+            { "id": "d", "text": "Wrap the view in a LinearLayout and center it there" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "android:layout_centerHorizontal='true' centers the child horizontally in RelativeLayout; layout_gravity is for different parent types.",
+          "hints": ["centerHorizontal is a RelativeLayout attribute", "Gravity affects content or different parents"]
+        },
+        {
+          "id": "S8-E4-Q6",
+          "question": "According to the Episode 4 transcript, the instructor wrote a top spacing value and the transcript recorded a unit typo — which spacing attribute did he apply to move the view downward by 50 units (and what was the intended Android unit)?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["Margins", "Spacing"],
+          "options": [
+            { "id": "a", "text": "topMargin 50 (transcript showed '50 db' meaning 50dp)" },
+            { "id": "b", "text": "paddingTop 50px" },
+            { "id": "c", "text": "layout_weight 50" },
+            { "id": "d", "text": "marginTop set to 'large'" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "He demonstrated applying a top margin to shift the view downward; the transcript's 'db' was a typo for dp.",
+          "hints": ["Margins are external spacing", "dp is the Android unit for layout distances"]
+        },
+        {
+          "id": "S8-E4-Q7",
+          "question": "According to the Episode 4 transcript, the instructor demonstrated moving a reference view and observing the dependent view — describe in detail what happens to a view whose position is defined relative to another view when the reference view's position changes at runtime or in layout preview?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["RelativeLayout", "Behavior"],
+          "options": [
+            { "id": "a", "text": "The positioned view moves along with the reference view" },
+            { "id": "b", "text": "The positioned view stays fixed on the screen" },
+            { "id": "c", "text": "Both views disappear" },
+            { "id": "d", "text": "Android automatically converts it to ConstraintLayout rules" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "A dependent view follows the reference view because its position is computed based on the reference's coordinates.",
+          "hints": ["Relations are dynamic", "Used helloWorld and helloAndroid example"]
+        },
+        {
+          "id": "S8-E4-Q8",
+          "question": "According to the Episode 4 transcript, the instructor argued for combining multiple layout types rather than building a complex screen entirely with a single RelativeLayout — explain the practical reasons he gave for preferring 'layout blending' in terms of flexibility and maintainability?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["Best-Practices", "Layout-Blending"],
+          "options": [
+            { "id": "a", "text": "Single RelativeLayout can cause problems; blending gives more flexibility" },
+            { "id": "b", "text": "Blending makes the APK size much smaller" },
+            { "id": "c", "text": "RelativeLayout is deprecated and cannot be used" },
+            { "id": "d", "text": "Blending removes the need for ids entirely" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "Blending leverages strengths of different layouts and reduces complexity and brittle positioning when requirements change.",
+          "hints": ["Think modular composition", "Use the right layout for the right subproblem"]
+        },
+        {
+          "id": "S8-E4-Q9",
+          "question": "According to the Episode 4 transcript, the instructor contrasted attributes across layout types; which of the listed attributes is not an attribute commonly used to position child views inside a RelativeLayout and instead belongs to another layout type?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Attributes", "RelativeLayout"],
+          "options": [
+            { "id": "a", "text": "layout_weight" },
+            { "id": "b", "text": "layout_below" },
+            { "id": "c", "text": "centerHorizontal" },
+            { "id": "d", "text": "centerVertical" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "layout_weight is a LinearLayout concept for distributing space and is not used in RelativeLayout positioning.",
+          "hints": ["Weights belong to LinearLayout", "RelativeLayout uses relational attributes"]
+        },
+        {
+          "id": "S8-E4-Q10",
+          "question": "According to the Episode 4 transcript, when assigning a name to a component id the instructor warned about a common pitfall — what naming practice did he explicitly advise you to avoid and why?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Id", "Naming"],
+          "options": [
+            { "id": "a", "text": "Including spaces in the id name" },
+            { "id": "b", "text": "Using lowercase letters" },
+            { "id": "c", "text": "Using underscores" },
+            { "id": "d", "text": "Using an at symbol" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "Ids must be single tokens without spaces; spaces break XML attribute tokens and resource naming conventions.",
+          "hints": ["Use hello_world style names", "Spaces produce errors"]
+        },
+        {
+          "id": "S8-E4-Q11",
+          "question": "According to the Episode 4 transcript, the instructor used the phrase 'componential reference' — in the context of placing a view relative to another, what precise meaning did he assign to that phrase?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["Terminology", "Reference"],
+          "options": [
+            { "id": "a", "text": "The component used as the positional reference for another component" },
+            { "id": "b", "text": "A special type of layout parameter for animations" },
+            { "id": "c", "text": "A debugging tool in Android Studio" },
+            { "id": "d", "text": "A style resource for components" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "Componential reference is the component that serves as the anchor or reference for positioning another view.",
+          "hints": ["It denotes the referential view", "Used for layout_below or toRightOf references"]
+        },
+        {
+          "id": "S8-E4-Q12",
+          "question": "According to the Episode 4 transcript, the instructor compared 'centerHorizontal' and 'layout_gravity' — which statement correctly explains the distinction he made between using centerHorizontal in RelativeLayout and layout_gravity in other layouts?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["Alignment", "Comparison"],
+          "options": [
+            { "id": "a", "text": "Use centerHorizontal in RelativeLayout; layout_gravity is for LinearLayout" },
+            { "id": "b", "text": "Use layout_gravity in RelativeLayout; centerHorizontal is for LinearLayout" },
+            { "id": "c", "text": "Both attributes are identical and interchangeable" },
+            { "id": "d", "text": "Neither attribute affects alignment" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "centerHorizontal is a RelativeLayout attribute while layout_gravity is used by parents like LinearLayout or FrameLayout to position children.",
+          "hints": ["Different parents expose different attributes", "Use attributes appropriate to the parent type"]
+        },
+        {
+          "id": "S8-E4-Q13",
+          "question": "According to the Episode 4 transcript, the instructor said that by setting certain properties both constraints attach directly to the root — which layout and which centering attributes was he describing that produce this effect without extra constraint wiring?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["Root-Layout", "Attachment", "RelativeLayout"],
+          "options": [
+            { "id": "a", "text": "RelativeLayout with centerHorizontal/centerVertical true" },
+            { "id": "b", "text": "LinearLayout with layout_weight set" },
+            { "id": "c", "text": "ConstraintLayout with chains" },
+            { "id": "d", "text": "FrameLayout with gravity" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "In RelativeLayout, setting centerHorizontal/centerVertical attaches the child to the parent's center without needing constraint anchors.",
+          "hints": ["He contrasted this with ConstraintLayout's drag-and-drop anchors"]
+        },
+        {
+          "id": "S8-E4-Q14",
+          "question": "According to the Episode 4 transcript, during the practical demo the instructor set one view relative to another and then adjusted the reference view — what concrete change did he observe in the dependent view, and why does that behavior matter when designing responsive layouts?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Behavior", "Relative-Positioning"],
+          "options": [
+            { "id": "a", "text": "The dependent view follows and updates its position automatically" },
+            { "id": "b", "text": "Nothing changes for the dependent view" },
+            { "id": "c", "text": "Android throws a runtime error" },
+            { "id": "d", "text": "The dependent view is removed from layout" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "The dependent view moves as the reference moves, which is important for maintaining spatial relationships in responsive designs.",
+          "hints": ["It keeps relative relationships consistent"]
+        },
+        {
+          "id": "S8-E4-Q15",
+          "question": "According to the Episode 4 transcript, if you had to summarize the instructor's recommended overall approach to building non-trivial, complex screens in Android, how would you describe that approach and its main advantages?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Best-Practices", "Layout-Blending"],
+          "options": [
+            { "id": "a", "text": "Use layout blending — combine layouts to get flexibility and power" },
+            { "id": "b", "text": "Always use a single RelativeLayout for everything" },
+            { "id": "c", "text": "Avoid using ids to simplify code" },
+            { "id": "d", "text": "Replace layouts at runtime instead of designing XML" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "He recommends composing layouts to use the right tool for each part, improving maintainability and adaptability.",
+          "hints": ["Modular composition is easier to maintain"]
+        },
+        {
+          "id": "S8-E4-Q16",
+          "question": "According to the Episode 4 transcript, the instructor warned about forgetting to use the @+id prefix when declaring ids — if a developer forgets this prefix and later references that id, what specific failure mode should they expect and why?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["Id", "Syntax"],
+          "options": [
+            { "id": "a", "text": "The reference will fail because the id was not created" },
+            { "id": "b", "text": "Android will auto-create the id without prefix" },
+            { "id": "c", "text": "The view will be centered by default" },
+            { "id": "d", "text": "The app will run but ignore positioning" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "Without @+id/ the resource entry is not created, so later @id/ references cannot resolve to an existing id.",
+          "hints": ["Declaration vs reference matters"]
+        },
+        {
+          "id": "S8-E4-Q17",
+          "question": "According to the Episode 4 transcript, when centering a child vertically inside a RelativeLayout the instructor referenced a boolean attribute — which attribute is that, how is it written in XML, and what value should it hold to center the view?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["RelativeLayout", "Alignment"],
+          "options": [
+            { "id": "a", "text": "android:layout_centerVertical='true'" },
+            { "id": "b", "text": "layout_gravity='center_vertical'" },
+            { "id": "c", "text": "orientation='vertical'" },
+            { "id": "d", "text": "gravity='center'" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "android:layout_centerVertical='true' centers a child vertically in RelativeLayout.",
+          "hints": ["It's a boolean attribute on the child"]
+        },
+        {
+          "id": "S8-E4-Q18",
+          "question": "According to the Episode 4 transcript, the instructor compared RelativeLayout and ConstraintLayout and used a metaphor calling one a 'relative' of the other — explain the comparison he was making about their similarities and differences in positional logic and complexity?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["Layouts", "Comparison"],
+          "options": [
+            { "id": "a", "text": "Because both allow positioning of views relative to other elements" },
+            { "id": "b", "text": "Because RelativeLayout uses constraints under the hood" },
+            { "id": "c", "text": "Because both are deprecated" },
+            { "id": "d", "text": "Because both require layout_weight attributes" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "Both allow relative placement; ConstraintLayout uses anchors and offers more complex constraint features while RelativeLayout uses simpler relational attributes.",
+          "hints": ["ConstraintLayout is more feature rich"]
+        },
+        {
+          "id": "S8-E4-Q19",
+          "question": "In the Episode 4 transcript the instructor verbally recorded a measurement with a unit that the transcript spelled as 'db' — which standard Android measurement unit did he actually intend to use for layout spacing in the demo?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Units", "dp"],
+          "options": [
+            { "id": "a", "text": "dp (density-independent pixels)" },
+            { "id": "b", "text": "px (pixels)" },
+            { "id": "c", "text": "sp (scale-independent pixels)" },
+            { "id": "d", "text": "pt (points)" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "He intended dp; the transcript typoed it as 'db'.",
+          "hints": ["dp is common for layout distances"]
+        },
+        {
+          "id": "S8-E4-Q20",
+          "question": "According to the Episode 4 transcript and the instructor's examples, what is the functional difference between applying layout_margin and applying padding to a view, and how does each affect layout behavior and appearance?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["Layout", "Spacing"],
+          "options": [
+            { "id": "a", "text": "Margin adds space outside the view; padding adds space inside the view" },
+            { "id": "b", "text": "Margin increases text size; padding changes font" },
+            { "id": "c", "text": "Padding moves the view relative to parent; margin changes background only" },
+            { "id": "d", "text": "There is no difference; they are synonyms" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "Margin controls space external to the view boundary; padding controls space between the view border and its content.",
+          "hints": ["Margins affect sibling spacing", "Padding affects internal content spacing"]
+        },
+        {
+          "id": "S8-E4-Q21",
+          "question": "According to the Episode 4 transcript, if your goal is to position a child view precisely at the center of its parent both horizontally and vertically inside a RelativeLayout, which single attribute did the instructor recommend and why is it the most direct approach?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["RelativeLayout", "Centering"],
+          "options": [
+            { "id": "a", "text": "layout_centerInParent='true'" },
+            { "id": "b", "text": "centerHorizontal='true' and centerVertical='false'" },
+            { "id": "c", "text": "layout_weight='1'" },
+            { "id": "d", "text": "gravity='center' on the child" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "layout_centerInParent='true' centers the child on both axes with a single attribute in RelativeLayout.",
+          "hints": ["Single attribute, both axes"]
+        },
+        {
+          "id": "S8-E4-Q22",
+          "question": "According to the Episode 4 transcript, when you are referencing an id that was already declared earlier in the layout, which exact syntax should you use to reference it inside another attribute's value, and how does this differ from the initial declaration syntax?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Syntax", "Ids"],
+          "options": [
+            { "id": "a", "text": "@id/hello_world" },
+            { "id": "b", "text": "#hello_world" },
+            { "id": "c", "text": "hello_world" },
+            { "id": "d", "text": "$id/hello_world" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "@id/name references an existing id; @+id/name declares it the first time.",
+          "hints": ["Declaration uses +"]
+        },
+        {
+          "id": "S8-E4-Q23",
+          "question": "According to the Episode 4 transcript, the instructor warned that certain attributes belong to specific layout types; which attribute did he name as being specific to LinearLayout (and therefore not typically used for positioning in RelativeLayout)?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Layouts", "Attributes"],
+          "options": [
+            { "id": "a", "text": "layout_weight" },
+            { "id": "b", "text": "layout_below" },
+            { "id": "c", "text": "centerHorizontal" },
+            { "id": "d", "text": "layout_centerInParent" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "layout_weight belongs to LinearLayout for distributing space among children.",
+          "hints": ["Weights are LinearLayout-specific"]
+        },
+        {
+          "id": "S8-E4-Q24",
+          "question": "According to the Episode 4 transcript, when constructing a complex screen with many UI elements and interactions, what practice did the instructor recommend to keep the layout manageable and adaptable to different requirements?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Best-Practices"],
+          "options": [
+            { "id": "a", "text": "Combine multiple layouts (layout blending) for flexibility" },
+            { "id": "b", "text": "Use only RelativeLayout for everything" },
+            { "id": "c", "text": "Avoid using ids to keep XML minimal" },
+            { "id": "d", "text": "Hardcode pixel values for exact placement" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "He recommends layout blending to keep structure modular and adaptable.",
+          "hints": ["Break UI into smaller layout components"]
+        },
+        {
+          "id": "S8-E4-Q25",
+          "question": "According to the Episode 4 transcript, if you accidentally drop two views into a RelativeLayout and they overlap because no positioning attributes were given, what is the simplest and most direct XML change you can make to position the second view below the first?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Fixes", "Positioning"],
+          "options": [
+            { "id": "a", "text": "Set android:layout_below='@id/firstView' on the second view" },
+            { "id": "b", "text": "Change the file name" },
+            { "id": "c", "text": "Delete the first view" },
+            { "id": "d", "text": "Use layout_weight on the parent RelativeLayout" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "Using layout_below with the first view's id places the second beneath it and resolves overlap.",
+          "hints": ["Reference the other view id"]
+        },
+        {
+          "id": "S8-E4-Q26",
+          "question": "According to the Episode 4 transcript, the instructor used an imaginary 3x3 grid to explain positional concepts — what did he emphasize about the nature of those grid lines and how students should treat them during real layout authoring?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Teaching", "Visualization"],
+          "options": [
+            { "id": "a", "text": "It's a conceptual tool and not an actual Android Studio feature" },
+            { "id": "b", "text": "It's an automatic layout helper you can enable in settings" },
+            { "id": "c", "text": "It is provided by RelativeLayout by default" },
+            { "id": "d", "text": "It's a developer plugin for live previews" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "The grid was a teaching aid; it doesn't exist as a built-in IDE feature.",
+          "hints": ["Used for conceptual clarity"]
+        },
+        {
+          "id": "S8-E4-Q27",
+          "question": "According to the Episode 4 transcript, the instructor provided an example id that would be safe to use in XML — which example did he show and what naming conventions did it follow?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Id", "Naming"],
+          "options": [
+            { "id": "a", "text": "hello_world" },
+            { "id": "b", "text": "hello world" },
+            { "id": "c", "text": "hello-world" },
+            { "id": "d", "text": "HelloWorld!" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "hello_world follows safe id conventions: lowercase, underscores, no spaces or punctuation.",
+          "hints": ["Use underscores and lowercase"]
+        },
+        {
+          "id": "S8-E4-Q28",
+          "question": "According to the Episode 4 transcript, when you apply the centerHorizontal attribute to a child view in a RelativeLayout to center it horizontally, which boolean literal should you set and why is it expressed as that literal?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["RelativeLayout", "Attributes"],
+          "options": [
+            { "id": "a", "text": "true" },
+            { "id": "b", "text": "false" },
+            { "id": "c", "text": "center" },
+            { "id": "d", "text": "1" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "You set android:layout_centerHorizontal='true' to enable horizontal centering; it's a boolean flag.",
+          "hints": ["Boolean flags use 'true' or 'false'"]
+        },
+        {
+          "id": "S8-E4-Q29",
+          "question": "According to the Episode 4 transcript, among the listed attributes which one is incorrectly shown as referencing another view (and in reality accepts a dimension value rather than an id reference), making it invalid for inter-view referencing?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["Attributes", "Reference"],
+          "options": [
+            { "id": "a", "text": "android:layout_toLeftOf='@id/other'" },
+            { "id": "b", "text": "android:layout_alignParentTop='true'" },
+            { "id": "c", "text": "android:layout_marginTop='@id/other'" },
+            { "id": "d", "text": "android:layout_toRightOf='@id/other'" }
+          ],
+          "correctAnswers": ["c"],
+          "explanation": "layout_marginTop expects a dimension like '8dp', not an id reference; only attributes like toRightOf accept @id/ references.",
+          "hints": ["Margins take dp values"]
+        },
+        {
+          "id": "S8-E4-Q30",
+          "question": "According to the Episode 4 transcript, during the demo the instructor renamed the copied TextView text to 'Hello Android' — what was the instructional purpose of this change and how does it help when diagnosing overlapping view issues in the preview?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Debugging", "UX"],
+          "options": [
+            { "id": "a", "text": "To show the two views are distinct and not duplicates" },
+            { "id": "b", "text": "To change the id of the first view" },
+            { "id": "c", "text": "To force a layout refresh" },
+            { "id": "d", "text": "To make the view clickable" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "Changing the visible text makes it obvious that the copied view is a separate element, clarifying overlap issues.",
+          "hints": ["Visual differences confirm separate views"]
+        },
+        {
+          "id": "S8-E4-Q31",
+          "question": "According to the Episode 4 transcript, the instructor showed the effect of enabling both centerHorizontal and centerVertical — when both are set to true on a child view, describe where that view will appear within its parent and why both flags together produce that result?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Positioning", "Centering"],
+          "options": [
+            { "id": "a", "text": "At the center of the parent both horizontally and vertically" },
+            { "id": "b", "text": "At the top-left corner" },
+            { "id": "c", "text": "At the bottom-right corner" },
+            { "id": "d", "text": "Offscreen" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "Both booleans true center the child on both axes inside its parent.",
+          "hints": ["Both axes enabled equals center"]
+        },
+        {
+          "id": "S8-E4-Q32",
+          "question": "According to the Episode 4 transcript, the instructor cautioned against building a large, complex screen using only RelativeLayout — what specific maintainability or usability concern did he cite as the reason to avoid that approach?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["Best-Practices"],
+          "options": [
+            { "id": "a", "text": "It can become hard to manage and may cause layout maintenance issues" },
+            { "id": "b", "text": "RelativeLayout is significantly slower than all other layouts" },
+            { "id": "c", "text": "RelativeLayout cannot contain ImageView" },
+            { "id": "d", "text": "Android Studio will not preview RelativeLayout" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "Using only one layout can make complex screens brittle and difficult to update; blending improves maintainability.",
+          "hints": ["Think long-term maintenance"]
+        },
+        {
+          "id": "S8-E4-Q33",
+          "question": "According to the Episode 4 file contents, which capitalisation/style convention did the author use for tag names in the metadata across this JSON file, and why might that choice improve readability for reviewers?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Metadata"],
+          "options": [
+            { "id": "a", "text": "Title-case tags like 'RelativeLayout'" },
+            { "id": "b", "text": "All lowercase tags" },
+            { "id": "c", "text": "Snake_case tags" },
+            { "id": "d", "text": "CamelCase tags only" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "Tags use Title Case for readability (e.g., 'RelativeLayout'), which helps quick scanning by humans.",
+          "hints": ["Consistent formatting aids reviewers"]
+        },
+        {
+          "id": "S8-E4-Q34",
+          "question": "According to the Episode 4 transcript, the instructor prepared the IDE before making layout changes — what exact UI/IDE adjustment did he perform to reduce distractions and make the demo easier to follow?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Workflow", "IDE"],
+          "options": [
+            { "id": "a", "text": "Closed other screens to reduce visual clutter" },
+            { "id": "b", "text": "Rebuilt the entire project" },
+            { "id": "c", "text": "Disabled the preview panel" },
+            { "id": "d", "text": "Enabled a special layout plugin" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "He closed other screens and panels to focus on the layout being edited, reducing distraction.",
+          "hints": ["IDE hygiene improves demonstrations"]
+        },
+        {
+          "id": "S8-E4-Q35",
+          "question": "According to the Episode 4 transcript, in the context of teaching and debugging layout overlaps, why did the instructor recommend changing the visible text of a copied view (for example to 'Hello Android') rather than leaving it identical to the original?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Teaching", "Debugging"],
+          "options": [
+            { "id": "a", "text": "To visually confirm the second view is distinct and not the same overlapped view" },
+            { "id": "b", "text": "To automatically assign a new id" },
+            { "id": "c", "text": "To change layout parameters" },
+            { "id": "d", "text": "To force the view to the bottom of the layout" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "Changing text differentiates the copied view visually and helps students see that two separate elements exist when they overlap.",
+          "hints": ["Simple visual debugging technique"]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,206 @@
+{
+  "items": [
+    {
+      "name": "Section8-Episode1",
+      "difficulty": "medium",
+      "content": [
+        {
+          "id": "S8-E1-Q1",
+          "question": "In Episode 1 the instructor introduced XML comments. How do you write a comment inside an Android layout XML?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["XML", "Comments"],
+          "options": [
+            { "id": "a", "text": "Use <!-- comment text --> brackets with exclamation and dashes." },
+            { "id": "b", "text": "Wrap the text with /* comment */ as in Java." },
+            { "id": "c", "text": "Prefix the line with // to make it a comment." },
+            { "id": "d", "text": "Use <comment>comment text</comment> element." }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "The instructor showed using XML comment syntax: <!-- comment --> (an exclamation mark and dashes inside angle brackets) which is ignored by the Android system and improves readability.",
+          "hints": [
+            "He typed brackets, an exclamation mark and four dashes.",
+            "This is standard XML comment syntax.",
+            "Not Java-style comments."
+          ]
+        },
+        {
+          "id": "S8-E1-Q2",
+          "question": "To make a layout responsive the instructor set widths to '0dp' and used another attribute. Which attribute controls proportional distribution of space?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Responsive", "LayoutWeight"],
+          "options": [
+            { "id": "a", "text": "android:layout_weight to assign proportional widths/heights." },
+            { "id": "b", "text": "android:layout_margin to distribute space proportionally." },
+            { "id": "c", "text": "android:gravity to divide the screen percentage." },
+            { "id": "d", "text": "android:padding to allocate percent values." }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "He explained that using width/height = 0dp combined with android:layout_weight lets child views occupy a percentage of the parent's available space, implementing responsive screens.",
+          "hints": [
+            "He spelled out weight (W-E-I-G-H-T).",
+            "Weight expresses a fraction of the parent's available space.",
+            "0dp with weight is the common responsive pattern."
+          ]
+        },
+        {
+          "id": "S8-E1-Q3",
+          "question": "In the example the instructor split a container into 80% and 20%. How did he express 80% using the '10-as-100' trick?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["LayoutWeight", "Percentages"],
+          "options": [
+            { "id": "a", "text": "Use layout_weight='8' for 80% and layout_weight='2' for 20% when total is considered as 10." },
+            { "id": "b", "text": "Use layout_weight='80' and layout_weight='20' and Android normalizes them automatically." },
+            { "id": "c", "text": "Set android:widthPercent='80%' directly on the view." },
+            { "id": "d", "text": "Use layout_weight='4' and layout_weight='1' because weight uses base 5 by default." }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "He used the shorthand of treating 100% as 10 units, so 80% becomes 8 (layout_weight='8') and 20% becomes 2, giving an 8:2 proportional split.",
+          "hints": [
+            "He said 'we are considering 100 as 10 here'.",
+            "80% maps to 8 when using 10 as the base.",
+            "Weights are proportional, not absolute pixel values."
+          ]
+        },
+        {
+          "id": "S8-E1-Q4",
+          "question": "Why did the instructor set button widths to 0dp when using layout_weight for button rows?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Buttons", "Weight"],
+          "options": [
+            { "id": "a", "text": "0dp tells the layout to size the view only based on weight so buttons scale proportionally when the screen stretches." },
+            { "id": "b", "text": "0dp is required to make buttons invisible on small screens." },
+            { "id": "c", "text": "0dp sets the button to its intrinsic image size." },
+            { "id": "d", "text": "0dp disables click events until runtime." }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "Using 0dp with layout_weight lets the view's size be determined solely by weight, enabling buttons to resize proportionally across different screen widths instead of relying on hardcoded dp sizes.",
+          "hints": [
+            "He repeatedly used 0dp together with weight for responsive buttons.",
+            "It prevents hardcoded width from interfering with proportional sizing.",
+            "This is a common Android pattern."
+          ]
+        },
+        {
+          "id": "S8-E1-Q5",
+          "question": "When dividing three equal buttons across a row (100% total), which approximate weight value did the instructor suggest for each when using base 10?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["Weight", "Math"],
+          "options": [
+            { "id": "a", "text": "Use approximately 3.33 (or 3.34) for each button because 100%/3 equals ~33.33 and base 10 converts to ~3.33." },
+            { "id": "b", "text": "Use weight='1' for each and Android will distribute evenly regardless of base." },
+            { "id": "c", "text": "Use weight='33' for each and Android will normalize to percent." },
+            { "id": "d", "text": "Use weight='0' for each when using equal distribution." }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "He explained dividing 100 by 3 yields ~33.33%; treating 100 as 10 gives ~3.33 per button (or 3.34), which approximates equal distribution when using weights on a 0dp width setup.",
+          "hints": [
+            "He described converting 33.33 to 3.33 for the base-10 trick.",
+            "Weights express proportions; small decimals are acceptable here.",
+            "This was shown when creating three buttons per row."
+          ]
+        },
+        {
+          "id": "S8-E1-Q6",
+          "question": "Which attribute did the instructor set to add outside spacing between buttons in the numeric rows?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Margin", "Spacing"],
+          "options": [
+            { "id": "a", "text": "android:layout_margin (e.g., 7dp) to create outer gaps between buttons." },
+            { "id": "b", "text": "android:padding to create outer gaps between buttons." },
+            { "id": "c", "text": "android:src to space buttons by drawable." },
+            { "id": "d", "text": "android:alpha to fade gaps into visibility." }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "He used margin (7dp) to give outer spacing between adjacent buttons — margin controls outside spacing between sibling views.",
+          "hints": [
+            "He set margin=7dp when creating buttons.",
+            "Margin is for external spacing, padding is internal.",
+            "This improves visual separation and touch targets."
+          ]
+        },
+        {
+          "id": "S8-E1-Q7",
+          "question": "What background color resource name did the instructor repeatedly apply to number and operator buttons in Episode 1?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Resources", "Colors"],
+          "options": [
+            { "id": "a", "text": "vivid_green" },
+            { "id": "b", "text": "pastel_blue" },
+            { "id": "c", "text": "text_blue" },
+            { "id": "d", "text": "background_white" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "He set the button background to vivid_green for the numeric and operator buttons in the demo.",
+          "hints": [
+            "He said 'Background will be vivid green'.",
+            "It was used consistently for buttons."
+          ]
+        },
+        {
+          "id": "S8-E1-Q8",
+          "question": "When arranging operator buttons vertically, the instructor used 0dp for height and weights to split space. He allocated 60% to four operators and 40% to the 'equals' button. If 100% is treated as 10, what weight did he assign the 'equals' group?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["Weight", "Height"],
+          "options": [
+            { "id": "a", "text": "4 (since 40% maps to 4 when 100% is treated as 10)." },
+            { "id": "b", "text": "6 (because 60% goes to operators)." },
+            { "id": "c", "text": "1 (default weight)." },
+            { "id": "d", "text": "0 (equals should have fixed height)." }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "He used an 60/40 split; treating 100 as 10 makes 40% correspond to weight='4', so the equals group used weight 4 while the four operators shared weight 6.",
+          "hints": [
+            "He explicitly said 60% for four and 40% for equals.",
+            "Recall the base-10 conversion trick."
+          ]
+        },
+        {
+          "id": "S8-E1-Q9",
+          "question": "The instructor initially saw an 'abnormality' when a container used wrap_content in a percent-based context. What did he change to fix it?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["wrap_content", "match_parent"],
+          "options": [
+            { "id": "a", "text": "Changed the container's height from wrap_content to match_parent to eliminate the abnormality." },
+            { "id": "b", "text": "Switched all children to fixed dp values to stabilize layout." },
+            { "id": "c", "text": "Removed all margins so the layout recalculated correctly." },
+            { "id": "d", "text": "Converted the LinearLayout to ConstraintLayout to fix the issue." }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "He discovered wrap_content caused the container to expand with its contents and conflict with percent allocations; switching to match_parent fixed the abnormality so percent/weight calculations worked as intended.",
+          "hints": [
+            "He said the problem was wrap_content and he set match_parent to fix it.",
+            "Match_parent gives the container the expected reference size for percentage splits."
+          ]
+        },
+        {
+          "id": "S8-E1-Q10",
+          "question": "Which small visual adjustment did the instructor make to the 'equals' button to match the design after changing margins and heights?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["MarginBottom", "FineTuning"],
+          "options": [
+            { "id": "a", "text": "He adjusted marginBottom (e.g., between 20dp and 17dp) to fine-tune appearance." },
+            { "id": "b", "text": "He changed the equals button text to 'Enter' to match the mock-up." },
+            { "id": "c", "text": "He removed the background color from the equals button." },
+            { "id": "d", "text": "He rotated the equals button by 90 degrees." }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "He iteratively adjusted marginBottom (testing 20dp, 18dp, 17dp) to get the final visual spacing for the equals button to match the mock-up.",
+          "hints": [
+            "He tried 20, 18, 19, then settled on 17 dp.",
+            "This was a final visual tweak, not a functional change."
+          ]
+        }
+      ]
+    }
+  ]
+}
