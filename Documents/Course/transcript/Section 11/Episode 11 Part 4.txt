@@ -1,0 +1,33 @@
+(Transcribed by TurboScribe. Go Unlimited to remove this message.)
+
+So now let's continue with this these parts. Let me just remove this like this and let's print some more. So let me just minimise it as well and now let's write something fun. 
+
+Let's go with println again and here let me write something let's suppose a message that hello hello and right okay like this. Can we write more into this? Yes, of course, you can write another line as well print println like this and let me put hello world again like this. Let me print this and you will see we have both right now okay. 
+
+Can we do can we do this again? Yes, you can do this again as well. So let me write println again and here I am writing hello city okay. Let me print this again and you will see hello city is available here. 
+
+So whatever you need to write whatever you need to print you can do it anything whatever you want but remember always you have to put them inside this main function only. So we know that we have this println function we have this println syntax or codes but let me just remove this ln like this. If you'll see there's no any error available that means print is also a valid syntax but what is the difference between print and println? So the basic difference is println means print line that it always print a specified line and shift to next portion or shift to next line while the print is not considered to go for a line instead of it works word by word. 
+
+For example, if I put hello city and down there I am again put print like this and again I am here putting let's suppose hello android. So into previous versions we saw that hello city hello android and hello world are come to separate lines but if I print this if I run this you will find the hello city and hello world are in the same line. Why? Because it's only work with words not with line while println or print line is always work with line that put the text within the line and it will shift to next line. 
+
+I hope you understand the concept what exactly it is. Let's go with some another parts that is can we only print the text? No, we can print anything whatever we need. For example, let's suppose I am using println as I already told you that we can print the text as you already saw. 
+
+Here let me put the numbers so I am put the number like this. When I am going to print this you will see the number is available. Perfect. 
+
+Let's go with some other things println and into this println let's put some numbers with decimal. So 1 2 point 1 2 3 4 like this. Let me run it again and you will see it's also get print. 
+
+So we can print numbers, decimal numbers as well as text. Can we put something else? Can we put true false as well? So yes we can put true false as well. So if I put true like this we can put true and instead of true we can put false as well whatever we need false. 
+
+Okay let me print it again. So you will see we have numbers, we have text and we have true false as well. I hope you understand that what exactly we can go with and how exactly we can work with kotlin. 
+
+So let's move to next part. Let's dive into the kotlin that how exactly kotlin works and what exactly we can do with kotlin. Now let's start with kotlin variables but before start this we must have to understand why exactly we need kotlin variables. 
+
+So for example let me just delete these things like this. Once I have done let me again put the println syntax again and I have to write hello space android like this. Once I have done let me run it like this. 
+
+So we have hello android here. Now let me put the same again just below this code like this and let me run this again. So we have hello android again. 
+
+Have you noticed that each and every time whenever I need hello android I have to write the complete spelling of it. Yes for example if I need it 10 to 15 times then I have to write this hello android 10 to 15 times every time with a particular spelling. Yes so if I need this hello android into my file let's suppose if I need for 20 to 30 times then every time I have to put this hello android at that place. 
+
+That's not exactly a good practise. To avoid this what we can do we can store this hello android into something that we called variable.
+
+(Transcribed by TurboScribe. Go Unlimited to remove this message.)

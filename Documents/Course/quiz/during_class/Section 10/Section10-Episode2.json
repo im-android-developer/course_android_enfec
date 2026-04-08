@@ -1,0 +1,570 @@
+{
+  "items": [
+    {
+      "name": "Section10-Episode2",
+      "difficulty": "medium",
+      "content": [
+        {
+          "id": "S10-E2-Q1",
+          "question": "In Episode 2 the instructor described an Activity with a book analogy — which description best matches an Android Activity?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Activity", "Concept"],
+          "options": [
+            { "id": "a", "text": "A single focused screen (a page in the app) that the user interacts with" },
+            { "id": "b", "text": "A background service running without UI" },
+            { "id": "c", "text": "A database used to store UI layouts" },
+            { "id": "d", "text": "An XML-only resource with no code" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "An Activity represents a single screen with a user interface and handles user interaction, like a page in a book.",
+          "hints": ["It's the primary interactive object", "Think of a screen or page"]
+        },
+        {
+          "id": "S10-E2-Q2",
+          "question": "When creating a new Activity in Android Studio, the instructor pointed out a checkbox 'Generate layout file' — what does enabling that option do?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Activity", "AndroidStudio"],
+          "options": [
+            { "id": "a", "text": "Creates the XML layout file alongside the Kotlin/Java activity file" },
+            { "id": "b", "text": "Adds an extra Gradle dependency" },
+            { "id": "c", "text": "Converts all layouts to ConstraintLayout" },
+            { "id": "d", "text": "Generates only unit tests for the activity" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "Toggling 'Generate layout file' produces both the activity controller file and an associated activity_*.xml UI file.",
+          "hints": ["Unchecking it creates only the Kotlin/Java file", "The layout name appears as ActivityMyAndroid"]
+        },
+        {
+          "id": "S10-E2-Q3",
+          "question": "The instructor explained the 'source language' dropdown when creating an activity — what effect does choosing Kotlin or Java have?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Language", "Kotlin", "Java"],
+          "options": [
+            { "id": "a", "text": "It determines whether the generated controller file is .kt (Kotlin) or .java (Java)" },
+            { "id": "b", "text": "It converts all XML to a language-specific format" },
+            { "id": "c", "text": "It enforces Kotlin-only libraries at build time" },
+            { "id": "d", "text": "It changes the AndroidManifest package name" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "Choosing the source language controls which controller file type is generated; the UI XML is separate.",
+          "hints": ["Kotlin files use .kt extension", "You can select either language for the activity controller"]
+        },
+        {
+          "id": "S10-E2-Q4",
+          "question": "According to Episode 2, how do you declare an id for a view in XML so it can be referenced later?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["XML", "IDs"],
+          "options": [
+            { "id": "a", "text": "android:id='@+id/your_name'" },
+            { "id": "b", "text": "id='your_name'" },
+            { "id": "c", "text": "@id/your_name without +" },
+            { "id": "d", "text": "use 'name' attribute instead of id" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "Use android:id='@+id/name' to declare and create the id resource; later references can use @id/name.",
+          "hints": ["@+id/ declares the id", "@id/ references an existing id"]
+        },
+        {
+          "id": "S10-E2-Q5",
+          "question": "To access a button declared in XML from Kotlin, which approach did the instructor demonstrate?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["Kotlin", "findViewById"],
+          "options": [
+            { "id": "a", "text": "Declare a variable and assign it using findViewById(R.id.your_id)" },
+            { "id": "b", "text": "Import the XML file into Kotlin directly" },
+            { "id": "c", "text": "Use the XML id string directly without lookup" },
+            { "id": "d", "text": "No code is needed — XML and Kotlin are automatically linked by name" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "He showed introducing the component into Kotlin by creating a variable and assigning it with findViewById using the generated R.id identifier.",
+          "hints": ["The pattern is val btn: Button = findViewById(R.id.login_button)", "You must import the Button class"]
+        },
+        {
+          "id": "S10-E2-Q6",
+          "question": "The instructor changed an XML id and then saw an error in Kotlin — what must be kept consistent to avoid that error?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["IDs", "Consistency"],
+          "options": [
+            { "id": "a", "text": "The id used in XML and the id referenced in Kotlin (R.id.name) must match" },
+            { "id": "b", "text": "The Kotlin variable name must equal the XML file name" },
+            { "id": "c", "text": "The layout file must be named exactly like the activity class" },
+            { "id": "d", "text": "The app package must change when id changes" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "If you rename the id in XML, you must update the code that references R.id.<that_name> to match the new id, otherwise findViewById will fail to resolve.",
+          "hints": ["IDs are generated into R.id", "Keep XML id and code reference in sync"]
+        },
+        {
+          "id": "S10-E2-Q7",
+          "question": "What file extension indicates a Kotlin source file in Android Studio?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Kotlin"],
+          "options": [
+            { "id": "a", "text": ".kt" },
+            { "id": "b", "text": ".java" },
+            { "id": "c", "text": ".kotlin" },
+            { "id": "d", "text": ".class" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "Kotlin source files use the .kt extension.",
+          "hints": ["Java files use .java"]
+        },
+        {
+          "id": "S10-E2-Q8",
+          "question": "Which extension indicates a Java source file?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Java"],
+          "options": [
+            { "id": "a", "text": ".java" },
+            { "id": "b", "text": ".kt" },
+            { "id": "c", "text": ".class" },
+            { "id": "d", "text": ".jar" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "Java source files use the .java extension.",
+          "hints": ["Compiled bytecode uses .class"]
+        },
+        {
+          "id": "S10-E2-Q9",
+          "question": "If you uncheck 'Generate layout file' when creating an activity, what do you get?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["AndroidStudio"],
+          "options": [
+            { "id": "a", "text": "Only the Kotlin/Java activity file is created" },
+            { "id": "b", "text": "Only the XML layout is created" },
+            { "id": "c", "text": "Both files are created anyway" },
+            { "id": "d", "text": "A service file is created instead" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "Unchecking that option means only the controller file is generated; the layout file is omitted.",
+          "hints": ["You can create the layout later manually"]
+        },
+        {
+          "id": "S10-E2-Q10",
+          "question": "What UI mode did the instructor switch to when editing the drawable to preview changes?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Editor", "Preview"],
+          "options": [
+            { "id": "a", "text": "Split view (design + code)" },
+            { "id": "b", "text": "Code-only view" },
+            { "id": "c", "text": "Preview-only view" },
+            { "id": "d", "text": "Logcat view" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "He used split view so the shape XML and the design preview are visible concurrently.",
+          "hints": ["Split view shows both design and XML"]
+        },
+        {
+          "id": "S10-E2-Q11",
+          "question": "Where do you typically declare color resource names used across layouts?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Resources", "Colors"],
+          "options": [
+            { "id": "a", "text": "res/values/colors.xml" },
+            { "id": "b", "text": "res/drawable/colors.xml" },
+            { "id": "c", "text": "res/layout/colors.xml" },
+            { "id": "d", "text": "assets/colors.txt" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "Color resources are defined in res/values/colors.xml and referenced by name in layouts.",
+          "hints": ["colors.xml is in values"]
+        },
+        {
+          "id": "S10-E2-Q12",
+          "question": "Which XML attribute syntax declares and creates an id resource?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["XML", "IDs"],
+          "options": [
+            { "id": "a", "text": "android:id='@+id/name'" },
+            { "id": "b", "text": "android:id='@id/name'" },
+            { "id": "c", "text": "id='name'" },
+            { "id": "d", "text": "name='@+id/name'" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "Use @+id/ to declare the id; @id/ is for referencing an already-declared id.",
+          "hints": ["Declaration uses +"]
+        },
+        {
+          "id": "S10-E2-Q13",
+          "question": "Which Kotlin statement example matches what the instructor typed to introduce a button into Kotlin?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["Kotlin", "findViewById"],
+          "options": [
+            { "id": "a", "text": "val loginButton: Button = findViewById(R.id.login_button)" },
+            { "id": "b", "text": "Button loginButton = findViewById('login_button')" },
+            { "id": "c", "text": "import login_button from R" },
+            { "id": "d", "text": "val loginButton = R.id.login_button" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "The Kotlin pattern is to declare a variable of the Button type and assign it with findViewById(R.id.<id>).",
+          "hints": ["You must import android.widget.Button"]
+        },
+        {
+          "id": "S10-E2-Q14",
+          "question": "If you rename an id in XML to 'login_my_button', what else must you update?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["IDs", "Refactor"],
+          "options": [
+            { "id": "a", "text": "Update all code references that use R.id.login_button to the new name" },
+            { "id": "b", "text": "Rename the layout file" },
+            { "id": "c", "text": "Change app package name" },
+            { "id": "d", "text": "Reinstall Android Studio" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "Renaming an id requires updating any code that references the old R.id.<name> identifier.",
+          "hints": ["IDs are generated into R.id"]
+        },
+        {
+          "id": "S10-E2-Q15",
+          "question": "What does the .kt file suffix represent?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Kotlin"],
+          "options": [
+            { "id": "a", "text": "Kotlin source file" },
+            { "id": "b", "text": "Kotlin test file" },
+            { "id": "c", "text": "Compiled bytecode" },
+            { "id": "d", "text": "Layout file" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "The .kt extension denotes a Kotlin source file.",
+          "hints": ["Java uses .java"]
+        },
+        {
+          "id": "S10-E2-Q16",
+          "question": "Which Android component manages UI and user interaction as shown in the episode?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Activity"],
+          "options": [
+            { "id": "a", "text": "Activity" },
+            { "id": "b", "text": "Service" },
+            { "id": "c", "text": "ContentProvider" },
+            { "id": "d", "text": "BroadcastReceiver" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "An Activity is the controller for the UI and handles user interactions.",
+          "hints": ["Services have no UI"]
+        },
+        {
+          "id": "S10-E2-Q17",
+          "question": "When you create an activity and select 'Generate layout file', which naming convention did the instructor show for the layout?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Naming"],
+          "options": [
+            { "id": "a", "text": "ActivityMyAndroid.xml (generated layout name)" },
+            { "id": "b", "text": "MainActivityLayout.xml" },
+            { "id": "c", "text": "layout_activity_my_android.xml" },
+            { "id": "d", "text": "myactivity_layout.xml" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "The example showed a generated name like ActivityMyAndroid for the layout when creating the activity.",
+          "hints": ["The dialog shows the layout name field"]
+        },
+        {
+          "id": "S10-E2-Q18",
+          "question": "In the instructor's example, what two files are typically generated when creating a new activity with layout?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Files"],
+          "options": [
+            { "id": "a", "text": "An activity Kotlin/Java file and a layout XML file" },
+            { "id": "b", "text": "Only a layout XML file" },
+            { "id": "c", "text": "Only a Kotlin/Java file" },
+            { "id": "d", "text": "A service and a broadcast receiver" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "Creating a new activity generates the controller (Kotlin/Java) and the UI layout XML when the option is enabled.",
+          "hints": ["Both are paired files"]
+        },
+        {
+          "id": "S10-E2-Q19",
+          "question": "Which IDE file extension shows a Kotlin activity in the project tree?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["IDE"],
+          "options": [
+            { "id": "a", "text": ".kt" },
+            { "id": "b", "text": ".xml" },
+            { "id": "c", "text": ".gradle" },
+            { "id": "d", "text": ".properties" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "Kotlin files appear with the .kt extension in the project tree.",
+          "hints": ["Layout XMLs use .xml"]
+        },
+        {
+          "id": "S10-E2-Q20",
+          "question": "During the demo the instructor restarted the emulator because the install was taking longer — why might you restart the emulator?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Emulator", "Troubleshooting"],
+          "options": [
+            { "id": "a", "text": "To resolve slow installs or stuck emulator state" },
+            { "id": "b", "text": "To recompile the app sources" },
+            { "id": "c", "text": "To change the app package name" },
+            { "id": "d", "text": "To clear XML errors automatically" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "Restarting the emulator can help when installations hang or the device becomes unresponsive.",
+          "hints": ["Emulator restarts fix many device-side issues"]
+        },
+        {
+          "id": "S10-E2-Q21",
+          "question": "Which view binding pattern did the instructor use manually in Kotlin in the episode?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["Kotlin", "Binding"],
+          "options": [
+            { "id": "a", "text": "findViewById with explicit type declaration" },
+            { "id": "b", "text": "Kotlin synthetic properties without lookup" },
+            { "id": "c", "text": "Data binding XML expressions" },
+            { "id": "d", "text": "ViewModel binding" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "He demonstrated introducing the component into Kotlin using findViewById with an explicit Button type.",
+          "hints": ["The code used findViewById(R.id.login_button)"]
+        },
+        {
+          "id": "S10-E2-Q22",
+          "question": "What import did the IDE prompt for when declaring a Button variable in Kotlin?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Kotlin", "Imports"],
+          "options": [
+            { "id": "a", "text": "android.widget.Button" },
+            { "id": "b", "text": "android.view.View" },
+            { "id": "c", "text": "kotlinx.android.synthetic" },
+            { "id": "d", "text": "com.example.Button" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "The Button class comes from android.widget.Button and must be imported when referenced by type.",
+          "hints": ["IDE often auto-imports common widgets"]
+        },
+        {
+          "id": "S10-E2-Q23",
+          "question": "Which resource object holds generated ids like login_button?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Resources"],
+          "options": [
+            { "id": "a", "text": "R.id" },
+            { "id": "b", "text": "Resources.ids" },
+            { "id": "c", "text": "R.string" },
+            { "id": "d", "text": "R.layout" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "IDs declared in XML are generated into the R.id class and referenced as R.id.<name>.",
+          "hints": ["R.layout is for layout resources"]
+        },
+        {
+          "id": "S10-E2-Q24",
+          "question": "When the instructor searched for a color name and saw '1 out of 6', what does that number indicate?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Editor"],
+          "options": [
+            { "id": "a", "text": "The current match index and total matches (1 of 6 occurrences)" },
+            { "id": "b", "text": "The number of files open" },
+            { "id": "c", "text": "The line number" },
+            { "id": "d", "text": "The editor theme version" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "Find shows the current match position and the total number of matches found on the screen or scope.",
+          "hints": ["It helps you step through each occurrence"]
+        },
+        {
+          "id": "S10-E2-Q25",
+          "question": "How do you reference a drawable resource named 'button_design' in layout XML?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["XML", "Drawable"],
+          "options": [
+            { "id": "a", "text": "android:background='@drawable/button_design'" },
+            { "id": "b", "text": "android:src='@drawable/button_design'" },
+            { "id": "c", "text": "app:background='button_design'" },
+            { "id": "d", "text": "style='@style/button_design'" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "Set android:background to @drawable/<name> to apply a drawable as the view background.",
+          "hints": ["@drawable is the correct resource namespace"]
+        },
+        {
+          "id": "S10-E2-Q26",
+          "question": "Which element inside a shape drawable did the instructor use for fill color?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Drawable"],
+          "options": [
+            { "id": "a", "text": "<solid>" },
+            { "id": "b", "text": "<gradient>" },
+            { "id": "c", "text": "<padding>" },
+            { "id": "d", "text": "<item>" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "The <solid> tag provides a uniform fill color for a shape drawable.",
+          "hints": ["gradient produces multi-color fills"]
+        },
+        {
+          "id": "S10-E2-Q27",
+          "question": "Which element controls rounded corners inside a shape drawable?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Drawable"],
+          "options": [
+            { "id": "a", "text": "<corners>" },
+            { "id": "b", "text": "<radius>" },
+            { "id": "c", "text": "<cornerRadius>" },
+            { "id": "d", "text": "<round>" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "The <corners> element contains attributes like 'radius' or per-corner attributes to control rounded corners.",
+          "hints": ["radius inside <corners> applies to all corners"]
+        },
+        {
+          "id": "S10-E2-Q28",
+          "question": "In the transcript the instructor typed '30 dB' when setting a radius — which Android unit was intended?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Units"],
+          "options": [
+            { "id": "a", "text": "30dp" },
+            { "id": "b", "text": "30px" },
+            { "id": "c", "text": "30sp" },
+            { "id": "d", "text": "30pt" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "The transcript's 'dB' was a typo; the intended unit for layout dimensions is 'dp'.",
+          "hints": ["Use dp for layout distances"]
+        },
+        {
+          "id": "S10-E2-Q29",
+          "question": "What small stroke width did the instructor choose to make the outline visible but subtle?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Design"],
+          "options": [
+            { "id": "a", "text": "1dp" },
+            { "id": "b", "text": "5dp" },
+            { "id": "c", "text": "10dp" },
+            { "id": "d", "text": "0dp" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "He reduced the stroke width to 1dp for a fine, subtle outline.",
+          "hints": ["Large widths are visually heavy"]
+        },
+        {
+          "id": "S10-E2-Q30",
+          "question": "How did the instructor demonstrate selecting multiple UI elements to change color across them?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["Editor", "Productivity"],
+          "options": [
+            { "id": "a", "text": "Use Find and Replace to replace the color name across occurrences" },
+            { "id": "b", "text": "Select each widget separately and change" },
+            { "id": "c", "text": "Export and edit resources externally" },
+            { "id": "d", "text": "Use an Android Studio plugin" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "He used the editor's find/replace to change the color name across multiple occurrences in one action.",
+          "hints": ["Find shows total matches like '1 out of 6'"]
+        },
+        {
+          "id": "S10-E2-Q31",
+          "question": "What is the recommended place to design component-specific XML (like a button background) rather than using image assets?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["BestPractices"],
+          "options": [
+            { "id": "a", "text": "Create a drawable resource file in res/drawable" },
+            { "id": "b", "text": "Use image assets always" },
+            { "id": "c", "text": "Place design XML in assets/" },
+            { "id": "d", "text": "Use layout XML for drawable definitions" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "For component backgrounds, create drawable XML files in res/drawable rather than using image or vector assets.",
+          "hints": ["Drawable XML is scalable and customizable"]
+        },
+        {
+          "id": "S10-E2-Q32",
+          "question": "Which of these is NOT a correct way to reference a declared id in code?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["IDs"],
+          "options": [
+            { "id": "a", "text": "R.id.login_button" },
+            { "id": "b", "text": "findViewById(R.id.login_button)" },
+            { "id": "c", "text": "'@+id/login_button' directly in Kotlin" },
+            { "id": "d", "text": "val btn = findViewById<Button>(R.id.login_button)" }
+          ],
+          "correctAnswers": ["c"],
+          "explanation": "'@+id/..' is an XML syntax and cannot be used directly in Kotlin code; code uses R.id.<name>.",
+          "hints": ["XML and code reference formats differ"]
+        },
+        {
+          "id": "S10-E2-Q33",
+          "question": "What must you do in Kotlin to respond to a button click as the instructor intended?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["Kotlin", "EventHandling"],
+          "options": [
+            { "id": "a", "text": "Attach a click listener (setOnClickListener) to the button variable" },
+            { "id": "b", "text": "Declare a new XML attribute for clicks" },
+            { "id": "c", "text": "Rebuild the project only" },
+            { "id": "d", "text": "Rename the layout file" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "To make the button perform actions, add a click listener in the Kotlin controller, e.g., loginButton.setOnClickListener { ... }.",
+          "hints": ["XML alone won't trigger behavior"]
+        },
+        {
+          "id": "S10-E2-Q34",
+          "question": "Which XML file must be edited to change the app's launcher activity or intent-filter?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["Manifest", "Intent"],
+          "options": [
+            { "id": "a", "text": "AndroidManifest.xml" },
+            { "id": "b", "text": "build.gradle" },
+            { "id": "c", "text": "res/values/strings.xml" },
+            { "id": "d", "text": "settings.gradle" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "Intent filters and launcher activity declarations are managed in AndroidManifest.xml.",
+          "hints": ["Manifest contains <activity> entries"]
+        },
+        {
+          "id": "S10-E2-Q35",
+          "question": "The instructor emphasized knowing a component before operating on it; which sequence best matches his analogy?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Concepts"],
+          "options": [
+            { "id": "a", "text": "Introduce/identify the component in code, then perform actions on it" },
+            { "id": "b", "text": "Perform actions first and introduce later" },
+            { "id": "c", "text": "Never introduce components in code" },
+            { "id": "d", "text": "Use XML only, never code" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "He compared it to knowing your friend before sharing chocolate — you must introduce (find) the component in code before manipulating it.",
+          "hints": ["findViewById introduces the component into code"]
+        }
+      ]
+    }
+  ]
+}

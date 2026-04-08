@@ -1,0 +1,82 @@
+{
+  "items": [
+    {
+      "name": "Section10-Episodes1-3",
+      "difficulty": "medium",
+      "content": [
+        {
+          "id": "S10-C-Q1",
+          "question": "The instructor demonstrates replacing color resource names across multiple XML files using an editor trick. Describe the step-by-step process you would follow in Android Studio to safely replace a color resource name that appears across layouts, styles and drawable XML files. Include: how to scope the replace so you don't accidentally change unrelated identifiers, how to verify changes before applying them, and how to handle resource references in Kotlin/Java code that may rely on the old name.",
+          "type": "open",
+          "difficulty": "medium",
+          "tags": ["Editor","Resources","BestPractices"],
+          "modelAnswer": "Use the IDE-wide Find (Cmd/Ctrl+Shift+F) to search for the exact resource token (e.g., @color/pastel_green) and enable 'Match case' and 'Match whole word' to avoid partial matches. Review search results to scope by folder (res/values, res/layout, res/drawable). If the resource name itself (in colors.xml) must be renamed, prefer a refactor: rename the color entry in colors.xml and let the IDE update all usages. If using Replace All, first run Find to review each hit, then use Replace in Path for only the selected scope. After replacing, run a project build and run unit or smoke tests to catch compile-time errors; search for usages in Kotlin/Java (R.color.pastel_green) and update import or references if necessary. Commit changes in a separate branch and use VCS diff to inspect all edits before merging.",
+          "hints": ["Use 'Match whole word' to avoid partial matches","Prefer refactor/rename inside resource file when possible","Build the project to catch missing references"]
+        },
+        {
+          "id": "S10-C-Q2",
+          "question": "When the instructor creates a drawable resource file to give a button rounded corners, they replace a 'selector' root with 'shape' and add tags like <solid>, <corners> and <stroke>. Explain the semantic purpose of each tag, show a minimal example XML for a rounded rectangle with a subtle outline, and describe where that drawable file should be placed in the Android project and how to reference it from an XML layout.",
+          "type": "open",
+          "difficulty": "medium",
+          "tags": ["Drawable","XML","UI"],
+          "modelAnswer": "<solid> sets the fill color of the shape; <corners> controls corner radii (either a single 'radius' for all corners or per-corner attributes); <stroke> defines an outline with color and width. Example minimal drawable (res/drawable/button_design.xml):\n<shape xmlns:android=\"http://schemas.android.com/apk/res/android\">\n  <solid android:color=\"@color/vivid_blue\"/>\n  <corners android:radius=\"8dp\"/>\n  <stroke android:width=\"1dp\" android:color=\"@color/cornflower\"/>\n</shape>\nPlace the file in res/drawable/. Reference it from layout XML as android:background=\"@drawable/button_design\". Use dp units for radius and stroke width. For stateful backgrounds (different visual on press), keep a selector that references different shape drawables for each state.",
+          "hints": ["Use dp for dimensions (not 'dB')","Put drawable files in res/drawable/","Use a selector only when you need different states"]
+        },
+        {
+          "id": "S10-C-Q3",
+          "question": "The transcript contains a recurring transcription artifact 'dB' where 'dp' (density-independent pixels) is intended. Explain why using 'dp' is important in Android layouts, how dp differs from px and sp, and give two scenarios where choosing the wrong unit leads to visible issues on different devices.",
+          "type": "open",
+          "difficulty": "medium",
+          "tags": ["Units","Layout","Accessibility"],
+          "modelAnswer": "'dp' (density-independent pixels) scales with screen density so UI elements maintain consistent physical size across devices. 'px' is raw pixels and will appear proportionally smaller on high-density screens; 'sp' is like dp but scales with user font-size preference, so it should be used for text. Scenario 1: Using 'px' for button corner radius produces tiny rounded corners on high-DPI phones; Scenario 2: Using 'px' or 'dp' for text instead of 'sp' causes text to ignore user accessibility font-size settings, impairing readability for users who need larger fonts.",
+          "hints": ["dp scales with density","sp respects user font scaling","Avoid px for layout sizes"]
+        },
+        {
+          "id": "S10-C-Q4",
+          "question": "During the demo the instructor copies a hex color from Tricolours and applies it to a drawable stroke. Describe a disciplined workflow for selecting and applying a custom color across a project so that the color is maintainable, themable and easy to update later. Include the files you would edit and how you'd reference the color in XML and code.",
+          "type": "open",
+          "difficulty": "medium",
+          "tags": ["Colors","Theming","BestPractices"],
+          "modelAnswer": "Copy the hex from Tricolours, add it to res/values/colors.xml as a named color (e.g., <color name=\"cornflower\">#6495ED</color>). Reference it everywhere as @color/cornflower in drawables, layouts and styles. For theming, prefer using theme attributes (e.g., ?attr/colorPrimary) defined in styles.xml that reference colors, allowing different themes to swap values. In Kotlin/Java, use ContextCompat.getColor(context, R.color.cornflower) or retrieve themed attributes via TypedArray. Commit the color addition so future developers can find and update a single definition.",
+          "hints": ["Store hex codes in colors.xml","Use theme attributes for app-wide swappable colors","Use ContextCompat to access colors in code"]
+        },
+        {
+          "id": "S10-C-Q5",
+          "question": "The instructor demonstrates that changing XML alone doesn't provide functionality — you must wire behavior in Kotlin/Java. Write the steps and a code snippet showing how to connect a button (with android:id=\"@+id/login_button\") from layout XML to a Kotlin Activity and set a click listener that navigates to a second activity. Mention the permissions or manifest changes needed if any.",
+          "type": "open",
+          "difficulty": "medium",
+          "tags": ["Kotlin","Activity","Navigation"],
+          "modelAnswer": "Steps: (1) Give the button an ID in XML (android:id=\"@+id/login_button\"). (2) In the Activity's onCreate, setContentView(R.layout.activity_main). (3) Find the view: val loginButton: Button = findViewById(R.id.login_button). (4) Set listener: loginButton.setOnClickListener { val intent = Intent(this, SecondActivity::class.java); startActivity(intent) }. If SecondActivity is a new activity, declare it in AndroidManifest.xml inside the <application> tag: <activity android:name=\".SecondActivity\"/>. No special permissions required for simple activity navigation. Example snippet: \nclass MainActivity : AppCompatActivity() {\n  override fun onCreate(savedInstanceState: Bundle?) {\n    super.onCreate(savedInstanceState)\n    setContentView(R.layout.activity_main)\n    val loginButton: Button = findViewById(R.id.login_button)\n    loginButton.setOnClickListener {\n      startActivity(Intent(this, SecondActivity::class.java))\n    }\n  }\n}\n",
+          "hints": ["Declare new activities in AndroidManifest.xml","Use findViewById or view binding for safer access","No permissions needed to start another activity"]
+        },
+        {
+          "id": "S10-C-Q6",
+          "question": "Explain the relationship between an Activity, its XML layout and the controller file (Kotlin/Java). In your answer, describe what is generated when you choose \"New Activity -> Empty Activity\" in Android Studio with 'Generate layout file' checked versus unchecked, and when you might want to omit generating the layout file.",
+          "type": "open",
+          "difficulty": "medium",
+          "tags": ["Activity","ProjectStructure","Tools"],
+          "modelAnswer": "An Activity represents a single screen; the XML layout defines the UI elements and the Kotlin/Java file acts as the controller that manipulates those elements and responds to user input. Choosing 'New Activity -> Empty Activity' with 'Generate layout file' creates both a Kotlin/Java class (e.g., MyActivity.kt) and a corresponding layout XML (activity_my.xml). If unchecked, only the class is created (useful when the UI will be created programmatically, reused from another layout, or the layout will be added later). You might omit generating the layout file when building a headless activity, a base class that other activities inherit, or when you manage UI with Compose or dynamic creation in code.",
+          "hints": ["Activity = controller, XML = view","Generate layout for typical UI-based activities","Omit when using Compose or programmatic UI"]
+        },
+        {
+          "id": "S10-C-Q7",
+          "question": "The transcript explains IDs for XML components and how they map to Kotlin variables. Discuss naming conventions and best practices for resource IDs and the corresponding Kotlin variable names. Provide an example mapping and explain how to avoid runtime errors caused by mismatched IDs.",
+          "type": "open",
+          "difficulty": "medium",
+          "tags": ["IDs","Naming","Robustness"],
+          "modelAnswer": "Use lowercase_with_underscores for XML resource IDs (e.g., @+id/login_button). In Kotlin, prefer camelCase variable names derived from the resource name (e.g., val loginButton: Button = findViewById(R.id.login_button)). When using view binding or synthetic bindings, avoid manual findViewById to reduce errors. Always ensure the ID in layout matches the one used in code; if you rename the ID in XML, use IDE refactor/rename to update usages. Initialize views after setContentView to avoid NullPointerExceptions and consider using lateinit vars or view binding to ensure compile-time safety.",
+          "hints": ["Use IDE refactor/rename for IDs","Initialize views after setContentView","Prefer view binding for type-safe access"]
+        },
+        {
+          "id": "S10-C-Q8",
+          "question": "Drawables intended to style existing components should be created as 'drawable resource file' rather than vector/image assets. Explain why this distinction matters, give two examples of when to use a drawable XML shape vs when to use a vector asset, and describe how to compose multiple drawables (e.g., shape + inset + selector) to support states and padding.",
+          "type": "open",
+          "difficulty": "medium",
+          "tags": ["Drawable","Assets","Composition"],
+          "modelAnswer": "Drawable XML shapes are resolution-independent, parameterizable (corners, stroke, gradient) and easy to theme, so use them for backgrounds and component decorations. Vector assets are suited for scalable icons where paths define the graphic. Example: use a shape drawable for a rounded button background with stroke; use a vector drawable for a toolbar icon. To compose drawables: use <layer-list> to stack multiple drawables, <inset> to add padding around a child drawable, and <selector> to switch between different drawables for states (pressed, focused). For example, a selector can reference two shape XMLs (normal and pressed) to provide different fills on press while keeping consistent corner radii.",
+          "hints": ["Use shape drawables for UI chrome","Use vector drawables for icons","Use selector/layer-list/inset to compose drawables"]
+        }
+      ]
+    }
+  ]
+}

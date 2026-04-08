@@ -1,0 +1,250 @@
+{
+  "items": [
+    {
+      "name": "Section10-Episode1",
+      "difficulty": "medium",
+      "content": [
+        {
+          "id": "S10-E1-Q1",
+          "question": "In the Episode 1 demo the instructor replaced a color name used across multiple XML locations — which editor trick did he use to change every occurrence at once?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Editor", "FindReplace"],
+          "options": [
+            { "id": "a", "text": "Select the text and use Replace All (Cmd/Ctrl+F then Replace All)" },
+            { "id": "b", "text": "Manually edit each XML file one-by-one" },
+            { "id": "c", "text": "Run a Gradle task to recompile resources" },
+            { "id": "d", "text": "Use an external image editor" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "He selected the color name, opened the find/replace and used Replace All to update every occurrence across the screen.",
+          "hints": ["Find/Replace shows '1 out of 6' matches", "Use Replace All to change every occurrence"]
+        },
+        {
+          "id": "S10-E1-Q2",
+          "question": "When the instructor wanted to change a button's sharp corners to rounded ones, which drawable file type did he create to hold that shape?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Drawable", "UI"],
+          "options": [
+            { "id": "a", "text": "Drawable resource file (shape XML)" },
+            { "id": "b", "text": "Vector asset" },
+            { "id": "c", "text": "Image asset (PNG)" },
+            { "id": "d", "text": "Layout XML file" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "He created a new drawable resource file (a shape XML) to define solid color, corners (radius) and stroke for the button background.",
+          "hints": ["Use drawable resource file for component backgrounds", "Vector and image assets are not used for shape drawables"]
+        },
+        {
+          "id": "S10-E1-Q3",
+          "question": "Inside a shape drawable the instructor used an element to set the fill color — which XML tag is used to provide a uniform fill?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Drawable", "XML"],
+          "options": [
+            { "id": "a", "text": "<solid> with a color attribute" },
+            { "id": "b", "text": "<bitmap> with src attribute" },
+            { "id": "c", "text": "<gradient> only" },
+            { "id": "d", "text": "<padding> with color" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "The <solid> tag is used inside a shape drawable to set a uniform fill color (e.g., the vivid blue used by the instructor).",
+          "hints": ["solid provides a flat color fill", "gradient is for color gradients"]
+        },
+        {
+          "id": "S10-E1-Q4",
+          "question": "To round all four corners of the rectangle shape the instructor set a single attribute — which attribute controls the corner radius applied to every corner?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Drawable", "Corners"],
+          "options": [
+            { "id": "a", "text": "radius" },
+            { "id": "b", "text": "cornerRadiusAll" },
+            { "id": "c", "text": "roundness" },
+            { "id": "d", "text": "borderRadius" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "Using the 'radius' attribute in the <corners> element applies the same radius to all four corners of the shape.",
+          "hints": ["Individual corners use topLeftRadius/topRightRadius etc.", "radius applies to all corners"]
+        },
+        {
+          "id": "S10-E1-Q5",
+          "question": "The instructor added an outline around the shape using a tag that accepts a color and width — which tag is this?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Drawable", "Stroke"],
+          "options": [
+            { "id": "a", "text": "<stroke> with color and width attributes" },
+            { "id": "b", "text": "<outline> with colour and size" },
+            { "id": "c", "text": "<border> with thickness" },
+            { "id": "d", "text": "<frame> with stroke" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "The <stroke> element defines an outline for a shape and accepts a color and width attribute (the instructor used a small width like 1dp).",
+          "hints": ["stroke sets outline color and width", "Use small widths for subtle outlines"]
+        },
+        {
+          "id": "S10-E1-Q6",
+          "question": "After applying the drawable background the instructor clicked the button in the emulator but nothing happened — what was the missing step he pointed out?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Behavior", "Kotlin"],
+          "options": [
+            { "id": "a", "text": "No functionality was wired in the Kotlin/Java controller (no click handler)" },
+            { "id": "b", "text": "The drawable was not referenced in XML" },
+            { "id": "c", "text": "The emulator didn't support clicks" },
+            { "id": "d", "text": "The button was disabled by default" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "The UI looked correct but lacked controller code — the instructor emphasized that XML alone doesn't provide functionality; you must add handlers in Kotlin/Java.",
+          "hints": ["XML is for layout only", "Controller files (Kotlin/Java) add behavior like click listeners"]
+        },
+        {
+          "id": "S10-E1-Q7",
+          "question": "Which root element did the instructor replace with 'shape' when creating the drawable for the button?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Drawable", "XML"],
+          "options": [
+            { "id": "a", "text": "selector" },
+            { "id": "b", "text": "vector" },
+            { "id": "c", "text": "bitmap" },
+            { "id": "d", "text": "layer-list" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "He replaced the 'selector' root with 'shape' because he wanted a shape drawable, not a state selector.",
+          "hints": ["shape defines rectangles/ovals", "selector is used for state-based drawables"]
+        },
+        {
+          "id": "S10-E1-Q8",
+          "question": "What is the default shape type for a shape drawable if none is specified?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Drawable"],
+          "options": [
+            { "id": "a", "text": "rectangle" },
+            { "id": "b", "text": "oval" },
+            { "id": "c", "text": "line" },
+            { "id": "d", "text": "ring" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "The default shape for a shape drawable is 'rectangle'.",
+          "hints": ["You can change it to 'oval' or other types"]
+        },
+        {
+          "id": "S10-E1-Q9",
+          "question": "If you want to round only the top-right corner of a drawable, which attributes would you use?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["Drawable", "Corners"],
+          "options": [
+            { "id": "a", "text": "topRightRadius (or topRightRadius attribute in <corners>)" },
+            { "id": "b", "text": "radius with negative value" },
+            { "id": "c", "text": "roundOnlyTopRight='true'" },
+            { "id": "d", "text": "Use <stroke> to round corners" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "Use the corner-specific attributes (topRightRadius, topLeftRadius, etc.) within <corners> to set individual corner radii.",
+          "hints": ["radius applies to all corners", "Use individual corner attributes for per-corner control"]
+        },
+        {
+          "id": "S10-E1-Q10",
+          "question": "Which tag inside a shape drawable sets an outline color and width?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Drawable", "Stroke"],
+          "options": [
+            { "id": "a", "text": "<stroke>" },
+            { "id": "b", "text": "<outline>" },
+            { "id": "c", "text": "<border>" },
+            { "id": "d", "text": "<edge>" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "The <stroke> element defines the outline color and width for the shape drawable.",
+          "hints": ["stroke has 'color' and 'width' attributes"]
+        },
+        {
+          "id": "S10-E1-Q11",
+          "question": "Where should you place a drawable resource file for a button background in an Android project?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Project", "Resources"],
+          "options": [
+            { "id": "a", "text": "res/drawable/" },
+            { "id": "b", "text": "res/layout/" },
+            { "id": "c", "text": "res/values/" },
+            { "id": "d", "text": "assets/" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "Drawable XML files belong in the res/drawable/ directory.",
+          "hints": ["Layouts go in res/layout/", "Colors go in res/values/colors.xml"]
+        },
+        {
+          "id": "S10-E1-Q12",
+          "question": "How do you apply a drawable named 'button_design' as the background of a view in XML?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["XML", "Drawable"],
+          "options": [
+            { "id": "a", "text": "android:background='@drawable/button_design'" },
+            { "id": "b", "text": "android:background='@color/button_design'" },
+            { "id": "c", "text": "android:src='@drawable/button_design'" },
+            { "id": "d", "text": "style='@style/button_design'" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "Use android:background='@drawable/button_design' to set a drawable resource as a view background.",
+          "hints": ["@color is for color resources", "@drawable is for drawable resources"]
+        },
+        {
+          "id": "S10-E1-Q13",
+          "question": "When using the Tricolours website the instructor copied a hex color code — how is that typically done on the site?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Tools", "Colors"],
+          "options": [
+            { "id": "a", "text": "Click the color swatch to copy the hex code" },
+            { "id": "b", "text": "Right-click and Save As" },
+            { "id": "c", "text": "Download a PNG" },
+            { "id": "d", "text": "Use a browser extension only" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "He clicked the color to copy its hex code from the Tricolours website.",
+          "hints": ["Sites often show 'copy' on color swatches"]
+        },
+        {
+          "id": "S10-E1-Q14",
+          "question": "If the transcript shows '30 dB' when setting corner radius, what is the correct Android unit intended?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Units"],
+          "options": [
+            { "id": "a", "text": "30dp" },
+            { "id": "b", "text": "30px" },
+            { "id": "c", "text": "30sp" },
+            { "id": "d", "text": "30pt" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "The transcript typo 'dB' was intended to be the Android density-independent pixel 'dp'.",
+          "hints": ["Use dp for layout dimensions", "sp is for text scaling"]
+        },
+        {
+          "id": "S10-E1-Q15",
+          "question": "What stroke width did the instructor recommend for a subtle outline on the drawable?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Drawable", "BestPractices"],
+          "options": [
+            { "id": "a", "text": "1dp" },
+            { "id": "b", "text": "10dp" },
+            { "id": "c", "text": "50dp" },
+            { "id": "d", "text": "0dp (no stroke)" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "He suggested using a small stroke width like 1dp to keep the outline subtle and visually pleasing.",
+          "hints": ["Large stroke widths look heavy", "1dp is commonly used for fine outlines"]
+        }
+      ]
+    }
+  ]
+}

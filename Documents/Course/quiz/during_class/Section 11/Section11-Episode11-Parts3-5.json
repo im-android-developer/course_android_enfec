@@ -1,0 +1,202 @@
+{
+  "items": [
+    {
+      "name": "Section11-Episode11-Parts3-5",
+      "difficulty": "medium",
+      "content": [
+        {
+          "id": "S11-E11-Q1",
+          "question": "In the demo the instructor creates a Kotlin file from the project view. Which menu sequence in Android Studio produces a new Kotlin file (not class) in the appropriate package?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["IDE","Kotlin","Files"],
+          "options": [
+            { "id": "a", "text": "Right‑click package → New → Kotlin Class/File → choose 'File' and enter name" },
+            { "id": "b", "text": "File → New → Java Class → change extension to .kt manually" },
+            { "id": "c", "text": "Right‑click res/layout → New → Kotlin File" },
+            { "id": "d", "text": "Tools → Kotlin → New Kotlin File" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "The instructor right‑clicked the package (com.myandroid...) → New → Kotlin class/file, selected 'File' and provided the file name (e.g., MainKTFile).",
+          "hints": ["Create files from the package node", "Use New → Kotlin class/file and choose 'File'"]
+        },
+        {
+          "id": "S11-E11-Q2",
+          "question": "What is the role of the 'main' function in a standalone Kotlin file demonstrated in the video?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Kotlin","Execution"],
+          "options": [
+            { "id": "a", "text": "It is the entry point where Kotlin starts executing the file's code" },
+            { "id": "b", "text": "It defines a UI layout for the activity" },
+            { "id": "c", "text": "It registers the activity in AndroidManifest.xml" },
+            { "id": "d", "text": "It automatically runs on app launch without configuration" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "The 'main' function is the starting point for running the Kotlin file and without it the file is not runnable by the IDE's run action.",
+          "hints": ["Kotlin needs a starting function to run a file", "Removing main makes the file unrunnable"]
+        },
+        {
+          "id": "S11-E11-Q3",
+          "question": "When the instructor runs the Kotlin file, a small play button appears next to the code. What does selecting that run action do compared with using the top 'app' run configuration?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["IDE","RunConfigurations"],
+          "options": [
+            { "id": "a", "text": "Runs only the selected Kotlin file (its main), not the whole Android app" },
+            { "id": "b", "text": "Builds and deploys the entire Android app to the emulator" },
+            { "id": "c", "text": "Opens a debug console connected to the device" },
+            { "id": "d", "text": "Converts the Kotlin file to Java and runs it" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "The inline run action executes the single Kotlin file (its main function), whereas the top app configuration builds and runs the Android application package.",
+          "hints": ["Look at the run target label (mainKTFile vs app)", "Inline run is useful for quick scripts or tests"]
+        },
+        {
+          "id": "S11-E11-Q4",
+          "question": "Which Kotlin function call does the instructor use to print a line of text and then move to the next line in the run window?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Kotlin","IO"],
+          "options": [
+            { "id": "a", "text": "println(\"text\")" },
+            { "id": "b", "text": "print(\"text\")" },
+            { "id": "c", "text": "System.out.print(\"text\")" },
+            { "id": "d", "text": "Log.d(\"TAG\", \"text\")" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "The instructor uses println which prints the text and advances to the next line; print does not add a newline.",
+          "hints": ["println vs print", "Check differences in output layout"]
+        },
+        {
+          "id": "S11-E11-Q5",
+          "question": "What observable difference did the instructor demonstrate between 'print' and 'println' when multiple calls are made?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Kotlin","Behavior"],
+          "options": [
+            { "id": "a", "text": "'println' prints each call on a new line; 'print' continues on the same line" },
+            { "id": "b", "text": "'print' prints with extra spacing; 'println' removes spacing" },
+            { "id": "c", "text": "'print' is slower than 'println'" },
+            { "id": "d", "text": "They behave identically in Kotlin" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "'println' appends a newline after printing; 'print' does not, so subsequent output appears on the same line.",
+          "hints": ["Try two prints vs two printlns","Observe run output lines"]
+        },
+        {
+          "id": "S11-E11-Q6",
+          "question": "The instructor prints different kinds of literals: text, integers, decimals and booleans. In Kotlin, which of the following is a valid decimal literal the instructor used in the demo?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Kotlin","Literals"],
+          "options": [
+            { "id": "a", "text": "12.1234" },
+            { "id": "b", "text": "12,1234" },
+            { "id": "c", "text": "12.1234fL" },
+            { "id": "d", "text": "\"12.1234\"" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "Decimal numbers in Kotlin use a dot (.) as the decimal separator, e.g., 12.1234 was shown in the demo.",
+          "hints": ["Use '.' for decimals","Not a string unless quoted"]
+        },
+        {
+          "id": "S11-E11-Q7",
+          "question": "When introducing variables the instructor explained 'val' vs 'var'. Which statement correctly describes the difference?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Kotlin","Variables"],
+          "options": [
+            { "id": "a", "text": "'val' defines an immutable value (cannot be reassigned); 'var' defines a mutable variable (can be reassigned)" },
+            { "id": "b", "text": "'val' creates a global variable; 'var' creates a local variable" },
+            { "id": "c", "text": "'val' is for integer only; 'var' is for strings only" },
+            { "id": "d", "text": "'val' and 'var' are interchangeable" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "'val' creates a read‑only reference (like a final variable), while 'var' allows reassignment.",
+          "hints": ["Try reassigning a 'val' to see the IDE error","Use 'var' when you need to change the value"]
+        },
+        {
+          "id": "S11-E11-Q8",
+          "question": "The instructor showed that after declaring a 'val' without assignment the IDE complained. What must you provide when declaring a 'val' in that context?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["Kotlin","Compilation"],
+          "options": [
+            { "id": "a", "text": "An initial value or an explicit type with later initialization (e.g., val x: Int = 3)" },
+            { "id": "b", "text": "A visibility modifier like 'private'" },
+            { "id": "c", "text": "A lateinit keyword" },
+            { "id": "d", "text": "A semicolon at the end of the line" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "A 'val' must be initialized where declared (or declared with a type and later set in constructor), otherwise the IDE shows an error; 'lateinit' is allowed only for var with non-null types.",
+          "hints": ["val requires initialization","'lateinit' cannot be used with val"]
+        },
+        {
+          "id": "S11-E11-Q9",
+          "question": "In the demo the instructor prints a variable's value using println after declaring it. Which sequence is required to correctly print the stored value?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Kotlin","Variables"],
+          "options": [
+            { "id": "a", "text": "Declare the variable (val/var), assign a value, then call println(variableName)" },
+            { "id": "b", "text": "Call println before declaring the variable" },
+            { "id": "c", "text": "Declare the variable without assignment and println will auto-print null" },
+            { "id": "d", "text": "Use println(\"$variableName\") without declaring variable" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "You must declare and assign the variable before using it; println(variableName) prints the current value.",
+          "hints": ["Initialize variables before use","Kotlin is statically typed and checks usages"]
+        },
+        {
+          "id": "S11-E11-Q10",
+          "question": "Which of the following is a best practice the instructor suggested to avoid repeatedly typing the same literal (like 'Hello Android') throughout a file?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Kotlin","BestPractices"],
+          "options": [
+            { "id": "a", "text": "Store the literal in a variable and reuse the variable where needed" },
+            { "id": "b", "text": "Copy and paste the literal everywhere" },
+            { "id": "c", "text": "Write the literal inside comments and refer to it" },
+            { "id": "d", "text": "Always hardcode the literal to keep code explicit" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "Defining a variable reduces duplication and makes updates easier, as demonstrated when the instructor replaced repeated text with a variable reference.",
+          "hints": ["Use val for constants you won't change","Use var if the value must be updated"]
+        },
+        {
+          "id": "S11-E11-Q11",
+          "question": "The instructor changed a variable declared with 'var' to a new value later in the code. Which behaviour will you see when you run the program after reassigning the variable?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Kotlin","Variables"],
+          "options": [
+            { "id": "a", "text": "The later assigned value is printed (variable holds the new value)" },
+            { "id": "b", "text": "The original value is retained and printed" },
+            { "id": "c", "text": "The program will crash at runtime" },
+            { "id": "d", "text": "Kotlin silently ignores reassignment" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "A 'var' can be reassigned; subsequent reads return the newest value as shown in the demo where the variable printed the updated string.",
+          "hints": ["Use var to allow value changes","Observe output after reassignment"]
+        },
+        {
+          "id": "S11-E11-Q12",
+          "question": "What will happen to the run/play icon and the ability to run the file if you rename or remove the 'main' function in a Kotlin script as shown in the episode?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["IDE","Kotlin","Execution"],
+          "options": [
+            { "id": "a", "text": "The play icon disappears and the file becomes non-runnable because there is no entry point" },
+            { "id": "b", "text": "The file will still run using the previous configuration" },
+            { "id": "c", "text": "Android Studio will auto-create a default main function" },
+            { "id": "d", "text": "The file will run as an Android activity instead" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "Without a valid main function the inline run action is removed and Kotlin cannot run the file; the instructor showed the cross mark indicating the file is no longer runnable.",
+          "hints": ["Kotlin needs an entry point to run a file","Restoring main brings run icon back"]
+        }
+      ]
+    }
+  ]
+}

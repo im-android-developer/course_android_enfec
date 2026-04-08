@@ -1,0 +1,250 @@
+{
+  "items": [
+    {
+      "name": "Section11-Episode11-Part5",
+      "difficulty": "medium",
+      "content": [
+        {
+          "id": "S11-E11-P5-Q1",
+          "question": "What is a variable in programming as described by the instructor?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Variables","Concepts"],
+          "options": [
+            { "id": "a", "text": "A container that stores a value" },
+            { "id": "b", "text": "A type of function" },
+            { "id": "c", "text": "A layout file" },
+            { "id": "d", "text": "A compiler setting" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "He explained variables as containers that store values such as strings, numbers, or booleans.",
+          "hints": ["Variables hold values you can reuse"]
+        },
+        {
+          "id": "S11-E11-P5-Q2",
+          "question": "Which Kotlin keywords did the instructor introduce for declaring variables?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Kotlin","Variables"],
+          "options": [
+            { "id": "a", "text": "val and var" },
+            { "id": "b", "text": "let and const" },
+            { "id": "c", "text": "def and var" },
+            { "id": "d", "text": "var and const" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "Kotlin uses `val` for read-only (immutable) variables and `var` for mutable variables.",
+          "hints": ["val = value fixed, var = variable (changeable)"]
+        },
+        {
+          "id": "S11-E11-P5-Q3",
+          "question": "What happens if you try to reassign a `val` variable in Kotlin?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["Kotlin","Immutability"],
+          "options": [
+            { "id": "a", "text": "You'll get a compile-time error" },
+            { "id": "b", "text": "It silently changes the value" },
+            { "id": "c", "text": "It converts to var automatically" },
+            { "id": "d", "text": "It throws runtime exception only" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "A `val` cannot be reassigned; attempting to do so causes a compile-time error advising you to use `var` if mutability is needed.",
+          "hints": ["val is immutable"]
+        },
+        {
+          "id": "S11-E11-P5-Q4",
+          "question": "What rule about variable names did the instructor mention?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Naming","Variables"],
+          "options": [
+            { "id": "a", "text": "Names should start with an alphabetical letter" },
+            { "id": "b", "text": "Names must be numbers only" },
+            { "id": "c", "text": "Names must include special characters" },
+            { "id": "d", "text": "Names cannot contain letters" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "He advised that variable names generally start with a letter and follow naming rules discussed later.",
+          "hints": ["Follow standard identifier rules"]
+        },
+        {
+          "id": "S11-E11-P5-Q5",
+          "question": "How do you assign a value to a variable when declaring it in Kotlin?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Kotlin","Assignment"],
+          "options": [
+            { "id": "a", "text": "Use the equals sign, e.g., var name = \"hello\"" },
+            { "id": "b", "text": "Use a colon only" },
+            { "id": "c", "text": "Use -> arrow syntax" },
+            { "id": "d", "text": "Assignment is not allowed at declaration" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "You assign values using `=`, e.g., `var myAndroid = \"Hello Android\"`.",
+          "hints": ["Assignment uses '=' in Kotlin declarations"]
+        },
+        {
+          "id": "S11-E11-P5-Q6",
+          "question": "If you declare `var myAndroid = \"Hello\"` then later set `myAndroid = \"World\"`, what happens?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Kotlin","Mutability"],
+          "options": [
+            { "id": "a", "text": "The variable's value changes to 'World' because it's var" },
+            { "id": "b", "text": "It throws an error because assignments aren't allowed" },
+            { "id": "c", "text": "The original value is preserved and a new variable is created" },
+            { "id": "d", "text": "Kotlin will convert var to val automatically" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "`var` allows reassignment, so the variable's value becomes the new string ‘World’.",
+          "hints": ["var = mutable"]
+        },
+        {
+          "id": "S11-E11-P5-Q7",
+          "question": "Why did the instructor print a variable instead of the literal text in the example?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Variables","Reuse"],
+          "options": [
+            { "id": "a", "text": "To avoid retyping the same string many times and to reuse the value" },
+            { "id": "b", "text": "Because print cannot accept literal strings" },
+            { "id": "c", "text": "Because variables cannot be printed" },
+            { "id": "d", "text": "To obfuscate the code" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "Using variables avoids repetition and makes code easier to change — change the variable once to affect all uses.",
+          "hints": ["Variables promote reuse"]
+        },
+        {
+          "id": "S11-E11-P5-Q8",
+          "question": "What error did the editor show when trying to change a `val` variable?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["Kotlin","CompileError"],
+          "options": [
+            { "id": "a", "text": "It suggested changing to `var` because `val` is immutable" },
+            { "id": "b", "text": "It said the variable name is invalid" },
+            { "id": "c", "text": "It warned about unused imports" },
+            { "id": "d", "text": "It forced a project rebuild" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "The IDE suggested switching to `var` because the variable was declared `val` and couldn't be reassigned.",
+          "hints": ["Immutable vs mutable declarations"]
+        },
+        {
+          "id": "S11-E11-P5-Q9",
+          "question": "Which of these sequences matches the instructor's explanation of variable declaration?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Kotlin","Syntax"],
+          "options": [
+            { "id": "a", "text": "val/var, name, =, value" },
+            { "id": "b", "text": "name, =, val/var, value" },
+            { "id": "c", "text": "value, name, val/var" },
+            { "id": "d", "text": "=, val/var, name, value" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "He described declaration order: `val` or `var`, then the variable name, then `=`, then the value.",
+          "hints": ["Declaration syntax order matters"]
+        },
+        {
+          "id": "S11-E11-P5-Q10",
+          "question": "Which keyword would you use if you need to change the variable later?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Kotlin","Var"],
+          "options": [
+            { "id": "a", "text": "var" },
+            { "id": "b", "text": "val" },
+            { "id": "c", "text": "let" },
+            { "id": "d", "text": "const" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "Use `var` for variables that you plan to reassign later.",
+          "hints": ["var = variable (mutable)"]
+        },
+        {
+          "id": "S11-E11-P5-Q11",
+          "question": "Which statement did the instructor make about `val` usage?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Kotlin","Val"],
+          "options": [
+            { "id": "a", "text": "Use `val` when the value should not change" },
+            { "id": "b", "text": "Use `val` when you want to reassign later" },
+            { "id": "c", "text": "`val` is required for all strings" },
+            { "id": "d", "text": "`val` disables printing" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "`val` marks a read-only binding — assign once and don't change it.",
+          "hints": ["Immutable by design"]
+        },
+        {
+          "id": "S11-E11-P5-Q12",
+          "question": "When he printed the variable after changing it, what reflected the change?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Kotlin","Output"],
+          "options": [
+            { "id": "a", "text": "The new value printed because var was reassigned" },
+            { "id": "b", "text": "The old value printed because reassignment isn't allowed" },
+            { "id": "c", "text": "Nothing printed" },
+            { "id": "d", "text": "It printed both values concatenated" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "He reassigned a `var` and printing showed the updated value.",
+          "hints": ["Reassignment updates var's stored value"]
+        },
+        {
+          "id": "S11-E11-P5-Q13",
+          "question": "Which of the following is true about `val` vs `var`?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Kotlin","Comparison"],
+          "options": [
+            { "id": "a", "text": "`val` is immutable, `var` is mutable" },
+            { "id": "b", "text": "`val` is mutable, `var` is immutable" },
+            { "id": "c", "text": "Both are immutable" },
+            { "id": "d", "text": "Both are deprecated" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "`val` defines an immutable binding while `var` allows reassignment.",
+          "hints": ["Think of 'val' as value, fixed"]
+        },
+        {
+          "id": "S11-E11-P5-Q14",
+          "question": "What is the simplest way to print a variable's value as shown in the demo?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Kotlin","Print"],
+          "options": [
+            { "id": "a", "text": "println(variableName)" },
+            { "id": "b", "text": "print(variableName) only in logs" },
+            { "id": "c", "text": "toast(variableName)" },
+            { "id": "d", "text": "log(variableName) must be used" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "The instructor used `println(variableName)` to display the variable's value in the Run console.",
+          "hints": ["Use println for console output"]
+        },
+        {
+          "id": "S11-E11-P5-Q15",
+          "question": "If you need to change a value during runtime frequently which declaration should you pick?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Kotlin","BestPractices"],
+          "options": [
+            { "id": "a", "text": "var" },
+            { "id": "b", "text": "val" },
+            { "id": "c", "text": "const val" },
+            { "id": "d", "text": "final" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "`var` allows changing the stored value at runtime and is appropriate for frequently-updated variables.",
+          "hints": ["Choose mutability when you need to reassign"]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+(Transcribed by TurboScribe. Go Unlimited to remove this message.)
+
+Let me just stop this app, close this again, no, minimise and now let's move to our next concept that is what is Kotlin. So, Kotlin is a modern programming language that is used to build Android applications. Think of it as a tool that helps developers to talk to the phone and tell it what to do like showing a screen or clicking a button and so on.
+
+Now, let's talk about the history of Kotlin. Kotlin was created by a company called JetBrains in 2010. It became popular because it's easy to use and works well with Java. 
+
+In year 2017, Google adopts Kotlin as official Android supported language while in year 2019, Google recommends Kotlin as the best language for Android development. Now, the question arises, why do we use Kotlin? Kotlin is one of the developer's favourite languages. Why? Let's explore. 
+
+Here, Kotlin allows developers to write less and it will do a lot. Here, Kotlin doesn't need a lot of code. Instead of it, within three lines of code, you will put the functionality. 
+
+If you work with Java, you must write an essay. Like above, Kotlin helps to nullify the bugs which is very effective as compared to others. When others crash the app due to the missing data, Kotlin helps to avoid such mistakes.
+
+Similarly, another best thing about Kotlin is that it works with Java as well. As we know, that previously Android applications were written into Java but later on, we adopted Kotlin. If your application is still into Java, even then you will be able to put your functionality into Kotlin. 
+
+Into the same line, clean and faster coding makes it more effective which can be done by Kotlin. Overall, Kotlin is easy to learn, fun to use, it runs better and crash less, it saves time and efforts and it's maintained by Google and JetBrains. In real world, it's used to build Pinterest, Netflix and Uber. 
+
+So that's the reason why we are using Kotlin.
+
+(Transcribed by TurboScribe. Go Unlimited to remove this message.)

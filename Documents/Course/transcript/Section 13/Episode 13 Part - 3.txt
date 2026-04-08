@@ -1,0 +1,93 @@
+(Transcribed by TurboScribe. Go Unlimited to remove this message.)
+
+Let's move to next and opposite part of it, that is, subtract and assign, that is, minus equals to, okay. It's do the same thing just like add and assign do, but into an opposite manner. At that place, into add and assign, we are adding a particular value into existing one by writing plus equals to sign, or by adding plus equals to sign.
+
+Here, we are subtracting some value by adding or by putting minus equals to sign. So what exactly it means, let's suppose we have a particular variable that is x minus equals to y. So here, what exactly I am saying, I am saying x is equals to x minus y, okay. It is as same as the add and assign, but the difference is that here, at this place, into add and assign, we have plus sign, but here we have minus sign, okay.
+
+So that means, so let's suppose if we have a particular variable that is var x int move to 50, okay. And we have another variable named as y integer is equals to 5, okay. And I am going, I need to update the value of x where I want to subtract the value of 5 from it.
+
+So instead of writing the whole equation like this, I am going to place it like this. So here, what will happen exactly? We will actually targeting this, we are actually targeting the value of this. And here, we will get the value of x is equals to 10, okay.
+
+So let's see this into our code editor. And here, let me just remove all these things. And I am saying var x integer is equals to 15, var y integer is equals to 5. And now I am going to update the value.
+
+So it is like x minus equals to y, okay. What exactly I am saying here, I am saying x is equals to x minus y, okay. Now let us put, now let us print the value, print line and put x here.
+
+Once we are done, what is the new value we will get? Yes, exactly 10, okay. That is perfect for you. Let us take another example or another equation of this.
+
+I hope you understand the concept, what exactly is going on. So here, again we have some variables, a int is equals to 5, sorry 50. And we have b integer is equals to 20.
+
+Now I want to update the value of a. Here is a practical question for you. You have to do this question. I need to update the value of a, okay.
+
+What exactly I need? I need to subtract the value of b from a, okay. Let me write this, subtract value of b from a, okay. Just try to do this.
+
+I am giving you 10 seconds for this. Have you done it? Perfect. So let us just put the answer, how exactly it can we do or how can we done this? Let us see.
+
+Let us first understand that what exactly we have to write to do the same. So it will be a, because we are going to update the value of a. So that is why we have to put a is equals to a minus b. We have to write this equation here, okay. And into this to solve the equation into a shortcut method, we have to use a minus equals to b, like this, okay.
+
+So let us just see this here into our code editor. Let us remove all the values, whatever we have. So let us start working with here.
+
+Now I need to first just put the values, for example, I need to provide var a int is equals to 50. And then I need to provide b int is equals to 20. Now because I need to update a, so we have to write a minus equals to b. What exactly we are we are targeting, we are targeting a is equals to a minus b like this.
+
+And let us now print a. I already told you that there is no any issue between print and println. Println is just print line and nothing else. So if I go with run here, you will see 30, okay, that is the answer of it.
+
+Let us go with another one or let us move forward with it. Let us move forward with the another equation. So the question is that we have two variables, variable m integer is equals to 200 and we have variable m integer is equals to 30.
+
+And the answer, the new updated value, you can say the new updated value, updated value of m is 160. So you have to write an equation in such a manner so that we can get this m is equals to 160 here. I am giving you 10 seconds to do the same.
+
+So let us understand how we can do the same. For that thing, let us first write what exactly we need. So we need m is equals to m minus n. Let us suppose if I write this equation, m is equals to m minus n, what exactly I think I can get.
+
+So let us suppose in shortcut, if I put m minus equals to n, I am getting 200 or let me write this 200 minus 30, that is 170. So we are getting, we are getting 170 with this equation only. That means if I write this or this, it will be the same.
+
+I am getting 170, but I need 160 here. So for that thing, I need to subtract 10 more from this. That means if the value of 30 gets increased by 10, then we will get 160 here.
+
+So for that thing, what exactly we have to go with, we have to write this equation. Let me write the major equations like this, m is equals to m minus n into parenthesis bracket like this. Into the current scenario, we have to write it like minus is equals to bracket m plus 10 like this.
+
+So with the help of this equation, we are able to do the same. Let us do this on our co-ordinator. Let me just remove all the things like this and let me put var m integer is equals to 200, var n integer is equals to 30.
+
+And because we are going to update the value of m, so we have to put m minus is equals to minus equals to parenthesis bracket, inside the parenthesis bracket put n plus 10 like this. And what exactly we are writing here, we are writing m is equals to m minus n plus 10 inside the parenthesis bracket like this. After this, just print m, so maybe we will get 160 here.
+
+So that is how you will be able to do the same things. Now into the same line, let us move to another assignment operator that is multiply and assign. We will show it by multiply assign followed by equals to.
+
+So what exactly it is, it is multiply the specified variable by a particular number. For example, let us suppose we have a particular equation that is x, before this let me put the variable names. For example, we have a particular variable, let us suppose well a integer is equals to 10.
+
+And I want to multiply this 10 by some other values, let us suppose the value, I am writing the value now. So the value will be 5. So initially what exactly, how exactly we are writing the equation, we are writing the equation like a is equals to a multiply by 5. We are writing the equation like this. But with the help of multiply and assign, we are allowed to write like this.
+
+So what does it mean, when I put a multiply equals to 5, it is actually targeted this one, this equation. So, let us understand this into a coordinator, for that thing, let me just remove this thing. And I am put a variable named as, what is the variable name, a. So we have a variable int is equals to 10 here.
+
+Now because the value is 5, I am not putting the value 5 here, we have to update the value. So for that thing, I am writing a multiply equals to 5 like this. So what exactly we are targeting here, we are targeting a is equals to a into 5, where this a contains, where this a stores the value.
+
+The second a contains the value what we have, what we initialise at the first, that is 10. And we are going to multiply it by 5. And at last, we have to print it by a. Let us see what exactly we get. So we get 50.
+
+I hope so you understand what exactly it means. Now into the same line, let us do it with two variables. Let us suppose we have two different variables, that is well m integer is equals to, let us suppose they are 20.
+
+And again, we have another variable that is n. Let us suppose it is of integer, and we have 10 here. Now, I want to update, I want to update value of n now. I want to update the value of n. To do this, I am actually want n is equals to n multiply by like this, where n is the new storing value, where n will store some kind of value.
+
+The second one gets the value from where it can be initialised. And the m, m refers to the value of variable m like this. So for that thing, how exactly we can write this, because we have to follow this equation.
+
+So we have to write it like n multiply by equals to m like this. So, let us see how exactly we can do this into our code editor and for that thing. So just put var and we have m integer is equals to what we have 20 and var n integer is equals to 10.
+
+Because we are going to update the value of n only. So, we have to write n multiply by equals to m like this. And we have to okay, we are what exactly we are targeting, we are targeting n is equals to n multiply by m. Let us print this.
+
+So we have to print n here. What will be the new value? It will be 200. Perfect.
+
+So we got 200 here. I hope so you now understand what exactly this is. Now let us go with some practise question.
+
+So, this one is some somehow tricky question in front of you, what I am providing to you. We have three variables here now. We have a integer is equals to 10.
+
+Similarly, b integer 2 and the third one c integer is equals to 2. Okay, we have to update, update the value of a okay. So what exactly what exactly I am targeting, I am targeting the target what I am chasing is target what we have to chase is a is equals to 180. So you have to follow the value of 180 you have to update the value of 180 into this a variable.
+
+Okay. I am giving you 10 seconds to do to do the same. Okay.
+
+Have you done it? Yes or no. The first question arises that is the value going to update or not? The first question arises is the value is going to update or not? Answer is no. The value will not get updated.
+
+Why? Because I put well here. That's why the value will not get updated. Okay, you must have to understand this.
+
+I hope so you understand the concept that if I put well the values will not get updated here. Let's check this into our code editor. So, let me put well a integer is equals to 10 well b integer is equals to 2 and well c is sorry integer is equals to 20 okay like this and what exactly we need we need to update the value of a that will be 180.
+
+So for that thing what exactly we need or what exactly we can going to so let me write the equation. So let's suppose if I can write a multiply by equals to c minus b if I write like this c minus b then we definitely get 180 here. So for that thing I am putting a multiply by equals to into the parenthesis bracket let's put c minus b okay.
+
+So you will see that I am getting an error here I am getting an error into this a let's put let's put print a like this and let's print it when we are going to print you will see I am getting an error that is let me update make it up. You will see the error is well cannot be reassigned that means if I fix the value what exactly well is well is also using to assign the variable but here if I am putting well that means the value is fixed now it cannot be changed later okay. So for that thing you must have to understand that if I put well the value cannot get changed into any part at any portion okay.
+
+So what exactly we have to go with or what exactly we have to do we just we have to just replace this well by var okay. So let me put this here var sorry var var and var okay now you will see the error has gone let me put this run and we will get 180 perfect. So I hope so you understand the concept that what exactly these things are.
+
+(Transcribed by TurboScribe. Go Unlimited to remove this message.)

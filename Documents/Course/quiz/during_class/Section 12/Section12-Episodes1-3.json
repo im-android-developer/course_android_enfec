@@ -1,0 +1,310 @@
+{
+  "items": [
+    {
+      "name": "Section12-Episode1",
+      "difficulty": "easy",
+      "content": [
+        {
+          "id": "S12-E1-Q1",
+          "question": "Which four basic data types did the instructor introduce in Episode 1?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["data types","Kotlin","basic"],
+          "options": [
+            { "id": "a", "text": "Text (String), Numbers (Integer), Booleans, Decimal numbers (Double)" },
+            { "id": "b", "text": "Char, Float, Map, Set" },
+            { "id": "c", "text": "File, Socket, Stream, Buffer" },
+            { "id": "d", "text": "Class, Object, Interface, Enum" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "The instructor covered text (strings), whole numbers, booleans, and decimal numbers (double).",
+          "hints": ["Think simple primitive categories","String, Integer, Boolean, Double"]
+        },
+        {
+          "id": "S12-E1-Q2",
+          "question": "How did the instructor show you to write a single-line comment in code?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["comments","syntax"],
+          "options": [
+            { "id": "a", "text": "// followed by the comment text" },
+            { "id": "b", "text": "<!-- comment -->" },
+            { "id": "c", "text": "/* comment */" },
+            { "id": "d", "text": "# followed by the comment text" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "He demonstrated single-line comments using double slashes `//`.",
+          "hints": ["Double slash is common in Kotlin/Java","Not HTML or shell-style comments"]
+        },
+        {
+          "id": "S12-E1-Q3",
+          "question": "What name did the instructor use for decimal-number data type in Kotlin?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["types","double"],
+          "options": [
+            { "id": "a", "text": "double" },
+            { "id": "b", "text": "float32" },
+            { "id": "c", "text": "decimal" },
+            { "id": "d", "text": "real" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "The transcript refers to decimal numbers as `double` in Kotlin.",
+          "hints": ["Common Kotlin/Java type name is Double","Used examples like 3.14"]
+        },
+        {
+          "id": "S12-E1-Q4",
+          "question": "How do you explicitly fix a variable's data type in Kotlin as shown in the lesson?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["declaration","syntax","Kotlin"],
+          "options": [
+            { "id": "a", "text": "Put a colon then the type (e.g., myVar: Int)" },
+            { "id": "b", "text": "Wrap the variable name in quotes" },
+            { "id": "c", "text": "Prefix the name with the type (IntmyVar)" },
+            { "id": "d", "text": "Use a special declare() function" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "You explicitly set the type using a colon and the type name, e.g., `var myVar: Int = 100`.",
+          "hints": ["Colon then type","Example: `: Int`"]
+        },
+        {
+          "id": "S12-E1-Q5",
+          "question": "What is 'type inference' as described in the episode?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["type inference","Kotlin"],
+          "options": [
+            { "id": "a", "text": "Kotlin automatically determines a variable's type from the assigned value" },
+            { "id": "b", "text": "A tool that converts types at runtime" },
+            { "id": "c", "text": "A way to force-cast values between types" },
+            { "id": "d", "text": "A debugging mode in Android Studio" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "Type inference means the language figures out the variable's type from the value you assign (e.g., 100 → Int).",
+          "hints": ["No explicit `: Type` is provided","Value determines the type"]
+        },
+        {
+          "id": "S12-E1-Q6",
+          "question": "Which expression did the instructor use to print a variable's data type during the demo?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["reflection","Kotlin"],
+          "options": [
+            { "id": "a", "text": "myVar::class.simpleName" },
+            { "id": "b", "text": "typeof(myVar)" },
+            { "id": "c", "text": "type(myVar)" },
+            { "id": "d", "text": "getType(myVar)" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "He used the `::class` reference and `simpleName` to display the variable's type (e.g., Boolean, Int).",
+          "hints": ["He typed double-colon then `class` then `.simpleName`"]
+        }
+      ]
+    },
+    {
+      "name": "Section12-Episode2",
+      "difficulty": "easy",
+      "content": [
+        {
+          "id": "S12-E2-Q1",
+          "question": "Given `var myVar: Int = 100` and `var myVar2: Int = 100` then `var myResult = myVar + myVar2`, what will `myResult` print?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["operators","variables"],
+          "options": [
+            { "id": "a", "text": "200" },
+            { "id": "b", "text": "100100" },
+            { "id": "c", "text": "100" },
+            { "id": "d", "text": "Error at compile time" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "The plus operator adds the two integer values 100 + 100 resulting in 200 stored in `myResult`.",
+          "hints": ["Operators combine operand values","This is integer addition"]
+        },
+        {
+          "id": "S12-E2-Q2",
+          "question": "What role did the instructor attribute to operators in expressions like `myVar + myVar2`?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["operators","definition"],
+          "options": [
+            { "id": "a", "text": "Symbols that perform actions on values or variables (e.g., addition)" },
+            { "id": "b", "text": "Functions that allocate memory" },
+            { "id": "c", "text": "Keywords for declaring variables" },
+            { "id": "d", "text": "UI elements in Android" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "Operators are symbols (like +) that tell Kotlin how to combine or compare values or variables.",
+          "hints": ["Think plus, minus, multiply, divide"]
+        },
+        {
+          "id": "S12-E2-Q3",
+          "question": "When you declare `var myVar: Int = 100`, what did the instructor say Kotlin does behind the scenes?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["memory","declaration"],
+          "options": [
+            { "id": "a", "text": "Reserves a memory location named after the variable and stores the value" },
+            { "id": "b", "text": "Creates a file on disk for the variable" },
+            { "id": "c", "text": "Sends the value to the network" },
+            { "id": "d", "text": "Converts the variable into a constant" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "He explained Kotlin reserves a named place in memory and places the assigned value there for the variable.",
+          "hints": ["Think variables as named memory slots"]
+        },
+        {
+          "id": "S12-E2-Q4",
+          "question": "What does it mean when the instructor says `myResult = myVar + myVar2` uses references to variables?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["references","evaluation"],
+          "options": [
+            { "id": "a", "text": "It reads the current values stored in `myVar` and `myVar2`, computes the sum, and stores the result" },
+            { "id": "b", "text": "It creates pointers to the variable names on disk" },
+            { "id": "c", "text": "It copies variable names as strings into `myResult`" },
+            { "id": "d", "text": "It links the variables so changing one changes the other automatically" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "The expression references the stored values of the named variables, performs the operation, and assigns the computed value to `myResult`.",
+          "hints": ["Evaluation happens when the assignment runs"]
+        },
+        {
+          "id": "S12-E2-Q5",
+          "question": "If you later change `myVar` to 50 after computing `myResult = myVar + myVar2`, will `myResult` automatically update?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["assignment","behavior"],
+          "options": [
+            { "id": "a", "text": "No — `myResult` keeps the value computed at assignment time" },
+            { "id": "b", "text": "Yes — it always reflects live references" },
+            { "id": "c", "text": "Only if you mark it as `var`" },
+            { "id": "d", "text": "Only in the debugger" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "`myResult` stores the computed value at the moment of assignment; it does not auto-update when operands change.",
+          "hints": ["Assignment stores a value, not a live expression"]
+        },
+        {
+          "id": "S12-E2-Q6",
+          "question": "Which of the following best describes why we use operators when working with variables?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["operators","purpose"],
+          "options": [
+            { "id": "a", "text": "To perform arithmetic or other operations on values stored in variables" },
+            { "id": "b", "text": "To define UI layout" },
+            { "id": "c", "text": "To document code" },
+            { "id": "d", "text": "To create new files" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "Operators let you compute and combine values (e.g., addition, subtraction) stored in variables.",
+          "hints": ["Think +, -, *, /"]
+        }
+      ]
+    },
+    {
+      "name": "Section12-Episode3",
+      "difficulty": "medium",
+      "content": [
+        {
+          "id": "S12-E3-Q1",
+          "question": "Which four operator groups did the instructor list in Episode 3?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["operators","Kotlin"],
+          "options": [
+            { "id": "a", "text": "Arithmetic, Assignment, Comparison, Logical" },
+            { "id": "b", "text": "IO, Network, Storage, Graphics" },
+            { "id": "c", "text": "Create, Read, Update, Delete" },
+            { "id": "d", "text": "Threads, Processes, Events, Callbacks" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "He grouped Kotlin operators into arithmetic, assignment, comparison, and logical categories.",
+          "hints": ["Think math, assignment, comparisons, logical checks"]
+        },
+        {
+          "id": "S12-E3-Q2",
+          "question": "What symbol did the instructor show you to use for multiplication in code?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["operators","syntax"],
+          "options": [
+            { "id": "a", "text": "* (asterisk)" },
+            { "id": "b", "text": "x (letter x)" },
+            { "id": "c", "text": "× (multiplication sign)" },
+            { "id": "d", "text": "mul() function" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "The asterisk `*` is used for multiplication in Kotlin (he noted Shift+8 on the keyboard).",
+          "hints": ["Keyboard: Shift + 8","Not the letter 'x'"]
+        },
+        {
+          "id": "S12-E3-Q3",
+          "question": "According to the lesson's BODMAS order used in examples, which operation is performed first?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["BODMAS","order of operations"],
+          "options": [
+            { "id": "a", "text": "Brackets (then Division, Multiplication, Addition, Subtraction)" },
+            { "id": "b", "text": "Addition" },
+            { "id": "c", "text": "Multiplication only" },
+            { "id": "d", "text": "Subtraction" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "He walked through BODMAS: handle brackets first, then division, multiplication, addition, and subtraction.",
+          "hints": ["Solve bracketed expressions first"]
+        },
+        {
+          "id": "S12-E3-Q4",
+          "question": "Why did `D / C` produce `1` when `D = 300` and `C = 200` in the integer example?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["division","types"],
+          "options": [
+            { "id": "a", "text": "Because both operands were integers so integer division truncated the fractional part" },
+            { "id": "b", "text": "Because Kotlin always returns 1 for any division" },
+            { "id": "c", "text": "Because the variables were booleans" },
+            { "id": "d", "text": "Because the result was printed as a string" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "Integer division discards the fractional portion; 300 / 200 with integer types yields 1.",
+          "hints": ["Use doubles to retain fractions","Integers truncate results"]
+        },
+        {
+          "id": "S12-E3-Q5",
+          "question": "How did the instructor change the division result to get `1.5` instead of `1`?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["division","double","types"],
+          "options": [
+            { "id": "a", "text": "Make the operands double by adding a decimal (e.g., 300.0 and 200.0)" },
+            { "id": "b", "text": "Call toFloat() on both variables" },
+            { "id": "c", "text": "Use integer division mode" },
+            { "id": "d", "text": "Multiply by 1.5 manually" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "By giving the values a decimal, they became `Double` and division produced 1.5 (300.0 / 200.0).",
+          "hints": ["Decimals make the type double","Result preserves fractional part"]
+        },
+        {
+          "id": "S12-E3-Q6",
+          "question": "Which of these are examples of arithmetic operators mentioned in the episode?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["operators","arithmetic"],
+          "options": [
+            { "id": "a", "text": "+, -, *, /, % (addition, subtraction, multiplication, division, modulus)" },
+            { "id": "b", "text": "==, !=, >, <" },
+            { "id": "c", "text": "&&, ||, !" },
+            { "id": "d", "text": "=, :=, <-" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "Arithmetic operators include addition, subtraction, multiplication, division, and modulus as shown in the lesson.",
+          "hints": ["Think basic math symbols"]
+        }
+      ]
+    }
+  ]
+}

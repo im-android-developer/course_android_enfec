@@ -1,0 +1,147 @@
+(Transcribed by TurboScribe. Go Unlimited to remove this message.)
+
+Hey students, welcome again. So let's continue from where we left yesterday. Now we are going to provide that how we can implement or what it has to do when the user clicks over it.
+
+Okay. I am repeating it again. Now we are going to introduce or now we are going to code that what exactly you have to do when the user clicks over it.
+
+So let's go with that. So I am saying that login button dot setonclicklistener, setonclicklistener, L-I-S-T-E-N-E-R, listener. Maybe I, maybe I put some, maybe I forget some spelling, click L-I-S-T-E-N-E-R, yeah.
+
+Okay. So we have login button dot setonclicklistener. That means whenever the user will click over your button, then what will happen.
+
+Okay. So here I am just displaying a message whenever the user click over this. Okay.
+
+So let me put the message named as toastmessage dot make text like this into this. I am using this. Don't worry about this.
+
+I am just writing to show you that how exactly we can do the same, do the things. Okay. Now let me put button is clicked, button is clicked like this, comma toast dot length long dot show.
+
+And we have done. The code is now, we write it, we write down the code and we are now good to go. So here, if I again click on this login button, it's not happening, it's not working.
+
+Why? Because we didn't reload this. So first of all, let's reload this file like this. Once it's done, let me click over it.
+
+When I clicking, when I click over it, you will see button is clicked appearing here. Okay. Like this.
+
+So why I reload this? Mark my words, whenever we are going to change something into this kotlin file, we always have to reload this file. Okay. Now, let me go with something else, some other messages here.
+
+Let's suppose instead of button is clicked, let's put login button is clicked, clicked like this. If I done this, I have to reload this like this. Once it's done, when I click on login, let me hide this.
+
+When I click on login, you will see login button is clicked here. This text is appearing here right now. Okay.
+
+So that's how we learn that how we can introduce the specified component into kotlin file and how we can do something with it to add some functionality into this. Okay. Let me stop this.
+
+You guys now have an idea that why we are using programming languages for Android. Yes. Okay.
+
+Now, from further, from further this lecture, we are going to learn about the kotlin that how we can do coding, what exactly kotlin is or how we can do some codes or how we can write some codes into kotlin file. Okay. So that's how we can work with kotlin.
+
+As I told you that we can use two different programming languages, one is kotlin and other one is Java. So let's understand that also that how we can use Java into it. To do this, just right click activity, empty this activity.
+
+And here we have this main activity file. Now I'm not changing anything here. I'm just keeping it as it is available.
+
+The thing what I need to change is the source language into this instead of kotlin. And let me put Java like this. Once I've done, let me finish it like this.
+
+Once it's done, you will see the basic difference between kotlin and Java file. If you will see, let me close the XML files first like this. If you will see, we have into a kotlin file, it is login screen underscore two dot kt.
+
+That's a kotlin file. While into Java, it's main activity file dot Java. Okay.
+
+If you look into the code, they are also slight different from each other like this. Okay. Now, let's try to work over this.
+
+To do the same, let me just go to this login screen tool and I am just copying this. I am just copying this whole code. I'm just copy this whole code and we'll put into on this XML screen.
+
+So let me just put inside this like this. And what exactly I need to change? I have to just put this dot main activity file, just copy this and put it and put it at place of this login screen like this. Okay.
+
+I'm just copying that that main activity file and just place it and just paste it at the place of login screen. From here, we have to just close this. Okay.
+
+I'm just deleting this, put it into the first line and similarly delete this widget layout as well. Okay. Perfect.
+
+Your code is ready now. Your XML code is ready now. So the screen is as same as the login screen now.
+
+Okay. We also have the ID that is login my button, but if you need, you can change it as well. So let's suppose I am saying login my button underscore Java.
+
+Okay. So I put underscore Java into this. Let me hide it first.
+
+Also remember a thing that there is no any effect if you put anything here. For example, if I put Java here, it doesn't mean that I'm going to provide some kind of Java into this. If I even put Kotlin, there's no any effect available here.
+
+Okay. So don't worry about the name, whatever the name you want to give, just mention it. Okay.
+
+Now, let me put Java to make it clear. Java. Okay.
+
+Now what exactly I'm going to do? I am showing you that how we can work with the Java as we work into Kotlin file. Okay. So we do the same again.
+
+I am just providing a functionality to this button and whenever I'll click the button or the emulator, it will do something. Okay. Let me go with main activity 5.java and let's close these login screen like this.
+
+Yeah, let's close. Let's delete this view compact as well. Now, we have the Java part.
+
+The thing what you have to remember is, because there are two different programming languages, Kotlin is different, Java is different. So the writing codes, the code writing, the writing code is slightly different. Okay.
+
+If you have an idea about Java that how exactly you can write it, you will, you will, you may be probably understand the codes. Okay. What do we do at first? So, at first, let's introduce this button or introduce this component into our controller file here into our Java file.
+
+So for this, at the top of this override method, just put the button like this. And after this, put the name of your button, whatever you want. For example, I am saying login button, login button like this.
+
+And close by this semicolon. Now, after this part, I put the, I introduced this button at and login button here. Now I have to provide the reference to this login button.
+
+Okay. What is the reference? So the reference is this ID. This reference is the ID.
+
+Let me put the reference again. So for this thing, I have to write login button like this equals to, then I have to cast the button that is button again, then findViewById r.id.loginButton like this. Not login my button, sorry, not, not, not login my button.
+
+It's login my button Java, Java, okay. Just ignore this red line, sometimes it just occurred in front of us. Okay.
+
+Perfect. Now we have to initiate this. We have to tell the Android what exactly you have to do.
+
+So whenever my user will click over this login button, what will happen? Some type of pop-up will appear. Okay. Pop-up means that message, that pop-up message.
+
+Okay. So for that thing, just go with login button like this dot setOnClickListener. It is just same.
+
+It is as just same as we did into Kotlin. But here into Kotlin, we just put that these, these curly braces. Okay.
+
+But here we have to put these, these, these parenthesis bracket. And within these parenthesis bracket, I have to write new. And then you will find out view.onClickListener, view.onClickListener. Okay.
+
+So just hit enter over this. Once you're done, you'll find this code. Okay.
+
+What exactly this, this component tells us? This part of code or this code block tells us that whenever your user will come over your application and will click on this, something within this public void onClick will happen, will, will initiate. Okay. So it is on, it is a interactable or you can say it is a user interactable function.
+
+That means that whenever my user will come here and click on this button, something, whatever right written here, written between these public void onClick view and this, this curly brace will initiate or will happen in, in front of them. So let's just put toast message again. So I am writing toast again dot make text.
+
+Okay. So these suggestions, whatever you are, you are, you are seeing here, it is showing you that how exactly or what parameters you have to put into this within these parenthesis brackets. Okay.
+
+So don't worry about these things and what exactly they are. Just follow them. So the first thing is context.
+
+Okay. The first thing is context. Context means at what part you are currently is.
+
+Okay. So we are, because we are on main activity five dot Java. So we have to put the same thing here.
+
+That is main, main activity five and dot this. Okay. Don't worry.
+
+Again, I'm saying, don't worry about the code. I'm just showing you that how exactly we can, we can do something with within Java as well. Dot.
+
+Then I have to put the, again, you will see the context is done when I put comma, then it is shift to string resource, INT, RAS, ID, and car sequence text. Don't worry about this again. So into this, into the second part, we have to put the text.
+
+So our text is button is clicked again like this. And at last they are, again, I have to put comma because I have to shift to this third parameter. Here we have three parameters.
+
+So we have to provide three parameters within these parenthesis brackets. So already we have provided two different parameters. That is one is the context.
+
+The other one is this car sequence. And the third one is the integer that is the duration. So let's put the comma again and put the duration for that thing.
+
+I'm just put toast dot length long like this, and then I'm putting show like this. Okay. So it's done into Java as well.
+
+Let's first go into that Android manifest file and into this Android manifest file, you will see we have this activity. So you probably know about this, that what we have to do now, we just have to make it true like this and close this like this and put the intent filter between these activity, between these activity tags. So let's just put this, let's just cut this intent filter like this and put and paste it within these activity.
+
+Okay, it's done. Now, let me do this and run it. Once you have done this file gets changed, this file is now appearing in front of us.
+
+And when I click on, when I click on login, it shows me button is clicked. Okay. Okay, now, so let me put some other text as well.
+
+Let's suppose button is clicked, written in Java, okay. I'm writing this button is clicked, written in Java. Now, because we just put some random text, because we just put a text, sometimes there is a thing, there is a button that's called apply, okay, that's called apply changes.
+
+Yes, not this, not this one, this one, this one that contains A. Okay. So if you do some minor changes, then there is no need to reload the whole application. For that thing, you can also apply the minor changes by just click over this button.
+
+For example, I am not reloading this whole application, I am just, I am just applying the changes. So what will happen, instead of building of whole application, when I click on this apply changes button, it will apply the specified changes on our activity and only our activity gets reloaded. Okay, that's the concept.
+
+What is the difference between this and this? If I click this, what will happen? If I click on this reload button, what will happen? Whole application will rebuild. While if I click on this, only the activity at what we are just gets reloaded. So let me put over this, let me click over this, once I have done.
+
+So you will see there is no any reloading appears here, because we just reload the activity and not the whole application. You will see apply changes successfully finished in one second and 38 milliseconds, that's perfect. However, when I click on the slogan button, you will see the specified changes what I have done to this appears here like this, okay.
+
+So that's how we can work with Java as well. So it's our choice completely, as I said before, that it's your choice exactly that into your project what programming language you are going to use. It is not mandatory to put only a single language, either you can put Kotlin as well as you can go with Java into this, there is no any difference, okay, difference is available, but the differences are into the syntax that how exactly we are writing the code that the major differences are there only, okay.
+
+Definitely Kotlin is pretty simple from as compared to Java, that into Java to do something we have to write more lines compared to Kotlin, into Kotlin, we can write large number of code within some lines, while into Java, sometimes it's a nightmare for us. So again, I'm saying this, if you are perfect in Java, if you know Java, then go with Java, it's not a bad option. But if you want to adopt the Kotlin, if you want to adopt the market trend, then go with Kotlin.
+
+So it's on yours only, okay, perfect.
+
+(Transcribed by TurboScribe. Go Unlimited to remove this message.)

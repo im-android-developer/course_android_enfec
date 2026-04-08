@@ -1,0 +1,93 @@
+(Transcribed by TurboScribe. Go Unlimited to remove this message.)
+
+Hey students, welcome again. So let's continue from where we left yesterday. So as I already told you that the variable is actually depends upon its data type.
+
+So whatever the value you will provide or whatever the data type you will provide, the nature of that variable will become the same. So for example, if the data type is integer, so the variable also shows the same nature of it. So the variable of integer data type always going to provide the values into the whole number form.
+
+Similarly, when we do d upon c, that is 300 divided by 200. So the value becomes 1.5. But because we are using data type integer, that's why so a decimal form gets ignored and we got 1. That doesn't mean that 300 divided by 200 gets an answer of 1 only. No, it's not.
+
+But here, actually we got the answer of 1.5. But because it is of integer data type, the 0.5 thing gets ignored and we get only 1. I hope so you understand the concept that what exactly happening here. On the other hand, let's suppose if I put my variable data type will be decimal or double. So whenever I'll go with 300 divided by 200, that means e, okay, let me see this first.
+
+Yeah, e upon f. So because the double data type or decimal data types allows decimal values like this, so we got the answer 1.5 clearly. Okay, so that's the difference between data types and the data type operations. Okay.
+
+Now, let's understand it again. Let's work it again. And here, let's move with some more equations.
+
+So I am going to use plus minus, divide, multiply all these terms at a single place, okay. So let's go with it. For that thing, let me just hit enter to put into a separate line so that I'll clearly show you what exactly I'm writing here.
+
+Now, so let's move with another equation. Yeah, I'm writing the equation here. We have to follow this equation into our code editor.
+
+So it will be A plus B into the bracket, multiply by C plus D. Okay. And then we're going to do this parenthesis bracket again, plus and let's suppose we are going to multiply it by A minus B like this, multiply by C, D minus C, D minus C. Okay. So we have to go with such equation.
+
+We have to go with this equation. Okay. Let's put this equation into the code editor.
+
+So it will be, let me put another space here, let's say, to clearly show you what exactly I'm going to do. Now, let's put the parenthesis bracket at first. And we have A plus B, A plus B, A plus B like this.
+
+And after this, we have to put the multiplication sign like this. And then we have C plus D like this. Okay.
+
+Now, after this, we have to enclose the both brackets or the both terms within the major one. So to do this, you can do it by two different approaches. Either you can first place this bracket like this and go at end and place like this.
+
+The first approach is this. Or the second approach is just select the whole part like this and put the parenthesis brackets like this. I hope so you understand the concept.
+
+Now, after this, we have to put the plus sign. So I'm putting plus sign like this. And after this, we have A minus B multiplied by D minus C. So we have into the bracket, we have A minus B multiplied by another bracket D minus C. And then again, select them and put the parenthesis bracket like this.
+
+So what exactly we are getting here? Let's run this part. Once we are going to run this, you will see we are getting this part. Okay.
+
+Okay. Why we are getting this part? Let's solve this first. Then we'll move to another part.
+
+So here, here we have, let's put the value A 100, C is equals to 200 and D is equals to 300. Okay. And this term gets zero when we multiply anything by zero, it becomes zero.
+
+This whole part becomes zero. Okay. Now, the same thing, let's solve this part.
+
+So, it is completely okay. Okay. So A plus B is, what is A plus B? So A plus B is 200 and C plus D is 500 and 500 multiplied by 200, we got, we got this value.
+
+Okay. Perfect. So that's how we can put the values into it.
+
+And let's put another value, let's do a thing. Okay. I am just going to use D minus C minus B here.
+
+And after this, I am going to divide them like this. Okay. So maybe you'll get something, you'll get 10, whatever the value is, because all the values are of integer data type, that's why we are getting 10.
+
+Okay. But instead of this, if we are, if we have double data type like this, I am, I am changing the value double like this, okay, double and double, okay, why I'm getting error, why I'm getting these red squiggly lines under this 100 and under this values, why I'm getting the red squiggly lines under these values, under these numbers, because I never put the decimal value. That's why I get these red squiggly lines, because I didn't put any kind of decimal value here.
+
+That's why I'm getting these red squiggly lines. So let me put just decimal 0, decimal 0, decimal 0 and decimal 0. So you'll see all these lines are gone. Okay.
+
+Let me run this again. Let's see what will happen. So here I'm getting 10.0 right now.
+
+So that's how we can work with these kind of operations and these data types. Always remember the operations are also gets depends upon the data type. So that means data type are so much important for us.
+
+Let's move to another thing. After division, let's go with modulus. So here modulus is represented by this percent sign or this percentile sign, okay.
+
+Modulus, exactly the major working of this modulus is to find out the remainder. Okay. What exactly does this mean? So previously, whenever we put the division, what exactly we do? Actually let's suppose if we are into a equation A upon B or A divided by B. So what exactly we are gathering here, we are actually doing this thing that B, A is under this, B is outside and some kind of value we have X like this.
+
+Some kind of value, let's suppose we are getting into A and like this, okay. So here, so into previous division methods, we are actually gathering these quotients. Okay.
+
+But now, what if I need the remainder one? For that thing, we have to use modulus. For example, let's suppose A is equals to 300 and B is equals to 200. So into division, what exactly happening here? So let me write the equation at first.
+
+So it is A upon B. That means we are representing 300 inside the box, 200 like this. Let's put 1, 200 and we are getting 100 right now, okay. So here, if I am going with division, then I will get this, this value that is 1. But if I am seeking the remainder, if I am seeking the remainder, then I will get this 100 value into X, okay.
+
+So for the division, what exactly you have to go with? You have to go with this slash sign, while if you want to go with the remainder, you have to use this modulus sign, okay. So let's do it. Let's move to our code editor like this.
+
+And here, I am writing a basic equation. Let's suppose I have this double C and D. Okay, let me just delete this, okay. So we have this C and D double values, C is 200, D is of 300.
+
+And let me put it here. So D, so how exactly we put division sign? So we just have to put D slash C. Just like this, instead of this division sign, just put percentile sign here, like this. And when I put this, what exactly we will get, we will get 100, okay.
+
+We will get the remainder 100 here. I hope so you understand the concept of modulus or why exactly we are using these kind of things. So just remember, modulus is for to find out the remainder only.
+
+Now let's move to another part. Now let's move to another part, that is increment. So what exactly increments are or what exactly they will do to us? So let's understand the concept of increment here.
+
+Into kotlin, increment is represented by this double plus sign, okay, which means that into a particular value, let's suppose we have a particular value x and we are going to show the increment. So into kotlin, if we have the value x, so into kotlin, we are going to write this equation like this, okay. Into this, once we are writing this equation and run the specified part or run the specified file, then we will get the value that is x plus 1. What exactly it means that whenever we will use increment, the value will be increased by 1, okay.
+
+For example, let's put the value of x will be 1. So what exactly we will get? If we are writing this plus plus x, we will get 2, okay. Similarly, if we are writing it again, we will get 3 and so on, okay. I hope you understand the concept of increment.
+
+Increment is nothing but it increases the value by 1. So let's check this out. Within this, I have, I just have to remove this and let me delete these things as well, okay. Let me delete these things as well only and I am putting 1 and I am going to do int here like this, okay.
+
+Okay, between these things, let's put the value, for example, we have a, so I am using plus plus a like this. So when I am using plus plus a, that means here I am saying that increase my value by 1 to whom or of whom of this a variable. So we have 1 right now, after this we will get 2. Let's run this.
+
+Once I go with this, you will see we have 2 right now, okay. Into the same line, if we are getting into it, into the same line, decrement works. That means, let's suppose, so let's understand the concept first.
+
+Decrement is as opposite of increment. Decrement into kotlin, decrement is shown like this, symbolised like this. Into this, let's suppose we have a value of x and into kotlin, if we are writing minus minus x like this and let's assume we have a value of x is equals to 2. So after running, we will get 1, because it will decrease the value by 1, okay.
+
+So the new value, that means when we when we exactly running this, we will get this kind of equation. So the value, so the new value of x will be 1. Let me see this and I am just going to replace the value of 2 like this and I am replacing it by a double quotes, okay. I am just replacing this increment sign by decrement 1, sorry, decrement 1. Let me run this again.
+
+Once I do this, you will see the 2 becomes 1 now, okay. So that's how we can work with arithmetic operators. That's exactly the arithmetic operators are, okay.
+
+(Transcribed by TurboScribe. Go Unlimited to remove this message.)

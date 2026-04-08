@@ -1,0 +1,206 @@
+{
+  "items": [
+    {
+      "name": "Section9-Episode1",
+      "difficulty": "medium",
+      "content": [
+        {
+          "id": "S9-E1-Q1",
+          "question": "Which attribute in a RelativeLayout attaches a view to the left edge of its parent?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["RelativeLayout", "Attributes"],
+          "options": [
+            { "id": "a", "text": "android:layout_alignParentLeft" },
+            { "id": "b", "text": "android:layout_marginLeft" },
+            { "id": "c", "text": "android:paddingLeft" },
+            { "id": "d", "text": "android:layout_centerInParent" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "The instructor used android:layout_alignParentLeft (and related alignParentTop/Right/Bottom) to attach views to parent edges.",
+          "hints": [
+            "It's an alignParent... attribute.",
+            "Used specifically in RelativeLayout for attaching to a side."
+          ]
+        },
+        {
+          "id": "S9-E1-Q2",
+          "question": "What is the difference between padding and margin as explained in the episode?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Spacing", "Layout"],
+          "options": [
+            { "id": "a", "text": "Padding compresses inner space; margin controls outside/alignment spacing." },
+            { "id": "b", "text": "Padding controls outside spacing; margin compresses inner space." },
+            { "id": "c", "text": "Both are identical and interchangeable." },
+            { "id": "d", "text": "Padding only affects text size; margin only affects background color." }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "The instructor stated padding reduces inner space (inside a container) while margin is used for aligning items and outside spacing.",
+          "hints": [
+            "Padding is internal; margin is external.",
+            "He demonstrated removing padding to remove gaps."
+          ]
+        },
+        {
+          "id": "S9-E1-Q3",
+          "question": "What does 'layout blending' refer to in the lesson?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["Layout", "Concepts"],
+          "options": [
+            { "id": "a", "text": "Combining different layout types (e.g., RelativeLayout inside LinearLayout) to build the UI." },
+            { "id": "b", "text": "Applying CSS-like blend modes to Android views." },
+            { "id": "c", "text": "Using only a single layout type for all UI pieces." },
+            { "id": "d", "text": "Automatically merging resource files at build time." }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "Layout blending was shown as nesting and combining different layouts (relative inside relative, linear inside relative, etc.) to achieve the design.",
+          "hints": [
+            "He described it like a 'milkshake' of layouts.",
+            "It involves nesting different layout types."
+          ]
+        },
+        {
+          "id": "S9-E1-Q4",
+          "question": "Which root layout did the instructor use when placing the four corner text views?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Layouts", "Practice"],
+          "options": [
+            { "id": "a", "text": "RelativeLayout" },
+            { "id": "b", "text": "LinearLayout" },
+            { "id": "c", "text": "ConstraintLayout" },
+            { "id": "d", "text": "FrameLayout" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "The instructor said the root container was a RelativeLayout and then used child relative layouts for blending.",
+          "hints": [
+            "He repeatedly used attributes like layout_alignParentTop.",
+            "RelativeLayout supports alignParent* attributes."
+          ]
+        },
+        {
+          "id": "S9-E1-Q5",
+          "question": "According to the episode's 'colour theory', what percentage of the screen does the primary colour typically occupy?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Design", "Colors"],
+          "options": [
+            { "id": "a", "text": "About 90%" },
+            { "id": "b", "text": "About 50%" },
+            { "id": "c", "text": "About 9%" },
+            { "id": "d", "text": "About 1%" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "The instructor defined primary colour as roughly 90% of the screen, with secondary ~9% and tertiary ~1%.",
+          "hints": [
+            "Primary is the dominant background colour.",
+            "Secondary and tertiary are much smaller percentages."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Section9-Episode2",
+      "difficulty": "medium",
+      "content": [
+        {
+          "id": "S9-E2-Q1",
+          "question": "Which asset type did the instructor recommend for scalable icons in Android Studio?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Assets", "Icons"],
+          "options": [
+            { "id": "a", "text": "Vector Asset (imported via Asset Studio)" },
+            { "id": "b", "text": "Image Asset (raster PNG)" },
+            { "id": "c", "text": "Raw bitmap from URLs at runtime" },
+            { "id": "d", "text": "Use HTML <img> tags inside layouts" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "He used Vector Asset (clipart or SVG import) via Asset Studio so icons become XML vector drawables suitable for scaling.",
+          "hints": [
+            "The file produced by Asset Studio was an .xml vector drawable.",
+            "Vector assets scale without quality loss."
+          ]
+        },
+        {
+          "id": "S9-E2-Q2",
+          "question": "Why did the instructor say a downloaded avatar with a white background caused an issue?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Images", "Troubleshooting"],
+          "options": [
+            { "id": "a", "text": "Because the white background of the image hid the layout's background colour, making it look wrong." },
+            { "id": "b", "text": "Because Android doesn't support PNG images." },
+            { "id": "c", "text": "Because images cannot be used inside CardView." },
+            { "id": "d", "text": "Because images must always be fetched from the internet at runtime." }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "He noted the downloaded avatar had a white background so the intended pastel background couldn't show through; using vector assets or SVG fixes this.",
+          "hints": [
+            "He removed the white background by importing an SVG as a vector drawable.",
+            "Transparent backgrounds let the card's colour show."
+          ]
+        },
+        {
+          "id": "S9-E2-Q3",
+          "question": "Which CardView attribute did the instructor adjust to make rounded corners?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["CardView", "Styling"],
+          "options": [
+            { "id": "a", "text": "cardCornerRadius (corner radius)" },
+            { "id": "b", "text": "cardElevation" },
+            { "id": "c", "text": "cardUseCompatPadding" },
+            { "id": "d", "text": "cardPreventCornerOverlap" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "He changed the corner radius (cornerRadius) on the CardView to create smooth, rounded shapes for the avatar container.",
+          "hints": [
+            "He tried values like 35dp to get the rounded effect.",
+            "This attribute controls the roundness of the card corners."
+          ]
+        },
+        {
+          "id": "S9-E2-Q4",
+          "question": "When importing an SVG through Asset Studio, what output file type did the instructor show is created in drawable?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Asset Studio", "SVG"],
+          "options": [
+            { "id": "a", "text": "An XML vector drawable (.xml)" },
+            { "id": "b", "text": "A raster PNG (.png)" },
+            { "id": "c", "text": "A direct SVG file (.svg) left in drawable" },
+            { "id": "d", "text": "A WebP file (.webp)" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "Asset Studio converts clipart or imported SVGs into XML vector drawable files (person.xml), not PNGs or raw SVG files.",
+          "hints": [
+            "He pointed out person.xml was produced after import.",
+            "Vector drawables are XML in the drawable folder."
+          ]
+        },
+        {
+          "id": "S9-E2-Q5",
+          "question": "Which attribute did the instructor use to center an ImageView inside a LinearLayout?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Layout", "Alignment"],
+          "options": [
+            { "id": "a", "text": "android:layout_gravity=\"center\"" },
+            { "id": "b", "text": "android:gravity=\"center\" on the parent only" },
+            { "id": "c", "text": "android:layout_margin=\"auto\"" },
+            { "id": "d", "text": "Use a ConstraintLayout instead" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "He used layout_gravity='center' on the ImageView so it centers within the LinearLayout (or the container's available space).",
+          "hints": [
+            "He explicitly set layout gravity to centre for the image size (e.g., 50dp).",
+            "layout_gravity affects the view's position inside its parent."
+          ]
+        }
+      ]
+    }
+  ]
+}

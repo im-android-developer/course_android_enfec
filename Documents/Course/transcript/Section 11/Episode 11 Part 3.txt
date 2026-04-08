@@ -1,0 +1,73 @@
+(Transcribed by TurboScribe. Go Unlimited to remove this message.)
+
+Now, let's understand how to get started with Kotlin. The easiest way to get started with Kotlin is to use an IDE. As I already told you, an IDE stands for Integrated Development Environment, which is used to edit and compile code.
+
+Here is the IDE we use named as Android Studio. From here, we got an idea that we didn't have to use multiple IDEs. Instead of it, you can use Android Studio only to run all the things.
+
+So let's first create a Kotlin file for that. So let's move to Android Studio like this. Here, to create a Kotlin file, we have to click on this com.myandroidworld.myfirstproject under this Kotlin plus Java.
+
+Here, just do right-click like this, hover on new, and you will find at the second position, Kotlin class slash file. Just click on this like this, and you will find a specified box named as new Kotlin class slash files, which contains multiple Kotlin file types. That is class file interface, data class, enum class, a notion, Kotlin script and object.
+
+But because we have to create a Kotlin file only, so I'm just going to click the second one that is file. Into the name input box, you have to put the name of your file, whatever you want. In my case, I'm going with main Kotlin file or main KT file.
+
+KT means Kotlin. Okay. Main KT file.
+
+And you don't have to put anything like dot or something dot KT or dot Java, something else. Once you have done, just hit enter. When you're done, you will find a new file is created named as main KT file dot KT.
+
+Similarly, if you look into this code section, code section is almost blank, but we only have, we only have this package name at the top, but wait, you can't just start writing code from anywhere. Kotlin needs to know where to begin. That's why we first create a main function like this.
+
+This main function acts as the starting point of your programme. It's like telling Kotlin to start reading my code from here, but don't worry, I'll explain how it works in detail later about these words or keywords like function or main or et cetera. But for now, let's go ahead and write.
+
+So let me just delete this and to go with it. Just write fun. Fun means function.
+
+It's a short for function after that, right? Mean then add parenthesis brackets like this. Once that done add curly braces after this parenthesis brackets like this. To make it more visible.
+
+Let me add some space between them. Now between these curly braces, we will write the code that we want to run. Let's start with printing.
+
+Hello world. To do this, right? Print LN. Print LN.
+
+LN. Here the LN stands for line, meaning it will print the text and move to the next line. Once you have write the print LN, put parenthesis after this, between these parentheses, put double quotes like this and write hello space world like this.
+
+Here, why I'm using double quotes. We will talk about that later when we learn about variables. Once you have written the code, click the play button, but not the one at the top.
+
+Things have changed a bit. Now that top button is used to build the entire application, which we don't need right now. Instead of it, look for the small play button just to the left of your code.
+
+Have you found it? Great. Click on that. Now, now you have four different options that is may run main KT file dot KT debug run and so on.
+
+So just don't think about them. Just click on first one like this. Once you have done, you will find the Gradle build running your specified file.
+
+Now, once you run the code, you will see the output hello world in the run section below. And remember this whenever you run such codes, the result will always appear in this run section. Also take a look at the top play button.
+
+You'll notice something written next to it. Usually it says app. Let me click on this.
+
+Usually it says app, but for now it says main KT file KT. That means once we run it, the app is replaced by this main KT file dot KT. Now let me, let me hide this.
+
+If you even now click on this play button, it will run this file only and not the entire app. Like this. So whenever you will create a new file, such like main KT file or something else, that is a separate Kotlin file.
+
+And if you need to run that file only, first of all, you have to click on this button only display button only. And then only you have to go with these buttons. I hope you understand about this concept.
+
+Let's say hello Android. So let me just remove this and write Android like this. Then click the play button.
+
+Like this. Once you have done, you will see in the run section, we got this hello world text. Perfect.
+
+This means whatever you write inside these double quotes will be printed exactly as it is. Now, let me remove this entire line of code and click the play button again. What happened now? Nothing.
+
+Why? Because the line that tells Kotlin to do something is gone. And now there's nothing for Kotlin to execute. This shown us something important to make your programme do anything you need to write commands using letters, symbols, and numbers that is called syntax.
+
+Without syntax, Kotlin would not understand what you want to do. Now, let's try something interesting. If I remove, let me put the print line first.
+
+Hello world. Now, if I remove the funmin part like this, you will immediately see some errors appear. So never ever remove this part.
+
+It's extremely important. Let's undo that change and break it back. Let's do another experiment.
+
+This time, let's change the name of this main function. Let's replace this main function with something like android. Have you noticed the difference? If you look at the top right corner, you will see that the file name like mainkt filekt now has a cross mark next to it.
+
+That means the file is no longer recognised as runnable. Why? Because the main function is missing. Kotlin doesn't know where to start.
+
+Now, let's click the play button. What happens? You will see an error message. Also, the play button itself disappears from the left hand side corner.
+
+Because Kotlin can't run the file without a valid main function. So this shows how important the main function is. It's the starting point of your Kotlin programme and without it, nothing will run.
+
+Let's replace android by main function again. Once you are done, you will notice all the things are available now.
+
+(Transcribed by TurboScribe. Go Unlimited to remove this message.)

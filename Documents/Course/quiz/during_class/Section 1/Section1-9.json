@@ -44,12 +44,12 @@
           "tags": ["Android Application Development", "Basics of Android app development"],
           "options": [
             { "id": "a", "text": "Android Studio Koala" },
-            { "id": "b", "text": "Android Studio Novel" },
+            { "id": "b", "text": "Android Studio Narwhal" },
             { "id": "c", "text": "Android Studio Mongoose" },
             { "id": "d", "text": "Android Studio Panda" }
           ],
           "correctAnswers": ["b"],
-          "explanation": "At the time of recording, it was called Android Studio Novel. However, the course notes that this name may change with future updates, so always check the official website for the current version.",
+          "explanation": "At the time of recording, it was called Android Studio Narwhal. However, the course notes that this name may change with future updates, so always check the official website for the current version.",
           "hints": ["Name starts with 'N'", "It's a unique name", "Version names change over time"]
         },
         {

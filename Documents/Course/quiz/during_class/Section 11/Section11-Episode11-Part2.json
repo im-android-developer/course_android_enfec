@@ -1,0 +1,250 @@
+{
+  "items": [
+    {
+      "name": "Section11-Episode11-Part2",
+      "difficulty": "medium",
+      "content": [
+        {
+          "id": "S11-E11-P2-Q1",
+          "question": "Who created the Kotlin programming language?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Kotlin","History"],
+          "options": [
+            { "id": "a", "text": "JetBrains" },
+            { "id": "b", "text": "Google" },
+            { "id": "c", "text": "Oracle" },
+            { "id": "d", "text": "Microsoft" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "Kotlin was created by JetBrains.",
+          "hints": ["JetBrains is known for IntelliJ IDEA"]
+        },
+        {
+          "id": "S11-E11-P2-Q2",
+          "question": "In which year did Google adopt Kotlin as an officially supported Android language?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["Kotlin","Timeline"],
+          "options": [
+            { "id": "a", "text": "2017" },
+            { "id": "b", "text": "2010" },
+            { "id": "c", "text": "2019" },
+            { "id": "d", "text": "2015" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "Google adopted Kotlin as an officially supported language in 2017.",
+          "hints": ["Adoption year was before 2019 recommendation"]
+        },
+        {
+          "id": "S11-E11-P2-Q3",
+          "question": "When did Google recommend Kotlin as the preferred language for Android development?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["Kotlin","Timeline"],
+          "options": [
+            { "id": "a", "text": "2019" },
+            { "id": "b", "text": "2017" },
+            { "id": "c", "text": "2015" },
+            { "id": "d", "text": "2012" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "Google recommended Kotlin as the preferred language in 2019.",
+          "hints": ["Recommendation came after official adoption"]
+        },
+        {
+          "id": "S11-E11-P2-Q4",
+          "question": "Which of these is a major benefit of Kotlin mentioned in the lecture?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Kotlin","Benefits"],
+          "options": [
+            { "id": "a", "text": "Concise code and fewer lines compared to Java" },
+            { "id": "b", "text": "Requires more boilerplate than Java" },
+            { "id": "c", "text": "Does not interoperate with Java" },
+            { "id": "d", "text": "Only works on desktop apps" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "Kotlin reduces boilerplate and lets developers write less code compared to Java.",
+          "hints": ["Conciseness was emphasized in the lecture"]
+        },
+        {
+          "id": "S11-E11-P2-Q5",
+          "question": "Which feature of Kotlin helps reduce certain types of runtime crashes?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["Kotlin","Safety"],
+          "options": [
+            { "id": "a", "text": "Null-safety features" },
+            { "id": "b", "text": "Manual memory management" },
+            { "id": "c", "text": "No type system" },
+            { "id": "d", "text": "Pointer arithmetic" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "Kotlin's null-safety features help avoid null pointer exceptions and related crashes.",
+          "hints": ["Null-safety was mentioned as reducing bugs"]
+        },
+        {
+          "id": "S11-E11-P2-Q6",
+          "question": "Which major companies were named as using Kotlin in production?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Kotlin","Industry"],
+          "options": [
+            { "id": "a", "text": "Pinterest, Netflix, Uber" },
+            { "id": "b", "text": "Mozilla, Microsoft, Apple" },
+            { "id": "c", "text": "Facebook, Twitter, LinkedIn" },
+            { "id": "d", "text": "Oracle, IBM, SAP" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "The instructor mentioned Kotlin being used by companies like Pinterest, Netflix, and Uber.",
+          "hints": ["Popular consumer apps were named"]
+        },
+        {
+          "id": "S11-E11-P2-Q7",
+          "question": "Which of these is true about Kotlin and Java interoperability?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Interoperability","Kotlin","Java"],
+          "options": [
+            { "id": "a", "text": "Kotlin works well with existing Java codebases" },
+            { "id": "b", "text": "Kotlin cannot call Java code" },
+            { "id": "c", "text": "Java must be rewritten to Kotlin before use" },
+            { "id": "d", "text": "Kotlin is a completely different platform" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "Kotlin is interoperable with Java, letting projects mix both languages.",
+          "hints": ["He said Kotlin works with Java and can be used alongside it"]
+        },
+        {
+          "id": "S11-E11-P2-Q8",
+          "question": "Which reason did the instructor give for Kotlin's popularity among developers?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Kotlin","Adoption"],
+          "options": [
+            { "id": "a", "text": "It's easy to learn and reduces code verbosity" },
+            { "id": "b", "text": "It requires more code than Java" },
+            { "id": "c", "text": "It's only for backend servers" },
+            { "id": "d", "text": "It doesn't run on Android" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "He highlighted Kotlin's ease of learning and concise syntax as reasons developers like it.",
+          "hints": ["Less boilerplate and fun to use were mentioned"]
+        },
+        {
+          "id": "S11-E11-P2-Q9",
+          "question": "Which year did JetBrains create Kotlin?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["Kotlin","History"],
+          "options": [
+            { "id": "a", "text": "2010" },
+            { "id": "b", "text": "2017" },
+            { "id": "c", "text": "2019" },
+            { "id": "d", "text": "2005" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "Kotlin was first created by JetBrains in 2010.",
+          "hints": ["The early 2010s date was mentioned in the transcript"]
+        },
+        {
+          "id": "S11-E11-P2-Q10",
+          "question": "Which statement aligns with the instructor's view on choosing a language for a project?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Choice","Kotlin","Java"],
+          "options": [
+            { "id": "a", "text": "Choose what you know; both Kotlin and Java are valid" },
+            { "id": "b", "text": "You must always convert Java code to Kotlin" },
+            { "id": "c", "text": "Only Kotlin projects are supported by Android" },
+            { "id": "d", "text": "Never mix languages in one project" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "He said it's the developer's choice and both languages can be used; knowledge and preference matter.",
+          "hints": ["Interoperability allows mixing languages"]
+        },
+        {
+          "id": "S11-E11-P2-Q11",
+          "question": "Which advantage did the instructor mention about Kotlin in relation to bugs?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["Kotlin","Bugs"],
+          "options": [
+            { "id": "a", "text": "Kotlin helps avoid crashes caused by missing data" },
+            { "id": "b", "text": "Kotlin makes apps run slower" },
+            { "id": "c", "text": "Kotlin removes the need for testing" },
+            { "id": "d", "text": "Kotlin prevents resource leaks automatically" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "He noted Kotlin's features (like null-safety) reduce certain runtime crashes from missing data.",
+          "hints": ["Null-safety was tied to fewer crashes"]
+        },
+        {
+          "id": "S11-E11-P2-Q12",
+          "question": "Which phrase best summarises the instructor's opinion of Kotlin?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Opinion","Kotlin"],
+          "options": [
+            { "id": "a", "text": "Easy to learn, fun to use, and maintained by Google and JetBrains" },
+            { "id": "b", "text": "Outdated and unsupported" },
+            { "id": "c", "text": "Only for servers" },
+            { "id": "d", "text": "Not suitable for mobile" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "He praised Kotlin as easy, fun, maintained by Google and JetBrains, and effective for Android development.",
+          "hints": ["Maintenance by Google/JetBrains was mentioned"]
+        },
+        {
+          "id": "S11-E11-P2-Q13",
+          "question": "Which of these is NOT a reason the instructor cited for using Kotlin?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["Kotlin","Misconception"],
+          "options": [
+            { "id": "a", "text": "It always requires more lines of code than Java" },
+            { "id": "b", "text": "It helps avoid certain bugs" },
+            { "id": "c", "text": "It interoperates with Java" },
+            { "id": "d", "text": "It's widely adopted and recommended" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "He said Kotlin typically requires fewer lines of code, not more.",
+          "hints": ["Kotlin's conciseness was a pro, not a con"]
+        },
+        {
+          "id": "S11-E11-P2-Q14",
+          "question": "Which type of apps did the instructor name as examples built with Kotlin?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Examples","Kotlin"],
+          "options": [
+            { "id": "a", "text": "Mobile apps like Pinterest, Netflix, Uber" },
+            { "id": "b", "text": "Operating systems" },
+            { "id": "c", "text": "Embedded device firmware" },
+            { "id": "d", "text": "Console games only" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "He cited consumer mobile apps like Pinterest, Netflix and Uber as Kotlin users.",
+          "hints": ["Large mobile services were mentioned"]
+        },
+        {
+          "id": "S11-E11-P2-Q15",
+          "question": "Which statement about Kotlin's learning curve did the instructor make?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Learning","Kotlin"],
+          "options": [
+            { "id": "a", "text": "Kotlin is easy to learn and concise" },
+            { "id": "b", "text": "Kotlin is extremely difficult and verbose" },
+            { "id": "c", "text": "Kotlin requires C++ knowledge" },
+            { "id": "d", "text": "Kotlin is only for expert teams" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "He described Kotlin as easy to learn, fun to use, and efficient for developers.",
+          "hints": ["Conciseness and ease were highlighted"]
+        }
+      ]
+    }
+  ]
+}

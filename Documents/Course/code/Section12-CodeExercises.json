@@ -1,0 +1,46 @@
+{
+  "items": [
+    {
+      "title": "Assign Integer",
+      "instructions": "**Problem:**\nIn Kotlin, every piece of data must be stored in a variable before it can be used. You need to understand how to declare a variable with an explicit type and assign a value to it.\n\n**What we want:**\nDeclare a variable of type Int, assign an integer value to it, and print that variable's value to the output.\n\n**Syntax:**\n```\nval variableName: Int = value\nprintln(variableName)\n```\n\n**Example 1:**\nval num: Int = 50\nprintln(num)\nOutput: 50\nExplanation: A variable num of type Int is declared, assigned the value 50, and printed.\n\n**Example 2:**\nval num: Int = 100\nprintln(num)\nOutput: 100\nExplanation: A variable num of type Int is declared, assigned the value 100, and printed.",
+      "difficulty": "easy",
+      "language_key": "kotlin",
+      "time_limit": 2,
+      "memory_limit": 256,
+      "starter_code": "fun main() {\n    // Declare an Int variable, assign a value to it, and print it\n}",
+      "execute_template": "",
+      "solution_code": "fun main() {\n    val num: Int = 50\n    println(num)\n}",
+      "test_cases": [
+        { "input": "", "output": "50", "is_sample": true }
+      ]
+    },
+    {
+      "title": "Sum of Two Variables",
+      "instructions": "**Problem:**\nKotlin can automatically determine (infer) the type of a variable from the value assigned to it, so you don't always need to write the type explicitly. This feature is called type inference.\n\n**What we want:**\nDeclare two variables using type inference, assign 100 to the first and 50 to the second. Compute their sum and print the result.\n\n**Syntax:**\n```\nval x = someValue   // compiler infers Int\nval y = someValue\nprintln(x + y)\n```\n\n**Example 1:**\nval a = 100\nval b = 50\nprintln(a + b)\nOutput: 150\nExplanation: a is inferred as Int with value 100, b as Int with value 50. Their sum 100 + 50 = 150 is printed.\n\n**Example 2:**\nval a = 30\nval b = 20\nprintln(a + b)\nOutput: 50\nExplanation: a = 30, b = 20 (both inferred as Int). Sum = 50.",
+      "difficulty": "easy",
+      "language_key": "kotlin",
+      "time_limit": 2,
+      "memory_limit": 256,
+      "starter_code": "fun main() {\n    // Declare two variables using type inference, assign values, and print their sum\n}",
+      "execute_template": "",
+      "solution_code": "fun main() {\n    val a = 100\n    val b = 50\n    println(a + b)\n}",
+      "test_cases": [
+        { "input": "", "output": "150", "is_sample": true }
+      ]
+    },
+    {
+      "title": "Sum of Three Variables",
+      "instructions": "**Problem:**\nYou often need to work with more than two variables at a time. This exercise practices declaring multiple variables, assigning values to them, and computing their sum.\n\n**What we want:**\nDeclare three integer variables, assign each a value, compute their sum, and print the result.\n\n**Syntax:**\n```\nval a: Int = value1\nval b: Int = value2\nval c: Int = value3\nprintln(a + b + c)\n```\n\n**Example 1:**\nval a: Int = 10\nval b: Int = 20\nval c: Int = 30\nprintln(a + b + c)\nOutput: 60\nExplanation: Three variables are declared with values 10, 20, and 30. Their sum 10 + 20 + 30 = 60 is printed.\n\n**Example 2:**\nval a: Int = 5\nval b: Int = 15\nval c: Int = 25\nprintln(a + b + c)\nOutput: 45\nExplanation: 5 + 15 + 25 = 45.",
+      "difficulty": "easy",
+      "language_key": "kotlin",
+      "time_limit": 2,
+      "memory_limit": 256,
+      "starter_code": "fun main() {\n    // Declare three Int variables, assign values, and print their sum\n}",
+      "execute_template": "",
+      "solution_code": "fun main() {\n    val a: Int = 10\n    val b: Int = 20\n    val c: Int = 30\n    println(a + b + c)\n}",
+      "test_cases": [
+        { "input": "", "output": "60", "is_sample": true }
+      ]
+    }
+  ]
+}

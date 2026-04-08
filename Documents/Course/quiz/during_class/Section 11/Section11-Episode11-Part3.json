@@ -1,0 +1,250 @@
+{
+  "items": [
+    {
+      "name": "Section11-Episode11-Part3",
+      "difficulty": "medium",
+      "content": [
+        {
+          "id": "S11-E11-P3-Q1",
+          "question": "Which IDE did the instructor recommend for getting started with Kotlin for Android?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["IDE","Android Studio"],
+          "options": [
+            { "id": "a", "text": "Android Studio" },
+            { "id": "b", "text": "Visual Studio Code" },
+            { "id": "c", "text": "Xcode" },
+            { "id": "d", "text": "Eclipse" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "He recommended Android Studio as the IDE for Kotlin Android development.",
+          "hints": ["Android Studio is the standard Android IDE"]
+        },
+        {
+          "id": "S11-E11-P3-Q2",
+          "question": "To create a new Kotlin file in Android Studio the instructor asked you to right-click which package area?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["IDE","Project"],
+          "options": [
+            { "id": "a", "text": "com.myandroidworld.myfirstproject (the app package)" },
+            { "id": "b", "text": "res/layout" },
+            { "id": "c", "text": "gradle scripts" },
+            { "id": "d", "text": "manifest folder" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "He right-clicked the app package (e.g., com.myandroidworld.myfirstproject) to add a new Kotlin class/file.",
+          "hints": ["Source files belong under the app package"]
+        },
+        {
+          "id": "S11-E11-P3-Q3",
+          "question": "Which option did he choose from the New menu to create a Kotlin file?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["IDE","Create File"],
+          "options": [
+            { "id": "a", "text": "Kotlin class/file" },
+            { "id": "b", "text": "New Activity (empty)" },
+            { "id": "c", "text": "New Resource File" },
+            { "id": "d", "text": "New Module" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "He selected 'Kotlin class/file' from the New menu and then chose the 'file' option.",
+          "hints": ["The New dialog contains Kotlin class/file options"]
+        },
+        {
+          "id": "S11-E11-P3-Q4",
+          "question": "Which Kotlin file type did he select to create a runnable snippet for quick testing?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["Kotlin","File Types"],
+          "options": [
+            { "id": "a", "text": "File (plain Kotlin file)" },
+            { "id": "b", "text": "Data class" },
+            { "id": "c", "text": "Enum class" },
+            { "id": "d", "text": "Object" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "He chose the simple 'file' option to create a Kotlin file with a `main` function for quick runs.",
+          "hints": ["A plain file lets you add a main() to run code directly"]
+        },
+        {
+          "id": "S11-E11-P3-Q5",
+          "question": "What is the purpose of the `main` function in a Kotlin file?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Kotlin","main"],
+          "options": [
+            { "id": "a", "text": "It acts as the starting point for running the file's code" },
+            { "id": "b", "text": "It defines the app theme" },
+            { "id": "c", "text": "It compiles resources" },
+            { "id": "d", "text": "It is only used in Android manifests" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "The `main` function denotes where execution starts when running a Kotlin file directly.",
+          "hints": ["Without main(), the file is not runnable as a standalone snippet"]
+        },
+        {
+          "id": "S11-E11-P3-Q6",
+          "question": "Which run target did the instructor use to run a single Kotlin file instead of the whole app?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["Run","IDE"],
+          "options": [
+            { "id": "a", "text": "Select the Kotlin file's run configuration (mainKTFile)" },
+            { "id": "b", "text": "Always use the 'app' run target" },
+            { "id": "c", "text": "Use the emulator menu" },
+            { "id": "d", "text": "Run Gradle clean" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "He ran the Kotlin file directly by choosing the file's run option (e.g., run mainKTFile) instead of the app target.",
+          "hints": ["The play button context changes to the selected run target"]
+        },
+        {
+          "id": "S11-E11-P3-Q7",
+          "question": "Where does the output from running a Kotlin file appear in Android Studio?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["IDE","Output"],
+          "options": [
+            { "id": "a", "text": "The Run window/console at the bottom" },
+            { "id": "b", "text": "Logcat only" },
+            { "id": "c", "text": "The Project window" },
+            { "id": "d", "text": "Resource manager" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "He pointed out that the run output appears in the Run window at the bottom of Android Studio.",
+          "hints": ["Run console shows stdout from main()"]
+        },
+        {
+          "id": "S11-E11-P3-Q8",
+          "question": "What visual indicator showed the file was runnable again after restoring the main function?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["IDE","Indicator"],
+          "options": [
+            { "id": "a", "text": "A play/run button appears next to the file in the editor gutter" },
+            { "id": "b", "text": "A compiler error icon appears" },
+            { "id": "c", "text": "The file name turns red" },
+            { "id": "d", "text": "The project re-indexes" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "He noted that when `main` exists the small run/play icon appears next to the code, indicating it's runnable.",
+          "hints": ["Gutter run icons indicate runnable code"]
+        },
+        {
+          "id": "S11-E11-P3-Q9",
+          "question": "What happens if you remove the `main` function from a Kotlin file used for quick runs?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["Kotlin","Errors"],
+          "options": [
+            { "id": "a", "text": "The file is no longer runnable and the run button disappears" },
+            { "id": "b", "text": "Android Studio will run it anyway" },
+            { "id": "c", "text": "It converts the file to Java" },
+            { "id": "d", "text": "The manifest is updated automatically" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "Removing `main` means there's no entry point; the run button disappears and you can't run the file directly.",
+          "hints": ["main() is the entry point for running a file"]
+        },
+        {
+          "id": "S11-E11-P3-Q10",
+          "question": "Which Kotlin keyword did the instructor type to start writing a function?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Kotlin","Syntax"],
+          "options": [
+            { "id": "a", "text": "fun" },
+            { "id": "b", "text": "def" },
+            { "id": "c", "text": "function" },
+            { "id": "d", "text": "func" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "In Kotlin, functions are declared with the `fun` keyword (e.g., `fun main()`).",
+          "hints": ["fun is Kotlin's function keyword"]
+        },
+        {
+          "id": "S11-E11-P3-Q11",
+          "question": "When running the Kotlin file the instructor used `println` — what does `println` do?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Kotlin","Output"],
+          "options": [
+            { "id": "a", "text": "Prints the text and moves to the next line" },
+            { "id": "b", "text": "Prints without a newline" },
+            { "id": "c", "text": "Clears the console" },
+            { "id": "d", "text": "Exits the program" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "`println` prints text and advances to a new line in the output console.",
+          "hints": ["ln stands for line"]
+        },
+        {
+          "id": "S11-E11-P3-Q12",
+          "question": "What happens if you run a file without a `main` function?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["Kotlin","Run"],
+          "options": [
+            { "id": "a", "text": "You get an error because there's no entry point" },
+            { "id": "b", "text": "The file runs with default main" },
+            { "id": "c", "text": "Android Studio auto-adds a main" },
+            { "id": "d", "text": "The emulator will run the file" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "Without `main`, there is no starting point and the IDE cannot run the file as a standalone program.",
+          "hints": ["main is required for runnable files"]
+        },
+        {
+          "id": "S11-E11-P3-Q13",
+          "question": "What is the difference between the top play button and the small play button next to code?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["IDE","Run Targets"],
+          "options": [
+            { "id": "a", "text": "Top play runs the app; gutter play runs the specific file or configuration" },
+            { "id": "b", "text": "Both do exactly the same thing" },
+            { "id": "c", "text": "Gutter play builds the entire project" },
+            { "id": "d", "text": "Top play only debugs" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "The top run target typically runs the full app, while the gutter/run icon runs the specific file or configuration.",
+          "hints": ["Context matters for which target is run"]
+        },
+        {
+          "id": "S11-E11-P3-Q14",
+          "question": "Why did the run button disappear when he removed `main` from the file?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["Kotlin","IDE"],
+          "options": [
+            { "id": "a", "text": "Because there's no runnable entry point without main" },
+            { "id": "b", "text": "Because the file had syntax errors unrelated to main" },
+            { "id": "c", "text": "Because Android Studio crashed" },
+            { "id": "d", "text": "Because the file was deleted" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "The run button is shown only when the file contains a valid entry point like `main()` to execute.",
+          "hints": ["main() presence controls runability"]
+        },
+        {
+          "id": "S11-E11-P3-Q15",
+          "question": "What did the instructor show appears in the run output after executing `println(\"Hello World\")`?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Output","Kotlin"],
+          "options": [
+            { "id": "a", "text": "Hello World in the Run console" },
+            { "id": "b", "text": "A popup dialog in the emulator" },
+            { "id": "c", "text": "A new layout file is generated" },
+            { "id": "d", "text": "An Android notification" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "`println` prints to the Run console and 'Hello World' appears there when run.",
+          "hints": ["Check the Run window for printed output"]
+        }
+      ]
+    }
+  ]
+}

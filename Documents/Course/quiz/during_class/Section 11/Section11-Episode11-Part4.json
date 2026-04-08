@@ -1,0 +1,250 @@
+{
+  "items": [
+    {
+      "name": "Section11-Episode11-Part4",
+      "difficulty": "medium",
+      "content": [
+        {
+          "id": "S11-E11-P4-Q1",
+          "question": "What is the difference between `print` and `println` in Kotlin?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Kotlin","Output"],
+          "options": [
+            { "id": "a", "text": "`println` adds a newline after printing; `print` does not" },
+            { "id": "b", "text": "`print` adds a newline; `println` does not" },
+            { "id": "c", "text": "They are identical" },
+            { "id": "d", "text": "`print` clears the console first" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "`println` prints the text and moves to the next line, while `print` keeps the cursor on the same line.",
+          "hints": ["ln stands for line"]
+        },
+        {
+          "id": "S11-E11-P4-Q2",
+          "question": "Which of the following can be printed with `println` according to the instructor?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Kotlin","Data Types"],
+          "options": [
+            { "id": "a", "text": "Text, numbers, and booleans" },
+            { "id": "b", "text": "Only text strings" },
+            { "id": "c", "text": "Only integers" },
+            { "id": "d", "text": "Only objects" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "He demonstrated printing text, decimal numbers, and boolean values with println.",
+          "hints": ["println accepts many data types"]
+        },
+        {
+          "id": "S11-E11-P4-Q3",
+          "question": "If you run a Kotlin file and nothing appears in the run console, what might be the reason?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["Debugging","Run"],
+          "options": [
+            { "id": "a", "text": "There may be no print/println statements or no main() entry point" },
+            { "id": "b", "text": "println always prints to Logcat only" },
+            { "id": "c", "text": "The console only shows errors" },
+            { "id": "d", "text": "Kotlin doesn't support printing" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "If the file lacks `main()` or print statements, nothing will show in the Run console when executed.",
+          "hints": ["Ensure there's an entry point and print calls"]
+        },
+        {
+          "id": "S11-E11-P4-Q4",
+          "question": "Which of the following formats did the instructor demonstrate printing?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Output","Numbers"],
+          "options": [
+            { "id": "a", "text": "Decimal numbers (e.g., 12.1234)" },
+            { "id": "b", "text": "Only integers" },
+            { "id": "c", "text": "Only strings inside single quotes" },
+            { "id": "d", "text": "Only booleans" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "He printed decimal numbers as well as integers and strings during the demo.",
+          "hints": ["Floating point values were shown in the transcript"]
+        },
+        {
+          "id": "S11-E11-P4-Q5",
+          "question": "What does the instructor say is required to print a variable's value?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Variables","Output"],
+          "options": [
+            { "id": "a", "text": "Call println with the variable name (e.g., println(myVar))" },
+            { "id": "b", "text": "You must convert the variable to string manually always" },
+            { "id": "c", "text": "Use Toast to view variables only" },
+            { "id": "d", "text": "Variables cannot be printed" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "To display a variable you pass it to `println`, e.g., `println(myAndroid)` as the instructor did.",
+          "hints": ["println accepts variables directly"]
+        },
+        {
+          "id": "S11-E11-P4-Q6",
+          "question": "Which boolean values did the instructor show can be printed?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Booleans","Output"],
+          "options": [
+            { "id": "a", "text": "true and false" },
+            { "id": "b", "text": "only true" },
+            { "id": "c", "text": "only false" },
+            { "id": "d", "text": "Kotlin doesn't support booleans" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "He demonstrated printing both true and false values with println.",
+          "hints": ["Booleans are valid print arguments"]
+        },
+        {
+          "id": "S11-E11-P4-Q7",
+          "question": "If `println` prints 'hello city' then `print` prints 'hello android' immediately after, where will the texts appear?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["print","println"],
+          "options": [
+            { "id": "a", "text": "They may appear on the same line for `print` and new line for `println`" },
+            { "id": "b", "text": "They'll always appear on different consoles" },
+            { "id": "c", "text": "print clears previous output" },
+            { "id": "d", "text": "They get concatenated into a single token" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "`println` moves to a new line, while `print` keeps output on the same line, so outputs may end up on the same or separate lines depending on order.",
+          "hints": ["Order and use of ln affects line breaks"]
+        },
+        {
+          "id": "S11-E11-P4-Q8",
+          "question": "Which of these is true about the run target when executing small Kotlin snippets?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Run","IDE"],
+          "options": [
+            { "id": "a", "text": "The run target can be the single Kotlin file rather than the full app" },
+            { "id": "b", "text": "You must always run the entire app" },
+            { "id": "c", "text": "Snippets run in Logcat only" },
+            { "id": "d", "text": "Kotlin files cannot be executed in Android Studio" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "He demonstrated running a single Kotlin file's `main` for quick tests without building the full app.",
+          "hints": ["Use file-specific run configuration"]
+        },
+        {
+          "id": "S11-E11-P4-Q9",
+          "question": "Why did removing the main function produce a cross icon next to the file?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["IDE","Errors"],
+          "options": [
+            { "id": "a", "text": "Because the file lost its runnable entry point" },
+            { "id": "b", "text": "Because it had too many println calls" },
+            { "id": "c", "text": "Because the file became read-only" },
+            { "id": "d", "text": "Because Android Studio needs a restart" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "Without `main`, the file is not runnable and IDE indicates that by removing the run icon and showing a cross.",
+          "hints": ["Look for entry points to run code"]
+        },
+        {
+          "id": "S11-E11-P4-Q10",
+          "question": "Which command did the instructor press to run the Kotlin file's output?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Run","IDE"],
+          "options": [
+            { "id": "a", "text": "The small play button next to the code (gutter play)" },
+            { "id": "b", "text": "The emulator power button" },
+            { "id": "c", "text": "The Gradle sync button" },
+            { "id": "d", "text": "The AVD manager" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "He used the gutter/run icon next to the code to run the Kotlin file and see output in the Run window.",
+          "hints": ["Gutter run icons allow quick execution"]
+        },
+        {
+          "id": "S11-E11-P4-Q11",
+          "question": "If you see 'nothing to display' after running a Kotlin file what should you check first?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["Debugging","Run"],
+          "options": [
+            { "id": "a", "text": "Confirm the file has a main() and has println/print statements" },
+            { "id": "b", "text": "Uninstall Android Studio" },
+            { "id": "c", "text": "Replace Kotlin with Java" },
+            { "id": "d", "text": "Change the emulator skin" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "If no output appears you should ensure the file has a runnable `main` and contains print statements to show output.",
+          "hints": ["Check entry point and print calls"]
+        },
+        {
+          "id": "S11-E11-P4-Q12",
+          "question": "How can you print the same text multiple times without retyping the string?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Variables","BestPractices"],
+          "options": [
+            { "id": "a", "text": "Store the text in a variable and print the variable" },
+            { "id": "b", "text": "You must retype it every time" },
+            { "id": "c", "text": "Use a separate file for each string" },
+            { "id": "d", "text": "Printing is not possible more than once" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "He introduced variables as containers for values so you can reuse strings without retyping them.",
+          "hints": ["Variables reduce repetition"]
+        },
+        {
+          "id": "S11-E11-P4-Q13",
+          "question": "Which statement reflects the instructor's demonstration about running different run configurations?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["IDE","Run Configurations"],
+          "options": [
+            { "id": "a", "text": "Run configurations change what the top play button will execute" },
+            { "id": "b", "text": "Run configurations are fixed and cannot be changed" },
+            { "id": "c", "text": "Run configurations only apply to Gradle tasks" },
+            { "id": "d", "text": "There is only one run configuration per project" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "He showed that the run target text next to the top play button changes depending on which run configuration is selected.",
+          "hints": ["Top play target shows the selected configuration"]
+        },
+        {
+          "id": "S11-E11-P4-Q14",
+          "question": "What does the transcript recommend you must not remove if you want the file to be runnable?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Kotlin","EntryPoint"],
+          "options": [
+            { "id": "a", "text": "The main function" },
+            { "id": "b", "text": "The package declaration" },
+            { "id": "c", "text": "The import statements" },
+            { "id": "d", "text": "The comments" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "The `main` function is necessary for the file to be a runnable snippet in the IDE.",
+          "hints": ["Entry point functions are required for execution"]
+        },
+        {
+          "id": "S11-E11-P4-Q15",
+          "question": "What visible change indicates the file is runnable again after restoring main()?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["IDE","Indicator"],
+          "options": [
+            { "id": "a", "text": "The small play icon reappears in the editor gutter" },
+            { "id": "b", "text": "The file changes color to green" },
+            { "id": "c", "text": "The project syncs automatically" },
+            { "id": "d", "text": "A pop-up appears saying 'runnable'" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "Restoring `main` brings back the gutter run/play icon indicating the file can be executed.",
+          "hints": ["Gutter icons appear for runnable code"]
+        }
+      ]
+    }
+  ]
+}

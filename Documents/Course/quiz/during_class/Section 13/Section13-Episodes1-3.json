@@ -1,0 +1,310 @@
+{
+  "items": [
+    {
+      "name": "Section13-Episode1",
+      "difficulty": "medium",
+      "content": [
+        {
+          "id": "S13-E1-Q1",
+          "question": "Why did `D / C` yield `1` when `D = 300` and `C = 200` in the integer example?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["division","types"],
+          "options": [
+            { "id": "a", "text": "Because integer division truncates the fractional part" },
+            { "id": "b", "text": "Because Kotlin rounds up automatically" },
+            { "id": "c", "text": "Because the variables were strings" },
+            { "id": "d", "text": "Because division always returns 1 in Kotlin" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "With integer types the fractional remainder is discarded (300 / 200 → 1).",
+          "hints": ["Use doubles to get fractional results","Integers do not keep decimals"]
+        },
+        {
+          "id": "S13-E1-Q2",
+          "question": "How do you get `1.5` from dividing 300 by 200 as shown in the lesson?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["types","division"],
+          "options": [
+            { "id": "a", "text": "Make the operands doubles (e.g., 300.0 / 200.0)" },
+            { "id": "b", "text": "Use integer division mode" },
+            { "id": "c", "text": "Cast result to Int" },
+            { "id": "d", "text": "Use modulus operator" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "By using decimal operands the division preserves the fractional part (300.0 / 200.0 = 1.5).",
+          "hints": ["Add a decimal to the numbers","Result becomes Double"]
+        },
+        {
+          "id": "S13-E1-Q3",
+          "question": "What does the modulus operator (%) return in the examples?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["modulus","remainder"],
+          "options": [
+            { "id": "a", "text": "The remainder of division (e.g., 300 % 200 → 100)" },
+            { "id": "b", "text": "The quotient of division" },
+            { "id": "c", "text": "The division result as a float" },
+            { "id": "d", "text": "A boolean indicating divisibility" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "The modulus operator yields the remainder left after division (300 % 200 = 100).",
+          "hints": ["Remainder, not quotient","Percent sign denotes modulus"]
+        },
+        {
+          "id": "S13-E1-Q4",
+          "question": "Which keyboard keys did the instructor mention to type the multiplication symbol `*`?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["syntax","keyboard"],
+          "options": [
+            { "id": "a", "text": "Shift + 8" },
+            { "id": "b", "text": "Alt + M" },
+            { "id": "c", "text": "Ctrl + *" },
+            { "id": "d", "text": "Option + x" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "He noted that `*` is typed with Shift+8 on the keyboard.",
+          "hints": ["Asterisk is Shift+8 on many keyboards"]
+        },
+        {
+          "id": "S13-E1-Q5",
+          "question": "What is the effect of the increment operator (`++`) on a variable `x`?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["increment","operators"],
+          "options": [
+            { "id": "a", "text": "Increases `x` by 1" },
+            { "id": "b", "text": "Decreases `x` by 1" },
+            { "id": "c", "text": "Doubles `x`" },
+            { "id": "d", "text": "Sets `x` to zero" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "`++` increments the variable's value by one (e.g., x++ makes 1 → 2).",
+          "hints": ["Opposite of `--`","Adds 1"]
+        },
+        {
+          "id": "S13-E1-Q6",
+          "question": "What does the instructor recommend about how operations depend on data types?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["types","operations"],
+          "options": [
+            { "id": "a", "text": "Operations behavior depends on the variable's data type" },
+            { "id": "b", "text": "Data types have no effect on operations" },
+            { "id": "c", "text": "Operations only work on strings" },
+            { "id": "d", "text": "You should avoid specifying types" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "He emphasised that operations (e.g., division) behave differently depending on whether variables are `Int` or `Double`.",
+          "hints": ["Integers vs doubles matter","Choose types to control results"]
+        }
+      ]
+    },
+    {
+      "name": "Section13-Episode2",
+      "difficulty": "medium",
+      "content": [
+        {
+          "id": "S13-E2-Q1",
+          "question": "What is the basic purpose of the assignment operator (`=`)?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["assignment","variables"],
+          "options": [
+            { "id": "a", "text": "To store or update a value in a variable" },
+            { "id": "b", "text": "To compare two values" },
+            { "id": "c", "text": "To declare a function" },
+            { "id": "d", "text": "To print output to console" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "`=` assigns the right-hand value into the left-hand variable (initialise or update).",
+          "hints": ["Left side is variable, right side is value"]
+        },
+        {
+          "id": "S13-E2-Q2",
+          "question": "How does `x += 3` behave compared to writing `x = x + 3`?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["compound assignment","syntax"],
+          "options": [
+            { "id": "a", "text": "It is a shorthand that adds 3 to `x` and stores the result" },
+            { "id": "b", "text": "It subtracts 3 from `x`" },
+            { "id": "c", "text": "It resets `x` to zero" },
+            { "id": "d", "text": "It multiplies `x` by 3" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "`x += 3` is shorthand for `x = x + 3`, updating `x` by adding 3.",
+          "hints": ["Add-and-assign operator","Same effect as explicit addition assignment"]
+        },
+        {
+          "id": "S13-E2-Q3",
+          "question": "Which compound operator would update `p` by multiplying it with 5?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["compound assignment","multiply"],
+          "options": [
+            { "id": "a", "text": "p *= 5" },
+            { "id": "b", "text": "p += 5" },
+            { "id": "c", "text": "p -= 5" },
+            { "id": "d", "text": "p /= 5" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "`*=` multiplies the variable by the right-hand value and stores the result (p *= 5 → p = p * 5).",
+          "hints": ["Multiply-and-assign uses `*=`"]
+        },
+        {
+          "id": "S13-E2-Q4",
+          "question": "If `a = 100`, `b = 50`, and you run `a += b + 20`, what will `a` become?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["compound assignment","evaluation"],
+          "options": [
+            { "id": "a", "text": "170" },
+            { "id": "b", "text": "120" },
+            { "id": "c", "text": "150" },
+            { "id": "d", "text": "200" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "`a += b + 20` evaluates `b + 20` (50 + 20 = 70) then adds to `a` (100 + 70 = 170).",
+          "hints": ["Compound assignment evaluates right-hand expression first"]
+        },
+        {
+          "id": "S13-E2-Q5",
+          "question": "Why are assignment-operator shorthands useful as the instructor explained?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["style","operators"],
+          "options": [
+            { "id": "a", "text": "They shorten code and improve clarity when updating variables" },
+            { "id": "b", "text": "They speed up compilation dramatically" },
+            { "id": "c", "text": "They change variable types" },
+            { "id": "d", "text": "They are required by Kotlin" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "Shorthands like `+=` and `*=` make updating variables more concise and clear.",
+          "hints": ["They reduce repetition","They are convenience not requirement"]
+        },
+        {
+          "id": "S13-E2-Q6",
+          "question": "In the example where `p += q + 20`, why did the instructor recommend parentheses?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["clarity","precedence"],
+          "options": [
+            { "id": "a", "text": "To make the intended evaluation order clear (readability)" },
+            { "id": "b", "text": "Because parentheses change runtime performance" },
+            { "id": "c", "text": "Because parentheses are required syntax" },
+            { "id": "d", "text": "To convert ints to doubles" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "Parentheses help show the grouping of expressions and make the code easier to read and reason about.",
+          "hints": ["Precedence rules still apply, but parentheses clarify intent"]
+        }
+      ]
+    },
+    {
+      "name": "Section13-Episode3",
+      "difficulty": "medium",
+      "content": [
+        {
+          "id": "S13-E3-Q1",
+          "question": "What does `x -= y` do compared to `x = x - y`?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["compound assignment","subtract"],
+          "options": [
+            { "id": "a", "text": "Shorthand that subtracts `y` from `x` and stores the result" },
+            { "id": "b", "text": "Adds `y` to `x`" },
+            { "id": "c", "text": "Swaps values of `x` and `y`" },
+            { "id": "d", "text": "Divides `x` by `y`" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "`-=` updates the left variable by subtracting the right-hand value (x -= y → x = x - y).",
+          "hints": ["Opposite of `+=`","Shortcut assignment"]
+        },
+        {
+          "id": "S13-E3-Q2",
+          "question": "Which operator updates a variable by multiplying it with another variable (`n *= m`) and what result did the instructor show for `n=10`, `m=20`?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["multiply","compound assignment"],
+          "options": [
+            { "id": "a", "text": "`*=` and result is 200" },
+            { "id": "b", "text": "`+=` and result is 30" },
+            { "id": "c", "text": "`/=` and result is 2" },
+            { "id": "d", "text": "`-=` and result is -10" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "`*=` multiplies and assigns; with n=10 and m=20, `n *= m` yields 200.",
+          "hints": ["Use `*=` for multiply-and-assign"]
+        },
+        {
+          "id": "S13-E3-Q3",
+          "question": "In the practice problem the instructor gave, why did `val` (written as 'well' in transcript) cause an error when trying to update a value?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["val","var","immutability"],
+          "options": [
+            { "id": "a", "text": "Because `val` creates an immutable value that cannot be reassigned" },
+            { "id": "b", "text": "Because `val` is only for strings" },
+            { "id": "c", "text": "Because `val` requires explicit casting" },
+            { "id": "d", "text": "Because `val` needs to be declared inside a function" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "`val` (immutable) cannot be reassigned; the instructor changed it to `var` so the update succeeded.",
+          "hints": ["`var` is mutable, `val` is not"]
+        },
+        {
+          "id": "S13-E3-Q4",
+          "question": "Which assignment would produce `m = 160` given `m = 200` and `n = 30` as in the example?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["compound","problem solving"],
+          "options": [
+            { "id": "a", "text": "m -= (n + 10)" },
+            { "id": "b", "text": "m -= n" },
+            { "id": "c", "text": "m += n" },
+            { "id": "d", "text": "m *= n" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "Subtracting `n + 10` from 200 gives 160 (200 - (30 + 10) = 160).",
+          "hints": ["Group operations with parentheses"]
+        },
+        {
+          "id": "S13-E3-Q5",
+          "question": "What practical warning did the instructor give about using `val` vs `var` when you expect to update a variable?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["best practices","immutability"],
+          "options": [
+            { "id": "a", "text": "Use `var` for values you will change; `val` cannot be reassigned" },
+            { "id": "b", "text": "Always use `val` to allow reassignment" },
+            { "id": "c", "text": "`var` makes values constant" },
+            { "id": "d", "text": "`val` and `var` behave identically" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "He demonstrated that `val` (immutable) throws an error when reassigned; use `var` for mutable variables.",
+          "hints": ["`val` = immutable, `var` = mutable"]
+        },
+        {
+          "id": "S13-E3-Q6",
+          "question": "Which of these is NOT an assignment operator family member discussed in these episodes?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["operators","recall"],
+          "options": [
+            { "id": "a", "text": "Declaration operator `::=`" },
+            { "id": "b", "text": "Add-and-assign `+=`" },
+            { "id": "c", "text": "Multiply-and-assign `*=`" },
+            { "id": "d", "text": "Divide-and-assign `/=" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "`::=` is not a standard assignment operator; the lesson covered `+=`, `-=`, `*=`, `/=`, and `%=` families.",
+          "hints": ["Recall the operator family members shown"]
+        }
+      ]
+    }
+  ]
+}

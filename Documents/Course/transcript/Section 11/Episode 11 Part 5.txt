@@ -1,0 +1,71 @@
+(Transcribed by TurboScribe. Go Unlimited to remove this message.)
+
+So let's understand the concept of variables. What are variables? Variables are used to store values. Simple na? Let me make it more simpler.
+
+Assume that you have a set of multiple items that you should store separately as per their types otherwise they will spoil. So for each item we use a container. This container will store that particular item and this container is known as variable.
+
+So have you understand about the variable? Variable is nothing but acts like a container which stores single or multiple values whatever we need to go with. So before starting with variables we need to understand how exactly we can write a variable. Variables generally require three elements only.
+
+The first is the val or var which informs that user is assigning a variable. Here val is considered as the fixed value into which if you assign the value once then we cannot change it later. While var is also used to do the same but here you can change its value later.
+
+Into the same line the next part is name of variable. Here name of variable is used to provide the name of the variable. Similarly you provide different names to different jars.
+
+With the help of this name of variable you will be able to find out your desired variable among from all and at last the value of variable. It is the specified value which is going to store into a particular variable. So let's combine all together.
+
+We will get an equation as given. At first val or var then you have to put the name of variable and at the third you have to provide the value of it. Similar as it let's try this on android studio.
+
+Here I am going to remove these println statements like this and under this main function let's put our first variable. So let's start with val because the first element is val. So let's put the val then put space and after this we have to provide the name of variable.
+
+You can go with any name of variable but it has its own rules. We will discuss the rules into our later part but for now a single rule which you have to follow is always starts with a particular alphabetical letter. So let me go with the my android my android like this okay.
+
+So this my android is nothing but my variable name. Here you will see that I am getting some red squiggly lines. It is because I didn't provide any value to it.
+
+So let's provide the value for it. For that thing first of all you have to assign the equals to sign. So you have to assign the equals to sign and then you have to provide the value of it.
+
+So for now I am going to provide my value that is my android. Oh sorry hello android. Hello android.
+
+Hello android okay. So that's how you created your first variable. So let's first run this.
+
+To do this if you will go with run button run mainkt file. Let's wait for it. Done.
+
+But here you will see that nothing is printed here. Instead of just just ignore this process finish with exit code and this this address and just just ignore these things. But if you will if you will see there's nothing to see.
+
+There's nothing to display. Why? Because yes we defined the variable successfully but we didn't use it into print statement to show your values. As I said before that these variables are just used as a container to store some values.
+
+But if you need to use them you have to call them into into a particular scenario. That means if I need to print this if I need to show this hello android over there then I have to print it first. So let me go with print ln that means print line.
+
+And into this print line I don't have to put this hello world here hello android here. Instead of it I have to go with my android. So I am going to use my android like this.
+
+Okay let me run this again. Once I've done you will see hello android is now there. So what exactly happening here and when I put the name instead of hello android then how exactly it get printed.
+
+We have to discuss over this. But before let me show you one more thing. As I told you that into well we cannot change the values.
+
+Okay so let me let me change the value after this assigning. So let me go with my android again and after equals to I'm going to provide some more values. Let's suppose I am providing hello world here.
+
+Hello world here. So if you'll see I'm getting some red squiggly lines. Why? The reason behind is that it is it is telling me to change to var.
+
+Why? Because into var it allows us to change the values later. But into well we are not be able to do this. Okay.
+
+So that's why it shows us these kind of error. So I have to remove this and always just keep this mind that if you are putting something into well then it cannot be changed after assign. Okay.
+
+Now let's start with var again. So let me just remove this whole part and write var at first instead of well I'm using var. And now again the name so I am keeping the name android my android as same then equals to then I have to put the name hello android.
+
+Perfect. And now as same as I told you that to use this auto visible to make it visible over the run section we have to use print line statement at first. So let's go with print line like this and to this put my android like this.
+
+Okay. Now again run this. Once you'll done you'll find hello android again.
+
+Okay. Again let's suppose I'm getting some error into this. Okay.
+
+It is to well or var. Okay. So now let's suppose I need to change this value.
+
+Because of var it is very easy to change for me. So I just have to call this my android again and then I have to put the values for example I am writing hello world here. Okay.
+
+So once I write hello world here the new value is assigned to it instead of hello android now it prints hello world to me. So let's run it. Perfect.
+
+Hello world is here now. Oh okay. Just ignore this thing it is nothing but just a click because of because of a wrong click it happened here.
+
+Okay. So that's how if we use var we can change our values later into our code but if we are using well we are we are not going to change or we are not be able to change the given value later. So that's how you learn about the variables.
+
+You learn two different things. The first one is a difference between well and var and the second thing is how you can assign the variables into our code.
+
+(Transcribed by TurboScribe. Go Unlimited to remove this message.)

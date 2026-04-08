@@ -1,0 +1,85 @@
+(0:00) Now, let's understand exactly what these symbols are. (0:05) These symbols are nothing. (0:07) These symbols are responsible.
+(0:12) These symbols are responsible to do some operations that can be mathematical or something else. (0:34) So let's learn about these operators first and then we are going to understand (0:38) the complete process of them. (0:41) So now let's understand the concept of operators.
+(0:48) As I already told you, operators are symbols that tell Kotlin to perform an action on values (1:09) or variables. (1:13) Here, variable and value are somehow different. (1:22) Operators can work on both of them.
+(1:25) As we saw previously, we can write myResult is equals to 100 plus 100 or we can write (1:36) myResult is equals to variable 1 plus variable 2. (1:43) So we can also we can do the same thing with the third combination that is variable 1 (1:51) or 2 whatever you have plus 100. (1:54) Out of them, we can do anything whatever we need. (1:58) So these things can be done by operators.
+(2:02) How? (2:03) Let's understand. (2:06) Think of them like some kind of tools. (2:10) They will help you to add some numbers.
+(2:16) Or they can compare values. (2:21) Compare values that the existing number, for example, we have 100. (2:26) It will be equals to 100 or not.
+(2:29) Similarly, into an equation, for example, I have the equation 100 plus 100. (2:35) This so here this 100 and this 100 are known as operands are known as operands. (2:49) While this plus sign is known as operator.
+(2:58) So we already understand the concept now. (3:01) Now let's learn how to use them and how many types we have for the same. (3:06) So let's suppose kotlin divides the operators into four major groups.
+(3:12) So here kotlin divides the operators into four major groups. (3:42) The first part is arithmetic operators. (3:56) The second part is assignment operators.
+(4:06) The third one is comparison operators. (4:12) And the fourth one is logical operators. (4:22) So let's start with the first one that is arithmetic operators.
+(4:28) Here we clearly identify with the name that arithmetic operators are do mathematical operations. (4:37) So here, let's see the number of operators we have right now, such as addition, (4:46) subtraction, multiplication, division, modulus, increment and decrement. (4:56) So here, let's go with two different operands.
+(5:00) So let's first go to Android Studio. (5:03) Here, let me remove all these things like this. (5:09) And let's create two different operands that is var a integer of integer data type (5:18) is equals to the value will be 100.
+(5:21) Similarly, the another one that is var b integer is equals to let's suppose 100 again. (5:34) Okay, also, just write println println to understand. (5:43) So let me check, let me check them first.
+(5:45) To do this, I'm just writing hello world at first. (5:50) Check whether it is working or not. (5:55) Let me minimise these things.
+(6:12) Perfect. (6:13) So it is working perfectly. (6:16) Now, let's move to the let's move to our first variable that is addition.
+(6:23) We already discussed about addition, that what exactly addition operators are. (6:33) Now, let me do it fast. (6:36) But just we already know about this that how exactly these addition, addition operators work.
+(6:43) So for this, within this println, put both the variables like a, then put the variable, (6:50) then put the plus sign like this, and then put b, the other variable. (6:57) So let me just run it like this, and we'll get 200. (7:06) So it's perfect.
+(7:08) Okay, along with these variables, you can also put some other values like direct numbers. (7:15) For example, if I need to add 200, along with them, that is not storing to any kind of variable. (7:21) So you can so you can also go with that thing.
+(7:23) If I am just click over it, so we have a plus b, we have 200 plus 200 becomes 400. (7:29) So the answer will be 400 in front of. (7:32) So let's click on this play button again, like this.
+(7:37) And we'll get 400. (7:41) One thing what you have to understand is that kotlin will not allow you to put the variables (7:47) or even numbers after this closing bracket of println like this. (7:51) If you do this, you will find some error here.
+(7:55) Okay, perfect. (7:58) Now let's move to second one. (8:00) That is subtraction.
+(8:04) That is subtraction operators. (8:12) As similar to this addition one, likewise addition, just put, let's go with Android (8:19) Studio again. (8:19) And here, within these brackets, within these parenthesis brackets, likewise addition, just (8:27) put subtraction sign at the place of addition.
+(8:30) For example, it's a minus b, like this. (8:35) Now, let's click on the play button again. (8:40) Once I do this, you will see the value is 0. (8:45) Perfect.
+(8:47) Let's do some more stuff. (8:49) Create a new variable here. (8:51) Let me create a new variable here.
+(8:54) It's var, var c and int is equals to, let's suppose 200. (9:04) Okay. (9:05) Now into this println, let's put c minus a, like this.
+(9:13) Once we do this, let's run this again. (9:19) And here we will get 100. (9:22) Great.
+(9:22) Now, let's move to another part. (9:25) From the previous one, let's understand that how we can use addition sign along with (9:31) this subtraction sign. (9:33) Okay.
+(9:34) So to do this, let me choose some, let me put some brackets here like this. (9:39) And within these brackets, I am going to do b plus c, like this. (9:46) Okay.
+(9:47) So within these brackets, I am, within these brackets, I am putting b plus c. (9:53) Here, what exactly I am doing? (9:55) I am doing BODMAS. (9:57) Maybe you know about BODMAS. (9:59) BODMAS is, BODMAS is a way to simplify the equation or to solve the equation.
+(10:05) That in a particular equation, how exactly you will going to solve each and every component. (10:10) For example, into BODMAS. (10:15) For example, you have an equation like x1 plus x2 minus x3 multiplied by x4 divided by x5.
+(10:30) And let's suppose there are something are available into brackets. (10:35) For example, these things are available into brackets and these things are available into (10:39) brackets. (10:40) Okay.
+(10:41) So into the BODMAS, the first one that B stands for bracket open. (10:48) Bracket O means open. (10:51) Open.
+(10:52) D for division. (10:55) That first of all, you have to do division. (10:58) Then you have to do multiplication.
+(11:03) Then you have to do addition. (11:09) And then you have to do subtraction. (11:14) So here as well, we can solve the equation with the help of BODMAS only.
+(11:17) Now, after this B plus C within these brackets, let's put minus sign and I am putting A like (11:24) this. (11:25) So here, what exactly this equation is? (11:27) On the behalf of BODMAS, the first thing is that the bracket will be solved. (11:32) That means that we will get B plus C, that is 300.
+(11:37) And after this, we will finalise the equation that is 300 minus A, that is 100. (11:43) So we will get 200 here. (11:46) Okay.
+(11:47) Let me run this like this. (11:52) So here we will get 200. (11:54) Let me go with some other stuff.
+(11:56) Let's just put another variable here. (12:00) This time I am going with well. (12:01) Okay.
+(12:02) Let's suppose D and integer is equals to, let's suppose 300. (12:08) Okay. (12:11) And here now we are doing something crazy.
+(12:15) So let's suppose let's put a parenthesis bracket. (12:17) And here I am just doing the reverse. (12:21) That is, let me show you.
+(12:24) So here I am doing something reverse. (12:27) That means we have four variables A, B, C and D. (12:32) Here A has 100, B has 100, C 200, D 300. (12:42) And here I am going to place an equation that is B minus C. (12:48) Plus C minus B plus B minus A. (12:57) Like this.
+(12:58) And we are going to add all of them. (13:00) Like this. (13:01) Okay.
+(13:02) So here we will use both the symbols, the subtraction one and the addition one. (13:12) So that means arithmetic operators can collaborate with each other to form such kind of equations. (13:20) Okay.
+(13:20) Let's see what exactly happening here. (13:22) So as per the equation, the first thing is D minus C like this. (13:27) Then put plus.
+(13:29) We have another bracket C minus B. (13:33) Let's put another one. (13:35) And we have B minus A. (13:37) B minus A. (13:39) So what we will get. (13:41) So let's solve the equation first.
+(13:43) D minus C, it becomes 100. (13:47) C minus B becomes 100. (13:50) And B minus A becomes 0. (13:53) So at total we will get 200.
+(13:55) Okay. (13:56) Let's see. (13:58) Let's run this part.
+(14:02) And boom. (14:04) We are correct. (14:06) We have done this thing.
+(14:07) Now let's move to another part. (14:09) That is multiplication. (14:16) Similar to the addition and subtraction.
+(14:20) Let's put the sign of multiplication. (14:23) Between two operands. (14:25) So let me just finish it first.
+(14:31) Let me just remove all of them like this. (14:34) And between the operands, let's put the multiplication sign. (14:40) Okay.
+(14:40) One more thing is here into programming. (14:43) We are not going to put the multiplication sign like x. (14:47) Okay. (14:48) The multiplication sign you will get over keyboard by shift and gate.
+(14:53) You have to put for the multiplication sign. (15:00) You have to press shift plus 8. (15:05) And you will get such kind of sign. (15:08) Okay.
+(15:09) Let's see. (15:10) So let's go with an operand. (15:13) That is A. (15:14) And let's put shift plus 8. (15:16) And then B like this.
+(15:18) Once we do. (15:20) Let's run this again. (15:23) And we'll get 10,000 here.
+(15:26) That's perfect. (15:28) Now let's do something else. (15:30) Let's combine addition and subtraction sign with this.
+(15:35) So I am just delete this part like this. (15:40) Let's put bracket again. (15:42) And put A plus B like this.
+(15:48) And again I am putting multiplier sign. (15:51) Then we have to go with C plus B. (15:54) So our equation is that A plus B becomes 200. (15:58) This becomes 200.
+(15:59) And C plus D becomes 500. (16:02) So let's see. (16:04) And after this, we will get multiplier of them as per the botmaster.
+(16:09) So let me run this like this. (16:13) And we will get the answer. (16:15) Okay.
+(16:16) Just try to do yourself that what exactly it is. (16:20) I am giving you some kind of questions here. (16:23) Just go with it.
+(16:36) Now let's go with some other parts. (16:39) Okay. (16:40) And here I am going to show you something else.
+(16:42) That into a particular bracket. (16:44) Let's suppose I am saying A plus B plus C plus D. (16:48) And after this bracket, we can put values as well or numbers as well. (16:54) For example, I am saying multiply by 200 like this.
+(16:58) So what will happen? (17:00) The whole will get some. (17:01) Let's suppose 100 plus 100 plus 200 plus 300. (17:04) That is 700 we have.
+(17:06) Yes. (17:07) And after the 700, this whole 700 will multiply by 200. (17:11) Okay.
+(17:13) So let's run this. (17:15) And we get this value. (17:17) Okay.
+(17:18) So that's how we can work with multiplication sign as well. (17:22) And I already show you that how we can work with plus sign. (17:25) That means addition sign, subtraction sign and multiplication sign.
+(17:29) Similar to the multiplication sign. (17:31) Let's go with another one. (17:33) That is division sign.
+(17:35) So let me just delete this like this. (17:39) And let's go with the division sign. (17:42) So what do we exactly have to do? (17:44) Just replace the multiplication sign by division sign.
+(17:49) So into this, let's put D at first. (17:54) And then put division sign like this. (17:57) And then put C like this.
+(18:00) Okay. (18:01) Once I do this, what I will get? (18:04) So it will be the equation will be 300. (18:06) That means D 300 divided by 200.
+(18:11) Okay. (18:12) So let's run this again like this. (18:16) We will get 1 here.
+(18:20) Okay. (18:21) Why exactly we are getting 1 here? (18:24) Have you know about this? (18:26) Okay. (18:27) So to describe this, let me create another variable as well.
+(18:33) Let's suppose I am creating another variable named as var e is equals to 300. (18:41) And var f is equals to 200. (18:46) Now I didn't provide any data type to them.
+(18:50) They are just carrying whatever they are. (18:52) So let me just put. (18:53) Okay.
+(18:54) Before this, let me just put decimal sign as well here like this. (19:01) If I am using decimal sign, that means that these e and f becomes double. (19:07) The data type of e becomes double.
+(19:11) Similarly, the data type of f become double. (19:17) Let me run this again. (19:19) Let me put the value into it.
+(19:21) So e dash f. (19:26) So let's run this. (19:28) And boom, we are getting 1.5 here. (19:31) Why didn't we are getting 1.5 here? (19:34) And why into this double? (19:37) It is because of data type.
+(19:39) Here, let's understand the concept of it. (19:43) So as we know, so into Kotlin, numbers are provided into two different scenarios or two (19:53) different terms. (19:54) The first one is integer.
+(19:57) And the second term is double like this. (20:03) Into integer, we are going to provide whole numbers, while into double, we are going to (20:13) provide decimal numbers. (20:19) Okay.
+(20:20) What exactly whole numbers are? (20:22) They are 1, 2, 3, 4, 5 and so on. (20:26) They are the whole numbers. (20:27) We didn't say that whole number can be 2.2 or 3 by 2 or 4 by 2. (20:33) They are not whole numbers.
+(20:35) They are not whole numbers. (20:37) Okay. (20:37) One more thing is, even we cannot write into whole number, we cannot write like this.
+(20:45) These things are also not allowed. (20:48) So whole numbers are the complete numbers or a perfect number or a particular number. (20:54) Okay.
+(20:55) While decimal numbers are something different. (20:59) Decimal numbers can be available into the form of this, into the form of this, as well (21:06) as into the form of this. (21:09) Okay.
+(21:10) So now, what exactly happened at the, at the code editor?

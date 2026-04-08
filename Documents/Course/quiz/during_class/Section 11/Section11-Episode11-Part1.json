@@ -1,0 +1,250 @@
+{
+  "items": [
+    {
+      "name": "Section11-Episode11-Part1",
+      "difficulty": "medium",
+      "content": [
+        {
+          "id": "S11-E11-P1-Q1",
+          "question": "Which method is commonly used in Android to react when a user taps a button in Kotlin?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Kotlin","UI","Events"],
+          "options": [
+            { "id": "a", "text": "setOnClickListener" },
+            { "id": "b", "text": "onTouchEvent" },
+            { "id": "c", "text": "onCreateView" },
+            { "id": "d", "text": "onResume" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "The instructor used `setOnClickListener` to add behavior for when the user clicks the button.",
+          "hints": ["Listener methods handle user actions","setOnClickListener is used for button clicks"]
+        },
+        {
+          "id": "S11-E11-P1-Q2",
+          "question": "In the demo the instructor showed a short popup message when the button was clicked — what API was used for this?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Toast","UI"],
+          "options": [
+            { "id": "a", "text": "Toast.makeText(...)" },
+            { "id": "b", "text": "AlertDialog.Builder(...)" },
+            { "id": "c", "text": "Snackbar.show(...)" },
+            { "id": "d", "text": "NotificationManager.notify(...)" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "He used `Toast.makeText(...).show()` to display a simple transient message when the button was clicked.",
+          "hints": ["Short transient messages use Toast","Snackbar is similar but from Material components"]
+        },
+        {
+          "id": "S11-E11-P1-Q3",
+          "question": "After changing Kotlin code the instructor had to reload — which action did he perform to see the changes in the running app?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Run","HotReload","IDE"],
+          "options": [
+            { "id": "a", "text": "Reload/build the app so changes apply" },
+            { "id": "b", "text": "Just save the file, app updates automatically" },
+            { "id": "c", "text": "Restart Android Studio" },
+            { "id": "d", "text": "Disconnect the emulator" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "He reloaded/applied changes so the updated Kotlin file took effect in the running app.",
+          "hints": ["Minor code changes may use Apply Changes","Major changes require rebuild/reload"]
+        },
+        {
+          "id": "S11-E11-P1-Q4",
+          "question": "Which Java/Kotlin code construct did the instructor type letter-by-letter when spelling it in the demo?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Syntax","Listener"],
+          "options": [
+            { "id": "a", "text": "listener" },
+            { "id": "b", "text": "override" },
+            { "id": "c", "text": "interface" },
+            { "id": "d", "text": "println" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "He spelled out 'listener' (L-I-S-T-E-N-E-R) while writing `setOnClickListener`.",
+          "hints": ["It was in the context of setOnClickListener","He spelled the word aloud"]
+        },
+        {
+          "id": "S11-E11-P1-Q5",
+          "question": "In the Kotlin example the instructor used which context argument inside `Toast.makeText`?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["Context","Toast"],
+          "options": [
+            { "id": "a", "text": "this or activity context (e.g., MainActivity.this)" },
+            { "id": "b", "text": "applicationContext only" },
+            { "id": "c", "text": "null" },
+            { "id": "d", "text": "getSystemService()" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "He used the current activity context (e.g., `this`) when calling `Toast.makeText` in the demo code.",
+          "hints": ["First parameter is the context","Activity context is commonly used for Toasts"]
+        },
+        {
+          "id": "S11-E11-P1-Q6",
+          "question": "Why did the instructor say nothing happened at first when the button was clicked after editing the code?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Debugging","Run"],
+          "options": [
+            { "id": "a", "text": "Because he hadn't reloaded/applied the code changes" },
+            { "id": "b", "text": "Because the emulator doesn't support clicks" },
+            { "id": "c", "text": "Because the layout was missing" },
+            { "id": "d", "text": "Because Toast is disabled by default" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "The running app still had the old code — he needed to reload or apply changes so the new click handler would run.",
+          "hints": ["Reload after code edits","Apply Changes vs full rebuild"]
+        },
+        {
+          "id": "S11-E11-P1-Q7",
+          "question": "When demonstrating Java the instructor changed the 'source language' — which setting did he pick to get Java output?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["IDE","Android Studio"],
+          "options": [
+            { "id": "a", "text": "Set source language to Java when creating the Activity" },
+            { "id": "b", "text": "Change Gradle plugin to Java-only" },
+            { "id": "c", "text": "Replace Kotlin runtime with Java" },
+            { "id": "d", "text": "Use a Java compiler flag" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "He selected Java as the source language when creating the new Activity to get a Java-based file instead of Kotlin.",
+          "hints": ["Source language choice affects the generated file" ]
+        },
+        {
+          "id": "S11-E11-P1-Q8",
+          "question": "Which call did the instructor use in Java to bind a button variable to its XML id?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["findViewById","Java","ViewBinding"],
+          "options": [
+            { "id": "a", "text": "(Button) findViewById(R.id.someId)" },
+            { "id": "b", "text": "findViewById<Button>(R.id.someId)" },
+            { "id": "c", "text": "binding.someId" },
+            { "id": "d", "text": "getView(R.id.someId)" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "In Java he cast the result of `findViewById` to `Button`, e.g., `Button b = (Button) findViewById(R.id.loginMyButtonJava);`.",
+          "hints": ["Java requires explicit casting for findViewById prior to generic APIs","Kotlin has synthetic or view binding alternatives"]
+        },
+        {
+          "id": "S11-E11-P1-Q9",
+          "question": "When wiring an OnClickListener in Java, which pattern did the instructor use?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["Java","Listeners"],
+          "options": [
+            { "id": "a", "text": "loginButton.setOnClickListener(new View.OnClickListener() { public void onClick(View v) { ... } });" },
+            { "id": "b", "text": "loginButton.onClick = { ... }" },
+            { "id": "c", "text": "loginButton.addClickListener(() -> { ... })" },
+            { "id": "d", "text": "loginButton.clickListener = null" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "In Java he used an anonymous `new View.OnClickListener()` and implemented `public void onClick(View v)`.",
+          "hints": ["Kotlin uses lambda-style listeners","Java uses anonymous classes for listeners"]
+        },
+        {
+          "id": "S11-E11-P1-Q10",
+          "question": "Which string did the instructor change to demonstrate updating the UI message after clicking?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Strings","Toast"],
+          "options": [
+            { "id": "a", "text": ""},
+            { "id": "b", "text": "Button is clicked -> Login button is clicked" },
+            { "id": "c", "text": "Hello World -> Hello Android" },
+            { "id": "d", "text": "Apply Changes -> Full Rebuild" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "He changed the toast text from a generic 'button is clicked' to 'login button is clicked' to show how changing code updates runtime behavior.",
+          "hints": ["He edited the displayed toast text","Then reloaded to see the change"]
+        },
+        {
+          "id": "S11-E11-P1-Q11",
+          "question": "What does the instructor recommend remembering about file names like adding 'Java' or 'Kotlin' to IDs?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["IDs","Naming"],
+          "options": [
+            { "id": "a", "text": "Naming the ID doesn't change the language or behavior" },
+            { "id": "b", "text": "Adding 'Java' switches the compiler to Java" },
+            { "id": "c", "text": "IDs with 'Kotlin' automatically use Kotlin features" },
+            { "id": "d", "text": "IDs must always match layout filenames" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "He pointed out that adding 'Java' to an ID name is just a name; it doesn't change the language or runtime behavior.",
+          "hints": ["IDs are just identifiers in XML","Language choice depends on source files, not IDs"]
+        },
+        {
+          "id": "S11-E11-P1-Q12",
+          "question": "Which IDE feature did the instructor show to apply small code changes without rebuilding the whole app?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Studio","Apply Changes"],
+          "options": [
+            { "id": "a", "text": "Apply Changes (partial reload)" },
+            { "id": "b", "text": "Invalidate Caches" },
+            { "id": "c", "text": "Clean Project" },
+            { "id": "d", "text": "Sync Project with Gradle Files" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "He used the 'Apply Changes' feature to update only the activity instead of rebuilding the entire app.",
+          "hints": ["Apply Changes updates running activity","Full rebuild uses the top run button"]
+        },
+        {
+          "id": "S11-E11-P1-Q13",
+          "question": "What did the instructor say about choosing between Kotlin and Java for a project?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Kotlin","Java","Preference"],
+          "options": [
+            { "id": "a", "text": "It's a choice — both work; Kotlin is more concise" },
+            { "id": "b", "text": "You must always use Kotlin" },
+            { "id": "c", "text": "You must always use Java" },
+            { "id": "d", "text": "Use neither; use C++" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "He said it's the developer's choice; Kotlin is more concise but Java remains valid and interoperable.",
+          "hints": ["Kotlin and Java interoperate","Kotlin often requires fewer lines of code"]
+        },
+        {
+          "id": "S11-E11-P1-Q14",
+          "question": "When demonstrating the Java approach he removed some XML files — what was he doing to prepare the Java-based screen?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["Project Setup","XML"],
+          "options": [
+            { "id": "a", "text": "He replaced generated Kotlin layout references with Java equivalents and cleaned up XML" },
+            { "id": "b", "text": "He deleted the app manifest" },
+            { "id": "c", "text": "He changed the emulator architecture" },
+            { "id": "d", "text": "He removed all resources" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "He adjusted files (layout and IDs) so the Java activity could reference the same screen and then wired behavior in Java code.",
+          "hints": ["He copied layout contents into the Java-backed activity","IDs remained used for findViewById"]
+        },
+        {
+          "id": "S11-E11-P1-Q15",
+          "question": "What general lesson about controller code versus XML layouts did the instructor emphasize?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Architecture","MVC"],
+          "options": [
+            { "id": "a", "text": "XML defines layout only; controller files (Kotlin/Java) add behavior" },
+            { "id": "b", "text": "XML adds behavior automatically" },
+            { "id": "c", "text": "Controller code is optional for interactive apps" },
+            { "id": "d", "text": "Layout XML contains all event handlers" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "He emphasized that XML layouts only define the UI, and you must add controller code to make UI elements interactive.",
+          "hints": ["Click listeners belong in activity/fragment code","XML is declarative for layout"]
+        }
+      ]
+    }
+  ]
+}

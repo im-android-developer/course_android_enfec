@@ -1,0 +1,83 @@
+(Transcribed by TurboScribe. Go Unlimited to remove this message.)
+
+Now, let's move to the next topic that is Assignment Operator. Imagine you have 100 rupees into your pocket. You spend some of them, you save some, you multiply it by investing or you divide it among your friends. 
+
+Every time you are updating the value of your money. In programming, we need to update variable values in the same way. That's why the assignment operators are used. 
+
+So, what exactly assignment operators are? Assignment operators are the shortcuts that help you to store or update values in variables without writing long formulas. So, let's first see the type of assignment operators we have. Into this, the first operator named as assignment operator, the second operator named as add and assign, the third operator is named as subtract and assign, the fourth operator is named as multiply and assign, the fifth operator is named as divide and assign and the sixth operator is named as modulus and assign. 
+
+So, let's understand one by one what exactly these things are. Let's start with assignment operator. Kindly note this part. 
+
+As the heading of our content, the assignment operator and the type of the assignment operator is also assignment operator. Kindly do not get confused. Actually, others, whatever we have into the previous part, they are the family members of this assignment operator, which add some type or add some value into this. 
+
+So, don't get confused into what exactly assignment operators are or how exactly the name of the heading and the name of the type gets saved. So, first of all, let's understand what it is. Firstly, let's understand what it is. 
+
+So, it is used to put a value into a variable. Let's suppose we have a value bar a, let's suppose I am putting int is equals to 10. So, here we are storing the value 10 into this variable named as a. So, this is done because of this assignment operator. 
+
+I hope you understand the concept that what exactly assignment operator are and why it is used. Why it is used? It is used to initialise or update a variable with a new value. For example, let's suppose here because I am using var now, I need to change the value from 10, I need to change it to let's suppose 20. 
+
+So, here it is done because of the assignment operator. Otherwise, if the assignment operator is not there, I have to make the value plus 10, then only I will get 20 here. So, assignment operator actually helps us to assign the value or to initialise the value or to update a value into a particular variable.
+
+So, let's suppose I am writing x is equals to 5. What does it mean? This statement means or this equation means that this 5 is actually stores into variable named as x. One more thing is, if you look into this equation, for example, if the equation as x is equals to 5. So, here the first one will always be variable as I already told you. Second will be the assignment operator and the third one is the value what we are getting, what we are going to store into this variable. That is how exactly assignment operator works. 
+
+We already saw this into our previous course that how we can assign the value into a particular variable. So, there is no need to assign another value as well. Let us put some more examples of it. 
+
+Let us directly move to another one that is add and assign. The another type of this assignment operator is add and assign, which means this add and assign is symbolised as plus equals to like this. Okay, what exactly it is? It adds a number to a particular variable. 
+
+For example, if I have x is equals to 10. And after this, I am saying x plus equals to 3. So, what will be the new value of x? Yes, exactly the new value if I am going to print this x, print line x, so we will get 13 here. Why? Let us understand the concept. 
+
+At first, we already know that the value that previously assigned at the first part is 10. Then when we write x plus equals to 3, that means we are actually writing x is equals to x plus 3. Where the first x, let me write it down like this. Here, the x is x just like a particular variable, which is going to store some values.
+
+While after this assignment operator, we have the another value of x that has some value that contains some value. And the third one is the value itself. Now, when we are saying that whatever the value you have, just put it aside. 
+
+So, we know that previously we assigned 10 here. So, because of that thing, the equation is becomes like this. And that is how we get 13 here. 
+
+So, because of this thing, add and assign can work here, we do not have to write the whole equation like this. Instead of that, if we are writing x plus equals to 3, it will done our work perfectly. So, let us see how exactly we can do this into our code. 
+
+Let me just first remove this. And let us suppose we are going to, and let us suppose we are going to put some values into this, for example, where a integer is equals to 10. And now, I am going to put another value, let us suppose I am saying that a plus equals to 3. So, what exactly happening here, I am just saying into the first value, I am assigning a value that is 10 to the variable a. And after this into a second line, I am saying that a is equals to a plus 3, where a is storing something into it, the second a variable contains 10 into it as we assigned it previously. 
+
+And then we will add the value 3 into this. So, at last, let us print line and get a here. What exactly we will get into this, we will get 13 here. 
+
+Let us run this. Once we will run, we will find 13 here. Kindly do not confuse into increment order and this assign, add and assign operator. 
+
+Similarly, let us go for another equation. Into the same line, if we are working with add and assign operator, that means add and assign operator, if you are working with the same, that is add and assign operator. Let us suppose this time we have two different variables, that is var a int is equals to 5, var b int is equals to 7. We have two different operators. 
+
+Now, if I need to add this operator, let us suppose into a after getting both of them, let us suppose I need to update this a variable. What exactly I need? I need to add this 7 to this 5 so that we can get 12 value here. What exactly I need? I need the value a is equals to 12. 
+
+So, how exactly we can write this? If we are do it regularly, we have to write the equation like a is equals to a plus b, like this. But thanks to this add and assign operator, we do not have to write such equation or we do not have to write this kind of equation. So, now what exactly I have to do? Instead of writing this equation, I just have to write a plus equals to b. So, what does it mean? Here, a plus equals to mean that I am saying that a is equals to a plus b, where the first variable is going to store something. 
+
+The second variable, the second place, it is holding some value that is 5 and at the b, we are holding 7. So, that is how we get 5 plus 7 and a becomes 12 like this. Let us see this into our coordinator. Let me just remove this. 
+
+I am saying var integer is equals to 5 and var b integer is equals to 7 and I am going to update a by adding b into it. So, now what exactly I have to go with? First of all, I have to just just update the value of a for that thing. Let me put a plus equals to b. Okay. 
+
+What exactly I am saying here? I am saying a is equals to a plus b. Okay. Now, let us put print line and here put a, find out the value of a. Let me run this. Once I do this, you will get 12 here. 
+
+Okay. I hope so you understand the concept of what exactly it is. Now, let us try another example of the same thing. 
+
+This time we have some more examples of it. For example, we have a variable named as let us suppose p that holds integer is equals to 100 and we have another one that is var q integer is equals to 50 and what exactly we need? I need to update this p. I need to update this p here. I want to add this 50 of this, the value of q that is 50 into the existing value that is 100. 
+
+So, that is the exact example what we saw here. Yes. But here is a twist. 
+
+I need to add 20 more into this 50 so that I can get 170 value here. That means into this q variable, I need to add 20 as well, 20 more to get, I need to add 20 more so I can get 170 here. Okay. 
+
+Let me show you what exactly I am saying. I am saying that p is equals to p plus q plus 20 like this. I want to say something like this. 
+
+So, here within q, so here q already holding 50 value and I am going to add 20 here like this. By this, I am getting 70 and by p, I need to p 100 is stored. So, I have to add 100 like this and the new value of p becomes 170. 
+
+I need this 170 here. So, with the help of add and assign, how exactly we can do the same? We just have to put p like this plus equals to q plus 20 within a parenthesis bracket like this and that is all. We will get the same 170 with the help of same equation what we have right now.
+
+Let us see this into a code editor. Let me put this, let me change the name. I am just going to change the name that is p and q and let us suppose this is the 100, this is 50. 
+
+Okay. Now, I am going to update the value of p here. So, I am saying p plus equals to q plus 50 within the parenthesis bracket like this. 
+
+So, you are not using this parenthesis bracket. That is not an issue. But I always recommend to go with parenthesis bracket as it maintains the clarity that what exactly we have written here. 
+
+Okay. So, let us print line here. Let us make a print like p and just run this. 
+
+Once I run this, you will find, oh sorry, I put 50 here. But okay, it is okay because it is 50 and 50 plus 50 is 100 and 100 plus 100 is 200. So, we got the perfect answer. 
+
+Let us suppose 20 here. So, when I, once I get 20, I will get, oh sorry, once I will get the 20, I will get 170. Perfect. 
+
+So, that is how we can work with add and assign operators. I hope so you understand the concept of this.
+
+(Transcribed by TurboScribe. Go Unlimited to remove this message.)
