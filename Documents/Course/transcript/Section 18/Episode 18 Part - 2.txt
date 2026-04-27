@@ -1,0 +1,125 @@
+(Transcribed by TurboScribe. Go Unlimited to remove this message.)
+
+Now, let us move to the functionality that how we can collect the values when user input into this. So, let us move to the kotlin file, that is sign up screen, sign up activity like this. And just remove this view compact, we do not need this at all. 
+
+So, here we have to work with this, till now let me just minimise this and go with that thing only. Into this password, one thing is what is it for, I forget, the password and the confirm password. Into the password and confirm password, we need to look it like password.
+
+So, there is something like we can make some changes into this text input layout and this text input edit text to feel it like a password. So, let us figure out what style we can apply over this field, so that it is look like password field. To do this, let me go something here, because it is a password, so we need to apply toggle password here.
+
+So, before this, let us figure out what attributes we have to apply on this text input layout and this text edit input text to make it modern. So, here if you will see the password field, we have an I over there as well as the counter text. So, how exactly we can put these things over this? Now, into this, if I click on this I button, the password will show to you.
+
+Now, let us move to a text editor like this. And here, let us understand how we can do this. So, you have to apply the icons into this text input layout only. 
+
+Let us see how. So, below this hint text colour, I have to write enable, you will see toggle, somehow you will see toggle or you will see password toggle enabled. You will see password toggle enabled. 
+
+Once you click over this, it will ask about true or false. So, you have to write true like this. Once you write this attribute and provide the value true here, you will see an eye icon is available right now like this. 
+
+Now, also let us put the tint that is password toggle tint. So, password toggle tint means that this eye colour will get changed. I need to change this eye colour, it is black now, but I need to change with blue colour.
+
+So, how exactly you have to go with? You have to write this tint. So, tint means that we have, we are going to provide some colour over the surface. I am writing this and I am putting blue.
+
+So, you will see that is how we can go with, we can go with this kind of colour phase. Similar to this, I have to make some changes in this input type. Instead of text, I need to, I mentioned, instead of text, let me mention text or just password. 
+
+So, you will see the, you will see we have number of passwords here, that is number password, text password, text web password and so on. So, I am going to use this text password here like this. Similar to this, what exactly we need more? We need this counter text as well, that how many characters you are putting inside this password.
+
+To do this, you have to write counter text, counter. So, we have multiple items here. First of all, you have to enable the counter. 
+
+To do this, just put counter enabled like this and use true. Once you will, once you will write true, you will see that here we got 0 below this, below this field. Now, I need, I need that maximum character length will be of 20 characters.
+
+Now, I need maximum length will be of 20 characters. So, I am saying, so for that thing, I have to write counter again like this and here you will see counter max length. Now, I am putting counter max length as 20. 
+
+So, you will see 0 by 20 is available here. Now, after this, I need to put the colour that is VividView. So, it becomes VividView like this.
+
+I hope you understand the concept that how exactly we are, we are going to do this. Now, let us make some changes like, let us make the same changes inside the, I am just copying this, I am just copying this whole or instead of copying, let us revise this into this confirm field, into this confirm password. So, I am just going to put this.
+
+First of all, I need password enabled, password toggle enabled. So, for that thing, I am just using password toggle enabled, true. I get the I button. 
+
+Then I need password int, that is VividView. After this, I need counter. So, counter text colour will be VividView.
+
+It is okay now. So, first of all, the enable the counter, enable the counter. So, I just enable the counter and then put the maximum length that is 20. 
+
+So, it becomes 20 by 20. And after that, what exactly we need? We need text password or you can say password, text password over there like this. So, that is how we ready the password fields as well.
+
+Now, let us run them first. Then see, then see what exactly we are going. We are, what exactly we get? On Chikung Devices.
+
+Let us go with this. So, you will see we have a beautiful fields, we have the password. And when I am writing something, okay, it is still into black.
+
+Okay, there is slight changes. I need to go with some changes here. I forgot to do this. 
+
+So, let us go with full name and write text colour here. Not the text colour like this. Sorry, into this, not into this input, text input field, but inside this text input, edit text. 
+
+Here, write just text colour will be whatever you want, vivid green and I am writing this style, text style will be bold. Okay. So, let us just apply, just click, right click, copy and I am going to apply these things into each and every one like this. 
+
+Okay. Also, you can apply the font family as well. So, let me apply the font family as well.
+
+Without it, it will be, it will not be good. It will not look good. Font family pop is medium. 
+
+Okay. So, just copy this whole thing. Username, enter the username. 
+
+And I am going to replace these two attributes by this gender again like this, password like this and confirm password like this. Perfect. So, we get all the elements right now. 
+
+Now, let us rerun it. Let me go with sign up and you will see we get this. Let me write it again. 
+
+And okay, it is now doing perfect. Okay. Just ignore these things. 
+
+These are just some basic attributes. Let me just put it and perfect. So, let us fill this. 
+
+I am writing, let us suppose Android. Android, sorry, Android, A N D R O I D. It is looking perfect. Username, whatever you want.
+
+I am writing Android again. Gender, let us suppose male or female, whatever you want. Password, let us suppose Android at the rate 1, 2, 3. Okay. 
+
+Okay. You will see when I write the password, the counter also works. Here it states that I entered 11 characters.
+
+And once I click over this I button, you will see the password is still visible now when I click over this. And when I, when I again click over this, you will see it changed to password type now. Similarly, if I go with this, we can also get the same.
+
+Okay. Android at the rate 1, 2, 3. Okay. Now we have to, now we have to work over the functionality of them. 
+
+Into this functionality type or into this functionality, we have to work, we have to understand that how we can collect the values from these text fields, how we can create an account of a user. Okay. So, let us understand it. 
+
+To do so, let us move to our signup activity. Let us minimise it first, like this. Once I have done, let us understand how we can collect the values from these edit text or text input, text input layouts. 
+
+Okay. So, till then, let me just stop this first. Then only we will go with that thing.
+
+Let us move, let us move to the top. I am scrolling up like this. And here from input text layout, I just, I have to put the ID to, I just allowed the ID to each of them.
+
+For that thing, I am writing, just below this text input layout, I am writing ID. And here I am saying full name, full name, like this. And let us copy this. 
+
+And just going to paste each of them like into this. Sorry. We have to put the ID now.
+
+Okay. It is username. So, username, like this. 
+
+So, let us put the gender as well. Gender, then the password, ID, password. And at last, we have the confirm password. 
+
+Confirm password, confirm underscore password, or you can say confirm pwd is also good. Confirm pwd will be good. And at last, sign up button. 
+
+So, let us give an ID, sign up, sign up button, btm. Okay. So, that is how we provided the ID to all of them. 
+
+Now, let us initialise them into our Kotlin file at first. And then we will provide the functionality to them. So, to do so, let us first start with full name. 
+
+So, when we go with full name, let us first create val, val. Write full name value of whatever you want to go with. Just full name, full name, value, like this. 
+
+And then type the cast, all of the cast of it, that is because it belongs to text input, input layout is equals to findViewById. And again, type the name of cast, that is type or text input layout again. And then write resource r.id.fullname, like this. 
+
+Perfect. Now, let us assign another one, that is username, gender, password and confirm password. So, one by one, I am allotting them.
+
+So, cnfpw means confirm password. Perfect. And at the end, we have to provide the name of button, the ID of button, that is signup button. 
+
+So, let us provide the signup button as well. So, okay. So, there are some very squiggly lines. 
+
+When I am just seeing them, they are nothing like they are nothing special. So, just ignore them. There is no any harm from them.
+
+Now, let us provide the functionality. So, first of all, we have to make our button clickable, that whenever this button, that is signup button value, whenever our user will click on this, something will happen. What will happen? We are going to collect the values from these fields into particular variable. 
+
+We are going to collect the values whatever entered by the user and will store into these specified variables. So, for that thing, I am just going to use signup sign, sign, sign, sign, a button value dot set on click listener. By this, we make them, we make it clickable. 
+
+Now, we have to create the variables. So, at first, I am writing var component and I am saying, now, you previously understood that how can we collect the values and store into a particular variable. Into this, it was done into edit text. 
+
+But here, because the edit text is now replaced by text input layout, that is why the writing of component or the writing style to collect the specified text is also gets changed. So, kindly remember this part, whenever the component will change, even they do the same thing as just like the edit text and input text layout do, even for that thing as well, something gets changed. So, to do so, so how exactly we can, so how exactly you have to write the text, let us understand this.
+
+So, at first, you have to, you have to, so at first, you have to mention the target that is full name value. Then you have to put dot and after it, you have to put edit text like this. Then after, like into edit text, you just have to, you just have to put the text only. 
+
+For example, into previous activity, let us go with login screen 2. If you will see here, you just put the name of target, then you will just put the text here. But here, first of all, we have to, we have to put the, we have to put the target, then, then we have to put another, then we have to put another keyword that is edit text. Then after this, we have to put text and then after to string like this. 
+
+But more thing is, you will see that I am getting an error here, like everything whatever I write is correct, but still I am getting some error here, that what is the reason behind it that I am getting here.
+
+(Transcribed by TurboScribe. Go Unlimited to remove this message.)

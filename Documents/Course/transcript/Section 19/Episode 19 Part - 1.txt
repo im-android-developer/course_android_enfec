@@ -1,0 +1,77 @@
+(Transcribed by TurboScribe. Go Unlimited to remove this message.)
+
+Hey students, welcome again. Imagine what will happen if a user does not enter any details inside these boxes. Because of this, it remains null or blank.
+
+If we directly send these values to the database, they will go as empty strings or null values which can create unnecessary issues in our data. So a question arises, how can we avoid this? The answer is validation. We should first check whether the user has entered a value or not.
+
+If the input is empty, we can stop the process or replace it with a default value. There is where Kotlin's null safety feature help us. It can be achieved by using safe call operators or the LYs operators by which we can check if the input is null or blank and then decide what to do.
+
+If the value is present, then allow it to proceed. If the value is missing, provide a default value or show an error message. So let's move to our code editor and understand so how we can use such operators into our code line.
+
+Here, let's move to signup activity like this and inside this line, we have to put safe check and LYs operator. Here the safe call operator checks whether an object is null before accessing it property or method. If the object is null, the whole expression just return null instead of crashing.
+
+For example, if I need to apply a safe call operator here, I just have to put question mark and then dot like this. So this is a safe call operator. Similarly into the same line, we have to apply a LYs operator at the end after this to string.
+
+I have to put question mark and then colon sign and after this into double quotes, I have to write the default value. For example, I am saying John Doe. What exactly this means? What exactly this LYs operator do? If LYs operator takes care about LYs operator checks whether this value is available or not.
+
+If this value is not available, then instead of this value, our LYs operator will provide this value. For example, if this value is null, if user forgets to enter such kind of values or his name or something else, then LYs operator will replace this value by John Doe. I hope so you understand the concept that what is the use of safe call operators and LYs operators.
+
+So let me revise you. Safe call operators checks whether the value is null or not and LYs operator, if the first value is empty, then it replaces by the second one. By whom? By LYs operator.
+
+So let us go with another value as well. Let us first put var, then username value, user name, value, user name, okay, user name only, not the username value, then I am going with string, okay, one more thing, try to avoid same names, okay. For example, if there is username value available, then try to avoid this to put the same name over there, okay.
+
+Now after this, put the name, that is username value, the targeted value, then provide dot edit text, after this apply safe call operator, to do this, first put question mark, then put dot, after this write text, again check with the safe call operator, question mark dot, and then put to string, like this, once it is done, then put LYs operator, to replace the value, if it is null, for example, I am saying John Doe, John underscore Doe, like this, okay. Then we are going with gender value, so let us put gender here, gender, okay, it is also available here into the, as an id, so instead of it, I am putting gender v, v for value, okay. Now I am saying string, like this, is equals to gender value dot edit text, again put question mark to check whether it is null or not, dot text, again put question mark to check it whether it is null or not, this question mark known as safe call operator, to string, then put LYs operator like this, and put the default value, if it is null, so I am saying male here, like this.
+
+After this, let us put password, so I am saying pwdv, that means password value, and it will be string, like this, and I am saying pwd dot edit text, then put safe call operator like this, text, again put safe call operator like this, and now put to string, like this, and now put the LYs operator, and here I am, here I am storing, let us suppose, John at the rate 1, 2, 3, and after this thing, let me go with the same thing, and I am pasting it as cnf, pwd, cnf password value is equals to cnf password, cnf password, and the same, okay. So that is how we gather the values inside text input layout. I hope so you understand the concept that what exactly these things are.
+
+Now after this, we have, okay, one more problem is, let us suppose, if a person just put A or B or C here, for example, what will happen when user types the value like A or B or C or D or something else, but instead of writing name, he just putting A, B, C, D and so on. Similarly, at the place of username, instead of typing the username, he just write A or B or whatever it is. So because this full name or because this text input layout, because this text input layout contains some value, technically it is not remains null, okay.
+
+So because of this, because of this, the system will accept the value whatever we have right now, okay. To avoid this, what you have to do? We have to validate the data again and find out what is the length of this full name, what is the length of this string variable, what is the length of this username, what is the length of this gender, password and confirm password and so on. So to do that, first of all, we have to, first of all, we have to check the conditions and then only we will allow to proceed further, okay.
+
+I hope so you understand the concept whatever exactly it is. Just like we done before, we have to do the same here. So let us move to it.
+
+Now let us put it here. How exactly we have to do this? Just like if else statement, we can do this. So let me write it.
+
+So here I am saying, if full name dot length is lesser than equals to, let us suppose 6. So what exactly I am going to, I am going to print or I am going to show, oh sorry, first of all this, then we have to go with full name should be more than 6, 6 letters. And then we have to put the length like this and then show, okay. Else, what we will do? We will just going to, we will just going to show the full name whatever he is entering to this, okay.
+
+So I am just replacing this double quotes and I am writing full name, okay. So let us just, let us just play this again and we will still getting, okay, no errors here. Okay, we are getting some crashes.
+
+Yeah, we are getting some crashes. Why exactly we are, let us find out why exactly we are getting crash. Here, is there anything wrong? What we done? Text input layout, username, everything is good.
+
+I mean actually what? Let me see what is really happening here. Activity signup does not contain, okay. Okay, here maybe we declare a wrong ID, that is why.
+
+So here it is username, text input layout and ID.username, maybe it is username now. Yeah, it is username. So we have to put the user, okay, username.
+
+Okay, I actually put something wrong, that is why it happened here. I actually write the short name, that is why. So you have to remember this thing as well, that if we put the wrong address here, we will also get here, we also get error.
+
+Let me run this again, let me launch this again. And just go with signup, perfect. And I am writing, let us suppose Android and the username, let us suppose the username will be ABC, gender will be let us suppose male, password 12345, 12345 and signup.
+
+Once I go with signup, you will see Android here, okay. If I remove this, what exactly I will get? The question arises, if I remove this, what exactly I will get? So there may be two chances of getting something. The first one is that if I leave this blank, hence the John Doe will be printed, okay.
+
+But, so let me go with this. So you will see we will get full name should be more than six letters, okay. Why exactly it happened? Because of this if else statement, we get the same, okay.
+
+That means that if I leave it blank, if I leave it blank, somehow these things will work. But because I am, but because the value is completely blank, hence I have got this full name should be more than six error, okay. So let us suppose if I put a here like this, okay, why exactly I got the error? Because the length is less than six, because I did not put anything here.
+
+Oh, sorry, because I did not put anything here, that is why the length of that full name becomes zero. And because it is zero, we got this error, okay. So let us suppose if I put a again, and I put sign up, you will see we get the error.
+
+If I again put a, again I am getting error. If I am put this, again I am getting error. If I am put this, now it is perfect, okay.
+
+So that is how we can validate such kind of things. I hope so you understand the concept that what exactly it is, what exactly it is going on. Now, similarly, we have to check one more thing, that the password and confirm password is same or not, okay.
+
+If the password and confirm password is same, then we will go to vote. Otherwise, we have to tell to the user that password and confirm password is not same. To do this, we can add some more codes between these if and else statement.
+
+Between this if and else, we have another statement named as else if, like this, okay. And we are getting error because we have to put space between else and if, like this. Into this else and if, what exactly else if is? So else if is another version of this if statement or if-else statement.
+
+Here, when we have multiple conditions to judge, for example, I judge or I compare or I validate a single condition into this if statement, I have one more condition which I need, which I want to validate separately. For that thing, I have to use else if. While else is only used that if no any condition will or if no any condition is true, the else statement will work, okay.
+
+One more thing is that else if should be declared after if and before else statement, okay. So let me go with this. I am saying that pwd or password value is equals to equals to cnf password value.
+
+Then what exactly we will say? We will say, one more thing is, okay, I am saying not, okay. What exactly I am judging? I am saying that if the password is not equals to the confirm password, then what exactly we will get? We will get password and confirm password is not matching. Or you can say password and confirm password should be same, okay.
+
+Now, I am just reloading this again. Once I have done, let us suppose I am saying abc, abcdefg, like this. Username will be abc, gender male, pass male, sorry, male.
+
+Okay, let me just do like this. Password abc and write 1, 2, 3. Password abc, now I am just making a mistake into password. So I am just abc at the rate 1, 2 and 2, okay.
+
+So you will look on this. At first, I am saying abc at the rate 1, 2, 3. At second, I am saying abc at 1, 2, 2. So when I click on sign up, you will see I have got an error, password and confirm password should be same, okay. So that is how with the help of if-else statement, we can also validate this issue, okay.
+
+(Transcribed by TurboScribe. Go Unlimited to remove this message.)

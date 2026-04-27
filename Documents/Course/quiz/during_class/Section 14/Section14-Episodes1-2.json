@@ -1,0 +1,256 @@
+{
+  "items": [
+    {
+      "name": "Section14-Episode14-Part1",
+      "difficulty": "medium",
+      "content": [
+        {
+          "id": "S14-E14-P1-Q1",
+          "question": "What happens when you multiply an `Int` by a `Double` in Kotlin?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["types","multiply"],
+          "options": [
+            { "id": "a", "text": "The result is promoted to Double" },
+            { "id": "b", "text": "The result stays as Int" },
+            { "id": "c", "text": "Compilation error always" },
+            { "id": "d", "text": "The result becomes String" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "When an Int and a Double are used together the result becomes Double (preserves decimal).",
+          "hints": ["Mixed-type arithmetic promotes to the wider type","Look for decimal preservation"]
+        },
+        {
+          "id": "S14-E14-P1-Q2",
+          "question": "Why did `x *= y` cause an error when `x` was declared as `Int` and `y` was `Double` in the reversed example?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["types","assignment"],
+          "options": [
+            { "id": "a", "text": "Because Kotlin doesn't allow implicit narrowing from Double to Int" },
+            { "id": "b", "text": "Because *= is not a valid operator" },
+            { "id": "c", "text": "Because variables must be val not var" },
+            { "id": "d", "text": "Because multiplication with doubles is forbidden" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "Kotlin forbids implicit narrowing; a Double cannot be directly assigned back into an Int variable.",
+          "hints": ["Check type conversion rules","Look at assignment type mismatch message"]
+        },
+        {
+          "id": "S14-E14-P1-Q3",
+          "question": "What does the compound operator `/=` do?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["operators","divide"],
+          "options": [
+            { "id": "a", "text": "Divides the variable by the right-hand value and stores the result" },
+            { "id": "b", "text": "Adds and assigns a value" },
+            { "id": "c", "text": "Calculates remainder and stores it" },
+            { "id": "d", "text": "Performs integer division only" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "`x /= y` is shorthand for `x = x / y` (updates x with the division result).",
+          "hints": ["It's a divide-and-assign operator","Equivalent to explicit divide then assign"]
+        },
+        {
+          "id": "S14-E14-P1-Q4",
+          "question": "Given `var total = 100` and `val people = 4`, what does `total /= people` produce?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["compound","mutability"],
+          "options": [
+            { "id": "a", "text": "25" },
+            { "id": "b", "text": "100" },
+            { "id": "c", "text": "4" },
+            { "id": "d", "text": "Error because people is val" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "`total` (mutable) is updated to `total / people` → 100 / 4 = 25.",
+          "hints": ["`val` cannot be reassigned but can be used in expressions","Division result stored into `total`"]
+        },
+        {
+          "id": "S14-E14-P1-Q5",
+          "question": "What does the modulus-and-assign operator (`%=`) store in a variable?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["modulus","operators"],
+          "options": [
+            { "id": "a", "text": "The remainder after division" },
+            { "id": "b", "text": "The quotient" },
+            { "id": "c", "text": "The decimal part of a division" },
+            { "id": "d", "text": "A boolean indicating divisibility" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "`x %= y` sets `x` to `x % y`, the remainder of the division.",
+          "hints": ["Think leftover after equal distribution","Use for remainders"]
+        },
+        {
+          "id": "S14-E14-P1-Q6",
+          "question": "If `candies = 26` and `children = 6`, what is `candies %= children`?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["modulus","problem"],
+          "options": [
+            { "id": "a", "text": "2" },
+            { "id": "b", "text": "4" },
+            { "id": "c", "text": "0" },
+            { "id": "d", "text": "6" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "26 % 6 = 2, two candies remain after distributing 4 each to six children.",
+          "hints": ["26 = 6*4 + 2","Remainder is 2"]
+        },
+        {
+          "id": "S14-E14-P1-Q7",
+          "question": "Why did the instructor demonstrate subtracting from the divisor or dividend when aiming to get a specific quotient/remainder?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["problem solving","modulus"],
+          "options": [
+            { "id": "a", "text": "To adjust values so the result meets a target (quotient/remainder)" },
+            { "id": "b", "text": "Because Kotlin requires adjustments before modulus" },
+            { "id": "c", "text": "To cause a compilation error intentionally" },
+            { "id": "d", "text": "To convert ints to doubles" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "Adjusting operands can change quotient/remainder and achieve desired outputs in exercises.",
+          "hints": ["Think arithmetic manipulation","Use subtraction/addition to align values"]
+        },
+        {
+          "id": "S14-E14-P1-Q8",
+          "question": "Which operator would you use to reduce a variable by dividing and keeping the updated value in that variable?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["operators","recall"],
+          "options": [
+            { "id": "a", "text": "/=" },
+            { "id": "b", "text": "*=" },
+            { "id": "c", "text": "%=" },
+            { "id": "d", "text": "+=" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "`/=` is the divide-and-assign operator that updates the variable with the division result.",
+          "hints": ["It's the divide shorthand","Equivalent to `x = x / y`"]
+        },
+        {
+          "id": "S14-E14-P1-Q9",
+          "question": "When the instructor changed `x = x * y` to `x *= y` the IDE offered suggestions. What is one likely suggestion related to types?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["IDE","types"],
+          "options": [
+            { "id": "a", "text": "Convert expression to Int or import int.times operator" },
+            { "id": "b", "text": "Replace `*=` with `+=" },
+            { "id": "c", "text": "Change var to val automatically" },
+            { "id": "d", "text": "Split the expression into multiple lines" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "The IDE suggested converting the expression to Int or importing helper operators when there's a type mismatch between Int and Double.",
+          "hints": ["Look for assignment type mismatch suggestions","IDE helps with conversions"]
+        },
+        {
+          "id": "S14-E14-P1-Q10",
+          "question": "What is the main reason Kotlin prevents assigning a Double result back into an Int variable without an explicit conversion?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["types","safety"],
+          "options": [
+            { "id": "a", "text": "To avoid implicit data loss and enforce explicit conversions" },
+            { "id": "b", "text": "Because Kotlin doesn't support Doubles" },
+            { "id": "c", "text": "To improve runtime performance" },
+            { "id": "d", "text": "To prevent arithmetic operations" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "Implicit narrowing would silently lose fractional data; Kotlin requires explicit conversion to make the programmer aware.",
+          "hints": ["Think safety and explicitness","Narrowing conversion must be explicit"]
+        }
+      ]
+    },
+    {
+      "name": "Section14-Episode14-Part2",
+      "difficulty": "medium",
+      "content": [
+        {
+          "id": "S14-E14-P2-Q1",
+          "question": "What is the operator for equality comparison (not assignment) in Kotlin?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["comparison","syntax"],
+          "options": [
+            { "id": "a", "text": "==" },
+            { "id": "b", "text": "=" },
+            { "id": "c", "text": "!==" },
+            { "id": "d", "text": "<-" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "`==` is the equality comparison operator; single `=` is assignment.",
+          "hints": ["Double equals compares values","Single equals assigns"]
+        },
+        {
+          "id": "S14-E14-P2-Q2",
+          "question": "What type does a comparison expression return?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["boolean","comparison"],
+          "options": [
+            { "id": "a", "text": "Boolean (true or false)" },
+            { "id": "b", "text": "Int (0 or 1)" },
+            { "id": "c", "text": "String ('true'/'false')" },
+            { "id": "d", "text": "Double (0.0 or 1.0)" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "Comparison operators produce a Boolean result: either true or false.",
+          "hints": ["If/else conditions rely on Booleans","True/false answers"]
+        },
+        {
+          "id": "S14-E14-P2-Q3",
+          "question": "Given `x = 100` and `y = 50 * 2`, what does `x == y` evaluate to?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["evaluation","comparison"],
+          "options": [
+            { "id": "a", "text": "true" },
+            { "id": "b", "text": "false" },
+            { "id": "c", "text": "Compilation error" },
+            { "id": "d", "text": "Depends on types" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "50 * 2 = 100, so x == y is true.",
+          "hints": ["Compute the arithmetic expression first","Equality compares final values"]
+        },
+        {
+          "id": "S14-E14-P2-Q4",
+          "question": "Which comparison operator checks 'greater than or equal to'?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["comparison","operators"],
+          "options": [
+            { "id": "a", "text": ">=" },
+            { "id": "b", "text": "<=" },
+            { "id": "c", "text": "<>" },
+            { "id": "d", "text": "=>" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": ">= checks if left operand is greater than or equal to the right operand.",
+          "hints": ["Look for greater-or-equal symbol","Common comparison operator"]
+        },
+        {
+          "id": "S14-E14-P2-Q5",
+          "question": "Why use `==` instead of `=` in conditional checks?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["best practice","syntax"],
+          "options": [
+            { "id": "a", "text": "`==` compares values and returns a Boolean; `=` assigns a value" },
+            { "id": "b", "text": "`=` compares values and `==` assigns" },
+            { "id": "c", "text": "Both are interchangeable" },
+            { "id": "d", "text": "`==` is only for strings" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "Using `=` in a condition would attempt assignment (and is invalid); `==` performs comparison returning true/false.",
+          "hints": ["Think of questions that return true/false","Assignment vs comparison distinction"]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "items": [
+    {
+      "title": "Navigate to Dashboard After Login Validation",
+      "instructions": "**Problem:**\\nSimulate a login check and navigate to the Dashboard screen upon successful credential verification.\\n\\n**What we want:**\\nDeclare stored credentials `val userId: String = \"android\"` and `val userPassword: String = \"android@123\"`. Declare user input `val username: String = \"android\"` and `val password: String = \"android@123\"`. Use `if` with `&&` to check both credentials. If both match, print `\"Login Successful\"` on the first line and `\"Navigating to Dashboard\"` on the second line. Otherwise, print `\"Invalid Credentials\"`.\\n\\n**Syntax:**\\n```\\nif ((username == userId) && (password == userPassword)) {\\n    println(\"Login Successful\")\\n    println(\"Navigating to Dashboard\")\\n} else {\\n    println(\"Invalid Credentials\")\\n}\\n```\\n\\n**Example 1:**\\nusername = \"android\", password = \"android@123\"\\nOutput:\\nLogin Successful\\nNavigating to Dashboard\\nExplanation: Both match, so success message and navigation happen.\\n\\n**Example 2:**\\nusername = \"android\", password = \"wrong\"\\nOutput: Invalid Credentials\\nExplanation: Password doesn't match, so else block runs.",
+      "difficulty": "medium",
+      "language_key": "kotlin",
+      "time_limit": 2,
+      "memory_limit": 256,
+      "starter_code": "fun main() {\n    // Declare userId, userPassword, username, password\n    // Use if with && to check both credentials\n    // Print \"Login Successful\" and \"Navigating to Dashboard\" or \"Invalid Credentials\"\n}",
+      "execute_template": "",
+      "solution_code": "fun main() {\n    val userId: String = \"android\"\n    val userPassword: String = \"android@123\"\n    val username: String = \"android\"\n    val password: String = \"android@123\"\n    if ((username == userId) && (password == userPassword)) {\n        println(\"Login Successful\")\n        println(\"Navigating to Dashboard\")\n    } else {\n        println(\"Invalid Credentials\")\n    }\n}",
+      "test_cases": [
+        { "input": "", "output": "Login Successful\nNavigating to Dashboard", "is_sample": true }
+      ]
+    },
+    {
+      "title": "Multi-Destination Navigation Selector",
+      "instructions": "**Problem:**\\nSimulate multi-destination navigation based on a user's role using `if`, `else if`, and `else`.\\n\\n**What we want:**\\nDeclare a user role `val userRole: String = \"admin\"`. Use `if`, `else if`, `else` to check the role:\\n- If `userRole == \"admin\"`, print `\"Navigating to Admin Dashboard\"`\\n- Else if `userRole == \"user\"`, print `\"Navigating to User Home\"`\\n- Else, print `\"Navigating to Guest Page\"`\\n\\n**Syntax:**\\n```\\nif (userRole == \"admin\") {\\n    println(\"Navigating to Admin Dashboard\")\\n} else if (userRole == \"user\") {\\n    println(\"Navigating to User Home\")\\n} else {\\n    println(\"Navigating to Guest Page\")\\n}\\n```\\n\\n**Example 1:**\\nuserRole = \"admin\"\\nOutput: Navigating to Admin Dashboard\\nExplanation: Role matches \"admin\", so the first block executes.\\n\\n**Example 2:**\\nuserRole = \"user\"\\nOutput: Navigating to User Home\\nExplanation: Role matches \"user\", so the else if block executes.\\n\\n**Example 3:**\\nuserRole = \"visitor\"\\nOutput: Navigating to Guest Page\\nExplanation: Role matches neither, so the else block executes.",
+      "difficulty": "medium",
+      "language_key": "kotlin",
+      "time_limit": 2,
+      "memory_limit": 256,
+      "starter_code": "fun main() {\n    // Declare userRole\n    // Use if, else if, else to navigate based on role\n}",
+      "execute_template": "",
+      "solution_code": "fun main() {\n    val userRole: String = \"admin\"\n    if (userRole == \"admin\") {\n        println(\"Navigating to Admin Dashboard\")\n    } else if (userRole == \"user\") {\n        println(\"Navigating to User Home\")\n    } else {\n        println(\"Navigating to Guest Page\")\n    }\n}",
+      "test_cases": [
+        { "input": "", "output": "Navigating to Admin Dashboard", "is_sample": true }
+      ]
+    }
+  ]
+}

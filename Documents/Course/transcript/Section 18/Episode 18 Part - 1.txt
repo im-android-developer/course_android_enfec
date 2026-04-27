@@ -1,0 +1,121 @@
+(Transcribed by TurboScribe. Go Unlimited to remove this message.)
+
+Hey students, welcome again. So now, let us understand how we can design sign up screen. So for that, let us first see how exactly it should be look like.
+
+So here, we are going to design such kind of screen which contains an avatar and heading screen named as create account, some input text like full name, user name, gender, password and confirm password and at last, we will go with sign up button. But if you will see over the screen and compare to the login screen, you will find some differences into this. Here, if you will see, when we put edit text into login screen, it look like this.
+
+But if you will see into the create account screen, there are some boxes available. I did not provide any special effect over these boxes. Instead of it, I am using a new component named as text input layout.
+
+So let us understand that what exactly text input layout is and how we can design such kind of screens. So let us open the XML file of sign up screen like this. Once you will do this, you will see we have the text view named as sign up screen.
+
+Let me minimise this again. And before moving further, let us first understand the UI architecture of this and then only we will design the screen. So if we are looking over this, we will find the margin from top is 10 dB, while this image is now 100 dB into 100 dB, there are text, the text, the text, the size of text of login screen create account is almost the same.
+
+Then we have to put the margin of 20 dB again and after this, we have to put these text input layouts and between two text input layouts, we have 10 dB of margin right now like this. And after this, after the end of text input layout, we have 20 dB of margin, then we will get the sign up button right now. So let us understand, so let us now understand that how we can place them properly.
+
+Let us go with this thing. And here, instead of writing whole stuffs again and again, as I told you earlier that you can just copy and paste the elements whatever it is, just make sure that this context should be unique and the context should be belongs to the activity only. Okay, that means if it is sign up activity, so here the context should be here the context should be of sign up activity only and not for the other one, otherwise it will create some miss in front of you.
+
+Okay, now let us work with this. So for that thing, just make sure to not change the sign up activity and I am taking login screen activity, login screen 2 like this and I am just copying these image view items like this, from this to this, copy and I am going to place, I am just replacing this text view at first and I am just going to place this. So we will get the same as we have into login screen.
+
+Now, I have to, I have to work over this linear layout as well. So till the background I am just copying these stuffs while context is, while I am leaving the context. So I am just, I am just go for the, let me use this like this and I am just replace and paste and you will see it becomes the same.
+
+Okay, now let us change something into it. So we have 100 dp right now like this and 100 dp like this, okay and here the margin from the top is 100, so let us put 10 like this and all these stuffs are good. Now the text, we have to change the text that is sign up screen, I think the sign up screen is there.
+
+Okay, it is create account, so let us put create account here, create account here like this. Once you will do this, now it is time to put, to replace this edit text by input layout, by input, by text input layout, okay. So I am just going to replace these things like till the app contact button and the text view like this, we will put it further and after this I am going to put text input layout.
+
+So, okay one more thing is let me, okay it is good. So try to focus on these things, what exactly I am going to, what exactly I am going to type. So first of all I have to write text input, when I am writing text input you will see we have text input and text input, so we have two different options right now.
+
+Once I press the down arrow click, you will see the full name of, full name of the component into the suggestion box like this, okay. Now we have, here we have text input layout like this, so we actually have to choose text input layout at first like this and here it is asked for width, like what exactly width will be. So I am just taking an idea from this login screen that what exactly width we use here.
+
+So here we use, not text view, here we use, actually match parent, here we use match parent and wrap content right now. So I am also going to use match parent and wrap content like this. Once I have done, then it asks me for, like for the margins as well, like margin right, margin from this.
+
+So let me go with this, like I am putting the margins and instead of from the top I am just put to like how many, how much margin we have, we have 20. So I am just putting 20 here like this and instead of like 35, 35 dp's are there, so we can also put like, we can, we can put to over this 35 dp of margin, if we need we can change it later, okay. Now let us put the base colour, now let us put the box colour of it, to do this I have to write box and you will see box stroke colour like this, you have to go with this and into this I am, and into this I need at the rate colour vivid blue, so I just set it here like this.
+
+Once I have done, also I need to put, also I need to set the stroke colour as well. For example the width, the width of this box, you will see the outline width of this box, I need to set it there, for that thing we have to use box stroke width and I am using 2 dp like this. Once it is done, also put the heading, also put the hint into this, for example I am saying enter your, as we know full name, so I am just using full name here only, full name.
+
+And let us, let us just, let us just put the colour for this full name as well, so I am writing hint text colour and this will be vivid blue as well. So, now it is almost gets completed, we need to do some changes and I also, and I also explain that what exactly it is, that what exactly the name of it is. Instead of edit text, if you will see, into this edit text, we just write the name of component named as edit text only, we just write the component name that as edit text.
+
+But, instead of it, here we are writing such a long name, that text input layout, instead of text input layout, we write com.google.android.material.textfield.as text input layout, why it is and why it is such a long name, so we have to discuss, we have to discuss on this as well. For now, just close this, instead of putting slash, I am going to close this by angle bracket like this. Once you have done, you actually, you actually design the outer part, what does it mean? So let us understand about this text input layout at first, then only we will move further.
+
+So here, text input layout acts as an outer container or frame or shell that adds material design features such as floating, such as floating labels, outline boxes, error text, helper text, counters and icons. Solely, it is not an input field completely, it is just act as decorative element. Similarly, inside it, we place a text input edit text, which is a specialised edit text optimised to work with text input layout.
+
+It handles the text input by user. So we have to use both of them into a manner to achieve high end functionality. Also, both of them are a part of material design components, which follows Google's official user interface guidelines or code editor to understand them clearly.
+
+Here, what exactly we design is actually text input layout, that is the outer one. Now we also have to design the inside one, which holds the text or which handles the user input text. To do so, from here, we have to put text input edit text.
+
+So, to do this, let us write text input and you will see text input edit text at the top. Now just hit enter like this and into this I am saying match parent and match parent like this. Once you have done, you will find it out.
+
+It appears here like this. Or you can do some other things as well. If you put wrap content, it will also be the same.
+
+There is no any change between this. Now after this into edit text input edit text, you have to mention the input type that in which you have to mention the type of input. For example, if you are collecting the name, that means user will put alphabets.
+
+And if he is entering alphabets, we have to go with text. So let's put input type like this. And here because we need text, so I am just writing text into this t-e-x-t and you will see text here.
+
+So into this text input edit text, we just have to mention these things only. So let's close this and you will see the system is and you will see the text input layout is completed right now. So here let me revise this.
+
+First of all, whenever we are going with text input layout or material design, first of all, we have to put the text input layout like this as outer shell and inside it we have to we have to maintain the handler that is text input edit text. Okay. Now, if you'll see now first let's run this and then first let's run this and identify that exactly what we get.
+
+Let me. Okay. So let me just reload this app right now like this.
+
+Once we get let's go with sign up to create an account. And here you will see there's an error. What exactly error is? If you.
+
+Okay. Let me just let me just shift to XML codes only like this. Here I am saying that the outside colour or the colour of that box, for example, if you'll see here.
+
+If you'll see this, if you'll see the colour of this box, it is bluish in colour. Yes. But here, if you'll see, there's no bluish, the stroke is not blue in colour.
+
+Okay. But when I click over this, then you will see that the colours get changed. Right.
+
+Here's a catch. The catch is that let me just back like this and go with this thing. Okay.
+
+So the catch is that the colour, whatever is set it here, that the black colour, whatever is set it here is actually the default colour, which comes from this material name. Okay. Because it's a default colour, that's why it's not getting changed by this box stroke colour.
+
+Okay. I hope so. I hope so you understand the concept that what exactly I'm going to say when we click on this full name, when it's get activated, then only it adopts the colour that's the vivid blue.
+
+But when it's not, when it's inactive, inactive means that user is not working with it. That's why it's inactive. So when user will work on it, it will, it will become active.
+
+And once it becomes active, it will adopt the colour that is box stroke colour equals to vivid blue. But here, if it is still not active, but here, if it is inactive, still it has to adopt the colour of that vivid blue. To do this, we must have to make some changes inside this material design.
+
+Okay. But we cannot direct, but we cannot do it directly. Instead of it, there's a, instead of it, there's a trick to do this.
+
+For this, just come over the colours like this, like this, come over the colours to do this, just to do this, just come over the colour section like this. And here let me just, and here you have to write a simple line. Okay.
+
+And here you have to write a simple line. That is colour name equals to mtrl underscore text input, underscore default, underscore box, underscore stroke, underscore colour, like this. Okay.
+
+Once you do this, you have to put the name of colour, whatever you want to set over this. For example, into our case, I need vivid blue. So because vivid blue is still available here, I don't have to write this colour code into this.
+
+Instead of this, I'm just going to put the name colour vivid blue like this. Okay. And the mtrl text input default box stroke colour, or you can, what exactly this is.
+
+So actually with the help of this line, you are just replacing the, you are just replacing the default colour of this material by the specified colour, what you have mentioned into this. Okay. Don't worry about this.
+
+If you will search over the internet, you will find the best solution for this. Because somehow we have to replace the defaultness, somehow we have to replace the default values of it. To do this, we have to apply these kinds of things.
+
+I hope so you understand the concept, what exactly I'm saying. Now, once I've done, now, once I've done, just reload this app, do not make changes into this. Just reload this app right now.
+
+Now, when I do this, sign up to this and you will see, we get the specified thing, okay. But still the, still the, the hint colour is not visible here to do this, to do the same, just put hint again and you will see hint, you will see text colour hint, okay. Just click over this text colour hint and put vivid blue again and apply this.
+
+So that's how we can apply these styles over our text input layout, okay. Now the magic is, let me reload this again. Now the magic is, if I click over this, you will see the animation, the floating animation where it goes at the upper side.
+
+So it's actually looks good. That's why we use them. Now what we can do after this, we have to like, I'm just going to copy and paste like I have to do this like this, okay.
+
+Now I'm going to just copy and paste it to provide other fields as well. For example, into this we have full name, username, gender, password and confirm password. So let's go with that thing.
+
+I'm going to just copy the whole thing and I'm going to paste them 1, 2, 3, 4 and 5. So here the distance between them is 20 dp. I'm going to change that. So at first, I have to come at first and then second, like this one, I have from the top, I need 10 dp only, like this.
+
+And inside this, the hint will be username only, username, like this. Once you have done, we have to move to third one, that is, let's put, let's decrease the width for name and here we and here we have to put gender. So I'm going to put gender here, gender, let's replace the hint by gender, then we have to go with some other things that is password and confirm password we have.
+
+So let's go with password and confirm password. Okay, perfect. So we have all these stuffs right here.
+
+And we just have to create a button as well. And we just have to create a button only. So at the last, I am just going to create a button.
+
+So instead of it, I'm just, let me close this, instead of it, I'm just going to use this button only. So I'm just putting this, like, copy this, and I'm pasting it here like this. Once I've done, you'll see login button here.
+
+So instead of login, let's put sign up, sign up. And here I'm just removing the ID right now. Okay.
+
+Margin from top 50. Okay, it's good. No worry.
+
+Okay, let's see this, that how exactly it look like. So I'm just reloading this whole thing. Once I've load.
+
+So I have this sign up screen, sign up to create an account, just click over this and you will find a beautiful screen over there. When I click over this full name, username, gender, password, confirm password. So every time you'll see some animations are appearing there.
+
+Okay. So that's how we can use this text input layout or the material design into our components. Okay.
+
+(Transcribed by TurboScribe. Go Unlimited to remove this message.)

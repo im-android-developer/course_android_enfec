@@ -1,0 +1,163 @@
+(Transcribed by TurboScribe. Go Unlimited to remove this message.)
+
+Let's understand what happens if we use functions. The first thing is that our code is going to organise into logical chunks. The second thing is it is reusable. 
+
+For example, like if you create a function named as addition function. Okay, so let's suppose every time whenever we create so every time whenever we need this addition function we just going to use them. For example, as I told you before that we have several variables var a is equals to 5 and var b is equals to 10. 
+
+Similarly, again we have the same variables x is equals to 10 and var y is equals to 20. Again we have variables for example var c is equals to 30 and var d is equals to 50. So if function is not there every time we have to write a plus b or x plus y or c plus d and so on. 
+
+But because we have function instead of write a plus b or x plus y or c plus d we just have to write add a comma b. Similarly, we'll use this add here as well add x plus y. Similarly, we can use add here as well that is add c comma d. That means single function can be used at multiple positions. So that's called reusability. That means you just have to write it once you just have to write it once and use multiple times. 
+
+The third part is it is very easier to test and extend. It is easier to test and extend. I hope so you understand why exactly we use functions and why they are so important for us. 
+
+Now let's understand how we can create them and use into our Android Studio. So let's move to Android Studio at first like this. And here before I make the functions inside these login or plan of activity, I'm going to create a new file a new kotlin file like this kotlin file with the name of some practise or whatever you need. 
+
+So I am going with practise file practise file and I am selecting this kotlin at the second position and I hit enter we'll get this. So inside this practise file, we'll understand how we can create functions there. Okay, now let's understand how we can create a function. 
+
+You already know that inside main activity main kotlin file.kt, we already created a function here. But this time we created a main function to execute the things. Yes. 
+
+But here into this practise file, we are going to learn that how exactly we can build functions and how exactly we can use them to main functions. Okay. So let's start with it. 
+
+Let's go with function fun to start with function like let me like this to create a function. First of all, you have to tell the kotlin that I am going to create a function to do this. We'll write fun like this. 
+
+Let me show you on the whiteboard first, then we'll code it here. So to create a function, first of all, we have to write fun. This fun is a keyword which tells kotlin that I am going to create a function. 
+
+Okay. After this fun, you have to write the name of function, the name of function. Okay. 
+
+This name of function actually provides the reference that what code or which or which function we have to execute. Okay. After this, after this name of function, you have to provide the parenthesis brackets like this.
+
+Okay. Parenthesis brackets like this. Now what exactly or why exactly we are using these parenthesis brackets. 
+
+These parenthesis brackets helps us to provide the parameters to provide the parameters or you can to provide the parameters or in short, you can also say provide the input to them. As we learned earlier that function is like a machine into which we are providing some kind of inputs to them. Then they will do something and then provide some kind of input to us. 
+
+So how exactly we are going to provide the inputs? With the help of this parenthesis bracket, we will be able to provide the parameters or you can say the input to them. Okay. After this, you have to provide the type. 
+
+After this, you have to provide the colon first like this. And after this colon, you have to provide the return type of it. The return type.
+
+What exactly this return type means? This return type means that whenever the output will come, whenever the output will come, it will come into which frame? It will come into which frame or into which data type. Okay. So you have to actually mention this part, this return type. 
+
+Kindly note this that it is completely optional. It is not mandatory to provide the return type every time. It is based on your inputs or based on the processing that what exactly you are expecting, that what exactly you are expecting from them. 
+
+After this return type, you have to provide the curly braces like this. Okay. And inside these curly braces, we will mention the process. 
+
+We will mention the process, whatever we are going to do inside this function. Okay. I hope you understand the concept. 
+
+Let me revise it first. So first of all, you have to provide fun. That means function. 
+
+That's a keyword which tells us, which tells the Kotlin that we are going to create a function. Then we have to create a reference name. That is the name of function by which we can call the specified function whatever, whenever we need. 
+
+Okay. Then after this name of function, we have to provide the parenthesis brackets. That means these parenthesis brackets, which allows us to put the input inside them. 
+
+After this, we have to provide a return type which provides an idea that what exactly the type of an output we will get after processing. After this, we have to provide the curly braces like this. And inside these curly braces, we have to provide the process, whatever we are going to do inside this name of function.
+
+So let's see how we can do this inside Android Studio. So first of all, as mentioned here, we have to write the function fun like this to mention that we are going to use a function or we are going to create a function. And after this function, I am using the name that is square like this. 
+
+So this square is the name of function. After this square, I'm going to use the parenthesis bracket. This parenthesis bracket will contain the input of mine. 
+
+Okay. Now we have to provide the input inside this. So how exactly we are going to provide the input? Inside this parenthesis bracket, we just have to mention what we need or what the values we need. 
+
+For example, because we are going to do square, so we need a particular number here. Okay. So inside this parenthesis bracket, we have to provide a specific variable or a number, whatever we need. 
+
+So let's suppose I said the name of my variable is num like this and it is of integer data type. Okay. Whatever the value you will put inside this, inside this parenthesis bracket, it will hold it by this num value.
+
+Okay. And what exactly it is of? It is of integer data type. So let's come over there.
+
+And here I'm saying num like this. And after the colon, I'm saying integer data type. That means I'm saying that the number, that the num, the variable is of integer data type. 
+
+This num will hold the value, whatever I'll put inside this parenthesis bracket. After this, we have to put colon again, and then we have to provide the return data type. Let's suppose in what data type or what will be the data type of my output? We have actually mentioned the data type of our output.
+
+Okay. Always remember, it is not necessary to put this. Then I'll go with these curly braces like this. 
+
+Inside this curly braces, we first have to write return. What exactly return means? That whenever we do some process, I'll accept the, let's understand on whiteboard first. So here, what exactly happening? I am giving you an input, you receive the input, you do some process over there. 
+
+And after the process, you will say that I'll return, you'll return the output here. After the process, you will return the output here. So actually the providing of output is return. 
+
+Instead of output, you can also say that we are returning something. Okay. So here I'm saying that what exactly I'm going to return? I'm going to return a process.
+
+The process will be num multiplied by num. This means this, that num will be whatever the value I have into this, I am holding into this num value, or whatever the value I'll provide into parentheses bracket, we'll hold it by this num. And that particular value will be multiplied by two times. 
+
+That's it. That's exactly the squares. So that's how we can create a specified function.
+
+Now let's understand how we can use this into our main function. So if I use function main like this, let's suppose I have a value, for example, I'm saying var i is equals to 20. Okay. 
+
+And let's suppose I'm saying it's of integer. Now, if I need to also, let's suppose also we have another variable named as j, which is of integer data type again, and it's of 22. Let's suppose again, I have a variable, integer time is equals to let's 30. 
+
+Okay. Now, if I need, let's suppose if we don't have function, if we don't have this square function, and what will happen every time I have to write like this, I multiply by i. Similarly, j multiply by j. And similarly, k multiply by k. Every time we have to write this, write this print line and so on and so on. Okay. 
+
+But because we have the function, instead of writing print line and so on, we just have to provide a square like this. And inside this, we have to write the value like i. Similarly, j and similarly, the k. Okay, we just have to, we can go with this part as well. So that's how you can use the functions or you can call the functions inside the main function. 
+
+Okay. Always remember that these functions that you are not be able to use these functions outside this main function. If you do this, you will get an error. 
+
+Why? Because Kotlin don't know about where it has to put them. Okay. So that's why we don't have to put these or any kind of function name like outside this main function. 
+
+So you have to keep them inside the main function only. Okay. Always remember this part. 
+
+Now let's run this first. Let me stop this emulator at first like this. I am going to close this. 
+
+No. And like run this first. So here we will not get anything.
+
+Why? Because whatever the value comes over it, it's just returning a particular value. That means it's just providing an output to us. But here, we didn't say to print them. 
+
+That's why it is not visible to us. Kindly note that this is not an error. Because we missed something, because we didn't write print line here, that's why it's not printed here. 
+
+That's an issue. Okay. So for that thing, what we have to do now, we just have to enclose it or simply let me just delete this at first. 
+
+So simply what you have to do, you have to write print line like this. And inside this print line statement, you just have to put square. And inside the square, just put the value i like this. 
+
+Okay. So what is happening here? With the help of square, I am calling this function, square function. Okay. 
+
+And inside this parenthesis bracket, what I get inside this, I am passing a value i. Okay. So whatever the value of i is, let's suppose it 20, it will handle by whom? It will handle by, it will store by, it will store into this num variable. Okay. 
+
+And inside this processing, we are saying whatever the value holded by this num should be multiplied by 2 times. So that is 20 multiplied by 20, it becomes 400. So it will return the value of 400 to this function. 
+
+And once we return the 400 value, then it will be printed. Okay. So let's just print it. 
+
+We'll get 400. Okay. If you'll understand that, then it's okay. 
+
+If you're not, let me show you over the whiteboard. So what we are saying exactly. When we are, when we have this function, square, num, integer, integer. 
+
+And we are saying return num multiplied by num. Then we use this inside main function. We have a particular variable named as i is equal to 20.
+
+And we said print line. Then we say square. Actually we are referring to square. 
+
+Okay. We are saying square. Then we put the parenthesis bracket again. 
+
+And inside this, actually this parenthesis brackets is actually belongs to the square, this square function only. Okay. So inside this, I'm putting a value of i like this. 
+
+Then I put the print line, print line parenthesis bracket. Okay. Now what will happen? Technically what exactly happening here? We are calling a square bracket. 
+
+We are calling a square function from here like this. And inside this, and inside the square bracket and inside this square function, we are passing the value i. We passing the value of i. The i is equal to 20. So the value of 20 will be passed into this, into this num input. 
+
+Okay. Or it will pass into this num variable. Okay. 
+
+Now this num variable holds our value that is 20. Okay. Then where it goes for the processing like here, it will say that num, which will be equal to 20.
+
+So here, now where it goes for the processing, the value which is holded by num that is 20 will be inserted into these variables. Okay. So that we got the value 20 multiplied by 20.
+
+So it becomes 400. Whatever the value we get like 400, it will be written by this return keyword to whom add this square function. Okay. 
+
+So that means that we provide, we send it, we send it a value 20 to the square function and it will provide after the processing, it will return the value between these parenthesis brackets and this 400 will be replaced and the square i will be replaced by this 400. So the new value we get, so the new value will get println 400 like this and when it executes, we will get 400 printed over there. I hope so you understand the concept what exactly it is.
+
+Similarly, it is actually do the same thing. Okay. Let us do some other parts. 
+
+Let us make some other functions as well. Now I am creating function for adding something. For example, I have function and I am saying add. 
+
+Here I need to hold two different variables. So I am saying num underscore one integer because I need to handle one more because I need to add one more variable. So I have to put comma like this and after this I have to say num underscore two then int. 
+
+Then after you have to mention the data type of your output. So here I am saying integer like this and after this we have to put the curly braces like this. Then we have to provide the return value that after processing what you are going to return.
+
+So after this return keyword you have to provide the process that is num1 plus num2 like this. Let us test this. So we have println square. 
+
+I am going to remove this and I am saying println. Here I want to add j and k. So into this, inside this, let me hit enter again like this. Inside this parenthesis brackets I am going to write the name of function that is add. 
+
+Inside these parenthesis brackets we have to write the parameters whatever we have right now. So we have j and k. I am writing j comma k like this. Once we are done you will see the values are available here and again we will do the same as I mentioned you here. 
+
+What will happen? We call the name. We call the function that is add. Add will come here. 
+
+It will handle the value j and k and will store into this variable. Then these variable put the value into the process whatever we have. Once the process gets completed the return type, this return keyword will provide the output to us at this position and once we receive the output it will get printed by println. 
+
+Let us run this. You will see 52 we have now. So 32 plus 30 that's 52. 
+
+It's perfect. So that's how we can create functions and you can create functions and you can do it multiple times whenever you need and you can use these kind of functions at multiple times whenever you need.
+
+(Transcribed by TurboScribe. Go Unlimited to remove this message.)

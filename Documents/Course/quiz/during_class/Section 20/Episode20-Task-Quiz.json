@@ -1,0 +1,502 @@
+{
+  "items": [
+    {
+      "name": "Section20-Episode20-Part1",
+      "difficulty": "medium",
+      "content": [
+        {
+          "id": "S20-E20-P1-Q1",
+          "question": "Why was TextInputLayout introduced on the login screen in the lesson?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Development", "UI", "TextInputLayout"],
+          "options": [
+            { "id": "a", "text": "To replace XML with pure Kotlin code" },
+            { "id": "b", "text": "To match the sign-up UI style and add better input handling" },
+            { "id": "c", "text": "To remove all IDs from the layout" },
+            { "id": "d", "text": "To avoid using click listeners" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "The instructor applied TextInputLayout so the login screen follows the same style and behavior as sign-up fields.",
+          "hints": ["Think about consistency between screens", "The sign-up screen already used this component", "It improves wrapped input field structure"]
+        },
+        {
+          "id": "S20-E20-P1-Q2",
+          "question": "When replacing EditText with TextInputLayout, what must stay unchanged to keep view binding working?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Development", "findViewById", "UI Binding"],
+          "options": [
+            { "id": "a", "text": "The text color only" },
+            { "id": "b", "text": "The button caption" },
+            { "id": "c", "text": "The existing view IDs" },
+            { "id": "d", "text": "The app package name" }
+          ],
+          "correctAnswers": ["c"],
+          "explanation": "The transcript explicitly says the ID should not be changed, otherwise existing references can break.",
+          "hints": ["Binding depends on identifiers", "It was called out as very important", "Changing this breaks code references"]
+        },
+        {
+          "id": "S20-E20-P1-Q3",
+          "question": "After switching to TextInputLayout, which cast type should be used in Kotlin instead of EditText?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Kotlin", "Android Development", "Type Casting"],
+          "options": [
+            { "id": "a", "text": "Button" },
+            { "id": "b", "text": "TextView" },
+            { "id": "c", "text": "TextInputLayout" },
+            { "id": "d", "text": "LinearLayout" }
+          ],
+          "correctAnswers": ["c"],
+          "explanation": "Because the XML element changed, the Kotlin reference should also be cast as TextInputLayout.",
+          "hints": ["The view type changed", "Keep cast aligned with XML component", "EditText is now nested inside the wrapper"]
+        },
+        {
+          "id": "S20-E20-P1-Q4",
+          "question": "Which expression safely reads text from a TextInputLayout child while handling nulls?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["Kotlin", "Null Safety", "TextInputLayout"],
+          "options": [
+            { "id": "a", "text": "usernameField.text.toString()" },
+            { "id": "b", "text": "usernameField.editText?.text?.toString() ?: \"\"" },
+            { "id": "c", "text": "usernameField.getText()!!" },
+            { "id": "d", "text": "usernameField.valueOf()" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "The lesson uses safe-call operators and Elvis fallback to avoid null crashes while getting text.",
+          "hints": ["Look for ?. usage", "Text comes from editText child", "A fallback string is provided with ?:"]
+        },
+        {
+          "id": "S20-E20-P1-Q5",
+          "question": "What is the role of the Elvis operator `?:` in input collection code?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Kotlin", "Null Safety"],
+          "options": [
+            { "id": "a", "text": "It forces a crash if value is null" },
+            { "id": "b", "text": "It compares two strings" },
+            { "id": "c", "text": "It provides a default value when the left side is null" },
+            { "id": "d", "text": "It converts Int to String" }
+          ],
+          "correctAnswers": ["c"],
+          "explanation": "Elvis operator returns the right-side value only when the nullable left expression is null.",
+          "hints": ["It is a fallback operator", "Useful with nullable chains", "Commonly used with empty-string defaults"]
+        },
+        {
+          "id": "S20-E20-P1-Q6",
+          "question": "Why did the instructor warn about null values while collecting input?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["Kotlin", "Runtime Errors", "Validation"],
+          "options": [
+            { "id": "a", "text": "Null values can cause runtime crashes if not handled" },
+            { "id": "b", "text": "Null values improve performance" },
+            { "id": "c", "text": "Null values are required for all login forms" },
+            { "id": "d", "text": "Null values automatically pass validation" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "The transcript emphasizes that missing null-safety can crash the app at runtime.",
+          "hints": ["Think app stability", "The warning was very explicit", "Safe-call operators were suggested to prevent this"]
+        },
+        {
+          "id": "S20-E20-P1-Q7",
+          "question": "How were field-level validation messages shown in the login form?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["Android Development", "Validation", "TextInputLayout"],
+          "options": [
+            { "id": "a", "text": "By changing app title" },
+            { "id": "b", "text": "By using `textInputLayout.error = \"...\"`" },
+            { "id": "c", "text": "By restarting the activity" },
+            { "id": "d", "text": "By removing the password field" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "The instructor set error text directly on TextInputLayout to show inline validation feedback.",
+          "hints": ["Error displayed under input", "Property name is `error`", "No Toast required for this style"]
+        },
+        {
+          "id": "S20-E20-P1-Q8",
+          "question": "What key point was made about using `if-else` versus `when`?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Kotlin", "Control Flow"],
+          "options": [
+            { "id": "a", "text": "Only `when` is valid Kotlin" },
+            { "id": "b", "text": "Only `if-else` can evaluate booleans" },
+            { "id": "c", "text": "Both are valid approaches; choose based on readability and need" },
+            { "id": "d", "text": "Both are used only in XML" }
+          ],
+          "correctAnswers": ["c"],
+          "explanation": "The lesson states they are tools/approaches, not enemies, and can solve similar logic.",
+          "hints": ["It was presented as developer choice", "Think readability", "Either can handle conditions"]
+        },
+        {
+          "id": "S20-E20-P1-Q9",
+          "question": "Why did moving `username.isEmpty()` above mismatch checks change the shown error message?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["Kotlin", "Control Flow", "Validation Order"],
+          "options": [
+            { "id": "a", "text": "Because Kotlin randomly chooses one branch" },
+            { "id": "b", "text": "Because conditions are checked in order and first matching branch executes" },
+            { "id": "c", "text": "Because empty strings are converted to Android ID" },
+            { "id": "d", "text": "Because `else if` always runs before `if`" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "The instructor explains top-to-bottom evaluation, so branch order determines which error appears first.",
+          "hints": ["Execution is sequential", "First true condition wins", "Reordering branches changes output"]
+        },
+        {
+          "id": "S20-E20-P1-Q10",
+          "question": "What is the purpose of calling `finish()` after `startActivity()` in the login success flow?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["Android Development", "Navigation", "Activity Lifecycle"],
+          "options": [
+            { "id": "a", "text": "It increases password length" },
+            { "id": "b", "text": "It closes current activity so Back does not return to login" },
+            { "id": "c", "text": "It refreshes XML previews" },
+            { "id": "d", "text": "It creates a second dashboard" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "`finish()` removes login activity from back stack, so user cannot navigate back to it after successful login.",
+          "hints": ["Think back-stack behavior", "Called right after navigation", "Used to prevent returning to login"]
+        }
+      ]
+    },
+    {
+      "name": "Section20-Episode20-Part2",
+      "difficulty": "easy",
+      "content": [
+        {
+          "id": "S20-E20-P2-Q1",
+          "question": "In the factory analogy, what does a function primarily represent?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Kotlin", "Functions", "Programming Basics"],
+          "options": [
+            { "id": "a", "text": "A user interface screen" },
+            { "id": "b", "text": "A machine that takes input, processes it, and gives output" },
+            { "id": "c", "text": "A variable naming rule" },
+            { "id": "d", "text": "A database table" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "Part 2 explains functions using machine analogy: input, process, output.",
+          "hints": ["Factory example", "Three-step flow", "Input-process-output model"]
+        },
+        {
+          "id": "S20-E20-P2-Q2",
+          "question": "In the washing machine example, what are considered inputs?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Functions", "Conceptual Understanding"],
+          "options": [
+            { "id": "a", "text": "Clean clothes only" },
+            { "id": "b", "text": "Dirty clothes, detergent, and water" },
+            { "id": "c", "text": "Wash cycle time only" },
+            { "id": "d", "text": "Power button text" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "The transcript explicitly lists dirty clothes, detergent, and water as inputs.",
+          "hints": ["Think raw material", "More than one item", "Everything added before processing starts"]
+        },
+        {
+          "id": "S20-E20-P2-Q3",
+          "question": "How is a function described in coding terms in Part 2?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Kotlin", "Functions"],
+          "options": [
+            { "id": "a", "text": "A comment block that styles XML" },
+            { "id": "b", "text": "A block of code that takes input, does work, and returns output" },
+            { "id": "c", "text": "A package manager" },
+            { "id": "d", "text": "A keyboard shortcut" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "This is the direct definition given in the lesson.",
+          "hints": ["It includes input", "It performs processing", "It returns result"]
+        },
+        {
+          "id": "S20-E20-P2-Q4",
+          "question": "Without functions, what repetitive pattern was highlighted in the calculator example?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["Kotlin", "Code Repetition", "Functions"],
+          "options": [
+            { "id": "a", "text": "Repeatedly writing addition logic for every variable pair" },
+            { "id": "b", "text": "Repeatedly installing Android Studio" },
+            { "id": "c", "text": "Repeatedly creating new Activities" },
+            { "id": "d", "text": "Repeatedly changing app icons" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "The instructor showed repeated `a+b`, `x+y`, etc. as the problem functions solve.",
+          "hints": ["Think duplicated expressions", "Same operation with different values", "Manual addition each time"]
+        },
+        {
+          "id": "S20-E20-P2-Q5",
+          "question": "Which call style demonstrates reuse in the transcript?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Kotlin", "Functions", "Reusability"],
+          "options": [
+            { "id": "a", "text": "`add(a, b)` and `add(x, y)`" },
+            { "id": "b", "text": "`a + b + c + d` in one line only" },
+            { "id": "c", "text": "`println(add)` without parameters" },
+            { "id": "d", "text": "`var add = 10`" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "The same function name with different arguments illustrates reusability.",
+          "hints": ["Same function, new inputs", "Parentheses contain values", "Appears as repeated function calls"]
+        },
+        {
+          "id": "S20-E20-P2-Q6",
+          "question": "What major benefit of functions was emphasized besides reducing repetition?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["Functions", "Software Design"],
+          "options": [
+            { "id": "a", "text": "They make code easier to test and extend" },
+            { "id": "b", "text": "They remove the need for variables" },
+            { "id": "c", "text": "They automatically create UI layouts" },
+            { "id": "d", "text": "They avoid all runtime errors" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "The lecture explicitly names easier testing and extension as key advantages.",
+          "hints": ["Think maintainability", "Helps future changes", "Also helpful for verification"]
+        },
+        {
+          "id": "S20-E20-P2-Q7",
+          "question": "In the machine analogy, what corresponds to the process step?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Functions", "Conceptual Understanding"],
+          "options": [
+            { "id": "a", "text": "The operation performed on the provided input" },
+            { "id": "b", "text": "The final output only" },
+            { "id": "c", "text": "The variable declaration style" },
+            { "id": "d", "text": "The package import line" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "Process means the work done after receiving input and before returning output.",
+          "hints": ["Middle stage", "Happens between input and output", "Core transformation step"]
+        },
+        {
+          "id": "S20-E20-P2-Q8",
+          "question": "What does passing parameters to `add` enable?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["Kotlin", "Parameters", "Functions"],
+          "options": [
+            { "id": "a", "text": "The same function logic can work with different values" },
+            { "id": "b", "text": "The function can run without code" },
+            { "id": "c", "text": "The function skips output" },
+            { "id": "d", "text": "The function can only be called once" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "Parameters make function logic generic and reusable for multiple inputs.",
+          "hints": ["Think flexibility", "Input values change per call", "Logic stays same"]
+        },
+        {
+          "id": "S20-E20-P2-Q9",
+          "question": "Why is writing one reusable function better than copying addition code many times?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["Code Quality", "Functions", "Maintainability"],
+          "options": [
+            { "id": "a", "text": "It reduces duplicate code and centralizes logic updates" },
+            { "id": "b", "text": "It disables all conditions" },
+            { "id": "c", "text": "It removes the need for return values" },
+            { "id": "d", "text": "It prevents function calls in main" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "Reusable functions keep logic in one place, reducing duplication and making maintenance easier.",
+          "hints": ["DRY principle", "Edit in one place", "Less repeated code"]
+        },
+        {
+          "id": "S20-E20-P2-Q10",
+          "question": "Which sequence best matches the function model taught in Part 2?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Functions", "Programming Basics"],
+          "options": [
+            { "id": "a", "text": "Output -> Input -> Process" },
+            { "id": "b", "text": "Input -> Process -> Output" },
+            { "id": "c", "text": "Process -> Output -> Input" },
+            { "id": "d", "text": "Input -> Output -> Process" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "The teaching repeatedly frames functions as input first, then processing, then output.",
+          "hints": ["Factory analogy order", "Start with raw material", "End with finished result"]
+        }
+      ]
+    },
+    {
+      "name": "Section20-Episode20-Part3",
+      "difficulty": "medium",
+      "content": [
+        {
+          "id": "S20-E20-P3-Q1",
+          "question": "Which keyword is used to declare a function in Kotlin?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Kotlin", "Functions", "Syntax"],
+          "options": [
+            { "id": "a", "text": "func" },
+            { "id": "b", "text": "define" },
+            { "id": "c", "text": "fun" },
+            { "id": "d", "text": "method" }
+          ],
+          "correctAnswers": ["c"],
+          "explanation": "Part 3 clearly shows `fun` as the function declaration keyword in Kotlin.",
+          "hints": ["Three-letter keyword", "Starts function declaration", "Used before function name"]
+        },
+        {
+          "id": "S20-E20-P3-Q2",
+          "question": "In `fun square(num: Int): Int`, what is `square`?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Kotlin", "Functions", "Syntax"],
+          "options": [
+            { "id": "a", "text": "A return type" },
+            { "id": "b", "text": "A parameter type" },
+            { "id": "c", "text": "The function name" },
+            { "id": "d", "text": "A package name" }
+          ],
+          "correctAnswers": ["c"],
+          "explanation": "The identifier after `fun` is the function name used for calls.",
+          "hints": ["Reference used to call function", "Appears right after keyword", "Not the data type"]
+        },
+        {
+          "id": "S20-E20-P3-Q3",
+          "question": "What is the purpose of parentheses in a function declaration?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Kotlin", "Parameters", "Functions"],
+          "options": [
+            { "id": "a", "text": "To store import statements" },
+            { "id": "b", "text": "To define parameters (inputs)" },
+            { "id": "c", "text": "To mark comments" },
+            { "id": "d", "text": "To end the file" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "Parentheses hold the function input parameters such as `num: Int`.",
+          "hints": ["Input values go here", "Includes names and types", "Empty if no parameters"]
+        },
+        {
+          "id": "S20-E20-P3-Q4",
+          "question": "What does the `: Int` after function parameters commonly indicate?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["Kotlin", "Return Type", "Functions"],
+          "options": [
+            { "id": "a", "text": "The type of returned output" },
+            { "id": "b", "text": "The number of parameters" },
+            { "id": "c", "text": "The loop range" },
+            { "id": "d", "text": "The package version" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "The type after the parameter list specifies what kind of value the function returns.",
+          "hints": ["Appears after closing parenthesis", "Connected with return", "Output type information"]
+        },
+        {
+          "id": "S20-E20-P3-Q5",
+          "question": "In the square example, which statement performs the core processing?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["Kotlin", "Functions", "Arithmetic"],
+          "options": [
+            { "id": "a", "text": "`println(num)`" },
+            { "id": "b", "text": "`return num * num`" },
+            { "id": "c", "text": "`fun square`" },
+            { "id": "d", "text": "`var i = 20`" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "`num * num` is the transformation step and `return` sends that result back.",
+          "hints": ["Contains multiplication", "Inside function body", "Linked with output"]
+        },
+        {
+          "id": "S20-E20-P3-Q6",
+          "question": "If `i = 20`, what value does `square(i)` return in the demonstrated logic?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Kotlin", "Functions", "Arithmetic"],
+          "options": [
+            { "id": "a", "text": "40" },
+            { "id": "b", "text": "200" },
+            { "id": "c", "text": "400" },
+            { "id": "d", "text": "20" }
+          ],
+          "correctAnswers": ["c"],
+          "explanation": "`square(i)` computes `20 * 20`, which is 400.",
+          "hints": ["Square means multiply by itself", "20 times 20", "Three-digit result"]
+        },
+        {
+          "id": "S20-E20-P3-Q7",
+          "question": "Why did the first run show no visible output before adding `println(...)`?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["Kotlin", "Functions", "Output"],
+          "options": [
+            { "id": "a", "text": "Because return values are not automatically displayed" },
+            { "id": "b", "text": "Because multiplication cannot run in Kotlin" },
+            { "id": "c", "text": "Because all functions need two parameters" },
+            { "id": "d", "text": "Because Int cannot be printed" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "A function can return a value, but you still need `println` (or other usage) to display it.",
+          "hints": ["Return is not same as print", "Console output needs explicit print call", "Value existed but was not shown"]
+        },
+        {
+          "id": "S20-E20-P3-Q8",
+          "question": "What does the function `add(num1: Int, num2: Int): Int` return?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Kotlin", "Functions", "Parameters"],
+          "options": [
+            { "id": "a", "text": "The subtraction of the two numbers" },
+            { "id": "b", "text": "The product of the two numbers" },
+            { "id": "c", "text": "The sum of the two numbers" },
+            { "id": "d", "text": "A Boolean value" }
+          ],
+          "correctAnswers": ["c"],
+          "explanation": "The shown process inside `add` is `num1 + num2`.",
+          "hints": ["Look at operator in return", "Two inputs combined", "Arithmetic addition"]
+        },
+        {
+          "id": "S20-E20-P3-Q9",
+          "question": "Which call matches the two-parameter `add` function style shown in the lesson?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Kotlin", "Functions", "Function Calls"],
+          "options": [
+            { "id": "a", "text": "`add(j, k)`" },
+            { "id": "b", "text": "`add(j)`" },
+            { "id": "c", "text": "`add`" },
+            { "id": "d", "text": "`add(j; k)`" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "The example call passes two arguments separated by a comma inside parentheses.",
+          "hints": ["Two inputs required", "Comma-separated arguments", "Called like other Kotlin functions"]
+        },
+        {
+          "id": "S20-E20-P3-Q10",
+          "question": "Which statement best captures function reusability demonstrated in Part 3?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["Functions", "Code Reuse", "Kotlin"],
+          "options": [
+            { "id": "a", "text": "A function should be rewritten for every variable" },
+            { "id": "b", "text": "One function definition can be called many times with different values" },
+            { "id": "c", "text": "Functions are only for printing text" },
+            { "id": "d", "text": "Functions cannot return values" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "The instructor repeatedly calls the same function with different inputs to show reuse.",
+          "hints": ["Define once", "Call many times", "Different arguments, same logic"]
+        }
+      ]
+    }
+  ]
+}

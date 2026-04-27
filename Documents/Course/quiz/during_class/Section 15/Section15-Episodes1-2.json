@@ -1,0 +1,176 @@
+{
+  "items": [
+    {
+      "name": "Section15-Episode15-Part1",
+      "difficulty": "medium",
+      "content": [
+        {
+          "id": "S15-E15-P1-Q1",
+          "question": "What does the `!=` (not equals to) operator return when both values are the same (e.g., `a = 100` and `b = 100`)?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Kotlin", "Comparison Operators"],
+          "options": [
+            { "id": "a", "text": "true" },
+            { "id": "b", "text": "false" },
+            { "id": "c", "text": "0" },
+            { "id": "d", "text": "Compilation error" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "The `!=` operator checks for inequality. Since both values are equal (100 == 100), there is no inequality, so the result is false.",
+          "hints": ["Not equals checks for difference", "If values are the same, there is no inequality", "Opposite of == operator"]
+        },
+        {
+          "id": "S15-E15-P1-Q2",
+          "question": "Given `var x: Int = 10` and `var y: Int = 5`, what does `x > (y * 2)` evaluate to?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["Kotlin", "Comparison Operators"],
+          "options": [
+            { "id": "a", "text": "true" },
+            { "id": "b", "text": "false" },
+            { "id": "c", "text": "10" },
+            { "id": "d", "text": "Compilation error" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "y * 2 = 10, so we are comparing 10 > 10. The greater than operator does not include equal values, so the result is false.",
+          "hints": ["Calculate y * 2 first", "Greater than does NOT include equal values", "10 is not greater than 10"]
+        },
+        {
+          "id": "S15-E15-P1-Q3",
+          "question": "If `marks = 85` and `passing = 40`, what does `marks > passing` print?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Kotlin", "Comparison Operators"],
+          "options": [
+            { "id": "a", "text": "true" },
+            { "id": "b", "text": "false" },
+            { "id": "c", "text": "85" },
+            { "id": "d", "text": "45" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "85 is greater than 40, so the comparison returns true, meaning the student has passed.",
+          "hints": ["Compare the two numbers directly", "85 vs 40", "Boolean result expected"]
+        },
+        {
+          "id": "S15-E15-P1-Q4",
+          "question": "What is the key difference between `>` (greater than) and `>=` (greater than or equal to)?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["Kotlin", "Comparison Operators"],
+          "options": [
+            { "id": "a", "text": "`>=` also returns true when both values are equal" },
+            { "id": "b", "text": "`>` includes equal values while `>=` does not" },
+            { "id": "c", "text": "There is no difference between them" },
+            { "id": "d", "text": "`>=` only works with Double types" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "The `>=` operator returns true if the left value is greater than OR equal to the right value. For example, `18 >= 18` returns true, but `18 > 18` returns false.",
+          "hints": ["Think about the voting age example", "What if both values are 18?", "Equal values matter here"]
+        },
+        {
+          "id": "S15-E15-P1-Q5",
+          "question": "If the minimum voting age is 18 and a person's age is exactly 18, which operator correctly allows them to vote?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Kotlin", "Comparison Operators"],
+          "options": [
+            { "id": "a", "text": "`age > 18`" },
+            { "id": "b", "text": "`age >= 18`" },
+            { "id": "c", "text": "`age != 18`" },
+            { "id": "d", "text": "`age < 18`" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "Using `>=` ensures that a person aged exactly 18 (equal) or above 18 (greater) is eligible. Using just `>` would exclude the person aged exactly 18.",
+          "hints": ["The person is exactly at the minimum age", "Must include the boundary value", "Greater than alone would exclude 18"]
+        }
+      ]
+    },
+    {
+      "name": "Section15-Episode15-Part2",
+      "difficulty": "medium",
+      "content": [
+        {
+          "id": "S15-E15-P2-Q1",
+          "question": "What must you provide to an XML component before Kotlin can identify and interact with it?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Development", "XML-Kotlin Connection"],
+          "options": [
+            { "id": "a", "text": "A color attribute" },
+            { "id": "b", "text": "An ID" },
+            { "id": "c", "text": "A class name" },
+            { "id": "d", "text": "A layout weight" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "Every XML component that needs functionality from Kotlin must be assigned an ID so that Kotlin can recognise and target it using findViewById.",
+          "hints": ["Kotlin needs a way to call the component", "Think of a unique name for each component", "Used with findViewById"]
+        },
+        {
+          "id": "S15-E15-P2-Q2",
+          "question": "What does `setContentView(R.layout.activity_login_screen_2)` do in a Kotlin activity file?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Development", "XML-Kotlin Connection"],
+          "options": [
+            { "id": "a", "text": "Deletes the current layout" },
+            { "id": "b", "text": "Sets the XML layout file as the user interface for the activity" },
+            { "id": "c", "text": "Creates a new XML file automatically" },
+            { "id": "d", "text": "Compiles the Kotlin code into XML" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "setContentView connects the Kotlin controller file to its corresponding XML layout file, telling the activity which UI to display.",
+          "hints": ["It links UI to controller", "R.layout points to a layout file", "The Kotlin file says 'this is my UI'"]
+        },
+        {
+          "id": "S15-E15-P2-Q3",
+          "question": "What does `R` stand for in `R.id.username`?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Development", "Resources"],
+          "options": [
+            { "id": "a", "text": "Runtime" },
+            { "id": "b", "text": "Resources" },
+            { "id": "c", "text": "Reference" },
+            { "id": "d", "text": "Root" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "R stands for the Resources directory. `R.id.username` means go into the Resources folder, then into the id section, and find the component named 'username'.",
+          "hints": ["Think of where IDs and layouts are stored", "A folder that holds all project assets", "Starts with R"]
+        },
+        {
+          "id": "S15-E15-P2-Q4",
+          "question": "Why should UI component references (like EditText or Button) be declared with `val` instead of `var` in Kotlin?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["Android Development", "Kotlin Variables"],
+          "options": [
+            { "id": "a", "text": "Because `var` is not allowed in Kotlin" },
+            { "id": "b", "text": "To make them immutable so the component reference cannot be accidentally changed" },
+            { "id": "c", "text": "Because `val` runs faster than `var`" },
+            { "id": "d", "text": "Because Android Studio forces `val` only" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "Using `val` makes the reference immutable, ensuring the variable always points to the same UI component throughout the code and cannot be accidentally reassigned.",
+          "hints": ["Immutable means non-changeable", "You never want the button reference to change", "val = immutable, var = mutable"]
+        },
+        {
+          "id": "S15-E15-P2-Q5",
+          "question": "Which method is used to make a Button respond to user clicks in Kotlin?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Development", "Event Handling"],
+          "options": [
+            { "id": "a", "text": "setOnClickListener" },
+            { "id": "b", "text": "addClickEvent" },
+            { "id": "c", "text": "onButtonPress" },
+            { "id": "d", "text": "clickHandler" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "setOnClickListener is the method used on a Button to define what happens when the user clicks it. All functionality code goes inside this listener.",
+          "hints": ["It listens for a click event", "Called on the button variable", "Standard Android click handling method"]
+        }
+      ]
+    }
+  ]
+}

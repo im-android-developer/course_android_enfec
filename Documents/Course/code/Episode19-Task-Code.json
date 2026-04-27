@@ -1,0 +1,58 @@
+{
+  "items": [
+    {
+      "title": "Episode 19 Part 1 - Null Safety Sign-Up Validation",
+      "instructions": "**Problem:**\\nCreate a Kotlin sign-up validation flow using safe call (`?.`) and Elvis (`?:`) operators from Episode 19 Part 1.\\n\\n**What we want:**\\n1. Declare nullable raw values for full name, username, gender, password, and confirm password.\\n2. Convert each raw value into non-null String using safe call + Elvis defaults.\\n3. Validate with `if` and `else if` in this order:\\n- If `fullName.length <= 6`, print `\"Full name should be more than 6 letters\"`\\n- Else if `password != confirmPassword`, print `\"Password and confirm password should be same\"`\\n- Else print `fullName`\\n\\n**Syntax:**\\n```\\nval fullName = rawFullName?.trim() ?: \"John Doe\"\\n\\nif (fullName.length <= 6) {\\n    println(\"Full name should be more than 6 letters\")\\n} else if (password != confirmPassword) {\\n    println(\"Password and confirm password should be same\")\\n} else {\\n    println(fullName)\\n}\\n```\\n\\n**Example 1:**\\nrawFullName = \"Android Class\"\\nrawPassword = \"android@123\"\\nrawConfirmPassword = \"android@123\"\\nOutput:\\nAndroid Class\\nExplanation: Full name length is valid and passwords match, so full name is printed.\\n\\n**Example 2:**\\nrawFullName = \"Android Class\"\\nrawPassword = \"android@123\"\\nrawConfirmPassword = \"android@12\"\\nOutput:\\nPassword and confirm password should be same\\nExplanation: Password and confirm password are different, so mismatch validation runs.",
+      "difficulty": "medium",
+      "language_key": "kotlin",
+      "time_limit": 2,
+      "memory_limit": 256,
+      "starter_code": "fun main() {\n    // Simulated nullable inputs from sign-up fields\n    val rawFullName: String? = \"Android Class\"\n    val rawUsername: String? = \"android_2025\"\n    val rawGender: String? = \"Male\"\n    val rawPassword: String? = \"android@123\"\n    val rawConfirmPassword: String? = \"android@123\"\n\n    // Convert nullable values to non-null using safe call + Elvis\n    val fullName = rawFullName?.trim() ?: \"John Doe\"\n    val username = rawUsername?.trim() ?: \"john_doe\"\n    val gender = rawGender?.trim() ?: \"Male\"\n    val password = rawPassword?.trim() ?: \"John@123\"\n    val confirmPassword = rawConfirmPassword?.trim() ?: \"John@123\"\n\n    // TODO: Add if / else-if validation logic from Part 1\n    // 1) fullName length check\n    // 2) password mismatch check\n    // 3) else print fullName\n}",
+      "execute_template": "",
+      "solution_code": "fun main() {\n    val rawFullName: String? = \"Android Class\"\n    val rawUsername: String? = \"android_2025\"\n    val rawGender: String? = \"Male\"\n    val rawPassword: String? = \"android@123\"\n    val rawConfirmPassword: String? = \"android@123\"\n\n    val fullName = rawFullName?.trim() ?: \"John Doe\"\n    val username = rawUsername?.trim() ?: \"john_doe\"\n    val gender = rawGender?.trim() ?: \"Male\"\n    val password = rawPassword?.trim() ?: \"John@123\"\n    val confirmPassword = rawConfirmPassword?.trim() ?: \"John@123\"\n\n    if (fullName.length <= 6) {\n        println(\"Full name should be more than 6 letters\")\n    } else if (password != confirmPassword) {\n        println(\"Password and confirm password should be same\")\n    } else {\n        println(fullName)\n    }\n}",
+      "test_cases": [
+        {
+          "input": "",
+          "output": "Android Class",
+          "is_sample": true
+        } 
+      ]
+    },
+    {
+      "title": "Episode 19 Part 2 - When-Based Form Validation",
+      "instructions": "**Problem:**\\nCreate a Kotlin validation flow using `when` as a clean alternative to repeated if-else checks (Episode 19 Part 2).\\n\\n**What we want:**\\n1. Declare `fullName`, `username`, `password`, and `confirmPassword` as String values.\\n2. Use a `when` block to validate in this order:\\n- If full name is empty -> print `\"Full name should not be empty\"`\\n- If username is empty -> print `\"Username should not be empty\"`\\n- If password length is `<= 6` -> print `\"Password should be greater than 6 digits\"`\\n- If password and confirm password do not match -> print `\"Password and confirm password should match\"`\\n- Else -> print `\"Validation Passed\"`\\n\\n**Syntax:**\\n```\\nwhen {\\n    fullName.isEmpty() -> println(\"Full name should not be empty\")\\n    username.isEmpty() -> println(\"Username should not be empty\")\\n    password.length <= 6 -> println(\"Password should be greater than 6 digits\")\\n    password != confirmPassword -> println(\"Password and confirm password should match\")\\n    else -> println(\"Validation Passed\")\\n}\\n```\\n\\n**Example 1:**\\nfullName = \"\"\\nusername = \"android_user\"\\npassword = \"android@123\"\\nconfirmPassword = \"android@123\"\\nOutput:\\nFull name should not be empty\\nExplanation: First matching `when` condition is fullName empty.\\n\\n**Example 2:**\\nfullName = \"Android Class\"\\nusername = \"android_user\"\\npassword = \"android@123\"\\nconfirmPassword = \"android@123\"\\nOutput:\\nValidation Passed\\nExplanation: No validation branch fails, so default success branch runs.",
+      "difficulty": "medium",
+      "language_key": "kotlin",
+      "time_limit": 2,
+      "memory_limit": 256,
+      "starter_code": "fun main() {\n    val fullName = \"Android Class\"\n    val username = \"android_user\"\n    val password = \"android@123\"\n    val confirmPassword = \"android@123\"\n\n    // TODO: Add when-based validation in this order:\n    // 1) fullName.isEmpty()\n    // 2) username.isEmpty()\n    // 3) password.length <= 6\n    // 4) password != confirmPassword\n    // 5) else success\n}",
+      "execute_template": "",
+      "solution_code": "fun main() {\n    val fullName = \"Android Class\"\n    val username = \"android_user\"\n    val password = \"android@123\"\n    val confirmPassword = \"android@123\"\n\n    when {\n        fullName.isEmpty() -> println(\"Full name should not be empty\")\n        username.isEmpty() -> println(\"Username should not be empty\")\n        password.length <= 6 -> println(\"Password should be greater than 6 digits\")\n        password != confirmPassword -> println(\"Password and confirm password should match\")\n        else -> println(\"Validation Passed\")\n    }\n}",
+      "test_cases": [
+        {
+          "input": "",
+          "output": "Validation Passed",
+          "is_sample": true
+        }
+      ]
+    },
+    {
+      "title": "Episode 19 Part 3 - Inline Error Mapping and Success Flow",
+      "instructions": "**Problem:**\\nSimulate TextInputLayout-style inline error handling and success navigation logic from Episode 19 Part 3.\\n\\n**What we want:**\\n1. Declare form fields: `fullName`, `username`, `gender`, `password`, `confirmPassword`.\\n2. Use `when` to collect field-level errors into a map (simulate `TextInputLayout.error`).\\n3. Validation order:\\n- fullName empty -> `Full name cannot be empty`\\n- username empty -> `Username cannot be empty`\\n- gender empty -> `Gender cannot be empty`\\n- password empty -> `Password cannot be empty`\\n- confirmPassword empty -> `Confirm password cannot be empty`\\n- password length <= 6 -> `Password should be more than 6 digits`\\n- password mismatch -> `Password and confirm password should match`\\n4. If all validations pass, print:\\n- `Signup Successful`\\n- `Navigating to Dashboard`\\n- `finish() called`\\n5. If error exists, print it in format: `field: message`.\\n\\n**Syntax:**\\n```\\nval fieldErrors = mutableMapOf<String, String>()\\n\\nwhen {\\n    fullName.isEmpty() -> fieldErrors[\"fullName\"] = \"Full name cannot be empty\"\\n    ...\\n    else -> {\\n        println(\"Signup Successful\")\\n        println(\"Navigating to Dashboard\")\\n        println(\"finish() called\")\\n    }\\n}\\n\\nif (fieldErrors.isNotEmpty()) {\\n    fieldErrors.forEach { (field, message) ->\\n        println(\"$field: $message\")\\n    }\\n}\\n```\\n\\n**Example 1:**\\ngender = \"\"\\nOutput:\\ngender: Gender cannot be empty\\nExplanation: Gender validation fails, so field-level error is shown.\\n\\n**Example 2:**\\nAll fields valid and password matches\\nOutput:\\nSignup Successful\\nNavigating to Dashboard\\nfinish() called\\nExplanation: No validation branch fails, so success path executes.",
+      "difficulty": "medium",
+      "language_key": "kotlin",
+      "time_limit": 2,
+      "memory_limit": 256,
+      "starter_code": "fun main() {\n    val fullName = \"Android Class\"\n    val username = \"android_2025\"\n    val gender = \"Male\"\n    val password = \"android@1234\"\n    val confirmPassword = \"android@1234\"\n\n    val fieldErrors = mutableMapOf<String, String>()\n\n    // TODO: Add when-based field error mapping\n    // TODO: Add success flow in else branch\n    // TODO: Print fieldErrors if any\n}",
+      "execute_template": "",
+      "solution_code": "fun main() {\n    val fullName = \"Android Class\"\n    val username = \"android_2025\"\n    val gender = \"Male\"\n    val password = \"android@1234\"\n    val confirmPassword = \"android@1234\"\n\n    val fieldErrors = mutableMapOf<String, String>()\n\n    when {\n        fullName.isEmpty() -> fieldErrors[\"fullName\"] = \"Full name cannot be empty\"\n        username.isEmpty() -> fieldErrors[\"username\"] = \"Username cannot be empty\"\n        gender.isEmpty() -> fieldErrors[\"gender\"] = \"Gender cannot be empty\"\n        password.isEmpty() -> fieldErrors[\"password\"] = \"Password cannot be empty\"\n        confirmPassword.isEmpty() -> fieldErrors[\"confirmPassword\"] = \"Confirm password cannot be empty\"\n        password.length <= 6 -> fieldErrors[\"password\"] = \"Password should be more than 6 digits\"\n        password != confirmPassword -> fieldErrors[\"confirmPassword\"] = \"Password and confirm password should match\"\n        else -> {\n            println(\"Signup Successful\")\n            println(\"Navigating to Dashboard\")\n            println(\"finish() called\")\n        }\n    }\n\n    if (fieldErrors.isNotEmpty()) {\n        fieldErrors.forEach { (field, message) ->\n            println(\"$field: $message\")\n        }\n    }\n}",
+      "test_cases": [
+        {
+          "input": "",
+          "output": "Signup Successful\nNavigating to Dashboard\nfinish() called",
+          "is_sample": true
+        }
+      ]
+    }
+  ]
+}

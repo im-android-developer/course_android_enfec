@@ -1,0 +1,336 @@
+{
+  "items": [
+    {
+      "name": "Section17-Episode17-Part1",
+      "difficulty": "medium",
+      "content": [
+        {
+          "id": "S17-E17-P1-Q1",
+          "question": "What is an Intent in Android development?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Development", "Intents"],
+          "options": [
+            { "id": "a", "text": "A mechanism used to navigate from one screen (activity) to another" },
+            { "id": "b", "text": "A data type used to store user input" },
+            { "id": "c", "text": "A function that creates Toast messages" },
+            { "id": "d", "text": "A layout file used to design UI" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "An Intent is an object that provides runtime binding between components such as activities. It's the mechanism Android uses to navigate from one screen to another.",
+          "hints": ["Think about moving between screens", "It's like a path or direction", "Navigation mechanism"]
+        },
+        {
+          "id": "S17-E17-P1-Q2",
+          "question": "What type of Intent is used when you navigate from one activity to another within the same app?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Development", "Intents"],
+          "options": [
+            { "id": "a", "text": "Explicit Intent" },
+            { "id": "b", "text": "Implicit Intent" },
+            { "id": "c", "text": "Broadcast Intent" },
+            { "id": "d", "text": "Pending Intent" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "Explicit Intents specify the exact target activity to navigate to within the same application. The instructor used this type for navigating between login and dashboard.",
+          "hints": ["You explicitly name the destination", "Used within the same app", "Direct and specific"]
+        },
+        {
+          "id": "S17-E17-P1-Q3",
+          "question": "In `Intent(this, Dashboard::class.java)`, what does `this` represent?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["Android Development", "Context"],
+          "options": [
+            { "id": "a", "text": "The current activity (source) — where you are coming from" },
+            { "id": "b", "text": "The destination activity" },
+            { "id": "c", "text": "The Intent object itself" },
+            { "id": "d", "text": "The Android operating system" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "`this` refers to the current activity context — it tells the Intent where the navigation is originating from (the source screen).",
+          "hints": ["Source of navigation", "Where you currently are", "Current activity reference"]
+        },
+        {
+          "id": "S17-E17-P1-Q4",
+          "question": "In `Intent(this, Dashboard::class.java)`, what does `Dashboard::class.java` represent?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["Android Development", "Intents"],
+          "options": [
+            { "id": "a", "text": "The destination activity — where you want to navigate to" },
+            { "id": "b", "text": "The current activity" },
+            { "id": "c", "text": "The layout file of the Dashboard" },
+            { "id": "d", "text": "A String variable holding the activity name" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "`Dashboard::class.java` specifies the destination activity class. It tells the Intent which screen to navigate to.",
+          "hints": ["It's the target", "Where you want to go", "The destination screen"]
+        },
+        {
+          "id": "S17-E17-P1-Q5",
+          "question": "What function is called to actually perform the navigation after creating an Intent?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Development", "Navigation"],
+          "options": [
+            { "id": "a", "text": "`startActivity(intent)`" },
+            { "id": "b", "text": "`launchActivity(intent)`" },
+            { "id": "c", "text": "`navigate(intent)`" },
+            { "id": "d", "text": "`openActivity(intent)`" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "`startActivity()` takes the Intent object as a parameter and executes the navigation to the destination activity.",
+          "hints": ["It starts the new activity", "Takes the intent as parameter", "The actual trigger"]
+        },
+        {
+          "id": "S17-E17-P1-Q6",
+          "question": "Why was the Intent placed inside the `if` block (after successful login) rather than outside?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["Android Development", "Logic Flow"],
+          "options": [
+            { "id": "a", "text": "Navigation to Dashboard should only happen when login credentials are correct" },
+            { "id": "b", "text": "Intents can only be created inside if blocks" },
+            { "id": "c", "text": "startActivity only works inside conditional statements" },
+            { "id": "d", "text": "Android requires Intents to be in click listeners" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "The navigation should only occur after successful credential verification. Placing it inside the if block ensures the user only reaches the Dashboard when their username and password are correct.",
+          "hints": ["Security logic", "Only navigate on success", "Conditional navigation"]
+        },
+        {
+          "id": "S17-E17-P1-Q7",
+          "question": "What two parameters does the Intent constructor require?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Development", "Intents"],
+          "options": [
+            { "id": "a", "text": "Context (source activity) and the destination activity class" },
+            { "id": "b", "text": "Activity name and layout ID" },
+            { "id": "c", "text": "Username and password" },
+            { "id": "d", "text": "Toast message and duration" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "The Intent constructor takes: (1) the context (`this`) representing the source activity, and (2) the class reference of the destination activity.",
+          "hints": ["Where from and where to", "Source and destination", "Two addresses"]
+        },
+        {
+          "id": "S17-E17-P1-Q8",
+          "question": "How did the instructor import the Intent class when Android Studio showed it was unresolved?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Development", "IDE"],
+          "options": [
+            { "id": "a", "text": "Used Alt+Enter (Option+Enter) to auto-import" },
+            { "id": "b", "text": "Manually typed the import statement" },
+            { "id": "c", "text": "Restarted Android Studio" },
+            { "id": "d", "text": "Added it in the Gradle file" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "The instructor used Alt+Enter (or Option+Enter on Mac) keyboard shortcut to auto-import the Intent class from android.content package.",
+          "hints": ["A keyboard shortcut", "Quick-fix action", "Alt plus Enter"]
+        },
+        {
+          "id": "S17-E17-P1-Q9",
+          "question": "What happens if you have a static app page (like a splash screen) without any Intent?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Development", "Navigation"],
+          "options": [
+            { "id": "a", "text": "The page just stays there — no navigation occurs" },
+            { "id": "b", "text": "The app crashes" },
+            { "id": "c", "text": "It automatically moves to the next activity" },
+            { "id": "d", "text": "Android generates an Intent automatically" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "Without an Intent, there is no mechanism to navigate away from the current screen. The page remains static until navigation logic is added.",
+          "hints": ["No Intent = No movement", "Page is stuck", "You need to explicitly navigate"]
+        },
+        {
+          "id": "S17-E17-P1-Q10",
+          "question": "The instructor compared an Intent to what real-world concept?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Development", "Concepts"],
+          "options": [
+            { "id": "a", "text": "A map or path — showing the direction from one place to another" },
+            { "id": "b", "text": "A key that opens a door" },
+            { "id": "c", "text": "A phone call between two people" },
+            { "id": "d", "text": "A letter delivered by a postman" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "The instructor compared Intent to a map or direction finder — it tells Android the path from the current activity (source) to the destination activity.",
+          "hints": ["Navigation-related analogy", "Source to destination", "Finding direction"]
+        }
+      ]
+    },
+    {
+      "name": "Section17-Episode17-Part2",
+      "difficulty": "medium",
+      "content": [
+        {
+          "id": "S17-E17-P2-Q1",
+          "question": "How many destinations can a single activity navigate to using multiple Intents?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Development", "Navigation"],
+          "options": [
+            { "id": "a", "text": "Multiple — you can create separate Intents for different destinations" },
+            { "id": "b", "text": "Only one destination per activity" },
+            { "id": "c", "text": "Maximum of two destinations" },
+            { "id": "d", "text": "It depends on the Android version" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "A single activity can navigate to multiple destinations by creating different Intent objects, each pointing to a different target activity.",
+          "hints": ["Multiple Intents, multiple destinations", "Each Intent has its own target", "No limit"]
+        },
+        {
+          "id": "S17-E17-P2-Q2",
+          "question": "In the lesson, what UI component was used for the sign-up navigation (to go to the registration screen)?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Development", "UI Components"],
+          "options": [
+            { "id": "a", "text": "TextView" },
+            { "id": "b", "text": "Button" },
+            { "id": "c", "text": "EditText" },
+            { "id": "d", "text": "ImageView" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "The instructor used a TextView for the 'Sign Up' text. A click listener was set on the TextView to navigate to the Registration activity.",
+          "hints": ["It's a text element, not a button", "Displays 'Sign Up' text", "Can have click listeners too"]
+        },
+        {
+          "id": "S17-E17-P2-Q3",
+          "question": "Why did the instructor create separate `setOnClickListener` blocks for the login button and sign-up text?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["Android Development", "Architecture"],
+          "options": [
+            { "id": "a", "text": "Because each component performs a different action and navigates to a different destination" },
+            { "id": "b", "text": "Because Android only allows one action per click listener" },
+            { "id": "c", "text": "Because Kotlin requires separate listeners for Buttons and TextViews" },
+            { "id": "d", "text": "Because it was the only way to avoid crashing" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "The login button checks credentials and navigates to Dashboard, while the sign-up text navigates directly to Registration. Different actions require different listeners.",
+          "hints": ["Different components, different actions", "Login goes to Dashboard, Sign Up goes to Registration", "Separation of concerns"]
+        },
+        {
+          "id": "S17-E17-P2-Q4",
+          "question": "What are the steps to set up a new component for navigation (e.g., sign-up text)?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["Android Development", "Setup"],
+          "options": [
+            { "id": "a", "text": "Target the component with val → set click listener → create Intent → start Activity" },
+            { "id": "b", "text": "Create Intent → target component → start Activity → set click listener" },
+            { "id": "c", "text": "Start Activity → create Intent → target component → set click listener" },
+            { "id": "d", "text": "Set click listener → target component → start Activity → create Intent" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "The correct flow is: (1) target the UI component using val and findViewById, (2) set a click listener on it, (3) create an Intent inside the listener, (4) call startActivity to navigate.",
+          "hints": ["Target first, then listen, then navigate", "Four sequential steps", "findViewById → setOnClickListener → Intent → startActivity"]
+        },
+        {
+          "id": "S17-E17-P2-Q5",
+          "question": "What naming convention did the instructor suggest for Intent variables when there are multiple Intents?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Development", "Best Practices"],
+          "options": [
+            { "id": "a", "text": "Use descriptive names like `intentValue` or `intentSignUp` to distinguish them" },
+            { "id": "b", "text": "Always use `intent` for all of them" },
+            { "id": "c", "text": "Use numbers like `intent1`, `intent2`" },
+            { "id": "d", "text": "Use uppercase like `INTENT`" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "When multiple Intents exist, the instructor recommended using descriptive names (e.g., `intentValue` for login, `intentSignUp` for sign-up) so each Intent is clearly identifiable.",
+          "hints": ["Descriptive naming", "Distinguishable from each other", "Readable code"]
+        },
+        {
+          "id": "S17-E17-P2-Q6",
+          "question": "What is the complete sequence of code for navigating from login to Dashboard after successful credential check?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["Android Development", "Navigation"],
+          "options": [
+            { "id": "a", "text": "Check credentials with if + && → create Intent(this, Dashboard::class.java) → startActivity(intent)" },
+            { "id": "b", "text": "Create Intent → check credentials → startActivity" },
+            { "id": "c", "text": "startActivity → create Intent → check credentials" },
+            { "id": "d", "text": "Create Intent → startActivity → check credentials" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "First verify the credentials using if with &&, then inside the if block create the Intent with source and destination, then call startActivity to navigate.",
+          "hints": ["Verify first, then navigate", "Credentials check comes first", "Intent creation is inside the if block"]
+        },
+        {
+          "id": "S17-E17-P2-Q7",
+          "question": "How is a new activity (e.g., Dashboard or Registration) created in Android Studio?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Development", "IDE"],
+          "options": [
+            { "id": "a", "text": "Right-click the package → New → Activity → Empty Activity" },
+            { "id": "b", "text": "File → New → Kotlin Class" },
+            { "id": "c", "text": "Edit the AndroidManifest.xml directly" },
+            { "id": "d", "text": "Create a new layout XML file only" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "The instructor demonstrated creating new activities by right-clicking the package folder and selecting New → Activity → Empty Activity, which creates both the Kotlin file and layout XML.",
+          "hints": ["Right-click context menu", "Activity template", "Creates both code and layout files"]
+        },
+        {
+          "id": "S17-E17-P2-Q8",
+          "question": "When Android Studio shows an unresolved reference for a new activity class, how do you resolve it?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Development", "IDE"],
+          "options": [
+            { "id": "a", "text": "Use Alt+Enter (Option+Enter) or context actions to import the class" },
+            { "id": "b", "text": "Restart Android Studio" },
+            { "id": "c", "text": "Delete and recreate the file" },
+            { "id": "d", "text": "Change the class name to lowercase" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "The instructor used Alt+Enter (context actions) to auto-import the necessary class reference when Android Studio showed an unresolved reference error.",
+          "hints": ["Quick fix keyboard shortcut", "Import the class", "Alt + Enter"]
+        },
+        {
+          "id": "S17-E17-P2-Q9",
+          "question": "Where should the click listener for the sign-up text be placed in the code?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["Android Development", "Code Organization"],
+          "options": [
+            { "id": "a", "text": "Outside and separate from the login button's click listener" },
+            { "id": "b", "text": "Inside the login button's click listener" },
+            { "id": "c", "text": "Inside the if block for credential checking" },
+            { "id": "d", "text": "Inside the else block" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "The sign-up text's click listener should be a separate, independent block from the login button's click listener since they handle different actions.",
+          "hints": ["Independent actions", "Not nested inside login logic", "Separate click handlers"]
+        },
+        {
+          "id": "S17-E17-P2-Q10",
+          "question": "What is the result when login is successful in the completed app?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Development", "App Flow"],
+          "options": [
+            { "id": "a", "text": "A Toast says 'Login Successful' and the app navigates to the Dashboard screen" },
+            { "id": "b", "text": "Only a Toast message appears with no navigation" },
+            { "id": "c", "text": "The app closes and reopens the Dashboard" },
+            { "id": "d", "text": "The Dashboard appears without any Toast message" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "On successful login, both actions occur: a Toast message displays 'Login Successful' and the Intent navigates the user to the Dashboard activity.",
+          "hints": ["Two things happen", "Toast AND navigation", "Feedback plus action"]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "items": [
+    {
+      "title": "Voting Eligibility Check with Comparison Operators",
+      "instructions": "**Problem:**\\nUse the `>=` (greater than or equal to) operator to check if a person is eligible to vote.\\n\\n**What we want:**\\nDeclare `val age: Int = 18` and `val minimumAge: Int = 18`. Print the result of `age >= minimumAge` and `age > minimumAge`.\\n\\n**Syntax:**\\n```\\nval age: Int = 18\\nval minimumAge: Int = 18\\nprintln(age >= minimumAge)\\nprintln(age > minimumAge)\\n```\\n\\n**Example 1:**\\nval age: Int = 18\\nval minimumAge: Int = 18\\nprintln(age >= minimumAge)\\nprintln(age > minimumAge)\\nOutput:\\ntrue\\nfalse\\nExplanation: `age >= minimumAge` is true because 18 is equal to 18 (>= includes equality). `age > minimumAge` is false because 18 is not strictly greater than 18.\\n\\n**Example 2:**\\nval age: Int = 21\\nval minimumAge: Int = 18\\nprintln(age >= minimumAge)\\nprintln(age > minimumAge)\\nOutput:\\ntrue\\ntrue\\nExplanation: 21 is both greater than and greater-than-or-equal-to 18, so both return true.",
+      "difficulty": "easy",
+      "language_key": "kotlin",
+      "time_limit": 2,
+      "memory_limit": 256,
+      "starter_code": "fun main() {\n    // Declare age and minimumAge, print age >= minimumAge and age > minimumAge\n}",
+      "execute_template": "",
+      "solution_code": "fun main() {\n    val age: Int = 18\n    val minimumAge: Int = 18\n    println(age >= minimumAge)\n    println(age > minimumAge)\n}",
+      "test_cases": [
+        { "input": "", "output": "true\nfalse", "is_sample": true }
+      ]
+    }
+  ]
+}

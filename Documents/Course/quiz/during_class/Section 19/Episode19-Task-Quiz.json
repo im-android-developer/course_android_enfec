@@ -1,0 +1,336 @@
+{
+  "items": [
+    {
+      "name": "Episode19-Task-Quiz-1",
+      "difficulty": "medium",
+      "content": [
+        {
+          "id": "S19-E19-TQ1-Q1",
+          "question": "Why is input validation important before sending sign-up data to the database?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Kotlin", "Validation", "Android Development"],
+          "options": [
+            { "id": "a", "text": "It avoids storing null/blank values that can cause bad or inconsistent records" },
+            { "id": "b", "text": "It automatically encrypts all user data" },
+            { "id": "c", "text": "It removes the need for UI components" },
+            { "id": "d", "text": "It makes every field optional without checks" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "Validation ensures required values are present and meaningful before insertion, preventing empty or invalid database entries.",
+          "hints": ["Think about blank strings in records", "Validation happens before persistence", "Data quality is the main reason"]
+        },
+        {
+          "id": "S19-E19-TQ1-Q2",
+          "question": "In Kotlin, what does the safe call operator `?.` do?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Kotlin", "Null Safety"],
+          "options": [
+            { "id": "a", "text": "It throws an exception if the value is null" },
+            { "id": "b", "text": "It skips null checks and forces execution" },
+            { "id": "c", "text": "It accesses a property or method only if the receiver is not null" },
+            { "id": "d", "text": "It converts any value to an Int" }
+          ],
+          "correctAnswers": ["c"],
+          "explanation": "`?.` safely calls the next member only when the object is non-null; otherwise the expression evaluates to null.",
+          "hints": ["It is a null-safe access operator", "No crash when receiver is null", "It can return null for the whole chain"]
+        },
+        {
+          "id": "S19-E19-TQ1-Q3",
+          "question": "What is the main purpose of the Elvis operator `?:` in Kotlin?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Kotlin", "Null Safety"],
+          "options": [
+            { "id": "a", "text": "It compares two strings alphabetically" },
+            { "id": "b", "text": "It provides a fallback value when the left side is null" },
+            { "id": "c", "text": "It repeats a loop until a condition is true" },
+            { "id": "d", "text": "It declares an immutable variable" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "The Elvis operator returns the right-side default only when the left expression is null.",
+          "hints": ["Think default value", "Used after nullable expressions", "Syntax includes colon after question mark"]
+        },
+        {
+          "id": "S19-E19-TQ1-Q4",
+          "question": "What does this expression do: `fullNameValue.editText?.text?.toString() ?: \"John Doe\"`?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["Kotlin", "TextInputLayout", "Null Safety"],
+          "options": [
+            { "id": "a", "text": "It always returns \"John Doe\" regardless of input" },
+            { "id": "b", "text": "It reads text safely and uses \"John Doe\" only if the chain resolves to null" },
+            { "id": "c", "text": "It trims spaces and throws error for null" },
+            { "id": "d", "text": "It converts text to uppercase" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "The safe-call chain avoids crashes, and Elvis gives a default only when the overall left side is null.",
+          "hints": ["Two operators are combined", "Safe call first, default later", "Default is used only on null"]
+        },
+        {
+          "id": "S19-E19-TQ1-Q5",
+          "question": "If the condition is `if (fullName.length <= 6)`, which input should fail this validation?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Kotlin", "Validation", "Control Flow"],
+          "options": [
+            { "id": "a", "text": "\"Android\"" },
+            { "id": "b", "text": "\"KotlinX\"" },
+            { "id": "c", "text": "\"Amit\"" },
+            { "id": "d", "text": "\"ComposeUI\"" }
+          ],
+          "correctAnswers": ["c"],
+          "explanation": "\"Amit\" has length 4, which is less than or equal to 6, so it fails the condition.",
+          "hints": ["Count characters", "Condition blocks short values", "Threshold is 6"]
+        },
+        {
+          "id": "S19-E19-TQ1-Q6",
+          "question": "Why can a single-letter value like \"A\" still pass a null check but fail business validation?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["Validation", "Kotlin", "Data Quality"],
+          "options": [
+            { "id": "a", "text": "Because null check only verifies presence, not quality or minimum length" },
+            { "id": "b", "text": "Because Kotlin treats one-letter strings as null" },
+            { "id": "c", "text": "Because EditText removes short values automatically" },
+            { "id": "d", "text": "Because safe call converts \"A\" into empty string" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "A non-null value can still be invalid by business rules such as minimum length.",
+          "hints": ["Presence vs correctness", "Null check is only first layer", "Length rule is separate"]
+        },
+        {
+          "id": "S19-E19-TQ1-Q7",
+          "question": "What is the role of `else if` in password validation logic?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["Kotlin", "Control Flow", "Validation"],
+          "options": [
+            { "id": "a", "text": "It runs before the `if` block" },
+            { "id": "b", "text": "It allows checking additional conditions before reaching final `else`" },
+            { "id": "c", "text": "It can only be used with loops" },
+            { "id": "d", "text": "It replaces all Boolean expressions" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "`else if` lets you evaluate another condition, such as password mismatch, if prior conditions are false.",
+          "hints": ["Think multiple checks", "Placed between if and else", "Used for branching logic"]
+        },
+        {
+          "id": "S19-E19-TQ1-Q8",
+          "question": "Where should `else if` be placed in an if-else chain?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Kotlin", "Syntax", "Control Flow"],
+          "options": [
+            { "id": "a", "text": "Before `if`" },
+            { "id": "b", "text": "After `else`" },
+            { "id": "c", "text": "Between `if` and `else`" },
+            { "id": "d", "text": "Inside the condition parentheses" }
+          ],
+          "correctAnswers": ["c"],
+          "explanation": "The standard order is `if`, then optional `else if` branches, and finally `else`.",
+          "hints": ["Order matters", "It is not first and not last", "Middle branch"]
+        },
+        {
+          "id": "S19-E19-TQ1-Q9",
+          "question": "What is a likely result of using the wrong view ID in `findViewById` while wiring inputs?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["Android Development", "Debugging", "UI Binding"],
+          "options": [
+            { "id": "a", "text": "The app may crash at runtime due to missing or mismatched view reference" },
+            { "id": "b", "text": "The compiler auto-corrects the ID silently" },
+            { "id": "c", "text": "All fields become optional" },
+            { "id": "d", "text": "The layout file is deleted" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "Incorrect IDs can lead to null references or wrong casting, often causing runtime crashes.",
+          "hints": ["Binding depends on exact ID", "Runtime issues are common", "Mismatch can break field access"]
+        },
+        {
+          "id": "S19-E19-TQ1-Q10",
+          "question": "Which condition correctly checks that password and confirm password are different?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Kotlin", "Validation", "Operators"],
+          "options": [
+            { "id": "a", "text": "`password == confirmPassword`" },
+            { "id": "b", "text": "`password != confirmPassword`" },
+            { "id": "c", "text": "`password = confirmPassword`" },
+            { "id": "d", "text": "`password >= confirmPassword`" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "`!=` is the inequality operator and returns true when both values are not the same.",
+          "hints": ["Need mismatch check", "Not-equal operator", "Double symbols, not assignment"]
+        }
+      ]
+    },
+    {
+      "name": "Episode19-Task-Quiz-2",
+      "difficulty": "medium",
+      "content": [
+        {
+          "id": "S19-E19-TQ2-Q1",
+          "question": "In Kotlin, `when` is primarily used as an alternative to which structure?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Kotlin", "Control Flow"],
+          "options": [
+            { "id": "a", "text": "for loop" },
+            { "id": "b", "text": "do-while loop" },
+            { "id": "c", "text": "switch-style multi-branch conditional logic" },
+            { "id": "d", "text": "class inheritance" }
+          ],
+          "correctAnswers": ["c"],
+          "explanation": "`when` handles multiple condition branches and is Kotlin's replacement for switch-like branching.",
+          "hints": ["Multiple conditions in one block", "Cleaner than long if-else chains", "Commonly compared to switch"]
+        },
+        {
+          "id": "S19-E19-TQ2-Q2",
+          "question": "In a `when` branch like `fullName.isEmpty() -> showError()`, what does the arrow `->` represent?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["Kotlin", "Syntax", "When Expression"],
+          "options": [
+            { "id": "a", "text": "It separates the condition (left) from the action (right)" },
+            { "id": "b", "text": "It is a mathematical greater-than operator" },
+            { "id": "c", "text": "It converts string into Boolean" },
+            { "id": "d", "text": "It ends the function" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "In `when`, the expression before `->` is the branch condition and the code after it is the executed action.",
+          "hints": ["Left side checks, right side executes", "Used in every branch", "Condition-action mapping"]
+        },
+        {
+          "id": "S19-E19-TQ2-Q3",
+          "question": "Which check is used in the lesson to validate whether a string field has no characters?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Kotlin", "Strings", "Validation"],
+          "options": [
+            { "id": "a", "text": "`.isEmpty()`" },
+            { "id": "b", "text": "`.size == 0`" },
+            { "id": "c", "text": "`.length < 0`" },
+            { "id": "d", "text": "`.hasText()`" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "The transcript demonstrates `isEmpty()` to test whether a string has zero length.",
+          "hints": ["String utility method", "Checks zero length", "Called directly on the string"]
+        },
+        {
+          "id": "S19-E19-TQ2-Q4",
+          "question": "Which validation branch should catch too-short passwords in the sign-up flow?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["Kotlin", "Validation", "Password"],
+          "options": [
+            { "id": "a", "text": "`password.length <= 6 -> show length error`" },
+            { "id": "b", "text": "`password.length >= 1 -> show success`" },
+            { "id": "c", "text": "`password == confirmPassword -> show too-short error`" },
+            { "id": "d", "text": "`password.isNotEmpty() -> stop all checks`" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "A dedicated branch checks length threshold and shows a specific message when password length is too small.",
+          "hints": ["Length rule is separate from match rule", "Threshold shown was 6", "Short passwords should be blocked"]
+        },
+        {
+          "id": "S19-E19-TQ2-Q5",
+          "question": "Which condition correctly checks whether the username field is empty in the `when` validation shown in Part 2?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Kotlin", "When Expression", "Validation"],
+          "options": [
+            { "id": "a", "text": "`username.isEmpty()`" },
+            { "id": "b", "text": "`username == null`" },
+            { "id": "c", "text": "`username.length < 0`" },
+            { "id": "d", "text": "`username.isBlanked()`" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "Part 2 repeatedly uses `.isEmpty()` checks in `when` branches for field-level validation.",
+          "hints": ["It is a String helper", "Used in Part 2 for full name and username checks", "Returns true when length is zero"]
+        },
+        {
+          "id": "S19-E19-TQ2-Q6",
+          "question": "In a `when` branch like `username.isEmpty() -> ...`, what should the right side of `->` contain?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["Kotlin", "When Expression", "Validation"],
+          "options": [
+            { "id": "a", "text": "Another condition" },
+            { "id": "b", "text": "The action to execute, such as showing a Toast" },
+            { "id": "c", "text": "Only a variable declaration" },
+            { "id": "d", "text": "A return type declaration" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "In `when`, left side is condition and right side is the action that runs when the condition is true.",
+          "hints": ["Condition on left", "Execution on right", "Part 2 uses Toast actions"]
+        },
+        {
+          "id": "S19-E19-TQ2-Q7",
+          "question": "Which expression from Part 2 correctly validates that password and confirm password do not match?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["Kotlin", "Validation", "Operators"],
+          "options": [
+            { "id": "a", "text": "`passwordV == cnfPasswordV`" },
+            { "id": "b", "text": "`passwordV != cnfPasswordV`" },
+            { "id": "c", "text": "`passwordV = cnfPasswordV`" },
+            { "id": "d", "text": "`passwordV >= cnfPasswordV`" }
+          ],
+          "correctAnswers": ["b"],
+          "explanation": "The `!=` check was used in Part 2 to show a mismatch message when password and confirm password differ.",
+          "hints": ["Need mismatch logic", "Not equal operator", "Double symbol comparison"]
+        },
+        {
+          "id": "S19-E19-TQ2-Q8",
+          "question": "Which condition was added in Part 2 to enforce minimum password length?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["Kotlin", "Validation", "Password"],
+          "options": [
+            { "id": "a", "text": "`passwordV.length <= 6`" },
+            { "id": "b", "text": "`passwordV.length >= 1`" },
+            { "id": "c", "text": "`passwordV.length == 0`" },
+            { "id": "d", "text": "`passwordV.length > 20`" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "Part 2 explicitly demonstrates checking `passwordV.length <= 6` to reject short passwords.",
+          "hints": ["Threshold shown was 6", "Length comparison branch", "Used before success flow"]
+        },
+        {
+          "id": "S19-E19-TQ2-Q9",
+          "question": "Why was the password-length branch moved above other checks during the demo?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["Kotlin", "When Expression", "Validation Order"],
+          "options": [
+            { "id": "a", "text": "To ensure short passwords are caught immediately by an earlier matching branch" },
+            { "id": "b", "text": "To reduce app size" },
+            { "id": "c", "text": "Because `when` only supports two branches" },
+            { "id": "d", "text": "To disable null safety checks" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "`when` executes the first true branch. Moving a rule upward gives it higher priority in validation flow.",
+          "hints": ["Branch order matters", "First true condition wins", "Prioritization of checks"]
+        },
+        {
+          "id": "S19-E19-TQ2-Q10",
+          "question": "In the Part 2 code snapshot, what happens when all entered values pass shown validations but no explicit success branch is added yet?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Kotlin", "When Expression", "Runtime Behavior"],
+          "options": [
+            { "id": "a", "text": "No validation error branch runs, so no error toast is shown from those checks" },
+            { "id": "b", "text": "The app automatically navigates to Dashboard" },
+            { "id": "c", "text": "Kotlin throws a compile-time crash" },
+            { "id": "d", "text": "All values are cleared automatically" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "Without a defined success/default action for the pass case, none of the error branches execute when inputs satisfy all listed conditions.",
+          "hints": ["Only shown branches run when true", "No matching error branch means no error action", "Success action must be written explicitly"]
+        }
+      ]
+    }
+  ]
+}

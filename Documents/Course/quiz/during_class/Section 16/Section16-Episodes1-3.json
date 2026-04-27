@@ -1,0 +1,502 @@
+{
+  "items": [
+    {
+      "name": "Section16-Episode16-Part1",
+      "difficulty": "medium",
+      "content": [
+        {
+          "id": "S16-E16-P1-Q1",
+          "question": "What does `.text` do when called on an EditText variable in Kotlin?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Development", "EditText"],
+          "options": [
+            { "id": "a", "text": "It retrieves whatever the user has typed inside the EditText" },
+            { "id": "b", "text": "It deletes the text from the EditText" },
+            { "id": "c", "text": "It changes the hint of the EditText" },
+            { "id": "d", "text": "It hides the EditText from the screen" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "Calling `.text` on an EditText variable demands/collects the text that the user has entered into that input field.",
+          "hints": ["Think about what you want to collect from the user", "It reads the content", "Used before .toString()"]
+        },
+        {
+          "id": "S16-E16-P1-Q2",
+          "question": "Why do we call `.toString()` after `.text` when collecting input from an EditText?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["Android Development", "Type Conversion"],
+          "options": [
+            { "id": "a", "text": "To convert the collected value into a String data type regardless of what it originally was" },
+            { "id": "b", "text": "To convert it into an Integer" },
+            { "id": "c", "text": "To display it on screen automatically" },
+            { "id": "d", "text": "To encrypt the text for security" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "The value from an EditText could be a number, boolean, or any type. `.toString()` ensures it is converted into a String so it can be stored in a String variable.",
+          "hints": ["The input could be anything the user types", "We need a consistent data type", "String is the target type"]
+        },
+        {
+          "id": "S16-E16-P1-Q3",
+          "question": "What is the correct order of operations when collecting text from an EditText in Kotlin?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["Android Development", "EditText"],
+          "options": [
+            { "id": "a", "text": "Call the component → demand text → convert to string" },
+            { "id": "b", "text": "Convert to string → demand text → call the component" },
+            { "id": "c", "text": "Demand text → call the component → convert to string" },
+            { "id": "d", "text": "Call the component → convert to string → demand text" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "First you call the component variable (e.g., username_edit_text), then demand its text with `.text`, then convert to string with `.toString()`.",
+          "hints": ["You need to target the component first", "Then ask for the text", "Finally convert the type"]
+        },
+        {
+          "id": "S16-E16-P1-Q4",
+          "question": "Why is the variable that stores collected text from an EditText declared as `var` (mutable) instead of `val`?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["Android Development", "Kotlin Variables"],
+          "options": [
+            { "id": "a", "text": "Because the text entered by the user can change each time the button is clicked" },
+            { "id": "b", "text": "Because `val` cannot store String values" },
+            { "id": "c", "text": "Because Android requires all variables to be `var`" },
+            { "id": "d", "text": "Because `var` is faster than `val`" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "The user may enter different values each time, so the variable that stores the collected text must be mutable (`var`) to accept changing values.",
+          "hints": ["User input is not fixed", "The value changes on each login attempt", "Mutable means changeable"]
+        },
+        {
+          "id": "S16-E16-P1-Q5",
+          "question": "What was the mistake the instructor initially made when declaring the login button component type?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Development", "Component Types"],
+          "options": [
+            { "id": "a", "text": "Used EditText instead of Button as the component type" },
+            { "id": "b", "text": "Used String instead of Button" },
+            { "id": "c", "text": "Forgot to add an ID" },
+            { "id": "d", "text": "Used `var` instead of `val`" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "The instructor accidentally cast the login button as EditText instead of Button, which would cause an error. It was corrected to Button.",
+          "hints": ["The button is not an input field", "Component type must match the XML element", "EditText vs Button"]
+        },
+        {
+          "id": "S16-E16-P1-Q6",
+          "question": "What does `setOnClickListener` allow us to do with a Button?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Development", "Event Handling"],
+          "options": [
+            { "id": "a", "text": "Define actions that happen when the user clicks the button" },
+            { "id": "b", "text": "Change the button's color when clicked" },
+            { "id": "c", "text": "Disable the button permanently" },
+            { "id": "d", "text": "Remove the button from the screen" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "setOnClickListener is a function that defines what code should execute whenever the user clicks the button. All functionality goes inside it.",
+          "hints": ["It listens for click events", "Actions go inside the curly braces", "Trigger-based execution"]
+        },
+        {
+          "id": "S16-E16-P1-Q7",
+          "question": "In the login screen example, what are the two approaches used to handle XML components in Kotlin?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["Android Development", "Architecture"],
+          "options": [
+            { "id": "a", "text": "First target the component with immutable variables, then collect text with mutable variables" },
+            { "id": "b", "text": "First collect text, then target the component" },
+            { "id": "c", "text": "Use only immutable variables for everything" },
+            { "id": "d", "text": "Use only mutable variables for everything" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "Step 1: Target components using `val` (immutable) with findViewById. Step 2: Collect the text values into `var` (mutable) String variables since user input changes.",
+          "hints": ["Two types of variables are used", "Component references don't change, but text does", "val for targeting, var for collecting"]
+        },
+        {
+          "id": "S16-E16-P1-Q8",
+          "question": "What data type is used to store the collected username and password text?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Development", "Data Types"],
+          "options": [
+            { "id": "a", "text": "String" },
+            { "id": "b", "text": "Int" },
+            { "id": "c", "text": "Boolean" },
+            { "id": "d", "text": "EditText" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "The collected text is converted to String using `.toString()` and stored in a String variable because user input is text-based.",
+          "hints": ["Think about the type of user input", "We called .toString() on it", "Text data"]
+        },
+        {
+          "id": "S16-E16-P1-Q9",
+          "question": "Which of the following correctly collects text from a password EditText?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Development", "Syntax"],
+          "options": [
+            { "id": "a", "text": "`password_edit_text.text.toString()`" },
+            { "id": "b", "text": "`password_edit_text.getString()`" },
+            { "id": "c", "text": "`password_edit_text.value()`" },
+            { "id": "d", "text": "`getText(password_edit_text)`" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "The correct chain is: component variable → `.text` to get the content → `.toString()` to convert it to a String.",
+          "hints": ["Follow the three-step chain", "Component.text.toString()", "Dot notation"]
+        },
+        {
+          "id": "S16-E16-P1-Q10",
+          "question": "Why should text collection from EditText fields be placed inside `setOnClickListener` of the login button?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["Android Development", "Logic Flow"],
+          "options": [
+            { "id": "a", "text": "Because we only need to collect input after the user clicks the login button" },
+            { "id": "b", "text": "Because EditText cannot be accessed outside a click listener" },
+            { "id": "c", "text": "Because Android requires it by law" },
+            { "id": "d", "text": "Because variables cannot be declared outside click listeners" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "The text should only be collected when the user clicks login, as that is when they have finished typing. Collecting before the click would get empty or incomplete values.",
+          "hints": ["When does the user finish typing?", "The button triggers the action", "Timing matters"]
+        }
+      ]
+    },
+    {
+      "name": "Section16-Episode16-Part2",
+      "difficulty": "medium",
+      "content": [
+        {
+          "id": "S16-E16-P2-Q1",
+          "question": "What does the `if` statement do when its condition evaluates to `true`?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Kotlin", "Control Flow"],
+          "options": [
+            { "id": "a", "text": "It executes the code inside its curly braces" },
+            { "id": "b", "text": "It skips the code inside its curly braces" },
+            { "id": "c", "text": "It throws an error" },
+            { "id": "d", "text": "It restarts the application" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "When the condition inside the if statement is true, the code block (action) within the curly braces is executed.",
+          "hints": ["True means it runs", "The code inside braces is the action", "Conditional execution"]
+        },
+        {
+          "id": "S16-E16-P2-Q2",
+          "question": "What happens when the `if` statement's condition evaluates to `false`?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Kotlin", "Control Flow"],
+          "options": [
+            { "id": "a", "text": "The if block is ignored and not executed" },
+            { "id": "b", "text": "The if block still executes" },
+            { "id": "c", "text": "The app crashes" },
+            { "id": "d", "text": "It runs the code in reverse" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "When the condition is false, the entire if block is skipped/ignored and the code inside the curly braces does not execute.",
+          "hints": ["False means skip", "The block is ignored", "Nothing happens inside the if"]
+        },
+        {
+          "id": "S16-E16-P2-Q3",
+          "question": "In the login example, what operator is used to compare the username with the userId?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Kotlin", "Comparison Operators"],
+          "options": [
+            { "id": "a", "text": "`==` (equality comparison)" },
+            { "id": "b", "text": "`=` (assignment)" },
+            { "id": "c", "text": "`!=` (not equals)" },
+            { "id": "d", "text": "`>=` (greater than or equal)" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "The `==` operator is used to compare whether the username entered by the user matches the stored userId. Single `=` would assign, not compare.",
+          "hints": ["We are checking equality", "Double equals for comparison", "Not assignment"]
+        },
+        {
+          "id": "S16-E16-P2-Q4",
+          "question": "What is a Toast message in Android?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Development", "UI Feedback"],
+          "options": [
+            { "id": "a", "text": "A small pop-up message that appears briefly on the screen" },
+            { "id": "b", "text": "A permanent text label on the screen" },
+            { "id": "c", "text": "A dialog box that requires user action to dismiss" },
+            { "id": "d", "text": "A notification in the status bar" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "A Toast is a short pop-up message that appears at the bottom of the screen for a brief moment to give feedback to the user, like 'Login Successful'.",
+          "hints": ["It's a brief message", "Appears and disappears automatically", "Used for quick feedback"]
+        },
+        {
+          "id": "S16-E16-P2-Q5",
+          "question": "What is the correct syntax for creating a Toast message in Kotlin?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["Android Development", "Toast"],
+          "options": [
+            { "id": "a", "text": "`Toast.makeText(this, \"message\", Toast.LENGTH_LONG).show()`" },
+            { "id": "b", "text": "`Toast.create(this, \"message\").display()`" },
+            { "id": "c", "text": "`Toast.show(\"message\")`" },
+            { "id": "d", "text": "`makeToast(this, \"message\")`" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "Toast.makeText() creates the toast with context (`this`), the message text, and duration. `.show()` is required to actually display it on screen.",
+          "hints": ["makeText creates it", "show() displays it", "Three parameters: context, message, duration"]
+        },
+        {
+          "id": "S16-E16-P2-Q6",
+          "question": "Why must the comparison logic be written inside `setOnClickListener` and not outside it?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["Android Development", "Logic Flow"],
+          "options": [
+            { "id": "a", "text": "Because the comparison should only happen when the login button is clicked by the user" },
+            { "id": "b", "text": "Because Kotlin does not allow if statements outside click listeners" },
+            { "id": "c", "text": "Because Toast messages only work inside click listeners" },
+            { "id": "d", "text": "Because variables are not accessible outside click listeners" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "The comparison between username and userId only makes sense after the user clicks login. Running it outside would compare values before the user has entered anything.",
+          "hints": ["When should the check happen?", "User must click first", "Timing of execution matters"]
+        },
+        {
+          "id": "S16-E16-P2-Q7",
+          "question": "In the demonstration, what happened when the user entered a wrong username and clicked login (without else statement)?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Kotlin", "Control Flow"],
+          "options": [
+            { "id": "a", "text": "Nothing happened — no message appeared on screen" },
+            { "id": "b", "text": "An error message appeared" },
+            { "id": "c", "text": "The app crashed" },
+            { "id": "d", "text": "The login was still successful" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "Without an else statement, when the condition is false, the if block is simply ignored and nothing is displayed, leaving the user confused.",
+          "hints": ["No else block means no fallback", "If block is skipped entirely", "No feedback for the user"]
+        },
+        {
+          "id": "S16-E16-P2-Q8",
+          "question": "What is the role of `.show()` at the end of a Toast message?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Development", "Toast"],
+          "options": [
+            { "id": "a", "text": "It displays the Toast message on the screen" },
+            { "id": "b", "text": "It saves the message to a log file" },
+            { "id": "c", "text": "It creates the Toast object" },
+            { "id": "d", "text": "It sets the duration of the Toast" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "`.show()` is the method that actually renders and displays the Toast on the screen. Without it, the Toast would be created but never shown.",
+          "hints": ["Without this, you won't see anything", "Final step in the chain", "Makes it visible"]
+        },
+        {
+          "id": "S16-E16-P2-Q9",
+          "question": "What does `this` represent in `Toast.makeText(this, \"message\", Toast.LENGTH_LONG)`?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["Android Development", "Context"],
+          "options": [
+            { "id": "a", "text": "The current activity context" },
+            { "id": "b", "text": "The Toast message itself" },
+            { "id": "c", "text": "The login button" },
+            { "id": "d", "text": "The EditText component" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "`this` refers to the current activity context, which Android needs to know where to display the Toast message.",
+          "hints": ["It tells Android where to show the Toast", "Related to the current screen", "Activity reference"]
+        },
+        {
+          "id": "S16-E16-P2-Q10",
+          "question": "If `username = \"android\"` and `userId = \"android\"`, what does `if (username == userId)` evaluate to?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Kotlin", "Comparison"],
+          "options": [
+            { "id": "a", "text": "true — the if block executes" },
+            { "id": "b", "text": "false — the if block is skipped" },
+            { "id": "c", "text": "Error — strings cannot be compared" },
+            { "id": "d", "text": "null" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "Both values are \"android\", so the `==` comparison returns true, and the code inside the if block (Toast 'Login Successful') executes.",
+          "hints": ["Both strings are identical", "== checks value equality", "Matching values return true"]
+        }
+      ]
+    },
+    {
+      "name": "Section16-Episode16-Part3",
+      "difficulty": "medium",
+      "content": [
+        {
+          "id": "S16-E16-P3-Q1",
+          "question": "What is the purpose of the `else` statement when used alongside an `if` statement?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Kotlin", "Control Flow"],
+          "options": [
+            { "id": "a", "text": "To execute an alternative action when the if condition is false" },
+            { "id": "b", "text": "To repeat the if condition" },
+            { "id": "c", "text": "To terminate the program" },
+            { "id": "d", "text": "To create a new variable" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "The else block provides an alternative path of execution. When the if condition is false, instead of doing nothing, the else block runs its code.",
+          "hints": ["It's a fallback", "Runs when if is skipped", "Alternative action"]
+        },
+        {
+          "id": "S16-E16-P3-Q2",
+          "question": "Does the `else` statement require a condition inside parentheses like `if` does?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Kotlin", "Syntax"],
+          "options": [
+            { "id": "a", "text": "No — else has no parentheses; it only uses curly braces" },
+            { "id": "b", "text": "Yes — else requires the same condition as if" },
+            { "id": "c", "text": "Yes — else requires an opposite condition" },
+            { "id": "d", "text": "Else does not use curly braces either" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "The else statement does not take any condition in parentheses. You simply write `else { }` with curly braces containing the alternative action.",
+          "hints": ["No parentheses needed", "Just else and curly braces", "The instructor explicitly warned about this"]
+        },
+        {
+          "id": "S16-E16-P3-Q3",
+          "question": "In the login example, what Toast message appears when the credentials are incorrect (with else statement)?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Development", "If-Else"],
+          "options": [
+            { "id": "a", "text": "\"Invalid Credentials\"" },
+            { "id": "b", "text": "\"Login Successful\"" },
+            { "id": "c", "text": "\"Try Again\"" },
+            { "id": "d", "text": "No message appears" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "When the if condition is false (credentials don't match), the else block executes and shows the Toast message 'Invalid Credentials'.",
+          "hints": ["The else block handles wrong input", "A feedback message for the user", "Opposite of Login Successful"]
+        },
+        {
+          "id": "S16-E16-P3-Q4",
+          "question": "Why was using two separate if-else blocks (one for username, one for password) considered problematic?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["Kotlin", "Code Quality"],
+          "options": [
+            { "id": "a", "text": "The code becomes bulky and messy with too many if-else statements" },
+            { "id": "b", "text": "Kotlin does not allow two if-else blocks" },
+            { "id": "c", "text": "It causes the app to crash" },
+            { "id": "d", "text": "It makes the Toast messages disappear" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "Having separate if-else blocks for each credential check makes the code bulky and harder to maintain. A single combined condition using a logical operator is cleaner.",
+          "hints": ["Code readability matters", "Too many repeated blocks", "There's a better approach"]
+        },
+        {
+          "id": "S16-E16-P3-Q5",
+          "question": "What is the logical AND operator (`&&`) used for in Kotlin?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Kotlin", "Logical Operators"],
+          "options": [
+            { "id": "a", "text": "To check if BOTH conditions are true simultaneously" },
+            { "id": "b", "text": "To check if at least one condition is true" },
+            { "id": "c", "text": "To negate a condition" },
+            { "id": "d", "text": "To assign values to two variables at once" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "The `&&` (AND) operator combines two conditions. Both must be true for the overall result to be true. If either is false, the result is false.",
+          "hints": ["Both must pass", "Two conditions joined together", "All-or-nothing check"]
+        },
+        {
+          "id": "S16-E16-P3-Q6",
+          "question": "Using `&&`, what happens if the username is correct but the password is wrong?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["Kotlin", "Logical Operators"],
+          "options": [
+            { "id": "a", "text": "The overall condition is false and the else block executes" },
+            { "id": "b", "text": "The if block still executes because one condition is true" },
+            { "id": "c", "text": "Only the username check passes and a partial login occurs" },
+            { "id": "d", "text": "The app crashes due to mismatched conditions" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "With `&&`, BOTH conditions must be true. If even one condition (password check) is false, the entire if condition becomes false and the else block runs.",
+          "hints": ["AND requires both to be true", "One false makes the whole thing false", "All or nothing"]
+        },
+        {
+          "id": "S16-E16-P3-Q7",
+          "question": "What is the correct syntax for combining username and password checks using the AND operator?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["Kotlin", "Logical Operators"],
+          "options": [
+            { "id": "a", "text": "`if ((username == userId) && (password == userPassword))`" },
+            { "id": "b", "text": "`if (username == userId AND password == userPassword)`" },
+            { "id": "c", "text": "`if (username && password == userId && userPassword)`" },
+            { "id": "d", "text": "`if (username == userId) && if (password == userPassword)`" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "Each condition is wrapped in parentheses and connected with `&&`. Both conditions are placed inside a single if statement's parentheses.",
+          "hints": ["Each condition gets its own parentheses", "&&  joins them", "All inside one if statement"]
+        },
+        {
+          "id": "S16-E16-P3-Q8",
+          "question": "In the AND truth table, what result do you get when Condition A is true and Condition B is false?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Kotlin", "Logical Operators"],
+          "options": [
+            { "id": "a", "text": "false" },
+            { "id": "b", "text": "true" },
+            { "id": "c", "text": "null" },
+            { "id": "d", "text": "Error" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "With the AND operator, if any one condition is false, the entire result is false. Both A and B must be true to get true.",
+          "hints": ["AND needs both to be true", "One false ruins the result", "Think of a gate that needs both keys"]
+        },
+        {
+          "id": "S16-E16-P3-Q9",
+          "question": "What advantage does using `&&` in a single if-else give over using two separate if-else blocks?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["Kotlin", "Code Quality"],
+          "options": [
+            { "id": "a", "text": "Reduces code, avoids repetition, and checks both conditions in one statement" },
+            { "id": "b", "text": "It runs faster because it uses less memory" },
+            { "id": "c", "text": "It allows checking more than two conditions only" },
+            { "id": "d", "text": "It automatically handles null values" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "Using `&&` combines both checks into one if statement, eliminating duplicate if-else blocks and making the code cleaner and less bulky.",
+          "hints": ["Less code, same result", "One if-else instead of two", "Cleaner and more readable"]
+        },
+        {
+          "id": "S16-E16-P3-Q10",
+          "question": "Where should the `else` keyword be placed relative to the `if` block?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Kotlin", "Syntax"],
+          "options": [
+            { "id": "a", "text": "Immediately after the closing curly brace of the if block" },
+            { "id": "b", "text": "Before the if statement" },
+            { "id": "c", "text": "Inside the if block's curly braces" },
+            { "id": "d", "text": "On a completely separate line with a gap" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "The `else` keyword is written right after the closing curly brace `}` of the if block. The instructor explicitly demonstrated this placement.",
+          "hints": ["Right after if's closing brace", "No gap between them", "Continuation of the same statement"]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,133 @@
+(Transcribed by TurboScribe. Go Unlimited to remove this message.)
+
+Hey students, welcome again. Now let's do one more thing that apply the text input layout over this login screen as well. Okay.
+
+So, what exactly I'm going to do, I'm come over this login screen, instead of this edit text, I'll put text input layout here. Okay. So, let me go with split screen.
+
+Let's go with username here and inside into this username, just keep this into your mind that this ID should not be changed. Okay. We have to keep this idea the same.
+
+So I am just removing this, or you can say, I'm just, yeah, let's move this only. I remove this and for my memory, I'm just keeping this username with me only and nothing. So I am just commenting this out, commenting this username value like this.
+
+I'll remove it later. Okay. So I just remove this and let me backspace, backspace, okay.
+
+So I'm going with text input layout, text input layout like this. Inside this, I'll go with the, okay, what the signup, what I put into signup activity. Let's do the same.
+
+So we have match parent and wrap content. So let's put the match parent with the match parent and the wrap content like this. And after this, we have to, we have to follow several top left and right.
+
+So I'm just copying this and paste it here like this. And you will see, we got something, we got here something, okay. Now I'm just closing it like this and, okay.
+
+So let's do a thing. Let's do a thing. Let me just copy the whole like this and we'll paste it here like this.
+
+Okay. So that's how we got the same thing. And let's put the ID again.
+
+So I'm saying ID username here because it is too important for us. Now, okay. Let me remove this.
+
+Now it's done. Let me remove this comment here. Okay.
+
+One more thing is let's put in this design and make it slight, okay. Okay. Now, once it's done, let me do the same and let me copy this text input layout and let's paste inside this box like this.
+
+So you will see, we get the full name here and instead of full name, we have to go with user name, user name like this and user name will be, user name will be here like this. Okay. That's how you can just put it here.
+
+And we have almost all the things here. We actually copy the same thing and that's why it is as same as the signup activity. And after this, let's remove the edit text again and let me keep this aside.
+
+What happened to it? Okay. It's somehow. Okay.
+
+Let me remove this again like this and from the signup, I'm just choosing this password field and here I'm just copy the password of full and I paste it here like this and I just have to, okay, the password is also the same. So we have the same idea. So that's not a big issue for us.
+
+We've got all the things like this, login button is okay, signup button, user name button is okay, user name is okay and password is okay. And after this into the, let's move to signup, let's move to login first like this and into this login. Okay.
+
+One more thing is, here we use if-else statement, there we use when statement. So keep this into mind that when or if-else statement are not enemies, they are the approaches that how exactly we are writing the code, they are the approaches, they are the tools of a developer. We kindly keep this mind that when you have to use what, okay, it's not compulsory that every time you have to use when or every time you have to use if, it's as I said, it's completely on you.
+
+Okay. The basic difference is that if-else statement actually comes with boolean statements that whenever the if-else statement is okay, then only it will work, otherwise it will not work. Somehow, when statement also uses the same, okay, but when we are going with if-else statement, it will like, when we have multiple conditions right over there, we have to write if-else statement more and more and into dependent value, which makes it messy.
+
+Somehow, when we use switch statement or when statement, it's actually is all that kind of problem that instead of writing if-else statement every time, we just have to mention the conditions over there. Okay, so it's completely over you what exactly you need to go with. You can write if-else statement as well as you can go with when statement.
+
+So there I provided an idea how to use when statement. Now I am using if-else statement to do the same things. Okay, so for that thing, the username and the password, it is the same.
+
+So instead of just writing toast message, I'm not writing toast message and I'm saying, okay, it's the, that's it. So, okay, let's put else if statement like this. Let me put some space within them.
+
+And here I'm saying that if username is not equals to user ID, then what will happen? Then I will say or I'll mention what is the name of this? So the name of this is username edit text. Okay, so I'm targeting username edit text and not the edit text. We have to change the values as well.
+
+Okay, one more thing is instead of writing this at first, first we have to change the cast type of this. Like here the casting type is edit text. Whether we change, we change the value of them.
+
+Like, okay, first let's select this. Sign like this. Yeah. 
+
+So here because we replace edit text by text input layout, so we have to change these things as well. Here these edit text is the casting type. So we have to change the casting as well. 
+
+Instead of edit text, we have to write text input layout at first. Like this. And after this edit text also let's put the same.
+
+And into this edit text, text input layout and text input layout like this. Okay. Now into this you will see we also get the error inside this because here when we collecting the data from the edit text, we just have to write the line like this.
+
+But if the casting, if the component gets changed, we have text input layout here. So because of this we have to put another thing as well. So inside this I have to put edit text like this.
+
+And once I write, once I write edit text here, we have to first validate that whether the value is null or not. So as I already told you, we must have to check the value. By what? By safe call operator.
+
+So to check the value that whether this value, this username edit text, this username underscore edit text dot edit text is contain some value and not null. To do the same, we have to put question mark like this. And after this text also, we have to put the question mark like this.
+
+And after this, we have to put the advice operator like question mark colon. And we have to put the default value into this, that if this whole value got gets null, let's suppose user will not enter anything inside this. So what will happen? I will provide a basic value or a default value to it.
+
+So let's suppose I am saying John do it like this. John underscore because it's username John underscore doing. Okay, like this. 
+
+Similarly to the password as well. So first of all, we have to put the edit text like this dot, then we have to check whether this value is null or not. To do the same, we have to put the question mark like this, that is safe call operator to check whether it is null or not.
+
+If it is null, then we'll get error. The value is null and something else. Similarly, we have to put the question mark again after this and we have to provide the advice operator like this.
+
+And I am saying password will be 1, 2, 3, 4, 5, 6 and so on. Whatever you go with. So actually inside login screen, these kind of things will not happen.
+
+Okay, you will never find these kind of things at any point of time. Here, I just provide you an idea that how exactly you have to mention these kind of things and inside this actually John do it. I'm not going to put anything.
+
+So just remove this. Okay, because like never ever into any kind of application, you'll find that the values are automatically set at a particular position. So just remove this and here we just checking out that whether the values are null or not.
+
+If they are null then put the blank here instead of getting some kind of error at all. So as I already told you that that's how we check null values that whether it is null or not and believe me null values are so harmful for us that null kind of values or the null statements are so harmful for us. So keep this in mind that every time whenever you will, whenever you will collect some data from any kind of component, then every time you have to put the null safety operator.
+
+Otherwise, you will get crash at some point of time. Okay, now into this when I said username is not equal to user ID. So what will happen? So I am saying that username username edit text dot error is equals to you will see the error will be the username is invalid.
+
+Okay, the first thing is this that username is invalid. Okay. Another thing is that we all can also put if else if statement like this and we can also say that username dot length is lesser than equals to 6. Oh is instead of length put is empty.
+
+Okay. So here we are saying that if the username is empty then what exactly we will do. So let me copy and paste it here and I am saying username cannot be blank.
+
+Okay, here we are just validating the things whether the whether the values are getting or not. Another thing is we have to go for the password as well. So we'll do this this with for the password.
+
+So I'm just copied pasted here and this one is for user ID. This one is for username and this one will be for password. So here here I am saying password password is not equals to PWD.
+
+Let me go with above user password again. So I am saying password is not equals to user password. User password. 
+
+Pwp user password. Okay, it seems that we use a pwp pwp user pwp perfect. So I'm saying that password is not equals to user password.
+
+It is if it is happened then what exactly we will do. We will do password edit text dot error password is invalid. And similarly in the password is if the password is empty.
+
+So I am saying pwp user pwd. If the password is empty then I also say password or a text. Password password underscore.
+
+Sorry password under the underscore text dot error is equals to password cannot be blank. Okay, if it is done, so let's suppose if the username is equals to user ID and the password is equals to user password then we will move to dashboard if it is not then we will get some errors. Okay, so kindly notice that this if statement if else statement or if else if else statement do the same thing whatever we do into when statement.
+
+So when or if else statement do the same things but the approaches or the writing of code or the writing the syntaxes are some somehow different. Okay, let me load this again. Once you do this, we will get a username and the password like this.
+
+And if I click on login, we'll get the error that username is invalid or username cannot be empty. Okay, why exactly I am getting the error into this because here you will see that username when I'm saying username is not equals to user ID. Okay. 
+
+So here if it is blank then that means that whatever the user ID is, for example Android it is not equals to that thing because it is blank it's null due to that thing. We are getting error username is invalid. Okay, I hope you understand the concept.
+
+So somehow if I am saying that let's suppose I'm just I'm just cut this out and I am pasting it here and again, I'm just applying this. Okay, let me load this. So I'm just put this out where it is my first project.
+
+So I'm launching this and when I click enter, you will see we will get username cannot be blank. So why exactly it happened? Why exactly the first part gets at the previous part when I when I click over it will get username is invalid. But when I shift it to the next next line below this username dot empty statement, then we will get this.
+
+Why what is the reason behind it? So as I told you that the system the compiler or you can say the executor is actually reading our scripts one by one. Okay, that means nine by nine. For example, whatever we get it at the first position will execute at first and whatever in the second it will execute at the at the second part.
+
+So because so here because the value is empty right now, so that's why at the first position we got we got this username cannot apply but in the previous one in the previous part, this username is not equals to user ID was at the above this username dot is empty. So because it comes at first in that reference, we got the error username username is invalid. So that's why we got that that kind of thing.
+
+So let me let me show you again. And if I place this after about this username dot is empty. What exactly will get so let me apply this again.
+
+If I do the same and if I click on login again, you will see I'm getting an error that is username is invalid. Why because yes still username is in username is black and the user ID contains something so they are not matching to each other. That's why I'm getting username is invalid also because it comes at first that's why we get this error.
+
+Okay, so I hope so you understand the concept that whatever you want to launch at first you have to keep that at first. So let me go with this and you can you can as you know same part. So when I click on login again username cannot be black perfect.
+
+Let me put the username for example, it is Android Android and password. Let me go with a password that is Android Android 1 2 3 when I click on login login successful and we'll move to dashboard screen perfect. Here's also the same condition that when I click on back or you let's suppose user will click on back.
+
+He will redirect to the login screen as well over. We don't want to shift the user over the login screen once he successfully log in and shift to the dashboard one. So for that thing, let me first make it soft wrap new activated soft wrap.
+
+So it after this X start activity to do the same after the start activity. Just put finish like this. Once you go with this, it will restrict the user to come over the or to come over the login screen again.
+
+Okay, let's assume let's start Android and in the password I am saying Android at the 8 1 2 3 login. Once I have login wheel on the dashboard screen and if I click back it will close why it's closed because we are not shifting to login screen and login screen because login screen is our first activity. That's why it just closed.
+
+Okay, when I click on this again, we will get the login screen and if it is going for that we will get the same thing. Whatever we have.
+
+(Transcribed by TurboScribe. Go Unlimited to remove this message.)

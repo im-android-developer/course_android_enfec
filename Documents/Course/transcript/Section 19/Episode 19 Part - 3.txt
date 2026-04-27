@@ -1,0 +1,115 @@
+(Transcribed by TurboScribe. Go Unlimited to remove this message.)
+
+So, let us move forward with other things related to the UI stuff. Here, let me switch to, let me switch to XML file. Let us make it zoom first.
+
+Not the login screen, but the signup screen. Yes. Let me put the design only. 
+
+Here, the message is come in post only. Yes. But what if I need to show error in these boxes only? So, let us understand how we can do that thing. 
+
+To do the same, we have to move on our Kotlin file like this. And within this when statement, within this when statement, we have to write some other code instead of writing post message. Okay. 
+
+Let me show you what exactly I am saying. I am just removing this post message from this full name like here. And now, after this error, I am putting curly braces like this. 
+
+And within this curly braces, because I need to put, because I need to set the error inside this full name, so I have to take the reference of this full name box only and not the string variable. To do this, let us first take the reference that is full name value here. Okay. 
+
+So, I am saying here, I am saying full name value like this dot error. Because of this value or because of this line, what will happen? I am targeting full name value, that means this box and here I will set an error. Okay. 
+
+What exactly this error will be? We have to mention the error or the text for the error. For example, it is, let us suppose if it is empty, so we can say full name cannot be empty like this. Okay. 
+
+And let us test this, and let us test this first, then only we will move further. So, let me push this play button, wait for time, it is launched and click on this sign up to create button. And here I am not putting anything inside this full name. 
+
+Let me zoom it first like this. I just going to click this sign up button. When I click over it, you will see I am getting an error. 
+
+That is full name cannot be empty like this. Okay. So, that is how we can set error.
+
+Okay. And do not worry, I did not do anything inside the XML part, but it is an inbuilt feature of this text input layout. Okay.
+
+So, let us do these kinds of changes in all of these stuff and let us see what will happen. So, I am just copying this and I am, okay, I am just copying this whole stuff like this. And I am saying, I am click this and I am saying username. 
+
+So, let us go with the username, username value. Okay. So, how will you find about that thing? So, you will see that here the username value contains, one the username contains string, the data type and similarly the username value contains the casting type that what exactly it belongs to. 
+
+So, here it is text input layout. So, we are going to, we are going to select this. Okay. 
+
+And here we will see username cannot be empty like this. After this, we will say that password value.length is lesser than 6. So, also let us change this like this and we are saying pwd or pwd, pwd that is text input layout. Here it is text input layout. 
+
+So, perfect. I will go into choose this and we will, I will say password should not be, should be more than 6 digits like this. Okay.
+
+One more thing what I need to, what I need to enter into this that is password value cannot be empty. So, pwd.isempty, let us suppose, is empty. So, we will say password value. 
+
+Okay. One more thing, password value, where is the password value? Yeah, password.error and we are going to say password cannot be empty, cannot be empty like this. Similarly, we will do the same thing for the confirm password as well. 
+
+So, for the confirm password, let us suppose I am saying cnf password and I am saying confirm password cannot be empty like this. So, I put all the things here and after this we have password is length yes and at the last this one and we are saying, okay that is another, let me write this again. So, I am saying confirm password.error and I am saying password and confirm password, confirm password should be match, should match, should match. 
+
+Okay. So, that is how we can make errors or that is how we can set errors inside this text input layout boxes. Let me reload this again.
+
+Running devices. Once you are done, let us move to this sign up to create an account and here let me put sign up here like this. You will see, we will get full name cannot be blank.
+
+Let me put the name that is android and after this I am putting sign up, you will see we get sign up cannot be empty. Okay. So, we have to put the name of that username. 
+
+For example, I am saying android 2025. Okay. Then gender. 
+
+So, if I will put enter, you will see the gender is not okay. I am not targeting gender. So, we have to target the gender as well. 
+
+So, after this username, let us put the gender, gender value dot is empty, is empty. Then we can say that gender, let me copy this and paste here. I am saying gender, gender, okay, I make a mistake again. 
+
+That is not gender value, that is gender string. String, okay. Gender dot error will be equals to gender cannot be empty. 
+
+Gender cannot be empty like this. Okay. I hope so you understand the concept and let me reload this again. 
+
+Again, sign up to create an account, full name, I am saying android, android classes, username android underscore 2025, gender and when I click on sign up, you will see gender is, like gender cannot be empty. Okay. I am saying male, password, if I not put the password, you will see password cannot be empty. 
+
+Okay. So, I am saying android at the rate 1, 2, 3. And similarly, if I put android at the rate 1, 2, 3, when I put on sign up, you will see password and confirm password should be, should match. Okay. 
+
+So, that is how we can do the stuff. Also, one more thing, if you will see the error colour of it, you will see some colour mess here, which means that dark colour over dark colour cannot be visible easily. To resolve this, what exactly I am doing, I am going to change the colour of this error.
+
+How we can do this? Inside this signup, inside this signup.xml, let me, let me minimise this. Inside this signup.xml file, you have to go over the context and inside the box, inside the text input layout, you have to, you have to put another attribute named as error colour. So, if you will see we have a first colour that is error text colour. 
+
+When I click over it, it will ask about the text colour what you want. So, let us suppose I am saying that I need double F and double F double 0 that somehow yellow, that somehow yellow in colour. And what exactly I need, I need some, let us suppose double C, what exactly it will do? It somehow orangish colour is there.
+
+And let us suppose double 1, what will it get? I will get red, I will get red only. Okay, so instead of this, let us suppose C0, C0, C0, C0, what I will get? I will get some orange stuff here. Okay, so let us go with orange only. 
+
+So, I am going with username, that is your choice that what colour you will, you will, you will going to put here. I am putting orange again, then gender, for the gender I am putting the same, for the password I am putting the same, for the confirm password I am going to put the same, like this. Let me reload this again and let us see what exactly we get. 
+
+And here this error, so let me go with sign up to create an account. Here if I click on sign up, you will see the error, the how exactly we can set the error colour like this. So, that is how we can set the error colour like this. 
+
+Let me go with android, android underscore 2025, gender male, password android at the rate 1 to 3, let me visible the password, it is good. And the same android at the rate 1 to 3, let us visible the password, it is the same, sign up. And when I hit on sign up, here all the things are perfectly aligned, as well as whatever the details I have filled here, they are perfect, there is no any error available. 
+
+So, because all the things are perfect, when I click on sign up, nothing has happened here. Why? Because we did not explain or we did not mention that what exactly will happen if all the things were true or all the things will perfect. So, to do the same, what exactly we will mention now? Now, here after here, when is it exactly what, when is a switch statement, where I mentioned all the conditions as per the scenario.
+
+Now, if all the conditions gets false, now if all the condition gets false, then what exactly happen, I have to mention a default condition here. Okay, what exactly default means? For example, if nothing will happen from this, if nothing will, if the condition is not matched by any one of them, so there will be a default condition, it is just similar to the if-else statement. Just like if-else statement, I have provided an idea to you that whenever the if condition gets false because of any reason, so automatically the condition from else statement gets work. 
+
+Similarly, if the statements, if the condition, whatever mentioned into when statement, if they are not true, the default statement gets executed. So, let us see how we can do this. So, into this, inside this when statement, you have to put else like this. 
+
+Once you put else, you have to do the same whatever you do above. For example, you just inside this when statement put else and then put arrow, then put arrow, and then put the curly braces like this. Inside this else, what exactly I am saying? I am saying that if all the conditions were true, for example, if the full name is not empty, if username is not empty, if gender is not empty, if password is not empty, if confirm password is not empty, if the length of password is more than 6, and if the password and confirm password is same, then all the values, all these stuffs, whatever, all the conditions, whatever I mentioned here are getting false. 
+
+And if all the false, then what exactly we can get? Then what exactly we have to execute? We have to execute the else statement here. So, inside this else, I am writing the intent statement here. What is really intent statement? As I already told you that intent is required to shift the screens from one screen to another screen, or to shift the user from first screen to another screen.
+
+So, here let us create intent. So, I am writing well intent is equals to intent. And inside this intent, we have to put the addresses of files. 
+
+That first one is the name of screen at which exactly you are. So, that is this. And after this, you have to provide the name, you have to provide the name of activity on which you have to go. 
+
+So, for example, I need to go on dashboard. So, I am writing dashboard like this. And after the dashboard, I have to put double column, then I have to write class and then I have to write dot Java like this.
+
+I hope you understand the concept of this. As I already told you about this intent. Now, we have to start this, start this intent, start activity. 
+
+And inside this start activity function, I have to write intent like this. So, let us reload this again. We will get the screen.
+
+So, let us put on sign up to create an account. Let us again fill the details, whatever we have. I am saying Android, Android class, username Android underscore 2025, gender, male, password Android at the rate 1, 2, 3, 4. Let us see. 
+
+Perfect. And Android at the rate 1, 2, 3, 4. It is also perfect. Then when I click on sign up, you will see, we will perfectly shift on dashboard screen. 
+
+So, that is how we can work over this. So, that is how we can work over these kinds of things. We can work with switch statements like when and if all the conditions get true, how we can run the default statement and so on.
+
+So, I hope so you understand the concept. One more thing what I want to show you, when I just go back like this, when I just go back, you will see I am currently over the same screen that is the create account. So, let us suppose when I click on sign up, I am on dashboard screen, but when I click on back, you can also go back like this, like from here. 
+
+When I click on this, I am just back over the create account screen or over the sign up screen or the create account screen. So, that is actually wrong. If we successfully sign up and we move to dashboard screen, then we have to restrict the user to come back over the sign up screen again.
+
+So, how exactly we have to do this? It is very simple to restrict the user. To do this, after this start activity intent, you just into the next line, you just have to write another function named as finish. When you will write this finish, what will happen? It will restrict the user to come back over the previous screen.
+
+So, if you put finish, what exactly we will do? If I put finish, we will actually restrict the user to come on the previous screen. Let us again reload the screen. Let me sign up.
+
+Let me put the value again, android class, username android underscore 2025, gender male, password android at the rate 1234, confirm password android at the rate 1234. When I click on sign up, we are on dashboard screen and when I hit back, it will not go back to the sign up screen. Instead of it, we will move to login screen only like this. 
+
+So, that is how we can restrict the user as well.
+
+(Transcribed by TurboScribe. Go Unlimited to remove this message.)

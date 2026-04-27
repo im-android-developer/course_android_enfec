@@ -1,0 +1,32 @@
+{
+  "items": [
+    {
+      "title": "Sign-Up Form Field Collection with TextInputLayout",
+      "instructions": "**Problem:**\\nSimulate collecting user input from a sign-up form that uses TextInputLayout fields and printing the collected values.\\n\\n**What we want:**\\nDeclare variables representing values collected from TextInputLayout fields for a sign-up form:\\n- `val fullName: String = \"Android\"`\\n- `val username: String = \"android_dev\"`\\n- `val gender: String = \"Male\"`\\n- `val password: String = \"android@123\"`\\n- `val confirmPassword: String = \"android@123\"`\\n\\nCheck if `password` equals `confirmPassword`. If they match, print each field label and value on separate lines. If they don't match, print `\"Passwords do not match\"`.\\n\\n**Syntax:**\\n```\\nif (password == confirmPassword) {\\n    println(\"Full Name: $fullName\")\\n    println(\"Username: $username\")\\n    ...\\n} else {\\n    println(\"Passwords do not match\")\\n}\\n```\\n\\n**Example 1:**\\npassword = \"android@123\", confirmPassword = \"android@123\"\\nOutput:\\nFull Name: Android\\nUsername: android_dev\\nGender: Male\\nPassword: android@123\\nAccount Created Successfully\\nExplanation: Passwords match, so all fields are printed followed by success message.\\n\\n**Example 2:**\\npassword = \"android@123\", confirmPassword = \"wrong\"\\nOutput: Passwords do not match\\nExplanation: Passwords differ, so the else block runs.",
+      "difficulty": "medium",
+      "language_key": "kotlin",
+      "time_limit": 2,
+      "memory_limit": 256,
+      "starter_code": "fun main() {\n    // Declare fullName, username, gender, password, confirmPassword\n    // Check if password matches confirmPassword\n    // If match: print each field and \"Account Created Successfully\"\n    // If no match: print \"Passwords do not match\"\n}",
+      "execute_template": "",
+      "solution_code": "fun main() {\n    val fullName: String = \"Android\"\n    val username: String = \"android_dev\"\n    val gender: String = \"Male\"\n    val password: String = \"android@123\"\n    val confirmPassword: String = \"android@123\"\n    if (password == confirmPassword) {\n        println(\"Full Name: $fullName\")\n        println(\"Username: $username\")\n        println(\"Gender: $gender\")\n        println(\"Password: $password\")\n        println(\"Account Created Successfully\")\n    } else {\n        println(\"Passwords do not match\")\n    }\n}",
+      "test_cases": [
+        { "input": "", "output": "Full Name: Android\nUsername: android_dev\nGender: Male\nPassword: android@123\nAccount Created Successfully", "is_sample": true }
+      ]
+    },
+    {
+      "title": "Password Strength Validator with Character Counter",
+      "instructions": "**Problem:**\\nSimulate a password validation check that enforces a maximum character length (like the counter in TextInputLayout) and checks password strength.\\n\\n**What we want:**\\nDeclare a password `val password: String = \"Andr@123\"` and a maximum length `val maxLength: Int = 20`.\\nPerform the following checks in order:\\n1. If `password.length` is greater than `maxLength`, print `\"Password exceeds maximum length of $maxLength characters\"`\\n2. Else if `password.length` is less than 6, print `\"Password too short - minimum 6 characters required\"`\\n3. Else, print `\"Password accepted\"` on the first line and `\"Character count: X/Y\"` on the second line (where X = password length, Y = maxLength)\\n\\n**Syntax:**\\n```\\nif (password.length > maxLength) {\\n    println(\"Password exceeds maximum length of $maxLength characters\")\\n} else if (password.length < 6) {\\n    println(\"Password too short - minimum 6 characters required\")\\n} else {\\n    println(\"Password accepted\")\\n    println(\"Character count: ${password.length}/$maxLength\")\\n}\\n```\\n\\n**Example 1:**\\npassword = \"Andr@123\", maxLength = 20\\nOutput:\\nPassword accepted\\nCharacter count: 8/20\\nExplanation: Password is between 6 and 20 characters, so it's accepted and the counter is displayed.\\n\\n**Example 2:**\\npassword = \"Ab1\", maxLength = 20\\nOutput: Password too short - minimum 6 characters required\\nExplanation: Password length (3) is less than 6, so it fails the minimum check.",
+      "difficulty": "medium",
+      "language_key": "kotlin",
+      "time_limit": 2,
+      "memory_limit": 256,
+      "starter_code": "fun main() {\n    // Declare password and maxLength\n    // Check if password exceeds max length\n    // Check if password is too short (less than 6)\n    // Otherwise accept and print character count\n}",
+      "execute_template": "",
+      "solution_code": "fun main() {\n    val password: String = \"Andr@123\"\n    val maxLength: Int = 20\n    if (password.length > maxLength) {\n        println(\"Password exceeds maximum length of $maxLength characters\")\n    } else if (password.length < 6) {\n        println(\"Password too short - minimum 6 characters required\")\n    } else {\n        println(\"Password accepted\")\n        println(\"Character count: ${password.length}/$maxLength\")\n    }\n}",
+      "test_cases": [
+        { "input": "", "output": "Password accepted\nCharacter count: 8/20", "is_sample": true }
+      ]
+    }
+  ]
+}

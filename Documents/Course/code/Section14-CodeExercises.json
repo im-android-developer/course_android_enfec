@@ -1,0 +1,46 @@
+{
+  "items": [
+    {
+      "title": "Multiply Int and Double",
+      "instructions": "**Problem:**\\nMultiply an `Int` and a `Double` and print the result (decimal preserved).\\n\\n**What we want:**\\nDeclare `x: Int = 20` and `y: Double = 10.0`. Compute and print `x * y`.\\n\\n**Syntax:**\\n```\\nval x: Int = 20\\nval y: Double = 10.0\\nprintln(x * y)\\n```\\n\\n**Example 1:**\\nval x: Int = 20\\nval y: Double = 10.0\\nprintln(x * y)\\nOutput: 200.0\\nExplanation: Mixing Int and Double promotes the result to Double so decimals are kept.\\n\\n**Example 2:**\\nval x: Int = 3\\nval y: Double = 2.5\\nprintln(x * y)\\nOutput: 7.5\\nExplanation: 3 * 2.5 = 7.5 (Double result).",
+      "difficulty": "easy",
+      "language_key": "kotlin",
+      "time_limit": 2,
+      "memory_limit": 256,
+      "starter_code": "fun main() {\n    // Declare x and y, multiply and print the result\n}",
+      "execute_template": "",
+      "solution_code": "fun main() {\n    val x: Int = 20\n    val y: Double = 10.0\n    println(x * y)\n}",
+      "test_cases": [
+        { "input": "", "output": "200.0", "is_sample": true }
+      ]
+    },
+    {
+      "title": "Divide and Assign (Use mutable var)",
+      "instructions": "**Problem:**\\nShow use of the divide-and-assign operator `/=` and mutability.\\n\\n**What we want:**\\nDeclare `var total: Int = 400` and `val subjects: Int = 4`. Update `total` using `total /= (subjects - 1)` and print the result.\\n\\n**Syntax:**\\n```\\nvar total: Int = 400\\nval subjects: Int = 4\\ntotal /= (subjects - 1)\\nprintln(total)\\n```\\n\\n**Example 1:**\\nvar total: Int = 400\\nval subjects: Int = 4\\ntotal /= (subjects - 1)\\nprintln(total)\\nOutput: 133\\nExplanation: Integer division truncates decimals (400 / 3 = 133.333... → 133).\\n\\n**Note:** Use `var` for `total` because it will be updated.",
+      "difficulty": "medium",
+      "language_key": "kotlin",
+      "time_limit": 2,
+      "memory_limit": 256,
+      "starter_code": "fun main() {\n    // Declare total and subjects, use /= with an expression, print total\n}",
+      "execute_template": "",
+      "solution_code": "fun main() {\n    var total: Int = 400\n    val subjects: Int = 4\n    total /= (subjects - 1)\n    println(total)\n}",
+      "test_cases": [
+        { "input": "", "output": "133", "is_sample": true }
+      ]
+    },
+    {
+      "title": "Comparison Operators Return Boolean",
+      "instructions": "**Problem:**\\nUse comparison operators to evaluate equality and print Booleans.\\n\\n**What we want:**\\nDeclare `val x: Int = 100` and `val y: Int = 50 * 2`. Print the result of `x == y` and `x > y`.\\n\\n**Syntax:**\\n```\\nval x: Int = 100\\nval y: Int = 50 * 2\\nprintln(x == y)\\nprintln(x > y)\\n```\\n\\n**Example 1:**\\nval x: Int = 100\\nval y: Int = 50 * 2\\nprintln(x == y)\\nprintln(x > y)\\nOutput:\\ntrue\\nfalse\\nExplanation: `x == y` is true because 50*2 equals 100; `x > y` is false because they are equal.",
+      "difficulty": "easy",
+      "language_key": "kotlin",
+      "time_limit": 2,
+      "memory_limit": 256,
+      "starter_code": "fun main() {\n    // Declare x and y, print x == y and x > y\n}",
+      "execute_template": "",
+      "solution_code": "fun main() {\n    val x: Int = 100\n    val y: Int = 50 * 2\n    println(x == y)\n    println(x > y)\n}",
+      "test_cases": [
+        { "input": "", "output": "true\nfalse", "is_sample": true }
+      ]
+    }
+  ]
+}

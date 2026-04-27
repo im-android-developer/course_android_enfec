@@ -1,0 +1,32 @@
+{
+  "items": [
+    {
+      "title": "Login Credential Check with If-Else",
+      "instructions": "**Problem:**\\nSimulate a login credential check using `if-else` and print appropriate messages.\\n\\n**What we want:**\\nDeclare stored credentials `val userId: String = \"android\"` and `val userPassword: String = \"android@123\"`. Declare user input `val username: String = \"android\"` and `val password: String = \"android@123\"`. Use an `if` statement to check if `username == userId` and print `\"Login Successful\"` if true, otherwise print `\"Invalid Credentials\"`.\\n\\n**Syntax:**\\n```\\nval userId: String = \"android\"\\nval userPassword: String = \"android@123\"\\nval username: String = \"android\"\\nval password: String = \"android@123\"\\nif (username == userId) {\\n    println(\"Login Successful\")\\n} else {\\n    println(\"Invalid Credentials\")\\n}\\n```\\n\\n**Example 1:**\\nuserId = \"android\", username = \"android\"\\nOutput: Login Successful\\nExplanation: The username matches the stored userId, so the if block executes.\\n\\n**Example 2:**\\nuserId = \"android\", username = \"androidd\"\\nOutput: Invalid Credentials\\nExplanation: The username does not match (extra 'd'), so the else block executes.",
+      "difficulty": "medium",
+      "language_key": "kotlin",
+      "time_limit": 2,
+      "memory_limit": 256,
+      "starter_code": "fun main() {\n    // Declare userId, userPassword, username, password\n    // Use if-else to check username == userId and print the result\n}",
+      "execute_template": "",
+      "solution_code": "fun main() {\n    val userId: String = \"android\"\n    val userPassword: String = \"android@123\"\n    val username: String = \"android\"\n    val password: String = \"android@123\"\n    if (username == userId) {\n        println(\"Login Successful\")\n    } else {\n        println(\"Invalid Credentials\")\n    }\n}",
+      "test_cases": [
+        { "input": "", "output": "Login Successful", "is_sample": true }
+      ]
+    },
+    {
+      "title": "Combined Login Check with Logical AND Operator",
+      "instructions": "**Problem:**\\nUse the logical AND operator (`&&`) to verify both username and password in a single `if` condition.\\n\\n**What we want:**\\nDeclare stored credentials `val userId: String = \"admin\"` and `val userPassword: String = \"pass@456\"`. Declare user input `val username: String = \"admin\"` and `val password: String = \"wrong\"`. Use `if` with `&&` to check both `username == userId` AND `password == userPassword`. Print `\"Login Successful\"` if both match, otherwise print `\"Invalid Credentials\"`.\\n\\n**Syntax:**\\n```\\nif ((username == userId) && (password == userPassword)) {\\n    println(\"Login Successful\")\\n} else {\\n    println(\"Invalid Credentials\")\\n}\\n```\\n\\n**Example 1:**\\nusername = \"admin\", password = \"pass@456\" (both match)\\nOutput: Login Successful\\nExplanation: Both conditions are true, so the AND operator returns true and the if block executes.\\n\\n**Example 2:**\\nusername = \"admin\", password = \"wrong\" (password mismatch)\\nOutput: Invalid Credentials\\nExplanation: The password does not match, so the AND operator returns false and the else block executes.",
+      "difficulty": "medium",
+      "language_key": "kotlin",
+      "time_limit": 2,
+      "memory_limit": 256,
+      "starter_code": "fun main() {\n    // Declare userId, userPassword, username, password\n    // Use if with && to check both conditions and print the result\n}",
+      "execute_template": "",
+      "solution_code": "fun main() {\n    val userId: String = \"admin\"\n    val userPassword: String = \"pass@456\"\n    val username: String = \"admin\"\n    val password: String = \"wrong\"\n    if ((username == userId) && (password == userPassword)) {\n        println(\"Login Successful\")\n    } else {\n        println(\"Invalid Credentials\")\n    }\n}",
+      "test_cases": [
+        { "input": "", "output": "Invalid Credentials", "is_sample": true }
+      ]
+    }
+  ]
+}

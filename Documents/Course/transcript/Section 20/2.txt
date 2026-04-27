@@ -1,0 +1,25 @@
+(Transcribed by TurboScribe. Go Unlimited to remove this message.)
+
+We're done with login and create a screen. Now let's move to another programming concept that is functions. So let's start with what are functions. 
+
+So imagine in a particular factory you will see a machine. So imagine you are seeing a machine inside a factory. That machine is working like a function. 
+
+Question arises how? So let's first discover what this machine will do. So here you give the raw material to it. You give the raw material to this machine. 
+
+Machine will do process, machine will do something over this and after processing it gives you a finished product. So here the raw material whatever you are giving here into the machine is exactly the input. The process is something whatever machine is doing over the raw material whatever you provided or over the input whatever you provided and after processing it will provide you a finished product that exactly the output.
+
+So let's take another example of this. For example, let's assume you have a washing machine. You have a washing machine and inside this washing machine you will put your input that are dirty clothes and detergent and water. 
+
+Then this washing machine will do some processing over your inputs such like it will start the wash cycle. It will start the wash cycle and after the processing you will get your clean clothes. That means you will get some output from it.
+
+So that's how washing machine do its stuff. You will provide dirty clothes, detergent, water that means you are providing input. Then it will do some processing over there then you will get some output over there. 
+
+Similarly, in coding a function is a block of code that takes input, do some work and returns an output to you. Now the question arises why exactly we do, why do we need function. So imagine you are making a calculator app without functions you had to write addition code.
+
+You had to write addition code each and every time whenever you need it. For example, let's suppose we have two different conditions that is var a is equal to 5 and var b is equal to 10. Every time whenever we need to print it or whenever we need to add it we have to add it separately like this and after this let's suppose we have another equation for example we have var x is equal to 5 and var y is equal to 20.
+
+So again we have to write or again we have to do the same thing that means I have to write print line x plus y but it is when we are not using a particular function but it will happen only when we are not using the function. If we use function into our code, if we are using function into a particular scenario we don't have to put a plus b every time instead of it we just have to use add like this and we have to pass the parameters or we just have to pass the variables like this. Instead of writing a plus b, x plus y, x plus z, y plus z, b plus a every time we just have to write add a comma b or add x comma y like this. 
+
+So first let's learn about these kind of functions that how we can create them.
+
+(Transcribed by TurboScribe. Go Unlimited to remove this message.)

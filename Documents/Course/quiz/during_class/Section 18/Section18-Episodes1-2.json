@@ -1,0 +1,336 @@
+{
+  "items": [
+    {
+      "name": "Section18-Episode18-Part1",
+      "difficulty": "medium",
+      "content": [
+        {
+          "id": "S18-E18-P1-Q1",
+          "question": "What is the primary purpose of TextInputLayout in Android material design?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Development", "Material Design", "TextInputLayout"],
+          "options": [
+            { "id": "a", "text": "It acts as an outer container that adds material design features like floating labels, outline boxes, and error text" },
+            { "id": "b", "text": "It directly handles user text input like EditText" },
+            { "id": "c", "text": "It is used to create buttons with material styling" },
+            { "id": "d", "text": "It replaces the entire LinearLayout for form designs" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "TextInputLayout acts as an outer container or shell that adds material design features such as floating labels, outline boxes, error text, helper text, counters, and icons. It is not an input field itself — it is a decorative element.",
+          "hints": ["Think of it as a wrapper, not the input itself", "It provides visual enhancements around input fields", "Floating labels and outline boxes are its key features"]
+        },
+        {
+          "id": "S18-E18-P1-Q2",
+          "question": "What component must be placed inside TextInputLayout to handle actual user text input?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Development", "Material Design", "TextInputEditText"],
+          "options": [
+            { "id": "a", "text": "TextInputEditText" },
+            { "id": "b", "text": "EditText" },
+            { "id": "c", "text": "TextView" },
+            { "id": "d", "text": "TextInputField" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "TextInputEditText is a specialised EditText optimised to work with TextInputLayout. It handles the actual text input by the user while TextInputLayout provides the decorative shell.",
+          "hints": ["It's a specialised version of EditText", "It's designed to pair with TextInputLayout", "Its name includes both 'TextInput' and 'EditText'"]
+        },
+        {
+          "id": "S18-E18-P1-Q3",
+          "question": "Which attribute is used to set the outline border colour of a TextInputLayout?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["Android Development", "Material Design", "XML Attributes"],
+          "options": [
+            { "id": "a", "text": "boxStrokeColor" },
+            { "id": "b", "text": "borderColor" },
+            { "id": "c", "text": "outlineColor" },
+            { "id": "d", "text": "strokeTint" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "The boxStrokeColor attribute sets the colour of the outline border around the TextInputLayout. This colour is applied when the field is focused/active.",
+          "hints": ["The attribute name includes 'box' and 'stroke'", "It controls the outline appearance", "It's specific to material TextInputLayout"]
+        },
+        {
+          "id": "S18-E18-P1-Q4",
+          "question": "What does the `boxStrokeWidth` attribute control in TextInputLayout?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Development", "Material Design", "XML Attributes"],
+          "options": [
+            { "id": "a", "text": "The thickness of the outline border around the input field" },
+            { "id": "b", "text": "The width of the entire TextInputLayout" },
+            { "id": "c", "text": "The padding inside the input field" },
+            { "id": "d", "text": "The margin between text and the border" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "boxStrokeWidth sets the thickness/width of the outline border stroke. In the lesson, it was set to 2dp to create a visible border around the input field.",
+          "hints": ["It's about the border line itself", "Think thickness, not container size", "Measured in dp units"]
+        },
+        {
+          "id": "S18-E18-P1-Q5",
+          "question": "Why does the full package name `com.google.android.material.textfield.TextInputLayout` appear in XML instead of just `TextInputLayout`?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["Android Development", "Material Design", "XML"],
+          "options": [
+            { "id": "a", "text": "Because TextInputLayout is part of the Material Design Components library and requires the full qualified name" },
+            { "id": "b", "text": "Because Android Studio cannot auto-detect the component" },
+            { "id": "c", "text": "Because it is a custom component created by the developer" },
+            { "id": "d", "text": "Because short names are not allowed in XML layouts" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "TextInputLayout belongs to Google's Material Design Components library (com.google.android.material), so the full package path is required in XML. Unlike built-in components like EditText, material components need their fully qualified class name.",
+          "hints": ["It belongs to an external library, not core Android", "The package starts with com.google.android.material", "Built-in components like EditText don't need this"]
+        },
+        {
+          "id": "S18-E18-P1-Q6",
+          "question": "What is the floating label animation in TextInputLayout?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["Android Development", "Material Design", "UI Animation"],
+          "options": [
+            { "id": "a", "text": "When the field is tapped, the hint text animates upward to become a label above the input" },
+            { "id": "b", "text": "The entire input field floats to the top of the screen" },
+            { "id": "c", "text": "The label disappears when the user starts typing" },
+            { "id": "d", "text": "The label changes colour and stays in place" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "TextInputLayout provides a floating label animation where the hint text moves up and shrinks into a smaller label above the input when the user clicks on the field. This is a key material design feature.",
+          "hints": ["The hint doesn't disappear — it moves", "It goes to the upper side of the field", "It's an animation triggered by focus"]
+        },
+        {
+          "id": "S18-E18-P1-Q7",
+          "question": "How do you override the default inactive border colour of a TextInputLayout?",
+          "type": "mcq",
+          "difficulty": "hard",
+          "tags": ["Android Development", "Material Design", "Colors"],
+          "options": [
+            { "id": "a", "text": "Define a colour named `mtrl_textinput_default_box_stroke_color` in colours.xml to replace the material default" },
+            { "id": "b", "text": "Set `boxStrokeColor` to the desired colour — it works for both active and inactive states" },
+            { "id": "c", "text": "Use `android:background` on the TextInputLayout" },
+            { "id": "d", "text": "Set `app:strokeColorInactive` attribute in XML" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "The boxStrokeColor only applies when the field is active/focused. To change the inactive/default border colour, you must override the material default by defining a colour named `mtrl_textinput_default_box_stroke_color` in your colours.xml file.",
+          "hints": ["boxStrokeColor alone only works when the field is active", "You need to override a material default value", "It involves changing something in colours.xml"]
+        },
+        {
+          "id": "S18-E18-P1-Q8",
+          "question": "What attribute is used to set the hint text inside a TextInputLayout?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Development", "Material Design", "XML Attributes"],
+          "options": [
+            { "id": "a", "text": "android:hint" },
+            { "id": "b", "text": "app:labelText" },
+            { "id": "c", "text": "android:text" },
+            { "id": "d", "text": "app:placeholder" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "The `android:hint` attribute on TextInputLayout sets the hint/label text that appears inside the field and floats up when the field is focused. For example, `android:hint=\"Full Name\"`.",
+          "hints": ["It's the same attribute used for normal EditText hints", "It displays placeholder text before user types", "It becomes the floating label when focused"]
+        },
+        {
+          "id": "S18-E18-P1-Q9",
+          "question": "Which attribute sets the colour of the hint text in TextInputLayout?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["Android Development", "Material Design", "XML Attributes"],
+          "options": [
+            { "id": "a", "text": "android:textColorHint" },
+            { "id": "b", "text": "app:hintTextColor" },
+            { "id": "c", "text": "android:hintColor" },
+            { "id": "d", "text": "app:labelTextColor" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "The `android:textColorHint` attribute sets the colour of the hint text displayed in the TextInputLayout. The instructor used this along with `app:hintTextColor` to style the hint in vivid blue.",
+          "hints": ["It starts with android:textColor", "It specifically targets the hint text colour", "It uses the standard Android namespace"]
+        },
+        {
+          "id": "S18-E18-P1-Q10",
+          "question": "What is the `inputType` attribute used for in TextInputEditText?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Development", "Material Design", "Input Types"],
+          "options": [
+            { "id": "a", "text": "It specifies the type of data the user can enter, such as text, number, or password" },
+            { "id": "b", "text": "It defines the size of the input field" },
+            { "id": "c", "text": "It sets the font style of the input text" },
+            { "id": "d", "text": "It determines whether the field is editable or read-only" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "The `inputType` attribute determines what kind of data the user can input and what keyboard is shown. For example, `text` shows a regular keyboard, while `textPassword` masks the input with dots.",
+          "hints": ["It controls the keyboard type and input behaviour", "Different values include text, number, textPassword", "It affects how the entered text is displayed"]
+        }
+      ]
+    },
+    {
+      "name": "Section18-Episode18-Part2",
+      "difficulty": "medium",
+      "content": [
+        {
+          "id": "S18-E18-P2-Q1",
+          "question": "Which attribute enables the password visibility toggle (eye icon) on a TextInputLayout?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Development", "Material Design", "Password Toggle"],
+          "options": [
+            { "id": "a", "text": "app:passwordToggleEnabled=\"true\"" },
+            { "id": "b", "text": "android:showPassword=\"true\"" },
+            { "id": "c", "text": "app:eyeIconVisible=\"true\"" },
+            { "id": "d", "text": "android:togglePassword=\"true\"" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "Setting `app:passwordToggleEnabled=\"true\"` on a TextInputLayout adds an eye icon that lets users toggle password visibility between hidden (dots) and visible (plain text).",
+          "hints": ["The attribute uses 'passwordToggle' in its name", "It accepts true or false", "It belongs to the app namespace, not android"]
+        },
+        {
+          "id": "S18-E18-P2-Q2",
+          "question": "What does the `app:passwordToggleTint` attribute do?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Development", "Material Design", "Password Toggle"],
+          "options": [
+            { "id": "a", "text": "Changes the colour of the password toggle eye icon" },
+            { "id": "b", "text": "Changes the colour of the password text" },
+            { "id": "c", "text": "Changes the background colour of the password field" },
+            { "id": "d", "text": "Changes the border colour when password is visible" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "The `passwordToggleTint` attribute changes the colour of the eye icon used for toggling password visibility. The instructor changed it from the default black to blue (vivid blue).",
+          "hints": ["Tint means applying colour over a surface", "It affects the eye icon specifically", "It's a colour attribute"]
+        },
+        {
+          "id": "S18-E18-P2-Q3",
+          "question": "What `inputType` value should be used for a password field in TextInputEditText?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Development", "Input Types", "Password"],
+          "options": [
+            { "id": "a", "text": "textPassword" },
+            { "id": "b", "text": "password" },
+            { "id": "c", "text": "text" },
+            { "id": "d", "text": "hiddenText" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "The `inputType=\"textPassword\"` value masks user input with dots, making it suitable for password fields. Other options like `numberPassword` and `textWebPassword` also exist for specific use cases.",
+          "hints": ["It combines 'text' with 'Password'", "It makes the typed characters appear as dots", "There are also numberPassword and textWebPassword variants"]
+        },
+        {
+          "id": "S18-E18-P2-Q4",
+          "question": "What does enabling `app:counterEnabled=\"true\"` on a TextInputLayout do?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["Android Development", "Material Design", "Counter"],
+          "options": [
+            { "id": "a", "text": "Displays a character count below the input field showing how many characters the user has typed" },
+            { "id": "b", "text": "Limits the total number of characters the user can type" },
+            { "id": "c", "text": "Counts the number of times the user taps the field" },
+            { "id": "d", "text": "Shows the number of words entered by the user" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "Enabling the counter displays a live character count below the input field (e.g., '0/20'). It shows how many characters have been entered. Combined with `counterMaxLength`, it shows the count relative to the maximum.",
+          "hints": ["It shows a number below the text field", "It tracks characters as you type", "It works with counterMaxLength to show x/y format"]
+        },
+        {
+          "id": "S18-E18-P2-Q5",
+          "question": "What does `app:counterMaxLength=\"20\"` specify?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Development", "Material Design", "Counter"],
+          "options": [
+            { "id": "a", "text": "The maximum character limit displayed in the counter (e.g., 0/20)" },
+            { "id": "b", "text": "The maximum width of the input field in characters" },
+            { "id": "c", "text": "The minimum number of characters required" },
+            { "id": "d", "text": "The font size of the counter text" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "The `counterMaxLength` attribute sets the maximum number displayed in the counter indicator. When set to 20, the counter shows 'x/20' where x is the current character count. Note: it displays the limit but doesn't enforce it by default.",
+          "hints": ["It sets the number after the slash in the counter", "In the lesson, it showed 0/20", "It defines the target maximum characters"]
+        },
+        {
+          "id": "S18-E18-P2-Q6",
+          "question": "How do you initialise a TextInputLayout variable in Kotlin using `findViewById`?",
+          "type": "mcq",
+          "difficulty": "medium",
+          "tags": ["Kotlin", "Android Development", "TextInputLayout", "findViewById"],
+          "options": [
+            { "id": "a", "text": "val fullName: TextInputLayout = findViewById<TextInputLayout>(R.id.fullname)" },
+            { "id": "b", "text": "val fullName: EditText = findViewById<EditText>(R.id.fullname)" },
+            { "id": "c", "text": "val fullName = findViewByName(\"fullname\")" },
+            { "id": "d", "text": "val fullName: TextInputLayout = getComponent(R.id.fullname)" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "Since the XML component is a TextInputLayout, the type cast must be `TextInputLayout`, not `EditText`. The syntax uses `findViewById<TextInputLayout>(R.id.idName)` to find and cast the view.",
+          "hints": ["The type must match the XML component", "It uses findViewById with angle brackets for the type", "R.id references the ID set in XML"]
+        },
+        {
+          "id": "S18-E18-P2-Q7",
+          "question": "How do you collect text from a TextInputLayout in Kotlin?",
+          "type": "mcq",
+          "difficulty": "hard",
+          "tags": ["Kotlin", "Android Development", "TextInputLayout", "Data Collection"],
+          "options": [
+            { "id": "a", "text": "fullNameValue.editText?.text.toString()" },
+            { "id": "b", "text": "fullNameValue.text.toString()" },
+            { "id": "c", "text": "fullNameValue.getText()" },
+            { "id": "d", "text": "fullNameValue.inputText.toString()" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "Unlike EditText where you use `.text.toString()` directly, TextInputLayout requires an extra step: first access `.editText` to get the inner TextInputEditText, then access `.text.toString()`. This is because TextInputLayout is the outer shell, not the input itself.",
+          "hints": ["TextInputLayout is a wrapper — you need to reach the inner component", "The keyword 'editText' is used as a property", "It's different from how you collect text from a plain EditText"]
+        },
+        {
+          "id": "S18-E18-P2-Q8",
+          "question": "Why is the text collection syntax different for TextInputLayout compared to EditText?",
+          "type": "mcq",
+          "difficulty": "hard",
+          "tags": ["Android Development", "TextInputLayout", "EditText", "Components"],
+          "options": [
+            { "id": "a", "text": "Because TextInputLayout is the outer shell and does not hold text directly — you must access its inner editText first" },
+            { "id": "b", "text": "Because TextInputLayout uses a different programming language" },
+            { "id": "c", "text": "Because TextInputLayout automatically converts text to integers" },
+            { "id": "d", "text": "Because TextInputLayout stores text in a database instead of memory" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "The instructor emphasized that whenever the component changes, the writing style changes too. TextInputLayout is a decorative container; the actual text is held by the TextInputEditText inside it. Hence you need `.editText?.text.toString()` instead of just `.text.toString()`.",
+          "hints": ["Remember: TextInputLayout = outer shell, TextInputEditText = actual input", "The text lives in the inner component", "Different components require different access patterns"]
+        },
+        {
+          "id": "S18-E18-P2-Q9",
+          "question": "What method is used to make the sign-up button respond to user clicks?",
+          "type": "mcq",
+          "difficulty": "easy",
+          "tags": ["Android Development", "Kotlin", "Click Listener"],
+          "options": [
+            { "id": "a", "text": "setOnClickListener" },
+            { "id": "b", "text": "onClick" },
+            { "id": "c", "text": "addClickHandler" },
+            { "id": "d", "text": "setClickable" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "The `setOnClickListener` method is used to attach a click handler to a button. When the user clicks the button, the code inside the listener executes. The instructor used `signupButtonValue.setOnClickListener { ... }` to trigger value collection.",
+          "hints": ["It's the same method used for login button in previous sections", "It starts with 'set' and ends with 'Listener'", "It creates a block of code that runs on click"]
+        },
+        {
+          "id": "S18-E18-P2-Q10",
+          "question": "What is the correct order of steps to handle a sign-up form with TextInputLayout in Kotlin?",
+          "type": "mcq",
+          "difficulty": "hard",
+          "tags": ["Android Development", "Kotlin", "TextInputLayout", "Workflow"],
+          "options": [
+            { "id": "a", "text": "Assign IDs in XML → Initialise with findViewById → Set click listener → Collect values using editText?.text.toString()" },
+            { "id": "b", "text": "Collect values → Set click listener → Assign IDs → Initialise variables" },
+            { "id": "c", "text": "Set click listener → Initialise variables → Assign IDs → Collect values" },
+            { "id": "d", "text": "Initialise variables → Collect values → Assign IDs → Set click listener" }
+          ],
+          "correctAnswers": ["a"],
+          "explanation": "The correct workflow is: (1) Assign IDs to XML components, (2) Initialise Kotlin variables using `findViewById<TextInputLayout>`, (3) Set a click listener on the button, (4) Inside the listener, collect values using `.editText?.text.toString()`.",
+          "hints": ["IDs must exist before you can reference them in code", "Variables must be initialised before using them", "Value collection happens inside the click listener"]
+        }
+      ]
+    }
+  ]
+}

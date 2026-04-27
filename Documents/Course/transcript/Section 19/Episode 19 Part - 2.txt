@@ -1,0 +1,69 @@
+(Transcribed by TurboScribe. Go Unlimited to remove this message.)
+
+Now, by using if-else statement, it is very like, somehow it becomes messy. Yes. So, is there any approach, is there any different approach to the same? Yes, we have. 
+
+The another approach what we have is switch statement. Okay. So, let me read this. 
+
+And we will use switch statement in Kotlin. That is known as when. Okay. 
+
+So, here, so let me show you how exactly we can go with the same. So, I am writing when here. And inside this when, I am writing some conditions. 
+
+Instead of writing if-else statement repeatedly, I am just using when. So, whatever the condition will true, it will be picked out from the switch statement and will apply here. Okay. 
+
+So, what exactly I am saying? I am saying, if name, whatever I have, the full name. Yeah, if the full name is dot is empty. So, we are saying if the full name is empty. 
+
+Empty means that if the string, if the string value of the variable is completely blank. So, what will happen? To do this, instead of putting curly braces here, you just have to put this kind of operator. Okay. 
+
+And after this, I am saying toast message, toast dot make text. And I am saying this comma password, oh sorry, full name should be, full name should not be empty like this. And then I am saying toast, toast dot, oh sorry, toast dot length long dot show. 
+
+Okay. And you will see that I am not using any if-else statement, I am just providing a condition at first. Okay. 
+
+What exactly the condition will be? So, the condition is, if the full name is empty, then after this, after this, after this operator, you have to provide what exactly you have to execute. Okay. So, here, this operator is known as arrow operator. 
+
+Into this arrow operator, the value at the left-hand side is the condition, while the value at the right-hand side will be the action, what exactly you have to do. Okay. Now, at the same part, let us work with another thing. 
+
+In the same part, let us work with another thing. Let us suppose we are saying username, username dot is empty. If it is empty, then again put the arrow operator, then put the action, whatever you want to do. 
+
+So, I am saying this dot username should not be empty, empty like this. And then I have to provide toast dot length long, length long and run dot show. Okay. 
+
+Similarly, let us go with a password and confirm password. So, I am saying if the password is not equals to confirm password, password v, sorry, password v is not equals to confirm password v, then what exactly we are going to do? Let me copy and paste this, copy and paste this. I am saying password should be, password should be, password and confirm password should match like this. 
+
+Okay. And let me run this first to understand whether it is working or not. Let me write this like Android. 
+
+Okay. I am not putting anything into Android. Let me go with this and let me check this whether it is working or not. 
+
+So, I am click on sign up. And once I click on sign up, you will see I got this error. Full name should not be empty. 
+
+Similarly, let's suppose I am saying, I am saying Android like this. And once, delete this structure. Okay.
+
+So, once I do this, let me write the username as well. So, it is user, let's suppose Android world. Okay. 
+
+Let me put this sign up and nothing is happening. Okay. It's good. 
+
+Now, let's go with the password. So, pwd and I am saying pwd and here I am saying pwd 123. Okay.
+
+So, let me sign up, click on sign up. So, it will, it says password and confirm password should be match. Okay. 
+
+So, that's, that's how we can go with these things. Also, we have to check whether the length of password is greater than six or not. Okay. 
+
+Let's suppose I am saying that the password should be at least of six digits. Okay. So, into that thing, we have to put the code as well for the same. 
+
+Let me write the code. I am saying password v dot length is lesser than equals to six. Okay. 
+
+Then I am saying toast password should be greater than six digits. Okay. And let me again, reload this. 
+
+And when I write 123 only, and like this, you will see, okay, the full name is empty here. Android password will be your username will be Android underscore username and password. And the password is not matching right now. 
+
+Okay. Also, we have to let me check this first. So, I am just put at the above like this. 
+
+Don't worry about this. I am just like showing you that how we can go with that thing, how we can use this thing. So, I'm just putting, let me go with this 12345. 
+
+And here I am writing 12345. So, both are matching with each other, but the length is lesser than six. So, when I click on sign up, you will see password should be greater than six digits. 
+
+Okay, perfect. But here, let's suppose if I need to, let's suppose if I need to show some error here. Okay, if I need to show some error here, what exactly error will be let's suppose I am saying that let's suppose the password is not matching or something else that how exactly we can show the error into within these boxes only. 
+
+We will discuss that later that how we can do the same. But now you learned about many things multiple, but now you learned about multiple things, such like you learned about Cortland's special features that is null safety feature. Here you also learned about safe call and L wise operators. 
+
+Okay, you learned about else if a statement learned about when or switch statement here. Okay, also learned about text input fields, text input values and text input fields. Okay.
+
+(Transcribed by TurboScribe. Go Unlimited to remove this message.)
